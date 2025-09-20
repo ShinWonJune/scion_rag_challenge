@@ -256,7 +256,7 @@ class PubMedIntegration:
             logging.error(f"PubMed 클라이언트 초기화 실패: {e}")
             self.pubmed_client = None
     
-    def search_with_pubmed(self, query: str, use_pubmed: bool = True, use_scienceon: bool = True) -> Dict[str, Any]:
+    def search_with_pubmed(self, query: str, use_pubmed: bool = True) -> Dict[str, Any]:
         """
         PubMed 포함 통합 검색
         
@@ -298,7 +298,6 @@ class PubMedIntegration:
                 'document_count': len(unique_documents),
                 'processing_time': datetime.now() - start_time,  # 추후 계산 가능
                 'sources': {
-                    'ScienceON': len([d for d in unique_documents if d.get('source') == 'ScienceON']),
                     'PubMed': len([d for d in unique_documents if d.get('source') == 'PubMed'])
                 }
             }

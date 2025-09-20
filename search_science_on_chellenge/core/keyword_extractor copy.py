@@ -8,22 +8,15 @@
 import re
 import logging
 from typing import List, Dict, Any, Optional
-import google.generativeai as genai
+from openai import OpenAI
 
 class KeywordExtractor:
     """Gemini API를 사용한 키워드 추출기"""
     
-    def __init__(self, api_key: str, model_name: str = "gemini-2.5-flash"):
-        """
-        키워드 추출기 초기화
-        
-        Args:
-            api_key: Google API 키
-            model_name: 사용할 Gemini 모델명
-        """
-        self.api_key = api_key
-        self.model_name = model_name
-        self.model = self._init_gemini()
+    def __init__(self, base_url: str = "http://localhost:8000/v1", model: str = "openai/gpt-oss-120B"):
+        self.base_url = base_url
+        self.model = model
+        self.client = OpenAI(base_url=base_url, api_key="dummy-key")
         
     def _init_gemini(self) -> genai.GenerativeModel:
         """Gemini 모델 초기화"""

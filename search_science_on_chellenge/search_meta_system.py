@@ -131,9 +131,9 @@ class SearchMetaSystem:
         
         return self.single_processor.process_query(query, target_documents)
     
-    def process_single_query_with_pubmed(self, query: str, use_pubmed: bool = True, use_scienceon: bool = False) -> Dict[str, Any]:
+    def process_single_query_with_pubmed(self, query: str, use_pubmed: bool = True) -> Dict[str, Any]:
         """PubMed 포함 단일 질문 처리"""
-        return self.pubmed_integration.search_with_pubmed(query, use_pubmed, use_scienceon)
+        return self.pubmed_integration.search_with_pubmed(query, use_pubmed)
     
     def process_batch_from_csv(self, csv_path: str, max_queries: Optional[int] = None, 
                               target_documents: int = None) -> Dict[str, Any]:
