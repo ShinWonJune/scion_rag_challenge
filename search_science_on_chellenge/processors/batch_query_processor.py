@@ -19,7 +19,7 @@ class BatchQueryProcessor:
     """배치 쿼리 처리기"""
     
     def __init__(self, single_processor: SingleQueryProcessor, file_manager: FileManager, 
-                 result_converter: ResultConverter):
+                 result_converter: ResultConverter, search_meta_system=None):
         """
         배치 쿼리 처리기 초기화
         
@@ -27,10 +27,12 @@ class BatchQueryProcessor:
             single_processor: 단일 쿼리 처리기
             file_manager: 파일 관리자
             result_converter: 결과 변환기
+            search_meta_system: SearchMetaSystem 인스턴스 (PubMed 지원용)
         """
         self.single_processor = single_processor
         self.file_manager = file_manager
         self.result_converter = result_converter
+        self.search_meta_system = search_meta_system
         
     def process_queries_from_csv(self, csv_path: str, target_documents: int = 50, 
                                 max_queries: Optional[int] = None) -> Dict[str, Any]:
@@ -87,8 +89,18 @@ class BatchQueryProcessor:
                 logging.info(f"  진행률: {i}/{len(queries)} - {query[:30]}...")
                 logging.info(f"진행률: {i}/{len(queries)}")
                 
-                # 단일 쿼리 처리
-                result = self.single_processor.process_query(query, target_documents)
+                # 단일 쿼리 처리 - PubMed 지원 추가
+                if (self.search_meta_system and 
+                    hasattr(self.search_meta_system, 'pubmed_integration') and 
+                    self.search_meta_system.pubmed_integration and
+                    self.search_meta_system.pubmed_integration.pubmed_client):
+                    # PubMed를 사용한 처리
+                    result = self.search_meta_system.pubmed_integration.search_with_pubmed(query)
+                    logging.info(f"PubMed로 검색 완료: {result.get('document_count', 0)}개 문서")
+                else:
+                    # 기본 ScienceON 처리
+                    result = self.single_processor.process_query(query, target_documents)
+                
                 results.append(result)
                 
                 if result.get("status") == "success":

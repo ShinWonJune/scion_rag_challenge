@@ -68,6 +68,7 @@ def parse_arguments():
     # 검색 플랫폼 옵션
     parser.add_argument('--use-scienceon', action='store_true', help='ScienceON 사용')
     parser.add_argument('--use-pubmed', action='store_true', help='PubMed 사용')
+    parser.add_argument('--simple-test', action='store_true', help='간단 테스트 모드')
 
     # 기존 위치 인수들
     parser.add_argument('command', nargs='?', help='실행할 명령어')
@@ -124,16 +125,21 @@ def get_pubmed_credentials() -> tuple[str, str]:
     return "", ""
 
 
-def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = False):
+def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = False, simple_test: bool = False):
     """단일 모드 실행"""
     print(f"🔍 단일 질문 처리 시작")
     print("=" * 50)
     print(f"질문: {query}")
+    if simple_test:
+        print("🧪 간단 테스트 모드")
     print("=" * 50)
     
     try:
+        # 간단 테스트 모드
+        if simple_test and use_pubmed:
+            result = system.process_single_query_with_pubmed_simple(query)
         # PubMed 사용 여부에 따라 다른 메서드 호출
-        if use_pubmed:
+        elif use_pubmed:
             result = system.process_single_query_with_pubmed(query, True)
         else:
             result = system.process_single_query(query)
@@ -143,6 +149,13 @@ def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = Fal
             print(f"   찾은 문서: {result['document_count']}개")
             print(f"   처리 시간: {result['processing_time']:.2f}초")
             print(f"   검색어: {len(result.get('search_terms', []))}개")
+            
+            # 간단한 결과 미리보기
+            if result['document_count'] > 0:
+                print(f"\n📄 첫 번째 문서:")
+                first_doc = result['documents'][0]
+                print(f"   제목: {first_doc.get('title', 'N/A')[:100]}...")
+                print(f"   저자: {first_doc.get('authors', 'N/A')[:50]}...")
         else:
             print(f"❌ 처리 실패: {result.get('error_message', '알 수 없는 오류')}")
             
@@ -281,7 +294,7 @@ def main():
                 return
 
             query = args.args[0]
-            run_single_mode(system, query, use_pubmed)
+            run_single_mode(system, query, use_pubmed, args.simple_test)
             
         elif command == "batch":
             if len(args.args) < 1:

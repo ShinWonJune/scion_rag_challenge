@@ -3,6 +3,7 @@ PubMed API 클라이언트
 - E-utilities API 사용
 - History Server 활용으로 rate limit 최적화
 - 기존 ScienceON 구조와 호환
+- 검색어 당 10개 문서 검색 제한
 """
 
 import requests
@@ -11,6 +12,7 @@ import xml.etree.ElementTree as ET
 import logging
 from typing import List, Dict, Any, Optional
 from pathlib import Path
+from datetime import datetime
 import json
 
 class PubMedAPIClient:
@@ -52,7 +54,7 @@ class PubMedAPIClient:
         
     def search_multiple_terms(self, search_terms: List[str], max_terms: int = 10) -> List[Dict[str, Any]]:
         """
-        여러 검색어로 PubMed 검색 (History Server 사용)
+        여러 검색어로 PubMed 검색 (직접 검색 방식)
         
         Args:
             search_terms: 검색어 리스트
@@ -65,19 +67,203 @@ class PubMedAPIClient:
             # 검색어를 길이 순으로 정렬하여 상위 N개만 선택
             sorted_terms = sorted(search_terms, key=len, reverse=True)[:max_terms]
             
-            logging.info(f"PubMed 검색: {len(sorted_terms)}개 검색어 처리")
+            logging.info(f"PubMed 검색: {len(sorted_terms)}개 검색어 처리 (직접 검색)")
             
-            # 1단계: 각 검색어로 ESearch 실행 (usehistory=y)
-            self._execute_searches(sorted_terms)
+            all_documents = []
             
-            # 2단계: History에서 결과 Fetch
-            documents = self._fetch_results()
+            # 각 검색어별로 개별 검색 및 fetch
+            for i, term in enumerate(sorted_terms):
+                try:
+                    documents = self._search_and_fetch_term(term, max_results=10)
+                    all_documents.extend(documents)
+                    
+                    logging.info(f"검색어 '{term}': {len(documents)}개 문서")
+                    
+                    # Rate limit 준수 (1초당 10회 제한)
+                    time.sleep(self.rate_limit_delay)
+                    
+                except Exception as e:
+                    logging.warning(f"검색어 '{term}' 실패: {e}")
+                    continue
             
-            logging.info(f"PubMed 검색 완료: {len(documents)}개 문서")
-            return documents
+            # 중복 제거 (ID 기준)
+            unique_documents = self._remove_duplicates_by_id(all_documents)
+            
+            logging.info(f"PubMed 검색 완료: {len(unique_documents)}개 문서 (중복 제거 후)")
+            return unique_documents
             
         except Exception as e:
             logging.error(f"PubMed 검색 실패: {e}")
+            return []
+    
+    def _search_and_fetch_term(self, term: str, max_results: int = 10) -> List[Dict[str, Any]]:
+        """
+        단일 검색어로 검색 및 즉시 fetch
+        
+        Args:
+            term: 검색어
+            max_results: 최대 결과 수
+            
+        Returns:
+            문서 리스트
+        """
+        try:
+            # 1단계: ESearch로 ID 목록 가져오기
+            formatted_term = self._format_search_term(term)
+            
+            search_params = {
+                'db': 'pubmed',
+                'term': formatted_term,
+                'retmax': str(max_results),
+                'api_key': self.api_key
+            }
+            
+            if self.email:
+                search_params['email'] = self.email
+            
+            search_response = requests.get(f"{self.base_url}/esearch.fcgi", params=search_params)
+            search_response.raise_for_status()
+            
+            # XML 파싱하여 ID 목록 추출
+            root = ET.fromstring(search_response.text)
+            id_list = [id_elem.text for id_elem in root.findall('.//Id')]
+            
+            if not id_list:
+                return []
+            
+            # Rate limit 준수
+            time.sleep(self.rate_limit_delay)
+            
+            # 2단계: EFetch로 상세 정보 가져오기
+            id_string = ','.join(id_list)
+            
+            fetch_params = {
+                'db': 'pubmed',
+                'id': id_string,
+                'rettype': 'abstract',
+                'retmode': 'xml',
+                'api_key': self.api_key
+            }
+            
+            if self.email:
+                fetch_params['email'] = self.email
+            
+            fetch_response = requests.get(f"{self.base_url}/efetch.fcgi", params=fetch_params)
+            fetch_response.raise_for_status()
+            
+            # XML에서 문서 정보 추출
+            documents = self._parse_pubmed_xml(fetch_response.text)
+            
+            return documents
+            
+        except Exception as e:
+            logging.error(f"검색어 '{term}' 처리 실패: {e}")
+            return []
+    
+    def _remove_duplicates_by_id(self, documents: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """ID 기준 중복 문서 제거"""
+        seen_ids = set()
+        unique_docs = []
+        
+        for doc in documents:
+            doc_id = doc.get('id', '')
+            if doc_id and doc_id not in seen_ids:
+                seen_ids.add(doc_id)
+                unique_docs.append(doc)
+        
+        return unique_docs
+    
+    def search_single_term_test(self, search_term: str, max_results: int = 5) -> List[Dict[str, Any]]:
+        """
+        단일 검색어 테스트용 메서드 (새로운 직접 검색 방식 사용)
+        
+        Args:
+            search_term: 단일 검색어
+            max_results: 최대 결과 수
+            
+        Returns:
+            문서 리스트
+        """
+        try:
+            logging.info(f"PubMed 단일 검색어 테스트: '{search_term}', 최대 {max_results}개")
+            
+            # 새로운 직접 검색 방식 사용
+            documents = self._search_and_fetch_term(search_term, max_results)
+            
+            logging.info(f"PubMed 단일 검색 완료: {len(documents)}개 문서")
+            return documents
+            
+        except Exception as e:
+            logging.error(f"PubMed 단일 검색 실패: {e}")
+            return []
+    
+    # === 기존 History Server 방식 (사용 안 함) ===
+        """
+        단일 검색어 테스트용 메서드
+        
+        Args:
+            search_term: 단일 검색어
+            max_results: 최대 결과 수
+            
+        Returns:
+            문서 리스트
+        """
+        try:
+            logging.info(f"PubMed 단일 검색어 테스트: '{search_term}', 최대 {max_results}개")
+            
+            # 단일 검색어로 ESearch 실행
+            formatted_term = self._format_search_term(search_term)
+            
+            params = {
+                'db': 'pubmed',
+                'term': formatted_term,
+                'retmax': str(max_results),
+                'api_key': self.api_key
+            }
+            
+            if self.email:
+                params['email'] = self.email
+            
+            response = requests.get(f"{self.base_url}/esearch.fcgi", params=params)
+            response.raise_for_status()
+            
+            # XML 파싱하여 ID 목록 추출
+            root = ET.fromstring(response.text)
+            id_list = [id_elem.text for id_elem in root.findall('.//Id')]
+            
+            if not id_list:
+                logging.warning("검색 결과가 없습니다.")
+                return []
+            
+            logging.info(f"검색된 ID 수: {len(id_list)}")
+            
+            # EFetch로 상세 정보 가져오기
+            id_string = ','.join(id_list)
+            
+            fetch_params = {
+                'db': 'pubmed',
+                'id': id_string,
+                'rettype': 'abstract',
+                'retmode': 'xml',
+                'api_key': self.api_key
+            }
+            
+            if self.email:
+                fetch_params['email'] = self.email
+            
+            time.sleep(self.rate_limit_delay)
+            
+            fetch_response = requests.get(f"{self.base_url}/efetch.fcgi", params=fetch_params)
+            fetch_response.raise_for_status()
+            
+            # XML에서 문서 정보 추출
+            documents = self._parse_pubmed_xml(fetch_response.text)
+            
+            logging.info(f"PubMed 단일 검색 완료: {len(documents)}개 문서")
+            return documents
+            
+        except Exception as e:
+            logging.error(f"PubMed 단일 검색 실패: {e}")
             return []
     
     def _execute_searches(self, search_terms: List[str]):
@@ -93,7 +279,7 @@ class PubMedAPIClient:
                     'db': 'pubmed',
                     'term': formatted_term,
                     'usehistory': 'y',
-                    'retmax': '50',  # 각 검색어당 최대 50개
+                    'retmax': '10',  # 각 검색어당 최대 10개로 줄임 (원래 10개)
                     'api_key': self.api_key
                 }
                 
@@ -179,38 +365,43 @@ class PubMedAPIClient:
             
             for article in root.findall('.//PubmedArticle'):
                 try:
-                    # PMID
+                    # PMID - None 체크 강화
                     pmid_elem = article.find('.//PMID')
-                    pmid = pmid_elem.text if pmid_elem is not None else ""
+                    pmid = pmid_elem.text if pmid_elem is not None and pmid_elem.text else ""
                     
-                    # 제목
+                    # 제목 - None 체크 강화
                     title_elem = article.find('.//ArticleTitle')
-                    title = title_elem.text if title_elem is not None else ""
+                    title = title_elem.text if title_elem is not None and title_elem.text else ""
                     
-                    # 초록
+                    # 초록 - None 체크 강화
                     abstract_texts = article.findall('.//AbstractText')
-                    abstract = ' '.join([elem.text for elem in abstract_texts if elem.text])
+                    abstract_parts = []
+                    for elem in abstract_texts:
+                        if elem.text:
+                            abstract_parts.append(elem.text)
+                    abstract = ' '.join(abstract_parts)
                     
-                    # 저자
+                    # 저자 - None 체크 강화
                     authors = []
                     for author in article.findall('.//Author'):
                         last_name = author.find('.//LastName')
                         first_name = author.find('.//ForeName')
-                        if last_name is not None and first_name is not None:
+                        if (last_name is not None and last_name.text and 
+                            first_name is not None and first_name.text):
                             authors.append(f"{first_name.text} {last_name.text}")
                     
-                    # 저널
+                    # 저널 - None 체크 강화
                     journal_elem = article.find('.//Journal/Title')
-                    journal = journal_elem.text if journal_elem is not None else ""
+                    journal = journal_elem.text if journal_elem is not None and journal_elem.text else ""
                     
-                    # 출판일
+                    # 출판일 - None 체크 강화
                     pub_date_elem = article.find('.//PubDate/Year')
-                    pub_year = pub_date_elem.text if pub_date_elem is not None else ""
+                    pub_year = pub_date_elem.text if pub_date_elem is not None and pub_date_elem.text else ""
                     
                     # ScienceON 호환 형식으로 변환
                     document = {
                         'id': pmid,
-                        'title': title,
+                        'title': title or "",  # 빈 문자열 보장
                         'abstract': abstract,
                         'authors': ', '.join(authors),
                         'journal': journal,
@@ -256,6 +447,49 @@ class PubMedIntegration:
             logging.error(f"PubMed 클라이언트 초기화 실패: {e}")
             self.pubmed_client = None
     
+    def search_with_pubmed_simple(self, query: str) -> Dict[str, Any]:
+        """
+        PubMed 간단 검색 (테스트용)
+        
+        Args:
+            query: 검색 질문
+            
+        Returns:
+            검색 결과
+        """
+        start_time = time.time()
+        try:
+            if not self.pubmed_client:
+                return {
+                    'status': 'error',
+                    'error_message': 'PubMed 클라이언트가 초기화되지 않았습니다.',
+                    'query': query
+                }
+            
+            # 단일 검색어로 간단 검색
+            documents = self.pubmed_client.search_single_term_test(query, max_results=5)
+            
+            return {
+                'status': 'success',
+                'query': query,
+                'keywords': [query],
+                'search_terms': [query],
+                'documents': documents,
+                'document_count': len(documents),
+                'processing_time': time.time() - start_time,
+                'sources': {
+                    'PubMed': len(documents)
+                }
+            }
+            
+        except Exception as e:
+            logging.error(f"PubMed 간단 검색 실패: {e}")
+            return {
+                'status': 'error',
+                'error_message': str(e),
+                'query': query
+            }
+    
     def search_with_pubmed(self, query: str, use_pubmed: bool = True) -> Dict[str, Any]:
         """
         PubMed 포함 통합 검색
@@ -296,7 +530,7 @@ class PubMedIntegration:
                 'search_terms': search_terms,
                 'documents': unique_documents,
                 'document_count': len(unique_documents),
-                'processing_time': datetime.now() - start_time,  # 추후 계산 가능
+                'processing_time': time.time() - start_time,
                 'sources': {
                     'PubMed': len([d for d in unique_documents if d.get('source') == 'PubMed'])
                 }
@@ -316,7 +550,12 @@ class PubMedIntegration:
         unique_docs = []
         
         for doc in documents:
-            title = doc.get('title', '').strip().lower()
+            title = doc.get('title', '')
+            # None 체크 추가
+            if title is None:
+                title = ''
+            title = title.strip().lower()
+            
             if title and title not in seen_titles:
                 seen_titles.add(title)
                 unique_docs.append(doc)

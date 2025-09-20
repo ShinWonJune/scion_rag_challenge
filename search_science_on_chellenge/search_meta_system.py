@@ -112,7 +112,8 @@ class SearchMetaSystem:
         self.batch_processor = BatchQueryProcessor(
             self.single_processor,
             self.file_manager,
-            self.result_converter
+            self.result_converter,
+            self  # SearchMetaSystem 인스턴스 전달
         )
     
     def process_single_query(self, query: str, target_documents: int = None) -> Dict[str, Any]:
@@ -134,6 +135,10 @@ class SearchMetaSystem:
     def process_single_query_with_pubmed(self, query: str, use_pubmed: bool = True) -> Dict[str, Any]:
         """PubMed 포함 단일 질문 처리"""
         return self.pubmed_integration.search_with_pubmed(query, use_pubmed)
+    
+    def process_single_query_with_pubmed_simple(self, query: str) -> Dict[str, Any]:
+        """PubMed 간단 검색 (테스트용)"""
+        return self.pubmed_integration.search_with_pubmed_simple(query)
     
     def process_batch_from_csv(self, csv_path: str, max_queries: Optional[int] = None, 
                               target_documents: int = None) -> Dict[str, Any]:
