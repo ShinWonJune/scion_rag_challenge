@@ -128,9 +128,11 @@ class SingleQueryProcessor:
             "status": "success",
             "keywords": keywords,
             "search_queries": search_terms,
+            "search_terms": search_terms,  # main.py에서 사용
             "documents": documents,
             "total_documents_found": len(documents),
             "document_count": len(documents),
+            "processing_time": processing_time.total_seconds(),  # 누락된 키 추가
             "search_timestamp": datetime.now().isoformat(),
             "execution_mode": "batch"
         }

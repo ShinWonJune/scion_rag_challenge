@@ -19,14 +19,17 @@ from configs.settings import Settings
 
 # ScienceON API 클라이언트 import
 from scienceon_api_example import ScienceONAPIClient
-
+from pubmed_api_client import PubMedAPIClient, PubMedIntegration
 class SearchMetaSystem:
     """검색 메타데이터 시스템 - 통합 관리"""
-    
-    def __init__(self, gemini_api_key: str = None, use_vllm: bool = False, 
-             vllm_base_url: str = "http://localhost:8000/v1", 
-             vllm_model: str = "openai/gpt-oss-120B",
-             scienceon_credentials_path: str = "./configs/scienceon_api_credentials.json"):
+
+    def __init__(self, gemini_api_key: str = None, use_vllm: bool = False,
+                 vllm_base_url: str = "http://localhost:8000/v1",
+                 vllm_model: str = "openai/gpt-oss-120B",
+                 pubmed_api_key: str = None,
+                 pubmed_email: str = None,
+                 pubmed_credentials_path: str = "./configs/pubmed_api_credentials.json",
+                 scienceon_credentials_path: str = "./configs/scienceon_api_credentials.json"):
         """
         검색 메타데이터 시스템 초기화
         
@@ -36,6 +39,7 @@ class SearchMetaSystem:
             vllm_base_url: vLLM 서버 URL
             vllm_model: vLLM 모델명
             scienceon_credentials_path: ScienceON API 자격증명 파일 경로
+            pubmed_credentials_path: PubMed API 자격증명 파일 경로
         """
         # 설정 로드
         self.settings = Settings()
@@ -53,7 +57,9 @@ class SearchMetaSystem:
         
         # ScienceON API 클라이언트 초기화
         self.scienceon_client = ScienceONAPIClient(Path(scienceon_credentials_path))
-        
+        # PubMed API 클라이언트 및 통합 초기화
+        self.pubmed_integration = PubMedIntegration(self, pubmed_credentials_path)
+
         # 핵심 컴포넌트 초기화
         self._initialize_components()
         
@@ -124,6 +130,10 @@ class SearchMetaSystem:
             target_documents = self.settings.get("target_documents_per_query")
         
         return self.single_processor.process_query(query, target_documents)
+    
+    def process_single_query_with_pubmed(self, query: str, use_pubmed: bool = True, use_scienceon: bool = False) -> Dict[str, Any]:
+        """PubMed 포함 단일 질문 처리"""
+        return self.pubmed_integration.search_with_pubmed(query, use_pubmed, use_scienceon)
     
     def process_batch_from_csv(self, csv_path: str, max_queries: Optional[int] = None, 
                               target_documents: int = None) -> Dict[str, Any]:

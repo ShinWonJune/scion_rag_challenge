@@ -65,6 +65,10 @@ def parse_arguments():
     parser.add_argument('--vllm-url', default='http://localhost:8000/v1', help='vLLM 서버 URL')
     parser.add_argument('--vllm-model', default='openai/gpt-oss-120B', help='vLLM 모델명')
     
+    # 검색 플랫폼 옵션
+    parser.add_argument('--use-scienceon', action='store_true', help='ScienceON 사용')
+    parser.add_argument('--use-pubmed', action='store_true', help='PubMed 사용')
+
     # 기존 위치 인수들
     parser.add_argument('command', nargs='?', help='실행할 명령어')
     parser.add_argument('args', nargs='*', help='명령어 인수')
@@ -99,7 +103,28 @@ def get_gemini_api_key() -> str:
     
     return api_key
 
-def run_single_mode(system: SearchMetaSystem, query: str):
+def get_pubmed_credentials() -> tuple[str, str]:
+    # 환경변수에서 먼저 확인
+    api_key = os.getenv("PUBMED_API_KEY")
+    email = os.getenv("PUBMED_EMAIL")
+    
+    if api_key:
+        return api_key, email or ""
+    
+    # 설정 파일에서 확인
+    config_path = Path("./configs/pubmed_credentials.json")
+    if config_path.exists():
+        try:
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+                return config.get("api_key", ""), config.get("email", "")
+        except Exception as e:
+            logging.warning(f"PubMed 설정 파일 읽기 실패: {e}")
+    
+    return "", ""
+
+
+def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = False):
     """단일 모드 실행"""
     print(f"🔍 단일 질문 처리 시작")
     print("=" * 50)
@@ -107,13 +132,17 @@ def run_single_mode(system: SearchMetaSystem, query: str):
     print("=" * 50)
     
     try:
-        result = system.process_single_query(query)
+        # PubMed 사용 여부에 따라 다른 메서드 호출
+        if use_pubmed:
+            result = system.process_single_query_with_pubmed(query, True)
+        else:
+            result = system.process_single_query(query)
         
         if result["status"] == "success":
             print(f"✅ 처리 완료!")
             print(f"   찾은 문서: {result['document_count']}개")
-            print(f"   처리 시간: {result['processing_time_seconds']:.2f}초")
-            print(f"   검색어: {len(result['search_terms'])}개")
+            print(f"   처리 시간: {result['processing_time']:.2f}초")
+            print(f"   검색어: {len(result.get('search_terms', []))}개")
         else:
             print(f"❌ 처리 실패: {result.get('error_message', '알 수 없는 오류')}")
             
@@ -187,15 +216,41 @@ def main():
 
     command = args.command.lower()
 
-
+    # 플랫폼 선택
+    use_scienceon = args.use_scienceon or (not args.use_pubmed and not args.use_scienceon)  # 아무것도 안 쓰면 기본값
+    use_pubmed = args.use_pubmed
+    
+    # 플랫폼 선택 유효성 검사
+    if not use_scienceon and not use_pubmed:
+        print("❌ 적어도 하나의 검색 플랫폼을 선택해야 합니다.")
+        return
+    
+    # 사용할 플랫폼 출력
+    platforms = []
+    if use_scienceon:
+        platforms.append("ScienceON")
+    if use_pubmed:
+        platforms.append("PubMed")
+    
+    print(f"🔍 검색 플랫폼: {', '.join(platforms)}")
+    
+    if args.use_vllm:
+        print(f"🤖 AI 모델: vLLM ({args.vllm_model})")
+    else:
+        print(f"🤖 AI 모델: Gemini")
     
     # API 키 가져오기
     try:
+        # pubmed API 키 및 이메일 가져오기
+        pubmed_api_key, pubmed_email = get_pubmed_credentials()
         if args.use_vllm:
+            
             # vLLM 사용
             system = SearchMetaSystem(
                 gemini_api_key=None,
                 use_vllm=True,
+                pubmed_api_key=pubmed_api_key,
+                pubmed_email=pubmed_email,
                 vllm_base_url=args.vllm_url,
                 vllm_model=args.vllm_model
             )
@@ -207,7 +262,11 @@ def main():
                 print("\n❌ 사용자가 취소했습니다.")
                 return
             
-            system = SearchMetaSystem(api_key)
+            system = SearchMetaSystem(
+                gemini_api_key=api_key,
+                pubmed_api_key=pubmed_api_key,
+                pubmed_email=pubmed_email
+          )
             
     except Exception as e:
         print(f"❌ 시스템 초기화 실패: {e}")
@@ -222,7 +281,7 @@ def main():
                 return
 
             query = args.args[0]
-            run_single_mode(system, query)
+            run_single_mode(system, query, use_pubmed)
             
         elif command == "batch":
             if len(args.args) < 1:
