@@ -15,5 +15,7 @@ src/data2/
 data2/
 # results/ 
 
-./results
+results
 
+#vllm models
+model_cache/

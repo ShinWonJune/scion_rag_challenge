@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  vllm-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/workspace/scion_rag_challenge:cached
+      - vllm-cache:/root/.cache
+      - huggingface-cache:/root/.cache/huggingface
+    ports:
+      - "8002:8000"  # vLLM API 서버
+      - "8888:8888"  # Jupyter (선택사항)
+    environment:
+      - CUDA_VISIBLE_DEVICES=0,1,2 #컨테이너 내부의 환경변수
+      - PYTHONPATH=/workspace/scion_rag_challenge/src:/workspace
+      - HF_HOME=/root/.cache/huggingface
+      - VLLM_USE_MODELSCOPE=false
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['3','4','5']
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+volumes:
+  vllm-cache:
+  huggingface-cache:

@@ -23,17 +23,30 @@ from scienceon_api_example import ScienceONAPIClient
 class SearchMetaSystem:
     """검색 메타데이터 시스템 - 통합 관리"""
     
-    def __init__(self, gemini_api_key: str, scienceon_credentials_path: str = "./configs/scienceon_api_credentials.json"):
+    def __init__(self, gemini_api_key: str = None, use_vllm: bool = False, 
+             vllm_base_url: str = "http://localhost:8000/v1", 
+             vllm_model: str = "openai/gpt-oss-120B",
+             scienceon_credentials_path: str = "./configs/scienceon_api_credentials.json"):
         """
         검색 메타데이터 시스템 초기화
         
         Args:
-            gemini_api_key: Gemini API 키
+            gemini_api_key: Gemini API 키 (use_vllm=False일 때 필수)
+            use_vllm: vLLM 사용 여부
+            vllm_base_url: vLLM 서버 URL
+            vllm_model: vLLM 모델명
             scienceon_credentials_path: ScienceON API 자격증명 파일 경로
         """
         # 설정 로드
         self.settings = Settings()
-        self.settings.set("gemini_api_key", gemini_api_key)
+        self.use_vllm = use_vllm
+        
+        if use_vllm:
+            self.settings.set("use_vllm", True)
+            self.settings.set("vllm_base_url", vllm_base_url)
+            self.settings.set("vllm_model", vllm_model)
+        else:
+            self.settings.set("gemini_api_key", gemini_api_key)
         
         # 로깅 설정
         self._setup_logging()
@@ -68,10 +81,14 @@ class SearchMetaSystem:
         
         # 키워드 추출기
         api_config = self.settings.get_api_config()
-        self.keyword_extractor = KeywordExtractor(
-            api_key=api_config["api_key"],
-            model_name=api_config["model"]
-        )
+        if self.use_vllm:
+            from core.vllm_keyword_extractor import VLLMKeywordExtractor
+            self.keyword_extractor = VLLMKeywordExtractor(
+                self.settings.get("vllm_base_url"),
+                self.settings.get("vllm_model")
+            )
+        else:
+            self.keyword_extractor = KeywordExtractor(self.settings.get("gemini_api_key"))
         
         # 문서 검색기
         self.document_searcher = DocumentSearcher(self.scienceon_client)

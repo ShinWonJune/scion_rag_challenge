@@ -1,0 +1,572 @@
+{
+  "batch_statistics": {
+    "total_queries": 50,
+    "successful_queries": 1,
+    "failed_queries": 49,
+    "success_rate": 2.0,
+    "total_documents_found": 20,
+    "avg_documents_per_query": 20.0,
+    "total_korean_keywords": 1,
+    "total_english_keywords": 0,
+    "avg_korean_keywords_per_query": 1.0,
+    "avg_english_keywords_per_query": 0.0,
+    "total_search_queries_generated": 0,
+    "avg_search_queries_per_query": 0.0,
+    "processing_timestamp": "2025-09-19T11:11:13.099796"
+  },
+  "results": [
+    {
+      "query": "How can the rationale and structure of the free electronic textbook outlining the essential mathematics for understanding AI in a one- or two-semester undergraduate course be summarized?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:08:54.960874"
+    },
+    {
+      "query": "How do artificial neural networks employ weight matrices and vector mappings to relate inputs and outputs in applied linguistics?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:08:57.784882"
+    },
+    {
+      "query": "What approach and results characterize the system that learns TurKontrol’s POMDP parameters from Mechanical Turk data to optimize iterative crowdsourced tasks?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:00.600371"
+    },
+    {
+      "query": "What are the key features of a sustainability-oriented corporate culture that shape the development and management of sustainable artificial intelligence?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:03.586954"
+    },
+    {
+      "query": "How can the main applications of machine learning methods for early diagnosis of maternal-fetal conditions and their ethical considerations be summarized?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:06.582412"
+    },
+    {
+      "question": "초등학교 수준에서 설명 가능한 인공지능 교육의 핵심 요소와 활용 방안을 어떻게 요약할 수 있나요?",
+      "status": "success",
+      "keywords": {
+        "korean": [
+          "한국어: 설명"
+        ],
+        "english": []
+      },
+      "search_queries": [
+        "한국어: 설명"
+      ],
+      "documents": [
+        {
+          "CN": "ATN0030140367",
+          "title": "한국어 설명 의문문의 간섭 효과",
+          "abstract": "In this paper, I will argue that Korean wh-words undergo focus movement at LF. The robust evidence for the argument is that Korean wh-words without focus block the focus movement. Although wh-words and indefinites manifest distinct interpretations and syntactic distributions it turns out that they are the same syntactic objects and that the difference between them is from a focus feature which includes focus movement of wh-words.",
+          "author": "박진희",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030140367&target=NART&cn=ATN0030140367"
+        },
+        {
+          "CN": "ATN0037488352",
+          "title": "학문 목적 한국어 쓰기 교재의 분석 연구: 설명 텍스트를 중심으로",
+          "abstract": "본고는 학문 목적의 쓰기 교재 내용 중 설명 텍스트의 구조 및 방식과 표지의 내용을 분석함으로써 학문 목적 학습자를 대상으로 하는 설명 텍스트의 교육 내용과 방향을 제언하는 데에 목적이 있다. 대학에서 요구하는 학문 목적의 작문 기술 방법 중 하나는 ‘설명’이다. 한국어 교육 분야의 쓰기 연구는 이미 ‘설명’에 대한 내용을 다루고 있으며, 연구 결과물도 끊임없이 쏟아지고 있다. 그러나 학문 목적의 쓰기 교재의 ‘설명 텍스트’에 대한 내용을 중점적으로 분석한 연구는 아직 부족한 실정이다.따라서 본고는 대학 기관에서 출간한 학문 목적 쓰기 교재 3권을 선정하였다. 교재의 내용 중에서 ‘설명 텍스트’를 중심으로 ‘설명 텍스트의 구조’, ‘설명 텍스트의 전개 방식’, ‘설명 텍스트의 표지’를 준거 삼아 비교 분석하였다. 그 결과 첫째, 설명 텍스트의 구조에 대해 보편적으로 활용 가능한 교수요목이 필요했다. 둘째, 학문 목적의 한국어 쓰기 교재와 내국인을 대상으로 하는 글쓰기 교재의 목표와 내용 범주에 있어서 큰 차이가 있었다. 셋째, 설명 텍스트의 전개 방식 중 쓰기 절차에 대한 내용의 보완이 필요했다. 넷째, 설명 텍스트의 표지에 대한 내용이 강화될 필요가 있었다. 다섯째, 정보 윤리에 대한 내용을 보완할 필요가 있었다. 본 연구를 통해 학문 목적의 한국어 학습자에게 설명 텍스트를 교수-학습하는 데에 도움이 되기를 바란다.",
+          "author": "형재연",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0037488352&target=NART&cn=ATN0037488352"
+        },
+        {
+          "CN": "NART111780875",
+          "title": "English Adverbial Hedge Expressions and Korean Endings: Grammar Explanation for English-Speaking Learners of Korean",
+          "abstract": "This study investigates how English adverbial hedge expressions such as &lsquo;probably&rsquo;, &lsquo;maybe&rsquo; and &lsquo;perhaps&rsquo; appear in Korean. Based on a contrastive analysis of spoken English and Korean corpus, this study aims at providing an explicit explanation for English-speaking learners of Korean. The three main findings from the analysis are as follows: Firstly, adverbial hedge expressions are much more commonly employed in English compared to Korean, and they often appear as endings without adverbs in Korean. Secondly, Korean textbooks tend to devote most of their attention to English verbal hedges, neglecting English adverbial hedges. Lastly, when English adverbial hedge expressions are used with deontic modalities such as &ldquo;maybe you should&rdquo;, Korean uses a negative interrogative sentence, which literally translates as &ldquo;don&rsquo;t you think you should&rdquo;.",
+          "author": "김영아",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART111780875&target=NART&cn=NART111780875"
+        },
+        {
+          "CN": "ATN0032313117",
+          "title": "한국어 학습자의 설명문 쓰기에 나타난 내용 조직 양상 분석",
+          "abstract": "The purpose of this study is to prepare specific teaching contents for Korean writing education by analyzing the content organizational patterns in Korean language learners' expository writing. To this end, the aspect of the content organization was largely divided into formal and semantic composition, and expository texts of foreign students were analyzed qualitatively. The analysis results are as follows.First, in the formal composition, the writings of Korean learners were often excessively divided into paragraphs. It was analyzed that this was because the related sub-information was not combined, but was mechanically divided. Second, as a result of the top-level structure analysis, about half of all analyzed texts with a three-stage structure were more than twice as many without an end than without the first. Third, as a result of examining the semantic composition of the middle part, a time order structure or a comparison-contrast structure was frequently used in addition to the sequence structure. The comparative-contrast structure was often compared with unnecessary information due to lack of predictive reader analysis, and the chronological structure was characterized by frequent exposure of personal experiences and impressions. In order to solve this problem, in Korean writing education, knowledge education on the concept of genre needs to be strengthened, and systematic education on the method of organizing contents seems to be necessary. In particular, there is a need for more emphasis on writing practice using the composition method of the beginning or the end and various semantic structures.This study is meaningful in that it specifically explores the structure of contents in Korean language learners' writings by dividing them into formal and semantic configurations.",
+          "author": "권태현",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0032313117&target=NART&cn=ATN0032313117"
+        },
+        {
+          "CN": "ATN0030162565",
+          "title": "한국어교육에서 복합구성의 영어설명 검토",
+          "abstract": "This paper is concerned with discussing how items such as word endings and complex compositions related with utilization of verbs are explained in English in teaching materials for Korean as a Foreign Language. Grammatical description should be made by first introducing basic grammar terms necessary to understand the grammatical system of Korean language to the learners and then using such terms to describe the grammar. If too academic or too analytical grammars or terms are presented even in the mother tongue of the learners, there would be many difficulties for the students to understand. In general, therefore, those terms which high school graduates can understand should be presented. For this, there are several principles of presentation that should be applied.    English explanation in teaching materials for Korean as a Foreign Language is a necessary part for the beginners. How they are to be translated into English is a matter of common interest to general linguists, Korean language scholars, and educators of Korean as a Foreign Language. If the English explanations so far have been made mainly centered on the teachers, they should be done from the perspective of the learners in the future.",
+          "author": "안주호",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030162565&target=NART&cn=ATN0030162565"
+        },
+        {
+          "CN": "DIKO0017197494",
+          "title": "한·중 출판 초급 한국어 교재의 문법 설명 및 연습문제 분석",
+          "abstract": "본 논문은 한국과 중국에서 출판된 초급 한국어 교재의 문법 설명과 연습 문제를 체계적으로 분석하고 비교하여 두 나라 교재의 문법 교육 설계상의 특징과 차이, 그리고 각각의 장단점을 탐구함으로써 중국 한국어 교재의 개선과 교수법 최적화를 위한 과학적인 참고 자료를 제공하는 것을 목적으로 한다. 연구 대상은 한국 출판 교재 8종(총 26권)과 중국 출판 교재 8종(총 15권)이며, 문법 설명과 연습 문제 설계를 중심으로 분석하였다.&amp;#xD; 문법 설명 측면에서는 기능과 의미, 사용 규칙, 변형과 결합, 예문, 일반적인 오류와 주의사항, 유사 문법 비교, 적용 상황 및 보충 설명의 8가지 분석 기준을 제시하였다. 분석 결과, 한국 교재는 실제 활용과 다양성을 강조하여 풍부한 예문과 상황을 통해 학습자가 문법을 스스로 이해할 수 있도록 유도하는 방식인 반면, 중국 교재는 체계성과 기초성에 중점을 두어 직접적인 문법 규칙 설명을 제공함으로써 초급 학습자에게 적합하나 실제 활용 상황에 대한 설명은 부족한 것으로 나타났다.&amp;#xD; 문법 연습 문제 설계에서는 기계적 연습, 유의적 연습, 상호작용 연습의 세 가지 유형으로 분류하여 분석하였다. 그 결과, 한국 교재는 연습 문제의 유형이 다양하고 학습자의 실제 언어 적용 능력을 향상시키는 데 중점을 둔 반면, 중국 교재는 기계적 연습 위주로 구성되어 기초 지식 습득에 강점을 보이지만 상호작용 및 맥락 기반 연습은 부족한 것으로 나타났다.&amp;#xD; 본 연구는 두 나라 교재의 비교를 통해 한국 교재가 실용성과 과제 다양성 측면에서 강점을 가지며 일정 수준 이상의 학습자에게 적합하다는 점을 확인하였다. 반면, 중국 교재는 구조적이고 체계적인 기초 문법 교육에 적합하여 초보 학습자에게 적합하다는 점을 밝혔다. 또한 연구는 한국 교재가 언어 사용에, 중국 교재가 언어 학습에 더 초점을 맞추고 있음을 보여준다. 본 논문은 연구 과정에서 표본의 한정성, 연구 방법의 단일성, 그리고 연습 문제의 교육 효과에 대한 실증 검증 부족 등 몇 가지 한계를 지적하였으며, 향후 연구에서는 표본 확대, 수업 실험 도입, 학습자 피드백 분석 등을 통해 연구 결론을 더욱 풍부하게 검증하고 한국어 교재 개발과 교육에 실질적인 기여를 할 수 있을 것으로 기대한다.",
+          "author": "왕단니",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0017197494&target=NART&cn=DIKO0017197494"
+        },
+        {
+          "CN": "DIKO0014138500",
+          "title": "중국어권 한국어 학습자 설명 담화의 관계적 응집성 연구",
+          "abstract": "담화를 구성하는 각각의 요소는 모두 유의미한 연결 관계를 가져 전체 담화의 응집성 형성에 기여한다. 그러나 이러한 관계가 담화 표층에서 언어 표지로 쉽게 관찰되는 것이 아니어서 무엇이 응집성인지를 한국어 학습자들에게 설명하기란 쉽지 않다. 이러한 한계로 지금까지의 한국어 교육에서는 응집성 자체에 주목한 연구보다는 담화 표층의 지시적 응집에 대한 연구가 주를 이루었다. &amp;#xD; 그러나 보다 완성도 높은 담화를 산출하기 위해서는 표층의 지시적 응집 관계를 잘 나타내는 것만으로는 한계가 있다. 그러므로 한국어 학습자를 대상으로 하는 담화 교육에서도 담화의 핵심적인 특성인 응집성에 관한 교육이 반드시 이루어져야 한다. 본 연구는 이러한 관점을 바탕으로 설명적 문어 담화를 대상으로 중국어권 한국어 학습자들이 사용한 관계적 응집성의 종류를 고찰하고, 관계적 응집성의 형성 기제를 살펴보는 것을 목적으로 한다. 본 연구의 구성과 내용은 다음과 같다.&amp;#xD; Ⅰ장에서는 본 연구의 필요성과 목적을 밝히고 응집성에 관한 선행연구와 설명 담화에 관한 선행연구를 검토하였다. Ⅱ장에서는 본 연구의 이론적 배경인 관계적 응집성에 관하여 고찰하였다. 구체적으로는 관계적 응집성의 의미, 관계적 응집성의 분류 기준과 종류, 관계적 응집성 형성 양상을 살펴보았다. &amp;#xD; ‘관계적 응집성’은 ‘지시적 응집성’과 구별되는 개념으로 ‘원인-결과’, ‘병렬’ 등과 같이 담화 조각들이 의미적&amp;#x2027;화용적 차원에서 연결되어 이루어지는 관계에서 비롯된 것을 의미한다. 관계적 응집성의 종류로는 크게 유사 관계, 인과 관계, 근접 관계로 나눌 수 있다. ‘유사 관계’는 연결의 대상이 되는 내용 혹은 개념 간의 공통점과 차이점으로 인해 응집성이 형성된 경우를 의미한다. 이러한 관계를 갖는 관계적 응집성의 종류는 ‘병렬 관계, 대조 관계, 예시 관계, 일반화 관계, 예외 관계, 상세화 관계’가 있다. &amp;#xD; 인과 관계는 원인과 결과의 관계를 뜻하는 것으로 담화 조각이 가지는 본래의 의미 이외에도 각각의 명제가 발생시킬 수 있는 사건과의 연결 고리에 대한 추론의 과정이 필요하다. 세부 종류로는 원인-결과 관계, 설명 관계, 어긋난 예측 관계, 부인 관계가 있다. 마지막으로 근접 관계는 특정한 일이 벌어지는 때(occasion)를 공유하고 그러한 상황 자체가 어떤 일이 발생하는 계기에 영향을 미쳐 담화 조각 간에 연결 관계가 성립되는 경우를 가리킨다.&amp;#xD; 관계적 응집성의 형성 기제로 ‘언어적 맥락, 상황적 맥락, 사회&amp;#x2024;문화적 맥락’을 살펴보았다. ‘언어적 맥락’은 담화 조각이 갖는 의미 자질 간의 연결 관계로 응집성이 형성되는 것을 가리킨다. 의미적 측면에서 관계적 응집성이 형성되는 경우는 가장 기본적이면서도 일반적인 방식이라 할 수 있으며, 이는 언어적 맥락에 의한 담화 내부의 의미적 연결이 이루어진 경우를 말한다. ‘상황적 맥락’은 담화 조각이 공유하는 상황적 맥락으로 인해 응집성이 형성되는 것이며, ‘사회&amp;#x2024;문화적 맥락’은 담화 조각이 내포하는 사회&amp;#x2024;문화적 배경 지식, 가치관, 사회적 윤리 규범 등의 일반적 세계 지식이 공유하는 맥락에 의해 응집성이 형성되는 것을 뜻한다.&amp;#xD; Ⅲ장에서는 연구문제를 해결하기 위한 연구 방법을 고찰하였다. 연구 절차, 연구 참가자, 자료 수집 방법과 도구, 자료 분석 방법으로 이루어졌다. 연구는 2급, 4급, 6급의 중국어권 한국어 학습자 55명이 서울에 대해 설명하는 글쓰기를 분석하는 것으로 이루어졌다. 그리고 한국어 학습자 자료와 비교하기 위한 한국어 모어 화자의 자료로 대표성을 갖는 고등학교 국어과 교과서 3종의 설명 담화를 선정하여 말뭉치를 구축하였다. Ⅳ장과 Ⅴ장에서는 중국어권 한국어 학습자들의 자료와 한국어 모어 화자 자료를 분석한 결과를 담았다. &amp;#xD; Ⅳ장에서는 설명 담화의 관계적 응집성 사용 종류를 분석한 결과를 다루었는데, 설명 담화에서는 유사 관계가 인과 관계보다 압도적으로 많이 사용되었으며, 하위분류로는 병렬 관계, 상세화 관계, 예시 관계의 순으로 사용되었다. 모어 화자의 자료도 이와 비슷한 결과가 나왔으나 한국어 학습자들에 비해서는 상세화 관계가 더 많이 사용되었다. 한국어 학습자들의 숙달도에 따라 초급, 중급, 고급의 자료도 각각 살펴보았는데, 그 결과 또한 병렬 관계가 가장 많이 사용된 것으로 나타났다. 그러나 숙달도가 높아지면서 상세화 관계를 사용하는 빈도가 높아졌으며, 초급과 중급에서 나타나지 않았던 부인 관계와 근접 관계가 사용된 특징을 가졌다.&amp;#xD; Ⅴ장에서는 설명 담화의 관계적 응집성 형성 기제를 분석하였다. 학습자 담화와 모어 화자 담화를 언어적 맥락, 상황적 맥락, 사회&amp;#x2024;문화적 맥락으로 구분하여 살펴보았다. 그 결과 언어적 맥락이 가장 많이 나타났고, 그 다음이 사회&amp;#x2024;문화적 맥락, 상황적 맥락 순으로 나타났다. 한국어 학습자의 숙달도가 높아지면서 사회&amp;#x2024;문화적 맥락에 의해 관계적 응집성이 형성되는 비율이 높아졌다.&amp;#xD; 이와 같은 분석 결과를 통해 설명적 문어 담화에서 빈번하게 사용되는 특정한 관계적 응집성의 종류가 있다는 것을 관계적 응집성 사용 종류 분석 결과를 통해 알 수 있었다. 그리고 언어적 맥락에 의한 관계적 응집성 형성이 가장 많이 나타나지만, 사회&amp;#x2024;문화적 맥락으로의 관계적 응집성 형성되는 경우도 많다는 것을 발견할 수 있었다. 학습자들도 숙달도가 높아지면서 사회&amp;#x2024;문화적 맥락으로 응집성을 형성해 나가는 발달 양상을 보이고 있었다. 이러한 연구 결과는 담화의 핵심 요소인 응집성에 관한 분석을 체계적으로 시도한 점에서 의의를 가지며, 무엇보다 학습자들의 담화 능력 향상에 기여할 수 있는 관계적 응집성의 특성과 학습자들의 발달 양상을 밝힌 점에서 의의를 가진다.",
+          "author": "이보라미",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014138500&target=NART&cn=DIKO0014138500"
+        },
+        {
+          "CN": "DIKO0012948618",
+          "title": "장르 중심 한국어 설명문 쓰기 교육 연구",
+          "abstract": "",
+          "author": "박주영",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0012948618&target=NART&cn=DIKO0012948618"
+        },
+        {
+          "CN": "ATN0030022789",
+          "title": "영어 수동문의 한국어 번역에 대한 기능문법적 설명",
+          "abstract": "The purpose of this study is to discuss Korean translations of English passives and to provide functional explanations for each type of them. We analyze 160 passives from Rowling's (1998) Harry Potter and the Sorcerer's Stone and Meyer's (2007) Twilight and their Korean versions. The English passives are shown to be translated into Korean passives (19.4%), actives (68.7%) and paraphrastical expressions (11.9%). Korean actives are classified into 5 subtypes: intransitives (49.1%), transitives (40.0%), adjectives (5.5%), nouns (4.5%), and adverbs (0.9%). This study accounts for the subtypes in terms of functional concepts such as topicality, agentitivity, animacy, stativity, and lexicalization.",
+          "author": "김은일;안경록;정연창;",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030022789&target=NART&cn=ATN0030022789"
+        },
+        {
+          "CN": "NART69867855",
+          "title": "부정초점과 단순초점으로 설명한 한국어 NPI 자료의 문제",
+          "abstract": "<P>&amp;nbsp;&amp;nbsp;Many researchers have argued that some kind of intervention constraint applies for the Korean NPI and the licensing negation at LF. Some even argued that this intervention constraint actually applies at S-structure. I find the intervention constraint does work at LF, but it alone cannot adequately explain some data. This paper shows that some data, not previously taken care of, can be explained away if we introduce the concepts of two different foci: negation target focus and simple focus, and hypothesize the location of NPI to be on Spec/NegP.</P>",
+          "author": "김정란",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART69867855&target=NART&cn=NART69867855"
+        },
+        {
+          "CN": "DIKO0011388432",
+          "title": "어휘 설명 시 한국어 교사의 메타언어 분석 : 심리어휘 및 개념어휘의 설명을 중심으로",
+          "abstract": "본 연구는 어휘 설명 시 한국어 교사가 사용하는 메타언어의 유형을 분류하고 그 기능을 밝혀 어휘 설명 메타언어의 원리를 밝히는 것을 목적으로 한다.현재 한국어 교실에서는 다양한 외국인 학습자들이 한 학급에 모여 목표어인 한국어를, 한국어를 매개로 하여 수업을 하고 있다. 이러한 교실 상황에서는 학습 내용(목표어)을 전달하는 언어(매개어) 또한 한국어이기 때문에 학습자들은 교사가 전달하는 특정 언어를 이해하지 못하거나 오해하는 경우도 있다.본 연구에서는 이러한 교사의 ‘언어를 설명하기 위해 사용하는 언어’를 메타언어로 정의하고 중급 한국어 교실 상황에서 한국어 교사가 어휘를 설명하기 위해 사용하는 메타언어를 분석하였다.1장에서는 연구의 필요성과 목적을 기술하고 한국어교육에서의 어휘 교육 선행 연구와 교사말 관련 선행 연구, 메타언어의 선행 연구를 검토하였다.2장에서는 외국인말, 교사말의 개념과 특성을 정리하고 언어교육에서의 메타언어의 개념을 정립하였다. 또한 교사말과 메타언어의 차이를 밝히고, 교사의 어휘 설명의 원리를 밝힘으로써 연구의 이론적 배경을 구성하였다.3장에서는 연구 대상 어휘, 교사?학습자 선정, 자료의 수집과 분석의 방법에 관해 기술하였다.4장에서는 3장의 연구 방법을 통해 얻어진 자료를 분석하여 한국어 교사가 어휘 설명을 할 때 사용하는 메타언어를 선수학습 확인, 대상어 관련 학습자 지식 확인, 대상어 관련 학습자 정보 확인, 정보 제공, 사전적 정의, 비교-대조, 유의, 속성 나열, 상황 제공, 정의 확인의 10가지로 분류하고 각 유형의 구체적인 메타언어 내용과 기능을 제시하였다.5장에서는 연구 대상 어휘 20개에 대해 교사가 어휘 설명 시에 주로 사용하는 메타언어 유형 빈도와 어휘 설명의 예를 제시하고 각 메타언어 유형을 어휘 설명의 원리에 따라 분류하였다.한국어 교사는 어휘 교육 시 어휘의 속성, 사용 목적, 학습자의 특성 등을 고려하여 가장 효율적인 방법으로 어휘 설명을 하기 위해 메타언어를 선택적으로 사용한다. 먼저 교사는 자신의 인지활동을 통해 어휘의 속성을 파악하고 그 어휘의 속성에 따라 가장 쉽고 정확하게 설명할 수 있는 어휘 설명의 방법을 선택한다. 그 후 일반화의 원리에 따라 보편적인 사고 과정을 통한 어휘 설명을 제공하고, 학습자의 변인을 고려하여 개인화된 설명을 한다. 이러한 어휘 설명의 궁극적인 목적은 어휘 학습의 유의미성을 획득하기 위한 것이다.본 연구는 현재의 한국어 어휘 이론 연구와 어휘 교육 방안 연구를 이어줄 수 있는 실질적인 어휘 설명의 교사말을 밝힌 연구라는 점에서 그 의의를 찾을 수 있다.",
+          "author": "장혜진",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0011388432&target=NART&cn=DIKO0011388432"
+        },
+        {
+          "CN": "ATN0039098000",
+          "title": "한국어 중급 교재 문법 설명에서의 화용 정보 기술에 대한 연구",
+          "abstract": "This study is to examine how the pragmatic information of Korean grammar is described in the textbooks for the intermediate Korean learners and suggest a possible way to describe the pragmatic information in grammar explanations to improve the communicative competence for the learners. Chapter 2 reviewed the previous research on pragmatic information description for Korean learners and looked into the definition and the types of pragmatic information needed for the learners. Chapter 3 discussed the methods and the procedures for the research. Chapter 4 analyzes the content and the format on Korean grammar in the textbooks focusing on how the pragmatic information is given and what the problems are to discuss. Lastly, in chapter 5, it is suggested that the pragmatic information which each grammar includes in grammar explanations should be given in a way of reducing an pragmatic errors for the learners to communicate in Korean.",
+          "author": "정여훈;박유현;",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0039098000&target=NART&cn=ATN0039098000"
+        },
+        {
+          "CN": "DIKO0011274254",
+          "title": "한국어 수업의 문법 설명 언어에 대한 연구 : 중국어권 학습자 대상 한국어 수업을 중심으로",
+          "abstract": "",
+          "author": "Liu, Na",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0011274254&target=NART&cn=DIKO0011274254"
+        },
+        {
+          "CN": "DIKO0016680588",
+          "title": "한국어 쓰기 교재 분석 연구 : 설명문 쓰기를 중심으로",
+          "abstract": "본 연구의 목적은 한국어 학습자들이 가장 어려워하는 쓰기 기능의 향상을 위해 설명문을 활용하여 설명문 쓰기 개선 방안을 모색하는 것이었다. 연구 방법으로 11권의 한국어 쓰기 교재에서 쓰기 기능과 설명문을 분류하여 32개 단원의 설명문을 분석하였으며 연구 결과 및 개선 방안은 다음과 같았다. 첫째, 설명문 쓰기 과정은 쓰기 전 단계에서 아이디어를 모으고 내용을 구성하는 과정과 쓰기 본 단계에서 문장 및 단락 쓰기 과정을 모든 단원에서 제공하였으나 쓰기 후 단계에서 검토하고 수정하는 과정은 32개 단원 중 5개 단원은 구성하지 않아 미흡하였다. 둘째, 설명문 쓰기 활동은 내용 측면에서 일상과 학술적 쓰기 주제를 제공하였고 내용 생성과 구성을 위해 모든 단원에서 내용 도표나 개요표 등을 제공하여 긍정적인 결과를 나타냈다. 표현 측면에서 설명 방법(중복)으로 대조(8개 단원)&amp;gt;비교(7개 단원)&amp;gt;분류(6개 단원)&amp;gt;정의(5개 단원)&amp;gt;예시(4개 단원)&amp;gt;과정 분석(3개 단원), 내용 분석(3개 단원) 순으로 많이 사용하였고 묘사, 서사, 원인과 결과, 자료 보고 설명문 쓰기는 각각 1개 단원에서 사용하였다. 그러나 표현 측면에서 설명 방법에 대한 표현 학습 활동은 32개 단원 중 9개 단원에서 제공하지 않아 부족하였다. 셋째, 설명문 쓰기 개선 방안은 설명문 쓰기 과정에서 쓰기 후 단계와 설명문 쓰기 활동에서 표현 측면을 보완하는 것으로 3급 설명문 쓰기 지도 예시안을 제시하였고 도표를 활용하여 비교와 대조, 분류, 정의, 예시, 과정 분석, 내용 분석, 원인과 결과에 대한 표현 학습 활동자료를 구안하였다. 본 연구의 의의는 공통 한국어 교재와 교양 한국어 교재를 폭넓게 선정하여 설명문을 분석하였고 이를 토대로 한국어 학습자의 설명문 쓰기 개선 방안을 구체적으로 제안했다는 점이다.",
+          "author": "정예경",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0016680588&target=NART&cn=DIKO0016680588"
+        },
+        {
+          "CN": "ATN0030093233",
+          "title": "한국어 ‘되다’ 구문의 영어 번역문에 대한 기능문법적 설명",
+          "abstract": "The purpose of this study is to provide a functional account of the English translations of so-called Korean ‘toyta’ passives. Previous studies have shown that ‘toyta’ passives have three different functions: passive, external cause, and non-volitional. Our analysis of the Korean-English parallel corpus shows that ‘toyta’ passives are translated into passives (48.4%) and intransitive/transitive actives (51.6%). It is argued that English does not have a grammatical device to systematically encode ‘semantic defocusing’ such as ‘volitionality defocusing’ and ‘external cause defocusing’ in such a way that Korean ‘toyta’ passives do, and that the two construction types of English translations are functionally motivated by discourse-pragmatic factors such as topicality of participants and discourse markers. This study also shows how human agents are focused in the English translations in terms of Ikegami's (1991) typology",
+          "author": "김은일;정연창;",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030093233&target=NART&cn=ATN0030093233"
+        },
+        {
+          "CN": "DIKO0012716456",
+          "title": "한국어 초급교재의 조사 설명 방식에 대하여",
+          "abstract": "This study aims to look at the representation method of postpositional particles in an elementary textbook of Korean language for foreign learners and seek for an appropriate representation order of postpositional particles and an appropriate configuration of contents. Accordingly, this study selects, compares, and reviews four kinds of textbooks used in the field of Korean language lessons in order to discuss the representation method of postpositional particles. The configuration of this work is as follows: Chapter I examines the previous studies on the selection criteria and research/study for Korean Language textbooks. Chapter II looks at the concept of ‘Korean Grammar’, its representation principle, and its principle of description method. We selected the following four things based on the description principle of Korean Grammar. First, the educational contents should be simplified properly so that they can be useful for education. Second, the difference and similarity between grammar items that have similar meanings and functions. Third, the syntactic restrictions and combination styles of grammar items should be presented. Fourth, the descriptive contents such as explanation, use of terms, etc should be made clear. Based on these things above, this study examined the description method and contents of postpositional particles shown in every textbook. It also looked at the functions, formal characteristics and system of postpositional particles in Korean language. Chapter III, IV, and V compares the representation and explanation method of case-postposition, auxiliary postposition, and conjunctive postposition in each textbook. When comparing the representation method of postpositional particles shown in each textbook, it was found that there was a slight difference in the representation order of postpositional particles and the words related to the postpositional particles. This suggests that the grammar of postpositional particles is explained differently according to the characteristics of each textbook and its teaching method. In particular, descriptive case postposition ‘is(i.e, 이다 in Korean)’ is explained in every textbook centering on its function that it is utilized as 'predicate' in combination with preceding noun. This is inconsistent with the explanation of school grammar. Rather, it takes up the attitude of explaining it closer to academic grammar. This is one of the biggest differences between school grammar and Korean language grammar. In addition, there is a slight difference in the presentation order of adverb-case postposition and its explanation method in every textbook, which seems to continue to be solved by standardizing the grammar category to be learned essentially in an elementary textbook. In addition, even in the educational method of post-positional particles, it will be more effective to present sentences with predicates that are used together with postpositional particles rather than by presenting the postpositional particles alone. It is also expected that learners are able to learn easily about 'postpositional particles' in Korean language if the postpositional particles that are used most often in the use of Korean language are explained and analyzed systematically. The information presented in the above is considered to have revealed the problems shown in the explanation of grammar of postpositional particles more clearly. In the future, based on this data, more in-depth studies are expected to be made on the education of postpositional particles in Korean language.",
+          "author": "장미영",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0012716456&target=NART&cn=DIKO0012716456"
+        },
+        {
+          "CN": "NART103906543",
+          "title": "A study on the pronunciation explanation in the recently published integrated Korean textbook",
+          "abstract": "",
+          "author": "Ahn, Joo-Hoh",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART103906543&target=NART&cn=NART103906543"
+        },
+        {
+          "CN": "ATN0012873572",
+          "title": "한국어교재에서 나타난 명사 관련 문법 형태의 영어설명에 대한 고찰",
+          "abstract": "Grammar learning can enhance learner's proficiency and accuracy, and facilitate the internalization of its syntactic system, thus developing the target language fluency in all language level learners. This study examined how to explain grammar morphemes in relation to noun in English for KFL's leaners. To this end, this study surveyed grammar terms and the way to explain Korean particles and suffixes in the main KFL's Text books. In addition to, educational grammar for KFL was classified into educational grammar for teachers and educational grammar for learners. As for educational grammar for learners, grammar terms and the way of explaining should be simple and consistent to avoid confusing. Grammar instruction based on discourse can provide opportunities of demonstrating appropriate uses of particles and suffixes.",
+          "author": "안주호",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0012873572&target=NART&cn=ATN0012873572"
+        },
+        {
+          "CN": "ATN0005077678",
+          "title": "영어 완화 표지와 한국어 종결어미 비교-영어권 학습자를 위한 문법 설명-",
+          "abstract": "This study investigates how common English hedge expressions such as ‘I think’ and ‘I guess’ appear in Korean, with the aim of providing explicit explanation for English-speaking leaners of Korean. Based on a contrastive analysis of spoken English and Korean corpus, this study argues three points: Firstly, ‘I guess’ appears with a wider variety of modalities in Korean than ‘I think’. Secondly, this study has found that Korean textbooks contain inappropriate use of registers regarding the English translations of ‘-geot -gat-’: although these markers are used in spoken Korean, they were translated into written English. Therefore, this study suggests that ‘-geot -gat-’ be translated into ‘I think’ in spoken English, and into ‘it seems’ in the case of written English and narratives. Lastly, the contrastive analysis has shown that when ‘I think’ is used with deontic modalities such as ‘I think I have to’, Korean use ‘-a-ya-get-’: the use of hedge marker ‘I think’ with ‘I have to’, which shows obligation or speaker’s volition turns the deontic modalities into expressions of speaker’s opinion.(Monash University)",
+          "author": "김영아",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0005077678&target=NART&cn=ATN0005077678"
+        },
+        {
+          "CN": "DIKO0011782384",
+          "title": "설명텍스트 분석을 활용한 한국어 쓰기 교육 연구",
+          "abstract": "이 연구의 목적은 학습자가 완결되고 통일성 있는 텍스트를 잘 쓸 수 있도록 설명텍스트에서 나타나는 구조와 구조를 연결하는 표지 기능을 분석하여, 쓰기 능력 향상을 위한 교수-학습 방법을 제시하는 것이다. 이를 위하여 먼저, 한국어 교육현장에서 가장 많이 활용하는 설명텍스트를 일상용 설명텍스트와 교육용 설명텍스트로 나누어 자료를 구축하였다. 그리고 두 종류 자료에서 텍스트를 구성하는 최상위구조와 내용을 연결하여 구조를 만드는 표지를 비교 분석하였다. 그리고 이 결과를 바탕으로 한국어 학습자의 쓰기 교육에서 활용할 수 있도록 텍스트의 특징을 중심으로 텍스트 요인과 장르 중심 쓰기 (Genere-based writing) 교수-학습 모형을 구성하였다. 각 장의 내용을 정리하면 다음과 같다. 먼저 1장에서는 이 연구의 목적, 연구 대상 및 방법, 이 연구의 필요성을 구체적으로 제시하였다. 이 연구의 대상은 일상생활에서 자주 접하는 일상용 설명텍스트와 교육 기관에서 학습하는 교육용 설명텍스트이다. 일상용 설명텍스트는 설명문, 교재, 관광안내서, 약품설명서 등 다양한 자료에서 교육적 활용도가 높은 내용을 선별하여 21편 15,668어절을 자료로 구축하였다. 설명텍스트는 국어 교과서 7편 8,286어절, 한국어 교재 43편 8,076어절을 자료로 구축하여 총 32,030어절을 분석하였다. 2장에서는 분석의 틀을 세우기 위하여 텍스트 언어학과 쓰기 교육의 이론적인 배경을 정리하면서 연구 방법을 정립하였고, 분석 결과를 활용할 수 있도록 다양한 쓰기 교육의 목표, 쓰기 교육 개발 원리, 쓰기 교육의 단계를 살펴보았다. 3장에서는 텍스트 언어학의 방법으로 구축한 자료를 미시구조, 거시구조, 최상위구조의 세 층위에서 분석한다. 미시구조에서 분석하는 표지는 명제, 문장 뿐 아니라 내용 단락, 의미 단락 등 다양한 층위에서 구조를 결속시켜 주는 표지를 ‘나열, 강조, 전환, 인과, 예시-정의, 대조-비교, 포괄-분류’의 일곱 가지 구조를 설정하고 일상용 설명텍스트, 교육용 설명텍스트 자료를 비교 분석하였다. 거시구조는 미시구조에서 분석한 표지를 바탕으로 쓰기 교육의 전략으로 제시할 수 있는 적합한 도식을 구성하여 구체적인 정보와 활용 방안을 제시해 보았다. 최상위구조에서는 미시구조의 분석 결과를 바탕으로 텍스트의 전체 구성을 분석하였다. 3장의 분석 결과를 바탕으로 쓰기 교육에 활용할 수 있는 설명텍스트의 구조 정보를 구축하였다. 4장에서는 3장의 설명텍스트 분석 결과를 바탕으로 학습자의 언어 수준을 반영하여 쓰기 교육에 활용할 수 있는 쓰기 교육의 목표, 원리, 교육의 단계를 논의하였다. 5장에서는 실제 한국어 쓰기 교육을 모형으로 상위 단계로 갈수록 점점 복잡해지고 세밀해지는 기능을 교수-학습할 수 있도록 구체적으로 제시하였다. 6장에서는 모든 분석 결과를 정리하였다. 이 연구에서 제시한 분석 방법으로 설득텍스트, 정서를 표현하는 문학의 텍스트, 사회적 의사소통을 하는 편지·이메일 등의 다양한 유형의 텍스트 분석 연구가 추가 된다면 쓰기 교육에 새로운 목표를 제시할 수 있으리라고 본다. 또한 텍스트의 유형별 형식과 구조를 분석한 결과는 쓰기 교육 뿐 아니라 읽기나 말하기의 분야에서도 효과적으로 활용할 수 있을 것이다.",
+          "author": "양태영",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0011782384&target=NART&cn=DIKO0011782384"
+        }
+      ],
+      "total_documents_found": 20,
+      "document_count": 20,
+      "search_timestamp": "2025-09-19T11:09:09.995268",
+      "execution_mode": "batch"
+    },
+    {
+      "query": "생성형 AI 콘텐츠의 가치 유형별 소비자 인식과 AI 사용 공개에 대한 인식 특성을 어떻게 요약할 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:12.747975"
+    },
+    {
+      "query": "항공 분야에 적용된 인공지능의 기본 개념과 산업적 의미, 직면 과제를 간략하게 정리할 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:15.243990"
+    },
+    {
+      "query": "구성주의 관점에서 인공지능 연구가 확장한 지능 이해의 지평과 주요 기술 동향을 어떻게 요약할 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:18.011797"
+    },
+    {
+      "query": "컴퓨터과학자들이 제안한 인공지능 정의에 내재된 지능, 뇌, 그리고 컴퓨터 모의 사이의 논쟁적 쟁점을 어떻게 요약할 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:20.952463"
+    },
+    {
+      "query": "How would you summarize the proposed enabling framework for achieving the second Sustainable Development Goal, emphasizing the role of data sharing and near real-time analytics?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:23.524261"
+    },
+    {
+      "query": "Can you outline the main advances and challenges in applying artificial intelligence and Big Data to medical imaging in neurology?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:26.187389"
+    },
+    {
+      "query": "What is the primary argument regarding the environmental impact of Big Data initiatives and the ethical considerations tied to data’s material presence?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:28.756558"
+    },
+    {
+      "query": "How does the content describe the combination of phenomenological and mechanistic approaches through Big Data analytics to support personalized healthcare?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:31.365842"
+    },
+    {
+      "query": "What are the key findings of the socio-technical evaluation on Big Data developmental processes and the factors influencing user adoption?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:34.268631"
+    },
+    {
+      "query": "Big Data를 이용한 Warehouse Management System 모델에서 제시된 핵심 개념과 방향을 요약해 주시겠습니까?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:37.121757"
+    },
+    {
+      "query": "DTG 실 주행데이터와 공간정보를 활용한 연료소모량 추정 모델 SBiFEM의 핵심 구성 요소를 요약해 주세요.",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:40.260045"
+    },
+    {
+      "query": "빅데이터 처리 과정별 위험요인 유형과 우선순위를 간략하게 요약해 주시겠습니까?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:43.571274"
+    },
+    {
+      "query": "패키징 분야에서의 빅데이터 분석 기법과 소비자 인식 분석 방안을 요약해 주세요.",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:46.170838"
+    },
+    {
+      "query": "제조 품질 개선을 위해 제안된 식스 시그마 기반 Big Data 활용 방법의 주요 절차를 요약해 주시겠습니까?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:48.802125"
+    },
+    {
+      "query": "Could you summarize how deep learning techniques are envisioned to enhance radar imaging and the main challenges and proposed network architecture discussed?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:51.521544"
+    },
+    {
+      "query": "Can you provide a concise overview of the comparison between deep learning and deep reinforcement learning for complex image analysis, highlighting their strengths and weaknesses?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:54.204176"
+    },
+    {
+      "query": "Could you briefly summarize the methodology and results of using CNN, LSTM, and SVM combinations for noninvasive diabetes detection based on HRV signals?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:56.825390"
+    },
+    {
+      "query": "Can you outline the key deep learning and machine learning models evaluated for electricity demand prediction and their comparative performance in terms of MSE and MAPE?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:09:59.549858"
+    },
+    {
+      "query": "Can you summarize the main findings from the topic modeling analysis of deep learning research trends over the past ten years, including country-specific differences?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:02.313765"
+    },
+    {
+      "query": "클라우드 컴퓨팅 환경에서 오픈소스 기반 딥 러닝 프레임워크들 간의 성능 비교 결과와 그 의의를 간결하게 정리해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:04.997248"
+    },
+    {
+      "query": "DC 모터 제어 시스템에 딥 러닝 기반 제어기를 적용한 방법과 PID 제어기와의 성능 비교 결과를 요약해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:07.615450"
+    },
+    {
+      "query": "DBN 기반 딥 러닝을 이용한 기업부도 예측과 기존 SVM 방법 간의 성능 차이, 특히 부도기업 예측 민감도 향상 결과를 간단히 정리해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:10.338332"
+    },
+    {
+      "query": "비정형 리뷰 데이터를 활용해 고객 평점을 예측하기 위해 설계된 딥 러닝 모델 구조와 주요 실험 결과(정확도·출력 카테고리)를 요약해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:13.402236"
+    },
+    {
+      "query": "Go 게임에 적용된 심층 학습 기술의 핵심 아이디어와 제안된 CNN 레이어 구성, 실험 비교 결과를 간결하게 정리해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:16.162755"
+    },
+    {
+      "query": "How would you concisely summarize the strategic landscape and major industry examples that characterize IT convergence developments in Korea?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:19.107906"
+    },
+    {
+      "query": "Can you provide a brief synthesis of the performance evaluation criteria and standardization framework proposed for u-IT convergence devices?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:21.611271"
+    },
+    {
+      "query": "How would you distill the key design elements and convergence concepts of an IT/OT-based advanced distribution management system?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:24.403812"
+    },
+    {
+      "query": "Could you outline the principal concerns IT companies face in defense-related IT convergence and the proposed solutions for cost estimation and governance?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:27.698335"
+    },
+    {
+      "query": "How can you succinctly capture the factors that shape consumer purchase attitudes toward IT-based convergence products and their implications for competitiveness?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:30.325623"
+    },
+    {
+      "query": "한국 IT융합 신산업 역량강화요인과 이를 도출하기 위한 연구 결과를 간결하게 요약해 주시겠습니까?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:32.855803"
+    },
+    {
+      "query": "IT와 BT 융합 기술의 특성과 특허 분석 결과를 바탕으로 융합 강도와 협력 네트워크를 요약해 주세요.",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:35.607609"
+    },
+    {
+      "query": "스마트 농업 분야에서 저탄소 녹색산업 정책을 지원하는 IT 융합 기술 적용 사례와 효과를 요약해 주시겠습니까?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:38.302169"
+    },
+    {
+      "query": "국방 IT융합 비즈니스 모델 유형과 핵심 프로세스를 간략히 정리해 주세요.",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:41.235768"
+    },
+    {
+      "query": "AHP 방법론을 이용한 에너지-IT 융합기술 도출 과정과 연구 성과를 압축적으로 알려주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:44.280925"
+    },
+    {
+      "query": "How would you concisely summarize the key findings on using machine learning classifiers combined with molecular docking to predict cytochrome P450 ligand interactions?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:47.535568"
+    },
+    {
+      "query": "Could you outline the main points about the role of large-scale machine learning in bridging database systems and commercial applications?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:50.534089"
+    },
+    {
+      "query": "What are the core contributions of spatial and temporal adaptation techniques in machine learning–based scheduling knowledge acquisition?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:53.416208"
+    },
+    {
+      "query": "How does the audiovisual speech recognition approach integrate hidden Markov models and neural networks to achieve robustness in noisy environments?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:55.921573"
+    },
+    {
+      "query": "What is the essence of applying various machine and deep learning approaches to pharmacogenomics research for antidepressant treatment prediction?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:10:58.522126"
+    },
+    {
+      "query": "Laplacian 변형 나이브 베이즈, 의사결정나무, 서포트 벡터 머신을 활용한 A₃ 아데노신 수용체 조절제 연구의 핵심 성과를 간결하게 정리해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:11:01.511783"
+    },
+    {
+      "query": "지식 기반 스케줄링에서 공간적·시간적 적응을 구현하는 기계학습 방법들의 주요 특징을 요약해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:11:04.639544"
+    },
+    {
+      "query": "잡음 환경에서 시청각 음성인식의 인식률을 높이기 위해 은닉 마르코프 모델과 신경망 통합 전략이 어떻게 구성되었는지 간략히 설명해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:11:07.219152"
+    },
+    {
+      "query": "Particle Swarm Optimization을 이용해 퍼지 Extreme Learning Machine의 활성화 함수 파라미터를 최적화하는 기법의 핵심 원리를 요약해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:11:10.343377"
+    },
+    {
+      "query": "Lifelong Machine Learning 앙상블 방식으로 스팸 메시지 필터링 성능을 개선한 방법의 주요 아이디어와 장점을 간결하게 제시해 주실 수 있나요?",
+      "status": "error",
+      "error_message": "검색어 생성 실패",
+      "documents": [],
+      "document_count": 0,
+      "timestamp": "2025-09-19T11:11:13.099738"
+    }
+  ],
+  "execution_mode": "batch",
+  "batch_timestamp": "2025-09-19T11:11:13.099801"
+}

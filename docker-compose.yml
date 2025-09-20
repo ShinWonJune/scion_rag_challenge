@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  vllm-rag:
+    build: .
+    container_name: vllm-rag-server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+      - ./configs:/app/configs
+      - ./outputs:/app/outputs
+      - ./model_cache:/app/model_cache
+    environment:
+      - CUDA_VISIBLE_DEVICES=0,1,2,3
+      - HF_HOME=/app/model_cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['2','3', '4', '5']
+              capabilities: [gpu]
+    shm_size: 64g
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    command: tail -f /dev/null

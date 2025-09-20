@@ -11,6 +11,7 @@ here is how to execute
 
 ```bash
 TARGET_DOCUMENTS=50 python main.py batch test.csv  # 각 질문당 100개 문서
+TARGET_DOCUMENTS=50 python main.py --use-vllm batch test.csv # vllm 사용시
 ```
 
 4. you needs api key for gemini and science_on_api

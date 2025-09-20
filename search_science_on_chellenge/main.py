@@ -11,6 +11,7 @@ import os
 import logging
 from pathlib import Path
 from typing import Optional
+import argparse
 
 # 상위 디렉토리의 모듈 import를 위한 경로 추가
 sys.path.append(str(Path(__file__).parent.parent))
@@ -54,6 +55,21 @@ def print_usage():
 🔧 설정 파일:
   - ./configs/scienceon_api_credentials.json  (ScienceON API 자격증명)
 """)
+
+def parse_arguments():
+    """명령행 인수 파싱"""
+    parser = argparse.ArgumentParser(description='검색 메타데이터 시스템', add_help=False)
+    
+    # AI 모델 옵션
+    parser.add_argument('--use-vllm', action='store_true', help='vLLM 사용')
+    parser.add_argument('--vllm-url', default='http://localhost:8000/v1', help='vLLM 서버 URL')
+    parser.add_argument('--vllm-model', default='openai/gpt-oss-120B', help='vLLM 모델명')
+    
+    # 기존 위치 인수들
+    parser.add_argument('command', nargs='?', help='실행할 명령어')
+    parser.add_argument('args', nargs='*', help='명령어 인수')
+    
+    return parser.parse_args()
 
 def get_gemini_api_key() -> str:
     """Gemini API 키 가져오기"""
@@ -163,49 +179,62 @@ def main():
     if len(sys.argv) < 2:
         print_usage()
         return
-    
-    command = sys.argv[1].lower()
-    
-    if command == "help":
+    args = parse_arguments()
+
+    if not args.command or args.command == "help":
         print_usage()
         return
+
+    command = args.command.lower()
+
+
     
     # API 키 가져오기
     try:
-        api_key = get_gemini_api_key()
-    except KeyboardInterrupt:
-        print("\n❌ 사용자가 취소했습니다.")
-        return
-    
-    # 시스템 초기화
-    try:
-        system = SearchMetaSystem(api_key)
+        if args.use_vllm:
+            # vLLM 사용
+            system = SearchMetaSystem(
+                gemini_api_key=None,
+                use_vllm=True,
+                vllm_base_url=args.vllm_url,
+                vllm_model=args.vllm_model
+            )
+        else:
+            # Gemini 사용 (기본)
+            try:
+                api_key = get_gemini_api_key()
+            except KeyboardInterrupt:
+                print("\n❌ 사용자가 취소했습니다.")
+                return
+            
+            system = SearchMetaSystem(api_key)
+            
     except Exception as e:
         print(f"❌ 시스템 초기화 실패: {e}")
         logging.error(f"시스템 초기화 실패: {e}")
         return
-    
+
     try:
         if command == "single":
-            if len(sys.argv) < 3:
+            if len(args.args) < 1:
                 print("❌ 질문을 입력해주세요.")
                 print("사용법: python main.py single \"질문내용\"")
                 return
-            
-            query = sys.argv[2]
+
+            query = args.args[0]
             run_single_mode(system, query)
             
         elif command == "batch":
-            if len(sys.argv) < 3:
+            if len(args.args) < 1:
                 print("❌ CSV 파일 경로를 입력해주세요.")
                 print("사용법: python main.py batch test.csv [최대질문수]")
                 return
-            
-            csv_path = sys.argv[2]
+
+            csv_path = args.args[0]
             max_queries = None
-            if len(sys.argv) > 3:
+            if len(args.args) > 1:
                 try:
-                    max_queries = int(sys.argv[3])
+                    max_queries = int(args.args[1])
                 except ValueError:
                     print("❌ 최대 질문 수는 숫자여야 합니다.")
                     return
