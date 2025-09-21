@@ -1,0 +1,33 @@
+{
+    "id": "row_000031",
+    "result": "Korea’s IT‑convergence agenda is framed as a national growth engine: the government actively promotes cross‑industry integration, mirrors overseas strategic patterns, and pushes rapid market‑creation and technology‑development.  The most visible exemplars come from the country’s flagship firms—LG, Samsung and POSCO—each of which blends core IT capabilities with sectors such as consumer electronics, mobile services, smart manufacturing and heavy‑industry, illustrating how Korean industry is turning IT into a unifying platform for new business models.",
+    "prompt": "Question: How would you concisely summarize the strategic landscape and major industry examples that characterize IT convergence developments in Korea?\nContext: {\n  \"id\": \"row_000031\",\n  \"model_name\": \"BAAI/bge-m3\",\n  \"retrieval_results\": [\n    {\n      \"query\": \"How would you concisely summarize the strategic landscape and major industry examples that characterize IT convergence developments in Korea?\",\n      \"query_meta\": {\n        \"type\": \"original\"\n      },\n      \"hits\": [\n        {\n          \"rank\": 1,\n          \"score\": 0.7648608684539795,\n          \"doc_id\": \"JAKO201208438434742\",\n          \"title\": \"The Trends of IT Convergence in Korea\",\n          \"abstract\": \"These days, the environment of IT development goes through converging with various industries and technologies. Also, it accelerates to pioneer new markets and develop new technologies. This trend becomes one of the most important factors to explore new national growth engines in Korea. Thus, this research examines current trends of IT convergence in Korea. The strategic characteristics of IT convergence in overseas are briefly explained for comparing purpose. The governmental strategies or efforts regarding the IT convergence have been surveyed. Some example convergences of LG, Samsung, and POSCO as major IT industries in Korea have been introduced. It also identifies several buzz concepts in this field. The study aims to provide an insight about the activities that are happening in the field of IT convergence in Korea. Finally, the findings through the research have been summarized.\",\n          \"source\": \"http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201208438434742&target=NART&cn=JAKO201208438434742\",\n          \"embedding_mode\": \"3*title+abstract\",\n          \"embedding_text\": \"The Trends of IT Convergence in Korea The Trends of IT Convergence in Korea The Trends of IT Convergence in Korea These days, the environment of IT development goes through converging with various industries and technologies. Also, it accelerates to pioneer new markets and develop new technologies. This trend becomes one of the most important factors to explore new national growth engines in Korea. Thus, this research examines current trends of IT convergence in Korea. The strategic characteristics of IT convergence in overseas are briefly explained for comparing purpose. The governmental strategies or efforts regarding the IT convergence have been surveyed. Some example convergences of LG, Samsung, and POSCO as major IT industries in Korea have been introduced. It also identifies several buzz concepts in this field. The study aims to provide an insight about the activities that are happening in the field of IT convergence in Korea. Finally, the findings through the research have been summarized.\"\n        }\n      ]\n    }\n  ],\n  \"meta\": {},\n  \"timestamp_kst\": \"2025-09-20T23:58:15.066957\",\n  \"trial_id\": \"be7d2560\"\n}",
+    "model": "vllm",
+    "retrival": {
+        "id": "row_000031",
+        "model_name": "BAAI/bge-m3",
+        "retrieval_results": [
+            {
+                "query": "How would you concisely summarize the strategic landscape and major industry examples that characterize IT convergence developments in Korea?",
+                "query_meta": {
+                    "type": "original"
+                },
+                "hits": [
+                    {
+                        "rank": 1,
+                        "score": 0.7648608684539795,
+                        "doc_id": "JAKO201208438434742",
+                        "title": "The Trends of IT Convergence in Korea",
+                        "abstract": "These days, the environment of IT development goes through converging with various industries and technologies. Also, it accelerates to pioneer new markets and develop new technologies. This trend becomes one of the most important factors to explore new national growth engines in Korea. Thus, this research examines current trends of IT convergence in Korea. The strategic characteristics of IT convergence in overseas are briefly explained for comparing purpose. The governmental strategies or efforts regarding the IT convergence have been surveyed. Some example convergences of LG, Samsung, and POSCO as major IT industries in Korea have been introduced. It also identifies several buzz concepts in this field. The study aims to provide an insight about the activities that are happening in the field of IT convergence in Korea. Finally, the findings through the research have been summarized.",
+                        "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201208438434742&target=NART&cn=JAKO201208438434742",
+                        "embedding_mode": "3*title+abstract",
+                        "embedding_text": "The Trends of IT Convergence in Korea The Trends of IT Convergence in Korea The Trends of IT Convergence in Korea These days, the environment of IT development goes through converging with various industries and technologies. Also, it accelerates to pioneer new markets and develop new technologies. This trend becomes one of the most important factors to explore new national growth engines in Korea. Thus, this research examines current trends of IT convergence in Korea. The strategic characteristics of IT convergence in overseas are briefly explained for comparing purpose. The governmental strategies or efforts regarding the IT convergence have been surveyed. Some example convergences of LG, Samsung, and POSCO as major IT industries in Korea have been introduced. It also identifies several buzz concepts in this field. The study aims to provide an insight about the activities that are happening in the field of IT convergence in Korea. Finally, the findings through the research have been summarized."
+                    }
+                ]
+            }
+        ],
+        "meta": {},
+        "timestamp_kst": "2025-09-20T23:58:15.066957",
+        "trial_id": "be7d2560"
+    }
+}

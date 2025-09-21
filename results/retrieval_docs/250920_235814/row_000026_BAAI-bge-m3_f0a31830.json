@@ -1,0 +1,517 @@
+{
+  "id": "row_000026",
+  "model_name": "BAAI/bge-m3",
+  "retrieval_results": [
+    {
+      "query": "클라우드 컴퓨팅 환경에서 오픈소스 기반 딥 러닝 프레임워크들 간의 성능 비교 결과와 그 의의를 간결하게 정리해 주실 수 있나요?",
+      "query_meta": {
+        "type": "original"
+      },
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.7103049755096436,
+          "doc_id": "DIKO0014373092",
+          "title": "Deep Learning 프레임워크 성능 비교 연구 : Cloud Computing 환경에서",
+          "abstract": "통신 기술의 발달로 인한 사람과 사람, 장치와 장치, 사람과 장치 간의 연결성의 증가와 저장 매체 기술의 발달, 그리고 데이터 저장 비용의 감소로 인해 데이터의 양이 폭발적으로 증가했다. 이에 따라 다양한 형태의 대규모의 데이터를 빠른 시간 내에 효율적으로 처리할 수 있는 Cloud Computing 기술이 주목 받고 있고, Cloud Computing을 위한 오픈소스 기반의 솔루션 또한 많이 나타나게 되었다. &amp;#xD; 2012년부터 주목받기 시작한 Deep Learning은 전 세계적으로 가장 많은 관심을 받는 연구 분야 중 하나이며, 이중 CNN(Convolution Neural Network)은 가장 대표적 알고리즘이다. Deep Learning은 미래사회를 이끌어갈 분야로 평가받고 있으며, 이에 따라 많은 연구들이 진행되고 있고, Deep Learning을 쉽게 활용할 수 있도록 하는 많은 프레임워크가 개발되었다. &amp;#xD; 이에 따라 많은 사람들이 쉽게 Deep Learning을 접할 수 있게 되었지만 특정 환경에서 어떤 프레임워크가 더 우수한 성능을 보이는지에 대한 연구는 부족한 실정이다. 본 논문에서는 특정 환경에서의 성능 비교가 부족하다는 기존 연구의 한계점을 개선하고자 가장 대표적인 Cloud Computing용 오픈소스 소프트웨어 중 하나인 OpenStack을 이용하여 Cloud Computing 환경에서 어떤 Deep Learning 프레임워크가 더 우수한 성능을 보이는지 비교해 보고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014373092&target=NART&cn=DIKO0014373092",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Deep Learning 프레임워크 성능 비교 연구 : Cloud Computing 환경에서 Deep Learning 프레임워크 성능 비교 연구 : Cloud Computing 환경에서 Deep Learning 프레임워크 성능 비교 연구 : Cloud Computing 환경에서 통신 기술의 발달로 인한 사람과 사람, 장치와 장치, 사람과 장치 간의 연결성의 증가와 저장 매체 기술의 발달, 그리고 데이터 저장 비용의 감소로 인해 데이터의 양이 폭발적으로 증가했다. 이에 따라 다양한 형태의 대규모의 데이터를 빠른 시간 내에 효율적으로 처리할 수 있는 Cloud Computing 기술이 주목 받고 있고, Cloud Computing을 위한 오픈소스 기반의 솔루션 또한 많이 나타나게 되었다. &amp;#xD; 2012년부터 주목받기 시작한 Deep Learning은 전 세계적으로 가장 많은 관심을 받는 연구 분야 중 하나이며, 이중 CNN(Convolution Neural Network)은 가장 대표적 알고리즘이다. Deep Learning은 미래사회를 이끌어갈 분야로 평가받고 있으며, 이에 따라 많은 연구들이 진행되고 있고, Deep Learning을 쉽게 활용할 수 있도록 하는 많은 프레임워크가 개발되었다. &amp;#xD; 이에 따라 많은 사람들이 쉽게 Deep Learning을 접할 수 있게 되었지만 특정 환경에서 어떤 프레임워크가 더 우수한 성능을 보이는지에 대한 연구는 부족한 실정이다. 본 논문에서는 특정 환경에서의 성능 비교가 부족하다는 기존 연구의 한계점을 개선하고자 가장 대표적인 Cloud Computing용 오픈소스 소프트웨어 중 하나인 OpenStack을 이용하여 Cloud Computing 환경에서 어떤 Deep Learning 프레임워크가 더 우수한 성능을 보이는지 비교해 보고자 한다."
+        },
+        {
+          "rank": 2,
+          "score": 0.6803200244903564,
+          "doc_id": "DIKO0015889140",
+          "title": "딥 러닝 프레임워크 성능 비교 및 개선 방안",
+          "abstract": "현 시대는 4차 산업혁명이 대두되는 시대로 요소 기술들 중 인공지능의 중 요성은 아무리 강조하더라도 지나치지 않으며, 기업들 경쟁력의 척도라고 불 릴만큼 모든 산업에서 활용되고있다. 2016년 경 DeepMind 의 AlphaGo 와 이 세돌 선수의 경기로 국내에서는 처음으로 인공지능의 위력과 Deep Learning 이라는 단어가 대중들에게 알려지게 되었다.&amp;#xD; 특정 IT 산업이 발전하게 되면 해당 분야의 개발자들의 생산성과 접근성을 높이기 위해 Framework 들이 등장, 발전하게 된다. 통신기술과 스마트폰의 출현으로 WEB 붐이 이르렀을 때, Server-side 에서는 Spring, django, Ruby on Rails 등이 출현하였고, Client-side 에서는 Angular, React, jQuery 와 같이 다양한 Framework 들이 등장 발전하였다. 컴퓨터 성능의 발전과 다양 한 컴퓨팅 기술의 발전으로 현 시대는 인공지능 3차 붐으로 Machine Learning 과 Deep Learning 의 시대로 불리고있다.&amp;#xD; 이와 같이 Deep Learning 분야에서도 다양한 Framework 들이 개발되었다. 이런 다양한 Framework 제품들의 목적은 개발자들의 생산성을 향상시키기 위 해 내부 알고리즘이나 메커니즘을 Black Box 형식으로 감추고 High Level API 를 제공하기 때문에, 내부적인 구현 방식은 Framework 별로 다르다. 본 논문에서는 현 시대에 가장 많이 사용하는 대표적인 Framework 들을 선정한 다. 그리고 선정된 Framework 들을 이용하여 Convolutional Neural Network 알고리즘을 구현, 동일한 Training Data 를 이용하여 학습 Model 을 만들어 낸다. 그리고 동일한 Cloud 환경에서 각 Framework 별 학습을 수행하여 성 능을 비교한다. 성능 비교 환경은 총 3가지로 CPU, GPU 1 Core, Multi GPU Core 환경에서 각 Framework 별 성능 지표를 추출한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0015889140&target=NART&cn=DIKO0015889140",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥 러닝 프레임워크 성능 비교 및 개선 방안 딥 러닝 프레임워크 성능 비교 및 개선 방안 딥 러닝 프레임워크 성능 비교 및 개선 방안 현 시대는 4차 산업혁명이 대두되는 시대로 요소 기술들 중 인공지능의 중 요성은 아무리 강조하더라도 지나치지 않으며, 기업들 경쟁력의 척도라고 불 릴만큼 모든 산업에서 활용되고있다. 2016년 경 DeepMind 의 AlphaGo 와 이 세돌 선수의 경기로 국내에서는 처음으로 인공지능의 위력과 Deep Learning 이라는 단어가 대중들에게 알려지게 되었다.&amp;#xD; 특정 IT 산업이 발전하게 되면 해당 분야의 개발자들의 생산성과 접근성을 높이기 위해 Framework 들이 등장, 발전하게 된다. 통신기술과 스마트폰의 출현으로 WEB 붐이 이르렀을 때, Server-side 에서는 Spring, django, Ruby on Rails 등이 출현하였고, Client-side 에서는 Angular, React, jQuery 와 같이 다양한 Framework 들이 등장 발전하였다. 컴퓨터 성능의 발전과 다양 한 컴퓨팅 기술의 발전으로 현 시대는 인공지능 3차 붐으로 Machine Learning 과 Deep Learning 의 시대로 불리고있다.&amp;#xD; 이와 같이 Deep Learning 분야에서도 다양한 Framework 들이 개발되었다. 이런 다양한 Framework 제품들의 목적은 개발자들의 생산성을 향상시키기 위 해 내부 알고리즘이나 메커니즘을 Black Box 형식으로 감추고 High Level API 를 제공하기 때문에, 내부적인 구현 방식은 Framework 별로 다르다. 본 논문에서는 현 시대에 가장 많이 사용하는 대표적인 Framework 들을 선정한 다. 그리고 선정된 Framework 들을 이용하여 Convolutional Neural Network 알고리즘을 구현, 동일한 Training Data 를 이용하여 학습 Model 을 만들어 낸다. 그리고 동일한 Cloud 환경에서 각 Framework 별 학습을 수행하여 성 능을 비교한다. 성능 비교 환경은 총 3가지로 CPU, GPU 1 Core, Multi GPU Core 환경에서 각 Framework 별 성능 지표를 추출한다."
+        },
+        {
+          "rank": 3,
+          "score": 0.6792771816253662,
+          "doc_id": "JAKO201713056893580",
+          "title": "딥 러닝 프레임워크의 비교 및 분석",
+          "abstract": "딥 러닝은 사람이 가르치지 않아도 컴퓨터가 스스로 사람처럼 학습할 수 있는 인공지능 기술이다. 딥 러닝은 세상을 이해하고 감지하는 인공지능을 개발하는데 가장 촉망받는 기술이 되고 있으며, 구글, 바이두, 페이스북 등이 가장 앞서서 개발을 하고 있다. 본 논문에서는 딥 러닝을 구현하는 딥 러닝 프레임워크의 종류에 대해 논의하고, 딥 러닝 프레임워크의 영상과 음성 인식 분야의 효율성에 대해 비교, 분석하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201713056893580&target=NART&cn=JAKO201713056893580",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥 러닝 프레임워크의 비교 및 분석 딥 러닝 프레임워크의 비교 및 분석 딥 러닝 프레임워크의 비교 및 분석 딥 러닝은 사람이 가르치지 않아도 컴퓨터가 스스로 사람처럼 학습할 수 있는 인공지능 기술이다. 딥 러닝은 세상을 이해하고 감지하는 인공지능을 개발하는데 가장 촉망받는 기술이 되고 있으며, 구글, 바이두, 페이스북 등이 가장 앞서서 개발을 하고 있다. 본 논문에서는 딥 러닝을 구현하는 딥 러닝 프레임워크의 종류에 대해 논의하고, 딥 러닝 프레임워크의 영상과 음성 인식 분야의 효율성에 대해 비교, 분석하고자 한다."
+        },
+        {
+          "rank": 4,
+          "score": 0.6587387919425964,
+          "doc_id": "JAKO201718054814596",
+          "title": "스파크 기반 딥 러닝 분산 프레임워크 성능 비교 분석",
+          "abstract": "딥 러닝(Deep learning)은 기존 인공 신경망 내 계층 수를 증가시킴과 동시에 효과적인 학습 방법론을 제시함으로써 객체/음성 인식 및 자연어 처리 등 고수준 문제 해결에 있어 괄목할만한 성과를 보이고 있다. 그러나 학습에 필요한 시간과 리소스가 크다는 한계를 지니고 있어, 이를 줄이기 위한 연구가 활발히 진행되고 있다. 본 연구에서는 아파치 스파크 기반 클러스터 컴퓨팅 프레임워크 상에서 딥 러닝을 분산화하는 두 가지 툴(DeepSpark, SparkNet)의 성능을 학습 정확도와 속도 측면에서 측정하고 분석하였다. CIFAR-10/CIFAR-100 데이터를 사용한 실험에서 SparkNet은 학습 과정의 정확도 변동 폭이 적은 반면 DeepSpark는 학습 초기 정확도는 변동 폭이 크지만 점차 변동 폭이 줄어들면서 SparkNet 대비 약 15% 높은 정확도를 보였고, 조건에 따라 단일 머신보다도 높은 정확도로 보다 빠르게 수렴하는 양상을 확인할 수 있었다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201718054814596&target=NART&cn=JAKO201718054814596",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "스파크 기반 딥 러닝 분산 프레임워크 성능 비교 분석 스파크 기반 딥 러닝 분산 프레임워크 성능 비교 분석 스파크 기반 딥 러닝 분산 프레임워크 성능 비교 분석 딥 러닝(Deep learning)은 기존 인공 신경망 내 계층 수를 증가시킴과 동시에 효과적인 학습 방법론을 제시함으로써 객체/음성 인식 및 자연어 처리 등 고수준 문제 해결에 있어 괄목할만한 성과를 보이고 있다. 그러나 학습에 필요한 시간과 리소스가 크다는 한계를 지니고 있어, 이를 줄이기 위한 연구가 활발히 진행되고 있다. 본 연구에서는 아파치 스파크 기반 클러스터 컴퓨팅 프레임워크 상에서 딥 러닝을 분산화하는 두 가지 툴(DeepSpark, SparkNet)의 성능을 학습 정확도와 속도 측면에서 측정하고 분석하였다. CIFAR-10/CIFAR-100 데이터를 사용한 실험에서 SparkNet은 학습 과정의 정확도 변동 폭이 적은 반면 DeepSpark는 학습 초기 정확도는 변동 폭이 크지만 점차 변동 폭이 줄어들면서 SparkNet 대비 약 15% 높은 정확도를 보였고, 조건에 따라 단일 머신보다도 높은 정확도로 보다 빠르게 수렴하는 양상을 확인할 수 있었다."
+        },
+        {
+          "rank": 5,
+          "score": 0.6524513959884644,
+          "doc_id": "NPAP12593778",
+          "title": "오픈소스 클라우드 컴퓨팅 플랫폼 분석 및 비교",
+          "abstract": "클라우드 컴퓨팅 기술의 발전과 맞물려서 이를 위한 많은 플랫폼들이 제안되고 있다. Amazon이나 Google 등의 세계적인 기업들을 이미 자신들 만의 플랫폼을 구축하여 안정적으로 서비스를 제공하고 있으며 오픈소스 커뮤니티들이 주도 하는 오픈 플랫폼들도 속속 등장하여 발전을 거듭하고 있다. 본 논문에서는 가장 대표적이고 널리 사용되는 오픈소스 기반의 클라우드 컴퓨팅 플랫폼들을 분석하고 그 기능들을 서로 비교해서 사용자가 자신의 요구사항에 가장 적합한 플랫폼을 선택할 수 있게 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NPAP12593778&target=NART&cn=NPAP12593778",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈소스 클라우드 컴퓨팅 플랫폼 분석 및 비교 오픈소스 클라우드 컴퓨팅 플랫폼 분석 및 비교 오픈소스 클라우드 컴퓨팅 플랫폼 분석 및 비교 클라우드 컴퓨팅 기술의 발전과 맞물려서 이를 위한 많은 플랫폼들이 제안되고 있다. Amazon이나 Google 등의 세계적인 기업들을 이미 자신들 만의 플랫폼을 구축하여 안정적으로 서비스를 제공하고 있으며 오픈소스 커뮤니티들이 주도 하는 오픈 플랫폼들도 속속 등장하여 발전을 거듭하고 있다. 본 논문에서는 가장 대표적이고 널리 사용되는 오픈소스 기반의 클라우드 컴퓨팅 플랫폼들을 분석하고 그 기능들을 서로 비교해서 사용자가 자신의 요구사항에 가장 적합한 플랫폼을 선택할 수 있게 한다."
+        },
+        {
+          "rank": 6,
+          "score": 0.6451171636581421,
+          "doc_id": "JAKO202009135419341",
+          "title": "딥러닝 오픈소스 프레임워크의 사례연구를 통한 도입 전략 도출",
+          "abstract": "많은 정보통신기술 기업들은 자체적으로 개발한 인공지능 기술을 오픈소스로 공개하였다. 예를 들어, 구글의 TensorFlow, 페이스북의 PyTorch, 마이크로소프트의 CNTK 등 여러 기업들은 자신들의 인공지능 기술들을 공개하고 있다. 이처럼 대중에게 딥러닝 오픈소스 소프트웨어를 공개함으로써 개발자 커뮤니티와의 관계와 인공지능 생태계를 강화하고, 사용자들의 실험, 적용, 개선을 얻을 수 있다. 이에 따라 머신러닝 분야는 급속히 성장하고 있고, 개발자들 또한 여러가지 학습 알고리즘을 재생산하여 각 영역에 활용하고 있다. 하지만 오픈소스 소프트웨어에 대한 다양한 분석들이 이루어진 데 반해, 실제 산업현장에서 딥러닝 오픈소스 소프트웨어를 개발하거나 활용하는데 유용한 연구 결과는 미흡한 실정이다. 따라서 본 연구에서는 딥러닝 프레임워크 사례연구를 통해 해당 프레임워크의 도입 전략을 도출하고자 한다. 기술-조직-환경 프레임워크를 기반으로 기존의 오픈 소스 소프트웨어 도입과 관련된 연구들을 리뷰하고, 이를 바탕으로 두 기업의 성공 사례와 한 기업의 실패 사례를 포함한 총 3 가지 기업의 도입 사례 분석을 통해 딥러닝 프레임워크 도입을 위한 중요한 5가지 성공 요인을 도출하였다: 팀 내 개발자의 지식과 전문성, 하드웨어(GPU) 환경, 데이터 전사 협력 체계, 딥러닝 프레임워크 플랫폼, 딥러닝 프레임워크 도구 서비스. 그리고 도출한 성공 요인을 실현하기 위한 딥러닝 프레임워크의 단계적 도입 전략을 제안하였다: 프로젝트 문제 정의, 딥러닝 방법론이 적합한 기법인지 확인, 딥러닝 프레임워크가 적합한 도구인지 확인, 기업의 딥러닝 프레임워크 사용, 기업의 딥러닝 프레임워크 확산. 본 연구를 통해 각 산업과 사업의 니즈에 따라, 딥러닝 프레임워크를 개발하거나 활용하고자 하는 기업에게 전략적인 시사점을 제공할 수 있을 것이라 기대된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202009135419341&target=NART&cn=JAKO202009135419341",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 오픈소스 프레임워크의 사례연구를 통한 도입 전략 도출 딥러닝 오픈소스 프레임워크의 사례연구를 통한 도입 전략 도출 딥러닝 오픈소스 프레임워크의 사례연구를 통한 도입 전략 도출 많은 정보통신기술 기업들은 자체적으로 개발한 인공지능 기술을 오픈소스로 공개하였다. 예를 들어, 구글의 TensorFlow, 페이스북의 PyTorch, 마이크로소프트의 CNTK 등 여러 기업들은 자신들의 인공지능 기술들을 공개하고 있다. 이처럼 대중에게 딥러닝 오픈소스 소프트웨어를 공개함으로써 개발자 커뮤니티와의 관계와 인공지능 생태계를 강화하고, 사용자들의 실험, 적용, 개선을 얻을 수 있다. 이에 따라 머신러닝 분야는 급속히 성장하고 있고, 개발자들 또한 여러가지 학습 알고리즘을 재생산하여 각 영역에 활용하고 있다. 하지만 오픈소스 소프트웨어에 대한 다양한 분석들이 이루어진 데 반해, 실제 산업현장에서 딥러닝 오픈소스 소프트웨어를 개발하거나 활용하는데 유용한 연구 결과는 미흡한 실정이다. 따라서 본 연구에서는 딥러닝 프레임워크 사례연구를 통해 해당 프레임워크의 도입 전략을 도출하고자 한다. 기술-조직-환경 프레임워크를 기반으로 기존의 오픈 소스 소프트웨어 도입과 관련된 연구들을 리뷰하고, 이를 바탕으로 두 기업의 성공 사례와 한 기업의 실패 사례를 포함한 총 3 가지 기업의 도입 사례 분석을 통해 딥러닝 프레임워크 도입을 위한 중요한 5가지 성공 요인을 도출하였다: 팀 내 개발자의 지식과 전문성, 하드웨어(GPU) 환경, 데이터 전사 협력 체계, 딥러닝 프레임워크 플랫폼, 딥러닝 프레임워크 도구 서비스. 그리고 도출한 성공 요인을 실현하기 위한 딥러닝 프레임워크의 단계적 도입 전략을 제안하였다: 프로젝트 문제 정의, 딥러닝 방법론이 적합한 기법인지 확인, 딥러닝 프레임워크가 적합한 도구인지 확인, 기업의 딥러닝 프레임워크 사용, 기업의 딥러닝 프레임워크 확산. 본 연구를 통해 각 산업과 사업의 니즈에 따라, 딥러닝 프레임워크를 개발하거나 활용하고자 하는 기업에게 전략적인 시사점을 제공할 수 있을 것이라 기대된다."
+        },
+        {
+          "rank": 7,
+          "score": 0.6446408033370972,
+          "doc_id": "NPAP12898051",
+          "title": "딥러닝 프레임워크 비교 및 분석",
+          "abstract": "딥러닝(Deep Learning)을 효과적으로 연구하고 개발할 수 있도록 도와주는 다양한 딥러닝 프레임워크(Deep Learning Framework)가 있다. 딥러닝 프레임워크는 현재 100 가지도 넘는 종류가 있다. 그렇기 때문에 개발의 목적에 가장 적합한 딥러닝 프레임워크를 선택하는 것은 쉽지 않다. 본고에서는 5가지 대표적인 딥러닝 프레임워크에 대해서 각각의 특징을 분석하고 비교한다. 이를 통하여 딥러닝을 개발하기 전에 개발 목적에 적합한 프레임워크를 선택할 수 있는 간단한 안목을 제시한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NPAP12898051&target=NART&cn=NPAP12898051",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 프레임워크 비교 및 분석 딥러닝 프레임워크 비교 및 분석 딥러닝 프레임워크 비교 및 분석 딥러닝(Deep Learning)을 효과적으로 연구하고 개발할 수 있도록 도와주는 다양한 딥러닝 프레임워크(Deep Learning Framework)가 있다. 딥러닝 프레임워크는 현재 100 가지도 넘는 종류가 있다. 그렇기 때문에 개발의 목적에 가장 적합한 딥러닝 프레임워크를 선택하는 것은 쉽지 않다. 본고에서는 5가지 대표적인 딥러닝 프레임워크에 대해서 각각의 특징을 분석하고 비교한다. 이를 통하여 딥러닝을 개발하기 전에 개발 목적에 적합한 프레임워크를 선택할 수 있는 간단한 안목을 제시한다."
+        },
+        {
+          "rank": 8,
+          "score": 0.6433243751525879,
+          "doc_id": "JAKO201722163438668",
+          "title": "통합메모리를 이용한 임베디드 환경에서의 딥러닝 프레임워크 성능 개선과 평가",
+          "abstract": "최근, 딥러닝을 사용 가능한 임베디드 디바이스가 상용화됨에 따라 임베디드 시스템 영역에서도 딥러닝 활용에 대한 다양한 연구가 진행되고 있다. 그러나 임베디드 시스템을 고성능 PC 환경과 비교하면 상대적으로 저사양의 CPU/GPU 프로세서와 메모리를 탑재하고 있으므로 딥러닝 기술의 적용에 있어서 많은 제약이 있다. 본 논문에서는 다양한 최신 딥러닝 네트워크들을 임베디드 디바이스에 적용했을때의 성능을 시간과 전력이라는 관점에서 실험적으로 평가한다. 또한, 호스트 CPU와 GPU 디바이스간의 메모리를 공유하는 임베디드 시스템들의 아키텍처적인 특성을 이용하여 메모리 복사를 줄임으로써 실시간 성능과 저전력성을 높이는 방법을 제시한다. 제안된 방법은 대표적인 공개 딥러닝 프레임워크인 Caffe를 수정하여 구현되었으며, 임베디드 GPU를 탑재한 NVIDIA Jetson TK1에서 성능평가 되었다. 실험결과, 대부분의 딥러닝 네트워크에서 뚜렷한 성능향상을 관찰할 수 있었다. 특히, 메모리 사용량이 높은 AlexNet에서 약 33%의 이미지 인식 속도 단축과 50%의 소비 전력량 감소를 관찰할 수 있었다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201722163438668&target=NART&cn=JAKO201722163438668",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "통합메모리를 이용한 임베디드 환경에서의 딥러닝 프레임워크 성능 개선과 평가 통합메모리를 이용한 임베디드 환경에서의 딥러닝 프레임워크 성능 개선과 평가 통합메모리를 이용한 임베디드 환경에서의 딥러닝 프레임워크 성능 개선과 평가 최근, 딥러닝을 사용 가능한 임베디드 디바이스가 상용화됨에 따라 임베디드 시스템 영역에서도 딥러닝 활용에 대한 다양한 연구가 진행되고 있다. 그러나 임베디드 시스템을 고성능 PC 환경과 비교하면 상대적으로 저사양의 CPU/GPU 프로세서와 메모리를 탑재하고 있으므로 딥러닝 기술의 적용에 있어서 많은 제약이 있다. 본 논문에서는 다양한 최신 딥러닝 네트워크들을 임베디드 디바이스에 적용했을때의 성능을 시간과 전력이라는 관점에서 실험적으로 평가한다. 또한, 호스트 CPU와 GPU 디바이스간의 메모리를 공유하는 임베디드 시스템들의 아키텍처적인 특성을 이용하여 메모리 복사를 줄임으로써 실시간 성능과 저전력성을 높이는 방법을 제시한다. 제안된 방법은 대표적인 공개 딥러닝 프레임워크인 Caffe를 수정하여 구현되었으며, 임베디드 GPU를 탑재한 NVIDIA Jetson TK1에서 성능평가 되었다. 실험결과, 대부분의 딥러닝 네트워크에서 뚜렷한 성능향상을 관찰할 수 있었다. 특히, 메모리 사용량이 높은 AlexNet에서 약 33%의 이미지 인식 속도 단축과 50%의 소비 전력량 감소를 관찰할 수 있었다."
+        },
+        {
+          "rank": 9,
+          "score": 0.6349984407424927,
+          "doc_id": "JAKO202223540366088",
+          "title": "이미지 학습을 위한 딥러닝 프레임워크 비교분석",
+          "abstract": "딥러닝 프레임워크는 현재에도 계속해서 발전되어 가고 있으며, 다양한 프레임워크들이 존재한다. 딥러닝의 대표적인 프레임워크는 TensorFlow, PyTorch, Keras 등이 있다. 딥러님 프레임워크는 이미지 학습을 통해 이미지 분류에서의 최적화 모델을 이용한다. 본 논문에서는 딥러닝 이미지 인식 분야에서 가장 많이 사용하고 있는 TensorFlow와 PyTorch 프레임워크를 활용하여 이미지 학습을 진행하였으며, 이 과정에서 도출한 결과를 비교 분석하여 최적화된 프레임워크을 알 수 있었다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202223540366088&target=NART&cn=JAKO202223540366088",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "이미지 학습을 위한 딥러닝 프레임워크 비교분석 이미지 학습을 위한 딥러닝 프레임워크 비교분석 이미지 학습을 위한 딥러닝 프레임워크 비교분석 딥러닝 프레임워크는 현재에도 계속해서 발전되어 가고 있으며, 다양한 프레임워크들이 존재한다. 딥러닝의 대표적인 프레임워크는 TensorFlow, PyTorch, Keras 등이 있다. 딥러님 프레임워크는 이미지 학습을 통해 이미지 분류에서의 최적화 모델을 이용한다. 본 논문에서는 딥러닝 이미지 인식 분야에서 가장 많이 사용하고 있는 TensorFlow와 PyTorch 프레임워크를 활용하여 이미지 학습을 진행하였으며, 이 과정에서 도출한 결과를 비교 분석하여 최적화된 프레임워크을 알 수 있었다."
+        },
+        {
+          "rank": 10,
+          "score": 0.6310900449752808,
+          "doc_id": "JAKO201714563082890",
+          "title": "클라우드 교육 시스템의 SLA 보장을 위한 오픈소스기반 요소 성능 분석",
+          "abstract": "클라우드의 사용이 보급화 됨에 따라 가상화 기술에 다양한 요구사항이 접목, 적용되고 있다. 클라우드 컴퓨팅의 대표적인 특징은 사용자가 원하는 자원 요구사항에 따라 최적화 된 환경을 구축할 수 있으며, 나아가 확장성에도 유연하게 대처할 수 있다. 이런 장점으로 인해 다양한 분산컴퓨팅 분야에 클라우드 컴퓨팅이 적용, 활용되고 있는 실정이다. 이를 위해 클라우드 환경의 성능 안정성을 보장하는 것이 무엇보다 중요하다. 본 연구에서는 구축된 클라우드 교육 시스템 테스트베드 환경에서 시스템의 성능을 보장하기 위한 다양한 요소성능(metric) 측정을 오픈소스 기반의 툴들을 이용하여 분석하였다. 이를 위해 프로세서, 메모리, 캐시, 네트워크 등 가상화 환경에 영향을 주는 요소 성능을 구분하고, 그 성능을 호스트머신(Host Machine) 및 가상머신(Virtual Machine)에서 각각 측정하였다. 이로서 시스템의 상태를 명확하게 파악할 수 있으며, 문제점을 빠르게 진단하여 가용성을 증대시키고 나아가 클라우드 컴퓨팅의 SLA(Service Level Agreement) 수준을 보장할 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201714563082890&target=NART&cn=JAKO201714563082890",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "클라우드 교육 시스템의 SLA 보장을 위한 오픈소스기반 요소 성능 분석 클라우드 교육 시스템의 SLA 보장을 위한 오픈소스기반 요소 성능 분석 클라우드 교육 시스템의 SLA 보장을 위한 오픈소스기반 요소 성능 분석 클라우드의 사용이 보급화 됨에 따라 가상화 기술에 다양한 요구사항이 접목, 적용되고 있다. 클라우드 컴퓨팅의 대표적인 특징은 사용자가 원하는 자원 요구사항에 따라 최적화 된 환경을 구축할 수 있으며, 나아가 확장성에도 유연하게 대처할 수 있다. 이런 장점으로 인해 다양한 분산컴퓨팅 분야에 클라우드 컴퓨팅이 적용, 활용되고 있는 실정이다. 이를 위해 클라우드 환경의 성능 안정성을 보장하는 것이 무엇보다 중요하다. 본 연구에서는 구축된 클라우드 교육 시스템 테스트베드 환경에서 시스템의 성능을 보장하기 위한 다양한 요소성능(metric) 측정을 오픈소스 기반의 툴들을 이용하여 분석하였다. 이를 위해 프로세서, 메모리, 캐시, 네트워크 등 가상화 환경에 영향을 주는 요소 성능을 구분하고, 그 성능을 호스트머신(Host Machine) 및 가상머신(Virtual Machine)에서 각각 측정하였다. 이로서 시스템의 상태를 명확하게 파악할 수 있으며, 문제점을 빠르게 진단하여 가용성을 증대시키고 나아가 클라우드 컴퓨팅의 SLA(Service Level Agreement) 수준을 보장할 수 있다."
+        },
+        {
+          "rank": 11,
+          "score": 0.6241636276245117,
+          "doc_id": "DIKO0015798758",
+          "title": "하둡 기반 분산 딥러닝 프레임워크에서의 스토리지 최적화 기술 연구",
+          "abstract": "최근, 딥러닝의 훈련 데이터(training data) 크기가 크게 증가함에 따라 딥러닝 애플리케이션 처리에 기존의 빅 데이터 클러스터 기술을 적용하기 위한 여러 연구들이 수행되어 왔다. 이러한 빅 데이터 클러스터는 대규모 데이터의 안정적인 저장 및 처리를 성공적으로 제공해왔으며, 특히 여러 IT 기업과 오픈소스 커뮤니티에서는 빅 데이터 저장소 및 처리 플랫폼의 사실상 표준인 아파치 하둡을 기반으로 딥러닝 실행 프레임워크를 개발 및 운영하고 있다.&amp;#xD; &amp;#xD; 본 연구팀에서도 하둡 YARN을 기반으로 분산 딥러닝 애플리케이션을 실행할 수 있는 MeLoN(Multi-tenant deep Learning framework on yarN)을 설계하고 구현하였다. 딥러닝 애플리케이션은 훈련 및 검증을 위해 매우 큰 데이터가 필요할 수 있기 때문에 이러한 MeLoN에서 최적화된 스토리지 시스템을 구축하기 위한 연구를 수행하였다. 구체적으로는 기존 하둡의 HDFS(Hadoop Distributed File System)와 HPC (High-Performance Computing) 커뮤니티의 러스터(Lustre) 병렬 파일 시스템을 비교/분석하였다. 기존의 여러 연구 결과들에 따르면, 하둡 클러스터에서 고속 네트워크를 기반으로 하는 러스터 파일 시스템을 사용하여 HDFS보다 낮은 스토리지 비용으로 전반적인 성능을 크게 개선할 수 있었다.&amp;#xD; &amp;#xD; 본 논문에서는 MeLoN에서 기본 HDFS와 러스터 파일 시스템을 기반으로 딥러닝 애플리케이션 실행에 대한 비교 연구를 수행한다. 이를 위하여, HDFS와 러스터를 기본 파일시스템으로 결합한 MeLoN을 재구현하였다. 다양한 실험 결과들을 바탕으로 하둡 기반 분산 딥러닝 프레임워크를 위한 효과적인 파일 시스템 전략을 제안한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0015798758&target=NART&cn=DIKO0015798758",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "하둡 기반 분산 딥러닝 프레임워크에서의 스토리지 최적화 기술 연구 하둡 기반 분산 딥러닝 프레임워크에서의 스토리지 최적화 기술 연구 하둡 기반 분산 딥러닝 프레임워크에서의 스토리지 최적화 기술 연구 최근, 딥러닝의 훈련 데이터(training data) 크기가 크게 증가함에 따라 딥러닝 애플리케이션 처리에 기존의 빅 데이터 클러스터 기술을 적용하기 위한 여러 연구들이 수행되어 왔다. 이러한 빅 데이터 클러스터는 대규모 데이터의 안정적인 저장 및 처리를 성공적으로 제공해왔으며, 특히 여러 IT 기업과 오픈소스 커뮤니티에서는 빅 데이터 저장소 및 처리 플랫폼의 사실상 표준인 아파치 하둡을 기반으로 딥러닝 실행 프레임워크를 개발 및 운영하고 있다.&amp;#xD; &amp;#xD; 본 연구팀에서도 하둡 YARN을 기반으로 분산 딥러닝 애플리케이션을 실행할 수 있는 MeLoN(Multi-tenant deep Learning framework on yarN)을 설계하고 구현하였다. 딥러닝 애플리케이션은 훈련 및 검증을 위해 매우 큰 데이터가 필요할 수 있기 때문에 이러한 MeLoN에서 최적화된 스토리지 시스템을 구축하기 위한 연구를 수행하였다. 구체적으로는 기존 하둡의 HDFS(Hadoop Distributed File System)와 HPC (High-Performance Computing) 커뮤니티의 러스터(Lustre) 병렬 파일 시스템을 비교/분석하였다. 기존의 여러 연구 결과들에 따르면, 하둡 클러스터에서 고속 네트워크를 기반으로 하는 러스터 파일 시스템을 사용하여 HDFS보다 낮은 스토리지 비용으로 전반적인 성능을 크게 개선할 수 있었다.&amp;#xD; &amp;#xD; 본 논문에서는 MeLoN에서 기본 HDFS와 러스터 파일 시스템을 기반으로 딥러닝 애플리케이션 실행에 대한 비교 연구를 수행한다. 이를 위하여, HDFS와 러스터를 기본 파일시스템으로 결합한 MeLoN을 재구현하였다. 다양한 실험 결과들을 바탕으로 하둡 기반 분산 딥러닝 프레임워크를 위한 효과적인 파일 시스템 전략을 제안한다."
+        },
+        {
+          "rank": 12,
+          "score": 0.6102690100669861,
+          "doc_id": "DIKO0014912468",
+          "title": "포인트 클라우드 기반 딥 러닝 기법을 이용한 BIM 객체 분류에 관한 연구",
+          "abstract": "건축 산업 전반에 BIM(Building Information Modeling)의 활용이 확대되고 있다. BIM은 3차원 건축물 객체 데이터를 기반으로 건축물이 지닌 다양한 정보를 담고 있는 데이터 형태이다. BIM 데이터는 IFC(Industry Foundation Classes) 표준 형태로 제작 및 배포된다. 이 때 BIM 데이터를 IFC 표준으로 생성하는 과정에서 설계자가 직접 IFC 데이터의 정보를 매핑해야 하는 문제가 존재한다. 이는 전문 인력 자원의 소요와 인적 오류의 발생 가능성을 높일 수 있는 위험을 지니고 있다. 본 연구에서는 이러한 위험을 줄이고, 보다 효과적으로 IFC 표준에 맞는 BIM 데이터 생성을 위한 딥 러닝 기법을 이용하여 학습한 모델을 통한 자동화된 BIM-IFC간 클래스 매핑 과정을 제안하였다.표준 BIM 라이브러리 데이터인 KBIMS 데이터를 이용한 실험에서 심층 신경망, 합성곱 신경망, Pointnet 총 3개의 딥 러닝 구조를 학습하여 평가하였다. 실험 결과 세 모델 모두 85% 이상의 높은 성능을 보였으며 그 중 3차원 객체의 위치 정보를 점들의 집합 형태의 데이터인 포인트 클라우드 형태로 표현한 Pointnet이 95% 이상의 정확도를 보여 가장 높은 성능의 모델임을 확인할 수 있었다. 본 연구의 의의는 BIM-IFC 클래스 매핑 작업에서 자동화된 딥 러닝 기반 모델 학습 과정을 통해 기존의 설계 전문가가 수작업으로 수행하는 정보 입력 과정을 자동화할 수 있다는 가능성을 보여준 것에 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014912468&target=NART&cn=DIKO0014912468",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "포인트 클라우드 기반 딥 러닝 기법을 이용한 BIM 객체 분류에 관한 연구 포인트 클라우드 기반 딥 러닝 기법을 이용한 BIM 객체 분류에 관한 연구 포인트 클라우드 기반 딥 러닝 기법을 이용한 BIM 객체 분류에 관한 연구 건축 산업 전반에 BIM(Building Information Modeling)의 활용이 확대되고 있다. BIM은 3차원 건축물 객체 데이터를 기반으로 건축물이 지닌 다양한 정보를 담고 있는 데이터 형태이다. BIM 데이터는 IFC(Industry Foundation Classes) 표준 형태로 제작 및 배포된다. 이 때 BIM 데이터를 IFC 표준으로 생성하는 과정에서 설계자가 직접 IFC 데이터의 정보를 매핑해야 하는 문제가 존재한다. 이는 전문 인력 자원의 소요와 인적 오류의 발생 가능성을 높일 수 있는 위험을 지니고 있다. 본 연구에서는 이러한 위험을 줄이고, 보다 효과적으로 IFC 표준에 맞는 BIM 데이터 생성을 위한 딥 러닝 기법을 이용하여 학습한 모델을 통한 자동화된 BIM-IFC간 클래스 매핑 과정을 제안하였다.표준 BIM 라이브러리 데이터인 KBIMS 데이터를 이용한 실험에서 심층 신경망, 합성곱 신경망, Pointnet 총 3개의 딥 러닝 구조를 학습하여 평가하였다. 실험 결과 세 모델 모두 85% 이상의 높은 성능을 보였으며 그 중 3차원 객체의 위치 정보를 점들의 집합 형태의 데이터인 포인트 클라우드 형태로 표현한 Pointnet이 95% 이상의 정확도를 보여 가장 높은 성능의 모델임을 확인할 수 있었다. 본 연구의 의의는 BIM-IFC 클래스 매핑 작업에서 자동화된 딥 러닝 기반 모델 학습 과정을 통해 기존의 설계 전문가가 수작업으로 수행하는 정보 입력 과정을 자동화할 수 있다는 가능성을 보여준 것에 있다."
+        },
+        {
+          "rank": 13,
+          "score": 0.6061534881591797,
+          "doc_id": "DIKO0016092636",
+          "title": "엣지 컴퓨팅에서의 경량형 딥러닝 기반 객체 검출 시스템",
+          "abstract": "사물인터넷(IoT) 기술은 다양한 산업의 디지털화와 새로운 기기들의 개발과 보급으로 인해 IoT 기기들의 생성 데이터를 폭발적으로 증가시켰다. 폭발적으로 증가하는 IoT 기기들의 클라우드 서버로의 대용량 데이터 전송과 분석 수요는 클라우드 서버 과부하를 야기할 위험성이 존재한다. &amp;#xD; 중앙 집중형 클라우드 컴퓨팅의 요구사항 수용의 어려움에 따라 클라우드와 상호 보완적인 엣지 컴퓨팅 기술이 대두되었다. 클라우드 컴퓨팅 기반 서비스의 한계인 개인정보 보호, 데이터 보안, 실시간 응답성, 네트워크 연결 신뢰성 등을 해결 가능한 온디바이스 딥러닝 기술의 산업적 수요가 급증하고 있지만 현존하는 엣지 디바이스는 성능제약으로 인해 완전한 딥러닝 서비스 제공이 어려운 상황이다. &amp;#xD; 본 연구에서는 온디바이스 딥러닝 서비스 제공 시 고려해야할 사항들을 도출하기 위하여 경량화된 인공지능 모델과 경량화가 이루어지지않은 인공지능 모델을 구축하고 모니터링 시스템을 통해 네트워크 측면에서 어떤 차이가 존재하는지 실험을 진행한다. 인공지능 서비스로는 딥러닝 기반의 객체 검출 시스템을 구축하였으며, 객체 검출기로는 Yolov3(You Only Look Once v3)알고리즘을 이용한다. 해당 알고리즘을 COCO Dataset을 사용하여 기존의 클라우드 기반의 서비스와 네트워크 측면에서 성능을 비교 분석한다. 또한 엣지 디바이스들의 원활한 관리와 서비스 배포를 위해 인공지능 서비스가 이루어질 수 있는 오픈소스 프레임워크 활용방안에 대해 조사하여 실제 산업용 IoT 엔지니어들이 온디바이스 딥러닝 서비스 구축 시 의사결정에 활용 가능한 연구를 진행한다. 나아가 연구결과를 활용하여 온디바이스 딥러닝 서비스 제공을 위하여 경량화된 인공지능 모델과 자원 제약적인 엣지 디바이스들의 성능을 가지고 최적의 인공지능 추론 서비스를 제공하기 위한 요구사항과 기능적 구조 및 기능에 대한 표준화 방안에 대해 기술한다.&amp;#xD;",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0016092636&target=NART&cn=DIKO0016092636",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "엣지 컴퓨팅에서의 경량형 딥러닝 기반 객체 검출 시스템 엣지 컴퓨팅에서의 경량형 딥러닝 기반 객체 검출 시스템 엣지 컴퓨팅에서의 경량형 딥러닝 기반 객체 검출 시스템 사물인터넷(IoT) 기술은 다양한 산업의 디지털화와 새로운 기기들의 개발과 보급으로 인해 IoT 기기들의 생성 데이터를 폭발적으로 증가시켰다. 폭발적으로 증가하는 IoT 기기들의 클라우드 서버로의 대용량 데이터 전송과 분석 수요는 클라우드 서버 과부하를 야기할 위험성이 존재한다. &amp;#xD; 중앙 집중형 클라우드 컴퓨팅의 요구사항 수용의 어려움에 따라 클라우드와 상호 보완적인 엣지 컴퓨팅 기술이 대두되었다. 클라우드 컴퓨팅 기반 서비스의 한계인 개인정보 보호, 데이터 보안, 실시간 응답성, 네트워크 연결 신뢰성 등을 해결 가능한 온디바이스 딥러닝 기술의 산업적 수요가 급증하고 있지만 현존하는 엣지 디바이스는 성능제약으로 인해 완전한 딥러닝 서비스 제공이 어려운 상황이다. &amp;#xD; 본 연구에서는 온디바이스 딥러닝 서비스 제공 시 고려해야할 사항들을 도출하기 위하여 경량화된 인공지능 모델과 경량화가 이루어지지않은 인공지능 모델을 구축하고 모니터링 시스템을 통해 네트워크 측면에서 어떤 차이가 존재하는지 실험을 진행한다. 인공지능 서비스로는 딥러닝 기반의 객체 검출 시스템을 구축하였으며, 객체 검출기로는 Yolov3(You Only Look Once v3)알고리즘을 이용한다. 해당 알고리즘을 COCO Dataset을 사용하여 기존의 클라우드 기반의 서비스와 네트워크 측면에서 성능을 비교 분석한다. 또한 엣지 디바이스들의 원활한 관리와 서비스 배포를 위해 인공지능 서비스가 이루어질 수 있는 오픈소스 프레임워크 활용방안에 대해 조사하여 실제 산업용 IoT 엔지니어들이 온디바이스 딥러닝 서비스 구축 시 의사결정에 활용 가능한 연구를 진행한다. 나아가 연구결과를 활용하여 온디바이스 딥러닝 서비스 제공을 위하여 경량화된 인공지능 모델과 자원 제약적인 엣지 디바이스들의 성능을 가지고 최적의 인공지능 추론 서비스를 제공하기 위한 요구사항과 기능적 구조 및 기능에 대한 표준화 방안에 대해 기술한다.&amp;#xD;"
+        },
+        {
+          "rank": 14,
+          "score": 0.6052104830741882,
+          "doc_id": "JAKO202433861648179",
+          "title": "스켈레톤 데이터에 기반한 동작 분류: 고전적인 머신러닝과 딥러닝 모델 성능 비교",
+          "abstract": "본 연구는 3D 스켈레톤 데이터를 활용하여 머신러닝 및 딥러닝 모델을 통해 동작 인식을 수행하고, 모델 간 분류 성능 차이를 비교 분석하였다. 데이터는 NTU RGB+D 데이터의 정면 촬영 데이터로 40명의 참가자가 수행한 60가지 동작을 분류하였다. 머신러닝 모델로는 선형판별분석(LDA), 다중 클래스 서포트 벡터 머신(SVM), 그리고 랜덤 포레스트(RF)가 있으며, 딥러닝 모델로는 RNN 기반의 HBRNN (hierarchical bidirectional RNN) 모델과 GCN 기반의 SGN (semantics-guided neural network) 모델을 적용하였다. 각 모델의 분류 성능을 평가하기 위해 40명의 참가자별로 교차 검증을 실시하였다. 분석 결과, 모델 간 성능 차이는 동작 유형에 크게 영향을 받았으며, 군집 분석을 통해 각 동작에 대한 분류 성능을 살펴본 결과, 인식이 비교적 쉬운 큰 동작에서는 머신러닝 모델과 딥러닝 모델 간의 성능 차이가 유의미하지 않았고, 비슷한 성능을 나타냈다. 반면, 손뼉치기나 손을 비비는 동작처럼 정면 촬영된 관절 좌표만으로 구별하기 어려운 동작의 경우, 딥러닝 모델이 머신러닝 모델보다 관절의 미세한 움직임을 인식하는 데 더 우수한 성능을 보였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202433861648179&target=NART&cn=JAKO202433861648179",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "스켈레톤 데이터에 기반한 동작 분류: 고전적인 머신러닝과 딥러닝 모델 성능 비교 스켈레톤 데이터에 기반한 동작 분류: 고전적인 머신러닝과 딥러닝 모델 성능 비교 스켈레톤 데이터에 기반한 동작 분류: 고전적인 머신러닝과 딥러닝 모델 성능 비교 본 연구는 3D 스켈레톤 데이터를 활용하여 머신러닝 및 딥러닝 모델을 통해 동작 인식을 수행하고, 모델 간 분류 성능 차이를 비교 분석하였다. 데이터는 NTU RGB+D 데이터의 정면 촬영 데이터로 40명의 참가자가 수행한 60가지 동작을 분류하였다. 머신러닝 모델로는 선형판별분석(LDA), 다중 클래스 서포트 벡터 머신(SVM), 그리고 랜덤 포레스트(RF)가 있으며, 딥러닝 모델로는 RNN 기반의 HBRNN (hierarchical bidirectional RNN) 모델과 GCN 기반의 SGN (semantics-guided neural network) 모델을 적용하였다. 각 모델의 분류 성능을 평가하기 위해 40명의 참가자별로 교차 검증을 실시하였다. 분석 결과, 모델 간 성능 차이는 동작 유형에 크게 영향을 받았으며, 군집 분석을 통해 각 동작에 대한 분류 성능을 살펴본 결과, 인식이 비교적 쉬운 큰 동작에서는 머신러닝 모델과 딥러닝 모델 간의 성능 차이가 유의미하지 않았고, 비슷한 성능을 나타냈다. 반면, 손뼉치기나 손을 비비는 동작처럼 정면 촬영된 관절 좌표만으로 구별하기 어려운 동작의 경우, 딥러닝 모델이 머신러닝 모델보다 관절의 미세한 움직임을 인식하는 데 더 우수한 성능을 보였다."
+        },
+        {
+          "rank": 15,
+          "score": 0.6048966646194458,
+          "doc_id": "JAKO201719950757340",
+          "title": "딥러닝 프레임워크의 비교: 티아노, 텐서플로, CNTK를 중심으로",
+          "abstract": "딥러닝 프레임워크의 대표적인 기능으로는 '자동미분'과 'GPU의 활용' 등을 들 수 있다. 본 논문은 파이썬의 라이브러리 형태로 사용 가능한 프레임워크 중에서 구글의 텐서플로와 마이크로소프트의 CNTK, 그리고 텐서플로의 원조라고 할 수 있는 티아노를 비교하였다. 본문에서는 자동미분의 개념과 GPU의 활용형태를 간단히 설명하고, 그 다음에 logistic regression을 실행하는 예를 통하여 각 프레임워크의 문법을 알아본 뒤에, 마지막으로 대표적인 딥러닝 응용인 CNN의 예제를 실행시켜보고 코딩의 편의성과 실행속도 등을 확인해 보았다. 그 결과, 편의성의 관점에서 보면 티아노가 가장 코딩 하기가 어렵고, CNTK와 텐서플로는 많은 부분이 비슷하게 추상화 되어 있어서 코딩이 비슷하지만 가중치와 편향을 직접 정의하느냐의 여부에서 차이를 보였다. 그리고 각 프레임워크의 실행속도에 대한 평가는 '큰 차이는 없다'는 것이다. 텐서플로는 티아노에 비하여 속도가 느리다는 평가가 있어왔는데, 본 연구의 실험에 의하면, 비록 CNN 모형에 국한되었지만, 텐서플로가 아주 조금이지만 빠른 것으로 나타났다. CNTK의 경우에도, 비록 실험환경이 달랐지만, 실험환경의 차이에 의한 속도의 차이의 편차범위 이내에 있는 것으로 판단이 되었다. 본 연구에서는 세 종류의 딥러닝 프레임워크만을 살펴보았는데, 위키피디아에 따르면 딥러닝 프레임워크의 종류는 12가지가 있으며, 각 프레임워크의 특징을 15가지 속성으로 구분하여 차이를 특정하고 있다. 그 많은 속성 중에서 사용자의 입장에서 볼 때 중요한 속성은 어떤 언어(파이썬, C++, Java, 등)로 사용가능한지, 어떤 딥러닝 모형에 대한 라이브러리가 잘 구현되어 있는지 등일 것이다. 그리고 사용자가 대규모의 딥러닝 모형을 구축한다면, 다중 GPU 혹은 다중 서버를 지원하는지의 여부도 중요할 것이다. 또한 딥러닝 모형을 처음 학습하는 경우에는 사용설명서가 많은지 예제 프로그램이 많은지 여부도 중요한 기준이 될 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201719950757340&target=NART&cn=JAKO201719950757340",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 프레임워크의 비교: 티아노, 텐서플로, CNTK를 중심으로 딥러닝 프레임워크의 비교: 티아노, 텐서플로, CNTK를 중심으로 딥러닝 프레임워크의 비교: 티아노, 텐서플로, CNTK를 중심으로 딥러닝 프레임워크의 대표적인 기능으로는 '자동미분'과 'GPU의 활용' 등을 들 수 있다. 본 논문은 파이썬의 라이브러리 형태로 사용 가능한 프레임워크 중에서 구글의 텐서플로와 마이크로소프트의 CNTK, 그리고 텐서플로의 원조라고 할 수 있는 티아노를 비교하였다. 본문에서는 자동미분의 개념과 GPU의 활용형태를 간단히 설명하고, 그 다음에 logistic regression을 실행하는 예를 통하여 각 프레임워크의 문법을 알아본 뒤에, 마지막으로 대표적인 딥러닝 응용인 CNN의 예제를 실행시켜보고 코딩의 편의성과 실행속도 등을 확인해 보았다. 그 결과, 편의성의 관점에서 보면 티아노가 가장 코딩 하기가 어렵고, CNTK와 텐서플로는 많은 부분이 비슷하게 추상화 되어 있어서 코딩이 비슷하지만 가중치와 편향을 직접 정의하느냐의 여부에서 차이를 보였다. 그리고 각 프레임워크의 실행속도에 대한 평가는 '큰 차이는 없다'는 것이다. 텐서플로는 티아노에 비하여 속도가 느리다는 평가가 있어왔는데, 본 연구의 실험에 의하면, 비록 CNN 모형에 국한되었지만, 텐서플로가 아주 조금이지만 빠른 것으로 나타났다. CNTK의 경우에도, 비록 실험환경이 달랐지만, 실험환경의 차이에 의한 속도의 차이의 편차범위 이내에 있는 것으로 판단이 되었다. 본 연구에서는 세 종류의 딥러닝 프레임워크만을 살펴보았는데, 위키피디아에 따르면 딥러닝 프레임워크의 종류는 12가지가 있으며, 각 프레임워크의 특징을 15가지 속성으로 구분하여 차이를 특정하고 있다. 그 많은 속성 중에서 사용자의 입장에서 볼 때 중요한 속성은 어떤 언어(파이썬, C++, Java, 등)로 사용가능한지, 어떤 딥러닝 모형에 대한 라이브러리가 잘 구현되어 있는지 등일 것이다. 그리고 사용자가 대규모의 딥러닝 모형을 구축한다면, 다중 GPU 혹은 다중 서버를 지원하는지의 여부도 중요할 것이다. 또한 딥러닝 모형을 처음 학습하는 경우에는 사용설명서가 많은지 예제 프로그램이 많은지 여부도 중요한 기준이 될 것이다."
+        },
+        {
+          "rank": 16,
+          "score": 0.600894570350647,
+          "doc_id": "ATN0037463572",
+          "title": "서버리스 컴퓨팅 오픈소스 플랫폼 기술 및 성능 평가",
+          "abstract": "Serverless computing is a new computing paradigm which can develop and execute the application program without server management overhead. Recently, as the enterprise application architectures are evolved to container and micro-services, serverless-based cloud services make it easy to expand and distribute the micro-services. In this regard, we compared the technologies and performed an experiment to measure average response time and response success rate of distributed functions for the three typical serverless open source frameworks: OpenFaaS, Kubeless and Fission.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0037463572&target=NART&cn=ATN0037463572",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "서버리스 컴퓨팅 오픈소스 플랫폼 기술 및 성능 평가 서버리스 컴퓨팅 오픈소스 플랫폼 기술 및 성능 평가 서버리스 컴퓨팅 오픈소스 플랫폼 기술 및 성능 평가 Serverless computing is a new computing paradigm which can develop and execute the application program without server management overhead. Recently, as the enterprise application architectures are evolved to container and micro-services, serverless-based cloud services make it easy to expand and distribute the micro-services. In this regard, we compared the technologies and performed an experiment to measure average response time and response success rate of distributed functions for the three typical serverless open source frameworks: OpenFaaS, Kubeless and Fission."
+        },
+        {
+          "rank": 17,
+          "score": 0.5962148904800415,
+          "doc_id": "JAKO202005653790136",
+          "title": "오픈 소스 엣지 컴퓨팅 플랫폼 분석: 구조, 특징, 비교",
+          "abstract": "엣지 컴퓨팅은 데이터를 처리하고 연산하는 곳이 멀리 떨어진 데이터센터에 있는 게 아니라, 단말 장치 혹은 게이트웨이와 같은 엑세스 포인트에 가까운 엣지 사이드에 컴퓨팅 능력 및 데이터 처리 능력을 부가함으로써 저지연/초고속컴퓨팅의 실현을 가능케 한다. 이러한 엣지 컴퓨팅의 종류로는 Mobile edge computing, Fog computing, Cloudlet computing이 있으며, 본 논문에서는 엣지 컴퓨팅을 실제 구현/구축하기 위해 현존하는 오픈 소스 플랫폼들에 대해 초점을 맞추고 분석한다. 각 오픈 소스 엣지 플랫폼에 대해 구조 및 특징들을 체계적으로 묘사하고 비교 분석함으로써 오픈 소스 엣지 플랫폼을 이용하여 실제 엣지 노드를 구축 하고자 하는 산업계 엔지니어들에게 사용 사례에 부합한 최선의 엣지 플랫폼을 선택 할 수 있도록 하나의 제반 지식을 제공하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202005653790136&target=NART&cn=JAKO202005653790136",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈 소스 엣지 컴퓨팅 플랫폼 분석: 구조, 특징, 비교 오픈 소스 엣지 컴퓨팅 플랫폼 분석: 구조, 특징, 비교 오픈 소스 엣지 컴퓨팅 플랫폼 분석: 구조, 특징, 비교 엣지 컴퓨팅은 데이터를 처리하고 연산하는 곳이 멀리 떨어진 데이터센터에 있는 게 아니라, 단말 장치 혹은 게이트웨이와 같은 엑세스 포인트에 가까운 엣지 사이드에 컴퓨팅 능력 및 데이터 처리 능력을 부가함으로써 저지연/초고속컴퓨팅의 실현을 가능케 한다. 이러한 엣지 컴퓨팅의 종류로는 Mobile edge computing, Fog computing, Cloudlet computing이 있으며, 본 논문에서는 엣지 컴퓨팅을 실제 구현/구축하기 위해 현존하는 오픈 소스 플랫폼들에 대해 초점을 맞추고 분석한다. 각 오픈 소스 엣지 플랫폼에 대해 구조 및 특징들을 체계적으로 묘사하고 비교 분석함으로써 오픈 소스 엣지 플랫폼을 이용하여 실제 엣지 노드를 구축 하고자 하는 산업계 엔지니어들에게 사용 사례에 부합한 최선의 엣지 플랫폼을 선택 할 수 있도록 하나의 제반 지식을 제공하고자 한다."
+        },
+        {
+          "rank": 18,
+          "score": 0.5891541242599487,
+          "doc_id": "JAKO201305262618384",
+          "title": "오픈소스 클라우드 컴퓨팅 기반 교육 실습 시스템 구축",
+          "abstract": "근래 이슈가 되고 있는 클라우드 컴퓨팅은 분산컴퓨팅 환경에서 사용자가 요구하는 컴퓨팅 자원을 최적화하여 유연하고 확장성 있게 지원할 수 있어 각광받는 새로운 패러다임이다. 클라우드 컴퓨팅 환경은 가상화 환경을 구성함으로써 실제적인 구현 및 서비스가 가능해진다. 본 논문에서는 오픈소스 기반의 클라우드 컴퓨팅을 연구하고 대학교 내에서 컴퓨터를 이용한 실습을 수행할 시 요구되는 시스템 환경을 오픈소스 클라우드 컴퓨팅 기반의 환경을 통해 구현하고자 한다. 클라우드 컴퓨팅을 통한 가상화 기반의 실습 환경은 최적화된 자원을 제공할 수 있을 뿐만 아니라 실습 자원 관리의 편리성, 실습 결과에 대한 손쉬운 관리 등의 효율성을 가져올 수 있다. 이로 인해 실습환경 설정에 소요되는 시간을 줄일 수 있을 뿐만 아니라, 교수 입장에서는 실습결과물들을 쉽게 관리 할 수 있게 된다. 또한 다양한 실습환경의 요구사항들을 유연성 있게 적용함으로써 시스템에 대한 활용성 또한 높아지게 된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201305262618384&target=NART&cn=JAKO201305262618384",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈소스 클라우드 컴퓨팅 기반 교육 실습 시스템 구축 오픈소스 클라우드 컴퓨팅 기반 교육 실습 시스템 구축 오픈소스 클라우드 컴퓨팅 기반 교육 실습 시스템 구축 근래 이슈가 되고 있는 클라우드 컴퓨팅은 분산컴퓨팅 환경에서 사용자가 요구하는 컴퓨팅 자원을 최적화하여 유연하고 확장성 있게 지원할 수 있어 각광받는 새로운 패러다임이다. 클라우드 컴퓨팅 환경은 가상화 환경을 구성함으로써 실제적인 구현 및 서비스가 가능해진다. 본 논문에서는 오픈소스 기반의 클라우드 컴퓨팅을 연구하고 대학교 내에서 컴퓨터를 이용한 실습을 수행할 시 요구되는 시스템 환경을 오픈소스 클라우드 컴퓨팅 기반의 환경을 통해 구현하고자 한다. 클라우드 컴퓨팅을 통한 가상화 기반의 실습 환경은 최적화된 자원을 제공할 수 있을 뿐만 아니라 실습 자원 관리의 편리성, 실습 결과에 대한 손쉬운 관리 등의 효율성을 가져올 수 있다. 이로 인해 실습환경 설정에 소요되는 시간을 줄일 수 있을 뿐만 아니라, 교수 입장에서는 실습결과물들을 쉽게 관리 할 수 있게 된다. 또한 다양한 실습환경의 요구사항들을 유연성 있게 적용함으로써 시스템에 대한 활용성 또한 높아지게 된다."
+        },
+        {
+          "rank": 19,
+          "score": 0.5871168971061707,
+          "doc_id": "ATN0038661375",
+          "title": "단백질 기능 예측 모델의 주요 딥러닝 모델 비교 실험",
+          "abstract": "Proteins are the basic unit of all life activities, and understanding them is essential for studying life phenomena. Since the emergenceof the machine learning methodology using artificial neural networks, many researchers have tried to predict the function of proteinsusing only protein sequences. Many combinations of deep learning models have been reported to academia, but the methods are differentand there is no formal methodology, and they are tailored to different data, so there has never been a direct comparative analysis ofwhich algorithms are more suitable for handling protein data. In this paper, the single model performance of each algorithm was comparedand evaluated based on accuracy and speed by applying the same data to CNN, LSTM, and GRU models, which are the most frequentlyused representative algorithms in the convergence research field of predicting protein functions, and the final evaluation scale is presentedas Micro Precision, Recall, and F1-score. The combined models CNN-LSTM and CNN-GRU models also were evaluated in the same way.Through this study, it was confirmed that the performance of LSTM as a single model is good in simple classification problems, overlappingCNN was suitable as a single model in complex classification problems, and the CNN-LSTM was relatively better as a combination model.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0038661375&target=NART&cn=ATN0038661375",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "단백질 기능 예측 모델의 주요 딥러닝 모델 비교 실험 단백질 기능 예측 모델의 주요 딥러닝 모델 비교 실험 단백질 기능 예측 모델의 주요 딥러닝 모델 비교 실험 Proteins are the basic unit of all life activities, and understanding them is essential for studying life phenomena. Since the emergenceof the machine learning methodology using artificial neural networks, many researchers have tried to predict the function of proteinsusing only protein sequences. Many combinations of deep learning models have been reported to academia, but the methods are differentand there is no formal methodology, and they are tailored to different data, so there has never been a direct comparative analysis ofwhich algorithms are more suitable for handling protein data. In this paper, the single model performance of each algorithm was comparedand evaluated based on accuracy and speed by applying the same data to CNN, LSTM, and GRU models, which are the most frequentlyused representative algorithms in the convergence research field of predicting protein functions, and the final evaluation scale is presentedas Micro Precision, Recall, and F1-score. The combined models CNN-LSTM and CNN-GRU models also were evaluated in the same way.Through this study, it was confirmed that the performance of LSTM as a single model is good in simple classification problems, overlappingCNN was suitable as a single model in complex classification problems, and the CNN-LSTM was relatively better as a combination model."
+        },
+        {
+          "rank": 20,
+          "score": 0.5840696096420288,
+          "doc_id": "NART111636071",
+          "title": "오픈소스 SW 개발 방법론 소개 및 분석",
+          "abstract": "최근 인공지능과 빅데이터, 자연어처리 기술을 포함한 4차 산업혁명 관련 기술이 발전하면서 개인이나 팀 단독의 연구 및 개발 작업 방식의 한계를 가져오고 있다. 이런 한계를 극복하기 위하여 자신의 기술을 공개하고 협업하는 오픈소스 소프트웨어 개발 방식이 활발해지고 있으며, 회사 내부에서도 유사 개발 방법을 적용하여 회사 구성원들의 참여를 독려하고 품질을 개선하는 노력을 진행하고 있다. 이런 경향을 반영하여 IT 기술을 주도하는 선도 회사들은 적극적으로 오픈소스와 이너소스로 대변되는 공개 개발방식에 대한 지원 정책들을 제시하고 있다. 본 논문에서는 최근 활발히 논의되고 있는 오픈소스 모델, 이너소스 모델 및 그와 유사한 DevOps 모델을 소개하고 각각의 특징 및 구성 요소를 비교하였다. 비교 결과를 바탕으로 어떤 특정 모델의 우수성을 주장하는 것보다는 고객의 요구사항을 만족하면서 질적 향상을 도모할 수 있도록 각 장점에 따라 개인 또는 소속 기관의 소프트웨어 개발정책을 수립할 수 있을 것으로 판단한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART111636071&target=NART&cn=NART111636071",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈소스 SW 개발 방법론 소개 및 분석 오픈소스 SW 개발 방법론 소개 및 분석 오픈소스 SW 개발 방법론 소개 및 분석 최근 인공지능과 빅데이터, 자연어처리 기술을 포함한 4차 산업혁명 관련 기술이 발전하면서 개인이나 팀 단독의 연구 및 개발 작업 방식의 한계를 가져오고 있다. 이런 한계를 극복하기 위하여 자신의 기술을 공개하고 협업하는 오픈소스 소프트웨어 개발 방식이 활발해지고 있으며, 회사 내부에서도 유사 개발 방법을 적용하여 회사 구성원들의 참여를 독려하고 품질을 개선하는 노력을 진행하고 있다. 이런 경향을 반영하여 IT 기술을 주도하는 선도 회사들은 적극적으로 오픈소스와 이너소스로 대변되는 공개 개발방식에 대한 지원 정책들을 제시하고 있다. 본 논문에서는 최근 활발히 논의되고 있는 오픈소스 모델, 이너소스 모델 및 그와 유사한 DevOps 모델을 소개하고 각각의 특징 및 구성 요소를 비교하였다. 비교 결과를 바탕으로 어떤 특정 모델의 우수성을 주장하는 것보다는 고객의 요구사항을 만족하면서 질적 향상을 도모할 수 있도록 각 장점에 따라 개인 또는 소속 기관의 소프트웨어 개발정책을 수립할 수 있을 것으로 판단한다."
+        },
+        {
+          "rank": 21,
+          "score": 0.5840151309967041,
+          "doc_id": "NART69848672",
+          "title": "리눅스 기반 오픈 소스 서버 가상화 기술 비교",
+          "abstract": "<P>세계적으로 클라우드 컴퓨팅을 위한 기반 구축이 점점 보편화되고, 국내에서는 막대한 자본력과 기술력을 보유한 대기업과 거대 통신사를 주축으로 클라우드 인프라 구축에 나서고 있다. 그러나, 중소기업들은 클라우드 인프라 구축의 필요성은 인지하고 있으나, 손쉽게 접근할 수 없는 영역으로 인식되고 있다. 본 논문에서는 클라우드 인프라 구축의 기반 기술인 서버 가상화(Server Virtualization) 기술 중에 비용부담이 없는 리눅스 기반 오픈 소스 서버 가상화 기술인 Xen, KVM, VirtualBox를 비교 분석한다. 아울러, 엔터프라이즈급 리눅스에 직접 설치 및 분석하여 기업의 상황에 맞는 최적화된 서버 가상화 기술을 선택할 수 있도록 제시하고자 한다.</P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART69848672&target=NART&cn=NART69848672",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "리눅스 기반 오픈 소스 서버 가상화 기술 비교 리눅스 기반 오픈 소스 서버 가상화 기술 비교 리눅스 기반 오픈 소스 서버 가상화 기술 비교 <P>세계적으로 클라우드 컴퓨팅을 위한 기반 구축이 점점 보편화되고, 국내에서는 막대한 자본력과 기술력을 보유한 대기업과 거대 통신사를 주축으로 클라우드 인프라 구축에 나서고 있다. 그러나, 중소기업들은 클라우드 인프라 구축의 필요성은 인지하고 있으나, 손쉽게 접근할 수 없는 영역으로 인식되고 있다. 본 논문에서는 클라우드 인프라 구축의 기반 기술인 서버 가상화(Server Virtualization) 기술 중에 비용부담이 없는 리눅스 기반 오픈 소스 서버 가상화 기술인 Xen, KVM, VirtualBox를 비교 분석한다. 아울러, 엔터프라이즈급 리눅스에 직접 설치 및 분석하여 기업의 상황에 맞는 최적화된 서버 가상화 기술을 선택할 수 있도록 제시하고자 한다.</P>"
+        },
+        {
+          "rank": 22,
+          "score": 0.5806186199188232,
+          "doc_id": "JAKO201303537263488",
+          "title": "오픈소스 클라우드 플랫폼 OpenStack 기반 위성영상분석처리 서비스 시험구현",
+          "abstract": "2013년 현재 클라우드(Cloud) 컴퓨팅 서비스는 정보통신기술분야의 핵심 기술 동향 중 하나로서 이에 관련된 기술이나 사업 응용 분야가 계속 발전, 확대되고 있다. 이러한 서비스를 개발할 수 있는 기반 요소인 클라우드 플랫폼 중에 하나인 OpenStack은 오픈소스 기반으로 몇 가지의 내부 기술 요소로 이루어져 있고, 서비스 목적에 따라 상업적 플랫폼에 의존하지 않고도 독자적인 공개 및 비공개 클라우드 컴퓨팅 환경을 구축할 수 있는 환경을 제공한다. 이번 연구에서는 위성영상정보 분석처리 시스템을 시범적인 클라우드 서비스 모델로 설정하여 OpenStack을 기반으로 비공개 클라우드 컴퓨팅 환경으로 설계, 구축하는 사례를 제시하고자 하였다. 구현된 서비스는 세부적으로 인스턴스 서버, 웹 서비스, 모바일 앱으로 구분하였다. 인스턴스 서버는 실제 위성영상정보 분석처리, 데이터베이스 등의 기능을 제공하고, 웹 서비스는 사용자로부터 위성영상정보를 저장 및 관리하는 기능을 제공한다. 한편 모바일 앱은 위성영상정보의 시각화 및 분석처리 요청 등의 기능을 수행한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201303537263488&target=NART&cn=JAKO201303537263488",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈소스 클라우드 플랫폼 OpenStack 기반 위성영상분석처리 서비스 시험구현 오픈소스 클라우드 플랫폼 OpenStack 기반 위성영상분석처리 서비스 시험구현 오픈소스 클라우드 플랫폼 OpenStack 기반 위성영상분석처리 서비스 시험구현 2013년 현재 클라우드(Cloud) 컴퓨팅 서비스는 정보통신기술분야의 핵심 기술 동향 중 하나로서 이에 관련된 기술이나 사업 응용 분야가 계속 발전, 확대되고 있다. 이러한 서비스를 개발할 수 있는 기반 요소인 클라우드 플랫폼 중에 하나인 OpenStack은 오픈소스 기반으로 몇 가지의 내부 기술 요소로 이루어져 있고, 서비스 목적에 따라 상업적 플랫폼에 의존하지 않고도 독자적인 공개 및 비공개 클라우드 컴퓨팅 환경을 구축할 수 있는 환경을 제공한다. 이번 연구에서는 위성영상정보 분석처리 시스템을 시범적인 클라우드 서비스 모델로 설정하여 OpenStack을 기반으로 비공개 클라우드 컴퓨팅 환경으로 설계, 구축하는 사례를 제시하고자 하였다. 구현된 서비스는 세부적으로 인스턴스 서버, 웹 서비스, 모바일 앱으로 구분하였다. 인스턴스 서버는 실제 위성영상정보 분석처리, 데이터베이스 등의 기능을 제공하고, 웹 서비스는 사용자로부터 위성영상정보를 저장 및 관리하는 기능을 제공한다. 한편 모바일 앱은 위성영상정보의 시각화 및 분석처리 요청 등의 기능을 수행한다."
+        },
+        {
+          "rank": 23,
+          "score": 0.5778530836105347,
+          "doc_id": "JAKO202225948452506",
+          "title": "딥러닝 기법을 사용하는 소프트웨어 결함 예측 모델",
+          "abstract": "수십년간 매우 많은 소프트웨어 결함 예측 모델에 관한 연구들이 수행되었으며, 그들 중 기계학습 기법을 사용한 모델들이 가장 좋은 성능을 보였다. 딥러닝 기법은 기계학습 분야에서 가장 각광받는 기술이 되었지만 결함 예측 모델의 분류기로 사용된 연구는 거의 없었다. 몇몇 연구들은 모델의 입력 소스나 구문 데이터로부터 시맨틱 정보를 얻어내는데 딥러닝을 사용하였다. 본 논문은 3개 이상의 은닉층을 갖는 MLP를 이용하여 모델 구조와 하이퍼 파라미터를 변경하여 여러 모델들을 제작하였다. 모델 평가 실험 결과 MLP 기반 딥러닝 모델들은 기존 결함 예측 모델들과 Accuracy는 비슷한 성능을 보였으나 AUC는 유의미하게 더 우수한 성능을 보였다. 또한 또다른 딥러닝 모델인 CNN 모델보다도 더 나은 성능을 보였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202225948452506&target=NART&cn=JAKO202225948452506",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 기법을 사용하는 소프트웨어 결함 예측 모델 딥러닝 기법을 사용하는 소프트웨어 결함 예측 모델 딥러닝 기법을 사용하는 소프트웨어 결함 예측 모델 수십년간 매우 많은 소프트웨어 결함 예측 모델에 관한 연구들이 수행되었으며, 그들 중 기계학습 기법을 사용한 모델들이 가장 좋은 성능을 보였다. 딥러닝 기법은 기계학습 분야에서 가장 각광받는 기술이 되었지만 결함 예측 모델의 분류기로 사용된 연구는 거의 없었다. 몇몇 연구들은 모델의 입력 소스나 구문 데이터로부터 시맨틱 정보를 얻어내는데 딥러닝을 사용하였다. 본 논문은 3개 이상의 은닉층을 갖는 MLP를 이용하여 모델 구조와 하이퍼 파라미터를 변경하여 여러 모델들을 제작하였다. 모델 평가 실험 결과 MLP 기반 딥러닝 모델들은 기존 결함 예측 모델들과 Accuracy는 비슷한 성능을 보였으나 AUC는 유의미하게 더 우수한 성능을 보였다. 또한 또다른 딥러닝 모델인 CNN 모델보다도 더 나은 성능을 보였다."
+        },
+        {
+          "rank": 24,
+          "score": 0.5761750936508179,
+          "doc_id": "JAKO202119060154550",
+          "title": "딥블록: 웹 기반 딥러닝 교육용 플랫폼",
+          "abstract": "최근 인공지능을 사용한 연구나 기업의 프로젝트가 활발하게 이루어지고 다양한 서비스나 시스템이 인공지능 기술과 접목되어 점점 더 지능화되고 있다. 이에 따라 인공지능의 기법 중 하나인 딥러닝에 대한 관심과 이를 학습하려는 사람들이 증가했다. 딥러닝을 학습하기 위해서는 딥러닝 이론 이외에도 컴퓨터 프로그래밍, 수식 등 많은 지식들이 요구된다. 이는 초심자에게 높은 진입장벽으로 작용한다. 따라서 본 연구에서는 초심자가 프로그래밍 및 수식 등을 고려하지 않고 DNN, CNN 등과 같은 딥러닝의 기본적인 모델을 구현할 수 있는 DeepBlock이라는 웹 기반 교육용 딥러닝 플랫폼을 설계 및 구현하였다. 제안한 DeepBlock을 이용하여 딥러닝에 관심을 가진 학생들이나 초심자들의 교육에 활용이 가능하다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202119060154550&target=NART&cn=JAKO202119060154550",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥블록: 웹 기반 딥러닝 교육용 플랫폼 딥블록: 웹 기반 딥러닝 교육용 플랫폼 딥블록: 웹 기반 딥러닝 교육용 플랫폼 최근 인공지능을 사용한 연구나 기업의 프로젝트가 활발하게 이루어지고 다양한 서비스나 시스템이 인공지능 기술과 접목되어 점점 더 지능화되고 있다. 이에 따라 인공지능의 기법 중 하나인 딥러닝에 대한 관심과 이를 학습하려는 사람들이 증가했다. 딥러닝을 학습하기 위해서는 딥러닝 이론 이외에도 컴퓨터 프로그래밍, 수식 등 많은 지식들이 요구된다. 이는 초심자에게 높은 진입장벽으로 작용한다. 따라서 본 연구에서는 초심자가 프로그래밍 및 수식 등을 고려하지 않고 DNN, CNN 등과 같은 딥러닝의 기본적인 모델을 구현할 수 있는 DeepBlock이라는 웹 기반 교육용 딥러닝 플랫폼을 설계 및 구현하였다. 제안한 DeepBlock을 이용하여 딥러닝에 관심을 가진 학생들이나 초심자들의 교육에 활용이 가능하다."
+        },
+        {
+          "rank": 25,
+          "score": 0.5729008913040161,
+          "doc_id": "DIKO0014861002",
+          "title": "딥 러닝기반 고객평점 예측모델",
+          "abstract": "인터넷의 발달과 휴대용 기기의 발달로 사용자들이 데이터를 생산하고, 공유하는 일들이 매우 자연스럽고 쉬운 일이 되었다. e-마켓플레스로 대변되는 온라인 쇼핑몰에서도 사용자들의 데이터 생산과 공유가 리뷰의 형식으로 활발하게 이루어지고 있다. 리뷰의 형식은 보통 정해진 형식이 없는 비 정형데이터인 텍스트와 제품에 대한 고객의 평점으로 이루어져있다. 이와 같이 형태로 적극적으로 공유된 정보들은 구매에 중요한 요소로 사용되고 있다. &amp;#xD; 본 논문에서는 이렇게 누적된 리뷰 데이터를 학습하여 고객의 평점을 예측하는 딥 러닝(Deep learning) 모델을 작성하고자 한다. 학습에 필요한 입력데이터 즉 고객의 특성에 관한 일반적인 정보는 쇼핑몰 내부에 있고, 개인 정보가 포함되어 있기 때문에 사용하기 어려운 문제점이 있다. 이를 극복하기 위해 리뷰 자체에서 고객의 특징(feature)을 추출하는 방법을 사용하였다. 비정형 리뷰 데이터에서 텍스트 마이닝 기법을 사용하여 정형화된 고객의 특징을 추출하였다.&amp;#xD; 실험 대상 제품은 11번가 쇼핑몰에서 하나의 화장품을 선정하였다. 최적의 딥 러닝 모델을 찾기 위하여 Drop-Out 및 Rectified Linear hidden Unite(ReLU)를 사용하며 결과를 평가하였다. 딥 러닝의 예측 결과는 고객 평점을 기반으로 하여 좋음, 보통, 나쁨 3가지를 출력 하도록 실험을 진행하였다. 실험을 통해 완성된 딥 러닝 모델이 출력하는 좋은, 보통, 나쁨 3가지 결과와 실제 고객이 입력 한 평점을 비교하였다. 실험 결과 90%의 정확도를 보였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014861002&target=NART&cn=DIKO0014861002",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥 러닝기반 고객평점 예측모델 딥 러닝기반 고객평점 예측모델 딥 러닝기반 고객평점 예측모델 인터넷의 발달과 휴대용 기기의 발달로 사용자들이 데이터를 생산하고, 공유하는 일들이 매우 자연스럽고 쉬운 일이 되었다. e-마켓플레스로 대변되는 온라인 쇼핑몰에서도 사용자들의 데이터 생산과 공유가 리뷰의 형식으로 활발하게 이루어지고 있다. 리뷰의 형식은 보통 정해진 형식이 없는 비 정형데이터인 텍스트와 제품에 대한 고객의 평점으로 이루어져있다. 이와 같이 형태로 적극적으로 공유된 정보들은 구매에 중요한 요소로 사용되고 있다. &amp;#xD; 본 논문에서는 이렇게 누적된 리뷰 데이터를 학습하여 고객의 평점을 예측하는 딥 러닝(Deep learning) 모델을 작성하고자 한다. 학습에 필요한 입력데이터 즉 고객의 특성에 관한 일반적인 정보는 쇼핑몰 내부에 있고, 개인 정보가 포함되어 있기 때문에 사용하기 어려운 문제점이 있다. 이를 극복하기 위해 리뷰 자체에서 고객의 특징(feature)을 추출하는 방법을 사용하였다. 비정형 리뷰 데이터에서 텍스트 마이닝 기법을 사용하여 정형화된 고객의 특징을 추출하였다.&amp;#xD; 실험 대상 제품은 11번가 쇼핑몰에서 하나의 화장품을 선정하였다. 최적의 딥 러닝 모델을 찾기 위하여 Drop-Out 및 Rectified Linear hidden Unite(ReLU)를 사용하며 결과를 평가하였다. 딥 러닝의 예측 결과는 고객 평점을 기반으로 하여 좋음, 보통, 나쁨 3가지를 출력 하도록 실험을 진행하였다. 실험을 통해 완성된 딥 러닝 모델이 출력하는 좋은, 보통, 나쁨 3가지 결과와 실제 고객이 입력 한 평점을 비교하였다. 실험 결과 90%의 정확도를 보였다."
+        },
+        {
+          "rank": 26,
+          "score": 0.5723546147346497,
+          "doc_id": "JAKO201716269582877",
+          "title": "딥러닝 시티: 스마트 시티의 빅데이터 분석 프레임워크 제안",
+          "abstract": "도시 기능이 복합적으로 발전함에 따라 스마트 시티에 대한 관심이 높아지고 있다. 스마트 시티란 정보통신기술을 활용하여 교통, 안전, 복지, 생활 등 도시 문제를 효과적으로 해결하는 것을 말한다. 최근 세계 각국은 빅데이터, 사물인터넷, 인공지능 기술을 스마트 시티에 도입하는 시도를 하고 있으나 종합적인 도시 서비스로는 발전하지 못하고 있다. 본 논문에서는 국내외 스마트 시티 추진 현황을 살펴보고 핵심 문제로 부각된, 데이터 공유문제, 서비스 호환성 문제를 해결하는 방안을 제시하였다. 이를 위해 딥러닝 기술을 스마트 시티 서비스에 접목한 '딥러닝 시티 프레임워크'를 제안하고 도시 여러 영역의 시공간 데이터를 안전하게 공유하고 여러 도시의 학습 데이터를 융합하는 새로운 스마트 시티 추진 전략을 제시하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201716269582877&target=NART&cn=JAKO201716269582877",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 시티: 스마트 시티의 빅데이터 분석 프레임워크 제안 딥러닝 시티: 스마트 시티의 빅데이터 분석 프레임워크 제안 딥러닝 시티: 스마트 시티의 빅데이터 분석 프레임워크 제안 도시 기능이 복합적으로 발전함에 따라 스마트 시티에 대한 관심이 높아지고 있다. 스마트 시티란 정보통신기술을 활용하여 교통, 안전, 복지, 생활 등 도시 문제를 효과적으로 해결하는 것을 말한다. 최근 세계 각국은 빅데이터, 사물인터넷, 인공지능 기술을 스마트 시티에 도입하는 시도를 하고 있으나 종합적인 도시 서비스로는 발전하지 못하고 있다. 본 논문에서는 국내외 스마트 시티 추진 현황을 살펴보고 핵심 문제로 부각된, 데이터 공유문제, 서비스 호환성 문제를 해결하는 방안을 제시하였다. 이를 위해 딥러닝 기술을 스마트 시티 서비스에 접목한 '딥러닝 시티 프레임워크'를 제안하고 도시 여러 영역의 시공간 데이터를 안전하게 공유하고 여러 도시의 학습 데이터를 융합하는 새로운 스마트 시티 추진 전략을 제시하였다."
+        },
+        {
+          "rank": 27,
+          "score": 0.5703817009925842,
+          "doc_id": "JAKO201625059046582",
+          "title": "오픈소스 SPICE 기반의 모바일 클라우드 컴퓨팅 클라이언트 UI/UX 개발",
+          "abstract": "모바일 클라우드 컴퓨팅은 단순히 클라우드 개념이 모바일로 확장된 것이 아니라, 스마트폰을 포함한 모든 이동형 디바이스에서 클라우드 기술을 사용하여 원하는 서비스를 시간과 공간의 제약 없이 사용할 수 있는 기술을 의미한다. 현재 클라우드 컴퓨팅 관련된 다양한 연구가 진행 중이지만, 실제 사용자가 사용하는 인터페이스에 대한 연구가 미비하다. 본 논문의 특징 및 기여도는 다음과 같다. 첫째, 기존의 SPICE에서 제공되던 인터페이스들과 달리 UX를 고려한 UI를 개발한다. 둘째, 모바일 클라우드 컴퓨팅 클라이언트에서 키보드를 사용할 때 두 버튼이상을 동시에 누르는 인터페이스를 한 번의 인터페이스로 통합한다. 셋째, 모바일 클라우드 컴퓨팅 클라이언트에 적합한 마우스인터페이스를 개발한다. 넷째, 모바일 클라우드 컴퓨팅 클라이언트에서 모서리부분은 버튼/파일/폴더 클릭 시 어려움을 해결한다. 마지막으로, 모바일 클라우드 컴퓨팅 클라이언트에서 마우스 스크롤기능이 모바일의 음향버튼을 이용하여 조작하던 것을 터치스크린 내 인터페이스를 생성하여 조작이 가능하도록 한다. 개발된 시스템의 성능평가는 다음과 같은 결과들을 보여 주었다. 모바일 환경에서 사용자가 마우스 인터페이스의 크기가 커지고 고정되어서 입력하기 편하게 되었다. 그리고 키보드의 복합키를 단축키의 형태로 제공하여 3-6단계의 입력이 1단계의 입력으로 간단해져서, 사용자가 복합키와 마우스입력이 간단해졌다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201625059046582&target=NART&cn=JAKO201625059046582",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈소스 SPICE 기반의 모바일 클라우드 컴퓨팅 클라이언트 UI/UX 개발 오픈소스 SPICE 기반의 모바일 클라우드 컴퓨팅 클라이언트 UI/UX 개발 오픈소스 SPICE 기반의 모바일 클라우드 컴퓨팅 클라이언트 UI/UX 개발 모바일 클라우드 컴퓨팅은 단순히 클라우드 개념이 모바일로 확장된 것이 아니라, 스마트폰을 포함한 모든 이동형 디바이스에서 클라우드 기술을 사용하여 원하는 서비스를 시간과 공간의 제약 없이 사용할 수 있는 기술을 의미한다. 현재 클라우드 컴퓨팅 관련된 다양한 연구가 진행 중이지만, 실제 사용자가 사용하는 인터페이스에 대한 연구가 미비하다. 본 논문의 특징 및 기여도는 다음과 같다. 첫째, 기존의 SPICE에서 제공되던 인터페이스들과 달리 UX를 고려한 UI를 개발한다. 둘째, 모바일 클라우드 컴퓨팅 클라이언트에서 키보드를 사용할 때 두 버튼이상을 동시에 누르는 인터페이스를 한 번의 인터페이스로 통합한다. 셋째, 모바일 클라우드 컴퓨팅 클라이언트에 적합한 마우스인터페이스를 개발한다. 넷째, 모바일 클라우드 컴퓨팅 클라이언트에서 모서리부분은 버튼/파일/폴더 클릭 시 어려움을 해결한다. 마지막으로, 모바일 클라우드 컴퓨팅 클라이언트에서 마우스 스크롤기능이 모바일의 음향버튼을 이용하여 조작하던 것을 터치스크린 내 인터페이스를 생성하여 조작이 가능하도록 한다. 개발된 시스템의 성능평가는 다음과 같은 결과들을 보여 주었다. 모바일 환경에서 사용자가 마우스 인터페이스의 크기가 커지고 고정되어서 입력하기 편하게 되었다. 그리고 키보드의 복합키를 단축키의 형태로 제공하여 3-6단계의 입력이 1단계의 입력으로 간단해져서, 사용자가 복합키와 마우스입력이 간단해졌다."
+        },
+        {
+          "rank": 28,
+          "score": 0.5695420503616333,
+          "doc_id": "JAKO201403460493259",
+          "title": "오픈소스 모바일 클라우드 서비스: R 기반 공간영상정보 필터링 사례",
+          "abstract": "정보통신기술(ICT: Information Communication Technology) 분야의 시장을 주도하는 모바일, 클라우드 컴퓨팅, 빅데이터 등과 같은 트렌드 기술들은 공간정보 분야를 포함한 대부분의 응용분야에 지대한 영향을 미치고 있다. 이중에서 클라우드 컴퓨팅은 비록 우리나라에서는 초기 적용단계 수준이지만 다른 트렌드 기술들 간의 연계를 위한 플랫폼 역할을 담당한다. 특히 모바일과 클라우드 컴퓨팅이 결합된 형태인 모바일 클라우드는 모바일 단말 환경의 제한점들을 보완하고 기존의 모바일 앱에 비하여 더 많은 정보처리기능의 제공이 가능하다는 점에서 주목을 받고 있다. 이번 연구에서는 모바일 클라우드 환경을 OpenStack 및 다양한 오픈소스를 활용하여 구축하고, 이를 플랫폼으로 하여 공간영상정보 필터링 기능을 수행하는 시스템을 시험적으로 설계 및 구현하였다. 한편 공간영상정보 처리는 빅데이터 분석기술로 각광받고 있는 R 환경을 적용하여 필터링 처리를 수행하였다. 이러한 시도는 향후 R을 활용한 공간영상정보 분석서비스 개발과 다양한 공간정보와 연계되는 새로운 서비스 모델 개발에 적용될 것으로 기대한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201403460493259&target=NART&cn=JAKO201403460493259",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈소스 모바일 클라우드 서비스: R 기반 공간영상정보 필터링 사례 오픈소스 모바일 클라우드 서비스: R 기반 공간영상정보 필터링 사례 오픈소스 모바일 클라우드 서비스: R 기반 공간영상정보 필터링 사례 정보통신기술(ICT: Information Communication Technology) 분야의 시장을 주도하는 모바일, 클라우드 컴퓨팅, 빅데이터 등과 같은 트렌드 기술들은 공간정보 분야를 포함한 대부분의 응용분야에 지대한 영향을 미치고 있다. 이중에서 클라우드 컴퓨팅은 비록 우리나라에서는 초기 적용단계 수준이지만 다른 트렌드 기술들 간의 연계를 위한 플랫폼 역할을 담당한다. 특히 모바일과 클라우드 컴퓨팅이 결합된 형태인 모바일 클라우드는 모바일 단말 환경의 제한점들을 보완하고 기존의 모바일 앱에 비하여 더 많은 정보처리기능의 제공이 가능하다는 점에서 주목을 받고 있다. 이번 연구에서는 모바일 클라우드 환경을 OpenStack 및 다양한 오픈소스를 활용하여 구축하고, 이를 플랫폼으로 하여 공간영상정보 필터링 기능을 수행하는 시스템을 시험적으로 설계 및 구현하였다. 한편 공간영상정보 처리는 빅데이터 분석기술로 각광받고 있는 R 환경을 적용하여 필터링 처리를 수행하였다. 이러한 시도는 향후 R을 활용한 공간영상정보 분석서비스 개발과 다양한 공간정보와 연계되는 새로운 서비스 모델 개발에 적용될 것으로 기대한다."
+        },
+        {
+          "rank": 29,
+          "score": 0.5687637329101562,
+          "doc_id": "JAKO201914260133765",
+          "title": "딥 러닝 기반의 SIFT 이미지 특징 추출",
+          "abstract": "본 논문에서는 일정 크기로 자른 영상의 가운데 픽셀이 SIFT 특징점인지를 판별함으로써 SIFT 특징점을 추출하는 딥 뉴럴 네트워크(Deep Neural Network)를 제안한다. 이 네트워크의 데이터 세트는 DIV2K 데이터 세트를 <TEX>$33{\\times}33$</TEX> 크기로 잘라서 구성하고, 흑백 영상으로 판별하는 SIFT와는 달리 RGB 영상을 사용한다. 그라운드 트루스(ground truth)는 옥타브(scale, octave)를 0, 시그마(sigma)는 1.6, 간격(intervals)은 3으로 설정하여 추출한 RobHess SIFT 특징들로 구성한다. VGG-16을 기반으로 컨볼루션 층을 13개에서 23개와 33개로 점점 깊은 네트워크를 구성하고, 영상의 스케일을 증가시키는 방법을 바꿔가며 실험을 수행한다. 출력 층의 활성화 함수로 시그모이드(sigmoid) 함수를 사용한 결과와 소프트맥스(softmax) 함수를 사용한 결과를 비교하여 분석한다. 실험결과 제안한 네트워크가 99% 이상의 추출 정확도를 가질 뿐 아니라 왜곡된 영상에 대해서도 높은 추출 반복성을 가진다는 것을 보인다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201914260133765&target=NART&cn=JAKO201914260133765",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥 러닝 기반의 SIFT 이미지 특징 추출 딥 러닝 기반의 SIFT 이미지 특징 추출 딥 러닝 기반의 SIFT 이미지 특징 추출 본 논문에서는 일정 크기로 자른 영상의 가운데 픽셀이 SIFT 특징점인지를 판별함으로써 SIFT 특징점을 추출하는 딥 뉴럴 네트워크(Deep Neural Network)를 제안한다. 이 네트워크의 데이터 세트는 DIV2K 데이터 세트를 <TEX>$33{\\times}33$</TEX> 크기로 잘라서 구성하고, 흑백 영상으로 판별하는 SIFT와는 달리 RGB 영상을 사용한다. 그라운드 트루스(ground truth)는 옥타브(scale, octave)를 0, 시그마(sigma)는 1.6, 간격(intervals)은 3으로 설정하여 추출한 RobHess SIFT 특징들로 구성한다. VGG-16을 기반으로 컨볼루션 층을 13개에서 23개와 33개로 점점 깊은 네트워크를 구성하고, 영상의 스케일을 증가시키는 방법을 바꿔가며 실험을 수행한다. 출력 층의 활성화 함수로 시그모이드(sigmoid) 함수를 사용한 결과와 소프트맥스(softmax) 함수를 사용한 결과를 비교하여 분석한다. 실험결과 제안한 네트워크가 99% 이상의 추출 정확도를 가질 뿐 아니라 왜곡된 영상에 대해서도 높은 추출 반복성을 가진다는 것을 보인다."
+        },
+        {
+          "rank": 30,
+          "score": 0.5647806525230408,
+          "doc_id": "NART99691578",
+          "title": "C++ based General-purpose Open Source Deep Learning Framework, WICWIU",
+          "abstract": "",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART99691578&target=NART&cn=NART99691578",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "C++ based General-purpose Open Source Deep Learning Framework, WICWIU C++ based General-purpose Open Source Deep Learning Framework, WICWIU C++ based General-purpose Open Source Deep Learning Framework, WICWIU "
+        },
+        {
+          "rank": 31,
+          "score": 0.5640311241149902,
+          "doc_id": "DIKO0015685078",
+          "title": "딥러닝을 이용한 라즈베리 파이 기반의 분류 시스템 설계",
+          "abstract": "세계는 지금 AI의 급속한 발전으로 인해 산업과 사회 전반에 영향을 주는&amp;#xD; 시대가 도래되었다. 우리나라도 정부에서 국가 전력사업 중 하나로 인공지능&amp;#xD; (AI)를 선정하였다. 인공지능 분야 중 하나인 딥러닝은 많은 양의 학습 데이터&amp;#xD; 가 필요하게 된다. 그리고 많은 데이터를 훈련하기 위해서는 고성능의 컴퓨팅&amp;#xD; 시스템 또한 필요하다. 이런 고성능의 컴퓨팅 시스템을 산업 전반에 적용하기&amp;#xD; 엔 경제적으로 많은 부담이 된다.&amp;#xD; 본 논문은 딥러닝을 이용한 분류시스템을 제안한다. 가벼운 인공지능 시스템&amp;#xD; 을 위해 분류 시스템 단에 임베디드 시스템을 제안한다. 임베디드 시스템은 라&amp;#xD; 즈베리 파이를 사용하고, 딥러닝 훈련용 컴퓨팅 시스템은 클라우드 서버를 사&amp;#xD; 용한다. 실험을 위해 사용한 라즈베리 파이는 버전4 Model-B를 사용하였다.&amp;#xD; 본 논문에서는 딥러닝을 이용한 분류 시스템을 설계하고, 라즈베리 파이와 클&amp;#xD; 라우드 서버 간의 자동화 딥러닝 모델 업데이트 및 신규 모델을 라즈베리 파이&amp;#xD; 에 적용할 수 있는 프로세스를 설계하고 제안한다.&amp;#xD; 제안 시스템은 분류 시스템 동작 중 잘 못 된 예측을 하게 되면 해당 이미지&amp;#xD; 는 에러 데이터로 분류하고 에러 데이터 이미지가 기준 이상으로 수집이 되면&amp;#xD; 자동으로 클라우드 서버에 전송되어 딥러닝 모델을 재 훈련한다. 재 훈련된 모&amp;#xD; 델 파일을 버전 관리하여 모델 이름, 정확도, 파일 사이즈, 훈련 날짜와 같은&amp;#xD; 정보를 표시해주며 버전별 선택하여 분류 시스템에 연동되어 있는 라즈베리 파&amp;#xD; 이에 새로운 모델을 적용한다. 이는 딥러닝을 이용한 분류 시스템의 효율성을&amp;#xD; 증가 시킬 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0015685078&target=NART&cn=DIKO0015685078",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝을 이용한 라즈베리 파이 기반의 분류 시스템 설계 딥러닝을 이용한 라즈베리 파이 기반의 분류 시스템 설계 딥러닝을 이용한 라즈베리 파이 기반의 분류 시스템 설계 세계는 지금 AI의 급속한 발전으로 인해 산업과 사회 전반에 영향을 주는&amp;#xD; 시대가 도래되었다. 우리나라도 정부에서 국가 전력사업 중 하나로 인공지능&amp;#xD; (AI)를 선정하였다. 인공지능 분야 중 하나인 딥러닝은 많은 양의 학습 데이터&amp;#xD; 가 필요하게 된다. 그리고 많은 데이터를 훈련하기 위해서는 고성능의 컴퓨팅&amp;#xD; 시스템 또한 필요하다. 이런 고성능의 컴퓨팅 시스템을 산업 전반에 적용하기&amp;#xD; 엔 경제적으로 많은 부담이 된다.&amp;#xD; 본 논문은 딥러닝을 이용한 분류시스템을 제안한다. 가벼운 인공지능 시스템&amp;#xD; 을 위해 분류 시스템 단에 임베디드 시스템을 제안한다. 임베디드 시스템은 라&amp;#xD; 즈베리 파이를 사용하고, 딥러닝 훈련용 컴퓨팅 시스템은 클라우드 서버를 사&amp;#xD; 용한다. 실험을 위해 사용한 라즈베리 파이는 버전4 Model-B를 사용하였다.&amp;#xD; 본 논문에서는 딥러닝을 이용한 분류 시스템을 설계하고, 라즈베리 파이와 클&amp;#xD; 라우드 서버 간의 자동화 딥러닝 모델 업데이트 및 신규 모델을 라즈베리 파이&amp;#xD; 에 적용할 수 있는 프로세스를 설계하고 제안한다.&amp;#xD; 제안 시스템은 분류 시스템 동작 중 잘 못 된 예측을 하게 되면 해당 이미지&amp;#xD; 는 에러 데이터로 분류하고 에러 데이터 이미지가 기준 이상으로 수집이 되면&amp;#xD; 자동으로 클라우드 서버에 전송되어 딥러닝 모델을 재 훈련한다. 재 훈련된 모&amp;#xD; 델 파일을 버전 관리하여 모델 이름, 정확도, 파일 사이즈, 훈련 날짜와 같은&amp;#xD; 정보를 표시해주며 버전별 선택하여 분류 시스템에 연동되어 있는 라즈베리 파&amp;#xD; 이에 새로운 모델을 적용한다. 이는 딥러닝을 이용한 분류 시스템의 효율성을&amp;#xD; 증가 시킬 수 있다."
+        },
+        {
+          "rank": 32,
+          "score": 0.5622720122337341,
+          "doc_id": "JAKO202011263332864",
+          "title": "워터마크 및 해상도 적응적인 영상 워터마킹을 위한 딥 러닝 프레임워크",
+          "abstract": "최근 다양한 형태와 종류로 영상 콘텐츠를 가공하고 사용하는 응용분야가 급격히 증가하고 있다. 영상 콘텐츠는 고부가가치의 콘텐츠이므로 영상 콘텐츠의 제작 및 사용이 활성화되기 위해서는 이 콘텐츠의 지적재산권이 보호되어야 하며, 현재까지 그 방법으로 가장 널리 연구되고 있는 것이 디지털 워터마킹이다. 이에 본 논문에서는 딥 러닝 기반의 워터마크 삽입 및 추출 네트워크를 제안한다. 제안하는 방법은 호스트 영상의 비가시성(invisibility)을 보존하면서 악의적/비악의적 공격에 워터마크의 강인성(robustness)를 극대화하는 방법이다. 이 네트워크는 워터마크를 호스트 영상과 똑같은 해상도를 갖도록 변화시키는 전처리 네트워크, 변화된 호스트 영상과 워터마크 정보를 3차원적으로 정합하여 호스트 영상의 해상도를 유지하면서 워터마크 데이터를 삽입하는 네트워크, 그리고 해상도를 줄이며 워터마크를 추출하는 네트워크로 구성된다. 이 네트워크는 다양한 워터마크 영상과 다양한 해상도를 가진 호스트 영상에 대해 다양한 화소값 변경공격과 기하학적 공격을 실험하여 제안하는 방법의 비가시성과 강인성을 검증하고, 이 방법이 범용적이고 실용적임을 보인다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202011263332864&target=NART&cn=JAKO202011263332864",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "워터마크 및 해상도 적응적인 영상 워터마킹을 위한 딥 러닝 프레임워크 워터마크 및 해상도 적응적인 영상 워터마킹을 위한 딥 러닝 프레임워크 워터마크 및 해상도 적응적인 영상 워터마킹을 위한 딥 러닝 프레임워크 최근 다양한 형태와 종류로 영상 콘텐츠를 가공하고 사용하는 응용분야가 급격히 증가하고 있다. 영상 콘텐츠는 고부가가치의 콘텐츠이므로 영상 콘텐츠의 제작 및 사용이 활성화되기 위해서는 이 콘텐츠의 지적재산권이 보호되어야 하며, 현재까지 그 방법으로 가장 널리 연구되고 있는 것이 디지털 워터마킹이다. 이에 본 논문에서는 딥 러닝 기반의 워터마크 삽입 및 추출 네트워크를 제안한다. 제안하는 방법은 호스트 영상의 비가시성(invisibility)을 보존하면서 악의적/비악의적 공격에 워터마크의 강인성(robustness)를 극대화하는 방법이다. 이 네트워크는 워터마크를 호스트 영상과 똑같은 해상도를 갖도록 변화시키는 전처리 네트워크, 변화된 호스트 영상과 워터마크 정보를 3차원적으로 정합하여 호스트 영상의 해상도를 유지하면서 워터마크 데이터를 삽입하는 네트워크, 그리고 해상도를 줄이며 워터마크를 추출하는 네트워크로 구성된다. 이 네트워크는 다양한 워터마크 영상과 다양한 해상도를 가진 호스트 영상에 대해 다양한 화소값 변경공격과 기하학적 공격을 실험하여 제안하는 방법의 비가시성과 강인성을 검증하고, 이 방법이 범용적이고 실용적임을 보인다."
+        },
+        {
+          "rank": 33,
+          "score": 0.5612478852272034,
+          "doc_id": "JAKO202124458099065",
+          "title": "포인트 클라우드를 이용한 블록체인 기반 설명 가능한 인공지능 연구",
+          "abstract": "인공지능을 이용하여 예측이나 분석하는 기술은 지속적으로 발전하고 있지만, 의사결정 과정을 명확히 해석하지 못하는 블랙박스 문제가 존재한다. 따라서 인공지능 모델의 의사결정 과정에서 사용자의 입장에서 해석이 불가능하여 결과를 신뢰할 수 없는 문제가 발생한다. 본 연구에서는 인공지능의 문제점과 이를 해결하기 위한 블록체인을 활용한 설명 가능한 인공지능에 대해 연구를 진행하였다. 블록체인을 이용해서 설명 가능한 인공지능 모델의 의사결정 과정에서의 데이터를 타임스탬프 등을 이용하여 부분별로 블록체인에 저장한다. 블록체인을 이용하여 저장된 데이터의 위변조 방지를 제공하고 블록체인의 특성상 사용자는 블록에 저장된 의사결정 과정등의 데이터를 자유롭게 접근할 수 있다. 설명 가능한 인공지능 모델의 구축이 힘든 것은 기존 모델의 복잡성이 큰 부분을 차지한다. 따라서 포인트 클라우드를 활용해서 3차원 데이터 처리와 가공과정의 효율성을 높여서 의사결정 과정을 단축해 설명 가능한 인공지능 모델의 구축을 원활하게 한다. 블록체인에 데이터 저장과정에서 데이터 위변조가 발생할 수 있는 오라클 문제를 해결하기 위해 저장과정에 중간자를 거치는 블록체인 기반의 설명 가능한 인공지능 모델을 제안하여 인공지능의 블랙박스 문제를 해결하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202124458099065&target=NART&cn=JAKO202124458099065",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "포인트 클라우드를 이용한 블록체인 기반 설명 가능한 인공지능 연구 포인트 클라우드를 이용한 블록체인 기반 설명 가능한 인공지능 연구 포인트 클라우드를 이용한 블록체인 기반 설명 가능한 인공지능 연구 인공지능을 이용하여 예측이나 분석하는 기술은 지속적으로 발전하고 있지만, 의사결정 과정을 명확히 해석하지 못하는 블랙박스 문제가 존재한다. 따라서 인공지능 모델의 의사결정 과정에서 사용자의 입장에서 해석이 불가능하여 결과를 신뢰할 수 없는 문제가 발생한다. 본 연구에서는 인공지능의 문제점과 이를 해결하기 위한 블록체인을 활용한 설명 가능한 인공지능에 대해 연구를 진행하였다. 블록체인을 이용해서 설명 가능한 인공지능 모델의 의사결정 과정에서의 데이터를 타임스탬프 등을 이용하여 부분별로 블록체인에 저장한다. 블록체인을 이용하여 저장된 데이터의 위변조 방지를 제공하고 블록체인의 특성상 사용자는 블록에 저장된 의사결정 과정등의 데이터를 자유롭게 접근할 수 있다. 설명 가능한 인공지능 모델의 구축이 힘든 것은 기존 모델의 복잡성이 큰 부분을 차지한다. 따라서 포인트 클라우드를 활용해서 3차원 데이터 처리와 가공과정의 효율성을 높여서 의사결정 과정을 단축해 설명 가능한 인공지능 모델의 구축을 원활하게 한다. 블록체인에 데이터 저장과정에서 데이터 위변조가 발생할 수 있는 오라클 문제를 해결하기 위해 저장과정에 중간자를 거치는 블록체인 기반의 설명 가능한 인공지능 모델을 제안하여 인공지능의 블랙박스 문제를 해결하였다."
+        },
+        {
+          "rank": 34,
+          "score": 0.5612037181854248,
+          "doc_id": "JAKO202424843377779",
+          "title": "신용평가에서 설명가능 인공지능의 활용에 관한 연구",
+          "abstract": "모델의 정확도와 결과에 대한 설명가능성은 동시에 고려되어야 할 중요한 요소이다. 최근에는 설명가능한 인공지능을 적용하는 응용 사례가 증가하였고 결과에 대한 해석이 특히 중요시되는 금융에서도 많이 적용되고 있다. 본 논문에서는 오픈 API의 신용평가 자료를 다양한 머신러닝 기법의 성능을 비교하고 모델로부터 설명가능한 인공지능 기법인 SHAP과 LIME을 통해 정확도와 결과에 대한 설명력을 보이고자 한다. 이에 따라 금융 시장에서 머신러닝의 적용가능성을 보일 것으로 기대된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202424843377779&target=NART&cn=JAKO202424843377779",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "신용평가에서 설명가능 인공지능의 활용에 관한 연구 신용평가에서 설명가능 인공지능의 활용에 관한 연구 신용평가에서 설명가능 인공지능의 활용에 관한 연구 모델의 정확도와 결과에 대한 설명가능성은 동시에 고려되어야 할 중요한 요소이다. 최근에는 설명가능한 인공지능을 적용하는 응용 사례가 증가하였고 결과에 대한 해석이 특히 중요시되는 금융에서도 많이 적용되고 있다. 본 논문에서는 오픈 API의 신용평가 자료를 다양한 머신러닝 기법의 성능을 비교하고 모델로부터 설명가능한 인공지능 기법인 SHAP과 LIME을 통해 정확도와 결과에 대한 설명력을 보이고자 한다. 이에 따라 금융 시장에서 머신러닝의 적용가능성을 보일 것으로 기대된다."
+        },
+        {
+          "rank": 35,
+          "score": 0.5603867769241333,
+          "doc_id": "ATN0037503408",
+          "title": "SystemC 기반 스토리지와 버퍼 및 딥러닝 가속기 시뮬레이터 시스템 구현",
+          "abstract": "Recently many researches are being conducted to perform data distributed processing with embedded edge devices in IoT systems, and artificial intelligence inference is one of them. Many studies are underway at the software or hardware level to perform artificial intelligence operations in embedded systems. In particular, the hardware-supported deep learning operations, such as GPU, in embedded system are limited, so a hardware deep learning accelerator is considered to be added in the architecture. Since such a deep learning accelerator performs a lot of data storage and movement and iterative parallel operation internally to perform complex neural network computation, it is required to analyze and optimize a precise internal buffer and data movement path management for efficient design of deep learning accelerator. In this paper, to model and analyze a deep learning accelerator in a virtual platform based on RISC-V, a deep learning accelerator is designed and implemented at the ESL level based on SystemC as well as main memory and NAND flash controller, then the data movement with storage and buffering effect were analyzed and examined on the developed deep learning accelerator. Using the implemented deep learning accelerator simulator, the usability of the internal buffer of the deep learning accelerator and the data movement amount and buffering effect according to the deep learning operation can be analyzed.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0037503408&target=NART&cn=ATN0037503408",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "SystemC 기반 스토리지와 버퍼 및 딥러닝 가속기 시뮬레이터 시스템 구현 SystemC 기반 스토리지와 버퍼 및 딥러닝 가속기 시뮬레이터 시스템 구현 SystemC 기반 스토리지와 버퍼 및 딥러닝 가속기 시뮬레이터 시스템 구현 Recently many researches are being conducted to perform data distributed processing with embedded edge devices in IoT systems, and artificial intelligence inference is one of them. Many studies are underway at the software or hardware level to perform artificial intelligence operations in embedded systems. In particular, the hardware-supported deep learning operations, such as GPU, in embedded system are limited, so a hardware deep learning accelerator is considered to be added in the architecture. Since such a deep learning accelerator performs a lot of data storage and movement and iterative parallel operation internally to perform complex neural network computation, it is required to analyze and optimize a precise internal buffer and data movement path management for efficient design of deep learning accelerator. In this paper, to model and analyze a deep learning accelerator in a virtual platform based on RISC-V, a deep learning accelerator is designed and implemented at the ESL level based on SystemC as well as main memory and NAND flash controller, then the data movement with storage and buffering effect were analyzed and examined on the developed deep learning accelerator. Using the implemented deep learning accelerator simulator, the usability of the internal buffer of the deep learning accelerator and the data movement amount and buffering effect according to the deep learning operation can be analyzed."
+        },
+        {
+          "rank": 36,
+          "score": 0.5593865513801575,
+          "doc_id": "NART108516506",
+          "title": "OpenFlow data planes performance evaluation",
+          "abstract": "<P><B>Abstract</B></P>  <P>Software-Defined Networks, in its essence, are the separation of the data and control planes of switching devices. The OpenFlow (OF) protocol is the most popular SDN protocol today, being available in many switches. This is due to the low implementation cost as well as the potential for innovative solutions in the network. Although OF is being used in many research papers and production networks, as far as we know, no work on the literature performs an extensive evaluation of the OpenFlow data planes. This evaluation helps network administrators choose which switch to use in their networks. Meanwhile, researchers are made aware of the limitations of existing OF switches. This article evaluates the performance and maturity of OF 1.0 on eleven hardware and software switches using POX, and also of the newer OF 1.3 on five switches using the ONOS controller. Our findings indicate that the performance variations among OF switches are significant. Packet delays vary by one order of magnitude in the evaluated equipment. Meanwhile, there is no performance impact when changing the packet size. Hence, the results highlight that researchers must be aware of issues such as variable jitter, the number of matches in tables as well as missing OF match fields.</P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART108516506&target=NART&cn=NART108516506",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "OpenFlow data planes performance evaluation OpenFlow data planes performance evaluation OpenFlow data planes performance evaluation <P><B>Abstract</B></P>  <P>Software-Defined Networks, in its essence, are the separation of the data and control planes of switching devices. The OpenFlow (OF) protocol is the most popular SDN protocol today, being available in many switches. This is due to the low implementation cost as well as the potential for innovative solutions in the network. Although OF is being used in many research papers and production networks, as far as we know, no work on the literature performs an extensive evaluation of the OpenFlow data planes. This evaluation helps network administrators choose which switch to use in their networks. Meanwhile, researchers are made aware of the limitations of existing OF switches. This article evaluates the performance and maturity of OF 1.0 on eleven hardware and software switches using POX, and also of the newer OF 1.3 on five switches using the ONOS controller. Our findings indicate that the performance variations among OF switches are significant. Packet delays vary by one order of magnitude in the evaluated equipment. Meanwhile, there is no performance impact when changing the packet size. Hence, the results highlight that researchers must be aware of issues such as variable jitter, the number of matches in tables as well as missing OF match fields.</P>"
+        },
+        {
+          "rank": 37,
+          "score": 0.5583215951919556,
+          "doc_id": "JAKO202009759219313",
+          "title": "콘크리트 균열 탐지를 위한 딥 러닝 기반 CNN 모델 비교",
+          "abstract": "The purpose of this study is to compare the models of Deep Learning-based Convolution Neural Network(CNN) for concrete crack detection. The comparison models are AlexNet, GoogLeNet, VGG16, VGG19, ResNet-18, ResNet-50, ResNet-101, and SqueezeNet which won ImageNet Large Scale Visual Recognition Challenge(ILSVRC). To train, validate and test these models, we constructed 3000 training data and 12000 validation data with 256&#x00D7;256 pixel resolution consisting of cracked and non-cracked images, and constructed 5 test data with 4160&#x00D7;3120 pixel resolution consisting of concrete images with crack. In order to increase the efficiency of the training, transfer learning was performed by taking the weight from the pre-trained network supported by MATLAB. From the trained network, the validation data is classified into crack image and non-crack image, yielding True Positive (TP), True Negative (TN), False Positive (FP), False Negative (FN), and 6 performance indicators, False Negative Rate (FNR), False Positive Rate (FPR), Error Rate, Recall, Precision, Accuracy were calculated. The test image was scanned twice with a sliding window of 256&#x00D7;256 pixel resolution to classify the cracks, resulting in a crack map. From the comparison of the performance indicators and the crack map, it was concluded that VGG16 and VGG19 were the most suitable for detecting concrete cracks.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202009759219313&target=NART&cn=JAKO202009759219313",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "콘크리트 균열 탐지를 위한 딥 러닝 기반 CNN 모델 비교 콘크리트 균열 탐지를 위한 딥 러닝 기반 CNN 모델 비교 콘크리트 균열 탐지를 위한 딥 러닝 기반 CNN 모델 비교 The purpose of this study is to compare the models of Deep Learning-based Convolution Neural Network(CNN) for concrete crack detection. The comparison models are AlexNet, GoogLeNet, VGG16, VGG19, ResNet-18, ResNet-50, ResNet-101, and SqueezeNet which won ImageNet Large Scale Visual Recognition Challenge(ILSVRC). To train, validate and test these models, we constructed 3000 training data and 12000 validation data with 256&#x00D7;256 pixel resolution consisting of cracked and non-cracked images, and constructed 5 test data with 4160&#x00D7;3120 pixel resolution consisting of concrete images with crack. In order to increase the efficiency of the training, transfer learning was performed by taking the weight from the pre-trained network supported by MATLAB. From the trained network, the validation data is classified into crack image and non-crack image, yielding True Positive (TP), True Negative (TN), False Positive (FP), False Negative (FN), and 6 performance indicators, False Negative Rate (FNR), False Positive Rate (FPR), Error Rate, Recall, Precision, Accuracy were calculated. The test image was scanned twice with a sliding window of 256&#x00D7;256 pixel resolution to classify the cracks, resulting in a crack map. From the comparison of the performance indicators and the crack map, it was concluded that VGG16 and VGG19 were the most suitable for detecting concrete cracks."
+        },
+        {
+          "rank": 38,
+          "score": 0.5582234859466553,
+          "doc_id": "JAKO202209464475635",
+          "title": "오픈소스 하드웨어와 딥러닝 기반 객체 탐지 알고리즘을 활용한 교내 유동인구 분석",
+          "abstract": "본 연구에서는 오픈소스 하드웨어인 라즈베리파이와 딥러닝 기술 기반 객체 탐지 알고리즘을 이용해 부경대학교 교내 유동인구 조사 및 분석을 수행하였다. 라즈베리파이를 이용하여 이미지를 수집한 후 YOLO3의 IMAGEAI, YOLOv5 모델을 사용하여 수집한 이미지의 인물 검출을 진행하였으며 정확도 비교 분석을 위해 Haar-like features, HOG 모델을 사용하였다. 분석결과, 개교기념일로 인한 휴교에 가장 적은 유동인구가 관측되었다. 대체적으로 입구의 유동인구가 출구의 유동인구보다 많았으며, 입구와 출구 모두 학교의 기념일과 행사에 따라 유동인구가 많은 영향을 받는 것으로 나타났다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202209464475635&target=NART&cn=JAKO202209464475635",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈소스 하드웨어와 딥러닝 기반 객체 탐지 알고리즘을 활용한 교내 유동인구 분석 오픈소스 하드웨어와 딥러닝 기반 객체 탐지 알고리즘을 활용한 교내 유동인구 분석 오픈소스 하드웨어와 딥러닝 기반 객체 탐지 알고리즘을 활용한 교내 유동인구 분석 본 연구에서는 오픈소스 하드웨어인 라즈베리파이와 딥러닝 기술 기반 객체 탐지 알고리즘을 이용해 부경대학교 교내 유동인구 조사 및 분석을 수행하였다. 라즈베리파이를 이용하여 이미지를 수집한 후 YOLO3의 IMAGEAI, YOLOv5 모델을 사용하여 수집한 이미지의 인물 검출을 진행하였으며 정확도 비교 분석을 위해 Haar-like features, HOG 모델을 사용하였다. 분석결과, 개교기념일로 인한 휴교에 가장 적은 유동인구가 관측되었다. 대체적으로 입구의 유동인구가 출구의 유동인구보다 많았으며, 입구와 출구 모두 학교의 기념일과 행사에 따라 유동인구가 많은 영향을 받는 것으로 나타났다."
+        },
+        {
+          "rank": 39,
+          "score": 0.5581791400909424,
+          "doc_id": "JAKO202314857616824",
+          "title": "딥러닝 기반의 딥 클러스터링 방법에 대한 분석",
+          "abstract": "클러스터링은 데이터의 정답값(실제값)이 없는 데이터를 기반으로 데이터의 특징벡터의 거리 기반 등으로 군집화를 하는 비지도학습 방법이다. 이 방법은 이미지, 텍스트, 음성 등 다양한 데이터에 대해서 라벨링이 없이 적용할 수 있다는 장점이 있다. 기존 클러스터링을 하기 위해 차원축소 기법을 적용하거나 특정 특징만을 추출하여 군집화하는 방법이 적용되었다. 하지만 딥러닝 기반 모델이 발전하면서 입력 데이터를 잠재 벡터로 표현하는 오토인코더, 생성 적대적 네트워크 등을 통해서 딥 클러스터링의 기술이 연구가 되고 있다. 본 연구에서, 딥러닝 기반의 딥 클러스터링 기법을 제안하였다. 이 방법에서 오토인코더를 이용하여 입력 데이터를 잠재 벡터로 변환하고 이 잠재 벡터를 클러스터 구조에 맞게 벡터 공간을 구성 및 k-평균 클러스터링을 하였다. 실험 환경으로 pytorch 머신러닝 라이브러리를 이용하여 데이터셋으로 MNIST와 Fashion-MNIST을 적용하였다. 모델로는 컨볼루션 신경망 기반인 오토인코더 모델을 사용하였다. 실험결과로 k가 10일 때, MNIST에 대해서 89.42% 정확도를 가졌으며 Fashion-MNIST에 대해서 56.64% 정확도를 가진다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202314857616824&target=NART&cn=JAKO202314857616824",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 기반의 딥 클러스터링 방법에 대한 분석 딥러닝 기반의 딥 클러스터링 방법에 대한 분석 딥러닝 기반의 딥 클러스터링 방법에 대한 분석 클러스터링은 데이터의 정답값(실제값)이 없는 데이터를 기반으로 데이터의 특징벡터의 거리 기반 등으로 군집화를 하는 비지도학습 방법이다. 이 방법은 이미지, 텍스트, 음성 등 다양한 데이터에 대해서 라벨링이 없이 적용할 수 있다는 장점이 있다. 기존 클러스터링을 하기 위해 차원축소 기법을 적용하거나 특정 특징만을 추출하여 군집화하는 방법이 적용되었다. 하지만 딥러닝 기반 모델이 발전하면서 입력 데이터를 잠재 벡터로 표현하는 오토인코더, 생성 적대적 네트워크 등을 통해서 딥 클러스터링의 기술이 연구가 되고 있다. 본 연구에서, 딥러닝 기반의 딥 클러스터링 기법을 제안하였다. 이 방법에서 오토인코더를 이용하여 입력 데이터를 잠재 벡터로 변환하고 이 잠재 벡터를 클러스터 구조에 맞게 벡터 공간을 구성 및 k-평균 클러스터링을 하였다. 실험 환경으로 pytorch 머신러닝 라이브러리를 이용하여 데이터셋으로 MNIST와 Fashion-MNIST을 적용하였다. 모델로는 컨볼루션 신경망 기반인 오토인코더 모델을 사용하였다. 실험결과로 k가 10일 때, MNIST에 대해서 89.42% 정확도를 가졌으며 Fashion-MNIST에 대해서 56.64% 정확도를 가진다."
+        },
+        {
+          "rank": 40,
+          "score": 0.5554660558700562,
+          "doc_id": "JAKO201828138444141",
+          "title": "딥 러닝 기반의 임펄스 잡음 완화 기법",
+          "abstract": "본 논문은 전력선 통신의 성능을 하락시키는 임펄스 잡음을 효과적으로 완화하는 시스템 모델을 제안한다. 최근 딥 러닝이 다양한 분야에 적용되어 효과적인 성능개선을 보이고 있다. 효과적인 임펄스 잡음 완화를 위해 딥 러닝 알고리즘 중 하나인 컨볼루션 뉴럴 네트워크를 기존의 시스템에 적용한다. 또한 다수의 사용자가 존재할 경우를 고려하여 연속적 간섭 제거 기법을 사용하여 다수의 사용자로부터 발생하는 임펄스 잡음을 완화시킨다. 제안한 시스템 모델을 전력선 통신에 적용하여 시뮬레이션을 하였고 비트 오류 확률 대 SNR 그래프를 통해 제안한 시스템 모델의 성능을 확인한다. 또한, 연속적 간섭 제거 기법 중 ZF와 MMSE 연속적 간섭 제거 기법, 최적의 순서를 가지는 연속적 간섭 제거 기법과 최적의 순서를 가지지 않는 연속적 간섭 제거 기법을 각각 비교하여 어떠한 기법이 더 우수한 성능을 가지는지를 확인한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201828138444141&target=NART&cn=JAKO201828138444141",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥 러닝 기반의 임펄스 잡음 완화 기법 딥 러닝 기반의 임펄스 잡음 완화 기법 딥 러닝 기반의 임펄스 잡음 완화 기법 본 논문은 전력선 통신의 성능을 하락시키는 임펄스 잡음을 효과적으로 완화하는 시스템 모델을 제안한다. 최근 딥 러닝이 다양한 분야에 적용되어 효과적인 성능개선을 보이고 있다. 효과적인 임펄스 잡음 완화를 위해 딥 러닝 알고리즘 중 하나인 컨볼루션 뉴럴 네트워크를 기존의 시스템에 적용한다. 또한 다수의 사용자가 존재할 경우를 고려하여 연속적 간섭 제거 기법을 사용하여 다수의 사용자로부터 발생하는 임펄스 잡음을 완화시킨다. 제안한 시스템 모델을 전력선 통신에 적용하여 시뮬레이션을 하였고 비트 오류 확률 대 SNR 그래프를 통해 제안한 시스템 모델의 성능을 확인한다. 또한, 연속적 간섭 제거 기법 중 ZF와 MMSE 연속적 간섭 제거 기법, 최적의 순서를 가지는 연속적 간섭 제거 기법과 최적의 순서를 가지지 않는 연속적 간섭 제거 기법을 각각 비교하여 어떠한 기법이 더 우수한 성능을 가지는지를 확인한다."
+        },
+        {
+          "rank": 41,
+          "score": 0.5543060898780823,
+          "doc_id": "JAKO202015762902251",
+          "title": "한국어 TTS 시스템에서 딥러닝 기반 최첨단 보코더 기술 성능 비교",
+          "abstract": "기존의 TTS 시스템은 텍스트 전처리, 구문 분석, 발음표기 변환, 경계 분석, 운율 조절, 음향 모델에 의한 음향 특징 생성, 합성음 생성 등 여러 모듈로 구성되어 있다. 그러나 딥러닝 기반 TTS 시스템은 텍스트에서 스펙트로그램을 생성하는 Text2Mel 과정과 스펙트로그램에서 음성신호을 합성하는 보코더로 구성된다. 본 논문에서는 최적의 한국어 TTS 시스템 구성을 위해 Tex2Mel 과정에는 Tacotron2를 적용하고, 보코더로는 WaveNet, WaveRNN, WaveGlow를 소개하고 이를 구현하여 성능을 비교 검증한다. 실험 결과, WaveNet은 MOS가 가장 높으며 학습 모델 크기가 수백 MB이고 합성시간이 실시간의 50배 정도라는 결과가 나왔다. WaveRNN은 WaveNet과 유사한 MOS 성능을 보여주며 모델 크기가 수십 MB 단위이고 실시간 처리는 어렵다는 결과가 도출됐다. WaveGlow는 실시간 처리가 가능한 방법이며 모델 크기가 수 GB이고 MOS가 세 방식 중에서 가장 떨어진다는 결과를 보여주었다. 본 논문에서는 이러한 연구 결과로부터 TTS 시스템을 적용하는 분야의 하드웨어 환경에 맞춰 적합한 방식을 선정할 수 있는 참고 기준을 제시한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202015762902251&target=NART&cn=JAKO202015762902251",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "한국어 TTS 시스템에서 딥러닝 기반 최첨단 보코더 기술 성능 비교 한국어 TTS 시스템에서 딥러닝 기반 최첨단 보코더 기술 성능 비교 한국어 TTS 시스템에서 딥러닝 기반 최첨단 보코더 기술 성능 비교 기존의 TTS 시스템은 텍스트 전처리, 구문 분석, 발음표기 변환, 경계 분석, 운율 조절, 음향 모델에 의한 음향 특징 생성, 합성음 생성 등 여러 모듈로 구성되어 있다. 그러나 딥러닝 기반 TTS 시스템은 텍스트에서 스펙트로그램을 생성하는 Text2Mel 과정과 스펙트로그램에서 음성신호을 합성하는 보코더로 구성된다. 본 논문에서는 최적의 한국어 TTS 시스템 구성을 위해 Tex2Mel 과정에는 Tacotron2를 적용하고, 보코더로는 WaveNet, WaveRNN, WaveGlow를 소개하고 이를 구현하여 성능을 비교 검증한다. 실험 결과, WaveNet은 MOS가 가장 높으며 학습 모델 크기가 수백 MB이고 합성시간이 실시간의 50배 정도라는 결과가 나왔다. WaveRNN은 WaveNet과 유사한 MOS 성능을 보여주며 모델 크기가 수십 MB 단위이고 실시간 처리는 어렵다는 결과가 도출됐다. WaveGlow는 실시간 처리가 가능한 방법이며 모델 크기가 수 GB이고 MOS가 세 방식 중에서 가장 떨어진다는 결과를 보여주었다. 본 논문에서는 이러한 연구 결과로부터 TTS 시스템을 적용하는 분야의 하드웨어 환경에 맞춰 적합한 방식을 선정할 수 있는 참고 기준을 제시한다."
+        },
+        {
+          "rank": 42,
+          "score": 0.5542362928390503,
+          "doc_id": "DIKO0014589872",
+          "title": "딥러닝 기반 범죄자 신원 인식 시스템 설계 및 구현",
+          "abstract": "최근 각종 위험요인이 증가함에 따라 범죄가 고도로 지능화되고 있다. 각국에서는 범죄율을 줄이고자 노력하고 있지만 매년 범죄율은 증가하고 있다. 특히 실제 범죄 발생 시 CCTV 영상 분석을 통해 범죄자를 검거하는 데, 이런 영상을 통한 범죄자 식별 작업은 경찰 인력을 사용하기 때문에 효율적이지 못하였다. 이에 얼굴 인식 시스템이 연구되고 있으나 기존의 연구된 방법들은 데이터의 종류나 특징에 따라 적중률이 낮아지는 문제점이 있었다. 이와 같은 문제를 해결하기 위해 얼굴 인식 시스템에서 특징 벡터를 분류하는 데에 딥러닝을 사용하면 데이터의 종류에 상관없이 유동적으로 가장 최적화된 특징을 추출할 수 있다. 따라서 본 논문에서는 딥러닝 기반 범죄자 신원 인식 시스템에 대해 제안하였다. 또한, 얼굴 인식률을 증가시키기 위해 얼굴 인식 알고리즘인 CNN에서의 필터의 크기를 작게 하여 알고리즘 구조를 개선하였다. 본 논문에서 제안하는 시스템을 설계하기 위해 입력받는 영상 데이터에서 얼굴 영역을 추출하여 추출한 얼굴 영역을 정규화하여 딥러닝을 통해 특징 벡터를 추출하고 분류하여 신원 인식 후 결과를 전송하는 기능을 설계하였다. 구체적인 기능에 대해서는 기능 블록도 및 데이터 흐름도를 설계하였고 데이터를 정의하여 데이터베이스를 설계하였으며 시스템의 기능별 상호작용에 대한 시퀀스 다이어그램을 설계하였다. 본 논문에서 제안하는 시스템을 구현하기 위해 Linux Mint에서 C++, Python2 를 이용하였고 얼굴 영역 추출 및 신원 인식에 오픈소스 라이브러리인 OpenCV를 활용하여 구축하였다. 범죄자 정보와 사진 데이터를 입력하는 웹 페이지를 구현하였으며 해당 페이지를 통해 FTP에 파일을 전송받는 클라이언트 시스템을 구현하였다. 또한, 리눅스 서버를 통해 실시간으로 들어오는 영상 데이터를 분석하고 얼굴 영역을 추출하며 추출된 얼굴 영역에 대해 딥러닝을 적용하여 신원을 인식하는 시스템을 구현하였다. 본 논문에서 제안하는 시스템을 평가하기 위해 특징 분류기의 성능에 대해 기존 특징 분류기와 비교 평가를 수행하였으며 실제 시스템에 적용할 수 있는지에 대해서도 테스트를 시행하였다. 테스트 결과 제안하는 시스템이 기존 특징 분류기 중 성능이 가장 우수한 분류기보다 적중률은 4.99% 증가하였고, 오경보율은 1.26% 감소하였다. 따라서 본 논문에서 제안한 범죄자 신원 인식 시스템은 기존 연구보다 우수함을 확인하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014589872&target=NART&cn=DIKO0014589872",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 기반 범죄자 신원 인식 시스템 설계 및 구현 딥러닝 기반 범죄자 신원 인식 시스템 설계 및 구현 딥러닝 기반 범죄자 신원 인식 시스템 설계 및 구현 최근 각종 위험요인이 증가함에 따라 범죄가 고도로 지능화되고 있다. 각국에서는 범죄율을 줄이고자 노력하고 있지만 매년 범죄율은 증가하고 있다. 특히 실제 범죄 발생 시 CCTV 영상 분석을 통해 범죄자를 검거하는 데, 이런 영상을 통한 범죄자 식별 작업은 경찰 인력을 사용하기 때문에 효율적이지 못하였다. 이에 얼굴 인식 시스템이 연구되고 있으나 기존의 연구된 방법들은 데이터의 종류나 특징에 따라 적중률이 낮아지는 문제점이 있었다. 이와 같은 문제를 해결하기 위해 얼굴 인식 시스템에서 특징 벡터를 분류하는 데에 딥러닝을 사용하면 데이터의 종류에 상관없이 유동적으로 가장 최적화된 특징을 추출할 수 있다. 따라서 본 논문에서는 딥러닝 기반 범죄자 신원 인식 시스템에 대해 제안하였다. 또한, 얼굴 인식률을 증가시키기 위해 얼굴 인식 알고리즘인 CNN에서의 필터의 크기를 작게 하여 알고리즘 구조를 개선하였다. 본 논문에서 제안하는 시스템을 설계하기 위해 입력받는 영상 데이터에서 얼굴 영역을 추출하여 추출한 얼굴 영역을 정규화하여 딥러닝을 통해 특징 벡터를 추출하고 분류하여 신원 인식 후 결과를 전송하는 기능을 설계하였다. 구체적인 기능에 대해서는 기능 블록도 및 데이터 흐름도를 설계하였고 데이터를 정의하여 데이터베이스를 설계하였으며 시스템의 기능별 상호작용에 대한 시퀀스 다이어그램을 설계하였다. 본 논문에서 제안하는 시스템을 구현하기 위해 Linux Mint에서 C++, Python2 를 이용하였고 얼굴 영역 추출 및 신원 인식에 오픈소스 라이브러리인 OpenCV를 활용하여 구축하였다. 범죄자 정보와 사진 데이터를 입력하는 웹 페이지를 구현하였으며 해당 페이지를 통해 FTP에 파일을 전송받는 클라이언트 시스템을 구현하였다. 또한, 리눅스 서버를 통해 실시간으로 들어오는 영상 데이터를 분석하고 얼굴 영역을 추출하며 추출된 얼굴 영역에 대해 딥러닝을 적용하여 신원을 인식하는 시스템을 구현하였다. 본 논문에서 제안하는 시스템을 평가하기 위해 특징 분류기의 성능에 대해 기존 특징 분류기와 비교 평가를 수행하였으며 실제 시스템에 적용할 수 있는지에 대해서도 테스트를 시행하였다. 테스트 결과 제안하는 시스템이 기존 특징 분류기 중 성능이 가장 우수한 분류기보다 적중률은 4.99% 증가하였고, 오경보율은 1.26% 감소하였다. 따라서 본 논문에서 제안한 범죄자 신원 인식 시스템은 기존 연구보다 우수함을 확인하였다."
+        },
+        {
+          "rank": 43,
+          "score": 0.5541200041770935,
+          "doc_id": "DIKO0016985078",
+          "title": "산업현장에서 강인한 헬멧 착용 탐지를 위한 딥 러닝 기반의 프레임워크 개발",
+          "abstract": "본 논문은 안전장구 미착용으로 인한 작업 현장 사고 급증에서 딥러닝 안전장구 검출 프레임워크를 개선하는 제안이다. 대다수의 기존 안전장구 검출 프레임워크는 무거운 모델로 학습되어 일정 기준 이하의 검출 성능 문제를 겪는다. 이에 딥러닝 안전장구 검출 프레임워크를 개선하는 제안을 하고 있다. 제안된 프레임워크는 한정된 자원 활용 시 안정적인 검출 성능을 나타내며, 산업 현장의 동적 특성에 대응하는 효율적인 자원 운용을 보여주고 있다. 실험 결과를 기반으로 산업 현장의 특수성을 고려하더라도 안정적인 성능을 기대할 수 있는 프레임워크를 제시한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0016985078&target=NART&cn=DIKO0016985078",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "산업현장에서 강인한 헬멧 착용 탐지를 위한 딥 러닝 기반의 프레임워크 개발 산업현장에서 강인한 헬멧 착용 탐지를 위한 딥 러닝 기반의 프레임워크 개발 산업현장에서 강인한 헬멧 착용 탐지를 위한 딥 러닝 기반의 프레임워크 개발 본 논문은 안전장구 미착용으로 인한 작업 현장 사고 급증에서 딥러닝 안전장구 검출 프레임워크를 개선하는 제안이다. 대다수의 기존 안전장구 검출 프레임워크는 무거운 모델로 학습되어 일정 기준 이하의 검출 성능 문제를 겪는다. 이에 딥러닝 안전장구 검출 프레임워크를 개선하는 제안을 하고 있다. 제안된 프레임워크는 한정된 자원 활용 시 안정적인 검출 성능을 나타내며, 산업 현장의 동적 특성에 대응하는 효율적인 자원 운용을 보여주고 있다. 실험 결과를 기반으로 산업 현장의 특수성을 고려하더라도 안정적인 성능을 기대할 수 있는 프레임워크를 제시한다."
+        },
+        {
+          "rank": 44,
+          "score": 0.5539596676826477,
+          "doc_id": "DIKO0015069923",
+          "title": "딥 러닝 모델 최적화 기반 순차 데이터 예측 시스템",
+          "abstract": "데이터 예측 시스템들은 데이터를 예측하기 위해 특정 분야의 데이터를 컴퓨터가 분석하여 규칙을 찾아내고 데이터를 예측하였다. 이러한 방법은 과거 데이터를 분석한 결과로 사람이 규칙을 도출할 수 있어야 데이터를 예측하는 것이 가능하였다. 이에 반해 규칙을 도출할 수 없는 데이터들의 데이터를 예측하는 것은 사람의 능력으로는 한계가 있어 정확도가 낮아지는 문제점이 발생할 수 있다.&amp;#xD; 이를 해결하기 위해 컴퓨터를 활용하여 방대한 데이터를 데이터 예측 프로그램에 학습 데이터로 입력하고 결과로 데이터를 예측하였다. 이러한 방법론을 활용하기 위해서 고성능 컴퓨터로 딥 러닝(Deep Learning) 기술을 적용하여 데이터를 예측하고 있다. 해당 방법론이 활용되고 있는 분야로는 기상 데이터를 분석하여 날씨를 예측하는 날씨 분석과 스포츠 경기의 데이터를 예측하는 것이 대표적이다. &amp;#xD; 딥 러닝 기술은 프로그램이 데이터를 기반으로 학습을 진행하고 진행된 학습을 기반으로 데이터를 처리하는 것이다. 이는 과거에 사람이 직접 데이터를 분석하는 것보다 대규모 데이터를 분석하기에 적합하고 이로 인해 정확도가 올라가는 이점이 있다. 또한 목적에 따라 적합한 딥 러닝 모델을 적용하여 데이터를 예측할 경우 정확도의 기댓값이 높아지는 이점이 있다.&amp;#xD; 현재 딥 러닝 모델 중에서 데이터를 예측하기 위해 사용되는 모델은 신경망 구조를 기반으로 하는 DNN(Deep Neural Network) 모델과 RNN(Recurrent Neural Network) 모델이다. DNN 모델은 학습 데이터 내에서 규칙을 찾아내지 못하더라도 반복 학습을 통해 데이터 예측에 대한 정확도를 올릴 수 있고, RNN은 학습 과정 중에서 은닉층에서 적용될 가중치가 학습을 진행할 수록 변화하여 데이터를 예측하고 이로 인해 정확도를 올릴 수 있다. 이에 반해 DNN은 반복 학습의 횟수가 많아야 정확도가 높아지고 RNN은 가중치 변화의 횟수가 많아져야 정확도가 높아지기 때문에 결국 두 모델들은 학습의 반복이 많아져야 하는 문제점이 있다.&amp;#xD; 본 논문에서는 데이터 예측을 위해 딥 러닝 모델 기반 순차 데이터 예측 시스템을 제안한다. 제안하는 시스템에서 비정형 데이터를 순차 데이터로 정제하기 위해 전처리기를 구현하였다. 전처리기는 딥 러닝 모델에 학습 데이터를 입력하기 전에 데이터들을 정제하는 기능을 수행한다. 데이터는 ‘데이터 : 인덱스’ 구조로 이루어진 데이터 쌍이 되고 이러한 데이터 쌍들의 집합을 딥 러닝 모델에 입력하여 학습을 진행한다.&amp;#xD; 딥 러닝 모델은 DNN 모델, 기본 LSTM 모델, 상태유지 LSTM 모델을 활용하여 시스템을 각각 구축한다. 그리고 각 모델들의 설정 값을 변경하면서 정확도의 변화량을 분석한다. 또한 시퀀스의 길이를 변경해가며 실험을 진행하여 가장 정확도가 높은 데이터 셋과 시퀀스 길이의 비율을 제시한다.&amp;#xD; 딥 러닝 모듈 기반 시스템의 실험을 바탕으로 순차 데이터 예측에 가장 정확도가 높고 효율적인 딥 러닝 모듈을 선정하고 기존 시스템들과 비교 분석을 진행하여 제안하는 시스템의 우수성을 검증한다.&amp;#xD; 제안하는 시스템을 활용할 경우 학습 데이터가 적어도 높은 정확도를 요구하는 분야에서 기존 시스템들에 비해 효율성이 높을 것으로 사료된다.&amp;#xD;",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0015069923&target=NART&cn=DIKO0015069923",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥 러닝 모델 최적화 기반 순차 데이터 예측 시스템 딥 러닝 모델 최적화 기반 순차 데이터 예측 시스템 딥 러닝 모델 최적화 기반 순차 데이터 예측 시스템 데이터 예측 시스템들은 데이터를 예측하기 위해 특정 분야의 데이터를 컴퓨터가 분석하여 규칙을 찾아내고 데이터를 예측하였다. 이러한 방법은 과거 데이터를 분석한 결과로 사람이 규칙을 도출할 수 있어야 데이터를 예측하는 것이 가능하였다. 이에 반해 규칙을 도출할 수 없는 데이터들의 데이터를 예측하는 것은 사람의 능력으로는 한계가 있어 정확도가 낮아지는 문제점이 발생할 수 있다.&amp;#xD; 이를 해결하기 위해 컴퓨터를 활용하여 방대한 데이터를 데이터 예측 프로그램에 학습 데이터로 입력하고 결과로 데이터를 예측하였다. 이러한 방법론을 활용하기 위해서 고성능 컴퓨터로 딥 러닝(Deep Learning) 기술을 적용하여 데이터를 예측하고 있다. 해당 방법론이 활용되고 있는 분야로는 기상 데이터를 분석하여 날씨를 예측하는 날씨 분석과 스포츠 경기의 데이터를 예측하는 것이 대표적이다. &amp;#xD; 딥 러닝 기술은 프로그램이 데이터를 기반으로 학습을 진행하고 진행된 학습을 기반으로 데이터를 처리하는 것이다. 이는 과거에 사람이 직접 데이터를 분석하는 것보다 대규모 데이터를 분석하기에 적합하고 이로 인해 정확도가 올라가는 이점이 있다. 또한 목적에 따라 적합한 딥 러닝 모델을 적용하여 데이터를 예측할 경우 정확도의 기댓값이 높아지는 이점이 있다.&amp;#xD; 현재 딥 러닝 모델 중에서 데이터를 예측하기 위해 사용되는 모델은 신경망 구조를 기반으로 하는 DNN(Deep Neural Network) 모델과 RNN(Recurrent Neural Network) 모델이다. DNN 모델은 학습 데이터 내에서 규칙을 찾아내지 못하더라도 반복 학습을 통해 데이터 예측에 대한 정확도를 올릴 수 있고, RNN은 학습 과정 중에서 은닉층에서 적용될 가중치가 학습을 진행할 수록 변화하여 데이터를 예측하고 이로 인해 정확도를 올릴 수 있다. 이에 반해 DNN은 반복 학습의 횟수가 많아야 정확도가 높아지고 RNN은 가중치 변화의 횟수가 많아져야 정확도가 높아지기 때문에 결국 두 모델들은 학습의 반복이 많아져야 하는 문제점이 있다.&amp;#xD; 본 논문에서는 데이터 예측을 위해 딥 러닝 모델 기반 순차 데이터 예측 시스템을 제안한다. 제안하는 시스템에서 비정형 데이터를 순차 데이터로 정제하기 위해 전처리기를 구현하였다. 전처리기는 딥 러닝 모델에 학습 데이터를 입력하기 전에 데이터들을 정제하는 기능을 수행한다. 데이터는 ‘데이터 : 인덱스’ 구조로 이루어진 데이터 쌍이 되고 이러한 데이터 쌍들의 집합을 딥 러닝 모델에 입력하여 학습을 진행한다.&amp;#xD; 딥 러닝 모델은 DNN 모델, 기본 LSTM 모델, 상태유지 LSTM 모델을 활용하여 시스템을 각각 구축한다. 그리고 각 모델들의 설정 값을 변경하면서 정확도의 변화량을 분석한다. 또한 시퀀스의 길이를 변경해가며 실험을 진행하여 가장 정확도가 높은 데이터 셋과 시퀀스 길이의 비율을 제시한다.&amp;#xD; 딥 러닝 모듈 기반 시스템의 실험을 바탕으로 순차 데이터 예측에 가장 정확도가 높고 효율적인 딥 러닝 모듈을 선정하고 기존 시스템들과 비교 분석을 진행하여 제안하는 시스템의 우수성을 검증한다.&amp;#xD; 제안하는 시스템을 활용할 경우 학습 데이터가 적어도 높은 정확도를 요구하는 분야에서 기존 시스템들에 비해 효율성이 높을 것으로 사료된다.&amp;#xD;"
+        },
+        {
+          "rank": 45,
+          "score": 0.5536485314369202,
+          "doc_id": "DIKO0015035755",
+          "title": "딥러닝 모델의 앙상블을 활용한 근적외선 얼굴 인식 방법",
+          "abstract": "최근 딥러닝을 적용한 연구가 활발히 진행됨에 따라, RGB 얼굴 인식에 딥러닝을 적용하여 높은 인식 성능을 획득하였다. RGB 영상은 공용 데이터베이스가 많이 공개되어 있어 좋은 성능을 보이는 복잡한 딥러닝 모델을 학습시키기에 용이하지만, 조명 변화에 취약하다는 단점이 있다. 반면에, NIR 영상은 조명 변화에 강인하다는 장점이 있어, NIR 영상을 사용한 딥러닝 기반 얼굴 인식 알고리즘이 개발되었다. 그러나, NIR 공용 데이터베이스는 적은 양만 공개되어 있기 때문에, 기존의 딥러닝 기반 NIR 얼굴 인식 알고리즘은 구조를 간략화한 딥러닝 모델을 사용하였다. 이 모델은 높은 인식 성능을 보였지만 적은 학습 데이터와 제한된 환경에서 학습을 진행하였기 때문에, 다양한 환경의 데이터에 대해서는 높은 성능을 기대하기 어렵다는 문제가 있다. 이 문제를 해결하기 위해, 본 논문에서는 복잡한 딥러닝 모델을 대규모 학습 데이터로 학습시킨 모델의 파라미터를 사용하는 transfer learning 방법을 접목하며, 얼굴 전체 영상에 대한 정보와 함께 얼굴 부분의 디테일한 정보를 융합하여 얼굴 인식을 수행하는 ensemble 딥러닝 모델을 제안한다. 제안하는 방법은 학습과 테스트에 각각 다른 환경에서 촬영된 데이터베이스를 사용하였음에도 99.97%의 성능을 보이며, 제안하는 방법에 기존 딥러닝 모델의 구조를 간략화한 모델을 사용한 경우에도 99.57%의 높은 성능을 보인다. 이는 동일한 데이터베이스를 사용하여 실험한 선행 연구에 비해 약 5% 향상된 결과이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0015035755&target=NART&cn=DIKO0015035755",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 모델의 앙상블을 활용한 근적외선 얼굴 인식 방법 딥러닝 모델의 앙상블을 활용한 근적외선 얼굴 인식 방법 딥러닝 모델의 앙상블을 활용한 근적외선 얼굴 인식 방법 최근 딥러닝을 적용한 연구가 활발히 진행됨에 따라, RGB 얼굴 인식에 딥러닝을 적용하여 높은 인식 성능을 획득하였다. RGB 영상은 공용 데이터베이스가 많이 공개되어 있어 좋은 성능을 보이는 복잡한 딥러닝 모델을 학습시키기에 용이하지만, 조명 변화에 취약하다는 단점이 있다. 반면에, NIR 영상은 조명 변화에 강인하다는 장점이 있어, NIR 영상을 사용한 딥러닝 기반 얼굴 인식 알고리즘이 개발되었다. 그러나, NIR 공용 데이터베이스는 적은 양만 공개되어 있기 때문에, 기존의 딥러닝 기반 NIR 얼굴 인식 알고리즘은 구조를 간략화한 딥러닝 모델을 사용하였다. 이 모델은 높은 인식 성능을 보였지만 적은 학습 데이터와 제한된 환경에서 학습을 진행하였기 때문에, 다양한 환경의 데이터에 대해서는 높은 성능을 기대하기 어렵다는 문제가 있다. 이 문제를 해결하기 위해, 본 논문에서는 복잡한 딥러닝 모델을 대규모 학습 데이터로 학습시킨 모델의 파라미터를 사용하는 transfer learning 방법을 접목하며, 얼굴 전체 영상에 대한 정보와 함께 얼굴 부분의 디테일한 정보를 융합하여 얼굴 인식을 수행하는 ensemble 딥러닝 모델을 제안한다. 제안하는 방법은 학습과 테스트에 각각 다른 환경에서 촬영된 데이터베이스를 사용하였음에도 99.97%의 성능을 보이며, 제안하는 방법에 기존 딥러닝 모델의 구조를 간략화한 모델을 사용한 경우에도 99.57%의 높은 성능을 보인다. 이는 동일한 데이터베이스를 사용하여 실험한 선행 연구에 비해 약 5% 향상된 결과이다."
+        },
+        {
+          "rank": 46,
+          "score": 0.5536436438560486,
+          "doc_id": "JAKO201919341608252",
+          "title": "딥러닝 모형을 사용한 한국어 음성인식",
+          "abstract": "본 논문에서는 베이즈 신경망을 결합한 종단 간 딥러닝 모형을 한국어 음성인식에 적용하였다. 논문에서는 종단 간 학습 모형으로 연결성 시계열 분류기(connectionist temporal classification), 주의 기제, 그리고 주의 기제에 연결성 시계열 분류기를 결합한 모형을 사용하였으며. 각 모형은 순환신경망(recurrent neural network) 혹은 합성곱신경망(convolutional neural network)을 기반으로 하였다. 추가적으로 디코딩 과정에서 빔 탐색과 유한 상태 오토마타를 활용하여 자모음 순서를 조정한 최적의 문자열을 도출하였다. 또한 베이즈 신경망을 각 종단 간 모형에 적용하여 일반적인 점 추정치와 몬테카를로 추정치를 구하였으며 이를 기존 종단 간 모형의 결괏값과 비교하였다. 최종적으로 본 논문에 제안된 모형 중에 가장 성능이 우수한 모형을 선택하여 현재 상용되고 있는 Application Programming Interface (API)들과 성능을 비교하였다. 우리말샘 온라인 사전 훈련 데이터에 한하여 비교한 결과, 제안된 모형의 word error rate (WER)와 label error rate (LER)는 각각 26.4%와 4.58%로서 76%의 WER와 29.88%의 LER 값을 보인 Google API보다 월등히 개선된 성능을 보였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201919341608252&target=NART&cn=JAKO201919341608252",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "딥러닝 모형을 사용한 한국어 음성인식 딥러닝 모형을 사용한 한국어 음성인식 딥러닝 모형을 사용한 한국어 음성인식 본 논문에서는 베이즈 신경망을 결합한 종단 간 딥러닝 모형을 한국어 음성인식에 적용하였다. 논문에서는 종단 간 학습 모형으로 연결성 시계열 분류기(connectionist temporal classification), 주의 기제, 그리고 주의 기제에 연결성 시계열 분류기를 결합한 모형을 사용하였으며. 각 모형은 순환신경망(recurrent neural network) 혹은 합성곱신경망(convolutional neural network)을 기반으로 하였다. 추가적으로 디코딩 과정에서 빔 탐색과 유한 상태 오토마타를 활용하여 자모음 순서를 조정한 최적의 문자열을 도출하였다. 또한 베이즈 신경망을 각 종단 간 모형에 적용하여 일반적인 점 추정치와 몬테카를로 추정치를 구하였으며 이를 기존 종단 간 모형의 결괏값과 비교하였다. 최종적으로 본 논문에 제안된 모형 중에 가장 성능이 우수한 모형을 선택하여 현재 상용되고 있는 Application Programming Interface (API)들과 성능을 비교하였다. 우리말샘 온라인 사전 훈련 데이터에 한하여 비교한 결과, 제안된 모형의 word error rate (WER)와 label error rate (LER)는 각각 26.4%와 4.58%로서 76%의 WER와 29.88%의 LER 값을 보인 Google API보다 월등히 개선된 성능을 보였다."
+        },
+        {
+          "rank": 47,
+          "score": 0.5532757043838501,
+          "doc_id": "DIKO0016148701",
+          "title": "Django 개발 프레임워크를 기반으로 인터넷 강의 시스템 설계 및 구현",
+          "abstract": "과학 기술의 진보에 따라,전통적인 교학 형식은 학습자의 요구를 이미 만족시킬 수 없다.특히 우리가 특별한 상황에 부딪혀 전통교육을 할 수 없을 때, 학습할 수 있도록 온라인 교육은 이 문제를 해결하는 것이 가장 효과적인 방법이다.온라인 교육은 전통적인 교육 시간과 공간의 제한을 타파하였다깨졌다.인터넷 기술 덕분에&nbsp;차용하고 원하는 만큼 학습할 수 있다.본문에서는 Django 프레임워크 기반의 web 온라인 교육 시스템을 설계하고 구현하였다.새로운 커리큘럼 모델, 정확한 개별화 과정 추천, 안정적인 시스템 가용성을 통해 사용자의 증가하는 수요를 만족시킬 수 있다.&amp;#xD; 본 연구는 Django 프레임워크를 기반으로 한 웹 온라인 교육 플랫폼 프로그램으로 MTV 디자인 모델을 중심으로 프레임을 디자인한다.Python을 이용한 백엔드 논리와 기능 판정, HTML과 JavaScript의 프론트 페이지 구현, Mysql을 이용한 지속화 데이터베이스, Navicat 관리 Mysql,Redis를 캐시 데이터베이스로 활용한다.사용자 모듈,커리큘럼 모듈, 주문거래 모듈,백엔드 관리 모듈 등 4개 주요 기능 모듈로 나뉜다.사용자 모듈,커리큘럼 모듈, 주문거래 모듈, 백엔드 관리 모듈 등 4개 주요 기능 모듈로 나뉜다.그중에서도 커리큘럼 모듈은 나머지 플랫폼의 부족에 맞춰 높은 실행률과 높은 정확성을 가진 슬로프원 추천 알고리즘을 창조적으로 도입하고 다른 다양한 추천 방식과 결합해 사용자에게 다각적이고 정교한 개인화된 강의 추천 서비스를 제공한다.마지막으로 Nginx와 uWSGI 서버를 통해 클라우드 상부 배치가 가능해졌고, 도메인을 통해 접속할 수 있게 됐다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0016148701&target=NART&cn=DIKO0016148701",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Django 개발 프레임워크를 기반으로 인터넷 강의 시스템 설계 및 구현 Django 개발 프레임워크를 기반으로 인터넷 강의 시스템 설계 및 구현 Django 개발 프레임워크를 기반으로 인터넷 강의 시스템 설계 및 구현 과학 기술의 진보에 따라,전통적인 교학 형식은 학습자의 요구를 이미 만족시킬 수 없다.특히 우리가 특별한 상황에 부딪혀 전통교육을 할 수 없을 때, 학습할 수 있도록 온라인 교육은 이 문제를 해결하는 것이 가장 효과적인 방법이다.온라인 교육은 전통적인 교육 시간과 공간의 제한을 타파하였다깨졌다.인터넷 기술 덕분에&nbsp;차용하고 원하는 만큼 학습할 수 있다.본문에서는 Django 프레임워크 기반의 web 온라인 교육 시스템을 설계하고 구현하였다.새로운 커리큘럼 모델, 정확한 개별화 과정 추천, 안정적인 시스템 가용성을 통해 사용자의 증가하는 수요를 만족시킬 수 있다.&amp;#xD; 본 연구는 Django 프레임워크를 기반으로 한 웹 온라인 교육 플랫폼 프로그램으로 MTV 디자인 모델을 중심으로 프레임을 디자인한다.Python을 이용한 백엔드 논리와 기능 판정, HTML과 JavaScript의 프론트 페이지 구현, Mysql을 이용한 지속화 데이터베이스, Navicat 관리 Mysql,Redis를 캐시 데이터베이스로 활용한다.사용자 모듈,커리큘럼 모듈, 주문거래 모듈,백엔드 관리 모듈 등 4개 주요 기능 모듈로 나뉜다.사용자 모듈,커리큘럼 모듈, 주문거래 모듈, 백엔드 관리 모듈 등 4개 주요 기능 모듈로 나뉜다.그중에서도 커리큘럼 모듈은 나머지 플랫폼의 부족에 맞춰 높은 실행률과 높은 정확성을 가진 슬로프원 추천 알고리즘을 창조적으로 도입하고 다른 다양한 추천 방식과 결합해 사용자에게 다각적이고 정교한 개인화된 강의 추천 서비스를 제공한다.마지막으로 Nginx와 uWSGI 서버를 통해 클라우드 상부 배치가 가능해졌고, 도메인을 통해 접속할 수 있게 됐다."
+        },
+        {
+          "rank": 48,
+          "score": 0.5528916716575623,
+          "doc_id": "JAKO202320757733611",
+          "title": "설명 가능한 인공지능과 CNN을 활용한 암호화폐 가격 등락 예측모형",
+          "abstract": "블록체인 기술이 적용되어 있는 암호화폐는 높은 가격 변동성을 가지며 투자자 및 일반 대중으로부터 큰 관심을 받아왔다. 이러한 관심을 바탕으로 암호화폐를 비롯한 투자상품의 미래가치를 예측하기 위한 연구가 이루어지고 있으나 예측모형에 대한 설명력 및 해석 가능성이 낮아 실무에서 활용하기 어렵다는 비판을 받아왔다. 본 연구에서는 암호화폐 가격 예측모형의 성과를 향상시키기 위해 금융투자상품의 가치평가에 활용되는 기술적 지표들과 함께 투자자의 사회적 관심도를 반영할 수 있는 구글 키워드 검색량 데이터를 사용하고 설명 가능한 인공지능을 적용하여 모형에 대한 해석을 제공하고자 한다. 최근 금융 시계열 분야에서 예측성과의 우수성을 인정받고 있는 LSTM(Long Short Term Memory)과 CNN(Convolutional Neural Networks)을 활용하고, 'bitcoin'을 검색어로 하는 구글 검색량 데이터를 적용해 일주일 후의 가격 등락 예측모형을 구축하였다. LSTM과 CNN을 활용해 구축한 모형들이 높은 예측성능을 보였으며 구글 검색량을 반영한 모형에서 더 높은 예측성과를 확인할 수 있었다. 딥러닝 모형의 해석 가능성 및 설명력을 위해 XAI의 SHAP 기법을 적용한 결과, 구글 검색량과 함께 과매수, 과매도 정도를 파악할 수 있는 지표들이 모형의 의사결정에 가장 큰 영향들을 미치고 있음을 파악할 수 있었다. 본 연구는 암호화폐 가격 등락 예측에 있어 전통적으로 시계열 예측에 우수한 성과를 인정받고 있는 LSTM뿐만 아니라 이미지 분류에서 높은 예측성과를 보이는 딥러닝 기법인 CNN 또한 우수한 예측성능을 보일 수 있음을 확인하였으며, XAI를 통해 예측모형에 대한 해석을 제공하고, 대중의 심리를 반영하는 정보 중 하나인 구글 검색량을 활용해 예측성과를 향상시킬 수 있다는 것을 확인했다는 점에서 의의가 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202320757733611&target=NART&cn=JAKO202320757733611",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "설명 가능한 인공지능과 CNN을 활용한 암호화폐 가격 등락 예측모형 설명 가능한 인공지능과 CNN을 활용한 암호화폐 가격 등락 예측모형 설명 가능한 인공지능과 CNN을 활용한 암호화폐 가격 등락 예측모형 블록체인 기술이 적용되어 있는 암호화폐는 높은 가격 변동성을 가지며 투자자 및 일반 대중으로부터 큰 관심을 받아왔다. 이러한 관심을 바탕으로 암호화폐를 비롯한 투자상품의 미래가치를 예측하기 위한 연구가 이루어지고 있으나 예측모형에 대한 설명력 및 해석 가능성이 낮아 실무에서 활용하기 어렵다는 비판을 받아왔다. 본 연구에서는 암호화폐 가격 예측모형의 성과를 향상시키기 위해 금융투자상품의 가치평가에 활용되는 기술적 지표들과 함께 투자자의 사회적 관심도를 반영할 수 있는 구글 키워드 검색량 데이터를 사용하고 설명 가능한 인공지능을 적용하여 모형에 대한 해석을 제공하고자 한다. 최근 금융 시계열 분야에서 예측성과의 우수성을 인정받고 있는 LSTM(Long Short Term Memory)과 CNN(Convolutional Neural Networks)을 활용하고, 'bitcoin'을 검색어로 하는 구글 검색량 데이터를 적용해 일주일 후의 가격 등락 예측모형을 구축하였다. LSTM과 CNN을 활용해 구축한 모형들이 높은 예측성능을 보였으며 구글 검색량을 반영한 모형에서 더 높은 예측성과를 확인할 수 있었다. 딥러닝 모형의 해석 가능성 및 설명력을 위해 XAI의 SHAP 기법을 적용한 결과, 구글 검색량과 함께 과매수, 과매도 정도를 파악할 수 있는 지표들이 모형의 의사결정에 가장 큰 영향들을 미치고 있음을 파악할 수 있었다. 본 연구는 암호화폐 가격 등락 예측에 있어 전통적으로 시계열 예측에 우수한 성과를 인정받고 있는 LSTM뿐만 아니라 이미지 분류에서 높은 예측성과를 보이는 딥러닝 기법인 CNN 또한 우수한 예측성능을 보일 수 있음을 확인하였으며, XAI를 통해 예측모형에 대한 해석을 제공하고, 대중의 심리를 반영하는 정보 중 하나인 구글 검색량을 활용해 예측성과를 향상시킬 수 있다는 것을 확인했다는 점에서 의의가 있다."
+        },
+        {
+          "rank": 49,
+          "score": 0.5521364212036133,
+          "doc_id": "JAKO201820765441958",
+          "title": "오픈 소스 기반의 딥러닝을 이용한 적조생물 이미지 분류",
+          "abstract": "국내 유해 적조발생에 따른 어패류 양식장에 지속적인 피해가 증가함에 따라서 적조에 대하여 많은 연구가 이루어지고 있다. 그러나 자동으로 적조 이미지를 인식하여서 유해적조생물을 판별하는 적조생물 이미지 검색에 대한 국내의 연구는 미흡한 실정에 있다. 본 논문은 오픈소스 기반의 딥러닝을 이용하여 적조생물 이미지를 분류할 수 있는 방법을 제안한다. 제안방법은 다양하게 표현되는 적조생물 이미지의 인식문제를 해결하기 위하여 텐서프로 프레임워크와 구굴 이미지 분류 모델을 이용하여 구현하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201820765441958&target=NART&cn=JAKO201820765441958",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "오픈 소스 기반의 딥러닝을 이용한 적조생물 이미지 분류 오픈 소스 기반의 딥러닝을 이용한 적조생물 이미지 분류 오픈 소스 기반의 딥러닝을 이용한 적조생물 이미지 분류 국내 유해 적조발생에 따른 어패류 양식장에 지속적인 피해가 증가함에 따라서 적조에 대하여 많은 연구가 이루어지고 있다. 그러나 자동으로 적조 이미지를 인식하여서 유해적조생물을 판별하는 적조생물 이미지 검색에 대한 국내의 연구는 미흡한 실정에 있다. 본 논문은 오픈소스 기반의 딥러닝을 이용하여 적조생물 이미지를 분류할 수 있는 방법을 제안한다. 제안방법은 다양하게 표현되는 적조생물 이미지의 인식문제를 해결하기 위하여 텐서프로 프레임워크와 구굴 이미지 분류 모델을 이용하여 구현하였다."
+        },
+        {
+          "rank": 50,
+          "score": 0.5516594648361206,
+          "doc_id": "JAKO201710758144683",
+          "title": "빅데이터 분석을 이용한 이러닝 수강 후기 분석",
+          "abstract": "인터넷과 스마트 기기의 사용량 증가로 인해 다양한 교육정보와 많은 양의 데이터가 생성되어 빠르게 확산되고 있다. 최근 이러닝 이용률이 증가하면서 발생하는 빅데이터를 활용하여 학습자들의 교육 성과와 교육 시스템의 효과성을 극대화 하는 것을 목표로 하는 교육 데이터 관련 연구 분야에 대한 관심이 높아지고 있으며 온라인에서 학습자들이 학습한 수많은 기록과 데이터들이 정보로 쌓이게 된다. 이에 본 논문에서는 이러닝 학습자들이 시스템에 남긴 수강 기록을 기반으로 학습자 현황에 대해 객관적으로 파악할 수 있도록 신경망 알고리즘인 Word2Vec을 적용하여 단어 간 유사도를 구하고 클러스터링 알고리즘을 이용하여 군집화 하였다. Word2vec을 이용하여 학습을 시키면 연관된 의미의 단어가 나타나게 되고 학습을 반복해 나가는 과정에서 점차 가까운 벡터를 지니게 된다. 또한 클러스터 알고리즘을 이용하여 명사, 동사, 형용사, 부사가 중심점에서 최소의 거리를 두고 같은 거리에 위치해 있음을 실험 검증하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201710758144683&target=NART&cn=JAKO201710758144683",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "빅데이터 분석을 이용한 이러닝 수강 후기 분석 빅데이터 분석을 이용한 이러닝 수강 후기 분석 빅데이터 분석을 이용한 이러닝 수강 후기 분석 인터넷과 스마트 기기의 사용량 증가로 인해 다양한 교육정보와 많은 양의 데이터가 생성되어 빠르게 확산되고 있다. 최근 이러닝 이용률이 증가하면서 발생하는 빅데이터를 활용하여 학습자들의 교육 성과와 교육 시스템의 효과성을 극대화 하는 것을 목표로 하는 교육 데이터 관련 연구 분야에 대한 관심이 높아지고 있으며 온라인에서 학습자들이 학습한 수많은 기록과 데이터들이 정보로 쌓이게 된다. 이에 본 논문에서는 이러닝 학습자들이 시스템에 남긴 수강 기록을 기반으로 학습자 현황에 대해 객관적으로 파악할 수 있도록 신경망 알고리즘인 Word2Vec을 적용하여 단어 간 유사도를 구하고 클러스터링 알고리즘을 이용하여 군집화 하였다. Word2vec을 이용하여 학습을 시키면 연관된 의미의 단어가 나타나게 되고 학습을 반복해 나가는 과정에서 점차 가까운 벡터를 지니게 된다. 또한 클러스터 알고리즘을 이용하여 명사, 동사, 형용사, 부사가 중심점에서 최소의 거리를 두고 같은 거리에 위치해 있음을 실험 검증하였다."
+        }
+      ]
+    }
+  ],
+  "meta": {},
+  "timestamp_kst": "2025-09-20T23:58:15.012414",
+  "trial_id": "f0a31830"
+}

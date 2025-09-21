@@ -1,0 +1,517 @@
+{
+  "id": "row_000037",
+  "model_name": "BAAI/bge-m3",
+  "retrieval_results": [
+    {
+      "query": "IT와 BT 융합 기술의 특성과 특허 분석 결과를 바탕으로 융합 강도와 협력 네트워크를 요약해 주세요.",
+      "query_meta": {
+        "type": "original"
+      },
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.6530453562736511,
+          "doc_id": "JAKO201266833852356",
+          "title": "Technological Convergence of IT and BT: Evidence from Patent Analysis",
+          "abstract": "In recent innovation trends, one notable feature is the merging and overlapping of technologies: in other words, technological convergence. A key technological convergence is the fusion of biotechnology (BT) and information technology (IT). Major IT advances have led to innovative devices that allow us to advance BT. However, the lack of data on IT-BT convergence is a major impediment: relatively little research has analyzed the inter-disciplinary relationship of different industries. We propose a systematic approach to analyzing the technological convergence of BT and IT. Patent analysis, including citation and co-classification analyses, was adopted as a main method to measure the convergence intensity and coverage, and two portfolio matrices were developed to manage the technological convergence. The contribution of this paper is that it provides practical evidences for IT-BT convergence, based on quantitative data and systematic processes. This has managerial implications for each sector of IT and BT.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201266833852356&target=NART&cn=JAKO201266833852356",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Technological Convergence of IT and BT: Evidence from Patent Analysis Technological Convergence of IT and BT: Evidence from Patent Analysis Technological Convergence of IT and BT: Evidence from Patent Analysis In recent innovation trends, one notable feature is the merging and overlapping of technologies: in other words, technological convergence. A key technological convergence is the fusion of biotechnology (BT) and information technology (IT). Major IT advances have led to innovative devices that allow us to advance BT. However, the lack of data on IT-BT convergence is a major impediment: relatively little research has analyzed the inter-disciplinary relationship of different industries. We propose a systematic approach to analyzing the technological convergence of BT and IT. Patent analysis, including citation and co-classification analyses, was adopted as a main method to measure the convergence intensity and coverage, and two portfolio matrices were developed to manage the technological convergence. The contribution of this paper is that it provides practical evidences for IT-BT convergence, based on quantitative data and systematic processes. This has managerial implications for each sector of IT and BT."
+        },
+        {
+          "rank": 2,
+          "score": 0.6259956359863281,
+          "doc_id": "JAKO201226960571506",
+          "title": "우리나라 BT 융합기술 시장의 특성에 관한 실증연구",
+          "abstract": "생명공학(BT) 분야는 고부가가치의 새로운 시장기회를 제공할 수 있는 잠재력이 있으며, 타분야와 융합 연구개발이 활발하게 진행되고 있다. 본 연구는 2000년부터 2010년동안 한국특허청(KIPO)에 등록된 특허를 기준으로 우리나라 BT 융합기술의 실태를 실증분석 하고자 한다. 특히 국제특허분류(IPC) 체계에 따라 융합기술을 동종융합과 이종융합 기술로 구분하였으며, 그 시장의 특성을 파악을 위하여 기술 및 기업집중도, 시장확보력지수(PFS) 비교 실증분석을 한다. 또한 FOS 기술-분류표를 활용하여 BT기술과 이종융합이 일어나고 있는 산업군을 파악하여 신시장 창출현황을 살펴보고 이에 대한 시사점을 찾고자 한다. 그간 특허분석으로 많은 연구가 수행되었으나 우리나라 BT 융합기술 시장에 초점이 맞추어 진 연구는 거의 드문 실정으로 이러한 분석은 매우 의미가 있는 연구라고 사료된다. 본 연구에서는 우리나라 융합기술 시장이 급속도로 확장되고 있으며, 소수 기업에 의하여 독과점화되고 있다는 사실을 확인하고, 종합적으로 BINET 융합 분야의 핵심 키워드 및 기술을 파악한다. 이러한 BT 융합의 추세는 향후 BT 산업화가 가속화되면서 더욱 강화될 것으로 전망되며, 본 연구를 통하여 확인된 향후 BT 기반 융합기술 정책수립에 많은 시사점을 제공할 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201226960571506&target=NART&cn=JAKO201226960571506",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "우리나라 BT 융합기술 시장의 특성에 관한 실증연구 우리나라 BT 융합기술 시장의 특성에 관한 실증연구 우리나라 BT 융합기술 시장의 특성에 관한 실증연구 생명공학(BT) 분야는 고부가가치의 새로운 시장기회를 제공할 수 있는 잠재력이 있으며, 타분야와 융합 연구개발이 활발하게 진행되고 있다. 본 연구는 2000년부터 2010년동안 한국특허청(KIPO)에 등록된 특허를 기준으로 우리나라 BT 융합기술의 실태를 실증분석 하고자 한다. 특히 국제특허분류(IPC) 체계에 따라 융합기술을 동종융합과 이종융합 기술로 구분하였으며, 그 시장의 특성을 파악을 위하여 기술 및 기업집중도, 시장확보력지수(PFS) 비교 실증분석을 한다. 또한 FOS 기술-분류표를 활용하여 BT기술과 이종융합이 일어나고 있는 산업군을 파악하여 신시장 창출현황을 살펴보고 이에 대한 시사점을 찾고자 한다. 그간 특허분석으로 많은 연구가 수행되었으나 우리나라 BT 융합기술 시장에 초점이 맞추어 진 연구는 거의 드문 실정으로 이러한 분석은 매우 의미가 있는 연구라고 사료된다. 본 연구에서는 우리나라 융합기술 시장이 급속도로 확장되고 있으며, 소수 기업에 의하여 독과점화되고 있다는 사실을 확인하고, 종합적으로 BINET 융합 분야의 핵심 키워드 및 기술을 파악한다. 이러한 BT 융합의 추세는 향후 BT 산업화가 가속화되면서 더욱 강화될 것으로 전망되며, 본 연구를 통하여 확인된 향후 BT 기반 융합기술 정책수립에 많은 시사점을 제공할 수 있을 것이다."
+        },
+        {
+          "rank": 3,
+          "score": 0.6232449412345886,
+          "doc_id": "JAKO200820055488505",
+          "title": "BT-IT(BIT) 융합기술",
+          "abstract": "본고에서는 최신 과학기술 분야의 화두가 되고 있는 생명공학(BT)과 정보통신(IT)의 융합기술에 대해서 소개한다. 대표적인 기술로 바이오인포매틱스, 바이오칩, 바이오센서, 그리고 이들의 총체적인 기술인 유비쿼터스 헬스케어 시스템에 대해서 알아본다. BT, IT 융합기술을 통해 과학기술 분야에 새로운 연구분야와 효율적인 분석 기술을 제공해줌으로써, 인류의 건강에 큰 도움을 줄 것으로 기대된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200820055488505&target=NART&cn=JAKO200820055488505",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "BT-IT(BIT) 융합기술 BT-IT(BIT) 융합기술 BT-IT(BIT) 융합기술 본고에서는 최신 과학기술 분야의 화두가 되고 있는 생명공학(BT)과 정보통신(IT)의 융합기술에 대해서 소개한다. 대표적인 기술로 바이오인포매틱스, 바이오칩, 바이오센서, 그리고 이들의 총체적인 기술인 유비쿼터스 헬스케어 시스템에 대해서 알아본다. BT, IT 융합기술을 통해 과학기술 분야에 새로운 연구분야와 효율적인 분석 기술을 제공해줌으로써, 인류의 건강에 큰 도움을 줄 것으로 기대된다."
+        },
+        {
+          "rank": 4,
+          "score": 0.6216957569122314,
+          "doc_id": "JAKO200665349434500",
+          "title": "IT-BT-NT 기술 융합에 따른 산업육성전략",
+          "abstract": "최근 IT, BT, NT 기술간 융합이 가속화되면서 새로운 형태의 기술과 서비스가 등장하고 있다. 미국, 일본, 유럽 등 선진국은 정부와 기업이 연대하여 기술간 융합을 고부가가치 창출에 필요한 첨단기술로 인식하고 융합기술 개발을 적극적으로 추진하고 있고, 우리 정부도 과학기술부, 산업자원부, 정보통신부를 중심으로 융합기술 발전계획을 수립하고 있다. 융합기술 개발을 통해 미래의 핵심기술을 확보하고, 컨버전스 시대의 조류에 대응하며, 새로운 성장동력을 창출하고, 건강하고 안전한 삶을 실현할 수 있다. 본고에서는 먼저 IT-BT-NT 융합기술의 분류, 특징 및 기대효과를 살펴보고, 산업육성전략 방안을 제시하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200665349434500&target=NART&cn=JAKO200665349434500",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT-BT-NT 기술 융합에 따른 산업육성전략 IT-BT-NT 기술 융합에 따른 산업육성전략 IT-BT-NT 기술 융합에 따른 산업육성전략 최근 IT, BT, NT 기술간 융합이 가속화되면서 새로운 형태의 기술과 서비스가 등장하고 있다. 미국, 일본, 유럽 등 선진국은 정부와 기업이 연대하여 기술간 융합을 고부가가치 창출에 필요한 첨단기술로 인식하고 융합기술 개발을 적극적으로 추진하고 있고, 우리 정부도 과학기술부, 산업자원부, 정보통신부를 중심으로 융합기술 발전계획을 수립하고 있다. 융합기술 개발을 통해 미래의 핵심기술을 확보하고, 컨버전스 시대의 조류에 대응하며, 새로운 성장동력을 창출하고, 건강하고 안전한 삶을 실현할 수 있다. 본고에서는 먼저 IT-BT-NT 융합기술의 분류, 특징 및 기대효과를 살펴보고, 산업육성전략 방안을 제시하고자 한다."
+        },
+        {
+          "rank": 5,
+          "score": 0.6140660643577576,
+          "doc_id": "JAKO201323965018558",
+          "title": "특허 네트워크 분석을 통한 융합 기술 트렌드 분석: 한국.미국.유럽.일본의 특허데이터를 중심으로",
+          "abstract": "기업들은 지속적 성장을 위해 새로운 제품들이나 비즈니스 모델을 수없이 개발하고 있다. 새로운 제품이나 서비스 개발을 위해 우선적으로 독특한 기술 역량 확보가 이루어져야 한다. 하지만 기술의 산업화 적용기간이 짧아지고, 고객의 요구사항이 다양해짐에 따라 기술 확보가 어려워지고 있다. 이에 따라 기술 확보를 위해 기술융합 필요성이 증대되고 있다. 지속적 성장을 위해 가치 창출을 할 수 있는 방안으로 융합 기술에 대한 관심이 높지만 아직 개발 주체 간의 정보나 기술교류가 미흡하고, 선진국의 모방에 그치고 있는 실정이다. 이러한 문제를 해결하기 위해서 융합기술이 기술혁신의 중요한 한 형태임을 인식하고 기술혁신의 중요한 지표인 특허정보를 활용해서 기술융합의 구조와 정량적 분석을 실시할 필요성이 있다. 따라서 본 연구는 한국에서의 10년간 특허 현황을 살펴봄으로써 기술 융합이 어떠한 방향으로 이루어지고 있는지를 분석하고, 더 나아가 미국, 유럽, 일본에서의 기술 융합 현상과 비교해 보고자 한다. 이를 위해 한국, 미국, 유럽, 일본에서 2000년부터 2009년까지 10년간 출원된 특허 데이터를 매년 5,000개씩 표집하여, UCINET 사회 연결망 분석 프로그램을 통해 네트워크 분석을 실시하였다. 본 연구를 통해 다음과 같은 연구결과를 도출하였다. 첫째, 대부분의 국가에서 시간이 지나갈수록 기술 융합이 더욱 활발하게 이루어지며, 융합의 중심에 있는 기술이 유기화학, 의학, 기초전자소자 등임을 확인하였다. 둘째, 국가별 융합기술의 중심에 있는 기술이 미국은 유기화학, 유럽은 의학, 일본은 기초전기소자 등임을 확인함으로써 국가별 융합산업의 방향성을 확인할 수 있었다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201323965018558&target=NART&cn=JAKO201323965018558",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허 네트워크 분석을 통한 융합 기술 트렌드 분석: 한국.미국.유럽.일본의 특허데이터를 중심으로 특허 네트워크 분석을 통한 융합 기술 트렌드 분석: 한국.미국.유럽.일본의 특허데이터를 중심으로 특허 네트워크 분석을 통한 융합 기술 트렌드 분석: 한국.미국.유럽.일본의 특허데이터를 중심으로 기업들은 지속적 성장을 위해 새로운 제품들이나 비즈니스 모델을 수없이 개발하고 있다. 새로운 제품이나 서비스 개발을 위해 우선적으로 독특한 기술 역량 확보가 이루어져야 한다. 하지만 기술의 산업화 적용기간이 짧아지고, 고객의 요구사항이 다양해짐에 따라 기술 확보가 어려워지고 있다. 이에 따라 기술 확보를 위해 기술융합 필요성이 증대되고 있다. 지속적 성장을 위해 가치 창출을 할 수 있는 방안으로 융합 기술에 대한 관심이 높지만 아직 개발 주체 간의 정보나 기술교류가 미흡하고, 선진국의 모방에 그치고 있는 실정이다. 이러한 문제를 해결하기 위해서 융합기술이 기술혁신의 중요한 한 형태임을 인식하고 기술혁신의 중요한 지표인 특허정보를 활용해서 기술융합의 구조와 정량적 분석을 실시할 필요성이 있다. 따라서 본 연구는 한국에서의 10년간 특허 현황을 살펴봄으로써 기술 융합이 어떠한 방향으로 이루어지고 있는지를 분석하고, 더 나아가 미국, 유럽, 일본에서의 기술 융합 현상과 비교해 보고자 한다. 이를 위해 한국, 미국, 유럽, 일본에서 2000년부터 2009년까지 10년간 출원된 특허 데이터를 매년 5,000개씩 표집하여, UCINET 사회 연결망 분석 프로그램을 통해 네트워크 분석을 실시하였다. 본 연구를 통해 다음과 같은 연구결과를 도출하였다. 첫째, 대부분의 국가에서 시간이 지나갈수록 기술 융합이 더욱 활발하게 이루어지며, 융합의 중심에 있는 기술이 유기화학, 의학, 기초전자소자 등임을 확인하였다. 둘째, 국가별 융합기술의 중심에 있는 기술이 미국은 유기화학, 유럽은 의학, 일본은 기초전기소자 등임을 확인함으로써 국가별 융합산업의 방향성을 확인할 수 있었다."
+        },
+        {
+          "rank": 6,
+          "score": 0.6139678955078125,
+          "doc_id": "JAKO200724737430564",
+          "title": "신기술의 융합 유형에 관한 실증 분석",
+          "abstract": "본 연구는 최근 차세대 성장 동력으로 등장하고 있는 바이오기술(BT), 정보기술(IT), 그리고 나노기술(NT)의 새로운 신기술 융합 유형 및 발전 방향에 관한 연구로 융합의 학문적 의미, 융합의 촉발 요인과 향후 전개방향을 살펴보고, 선행연구를 통해 기존의 바이오기술, 정보기술 및 나노기술들의 한계와 문제점을 도출하여, 그 한계와 문제점을 극복하는 방안으로서의 융합의 필요성을 제시하였다. 또한 다양한 융합 유형 중 바이오기술(BT) 기반의 정보기술 융합인 BIT 융합기술과 나노기술 융합인 BNT 융합기술에 한하여 선행연구 및 델파이 실증 분석을 통해 차세대 기술로 등장할 7개의 BIT 및 10개의 BNT 세부 융합기술을 도출하여 제시하였다. 따라서 본 연구의 결과는 각각 융합기술을 연구하는 연구소, 기업, 및 학계에 융합의 필요성에 따라 상호 이해도를 높이고 산학간 협력할 수 있는 기회를 제공할 것으로 기대한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200724737430564&target=NART&cn=JAKO200724737430564",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "신기술의 융합 유형에 관한 실증 분석 신기술의 융합 유형에 관한 실증 분석 신기술의 융합 유형에 관한 실증 분석 본 연구는 최근 차세대 성장 동력으로 등장하고 있는 바이오기술(BT), 정보기술(IT), 그리고 나노기술(NT)의 새로운 신기술 융합 유형 및 발전 방향에 관한 연구로 융합의 학문적 의미, 융합의 촉발 요인과 향후 전개방향을 살펴보고, 선행연구를 통해 기존의 바이오기술, 정보기술 및 나노기술들의 한계와 문제점을 도출하여, 그 한계와 문제점을 극복하는 방안으로서의 융합의 필요성을 제시하였다. 또한 다양한 융합 유형 중 바이오기술(BT) 기반의 정보기술 융합인 BIT 융합기술과 나노기술 융합인 BNT 융합기술에 한하여 선행연구 및 델파이 실증 분석을 통해 차세대 기술로 등장할 7개의 BIT 및 10개의 BNT 세부 융합기술을 도출하여 제시하였다. 따라서 본 연구의 결과는 각각 융합기술을 연구하는 연구소, 기업, 및 학계에 융합의 필요성에 따라 상호 이해도를 높이고 산학간 협력할 수 있는 기회를 제공할 것으로 기대한다."
+        },
+        {
+          "rank": 7,
+          "score": 0.5873943567276001,
+          "doc_id": "JAKO200840764969679",
+          "title": "IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향",
+          "abstract": "본 고에서는 국가 R&D를 통해 개발된 IT 융합기술을 소개하고 국책연구결과물의 시범적용을 통해 새로운 사업화 모델을 발굴하고 더불어 지자체와 함께 서비스 모델의 적용을 통한 상용화 추진내용을 소개하였다. 본 사업이 성공적으로 실시되면 일반 국민들이 새로운 IT 기반의 융합서비스를 이용함으로써 유비쿼터스 환경에서의 융합서비스에 대한 인식확산과 신성장동력으로서 IT 융합 산업 활성화에 기여할 것으로 기대하고 있다. BT는 물론이고 NT, 전통산업 등 다양한 분야와 융합을 확대해 국민의 삶을 더욱 윤택하고 행복하게 할 수 있는 따뜻한 IT, 즐거운 IT를 실현할 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200840764969679&target=NART&cn=JAKO200840764969679",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향 IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향 IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향 본 고에서는 국가 R&D를 통해 개발된 IT 융합기술을 소개하고 국책연구결과물의 시범적용을 통해 새로운 사업화 모델을 발굴하고 더불어 지자체와 함께 서비스 모델의 적용을 통한 상용화 추진내용을 소개하였다. 본 사업이 성공적으로 실시되면 일반 국민들이 새로운 IT 기반의 융합서비스를 이용함으로써 유비쿼터스 환경에서의 융합서비스에 대한 인식확산과 신성장동력으로서 IT 융합 산업 활성화에 기여할 것으로 기대하고 있다. BT는 물론이고 NT, 전통산업 등 다양한 분야와 융합을 확대해 국민의 삶을 더욱 윤택하고 행복하게 할 수 있는 따뜻한 IT, 즐거운 IT를 실현할 수 있을 것이다."
+        },
+        {
+          "rank": 8,
+          "score": 0.5868582129478455,
+          "doc_id": "JAKO201528764978526",
+          "title": "국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석",
+          "abstract": "Many scholars have addressed the technological convergence of small-medium sized firms in Korea and their impact on the economic growth of nation. Nevertheless, most studies have been investigated the relationship between entrepreneurship and venture creation, and a few studies have analyzed the innovation and technological convergence of SMEs. The purpose of this research is to gain industrial insight into the technological convergence and to suggest a dynamic growth policy for entrepreneurs of SMEs to improve their convergence performance based on IT and BT. Therefore, we intend to propose solutions to these key questions in convergence such as; what are the key patterns in the process of technological convergence of SMEs on IT and BT, and what kinds of strategy do their need? In order to answer these research questions, we adopt network analysis using patent citation information. Results of network analysis revealed that building ecosystem based on government and universities is one of the most important factors for the future growth of SMEs in Korea. Also, the fit between technological convergence direction of SMEs and division of convergence structure of government and universities will be positively associated with dynamic growth of SMEs in Korea. In conclusion, this research extends the current studies on important aspects of SMEs in the technological convergence process by proposing their growth in convergence process to a newly converging context, IT and BT, and shed light on the integrative perspectives of crucial roles of SMEs on innovation performance in the IT and BT technological convergence.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201528764978526&target=NART&cn=JAKO201528764978526",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석 국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석 국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석 Many scholars have addressed the technological convergence of small-medium sized firms in Korea and their impact on the economic growth of nation. Nevertheless, most studies have been investigated the relationship between entrepreneurship and venture creation, and a few studies have analyzed the innovation and technological convergence of SMEs. The purpose of this research is to gain industrial insight into the technological convergence and to suggest a dynamic growth policy for entrepreneurs of SMEs to improve their convergence performance based on IT and BT. Therefore, we intend to propose solutions to these key questions in convergence such as; what are the key patterns in the process of technological convergence of SMEs on IT and BT, and what kinds of strategy do their need? In order to answer these research questions, we adopt network analysis using patent citation information. Results of network analysis revealed that building ecosystem based on government and universities is one of the most important factors for the future growth of SMEs in Korea. Also, the fit between technological convergence direction of SMEs and division of convergence structure of government and universities will be positively associated with dynamic growth of SMEs in Korea. In conclusion, this research extends the current studies on important aspects of SMEs in the technological convergence process by proposing their growth in convergence process to a newly converging context, IT and BT, and shed light on the integrative perspectives of crucial roles of SMEs on innovation performance in the IT and BT technological convergence."
+        },
+        {
+          "rank": 9,
+          "score": 0.5839053988456726,
+          "doc_id": "DIKO0010884531",
+          "title": "특허 분석을 통한 유망 융합 기술 예측에 관한 연구",
+          "abstract": "기술간 융합을 통해 고부가가치를 창출하는 신기술들과 이와 관련된 서비스들이 속속 등장하고, 선진국 및 선도 기업들이 미래 시장에서의 주도권을 선점하기 위해 유망 융합 기술 연구개발에 적극적으로 투자하면서 국가 및 기업간 경쟁이 고조되고 있다. 이에 따라 국가 또는 기업 차원에서 융합 기술 및 유망 기술을 신속하게 예측하고 효과적인 대응 전략을 수립할 필요성이 강하게 대두되고 있다. 이에 본 연구는 국제적인 최신 기술개발 동향을 객관적으로 파악할 수 있는 특허 데이터의 장점을 활용하여 특허 분석을 통한 유망 융합 기술 예측 방법을 제안하였다. 유망 융합 기술의 예측을 위하여 본 연구에서 정의한 융합 기술은 '서로 다른 산업 분류에 해당하는 국제 특허 분류(IPC)의 부분류(Subclass)를 갖는 특허 기술(산업간 융합 기술)'로 하였으며, 유망 기술은 '가까운 미래의 가능성에 초점을 두고 평가할 때, 시장 우위를 점할 것으로 기대되는 특허 기술'로 하였다. 분석을 위한 특허 DB는 IT 및 반도체 소자 분야 미국등록 특허('91-'06, 약 646,000건)를 특허 분석 전문 프로그램인 Micro Patent사의 Aureka를 활용하여 구축하였으며, 특허 기술의 산업 분류는 국제 특허 분류의 부분류를 44개 산업 기술로 재분류한 EC (European Commission)의 필드 분류표를 이용하였다. 융합 지수는 특허 기술이 갖고 있는 산업 분류 수를 이용하여 도출하였으며, 유망 지수는 특허 수 및 특허 수 증가율을 정규화한 후, 두 값에 가중치를 적용하여 산출하였다. 가중치는 현재 시장에서 우위를 점하고 있는 주요 기술을 선택하고 이들의 과거 특허 수 및 특허 수 증가율을 이용하여 결정함으로써 가중치의 자의성은 최소화하고 분석 분야의 특허 등록 특성은 최대한 반영할 수 있도록 설계하였다. 유망 융합 기술의 예측은 분석 분야의 평균 유망 지수 및 융합 지수를 기준으로 활용하였으며, 유망 지수와 융합 지수를 두 축으로 할 때, 두 지수의 평균을 상회하는 기술들이 향후 유망 융합 기술이 될 것으로 판단하였다. 제안된 방법론에 따라 IT 분야 및 반도체 소자 분야에 대한 실증 분석을 수행하였다. IT 분야에서는 도출된 다수의 유망 융합 기술 중, 28-35(사무기기 및 컴퓨터 - 신호 전송 및 통신) 융합 기술이 가장 높은 유망성을 갖는 것으로 나타났으며, Text Mining 도구를 통해 분석한 결과, 컴퓨터 - 네트워크 분야가 중심이 되고 있음을 확인하였다. 반도체 소자 분야에서는 MEMS 및 34-35(반도체 소자 - 신호 전송 및 통신)산업 간 융합 기술이 가장 높은 유망성을 갖는 것으로 나타났으며, 해당 특허들에 대한 Text Mining 분석 결과, 최근 휴대형 기기 등에 필수적으로 요구되는 Package 기술이 핵심이 되고 있음을 확인하였다. 본 연구 방법론의 검증을 위해 전문가들이 예측한 미래 유망 기술을 분석에 적용한 결과, 전문가들의 예측과 유사한 결과가 나타났을 뿐만 아니라 예측 기술들에 대한 보다 구체적인 데이터가 추가적으로 산출되어 본 연구 방법론의 유용성을 나타내 주었다 본 연구에서 제안된 방법을 사용한 유망 융합 기술의 예측과 함께, 도출된 분야와 관련된 연구 기관, 기업, 연구자 및 국가에 대한 분석이 추가되면 국가 및 기업 차원의 전략적 연구 개발을 위한 유용한 자료로 활용될 수 있을 것으로 기대된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0010884531&target=NART&cn=DIKO0010884531",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허 분석을 통한 유망 융합 기술 예측에 관한 연구 특허 분석을 통한 유망 융합 기술 예측에 관한 연구 특허 분석을 통한 유망 융합 기술 예측에 관한 연구 기술간 융합을 통해 고부가가치를 창출하는 신기술들과 이와 관련된 서비스들이 속속 등장하고, 선진국 및 선도 기업들이 미래 시장에서의 주도권을 선점하기 위해 유망 융합 기술 연구개발에 적극적으로 투자하면서 국가 및 기업간 경쟁이 고조되고 있다. 이에 따라 국가 또는 기업 차원에서 융합 기술 및 유망 기술을 신속하게 예측하고 효과적인 대응 전략을 수립할 필요성이 강하게 대두되고 있다. 이에 본 연구는 국제적인 최신 기술개발 동향을 객관적으로 파악할 수 있는 특허 데이터의 장점을 활용하여 특허 분석을 통한 유망 융합 기술 예측 방법을 제안하였다. 유망 융합 기술의 예측을 위하여 본 연구에서 정의한 융합 기술은 '서로 다른 산업 분류에 해당하는 국제 특허 분류(IPC)의 부분류(Subclass)를 갖는 특허 기술(산업간 융합 기술)'로 하였으며, 유망 기술은 '가까운 미래의 가능성에 초점을 두고 평가할 때, 시장 우위를 점할 것으로 기대되는 특허 기술'로 하였다. 분석을 위한 특허 DB는 IT 및 반도체 소자 분야 미국등록 특허('91-'06, 약 646,000건)를 특허 분석 전문 프로그램인 Micro Patent사의 Aureka를 활용하여 구축하였으며, 특허 기술의 산업 분류는 국제 특허 분류의 부분류를 44개 산업 기술로 재분류한 EC (European Commission)의 필드 분류표를 이용하였다. 융합 지수는 특허 기술이 갖고 있는 산업 분류 수를 이용하여 도출하였으며, 유망 지수는 특허 수 및 특허 수 증가율을 정규화한 후, 두 값에 가중치를 적용하여 산출하였다. 가중치는 현재 시장에서 우위를 점하고 있는 주요 기술을 선택하고 이들의 과거 특허 수 및 특허 수 증가율을 이용하여 결정함으로써 가중치의 자의성은 최소화하고 분석 분야의 특허 등록 특성은 최대한 반영할 수 있도록 설계하였다. 유망 융합 기술의 예측은 분석 분야의 평균 유망 지수 및 융합 지수를 기준으로 활용하였으며, 유망 지수와 융합 지수를 두 축으로 할 때, 두 지수의 평균을 상회하는 기술들이 향후 유망 융합 기술이 될 것으로 판단하였다. 제안된 방법론에 따라 IT 분야 및 반도체 소자 분야에 대한 실증 분석을 수행하였다. IT 분야에서는 도출된 다수의 유망 융합 기술 중, 28-35(사무기기 및 컴퓨터 - 신호 전송 및 통신) 융합 기술이 가장 높은 유망성을 갖는 것으로 나타났으며, Text Mining 도구를 통해 분석한 결과, 컴퓨터 - 네트워크 분야가 중심이 되고 있음을 확인하였다. 반도체 소자 분야에서는 MEMS 및 34-35(반도체 소자 - 신호 전송 및 통신)산업 간 융합 기술이 가장 높은 유망성을 갖는 것으로 나타났으며, 해당 특허들에 대한 Text Mining 분석 결과, 최근 휴대형 기기 등에 필수적으로 요구되는 Package 기술이 핵심이 되고 있음을 확인하였다. 본 연구 방법론의 검증을 위해 전문가들이 예측한 미래 유망 기술을 분석에 적용한 결과, 전문가들의 예측과 유사한 결과가 나타났을 뿐만 아니라 예측 기술들에 대한 보다 구체적인 데이터가 추가적으로 산출되어 본 연구 방법론의 유용성을 나타내 주었다 본 연구에서 제안된 방법을 사용한 유망 융합 기술의 예측과 함께, 도출된 분야와 관련된 연구 기관, 기업, 연구자 및 국가에 대한 분석이 추가되면 국가 및 기업 차원의 전략적 연구 개발을 위한 유용한 자료로 활용될 수 있을 것으로 기대된다."
+        },
+        {
+          "rank": 10,
+          "score": 0.5780565142631531,
+          "doc_id": "JAKO201932468200338",
+          "title": "방사선 융합기술과 특허 동향 분석",
+          "abstract": "인공지능, 빅데이터, 사물인터넷 등 기술간 융합과 고도화가 지역주력산업에도 큰 영향을 미치고 있다. 모든 기술분야가 기술간-산업간 연결이 되어 융합된 기술로 활용되고 있다. 최근 기술동향을 파악하기 위해 특허정보를 이용한 키워드검색을 통해 기술동향 조사 및 분석으로 쉽게 파악이 가능하게 되었다. 본 연구는 방사선 기술발전에서 4차 산업혁명시대 융합기술을 적용한 특허동향을 파악하고 방사선 관련 산업기술경쟁력 강화 및 활용방안을 위한 특허동향 및 분석을 제시하여 수요기술 발굴과 미래 유망기술 예측에 활용하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201932468200338&target=NART&cn=JAKO201932468200338",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "방사선 융합기술과 특허 동향 분석 방사선 융합기술과 특허 동향 분석 방사선 융합기술과 특허 동향 분석 인공지능, 빅데이터, 사물인터넷 등 기술간 융합과 고도화가 지역주력산업에도 큰 영향을 미치고 있다. 모든 기술분야가 기술간-산업간 연결이 되어 융합된 기술로 활용되고 있다. 최근 기술동향을 파악하기 위해 특허정보를 이용한 키워드검색을 통해 기술동향 조사 및 분석으로 쉽게 파악이 가능하게 되었다. 본 연구는 방사선 기술발전에서 4차 산업혁명시대 융합기술을 적용한 특허동향을 파악하고 방사선 관련 산업기술경쟁력 강화 및 활용방안을 위한 특허동향 및 분석을 제시하여 수요기술 발굴과 미래 유망기술 예측에 활용하고자 한다."
+        },
+        {
+          "rank": 11,
+          "score": 0.5760761499404907,
+          "doc_id": "ATN0030081312",
+          "title": "과학계량학을 활용한 공공연구개발 특허성과의 기술혁신 특성에 관한 연구",
+          "abstract": "본 연구에서는 국가연구개발사업의 성과물로서 창출되는 특허정보의 거시적 미시적 분석을 통해 기술혁신 특성을 파악하고자 하였다. 특허성과의 기술군별 비중을 분석한 결과 국가연구개발사업이 IT계열 기술군으로 편중된 것으로 나타났다. 기술군별 상대적인용도 지수(RCI)의 분석은 향후 BT계열 기술군이 부상할 것임을 시사하였다. 또한 상대적시장확보 지수(RFI)는 BT계열 및 IT계열과 같은 기술적 파급이 큰 기술군에서 높은 것으로 나타났다. 기술 융 복합화, 연구개발 주체 간의 협력-개방 관계에 대한 신규지표를 설계하고, 네트워크 분석 기법을 활용하여 기술군 사이의 흡수-파생 관계, 연구개발주체 간의 협력-개방 관계를 분석하였다. 이종기술간 기술 융 복합화가 증가하고 있으며, 상이한 연구개발주체들 사이의 연구개발 협력성과가 급증하고 있는 것으로 나타났다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030081312&target=NART&cn=ATN0030081312",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "과학계량학을 활용한 공공연구개발 특허성과의 기술혁신 특성에 관한 연구 과학계량학을 활용한 공공연구개발 특허성과의 기술혁신 특성에 관한 연구 과학계량학을 활용한 공공연구개발 특허성과의 기술혁신 특성에 관한 연구 본 연구에서는 국가연구개발사업의 성과물로서 창출되는 특허정보의 거시적 미시적 분석을 통해 기술혁신 특성을 파악하고자 하였다. 특허성과의 기술군별 비중을 분석한 결과 국가연구개발사업이 IT계열 기술군으로 편중된 것으로 나타났다. 기술군별 상대적인용도 지수(RCI)의 분석은 향후 BT계열 기술군이 부상할 것임을 시사하였다. 또한 상대적시장확보 지수(RFI)는 BT계열 및 IT계열과 같은 기술적 파급이 큰 기술군에서 높은 것으로 나타났다. 기술 융 복합화, 연구개발 주체 간의 협력-개방 관계에 대한 신규지표를 설계하고, 네트워크 분석 기법을 활용하여 기술군 사이의 흡수-파생 관계, 연구개발주체 간의 협력-개방 관계를 분석하였다. 이종기술간 기술 융 복합화가 증가하고 있으며, 상이한 연구개발주체들 사이의 연구개발 협력성과가 급증하고 있는 것으로 나타났다."
+        },
+        {
+          "rank": 12,
+          "score": 0.5681836605072021,
+          "doc_id": "JAKO201321842040330",
+          "title": "특허정보를 활용한 산업융합성 평가 방법론 : 기술연관분석",
+          "abstract": "As the convergence among technologies is reorganizing industry sectors, it is quite important to evaluate the probability of technological convergence, and to analyze how the technologies in a certain industry sector affect the same or other industry sectors. As a result, the large number of studies have been focused on the industry convergence. However, most of them have dealt mainly with case studies or strategy and policies and few efforts have been made to study it using quantitative data. The investigation of industry convergence using quantitative data will help understand the characteristics of industry and forecast the future of the industry from an objective point of view. Therefore, this research proposes a methodology to evaluate the possibilities of industry convergence using patent data. In particular, we emphasize the possibilities of technology convergence and suggest a technology relationship matrix to evaluate the technology convergence, as an antecedent of industry convergence. The feasibility and utility of the suggested methodology was verified with a case study on the convergence of IT and BT. The research results are expected to provide a useful guideline for developing a measure of convergence.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201321842040330&target=NART&cn=JAKO201321842040330",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허정보를 활용한 산업융합성 평가 방법론 : 기술연관분석 특허정보를 활용한 산업융합성 평가 방법론 : 기술연관분석 특허정보를 활용한 산업융합성 평가 방법론 : 기술연관분석 As the convergence among technologies is reorganizing industry sectors, it is quite important to evaluate the probability of technological convergence, and to analyze how the technologies in a certain industry sector affect the same or other industry sectors. As a result, the large number of studies have been focused on the industry convergence. However, most of them have dealt mainly with case studies or strategy and policies and few efforts have been made to study it using quantitative data. The investigation of industry convergence using quantitative data will help understand the characteristics of industry and forecast the future of the industry from an objective point of view. Therefore, this research proposes a methodology to evaluate the possibilities of industry convergence using patent data. In particular, we emphasize the possibilities of technology convergence and suggest a technology relationship matrix to evaluate the technology convergence, as an antecedent of industry convergence. The feasibility and utility of the suggested methodology was verified with a case study on the convergence of IT and BT. The research results are expected to provide a useful guideline for developing a measure of convergence."
+        },
+        {
+          "rank": 13,
+          "score": 0.567359209060669,
+          "doc_id": "NART50293806",
+          "title": "NT-IT 융합기술의 연구개발 동향",
+          "abstract": "NT-IT 융합기술은 나노기술을 IT기술에 접목하여 기존의 IT기술이 구현하지 못하고 있는 새로운 IT 소재/부품/시스템을 가능하게 하는 핵심 원천 기술로서 한계에 다다르고 있는 IT산업 성장에 새로운 성장동력을 제공할 수 있을 것으로 예측되고 있다. 본 고에서는 향후 연구개발, 인력양성 및 국제협력교류 등을 위한 새로운 전략수립이 요구되고 있는 NT-IT 융합기술의 분야 중에서 나노 정보감지 기술, 나노 정보표시 기술, 나노 정보전원 기술에 대하여 국내.외 연구개발 동향 및 산업동향 등을 분석하고 고찰하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART50293806&target=NART&cn=NART50293806",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "NT-IT 융합기술의 연구개발 동향 NT-IT 융합기술의 연구개발 동향 NT-IT 융합기술의 연구개발 동향 NT-IT 융합기술은 나노기술을 IT기술에 접목하여 기존의 IT기술이 구현하지 못하고 있는 새로운 IT 소재/부품/시스템을 가능하게 하는 핵심 원천 기술로서 한계에 다다르고 있는 IT산업 성장에 새로운 성장동력을 제공할 수 있을 것으로 예측되고 있다. 본 고에서는 향후 연구개발, 인력양성 및 국제협력교류 등을 위한 새로운 전략수립이 요구되고 있는 NT-IT 융합기술의 분야 중에서 나노 정보감지 기술, 나노 정보표시 기술, 나노 정보전원 기술에 대하여 국내.외 연구개발 동향 및 산업동향 등을 분석하고 고찰하였다."
+        },
+        {
+          "rank": 14,
+          "score": 0.5631266832351685,
+          "doc_id": "JAKO201624240304501",
+          "title": "기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용",
+          "abstract": "본 사례는 기술융합의 구조를 네트워크 기법을 이용하여 분석한 것이다. 좀 더 구체적으로 설명하면, 제품군을 매개로 투입기술들 간의 융합구조를 네트워크 분석 기법을 적용하여 분석하였으며, 제품군과 투입기술을 동시에 고려하기 위해서 2-mode 네트워크 분석을 적용하였다. 제품군은 개발목표에서 파악하여 표준산업분류에 따라 정의하고 기술은 개발에 투입된 기술들로 파악하여 국가과학기술표준분류에 따라 정의하였다. 본 연구의 대상은 중소기술정보진흥원의 융복합기술개발 사업에 신청한 401개 과제이다. 분석결과, IT분야는 특정기술이 다양한 제품군에 연결되는 구조이지만 BT분야에서는 특정 제품군을 중심으로 일부 기술은 공통적으로 적용되지만 상당수의 기술이 각기 제품군에 투입되고 있는 형태이다. 따라서 융합분야 마다 기술융합의 구조가 다른 것을 파악할 수 있었다. 투입기술의 연결중심성과 제품군을 매개로한 투입기술의 연결 중심성도 약시 차이가 있다. IT분야에서는 임베디드S/W가 2가지 경우에 모두 연결중심성이 가장 높았다. BT에서 발효공학과 기능성화장품기술이 투입기술의 연결중심성은 가장 높았지만 기능성화장품기술만 제품군을 매개로 투입기술의 연결중심성은 가장 높다. 즉, 특정제품군에 투입빈도가 높은 기술이다. 본 사례는 실제 기술개발과제에서 기술융합을 정의하고 그 구조를 분석하였다는 것이다. 본 사례의 의미는 융합기술개발과제를 관리하고 기획하는 데 유용한 분석 툴을 제시했다는 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201624240304501&target=NART&cn=JAKO201624240304501",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용 기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용 기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용 본 사례는 기술융합의 구조를 네트워크 기법을 이용하여 분석한 것이다. 좀 더 구체적으로 설명하면, 제품군을 매개로 투입기술들 간의 융합구조를 네트워크 분석 기법을 적용하여 분석하였으며, 제품군과 투입기술을 동시에 고려하기 위해서 2-mode 네트워크 분석을 적용하였다. 제품군은 개발목표에서 파악하여 표준산업분류에 따라 정의하고 기술은 개발에 투입된 기술들로 파악하여 국가과학기술표준분류에 따라 정의하였다. 본 연구의 대상은 중소기술정보진흥원의 융복합기술개발 사업에 신청한 401개 과제이다. 분석결과, IT분야는 특정기술이 다양한 제품군에 연결되는 구조이지만 BT분야에서는 특정 제품군을 중심으로 일부 기술은 공통적으로 적용되지만 상당수의 기술이 각기 제품군에 투입되고 있는 형태이다. 따라서 융합분야 마다 기술융합의 구조가 다른 것을 파악할 수 있었다. 투입기술의 연결중심성과 제품군을 매개로한 투입기술의 연결 중심성도 약시 차이가 있다. IT분야에서는 임베디드S/W가 2가지 경우에 모두 연결중심성이 가장 높았다. BT에서 발효공학과 기능성화장품기술이 투입기술의 연결중심성은 가장 높았지만 기능성화장품기술만 제품군을 매개로 투입기술의 연결중심성은 가장 높다. 즉, 특정제품군에 투입빈도가 높은 기술이다. 본 사례는 실제 기술개발과제에서 기술융합을 정의하고 그 구조를 분석하였다는 것이다. 본 사례의 의미는 융합기술개발과제를 관리하고 기획하는 데 유용한 분석 툴을 제시했다는 것이다."
+        },
+        {
+          "rank": 15,
+          "score": 0.562231183052063,
+          "doc_id": "JAKO200606142058970",
+          "title": "특허분석을 통한 유망융합기술의 예측",
+          "abstract": "This study provides a quantitative forecasting method to identify promising fusion technology and it also applies the method based on patent analysis to IT. This study defines fusion technology, promising technology, fusion index, promising index and promising fusion technology. From the analysis, this study found that the next generation computer network is the most promising in IT area. This result is consistent with the forecasts made by the interviews and discussion of experts.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200606142058970&target=NART&cn=JAKO200606142058970",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허분석을 통한 유망융합기술의 예측 특허분석을 통한 유망융합기술의 예측 특허분석을 통한 유망융합기술의 예측 This study provides a quantitative forecasting method to identify promising fusion technology and it also applies the method based on patent analysis to IT. This study defines fusion technology, promising technology, fusion index, promising index and promising fusion technology. From the analysis, this study found that the next generation computer network is the most promising in IT area. This result is consistent with the forecasts made by the interviews and discussion of experts."
+        },
+        {
+          "rank": 16,
+          "score": 0.5607401728630066,
+          "doc_id": "JAKO201029848353209",
+          "title": "IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로",
+          "abstract": "The IT convergence industry is expected to create some high added-value, yet the IT convergence service is still in its introductory stage, which requires the utilization of yet to be tried future technologies and development methodologies that have been never tried in the past; therefore, there is certain risk involved regarding the success of development during the introduction of service and the development of technology. From such perspective, this study found examples of the services in the IT convergence industries and the application technologies for the realization of those services; and conducted a research based on the examples, using the technical Characteristics classification; and based on the result, analyzed the standards and the peculiarity of technologies employed for the IT convergence service and the correlation and the complementarity between them; also identified the standards and the peculiarity of technologies required by the IT convergence services and analyzed the correlation between them; and finally analyzed the compatibility between the IT convergence services and the applied technologies. The conclusion of this study is expected to be utilized for selecting technologies for the introduction and the operation of the optimal IT convergence service and as a benchmark as well.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201029848353209&target=NART&cn=JAKO201029848353209",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로 IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로 IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로 The IT convergence industry is expected to create some high added-value, yet the IT convergence service is still in its introductory stage, which requires the utilization of yet to be tried future technologies and development methodologies that have been never tried in the past; therefore, there is certain risk involved regarding the success of development during the introduction of service and the development of technology. From such perspective, this study found examples of the services in the IT convergence industries and the application technologies for the realization of those services; and conducted a research based on the examples, using the technical Characteristics classification; and based on the result, analyzed the standards and the peculiarity of technologies employed for the IT convergence service and the correlation and the complementarity between them; also identified the standards and the peculiarity of technologies required by the IT convergence services and analyzed the correlation between them; and finally analyzed the compatibility between the IT convergence services and the applied technologies. The conclusion of this study is expected to be utilized for selecting technologies for the introduction and the operation of the optimal IT convergence service and as a benchmark as well."
+        },
+        {
+          "rank": 17,
+          "score": 0.5574299097061157,
+          "doc_id": "DIKO0014063519",
+          "title": "국가연구개발사업 특허 데이터를 활용한 융합 유형 및 동향 분석",
+          "abstract": "본 연구에서는 국가연구개발사업을 통해 창출된 특허 데이터를 이용하여 기술융합, 연구주체들의 협력 유형, 산업융합 등 융합(convergence) 현상을 분석하였다.&amp;#xD; 특허정보는 기술에 대한 구체적인 정보를 담고 있고, 기술과 산업간 지식 흐름을 추적하는데 중요한 요소이며, 기술혁신을 측정하기 위한 지표 로서 그 중요성에 대한 인식이 날로 높아지고 있다(Ernst, 2003). 특허정 보를 활용하여 융합을 측정하기 위한 방법론은 크게 특허인용분석(patent citation analysis), 특허동시분류분석(patent co-classification analysis), 동시단어분석(co-word analysis)이 있으며, 본 연구는 동시분류분석 방법을 선택하여 기술, 주체, 산업에 대한 융합현황을 분석하였다.&amp;#xD; 이를 위해 국제특허분류 및 출원권자 정보를 대상으로 동시분류분석 방법론을 적용하고, IPC-Technology, IPC-KSIC Concordance Table을 활용하여 국가연구개발사업 특허성과를 대상으로 융합유형별 분석방법론을 제시하고자 한다.&amp;#xD; 실증분석 연구를 통해 국가연구개발사업에 나타나는 융합현황을 분석한 결과 이종기술융합 및 상이주체의 협력에 의한 활동도가 최근들어 증가한 것을 확인하였다. 기술융합에 있어 융합기술수와 융합기술량을 기준으로 상&amp;#x2024;하위 주요 기술군을 도출할 수 있었고, 상이주체의 협력에 있어 공동연구협력정도에 대하여 ‘산’은 대부분의 주체와 협력도가 높아 국가연구개 발사업내 공동연구를 활발히 하고 있음을 알 수 있었고, 반면 ‘관’과 함께 수행한 경우 대체적으로 낮은 공동연구협력도를 보였다.&amp;#xD; 산업연계 융합특성은 기준산업과 융합산업의 행렬구조를 통해 융합강도와 활동강도에 대한 4개의 영역으로 구분된 산업 모형을 제시하였다.&amp;#xD; 본 연구는 특허동시분류분석(patent co-classification analysis)법을 선택하여 융합의 정의에 따른 기술, 연구주체의 협력, 산업별 융합현황을 국가연구개발사업을 대상으로 실증분석을 통해 융합현황을 검증하고 해석하 였다는 점에서 기존의 연구와 차별성이 있다고 할 수 있을 것이다.&amp;#xD; 본 연구에서 제시한 실증분석 방법 및 연구결과는 융합에 대한 정의와 현황의 특성을 이해하는 데 유용하게 활용되고, 국가나 기업에서 연구개 발사업을 기획하거나 기술혁신을 관리하기 위한 전략을 수립하는데 필요한 기초자료를 제공하는 원시적 방법론으로 활용가능 할 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014063519&target=NART&cn=DIKO0014063519",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국가연구개발사업 특허 데이터를 활용한 융합 유형 및 동향 분석 국가연구개발사업 특허 데이터를 활용한 융합 유형 및 동향 분석 국가연구개발사업 특허 데이터를 활용한 융합 유형 및 동향 분석 본 연구에서는 국가연구개발사업을 통해 창출된 특허 데이터를 이용하여 기술융합, 연구주체들의 협력 유형, 산업융합 등 융합(convergence) 현상을 분석하였다.&amp;#xD; 특허정보는 기술에 대한 구체적인 정보를 담고 있고, 기술과 산업간 지식 흐름을 추적하는데 중요한 요소이며, 기술혁신을 측정하기 위한 지표 로서 그 중요성에 대한 인식이 날로 높아지고 있다(Ernst, 2003). 특허정 보를 활용하여 융합을 측정하기 위한 방법론은 크게 특허인용분석(patent citation analysis), 특허동시분류분석(patent co-classification analysis), 동시단어분석(co-word analysis)이 있으며, 본 연구는 동시분류분석 방법을 선택하여 기술, 주체, 산업에 대한 융합현황을 분석하였다.&amp;#xD; 이를 위해 국제특허분류 및 출원권자 정보를 대상으로 동시분류분석 방법론을 적용하고, IPC-Technology, IPC-KSIC Concordance Table을 활용하여 국가연구개발사업 특허성과를 대상으로 융합유형별 분석방법론을 제시하고자 한다.&amp;#xD; 실증분석 연구를 통해 국가연구개발사업에 나타나는 융합현황을 분석한 결과 이종기술융합 및 상이주체의 협력에 의한 활동도가 최근들어 증가한 것을 확인하였다. 기술융합에 있어 융합기술수와 융합기술량을 기준으로 상&amp;#x2024;하위 주요 기술군을 도출할 수 있었고, 상이주체의 협력에 있어 공동연구협력정도에 대하여 ‘산’은 대부분의 주체와 협력도가 높아 국가연구개 발사업내 공동연구를 활발히 하고 있음을 알 수 있었고, 반면 ‘관’과 함께 수행한 경우 대체적으로 낮은 공동연구협력도를 보였다.&amp;#xD; 산업연계 융합특성은 기준산업과 융합산업의 행렬구조를 통해 융합강도와 활동강도에 대한 4개의 영역으로 구분된 산업 모형을 제시하였다.&amp;#xD; 본 연구는 특허동시분류분석(patent co-classification analysis)법을 선택하여 융합의 정의에 따른 기술, 연구주체의 협력, 산업별 융합현황을 국가연구개발사업을 대상으로 실증분석을 통해 융합현황을 검증하고 해석하 였다는 점에서 기존의 연구와 차별성이 있다고 할 수 있을 것이다.&amp;#xD; 본 연구에서 제시한 실증분석 방법 및 연구결과는 융합에 대한 정의와 현황의 특성을 이해하는 데 유용하게 활용되고, 국가나 기업에서 연구개 발사업을 기획하거나 기술혁신을 관리하기 위한 전략을 수립하는데 필요한 기초자료를 제공하는 원시적 방법론으로 활용가능 할 것이다."
+        },
+        {
+          "rank": 18,
+          "score": 0.5519060492515564,
+          "doc_id": "NART53281942",
+          "title": "융합 기술의 동향 : 인지과학과 정보 기술(IT)의 융합을 중심으로",
+          "abstract": "",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART53281942&target=NART&cn=NART53281942",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "융합 기술의 동향 : 인지과학과 정보 기술(IT)의 융합을 중심으로 융합 기술의 동향 : 인지과학과 정보 기술(IT)의 융합을 중심으로 융합 기술의 동향 : 인지과학과 정보 기술(IT)의 융합을 중심으로 "
+        },
+        {
+          "rank": 19,
+          "score": 0.5492461919784546,
+          "doc_id": "JAKO201810256454286",
+          "title": "키워드 네트워크 분석을 이용한 빅데이터 특허 분석",
+          "abstract": "빅데이터의 활용은 비즈니스 가치를 높이는데 필수요소가 됨에 따라 빅데이터 시장의 규모가 점점 더 커지고 있다. 이에 따라 빅데이터 시장을 선점하기 위해서는 경쟁력 있는 특허를 선점하는 것이 중요하다. 본 연구에서는 빅데이터 특허의 동향을 분석하기 위하여 영문 키워드 네트워크 기반 특허분석을 수행하였다. 분석 절차는 빅데이터 수집 및 전처리, 네트워크 구성, 네트워크 분석으로 구성되어 있다. 연구 결과는 다음과 같다. 빅데이터 특허 대다수는 예측 등을 위한 데이터 처리를 위한 특허이며, analysis, process, information, data, prediction, server, service, construction 키워드가 연결정도 중심성 및 매개 중심성이 높았다. 본 연구의 분석결과는 향후 빅데이터 특허 출원 시 참고할 수 있는 유용한 정보로 활용될 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201810256454286&target=NART&cn=JAKO201810256454286",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "키워드 네트워크 분석을 이용한 빅데이터 특허 분석 키워드 네트워크 분석을 이용한 빅데이터 특허 분석 키워드 네트워크 분석을 이용한 빅데이터 특허 분석 빅데이터의 활용은 비즈니스 가치를 높이는데 필수요소가 됨에 따라 빅데이터 시장의 규모가 점점 더 커지고 있다. 이에 따라 빅데이터 시장을 선점하기 위해서는 경쟁력 있는 특허를 선점하는 것이 중요하다. 본 연구에서는 빅데이터 특허의 동향을 분석하기 위하여 영문 키워드 네트워크 기반 특허분석을 수행하였다. 분석 절차는 빅데이터 수집 및 전처리, 네트워크 구성, 네트워크 분석으로 구성되어 있다. 연구 결과는 다음과 같다. 빅데이터 특허 대다수는 예측 등을 위한 데이터 처리를 위한 특허이며, analysis, process, information, data, prediction, server, service, construction 키워드가 연결정도 중심성 및 매개 중심성이 높았다. 본 연구의 분석결과는 향후 빅데이터 특허 출원 시 참고할 수 있는 유용한 정보로 활용될 수 있다."
+        },
+        {
+          "rank": 20,
+          "score": 0.5480601787567139,
+          "doc_id": "JAKO201524848648292",
+          "title": "IoT와 Wearables 기술융합을 위한 특허동향분석",
+          "abstract": "본 연구는 협력적특허분류(CPC)를 활용한 '사물인터넷(IoT)' 과 '웨어러블(wearables)' 의 기술융합동향 분석에 관한 것이다. 국내 도입 분야가 점차 확대되고 있는 CPC는 기존의 국제특허분류(IPC)보다 세분화된 분류를 제공해 기술 특성을 더 세밀하고 정확하게 반영할 수 있어 특허정보 분석 시 활용도를 배가시킬 것으로 기대된다. 아직까지 CPC를 특허정보 분석에 활용한 연구가 드물며, 특허분류코드를 활용해 기술융합현상을 분석한 선행연구들 대부분이 IPC코드를 활용하였다. 본 연구에서는 CPC를 활용하여 wearable IoT 영역의 기술융합동향분석을 실시하였고, 이를 위한 사전분석으로서 각 특허에 할당된 CPC와 IPC를 비교분석하였다. 연관규칙 마이닝 기법을 활용한 CPC 코드분석을 통해 융합이 활발하게 발생하는 기술영역들을 도출하고 시간에 따른 추세변화를 파악하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201524848648292&target=NART&cn=JAKO201524848648292",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IoT와 Wearables 기술융합을 위한 특허동향분석 IoT와 Wearables 기술융합을 위한 특허동향분석 IoT와 Wearables 기술융합을 위한 특허동향분석 본 연구는 협력적특허분류(CPC)를 활용한 '사물인터넷(IoT)' 과 '웨어러블(wearables)' 의 기술융합동향 분석에 관한 것이다. 국내 도입 분야가 점차 확대되고 있는 CPC는 기존의 국제특허분류(IPC)보다 세분화된 분류를 제공해 기술 특성을 더 세밀하고 정확하게 반영할 수 있어 특허정보 분석 시 활용도를 배가시킬 것으로 기대된다. 아직까지 CPC를 특허정보 분석에 활용한 연구가 드물며, 특허분류코드를 활용해 기술융합현상을 분석한 선행연구들 대부분이 IPC코드를 활용하였다. 본 연구에서는 CPC를 활용하여 wearable IoT 영역의 기술융합동향분석을 실시하였고, 이를 위한 사전분석으로서 각 특허에 할당된 CPC와 IPC를 비교분석하였다. 연관규칙 마이닝 기법을 활용한 CPC 코드분석을 통해 융합이 활발하게 발생하는 기술영역들을 도출하고 시간에 따른 추세변화를 파악하였다."
+        },
+        {
+          "rank": 21,
+          "score": 0.5466094017028809,
+          "doc_id": "JAKO202510654010264",
+          "title": "특허정보를 활용한 국내 반려동물 산업의 기술 융합 동향에 관한 연구: 네트워크 분석과 텍스트 마이닝 기법을 활용하여",
+          "abstract": "반려동물의 가족화 현상으로 반려동물 관련 산업이 크게 성장하고 있으며 미래 핵심 산업으로 주목받고 있으나, 국내 반려동물 산업에 대한 특허 빅데이터를 활용한 연구는 아직 부족하다. 본 연구에서는 반려동물 산업의 기술 융합 양상을 파악하기 위한 세 가지 분석을 진행하였다. 첫 번째로, 윕스온(wipson)에서 검색식을 활용하여 특허 데이터를 수집한 후, IPC (International Patent Classification) 특허 분류 코드를 활용하여 반려동물 관련 기술의 융합 발전 양상을 분석하였다. 두 번째로 2020년을 기준으로 2015~2019년, 2020~2024년으로 기간을 나눈 후 분류 중심성 척도를 기준으로 특허 분류 코드를 대조하여 융합 발전 양상을 비교하였다. 세번째로 각 기간의 반려동물 특허의 내용을 분석하여 관련된 토픽들을 도출하였다. 분석 결과, 2020년 이전 5개년도의 경우 B23B로 시작하는 특허의 비율이 70%였으나 2020년 이후에는 40%로 감소하였다. 2020년 이전에는 소재 및 반려동물 용품 관련 특허 출원이 주를 이루었고, 2020년 이후에는 반려동물 기능성 식품 관련 특허가 상위에 등장하였다. 이후 발명의 명칭을 대상으로 토픽 모델링을 진행하였다. LDA 토픽 모델링 분석과 Perplexity를 활용하였으며, ChatGPT4o을 활용하여 토픽의 명칭에 대한 후보를 추출, 선정하였다. 최종적으로, 유사도가 높은 토픽들을 통합하여 최종 토픽 리스트를 도출하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202510654010264&target=NART&cn=JAKO202510654010264",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허정보를 활용한 국내 반려동물 산업의 기술 융합 동향에 관한 연구: 네트워크 분석과 텍스트 마이닝 기법을 활용하여 특허정보를 활용한 국내 반려동물 산업의 기술 융합 동향에 관한 연구: 네트워크 분석과 텍스트 마이닝 기법을 활용하여 특허정보를 활용한 국내 반려동물 산업의 기술 융합 동향에 관한 연구: 네트워크 분석과 텍스트 마이닝 기법을 활용하여 반려동물의 가족화 현상으로 반려동물 관련 산업이 크게 성장하고 있으며 미래 핵심 산업으로 주목받고 있으나, 국내 반려동물 산업에 대한 특허 빅데이터를 활용한 연구는 아직 부족하다. 본 연구에서는 반려동물 산업의 기술 융합 양상을 파악하기 위한 세 가지 분석을 진행하였다. 첫 번째로, 윕스온(wipson)에서 검색식을 활용하여 특허 데이터를 수집한 후, IPC (International Patent Classification) 특허 분류 코드를 활용하여 반려동물 관련 기술의 융합 발전 양상을 분석하였다. 두 번째로 2020년을 기준으로 2015~2019년, 2020~2024년으로 기간을 나눈 후 분류 중심성 척도를 기준으로 특허 분류 코드를 대조하여 융합 발전 양상을 비교하였다. 세번째로 각 기간의 반려동물 특허의 내용을 분석하여 관련된 토픽들을 도출하였다. 분석 결과, 2020년 이전 5개년도의 경우 B23B로 시작하는 특허의 비율이 70%였으나 2020년 이후에는 40%로 감소하였다. 2020년 이전에는 소재 및 반려동물 용품 관련 특허 출원이 주를 이루었고, 2020년 이후에는 반려동물 기능성 식품 관련 특허가 상위에 등장하였다. 이후 발명의 명칭을 대상으로 토픽 모델링을 진행하였다. LDA 토픽 모델링 분석과 Perplexity를 활용하였으며, ChatGPT4o을 활용하여 토픽의 명칭에 대한 후보를 추출, 선정하였다. 최종적으로, 유사도가 높은 토픽들을 통합하여 최종 토픽 리스트를 도출하였다."
+        },
+        {
+          "rank": 22,
+          "score": 0.5455213785171509,
+          "doc_id": "NPAP12925376",
+          "title": "IT-OT Integration Challenges in Utilities",
+          "abstract": "<P>Emerging industrial IoT presupposes integration of operational technology (OT) networks with information technology (IT) networks which hitherto were isolated. IT networks focus primarily on PAIN (Privacy/Confidentiality, Authentication, Integrity and Non-repudiation) OT networks focus primarily on AIC (Availability, Integrity and Confidentiality). The conflicting requirements of availability and confidentiality is a challenge that needs to be overcome in a balanced way to reap the benefits of IT-OT integration. This balancing act requires understanding of the OT domain. This paper considers electrical utility as the use case and brings out the considerations in achieving an acceptable IT-OT framework.</P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NPAP12925376&target=NART&cn=NPAP12925376",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT-OT Integration Challenges in Utilities IT-OT Integration Challenges in Utilities IT-OT Integration Challenges in Utilities <P>Emerging industrial IoT presupposes integration of operational technology (OT) networks with information technology (IT) networks which hitherto were isolated. IT networks focus primarily on PAIN (Privacy/Confidentiality, Authentication, Integrity and Non-repudiation) OT networks focus primarily on AIC (Availability, Integrity and Confidentiality). The conflicting requirements of availability and confidentiality is a challenge that needs to be overcome in a balanced way to reap the benefits of IT-OT integration. This balancing act requires understanding of the OT domain. This paper considers electrical utility as the use case and brings out the considerations in achieving an acceptable IT-OT framework.</P>"
+        },
+        {
+          "rank": 23,
+          "score": 0.5443887114524841,
+          "doc_id": "JAKO200957957227608",
+          "title": "ST - IT 기술 융합 발전 방향",
+          "abstract": "본 논문에서는 우주기술과 정보기술 융합이 단순한 화두가 아니라 우리나라 신성장동력 엔진의 키워드로 자리매김 할 수 있도록 ST-IT 융합기술이 무엇이고, 우리나라의 ST 및 IT 기술현황을 소개한다. 향후 ST-IT 융합기술의 발달에 따라 기술 및 산업 간의 벽이 허물어지고 새로운 가치와 시장이 창출되는 등 역동적인 변화가 예상되기 때문에 향후 ST-IT 융합기술 발전 방향을 제시하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200957957227608&target=NART&cn=JAKO200957957227608",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "ST - IT 기술 융합 발전 방향 ST - IT 기술 융합 발전 방향 ST - IT 기술 융합 발전 방향 본 논문에서는 우주기술과 정보기술 융합이 단순한 화두가 아니라 우리나라 신성장동력 엔진의 키워드로 자리매김 할 수 있도록 ST-IT 융합기술이 무엇이고, 우리나라의 ST 및 IT 기술현황을 소개한다. 향후 ST-IT 융합기술의 발달에 따라 기술 및 산업 간의 벽이 허물어지고 새로운 가치와 시장이 창출되는 등 역동적인 변화가 예상되기 때문에 향후 ST-IT 융합기술 발전 방향을 제시하고자 한다."
+        },
+        {
+          "rank": 24,
+          "score": 0.5439913272857666,
+          "doc_id": "JAKO201117463448631",
+          "title": "산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구",
+          "abstract": "2030년대는 BT시장이 활짝 열리는 시대로 고도화된 IT기술, 데이터 해석기술, 집적회로개발기술, 생화학기술 등 모든 영역의 기술이 필요할 것이며, 앞으로의 기술개발은 융합을 전제로 하여 IT와 BT의 융합이 관건이 될 것으로 기술개발의 시너지를 내기 위해서는 관련 산업과 대학이 물리적으로 적정한 위치에 임해야 할 것이다. 우리나라에는 2009년 말 현재 819개의 산업클러스터가 만들어졌으며, 한국산업단지공단이 집적화 된 산업단지에 여러 가지 지원시설, 지원제도 등을 제공하고 있으나 기술융합을 위한 지식재산서비스에 관한 지원제도는 미미하거나 거의 없는 실정에 있다. 이를 위해 우리나라 산업단지의 현재기능을 살펴보고 문제점을 분석하여 산업클러스터 내의 기업들이 서로 유기적인 협력을 통하여 융합기술 개발의 시너지 효과를 극대화 할 수 있는 길을 모색하며, 특히 한국산업단지공단에 꼭 필요하다고 판단하는 지식재산 관련 지원제도(지식재산지원본부)의 기능과 조직구성에 대한 개념과 산업클러스터 내의 기업에게 지식재산전략 수립을 지원할 수 있는Flow를 제안하여 산업클러스터의 지식재산서비스 지원방안을 제시하였다. 또한 정부에서 다양하게 시행되고 있는 지식재산 관련 제도와 정책이 산업단지공단에 입주해 있는 중소기업에게 가시적인 효과를 기대할 수 있는 방안을 제시하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201117463448631&target=NART&cn=JAKO201117463448631",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구 산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구 산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구 2030년대는 BT시장이 활짝 열리는 시대로 고도화된 IT기술, 데이터 해석기술, 집적회로개발기술, 생화학기술 등 모든 영역의 기술이 필요할 것이며, 앞으로의 기술개발은 융합을 전제로 하여 IT와 BT의 융합이 관건이 될 것으로 기술개발의 시너지를 내기 위해서는 관련 산업과 대학이 물리적으로 적정한 위치에 임해야 할 것이다. 우리나라에는 2009년 말 현재 819개의 산업클러스터가 만들어졌으며, 한국산업단지공단이 집적화 된 산업단지에 여러 가지 지원시설, 지원제도 등을 제공하고 있으나 기술융합을 위한 지식재산서비스에 관한 지원제도는 미미하거나 거의 없는 실정에 있다. 이를 위해 우리나라 산업단지의 현재기능을 살펴보고 문제점을 분석하여 산업클러스터 내의 기업들이 서로 유기적인 협력을 통하여 융합기술 개발의 시너지 효과를 극대화 할 수 있는 길을 모색하며, 특히 한국산업단지공단에 꼭 필요하다고 판단하는 지식재산 관련 지원제도(지식재산지원본부)의 기능과 조직구성에 대한 개념과 산업클러스터 내의 기업에게 지식재산전략 수립을 지원할 수 있는Flow를 제안하여 산업클러스터의 지식재산서비스 지원방안을 제시하였다. 또한 정부에서 다양하게 시행되고 있는 지식재산 관련 제도와 정책이 산업단지공단에 입주해 있는 중소기업에게 가시적인 효과를 기대할 수 있는 방안을 제시하였다."
+        },
+        {
+          "rank": 25,
+          "score": 0.5437391996383667,
+          "doc_id": "DIKO0014010445",
+          "title": "특허정보를 활용한 기술융합 및 기술인문융합 분석과 예측 방법론 연구 : Forecasting and identifying technology convergence trends based on patent analysis",
+          "abstract": "Convergence is an important keyword that explains the propensity and nature of current development in the technology innovation field. Such innovation has occurred through convergences in various industries, from the computer, and semiconductor arenas to mobile telecommunication and healthcare. The possibilities for generating future technological innovations through convergence are infinite. Thus, firms face the challenge of having to constantly develop new technology through convergence in order to hold a dominant position. In this context, firms can be dominant with a broad and systematic understanding of convergence trends and opportunities. A primary concern of both academic and industrial sectors is accurately identifying and forecasting technological convergences in a time of rapid change on the global level. Of the numerous methods that have been applied to meet these demands, patent analysis is the most commonly applied. Research on technology convergence using patent information has been performed from various perspectives: the purpose, methodology, or object of analysis. However, in spite of their invaluable implications, the previous researchers had several limitations. First, many studies have focused on the convergence among technologies rather than on the convergence among technology and objectives in other fields. Second, previous works have emphasized past trends instead of forecasting based on quantitative data analysis. They have also focused on technology pairs, but convergence is likely to happen within more than three technologies simultaneously. Finally, most studies have either failed to seriously consider the logical issues regarding the selection of specific patent databases used in convergence studies or have merely neglected this aspect. Therefore, this research proposes a systematic research framework to identify and forecast the technology convergence using the patent data. For this purpose, three modules are suggested. First, selection of the patent DB module is proposed. This module functions as a guideline for selecting the patent DB according to the study’s objectives. Second, the technology convergence module is proposed. This module focuses on identifying and forecasting the status of technology-technology convergence. Of particular interest are how to forecast the technology convergence more easily and accurately and how to visualize the results of such convergence more efficiently. Neural network analysis was applied to improve forecasting performance, and a design structure matrix was used to show the relationships among technologies. Finally, the technology-humanities convergence module is proposed. This module deals with issues with regard to identifying and forecasting the convergence of technology and humanities. Using keywords related to human needs, converging trends and areas of technology-humanities convergence were identified and forecasted through the neural network algorithm proposed in module two. This will help more researchers and practitioners use the research framework more accurately, easily and efficiently. I believe this research can facilitate and encourage those who are taking charge of new technology developments and strategic policies to support the technology convergence.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014010445&target=NART&cn=DIKO0014010445",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허정보를 활용한 기술융합 및 기술인문융합 분석과 예측 방법론 연구 : Forecasting and identifying technology convergence trends based on patent analysis 특허정보를 활용한 기술융합 및 기술인문융합 분석과 예측 방법론 연구 : Forecasting and identifying technology convergence trends based on patent analysis 특허정보를 활용한 기술융합 및 기술인문융합 분석과 예측 방법론 연구 : Forecasting and identifying technology convergence trends based on patent analysis Convergence is an important keyword that explains the propensity and nature of current development in the technology innovation field. Such innovation has occurred through convergences in various industries, from the computer, and semiconductor arenas to mobile telecommunication and healthcare. The possibilities for generating future technological innovations through convergence are infinite. Thus, firms face the challenge of having to constantly develop new technology through convergence in order to hold a dominant position. In this context, firms can be dominant with a broad and systematic understanding of convergence trends and opportunities. A primary concern of both academic and industrial sectors is accurately identifying and forecasting technological convergences in a time of rapid change on the global level. Of the numerous methods that have been applied to meet these demands, patent analysis is the most commonly applied. Research on technology convergence using patent information has been performed from various perspectives: the purpose, methodology, or object of analysis. However, in spite of their invaluable implications, the previous researchers had several limitations. First, many studies have focused on the convergence among technologies rather than on the convergence among technology and objectives in other fields. Second, previous works have emphasized past trends instead of forecasting based on quantitative data analysis. They have also focused on technology pairs, but convergence is likely to happen within more than three technologies simultaneously. Finally, most studies have either failed to seriously consider the logical issues regarding the selection of specific patent databases used in convergence studies or have merely neglected this aspect. Therefore, this research proposes a systematic research framework to identify and forecast the technology convergence using the patent data. For this purpose, three modules are suggested. First, selection of the patent DB module is proposed. This module functions as a guideline for selecting the patent DB according to the study’s objectives. Second, the technology convergence module is proposed. This module focuses on identifying and forecasting the status of technology-technology convergence. Of particular interest are how to forecast the technology convergence more easily and accurately and how to visualize the results of such convergence more efficiently. Neural network analysis was applied to improve forecasting performance, and a design structure matrix was used to show the relationships among technologies. Finally, the technology-humanities convergence module is proposed. This module deals with issues with regard to identifying and forecasting the convergence of technology and humanities. Using keywords related to human needs, converging trends and areas of technology-humanities convergence were identified and forecasted through the neural network algorithm proposed in module two. This will help more researchers and practitioners use the research framework more accurately, easily and efficiently. I believe this research can facilitate and encourage those who are taking charge of new technology developments and strategic policies to support the technology convergence."
+        },
+        {
+          "rank": 26,
+          "score": 0.5411460399627686,
+          "doc_id": "JAKO201302757806163",
+          "title": "건설IT융합기술 : 스마트빌딩 기술 개발 사례",
+          "abstract": "본고에서는 건설기술과 IT기술이 융합된 건설IT융합기술에서 스마트 빌딩과 관련하여 안전, 건강, 편의, 에너지를 위한 기술들로 분류하여 사례와 함께 서술한다. 고층 빌딩의 안전성을 위한 건축 구조물 건전도 모니터링 기술, 빌딩 실내 또는 지하 주차장에서 쾌적한 공기 환경을 유지하기 위한 스마트 환기제어 시스템 기술, 빌딩 정보의 체계적인 데이터 관리를 위한 빌딩정보모델링 기반의 센서와 영상 인터페이스, 스마트 빌딩 네트워크 관리 시스템에 관하여 소개한다. 또한, 에너지 절감을 위한 빌딩 에너지 관리 시스템에 관하여 냉난방, 조명, 환기설비, 전력모니터링 관련 기술에 대하여 설명한다. 이러한 기술들을 적용한 스마트 빌딩은 유무선통신, 스마트디바이스와 같은 IT기술을 건축공학 및 빌딩자동제어, 설비 기술에 적용하여 빌딩 사용자에게는 안전 및 최적 환경을 제공하고 빌딩 소유주나 관리자에게는 관리비용 절감, 관리 편의, 빌딩가치 상승 등을 제공할 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201302757806163&target=NART&cn=JAKO201302757806163",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "건설IT융합기술 : 스마트빌딩 기술 개발 사례 건설IT융합기술 : 스마트빌딩 기술 개발 사례 건설IT융합기술 : 스마트빌딩 기술 개발 사례 본고에서는 건설기술과 IT기술이 융합된 건설IT융합기술에서 스마트 빌딩과 관련하여 안전, 건강, 편의, 에너지를 위한 기술들로 분류하여 사례와 함께 서술한다. 고층 빌딩의 안전성을 위한 건축 구조물 건전도 모니터링 기술, 빌딩 실내 또는 지하 주차장에서 쾌적한 공기 환경을 유지하기 위한 스마트 환기제어 시스템 기술, 빌딩 정보의 체계적인 데이터 관리를 위한 빌딩정보모델링 기반의 센서와 영상 인터페이스, 스마트 빌딩 네트워크 관리 시스템에 관하여 소개한다. 또한, 에너지 절감을 위한 빌딩 에너지 관리 시스템에 관하여 냉난방, 조명, 환기설비, 전력모니터링 관련 기술에 대하여 설명한다. 이러한 기술들을 적용한 스마트 빌딩은 유무선통신, 스마트디바이스와 같은 IT기술을 건축공학 및 빌딩자동제어, 설비 기술에 적용하여 빌딩 사용자에게는 안전 및 최적 환경을 제공하고 빌딩 소유주나 관리자에게는 관리비용 절감, 관리 편의, 빌딩가치 상승 등을 제공할 수 있다."
+        },
+        {
+          "rank": 27,
+          "score": 0.53995281457901,
+          "doc_id": "JAKO201120661418787",
+          "title": "IT 융합 위치인식 기술",
+          "abstract": "위치정보에 기반한 다양한 서비스들이 IT융합을 통해 급속히 발전하면서 스마트 폰 시장의 활성화와 맞물려 일반 대중에게 깊이 자라를 잡고 있다. 통신 단말기 제조 업체뿐만 아니라 일반 산업체 및 통신 사업자들에게도 IT융합 기술을 활용한 위치인식 솔루션 및 시스템에 대한 관심이 급속도로 높아지고 있다. 본고에서는 기존의 GPS를 통한 위치인식 기술뿐만 아니라 통신 네트워크와 기타 여러 전파원을 활용한 위치 인식 기술 및 네트워크 기반의 기술과 단말기 기반기술과의 혼합방식을 통한 위치인식 기술들을 소개하고자한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201120661418787&target=NART&cn=JAKO201120661418787",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 융합 위치인식 기술 IT 융합 위치인식 기술 IT 융합 위치인식 기술 위치정보에 기반한 다양한 서비스들이 IT융합을 통해 급속히 발전하면서 스마트 폰 시장의 활성화와 맞물려 일반 대중에게 깊이 자라를 잡고 있다. 통신 단말기 제조 업체뿐만 아니라 일반 산업체 및 통신 사업자들에게도 IT융합 기술을 활용한 위치인식 솔루션 및 시스템에 대한 관심이 급속도로 높아지고 있다. 본고에서는 기존의 GPS를 통한 위치인식 기술뿐만 아니라 통신 네트워크와 기타 여러 전파원을 활용한 위치 인식 기술 및 네트워크 기반의 기술과 단말기 기반기술과의 혼합방식을 통한 위치인식 기술들을 소개하고자한다."
+        },
+        {
+          "rank": 28,
+          "score": 0.5357396602630615,
+          "doc_id": "JAKO201120661418791",
+          "title": "IT건설융합 스마트빌딩 기술",
+          "abstract": "본고에서는 IT기술과 건설기술의 융합 기술로서 스마트빌딩 기술에 대해 서술한다. 고층 빌딩의 안전성 평가를 위한 건물구조 건전도 모니터링 기술, 빌딩 실내에 쾌적한 공기 환경을 유지하기 위한 스마트 공기질/환기제어시스템 기술, 빌딩 설계부터 빌딩 사용단계까지 빌딩정보의 체계적인 데이터 관리를 위한 빌딩정보 모델링 기술과 빌딩 운영관리 인터페이스 기술 등에 대하여 소개한다. 또한, 세종대학교에서 개발한 프로토타입으로 빌딩에 설치하여 시험 중인 시스템에 대하여 설명한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201120661418791&target=NART&cn=JAKO201120661418791",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT건설융합 스마트빌딩 기술 IT건설융합 스마트빌딩 기술 IT건설융합 스마트빌딩 기술 본고에서는 IT기술과 건설기술의 융합 기술로서 스마트빌딩 기술에 대해 서술한다. 고층 빌딩의 안전성 평가를 위한 건물구조 건전도 모니터링 기술, 빌딩 실내에 쾌적한 공기 환경을 유지하기 위한 스마트 공기질/환기제어시스템 기술, 빌딩 설계부터 빌딩 사용단계까지 빌딩정보의 체계적인 데이터 관리를 위한 빌딩정보 모델링 기술과 빌딩 운영관리 인터페이스 기술 등에 대하여 소개한다. 또한, 세종대학교에서 개발한 프로토타입으로 빌딩에 설치하여 시험 중인 시스템에 대하여 설명한다."
+        },
+        {
+          "rank": 29,
+          "score": 0.5334762930870056,
+          "doc_id": "JAKO201506959397503",
+          "title": "초연결시대 기술융합을 위한 사물 인터넷 기술의 특허동향 분석",
+          "abstract": "사물인터넷은 오늘날 기술 주기에서 가장 널리 논의되고 있고 있는 기술적 개념이다. 이러한 기술은 우리가 어떻게 일을 하는지 뿐만 아니라 어떻게 사는지에 대한 급진적 변화를 예측할 수 있다. IoT의 개념은 기본적으로 데이터 네트워크를 통해 컨트롤 할 수 있는 연결된 장치의 웹을 의미한다. 이와 같은 장치들을 컨트롤하기 위해 요구되는 기술 비용과 스마트폰을 통한 인터넷의 연결의 증가로 IoT는 향후 10년 안에 모든 퍼베이시브 기술이 될 것으로 예상된다. 본 논문에서는 지식재산권(특허)의 관점에서 빠르게 성장하는 기술 도메인의 기술적 요소들을 살펴본다. IoT 기술의 특허 분포에서 전체 특허들의 5%가 상위 특허 출원인이고 나머지는 다수의 출원인이 차지하고 있다. 특히, 미국지역에 가장 많이 출원하고 있고, 이것은 한국과 일본의 큰 아시안 시장과 밀접한 관계가 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201506959397503&target=NART&cn=JAKO201506959397503",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "초연결시대 기술융합을 위한 사물 인터넷 기술의 특허동향 분석 초연결시대 기술융합을 위한 사물 인터넷 기술의 특허동향 분석 초연결시대 기술융합을 위한 사물 인터넷 기술의 특허동향 분석 사물인터넷은 오늘날 기술 주기에서 가장 널리 논의되고 있고 있는 기술적 개념이다. 이러한 기술은 우리가 어떻게 일을 하는지 뿐만 아니라 어떻게 사는지에 대한 급진적 변화를 예측할 수 있다. IoT의 개념은 기본적으로 데이터 네트워크를 통해 컨트롤 할 수 있는 연결된 장치의 웹을 의미한다. 이와 같은 장치들을 컨트롤하기 위해 요구되는 기술 비용과 스마트폰을 통한 인터넷의 연결의 증가로 IoT는 향후 10년 안에 모든 퍼베이시브 기술이 될 것으로 예상된다. 본 논문에서는 지식재산권(특허)의 관점에서 빠르게 성장하는 기술 도메인의 기술적 요소들을 살펴본다. IoT 기술의 특허 분포에서 전체 특허들의 5%가 상위 특허 출원인이고 나머지는 다수의 출원인이 차지하고 있다. 특히, 미국지역에 가장 많이 출원하고 있고, 이것은 한국과 일본의 큰 아시안 시장과 밀접한 관계가 있다."
+        },
+        {
+          "rank": 30,
+          "score": 0.5313239097595215,
+          "doc_id": "JAKO201533678768698",
+          "title": "특허 분석을 통한 항공산업 기술 융합성 연구",
+          "abstract": "오늘날 기술은 산업융합을 통해 패러다임이 바뀌고 있으며 정부와 기업들은 기술의 흐름 및 방향을 예측할 필요가 있다. 이러한 기술 흐름 및 방향은 특허 정보 분석을 통해 파악할 수 있다. 특허정보는 전 세계적으로 공통된 분류코드를 사용하고 있으며, 기술적 영역 시간 정보와 함께 객관적 데이터를 기반으로 정량적인 분석이 가능하다. 특허 분석 방법은 인용분석, 동시분류분석 방법을 사용하여 기술융합성 분석을 하였다. 본 연구에서는 지식기반 사회에서 기술혁신을 측정하기 위한 지표로서 활용되는 특허정보를 분석하여 대표적인 융 복합 산업인 항공산업을 중심으로 기술 트랜드 분석 및 향후 발전 방향에 대해 기술하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201533678768698&target=NART&cn=JAKO201533678768698",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허 분석을 통한 항공산업 기술 융합성 연구 특허 분석을 통한 항공산업 기술 융합성 연구 특허 분석을 통한 항공산업 기술 융합성 연구 오늘날 기술은 산업융합을 통해 패러다임이 바뀌고 있으며 정부와 기업들은 기술의 흐름 및 방향을 예측할 필요가 있다. 이러한 기술 흐름 및 방향은 특허 정보 분석을 통해 파악할 수 있다. 특허정보는 전 세계적으로 공통된 분류코드를 사용하고 있으며, 기술적 영역 시간 정보와 함께 객관적 데이터를 기반으로 정량적인 분석이 가능하다. 특허 분석 방법은 인용분석, 동시분류분석 방법을 사용하여 기술융합성 분석을 하였다. 본 연구에서는 지식기반 사회에서 기술혁신을 측정하기 위한 지표로서 활용되는 특허정보를 분석하여 대표적인 융 복합 산업인 항공산업을 중심으로 기술 트랜드 분석 및 향후 발전 방향에 대해 기술하고자 한다."
+        },
+        {
+          "rank": 31,
+          "score": 0.5266389846801758,
+          "doc_id": "NPAP12823377",
+          "title": "Future of IoTSP &#x2013; IT and OT Integration",
+          "abstract": "<P>The Future of Internet of Things, Service and People (IoTSP) for the industrial sector lies in integrating two worlds &#x2013; information technology and operation technology. This article explains in details practical concepts of IT and OT integration with a usage of digitalization approach. As an example an oil and gas business is taken into account. The so-called Digital Oilfield idea is focusing on melding the IT, OT and IoTSP in order to &#x0022;learn&#x0022; what is working best for O&amp;G production, to predict equipment failures, track employees in the field in order to coach them in real-time and remove from hazardous situations. The ABB Polish Corporate Research Center has developed and built the advanced test rig for ABILITY-powered machines, used as multipurpose experimental rig mainly for applications in the oil, gas and chemicals sectors. The test rig provides additional capabilities in terms of the advanced control methods and condition monitoring techniques design and evaluation for the industrial compression systems. Except the industrial view on the matter, the facility is also used to verify novel and disruptive concepts for device communication and connectivity from sensors and devices up to cloud and it has been used to validate cloud use and business cases.</P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NPAP12823377&target=NART&cn=NPAP12823377",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Future of IoTSP &#x2013; IT and OT Integration Future of IoTSP &#x2013; IT and OT Integration Future of IoTSP &#x2013; IT and OT Integration <P>The Future of Internet of Things, Service and People (IoTSP) for the industrial sector lies in integrating two worlds &#x2013; information technology and operation technology. This article explains in details practical concepts of IT and OT integration with a usage of digitalization approach. As an example an oil and gas business is taken into account. The so-called Digital Oilfield idea is focusing on melding the IT, OT and IoTSP in order to &#x0022;learn&#x0022; what is working best for O&amp;G production, to predict equipment failures, track employees in the field in order to coach them in real-time and remove from hazardous situations. The ABB Polish Corporate Research Center has developed and built the advanced test rig for ABILITY-powered machines, used as multipurpose experimental rig mainly for applications in the oil, gas and chemicals sectors. The test rig provides additional capabilities in terms of the advanced control methods and condition monitoring techniques design and evaluation for the industrial compression systems. Except the industrial view on the matter, the facility is also used to verify novel and disruptive concepts for device communication and connectivity from sensors and devices up to cloud and it has been used to validate cloud use and business cases.</P>"
+        },
+        {
+          "rank": 32,
+          "score": 0.5264473557472229,
+          "doc_id": "NART131674185",
+          "title": "IT/OT Integration by Design",
+          "abstract": "<P><B>Abstract</B><P>The four Industry 4.0 design principles information transparency, technical assistance, interconnection and decentralized decisions pose challenges in integrating Information Technology (IT) and Operational Technology (OT) solutions in industrial systems. These different solutions have conflicting requirements, making interfaces between them problematic for both systems and organizations. An Industrial Business Process Twin (IBPT) entity, acting as an intermediary between the realms of IT and OT, has been proposed in a previous work, to effectively reduce the amount of required IT/OT interfaces in an attempt of overcoming this situation. In this work, we investigate the effects of this approach during the design phase. We argue that, by eliminating potentially conflicting direct interfaces between IT and OT stakeholders within the organizational structure, this approach effectively eliminates conflicting communication channels within the system design. To verify our argument, we develop a model of our IBPT concept according to the Reference Architecture Model Industrie 4.0 (RAMI4.0) using an Industry 4.0 scenario addressing the four essential Industry 4.0 design principles. Results show that the IBPT approach indeed eliminates potentially conflicting IT/OT interfaces during the system design phase.</P></P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART131674185&target=NART&cn=NART131674185",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT/OT Integration by Design IT/OT Integration by Design IT/OT Integration by Design <P><B>Abstract</B><P>The four Industry 4.0 design principles information transparency, technical assistance, interconnection and decentralized decisions pose challenges in integrating Information Technology (IT) and Operational Technology (OT) solutions in industrial systems. These different solutions have conflicting requirements, making interfaces between them problematic for both systems and organizations. An Industrial Business Process Twin (IBPT) entity, acting as an intermediary between the realms of IT and OT, has been proposed in a previous work, to effectively reduce the amount of required IT/OT interfaces in an attempt of overcoming this situation. In this work, we investigate the effects of this approach during the design phase. We argue that, by eliminating potentially conflicting direct interfaces between IT and OT stakeholders within the organizational structure, this approach effectively eliminates conflicting communication channels within the system design. To verify our argument, we develop a model of our IBPT concept according to the Reference Architecture Model Industrie 4.0 (RAMI4.0) using an Industry 4.0 scenario addressing the four essential Industry 4.0 design principles. Results show that the IBPT approach indeed eliminates potentially conflicting IT/OT interfaces during the system design phase.</P></P>"
+        },
+        {
+          "rank": 33,
+          "score": 0.5242617726325989,
+          "doc_id": "ATN0030183928",
+          "title": "기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례",
+          "abstract": "본 연구는 기술연관분석으로 단기 상용화를 위한 기술개발과제에 투입된 기술간 융합현황을 분석하였다. 기술연관분석은 산업구조분석의 체계를 기술기획 분야에 적용한 것이다. 본 사례는 기술연관분석을 활용하여 기술과 제품 간 연관도를 중심으로 분석하였으며 분석대상은 중소기업기술정보진흥원의 ' '12년 중소기업 융 복합기술개발사업'에 신청한 401개 과제이다. 분석과정은 다음과 같다. 401개 개별과제에 대해서 투입된 기술은 기술로, 개발과제에서 산출을 제품으로 정의하고 이를 투입과 산출의 행렬로 정리하였다. 투입으로 정의한 기술은 국가과학기술표준분류 상의 소분류를 분류하고, 산출로 정의한 제품은 한국표준산업분류 상의 세세분류로 정의하였다. 즉, 기술을 투입으로, 제품을 산출로 정의하여 기술의 파급도를 분석하였으며 이에 기초하여 기술연관도를 작성하였다 분석결과, IT융합에서는 임베디드 S/W의 기술파급도가 가장 높았으며, ET융합에서는 금형의 기술파급도가 가장 높았고 BT융합은 기능성 화장품 개발기술의 기술파급도가 가장 높았다. 전체적으로 IT융합에서 기술파급도가 높은 요소기술이 많았으며, ET융합에서 기술파급도가 높은 요소기술이 작았다. 따라서 기술파급도가 높은 요소기술에 대한 투자가 융합을 활성화하는 데 중요하며 전체적으로 IT분야가 요소기술의 투자 효과가 높을 것으로 판단한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030183928&target=NART&cn=ATN0030183928",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례 기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례 기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례 본 연구는 기술연관분석으로 단기 상용화를 위한 기술개발과제에 투입된 기술간 융합현황을 분석하였다. 기술연관분석은 산업구조분석의 체계를 기술기획 분야에 적용한 것이다. 본 사례는 기술연관분석을 활용하여 기술과 제품 간 연관도를 중심으로 분석하였으며 분석대상은 중소기업기술정보진흥원의 ' '12년 중소기업 융 복합기술개발사업'에 신청한 401개 과제이다. 분석과정은 다음과 같다. 401개 개별과제에 대해서 투입된 기술은 기술로, 개발과제에서 산출을 제품으로 정의하고 이를 투입과 산출의 행렬로 정리하였다. 투입으로 정의한 기술은 국가과학기술표준분류 상의 소분류를 분류하고, 산출로 정의한 제품은 한국표준산업분류 상의 세세분류로 정의하였다. 즉, 기술을 투입으로, 제품을 산출로 정의하여 기술의 파급도를 분석하였으며 이에 기초하여 기술연관도를 작성하였다 분석결과, IT융합에서는 임베디드 S/W의 기술파급도가 가장 높았으며, ET융합에서는 금형의 기술파급도가 가장 높았고 BT융합은 기능성 화장품 개발기술의 기술파급도가 가장 높았다. 전체적으로 IT융합에서 기술파급도가 높은 요소기술이 많았으며, ET융합에서 기술파급도가 높은 요소기술이 작았다. 따라서 기술파급도가 높은 요소기술에 대한 투자가 융합을 활성화하는 데 중요하며 전체적으로 IT분야가 요소기술의 투자 효과가 높을 것으로 판단한다."
+        },
+        {
+          "rank": 34,
+          "score": 0.523324728012085,
+          "doc_id": "JAKO201713647763393",
+          "title": "산업융합계수를 활용한 융합현상에 관한 연구",
+          "abstract": "오늘날 기술융합과 산업융합과 같은 융합이라는 용어는 우리사회에서 중요한 화두중의 하나로 떠오르고 있다. 그러나 이를 체계적으로 정량적인 지표로 측정하려는 시도는 많이 부족한 실정이다. 이에 본 연구에서는 특허자료를 이용하여 산업별융합계수를 측정하고, 융합계수에 기반 하여 어떠한 산업에서 융합이 심화되고 있는지를 분석하는 것을 그 목적으로 한다. 이를 위해 먼저 2011년부터 2015년까지 한국특허청에 출원된 국내특허를 대상으로 하여 산업별융합계수를 측정하였다. 연구결과 연구기간동안 특허가 가장 많이 출원된 산업은 사무용기기 및 컴퓨터제조업, 전기제품제조업, 신호전송 및 통신업 등의 범 ICT산업군 이었으며, 동기간 전체산업의 융합계수는 0.316(239,664/758,446)로 나타났다. 또한 산업융합계수가 가장 높은 산업 순으로는 인조섬유(0.918), 도장(0.597), 석유제품(0.588), 기타화합물(0.567), 섬유제품(0.555), 기타운송장비(0.549), 생산관리(0.532) 등으로 나타났다. 추가로 특허출원건수가 많은 산업중심으로 같은 분석을 실시한 결과 광학기기제조업, 기초화합물제조업, 조립금속산업, 정밀/측정기기제조업, 특수목적용기계제조업분야에서 융합이 활발하게 이루어지고 있으며, 이들 산업들은 주로 사무용기기 및 컴퓨터제조업, 특수목적용기계제조업, 정밀/측정기기제조업과 서로 융합이 이루어지고 있는 것으로 나타나고 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201713647763393&target=NART&cn=JAKO201713647763393",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "산업융합계수를 활용한 융합현상에 관한 연구 산업융합계수를 활용한 융합현상에 관한 연구 산업융합계수를 활용한 융합현상에 관한 연구 오늘날 기술융합과 산업융합과 같은 융합이라는 용어는 우리사회에서 중요한 화두중의 하나로 떠오르고 있다. 그러나 이를 체계적으로 정량적인 지표로 측정하려는 시도는 많이 부족한 실정이다. 이에 본 연구에서는 특허자료를 이용하여 산업별융합계수를 측정하고, 융합계수에 기반 하여 어떠한 산업에서 융합이 심화되고 있는지를 분석하는 것을 그 목적으로 한다. 이를 위해 먼저 2011년부터 2015년까지 한국특허청에 출원된 국내특허를 대상으로 하여 산업별융합계수를 측정하였다. 연구결과 연구기간동안 특허가 가장 많이 출원된 산업은 사무용기기 및 컴퓨터제조업, 전기제품제조업, 신호전송 및 통신업 등의 범 ICT산업군 이었으며, 동기간 전체산업의 융합계수는 0.316(239,664/758,446)로 나타났다. 또한 산업융합계수가 가장 높은 산업 순으로는 인조섬유(0.918), 도장(0.597), 석유제품(0.588), 기타화합물(0.567), 섬유제품(0.555), 기타운송장비(0.549), 생산관리(0.532) 등으로 나타났다. 추가로 특허출원건수가 많은 산업중심으로 같은 분석을 실시한 결과 광학기기제조업, 기초화합물제조업, 조립금속산업, 정밀/측정기기제조업, 특수목적용기계제조업분야에서 융합이 활발하게 이루어지고 있으며, 이들 산업들은 주로 사무용기기 및 컴퓨터제조업, 특수목적용기계제조업, 정밀/측정기기제조업과 서로 융합이 이루어지고 있는 것으로 나타나고 있다."
+        },
+        {
+          "rank": 35,
+          "score": 0.5212140083312988,
+          "doc_id": "JAKO202123557611718",
+          "title": "빅데이터 기반 산학협력 네트워크 분석",
+          "abstract": "본 논문에서는 네트워크 분석방법을 활용하여 대학 중심의 산학협력 네트워크의 구조적 특성을 분석하였다. 최근 기술협력 및 공동연구가 성과창출에 긍정적 영향을 미치는 것이 증명됨에 따라, 혁신성과 창출을 위하여 주요 참여주체(대학 및 공공 등)를 중심으로 다양한 형태의 협력활동 추진과 정부의 정책적 지원이 활발하게 진행되고 있다. 하지만 이러한 노력에도 불구하고 성장동력 창출은 다소 미흡한 상황이기에 대학중심의 산학협력 활동강화를 위한 혁신 네트워크 구축 방안 마련이 필요한 시점이다. 이에 본 연구에서는 산학협력 유형(특허, 논문, 공동연구, 기술이전)에 따른 네트워크를 구축하고, QAP상관분석 및 QAP회귀분석을 실시하여 서로 다른 유형의 산학협력 네트워크간 관련성 및 연관성을 통계적 관점에서 분석하였다. 분석결과 공동연구 네트워크는 논문 네트워크와 밀접한 관련이 있으며, 다른 산학협력 네트워크와도 관련성을 가지고 있는 것으로 나타났다. 본 연구는 대학의 새로운 성장동력 창출에 필요한 산학협력 전략수립 및 협력 파트너 발굴 등과 같은 혁신활동을 지원할 수 있을 것이라 기대한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202123557611718&target=NART&cn=JAKO202123557611718",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "빅데이터 기반 산학협력 네트워크 분석 빅데이터 기반 산학협력 네트워크 분석 빅데이터 기반 산학협력 네트워크 분석 본 논문에서는 네트워크 분석방법을 활용하여 대학 중심의 산학협력 네트워크의 구조적 특성을 분석하였다. 최근 기술협력 및 공동연구가 성과창출에 긍정적 영향을 미치는 것이 증명됨에 따라, 혁신성과 창출을 위하여 주요 참여주체(대학 및 공공 등)를 중심으로 다양한 형태의 협력활동 추진과 정부의 정책적 지원이 활발하게 진행되고 있다. 하지만 이러한 노력에도 불구하고 성장동력 창출은 다소 미흡한 상황이기에 대학중심의 산학협력 활동강화를 위한 혁신 네트워크 구축 방안 마련이 필요한 시점이다. 이에 본 연구에서는 산학협력 유형(특허, 논문, 공동연구, 기술이전)에 따른 네트워크를 구축하고, QAP상관분석 및 QAP회귀분석을 실시하여 서로 다른 유형의 산학협력 네트워크간 관련성 및 연관성을 통계적 관점에서 분석하였다. 분석결과 공동연구 네트워크는 논문 네트워크와 밀접한 관련이 있으며, 다른 산학협력 네트워크와도 관련성을 가지고 있는 것으로 나타났다. 본 연구는 대학의 새로운 성장동력 창출에 필요한 산학협력 전략수립 및 협력 파트너 발굴 등과 같은 혁신활동을 지원할 수 있을 것이라 기대한다."
+        },
+        {
+          "rank": 36,
+          "score": 0.5201524496078491,
+          "doc_id": "JAKO201921467620875",
+          "title": "칫솔에 대한 특허 융합분석",
+          "abstract": "본 연구는 구강건강을 위해 사용하고 있는 칫솔을 특허검색이 가능한 KIPRIS에서 2008년부터 2017년까지 10년간 등록된 칫솔에 대한 467개의 특허정보를 분석하였다. 칫솔구성을 기준으로 8개로 대분류 하였고, 세부정보를 소분류 하였다. 연간 특허수량을 분석하기 위해 출원연도를 분석하여 정리하였다. 그 결과 특허가 가장 많은 것은 칫솔모에 대한 특허였으며 뒤이어 칫솔 외 기능추가 특허, 전동칫솔 특허, 칫솔헤드에 대한 다른 형태로의 칫솔 특허, 칫솔목에 대한 특허, 칫솔질 습관 교정에 대한 특허, 칫솔 핸들에 대한 특허 순이었다. 다양한 소분류의 특허는 칫솔 외 기능 추가 특허였으며 2012년 칫솔모에 대한 특허건이 25개로 제일 많았으며, 2017년 소폭 감소하는 칫솔특허 대비 유일하게 증가하고 있는 특허는 칫솔질 습관 교정에 대한 특허와 칫솔 핸들에 대한 특허였다. 2009년부터는 칫솔에 대한 특허수가 꾸준히 증가하고 다양해진 모습을 확인 할 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201921467620875&target=NART&cn=JAKO201921467620875",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "칫솔에 대한 특허 융합분석 칫솔에 대한 특허 융합분석 칫솔에 대한 특허 융합분석 본 연구는 구강건강을 위해 사용하고 있는 칫솔을 특허검색이 가능한 KIPRIS에서 2008년부터 2017년까지 10년간 등록된 칫솔에 대한 467개의 특허정보를 분석하였다. 칫솔구성을 기준으로 8개로 대분류 하였고, 세부정보를 소분류 하였다. 연간 특허수량을 분석하기 위해 출원연도를 분석하여 정리하였다. 그 결과 특허가 가장 많은 것은 칫솔모에 대한 특허였으며 뒤이어 칫솔 외 기능추가 특허, 전동칫솔 특허, 칫솔헤드에 대한 다른 형태로의 칫솔 특허, 칫솔목에 대한 특허, 칫솔질 습관 교정에 대한 특허, 칫솔 핸들에 대한 특허 순이었다. 다양한 소분류의 특허는 칫솔 외 기능 추가 특허였으며 2012년 칫솔모에 대한 특허건이 25개로 제일 많았으며, 2017년 소폭 감소하는 칫솔특허 대비 유일하게 증가하고 있는 특허는 칫솔질 습관 교정에 대한 특허와 칫솔 핸들에 대한 특허였다. 2009년부터는 칫솔에 대한 특허수가 꾸준히 증가하고 다양해진 모습을 확인 할 수 있다."
+        },
+        {
+          "rank": 37,
+          "score": 0.5197965502738953,
+          "doc_id": "JAKO201336447760833",
+          "title": "철도 IT융합 기술 연구개발 기획 연구",
+          "abstract": "철도는 친환경 교통 물류수단으로 각광받고 있으며, 세계 철도차량시장 점유율 확대를 위해 IT 기술을 융합하여 경쟁력을 강화하고자 하는 노력이 진행되고 있다. 본 연구는 철도 IT융합 기술의 연구개발을 진행하기 위한 방안을 제시한다. 철도 IT융합 기술과 관련한 기존 연구결과물 및 특허에 대해 분석하고 기술분류에 따른 대상과제를 도출한 후, 전문가 설문조사와 다원속성효용이론(MAUT) 방법론을 이용하여 핵심 연구과제를 선정하였다. 연구 결과는 철도 IT융합에 대한 향후 정책 수립 및 연구과제 기획 등에 활용할 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201336447760833&target=NART&cn=JAKO201336447760833",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "철도 IT융합 기술 연구개발 기획 연구 철도 IT융합 기술 연구개발 기획 연구 철도 IT융합 기술 연구개발 기획 연구 철도는 친환경 교통 물류수단으로 각광받고 있으며, 세계 철도차량시장 점유율 확대를 위해 IT 기술을 융합하여 경쟁력을 강화하고자 하는 노력이 진행되고 있다. 본 연구는 철도 IT융합 기술의 연구개발을 진행하기 위한 방안을 제시한다. 철도 IT융합 기술과 관련한 기존 연구결과물 및 특허에 대해 분석하고 기술분류에 따른 대상과제를 도출한 후, 전문가 설문조사와 다원속성효용이론(MAUT) 방법론을 이용하여 핵심 연구과제를 선정하였다. 연구 결과는 철도 IT융합에 대한 향후 정책 수립 및 연구과제 기획 등에 활용할 수 있을 것이다."
+        },
+        {
+          "rank": 38,
+          "score": 0.5194368362426758,
+          "doc_id": "JAKO201507241285491",
+          "title": "스테빌라이저 링크의 종류별 강도 해석을 통한 융합 기술연구",
+          "abstract": "본 연구에서는 자동차의 스테빌라이저 링크를 모델로 하여 로워암과 연결되는 곳에 고정을 하고 모멘트를 가한다. Model 1, 2 및 3는 각각 길이 조정형, 일반형 및 일체형들이다. 이 모델들은 CATIA와 ANSYS로 설계 및 강도해석을 통한 융합 기술을 수행함으로서 연구된다. Model 3의 최대 등가응력이 가장 작음으로서 Model 3가 3개의 모델들 중 가장 큰 하중을 견딜 수 있다. 피로 해석으로서는 Model 3가 응력 상태의 빈도수가 일어나는 구간이 가장 작음으로서 세가지 모델 중 가장 안정적이다. 그 다음으로 Model 1, Model 2 순으로 안정적임으로서 응력 상태의 빈도로서 구간 수가 커지고 불안정성이 더 커진다. 그리고 디자인 면에서의 융합 기술로의 접목도 가능하여 미적인 감각을 나타낼 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201507241285491&target=NART&cn=JAKO201507241285491",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "스테빌라이저 링크의 종류별 강도 해석을 통한 융합 기술연구 스테빌라이저 링크의 종류별 강도 해석을 통한 융합 기술연구 스테빌라이저 링크의 종류별 강도 해석을 통한 융합 기술연구 본 연구에서는 자동차의 스테빌라이저 링크를 모델로 하여 로워암과 연결되는 곳에 고정을 하고 모멘트를 가한다. Model 1, 2 및 3는 각각 길이 조정형, 일반형 및 일체형들이다. 이 모델들은 CATIA와 ANSYS로 설계 및 강도해석을 통한 융합 기술을 수행함으로서 연구된다. Model 3의 최대 등가응력이 가장 작음으로서 Model 3가 3개의 모델들 중 가장 큰 하중을 견딜 수 있다. 피로 해석으로서는 Model 3가 응력 상태의 빈도수가 일어나는 구간이 가장 작음으로서 세가지 모델 중 가장 안정적이다. 그 다음으로 Model 1, Model 2 순으로 안정적임으로서 응력 상태의 빈도로서 구간 수가 커지고 불안정성이 더 커진다. 그리고 디자인 면에서의 융합 기술로의 접목도 가능하여 미적인 감각을 나타낼 수 있다."
+        },
+        {
+          "rank": 39,
+          "score": 0.5183879137039185,
+          "doc_id": "JAKO201525249375504",
+          "title": "국방 IT융합 비즈니스 모델 사례와 성과 분석",
+          "abstract": "Information technology (IT) convergence have been recognized one of the key drivers in the industry perspective. Especially, IT convergence have been one of the most important innovative way for defense sector. Korea government established IT convergence policy in 2008 and have been applying it to the core industry such as automotive, shipbuilding and defense industries. Recently, the creative vitamin project has been launched. Vitamin 'D' means the way to create the value of defense industry. This research analyzes and evaluates various IT convergence business models based on an operation of defense IT convergence center from 2011 to 2014, which is the industry IT convergence centers. Defense IT convergence business models can be classified into four types of mission area as follows : weapon acquisition and management, military intelligence, military power construction, and resources management. We define the concept of defense IT convergence and describe the framework and processes for applying IT to the defense sector. We analyzes and evaluates various business models designed through defense IT convergence framework and processes.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201525249375504&target=NART&cn=JAKO201525249375504",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방 IT융합 비즈니스 모델 사례와 성과 분석 국방 IT융합 비즈니스 모델 사례와 성과 분석 국방 IT융합 비즈니스 모델 사례와 성과 분석 Information technology (IT) convergence have been recognized one of the key drivers in the industry perspective. Especially, IT convergence have been one of the most important innovative way for defense sector. Korea government established IT convergence policy in 2008 and have been applying it to the core industry such as automotive, shipbuilding and defense industries. Recently, the creative vitamin project has been launched. Vitamin 'D' means the way to create the value of defense industry. This research analyzes and evaluates various IT convergence business models based on an operation of defense IT convergence center from 2011 to 2014, which is the industry IT convergence centers. Defense IT convergence business models can be classified into four types of mission area as follows : weapon acquisition and management, military intelligence, military power construction, and resources management. We define the concept of defense IT convergence and describe the framework and processes for applying IT to the defense sector. We analyzes and evaluates various business models designed through defense IT convergence framework and processes."
+        },
+        {
+          "rank": 40,
+          "score": 0.5170615911483765,
+          "doc_id": "JAKO200857154855768",
+          "title": "IT 기반 융합정책 방향",
+          "abstract": "최근 급격한 기술혁신으로 기술간 융합이 가속화되면서 융합정책이 새로운 화두로 부상하고 있다. 그러나, 최근까지의 연구결과와 정책과제들을 보면 '융합' 이라는 현상 전반에 대한 이해와 통찰에 기반한 것이 아니라 개별기술 분야에서 나타나고 있는 현상들을 종합하여 '융합정책' 이라는 이름으로 제시되고 있는 듯하여 우려된다. '융합기술'  이란 현재만이 아니라 기술의 진화와 혁신이 발생하는 곳에서는 늘 존재하였다. 단지 최근 들어 '융합' 이라는 용어가 더욱 강조되고 주목을 받는 이유는 기존에 발생하였던 '점진적 융합' 과는 달리 발생속도가 급격하고 그 영역이 대단히 광범위하게 나타나는 '혁신적.광역적 융합' 의 성격을 띄기 때문으로 판단된다. 이러한 '혁신적.광역적 융합' 의 공통점은 어느 분야에서 발생하든 IT를 기반으로 한다는 점이다. 이에 따라 IT는 융합의 실체가 IT로 나타나든 타 분야에 내재화되어 나타나든 모든 분야의 원천기술로 작용할 것이 확실시 된다. 본 고에서는 일대 전환기를 맞고 있는 IT 기반 융합의 의미와 현상을 살펴 보고, 이를 토대로 향후 국민소득 3만 달러, 4만 달러 달성을 위한 IT 기반 융합정책의 방향을 제시하고자 하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200857154855768&target=NART&cn=JAKO200857154855768",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 기반 융합정책 방향 IT 기반 융합정책 방향 IT 기반 융합정책 방향 최근 급격한 기술혁신으로 기술간 융합이 가속화되면서 융합정책이 새로운 화두로 부상하고 있다. 그러나, 최근까지의 연구결과와 정책과제들을 보면 '융합' 이라는 현상 전반에 대한 이해와 통찰에 기반한 것이 아니라 개별기술 분야에서 나타나고 있는 현상들을 종합하여 '융합정책' 이라는 이름으로 제시되고 있는 듯하여 우려된다. '융합기술'  이란 현재만이 아니라 기술의 진화와 혁신이 발생하는 곳에서는 늘 존재하였다. 단지 최근 들어 '융합' 이라는 용어가 더욱 강조되고 주목을 받는 이유는 기존에 발생하였던 '점진적 융합' 과는 달리 발생속도가 급격하고 그 영역이 대단히 광범위하게 나타나는 '혁신적.광역적 융합' 의 성격을 띄기 때문으로 판단된다. 이러한 '혁신적.광역적 융합' 의 공통점은 어느 분야에서 발생하든 IT를 기반으로 한다는 점이다. 이에 따라 IT는 융합의 실체가 IT로 나타나든 타 분야에 내재화되어 나타나든 모든 분야의 원천기술로 작용할 것이 확실시 된다. 본 고에서는 일대 전환기를 맞고 있는 IT 기반 융합의 의미와 현상을 살펴 보고, 이를 토대로 향후 국민소득 3만 달러, 4만 달러 달성을 위한 IT 기반 융합정책의 방향을 제시하고자 하였다."
+        },
+        {
+          "rank": 41,
+          "score": 0.5162500143051147,
+          "doc_id": "JAKO201120859385930",
+          "title": "3대 분야 17개 신성장 동력 기술간 동태적 경쟁관계 분석",
+          "abstract": "최근 IT, BT, NT를 중심으로 기술간 융합이 가속화 되고, 다양한 기술이 복합적으로 활용되는 산업분야가 증가하면서 기술간 경쟁관계 분석에 대한 전략적, 정책적 필요성이 커지고 있으나 기술간 동태적 관계를 분석한 연구는 그리 많지 않다. 본 연구는 기술경쟁 관점에서 기술혁신 과정을 다룬다. 특히, 최근 정부가 우리 경제의 새로운 성장 비전으로 발표한 3대 분야 17개 신성장 동력 기술을 대상으로 하여 이들 기술들의 공진화 과정을 분석 한다. 분석을 위해서 대표적 기술혁신 자료인 특허정보를 활용하고, 동태적 경쟁확산모형으로 폭넓게 활용되고 있는 Lotka-Volterra 모형을 적용한다. 연구결과는 기술혁신 과정에 있어 3대 분야 간, 17개 신성장 동력 기술 간, 신성장 기술 내 세부기술 간 동태적 관계를 분석함으로써, 효과적인 국내 기술정책 수립과 연구개발 우선순위 선정 등의 전략적 의사결정에 활용할 수 있을 것으로 기대된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201120859385930&target=NART&cn=JAKO201120859385930",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "3대 분야 17개 신성장 동력 기술간 동태적 경쟁관계 분석 3대 분야 17개 신성장 동력 기술간 동태적 경쟁관계 분석 3대 분야 17개 신성장 동력 기술간 동태적 경쟁관계 분석 최근 IT, BT, NT를 중심으로 기술간 융합이 가속화 되고, 다양한 기술이 복합적으로 활용되는 산업분야가 증가하면서 기술간 경쟁관계 분석에 대한 전략적, 정책적 필요성이 커지고 있으나 기술간 동태적 관계를 분석한 연구는 그리 많지 않다. 본 연구는 기술경쟁 관점에서 기술혁신 과정을 다룬다. 특히, 최근 정부가 우리 경제의 새로운 성장 비전으로 발표한 3대 분야 17개 신성장 동력 기술을 대상으로 하여 이들 기술들의 공진화 과정을 분석 한다. 분석을 위해서 대표적 기술혁신 자료인 특허정보를 활용하고, 동태적 경쟁확산모형으로 폭넓게 활용되고 있는 Lotka-Volterra 모형을 적용한다. 연구결과는 기술혁신 과정에 있어 3대 분야 간, 17개 신성장 동력 기술 간, 신성장 기술 내 세부기술 간 동태적 관계를 분석함으로써, 효과적인 국내 기술정책 수립과 연구개발 우선순위 선정 등의 전략적 의사결정에 활용할 수 있을 것으로 기대된다."
+        },
+        {
+          "rank": 42,
+          "score": 0.5153106451034546,
+          "doc_id": "JAKO201521839156025",
+          "title": "지각된 IT위협이 융합 정보시스템 성과에 미치는 영향",
+          "abstract": "본 연구는 기술위협회피이론(Technology Threat Avoidance Theory: TTAT)을 기반으로 IT 위협을 지각한 사용자가 대처행위를 통해 IS성과를 달성하는 과정을 설명하고자 한다. 연구모형을 검증하기 위해 조직내 정보시스템을 사용한 경험이 있는 응답자를 대상으로 설문을 수집하고, 구조방정식모형을 이용하여 분석하였다. 연구결과 IT 위협이 문제-중심적 대처와 IS활용에 부(-)의 영향관계를 갖는 것으로 나타났다. 또한 문제-중심적 대처는 IS활용에 정(+)의 영향을 미치고, IS활용은 IS성과에 정(+)의 영향을 미친다. 즉 사용자가 IT 위협을 지각했을 때, 문제 중심적 대처를 취함으로 융합 정보시스템의 성과를 높일 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201521839156025&target=NART&cn=JAKO201521839156025",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "지각된 IT위협이 융합 정보시스템 성과에 미치는 영향 지각된 IT위협이 융합 정보시스템 성과에 미치는 영향 지각된 IT위협이 융합 정보시스템 성과에 미치는 영향 본 연구는 기술위협회피이론(Technology Threat Avoidance Theory: TTAT)을 기반으로 IT 위협을 지각한 사용자가 대처행위를 통해 IS성과를 달성하는 과정을 설명하고자 한다. 연구모형을 검증하기 위해 조직내 정보시스템을 사용한 경험이 있는 응답자를 대상으로 설문을 수집하고, 구조방정식모형을 이용하여 분석하였다. 연구결과 IT 위협이 문제-중심적 대처와 IS활용에 부(-)의 영향관계를 갖는 것으로 나타났다. 또한 문제-중심적 대처는 IS활용에 정(+)의 영향을 미치고, IS활용은 IS성과에 정(+)의 영향을 미친다. 즉 사용자가 IT 위협을 지각했을 때, 문제 중심적 대처를 취함으로 융합 정보시스템의 성과를 높일 수 있다."
+        },
+        {
+          "rank": 43,
+          "score": 0.5151020288467407,
+          "doc_id": "NART87054192",
+          "title": "Plugging IT/OT vulnerabilities &#x2013; part 1",
+          "abstract": "<P>The separation between IT and operational technology (OT) networks, such as those linking manufacturing control systems, is breaking down. Not long ago, systems that monitor and control physical equipment were engineered and implemented independently from the computers, systems and applications that process, store and exchange operational data. But the line between IT and OT is blurring. In this, the first instalment of a two-part article on the impact of increasing IT and operating technology convergence on network security, industry experts contribute their assessment of the emerging threats.</P> <P> <B>The separation between IT and operational technology (OT) networks, such as those linking manufacturing control systems, is breaking down.</B> </P> <P>Not long ago, systems that monitored and controlled physical equipment were engineered and implemented independently from the computers, systems and applications that process, store and exchange operational data. But the line between IT and OT is blurring. In this first instalment of a two-part article, Tracey Caldwell asks industry experts for their assessment of the emerging threats.</P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART87054192&target=NART&cn=NART87054192",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Plugging IT/OT vulnerabilities &#x2013; part 1 Plugging IT/OT vulnerabilities &#x2013; part 1 Plugging IT/OT vulnerabilities &#x2013; part 1 <P>The separation between IT and operational technology (OT) networks, such as those linking manufacturing control systems, is breaking down. Not long ago, systems that monitor and control physical equipment were engineered and implemented independently from the computers, systems and applications that process, store and exchange operational data. But the line between IT and OT is blurring. In this, the first instalment of a two-part article on the impact of increasing IT and operating technology convergence on network security, industry experts contribute their assessment of the emerging threats.</P> <P> <B>The separation between IT and operational technology (OT) networks, such as those linking manufacturing control systems, is breaking down.</B> </P> <P>Not long ago, systems that monitored and controlled physical equipment were engineered and implemented independently from the computers, systems and applications that process, store and exchange operational data. But the line between IT and OT is blurring. In this first instalment of a two-part article, Tracey Caldwell asks industry experts for their assessment of the emerging threats.</P>"
+        },
+        {
+          "rank": 44,
+          "score": 0.514774739742279,
+          "doc_id": "JAKO201621650493465",
+          "title": "특허 인용 네트워크 분석",
+          "abstract": "과학 기술의 발전은 사회를 급격하게 변화시켜 왔다. 특허 자료 분석은 현대 과학 기술의 흐름을 이해하고 미래 유망기술을 예측할 수 있게 한다. 본 연구에서는 기술의 동향을 파악하고자 1985년과 2012년 사이에 미국 특허청에 등록된 특허를 중심으로 특허 인용 네트워크를 분석한다. 주요 기술군을 파악하기 위해 PageRank 알고리즘 외에 다양한 중심성 지표를 이용하고, 통계적 네트워크 모형을 통해 유사한 기술들의 군집을 찾아내고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201621650493465&target=NART&cn=JAKO201621650493465",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허 인용 네트워크 분석 특허 인용 네트워크 분석 특허 인용 네트워크 분석 과학 기술의 발전은 사회를 급격하게 변화시켜 왔다. 특허 자료 분석은 현대 과학 기술의 흐름을 이해하고 미래 유망기술을 예측할 수 있게 한다. 본 연구에서는 기술의 동향을 파악하고자 1985년과 2012년 사이에 미국 특허청에 등록된 특허를 중심으로 특허 인용 네트워크를 분석한다. 주요 기술군을 파악하기 위해 PageRank 알고리즘 외에 다양한 중심성 지표를 이용하고, 통계적 네트워크 모형을 통해 유사한 기술들의 군집을 찾아내고자 한다."
+        },
+        {
+          "rank": 45,
+          "score": 0.5141729712486267,
+          "doc_id": "NART48052139",
+          "title": "IT chip과 나노 바이오 융합 기술",
+          "abstract": "",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART48052139&target=NART&cn=NART48052139",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT chip과 나노 바이오 융합 기술 IT chip과 나노 바이오 융합 기술 IT chip과 나노 바이오 융합 기술 "
+        },
+        {
+          "rank": 46,
+          "score": 0.5139903426170349,
+          "doc_id": "JAKO202521936004106",
+          "title": "특허 네트워크 분석을 이용한 AI기술과 군사기술 융합 연구",
+          "abstract": "Recently, in the defense sector, there has been much interest in acquiring weapon systems that incorporate new technologies of the 4th industrial revolution, such as artificially intelligence. This study is about the technological convergence and diffusion of patents related to AI and military technology. We extracted domestic defense AI patents including both military and AI technologies applied from 2015 to 2023, then their cited patents extracted. The analysis shows that the Defense research institute and some defense industry companies are playing a key role, but Defense AI patent applications in the civilian fields was more than that in the military fields. In addition, the convergence of AI and military technology was expanding both scope and field. The significance of this study is that it confirmed the convergence and diffusion of defense AI technology and temporal changes, and also suggested the direction of defense R&D for the spin-on of new civilian technologies.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202521936004106&target=NART&cn=JAKO202521936004106",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "특허 네트워크 분석을 이용한 AI기술과 군사기술 융합 연구 특허 네트워크 분석을 이용한 AI기술과 군사기술 융합 연구 특허 네트워크 분석을 이용한 AI기술과 군사기술 융합 연구 Recently, in the defense sector, there has been much interest in acquiring weapon systems that incorporate new technologies of the 4th industrial revolution, such as artificially intelligence. This study is about the technological convergence and diffusion of patents related to AI and military technology. We extracted domestic defense AI patents including both military and AI technologies applied from 2015 to 2023, then their cited patents extracted. The analysis shows that the Defense research institute and some defense industry companies are playing a key role, but Defense AI patent applications in the civilian fields was more than that in the military fields. In addition, the convergence of AI and military technology was expanding both scope and field. The significance of this study is that it confirmed the convergence and diffusion of defense AI technology and temporal changes, and also suggested the direction of defense R&D for the spin-on of new civilian technologies."
+        },
+        {
+          "rank": 47,
+          "score": 0.5137572288513184,
+          "doc_id": "JAKO201521052964495",
+          "title": "건강운동을 위한 IT 융합기술의 접근 동향",
+          "abstract": "IT 융합은 IT의 자체 고도화를 바탕으로 다른 분야의 기술개발과 산업발전을 견인하거나 새로운 산업창출을 목표로 국가전략적 차원에서 접근을 하고 있으며 연구자원을 집중 투자하고 있다. 이에 IT 융합은 주력산업을 고부가가치화하고, IT 신산업을 창출할 뿐만 아니라, 범부처적으로 추진하는 신성장동력 육성에 기여하는 첨단융합 산업분야로 부상하게 되었다. 건강관련 융합서비스는 기존의 질병 예방과 관리 중심의 치료기술 산업에서 운동/스포츠 및 재활 중심의 엔터테인먼트체험 산업으로 확장되는 추세이다. 따라서 본 논문에서는 IT 융합에 대하여 그 중요성을 지니는 것만큼 건강운동과 관련된 IT 융합기술개발 동향을 파악하고 기존에 진행되었던 주요 기술개발과 융합산업 발전을 위한 방향에 관한 제언을 하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201521052964495&target=NART&cn=JAKO201521052964495",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "건강운동을 위한 IT 융합기술의 접근 동향 건강운동을 위한 IT 융합기술의 접근 동향 건강운동을 위한 IT 융합기술의 접근 동향 IT 융합은 IT의 자체 고도화를 바탕으로 다른 분야의 기술개발과 산업발전을 견인하거나 새로운 산업창출을 목표로 국가전략적 차원에서 접근을 하고 있으며 연구자원을 집중 투자하고 있다. 이에 IT 융합은 주력산업을 고부가가치화하고, IT 신산업을 창출할 뿐만 아니라, 범부처적으로 추진하는 신성장동력 육성에 기여하는 첨단융합 산업분야로 부상하게 되었다. 건강관련 융합서비스는 기존의 질병 예방과 관리 중심의 치료기술 산업에서 운동/스포츠 및 재활 중심의 엔터테인먼트체험 산업으로 확장되는 추세이다. 따라서 본 논문에서는 IT 융합에 대하여 그 중요성을 지니는 것만큼 건강운동과 관련된 IT 융합기술개발 동향을 파악하고 기존에 진행되었던 주요 기술개발과 융합산업 발전을 위한 방향에 관한 제언을 하고자 한다."
+        },
+        {
+          "rank": 48,
+          "score": 0.5135269165039062,
+          "doc_id": "JAKO201207364424561",
+          "title": "공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점",
+          "abstract": "Information technology is a useful strategic weapon that can create competitive advantage and new business opportunity by applying it in the organization' value chain. IT convergence can be understood as an attempt of industrial level IT adoption to facilitate the innovation of the industry and the birth of a new industry. This study provides the comprehensive review of the Korean government' three IT assimilation programs, ubiquitous technology diffusion program of the Ministry of Knowledge Economy, u-service program of the Ministry of Public Administration and Security, and u-Defence cooperation program of the Department of Defense. The analysis is done through the interpretation of the existing literature and the logic model. The result proposes inter-agency cooperation and building of new technology road-map in the planning stage, flexible management in the execution phase, and failure tolerant evaluation system. The proposal for developing competencies and institutional foundations for IT convergence also presented.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201207364424561&target=NART&cn=JAKO201207364424561",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점 공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점 공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점 Information technology is a useful strategic weapon that can create competitive advantage and new business opportunity by applying it in the organization' value chain. IT convergence can be understood as an attempt of industrial level IT adoption to facilitate the innovation of the industry and the birth of a new industry. This study provides the comprehensive review of the Korean government' three IT assimilation programs, ubiquitous technology diffusion program of the Ministry of Knowledge Economy, u-service program of the Ministry of Public Administration and Security, and u-Defence cooperation program of the Department of Defense. The analysis is done through the interpretation of the existing literature and the logic model. The result proposes inter-agency cooperation and building of new technology road-map in the planning stage, flexible management in the execution phase, and failure tolerant evaluation system. The proposal for developing competencies and institutional foundations for IT convergence also presented."
+        },
+        {
+          "rank": 49,
+          "score": 0.5129939913749695,
+          "doc_id": "JAKO201913457809778",
+          "title": "한국과 선진국 간 고분자 소재 기술의 융합 형태와 기술수준 비교 분석: 특허 정보의 활용",
+          "abstract": "고분자 소재는 생활용품 등은 물론 자동차, 우주항공, 에너지, IT산업 등 다양한 분야에 광범위하게 이용된다. 이러한 고분자 소재의 지속적 혁신을 위해 고분자 기술의 융합에 대한 관심은 높지만, 융합 동향에 대한 분석은 제한적이었다. 이에 본 논문에서는 특허 정보를 활용하여 주요 국가별 고분자 소재의 기술융합 형태와 기술수준을 분석하고자 하였다. 이를 위해 공개 등록 기준으로 2004년부터 2014년까지의 PCT를 수집하여 동시분류분석을 실시하였다. 연구 결과 일본과 한국은 기술의 분야를 넘어서는 대분류(섹션) 수준의 융합이 더 많은 반면, 미국과 유럽은 화학분야 내에서 중분류(Field) 수준의 융합이 더 많이 나타나고 있다. 그리고 특허활동력, 특허경쟁력, 특허영향력으로 살펴본 질적 측면에서는 한국 융합기술이 다른 나라에 비해 미흡한 것으로 나타났다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201913457809778&target=NART&cn=JAKO201913457809778",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "한국과 선진국 간 고분자 소재 기술의 융합 형태와 기술수준 비교 분석: 특허 정보의 활용 한국과 선진국 간 고분자 소재 기술의 융합 형태와 기술수준 비교 분석: 특허 정보의 활용 한국과 선진국 간 고분자 소재 기술의 융합 형태와 기술수준 비교 분석: 특허 정보의 활용 고분자 소재는 생활용품 등은 물론 자동차, 우주항공, 에너지, IT산업 등 다양한 분야에 광범위하게 이용된다. 이러한 고분자 소재의 지속적 혁신을 위해 고분자 기술의 융합에 대한 관심은 높지만, 융합 동향에 대한 분석은 제한적이었다. 이에 본 논문에서는 특허 정보를 활용하여 주요 국가별 고분자 소재의 기술융합 형태와 기술수준을 분석하고자 하였다. 이를 위해 공개 등록 기준으로 2004년부터 2014년까지의 PCT를 수집하여 동시분류분석을 실시하였다. 연구 결과 일본과 한국은 기술의 분야를 넘어서는 대분류(섹션) 수준의 융합이 더 많은 반면, 미국과 유럽은 화학분야 내에서 중분류(Field) 수준의 융합이 더 많이 나타나고 있다. 그리고 특허활동력, 특허경쟁력, 특허영향력으로 살펴본 질적 측면에서는 한국 융합기술이 다른 나라에 비해 미흡한 것으로 나타났다."
+        },
+        {
+          "rank": 50,
+          "score": 0.5113033652305603,
+          "doc_id": "JAKO201120661418793",
+          "title": "IT융합 헬스케어기술",
+          "abstract": "본고에서는 IT 기술의 급속한 발전과 보급에 힘입어 최근 많은 관심을 끌고 있는 미래의 의료형태인 유헬스케어에 필요한 IT융합 헬스케어기술을 소개하였다. IT융합 헬스케어기술이 성공적으로 실시되면 맞춤형 헬스케어 서비스와 웰빙을 필요로 하는 많은 이용자의 요구에 의해서 헬스케어는 환자 중심의 질병 및 증상을 완화하고, 치료하는 개념에서 점차 일반인의 건강을 증진하고 질병을 예방하는 개념으로 변화 되고 있다. 이를 위해서는 IT 기술과 의료서비스를 융합하여 언제 어디서나 예방, 진료, 치료 그리고 사후관리를 받을 수 있는 유헬스케어 서비스가 제공될 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201120661418793&target=NART&cn=JAKO201120661418793",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT융합 헬스케어기술 IT융합 헬스케어기술 IT융합 헬스케어기술 본고에서는 IT 기술의 급속한 발전과 보급에 힘입어 최근 많은 관심을 끌고 있는 미래의 의료형태인 유헬스케어에 필요한 IT융합 헬스케어기술을 소개하였다. IT융합 헬스케어기술이 성공적으로 실시되면 맞춤형 헬스케어 서비스와 웰빙을 필요로 하는 많은 이용자의 요구에 의해서 헬스케어는 환자 중심의 질병 및 증상을 완화하고, 치료하는 개념에서 점차 일반인의 건강을 증진하고 질병을 예방하는 개념으로 변화 되고 있다. 이를 위해서는 IT 기술과 의료서비스를 융합하여 언제 어디서나 예방, 진료, 치료 그리고 사후관리를 받을 수 있는 유헬스케어 서비스가 제공될 수 있을 것이다."
+        }
+      ]
+    }
+  ],
+  "meta": {},
+  "timestamp_kst": "2025-09-20T23:58:15.131507",
+  "trial_id": "e89aa97d"
+}

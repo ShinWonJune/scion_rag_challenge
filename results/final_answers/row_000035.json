@@ -1,0 +1,33 @@
+{
+    "id": "row_000035",
+    "result": "**Key factors shaping purchase attitudes**\n\n| Factor | Why it matters for IT‑based convergence products |\n|--------|---------------------------------------------------|\n| **Perceived utility / usefulness** | Consumers judge whether the product adds real value to their daily life or work. High utility drives a positive purchase attitude. |\n| **Perceived ease of use & integration** | Convergence products must fit seamlessly with existing devices and habits; low effort of adoption boosts willingness to buy. |\n| **Perceived performance & reliability** | Trust that the product will work consistently (e.g., stable connectivity, battery life) reduces purchase risk. |\n| **Perceived cost‑benefit (price‑value)** | The price is weighed against the functional and experiential benefits; a favorable cost‑value ratio strengthens purchase intent. |\n| **Perceived risk & security** | Concerns about data privacy, compatibility failures, or obsolescence can dampen attitudes; lower perceived risk encourages purchase. |\n| **Social influence & brand reputation** | Recommendations, reviews, and brand trust shape attitudes, especially for novel convergence offerings. |\n\n**Implications for competitiveness**\n\n1. **Emphasize utility in product design and marketing** – Highlight concrete benefits (time‑saving, multitasking, enhanced functionality) to shape a strong perceived usefulness.  \n2. **Simplify integration** – Ensure the product works out‑of‑the‑box with common platforms and devices; provide clear onboarding to lower perceived effort.  \n3. **Guarantee reliability and security** – Offer robust performance specs, warranties, and transparent data‑privacy policies to cut perceived risk.  \n4. **Optimize price‑value perception** – Use tiered pricing, bundles, or subscription models that clearly communicate the value delivered relative to cost.  \n5. **Leverage brand and social proof** – Build a reputable brand image and encourage user reviews, influencer endorsements, and case studies to reinforce positive attitudes.  \n\nBy aligning product development and go‑to‑market strategies with these attitude drivers, firms can strengthen their competitive edge and improve the likelihood of successful market entry for IT‑based convergence products.",
+    "prompt": "Question: How can you succinctly capture the factors that shape consumer purchase attitudes toward IT-based convergence products and their implications for competitiveness?\nContext: {\n  \"id\": \"row_000035\",\n  \"model_name\": \"BAAI/bge-m3\",\n  \"retrieval_results\": [\n    {\n      \"query\": \"How can you succinctly capture the factors that shape consumer purchase attitudes toward IT-based convergence products and their implications for competitiveness?\",\n      \"query_meta\": {\n        \"type\": \"original\"\n      },\n      \"hits\": [\n        {\n          \"rank\": 1,\n          \"score\": 0.7473036050796509,\n          \"doc_id\": \"NPAP12636907\",\n          \"title\": \"IT 기반의 convergence 제품의 구입태도에 대한 연구\",\n          \"abstract\": \"본 연구의 목적은 소비자들이 IT 기반의 컨버전스 제품을 구매함에 있어서 지각하는 구매태도를 바탕으로 구매의사결정을 이론적 배경에 대한 검토를 바탕으로 가설을 설정하고 이들 가설을 검증하기 위하여 실증연구를 수행하였다. IT 컨버전스 제품에 있어서 효용성이 주는 소비자들이 제품이나 서비스를 채용하는데 있어서 매우 중요한 전략적 접근방법이다. 소비자들의 IT 컨버전스 제품을 구매하는데 있어 기업의 경쟁력 강화전략을 도출하는 것이 성공적인 시장진입에 대한 시사점임을 알 수 있다.\",\n          \"source\": \"http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NPAP12636907&target=NART&cn=NPAP12636907\",\n          \"embedding_mode\": \"3*title+abstract\",\n          \"embedding_text\": \"IT 기반의 convergence 제품의 구입태도에 대한 연구 IT 기반의 convergence 제품의 구입태도에 대한 연구 IT 기반의 convergence 제품의 구입태도에 대한 연구 본 연구의 목적은 소비자들이 IT 기반의 컨버전스 제품을 구매함에 있어서 지각하는 구매태도를 바탕으로 구매의사결정을 이론적 배경에 대한 검토를 바탕으로 가설을 설정하고 이들 가설을 검증하기 위하여 실증연구를 수행하였다. IT 컨버전스 제품에 있어서 효용성이 주는 소비자들이 제품이나 서비스를 채용하는데 있어서 매우 중요한 전략적 접근방법이다. 소비자들의 IT 컨버전스 제품을 구매하는데 있어 기업의 경쟁력 강화전략을 도출하는 것이 성공적인 시장진입에 대한 시사점임을 알 수 있다.\"\n        }\n      ]\n    }\n  ],\n  \"meta\": {},\n  \"timestamp_kst\": \"2025-09-20T23:58:15.110722\",\n  \"trial_id\": \"d3395699\"\n}",
+    "model": "vllm",
+    "retrival": {
+        "id": "row_000035",
+        "model_name": "BAAI/bge-m3",
+        "retrieval_results": [
+            {
+                "query": "How can you succinctly capture the factors that shape consumer purchase attitudes toward IT-based convergence products and their implications for competitiveness?",
+                "query_meta": {
+                    "type": "original"
+                },
+                "hits": [
+                    {
+                        "rank": 1,
+                        "score": 0.7473036050796509,
+                        "doc_id": "NPAP12636907",
+                        "title": "IT 기반의 convergence 제품의 구입태도에 대한 연구",
+                        "abstract": "본 연구의 목적은 소비자들이 IT 기반의 컨버전스 제품을 구매함에 있어서 지각하는 구매태도를 바탕으로 구매의사결정을 이론적 배경에 대한 검토를 바탕으로 가설을 설정하고 이들 가설을 검증하기 위하여 실증연구를 수행하였다. IT 컨버전스 제품에 있어서 효용성이 주는 소비자들이 제품이나 서비스를 채용하는데 있어서 매우 중요한 전략적 접근방법이다. 소비자들의 IT 컨버전스 제품을 구매하는데 있어 기업의 경쟁력 강화전략을 도출하는 것이 성공적인 시장진입에 대한 시사점임을 알 수 있다.",
+                        "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NPAP12636907&target=NART&cn=NPAP12636907",
+                        "embedding_mode": "3*title+abstract",
+                        "embedding_text": "IT 기반의 convergence 제품의 구입태도에 대한 연구 IT 기반의 convergence 제품의 구입태도에 대한 연구 IT 기반의 convergence 제품의 구입태도에 대한 연구 본 연구의 목적은 소비자들이 IT 기반의 컨버전스 제품을 구매함에 있어서 지각하는 구매태도를 바탕으로 구매의사결정을 이론적 배경에 대한 검토를 바탕으로 가설을 설정하고 이들 가설을 검증하기 위하여 실증연구를 수행하였다. IT 컨버전스 제품에 있어서 효용성이 주는 소비자들이 제품이나 서비스를 채용하는데 있어서 매우 중요한 전략적 접근방법이다. 소비자들의 IT 컨버전스 제품을 구매하는데 있어 기업의 경쟁력 강화전략을 도출하는 것이 성공적인 시장진입에 대한 시사점임을 알 수 있다."
+                    }
+                ]
+            }
+        ],
+        "meta": {},
+        "timestamp_kst": "2025-09-20T23:58:15.110722",
+        "trial_id": "d3395699"
+    }
+}

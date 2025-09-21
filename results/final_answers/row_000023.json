@@ -1,0 +1,33 @@
+{
+    "id": "row_000023",
+    "result": "I’m sorry, but the provided context does not contain any information about using CNN, LSTM, or SVM combinations for non‑invasive diabetes detection with HRV signals, so I can’t summarize a methodology or results for that topic from this source.",
+    "prompt": "Question: Could you briefly summarize the methodology and results of using CNN, LSTM, and SVM combinations for noninvasive diabetes detection based on HRV signals?\nContext: {\n  \"id\": \"row_000023\",\n  \"model_name\": \"BAAI/bge-m3\",\n  \"retrieval_results\": [\n    {\n      \"query\": \"Could you briefly summarize the methodology and results of using CNN, LSTM, and SVM combinations for noninvasive diabetes detection based on HRV signals?\",\n      \"query_meta\": {\n        \"type\": \"original\"\n      },\n      \"hits\": [\n        {\n          \"rank\": 1,\n          \"score\": 0.5535606145858765,\n          \"doc_id\": \"JAKO202516736002733\",\n          \"title\": \"CNN-LSTM 기반 악성 코드 탐지\",\n          \"abstract\": \"본 논문은 정적 및 동적 분석을 결합한 하이브리드 CNN-LSTM 모델을 통해 악성코드 탐지를 위한 모델을 제안한다. CNN은 악성코드 바이너리의 흑백 이미지에서 공간적 특징을 추출하고, LSTM은 시스템 호출 시퀀스에서 시간적 동작을 포착한다. 이 모델은 공개 데이터셋에서 높은 정확도(94.6%)와 F1 점수(93.2%)를 달성하여 기존 및 단일 스트림 딥러닝 기법보다 우수한 성능을 보였다. 듀얼 채널 설계를 통해 포괄적인 특징 표현이 가능하여 난독화 및 동작 변화에 대한 강건성을 향상시킨다. 이 접근법은 지능형 악성코드 탐지 시스템에 실질적으로 적용될 수 있는 강력한 잠재력을 보여준다. 향후 연구에서는 탐지 정확도와 해석 가능성을 향상시키기 위해 어텐션 메커니즘과 그래프 기반 모델링을 연구가 필요하다.\",\n          \"source\": \"http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202516736002733&target=NART&cn=JAKO202516736002733\",\n          \"embedding_mode\": \"3*title+abstract\",\n          \"embedding_text\": \"CNN-LSTM 기반 악성 코드 탐지 CNN-LSTM 기반 악성 코드 탐지 CNN-LSTM 기반 악성 코드 탐지 본 논문은 정적 및 동적 분석을 결합한 하이브리드 CNN-LSTM 모델을 통해 악성코드 탐지를 위한 모델을 제안한다. CNN은 악성코드 바이너리의 흑백 이미지에서 공간적 특징을 추출하고, LSTM은 시스템 호출 시퀀스에서 시간적 동작을 포착한다. 이 모델은 공개 데이터셋에서 높은 정확도(94.6%)와 F1 점수(93.2%)를 달성하여 기존 및 단일 스트림 딥러닝 기법보다 우수한 성능을 보였다. 듀얼 채널 설계를 통해 포괄적인 특징 표현이 가능하여 난독화 및 동작 변화에 대한 강건성을 향상시킨다. 이 접근법은 지능형 악성코드 탐지 시스템에 실질적으로 적용될 수 있는 강력한 잠재력을 보여준다. 향후 연구에서는 탐지 정확도와 해석 가능성을 향상시키기 위해 어텐션 메커니즘과 그래프 기반 모델링을 연구가 필요하다.\"\n        }\n      ]\n    }\n  ],\n  \"meta\": {},\n  \"timestamp_kst\": \"2025-09-20T23:58:14.980104\",\n  \"trial_id\": \"5d3ba659\"\n}",
+    "model": "vllm",
+    "retrival": {
+        "id": "row_000023",
+        "model_name": "BAAI/bge-m3",
+        "retrieval_results": [
+            {
+                "query": "Could you briefly summarize the methodology and results of using CNN, LSTM, and SVM combinations for noninvasive diabetes detection based on HRV signals?",
+                "query_meta": {
+                    "type": "original"
+                },
+                "hits": [
+                    {
+                        "rank": 1,
+                        "score": 0.5535606145858765,
+                        "doc_id": "JAKO202516736002733",
+                        "title": "CNN-LSTM 기반 악성 코드 탐지",
+                        "abstract": "본 논문은 정적 및 동적 분석을 결합한 하이브리드 CNN-LSTM 모델을 통해 악성코드 탐지를 위한 모델을 제안한다. CNN은 악성코드 바이너리의 흑백 이미지에서 공간적 특징을 추출하고, LSTM은 시스템 호출 시퀀스에서 시간적 동작을 포착한다. 이 모델은 공개 데이터셋에서 높은 정확도(94.6%)와 F1 점수(93.2%)를 달성하여 기존 및 단일 스트림 딥러닝 기법보다 우수한 성능을 보였다. 듀얼 채널 설계를 통해 포괄적인 특징 표현이 가능하여 난독화 및 동작 변화에 대한 강건성을 향상시킨다. 이 접근법은 지능형 악성코드 탐지 시스템에 실질적으로 적용될 수 있는 강력한 잠재력을 보여준다. 향후 연구에서는 탐지 정확도와 해석 가능성을 향상시키기 위해 어텐션 메커니즘과 그래프 기반 모델링을 연구가 필요하다.",
+                        "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO202516736002733&target=NART&cn=JAKO202516736002733",
+                        "embedding_mode": "3*title+abstract",
+                        "embedding_text": "CNN-LSTM 기반 악성 코드 탐지 CNN-LSTM 기반 악성 코드 탐지 CNN-LSTM 기반 악성 코드 탐지 본 논문은 정적 및 동적 분석을 결합한 하이브리드 CNN-LSTM 모델을 통해 악성코드 탐지를 위한 모델을 제안한다. CNN은 악성코드 바이너리의 흑백 이미지에서 공간적 특징을 추출하고, LSTM은 시스템 호출 시퀀스에서 시간적 동작을 포착한다. 이 모델은 공개 데이터셋에서 높은 정확도(94.6%)와 F1 점수(93.2%)를 달성하여 기존 및 단일 스트림 딥러닝 기법보다 우수한 성능을 보였다. 듀얼 채널 설계를 통해 포괄적인 특징 표현이 가능하여 난독화 및 동작 변화에 대한 강건성을 향상시킨다. 이 접근법은 지능형 악성코드 탐지 시스템에 실질적으로 적용될 수 있는 강력한 잠재력을 보여준다. 향후 연구에서는 탐지 정확도와 해석 가능성을 향상시키기 위해 어텐션 메커니즘과 그래프 기반 모델링을 연구가 필요하다."
+                    }
+                ]
+            }
+        ],
+        "meta": {},
+        "timestamp_kst": "2025-09-20T23:58:14.980104",
+        "trial_id": "5d3ba659"
+    }
+}

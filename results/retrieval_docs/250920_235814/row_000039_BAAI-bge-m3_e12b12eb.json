@@ -1,0 +1,517 @@
+{
+  "id": "row_000039",
+  "model_name": "BAAI/bge-m3",
+  "retrieval_results": [
+    {
+      "query": "국방 IT융합 비즈니스 모델 유형과 핵심 프로세스를 간략히 정리해 주세요.",
+      "query_meta": {
+        "type": "original"
+      },
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.7317495346069336,
+          "doc_id": "JAKO201525249375504",
+          "title": "국방 IT융합 비즈니스 모델 사례와 성과 분석",
+          "abstract": "Information technology (IT) convergence have been recognized one of the key drivers in the industry perspective. Especially, IT convergence have been one of the most important innovative way for defense sector. Korea government established IT convergence policy in 2008 and have been applying it to the core industry such as automotive, shipbuilding and defense industries. Recently, the creative vitamin project has been launched. Vitamin 'D' means the way to create the value of defense industry. This research analyzes and evaluates various IT convergence business models based on an operation of defense IT convergence center from 2011 to 2014, which is the industry IT convergence centers. Defense IT convergence business models can be classified into four types of mission area as follows : weapon acquisition and management, military intelligence, military power construction, and resources management. We define the concept of defense IT convergence and describe the framework and processes for applying IT to the defense sector. We analyzes and evaluates various business models designed through defense IT convergence framework and processes.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201525249375504&target=NART&cn=JAKO201525249375504",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방 IT융합 비즈니스 모델 사례와 성과 분석 국방 IT융합 비즈니스 모델 사례와 성과 분석 국방 IT융합 비즈니스 모델 사례와 성과 분석 Information technology (IT) convergence have been recognized one of the key drivers in the industry perspective. Especially, IT convergence have been one of the most important innovative way for defense sector. Korea government established IT convergence policy in 2008 and have been applying it to the core industry such as automotive, shipbuilding and defense industries. Recently, the creative vitamin project has been launched. Vitamin 'D' means the way to create the value of defense industry. This research analyzes and evaluates various IT convergence business models based on an operation of defense IT convergence center from 2011 to 2014, which is the industry IT convergence centers. Defense IT convergence business models can be classified into four types of mission area as follows : weapon acquisition and management, military intelligence, military power construction, and resources management. We define the concept of defense IT convergence and describe the framework and processes for applying IT to the defense sector. We analyzes and evaluates various business models designed through defense IT convergence framework and processes."
+        },
+        {
+          "rank": 2,
+          "score": 0.6821040511131287,
+          "doc_id": "JAKO201207364424562",
+          "title": "국방IT융합 추진방법론 및 사례 연구",
+          "abstract": "Information technology convergence has been recognized one of the key drivers in the industry perspective. Korea government established IT convergence policy in 2008 and has been implementing it to the core industry such as automotive, shipbuilding and defense industries. This research analyzes various IT convergence issues based on an operation of defense IT convergence center, one of the industry IT convergence centers. Defense IT convergence issues are as follows : the methods for introducing rapid changing IT to military area, rapid deployment procedures of verified commercial technologies and products, regulations for using of domestic software promotion and so on. We define the concept of defense IT convergence and propose the framework and processes for applying IT to our defense sector as one of industries. Also, we establish various business models in the military perspective using defense IT convergence framework. In this paper, we focus the development of defense IT convergence through the alignment of national IT convergence policy and propose various business models established through operating a defense IT convergence center.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201207364424562&target=NART&cn=JAKO201207364424562",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방IT융합 추진방법론 및 사례 연구 국방IT융합 추진방법론 및 사례 연구 국방IT융합 추진방법론 및 사례 연구 Information technology convergence has been recognized one of the key drivers in the industry perspective. Korea government established IT convergence policy in 2008 and has been implementing it to the core industry such as automotive, shipbuilding and defense industries. This research analyzes various IT convergence issues based on an operation of defense IT convergence center, one of the industry IT convergence centers. Defense IT convergence issues are as follows : the methods for introducing rapid changing IT to military area, rapid deployment procedures of verified commercial technologies and products, regulations for using of domestic software promotion and so on. We define the concept of defense IT convergence and propose the framework and processes for applying IT to our defense sector as one of industries. Also, we establish various business models in the military perspective using defense IT convergence framework. In this paper, we focus the development of defense IT convergence through the alignment of national IT convergence policy and propose various business models established through operating a defense IT convergence center."
+        },
+        {
+          "rank": 3,
+          "score": 0.6500062942504883,
+          "doc_id": "JAKO201415642602449",
+          "title": "IT기업 관점에서의 국방IT융합 추진방향",
+          "abstract": "IT convergence technology can boost the advancement of weapon systems and efficient operation for the military reformation in Korea. This study investigated IT firms' concern about the defense acquisition process for IT-convergent systems and the role of IT firms in the process with Focus Group Interview and in-depth interview on executives of IT firms, and classified the concern to three major issues. They are the clarification of IT firms' role in the defense IT-convergent efforts, the establishment of the control tower for defense IT convergence, and reasonable estimation of software development cost in the defense acquisition process.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201415642602449&target=NART&cn=JAKO201415642602449",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT기업 관점에서의 국방IT융합 추진방향 IT기업 관점에서의 국방IT융합 추진방향 IT기업 관점에서의 국방IT융합 추진방향 IT convergence technology can boost the advancement of weapon systems and efficient operation for the military reformation in Korea. This study investigated IT firms' concern about the defense acquisition process for IT-convergent systems and the role of IT firms in the process with Focus Group Interview and in-depth interview on executives of IT firms, and classified the concern to three major issues. They are the clarification of IT firms' role in the defense IT-convergent efforts, the establishment of the control tower for defense IT convergence, and reasonable estimation of software development cost in the defense acquisition process."
+        },
+        {
+          "rank": 4,
+          "score": 0.6480213403701782,
+          "doc_id": "JAKO201406566439056",
+          "title": "국방IT융합기술의 발전전략에 관한 연구",
+          "abstract": "국방IT융합이란 네트워크중심전(Network Centric Warfare) 개념을 실현하기 위해 새로운 IT 융합기술을 개발하여 실제 전력화하는 것이다. 국방부는 창조경제 시대적 사명인 국방IT융합발전을 위해 국방기술품질원의 국방IT융합 센터를 전담기관으로 지정하였고 융합센터를 중심으로 국방IT융합 과제 발굴을 위한 산 학 연구기관과 군 소요조사, 사전 기술기획 활동하며 국방 도메인 전문가로 구성된 과제기획팀 운영과 선진 기획방법 적용 등을 통해 민간IT 신기술의 적기 도입을 중점적으로 추진하고 있다. 이에 따라 국방IT융합 발전을 위해 국가IT융합 정책 추진과 국방IT융합기술 현상을 이론적으로 고찰하고 종합적으로 분석한 뒤 효과적으로 활용할 수 있는 발전전략이 절실히 요구된다. 본 논문은 국방IT융합발전을 위해 식별된 IT융합 과제를 단계화 추진하고 신설된 국방IT융합센터의 효율성을 제고하며 국방개혁과 연계된 IT융합인재 육성방안을 제시함으로써 스마트 국방을 조기에 달성하고 패러다임의 신속한 전환과 창조경제 구현에도 크게 기여할 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201406566439056&target=NART&cn=JAKO201406566439056",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방IT융합기술의 발전전략에 관한 연구 국방IT융합기술의 발전전략에 관한 연구 국방IT융합기술의 발전전략에 관한 연구 국방IT융합이란 네트워크중심전(Network Centric Warfare) 개념을 실현하기 위해 새로운 IT 융합기술을 개발하여 실제 전력화하는 것이다. 국방부는 창조경제 시대적 사명인 국방IT융합발전을 위해 국방기술품질원의 국방IT융합 센터를 전담기관으로 지정하였고 융합센터를 중심으로 국방IT융합 과제 발굴을 위한 산 학 연구기관과 군 소요조사, 사전 기술기획 활동하며 국방 도메인 전문가로 구성된 과제기획팀 운영과 선진 기획방법 적용 등을 통해 민간IT 신기술의 적기 도입을 중점적으로 추진하고 있다. 이에 따라 국방IT융합 발전을 위해 국가IT융합 정책 추진과 국방IT융합기술 현상을 이론적으로 고찰하고 종합적으로 분석한 뒤 효과적으로 활용할 수 있는 발전전략이 절실히 요구된다. 본 논문은 국방IT융합발전을 위해 식별된 IT융합 과제를 단계화 추진하고 신설된 국방IT융합센터의 효율성을 제고하며 국방개혁과 연계된 IT융합인재 육성방안을 제시함으로써 스마트 국방을 조기에 달성하고 패러다임의 신속한 전환과 창조경제 구현에도 크게 기여할 것이다."
+        },
+        {
+          "rank": 5,
+          "score": 0.6397504210472107,
+          "doc_id": "JAKO201352057197129",
+          "title": "IT 융합기술 기반 국방정보 기술동향 및 발전전략",
+          "abstract": "국방과학기술은 중장기 기획문서체계에 의해 체계적인 기술기획이 수립되고 있다. 또한 합동참모본부의 전략문서와 연계하여 국방과학기술의 중장기 전략을 수립한다. 무기체계는 지휘통제, 감시정찰 및 정밀타격체계로 구성되고, 핵심기술은 정보통신, 센서, 플랫폼 등 8대 기술 분야로 구성된다. 국방정보 기술은 국방에 관한 정보를 생산, 유통 또는 활용하여 국방 분야의 제반 활동을 가능하게 하거나, 미래 전장운용 개념 구현 및 국방경영 효율화를 지원하여 국방비전 및 국방개혁을 달성하는 핵심 기능 역할을 수행하는 것을 의미한다. 국방정보 기술 개발의 목적은 한반도 전 구역에서 실시간 및 근실시간으로 요구 수준 및 정확성을 확보하기 위해 전장가시화, 네트워크화된 지휘통제, 효과 중심 정밀타격, 전쟁지속을 위한 인사, 군수, 동원 등 통합지원체계를 구축하여 미래전 양상과 국방정보화의 특성을 고려한 실시간 정보공유 및 관리 가능한 정보화 환경을 구축하는 데 있다. 본고는 국방정보 기술 체계 및 요소기술에 대한 특성과 적용기술 및 발전 방향을 살펴본다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201352057197129&target=NART&cn=JAKO201352057197129",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 융합기술 기반 국방정보 기술동향 및 발전전략 IT 융합기술 기반 국방정보 기술동향 및 발전전략 IT 융합기술 기반 국방정보 기술동향 및 발전전략 국방과학기술은 중장기 기획문서체계에 의해 체계적인 기술기획이 수립되고 있다. 또한 합동참모본부의 전략문서와 연계하여 국방과학기술의 중장기 전략을 수립한다. 무기체계는 지휘통제, 감시정찰 및 정밀타격체계로 구성되고, 핵심기술은 정보통신, 센서, 플랫폼 등 8대 기술 분야로 구성된다. 국방정보 기술은 국방에 관한 정보를 생산, 유통 또는 활용하여 국방 분야의 제반 활동을 가능하게 하거나, 미래 전장운용 개념 구현 및 국방경영 효율화를 지원하여 국방비전 및 국방개혁을 달성하는 핵심 기능 역할을 수행하는 것을 의미한다. 국방정보 기술 개발의 목적은 한반도 전 구역에서 실시간 및 근실시간으로 요구 수준 및 정확성을 확보하기 위해 전장가시화, 네트워크화된 지휘통제, 효과 중심 정밀타격, 전쟁지속을 위한 인사, 군수, 동원 등 통합지원체계를 구축하여 미래전 양상과 국방정보화의 특성을 고려한 실시간 정보공유 및 관리 가능한 정보화 환경을 구축하는 데 있다. 본고는 국방정보 기술 체계 및 요소기술에 대한 특성과 적용기술 및 발전 방향을 살펴본다."
+        },
+        {
+          "rank": 6,
+          "score": 0.611882209777832,
+          "doc_id": "JAKO200840764969679",
+          "title": "IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향",
+          "abstract": "본 고에서는 국가 R&D를 통해 개발된 IT 융합기술을 소개하고 국책연구결과물의 시범적용을 통해 새로운 사업화 모델을 발굴하고 더불어 지자체와 함께 서비스 모델의 적용을 통한 상용화 추진내용을 소개하였다. 본 사업이 성공적으로 실시되면 일반 국민들이 새로운 IT 기반의 융합서비스를 이용함으로써 유비쿼터스 환경에서의 융합서비스에 대한 인식확산과 신성장동력으로서 IT 융합 산업 활성화에 기여할 것으로 기대하고 있다. BT는 물론이고 NT, 전통산업 등 다양한 분야와 융합을 확대해 국민의 삶을 더욱 윤택하고 행복하게 할 수 있는 따뜻한 IT, 즐거운 IT를 실현할 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200840764969679&target=NART&cn=JAKO200840764969679",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향 IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향 IT 기반 융합기술(의료, IT 융합 중심) 사업화 동향 본 고에서는 국가 R&D를 통해 개발된 IT 융합기술을 소개하고 국책연구결과물의 시범적용을 통해 새로운 사업화 모델을 발굴하고 더불어 지자체와 함께 서비스 모델의 적용을 통한 상용화 추진내용을 소개하였다. 본 사업이 성공적으로 실시되면 일반 국민들이 새로운 IT 기반의 융합서비스를 이용함으로써 유비쿼터스 환경에서의 융합서비스에 대한 인식확산과 신성장동력으로서 IT 융합 산업 활성화에 기여할 것으로 기대하고 있다. BT는 물론이고 NT, 전통산업 등 다양한 분야와 융합을 확대해 국민의 삶을 더욱 윤택하고 행복하게 할 수 있는 따뜻한 IT, 즐거운 IT를 실현할 수 있을 것이다."
+        },
+        {
+          "rank": 7,
+          "score": 0.5955803394317627,
+          "doc_id": "ATN0037467542",
+          "title": "국방 IT 융합 실험 프로그램의 위험관리 요인에 대한 탐색적 연구",
+          "abstract": "4차 산업혁명의 영향으로 국방에서는 IT 기술을 다양한 무기 및 비무기체계에 융합하여 혁신을 추구하고 있고 융합의 대상과 규모가 확대되고 있다. 위험을 식별하고 관리하는 것은 프로젝트 관리의 관점에서 성과를 달성하기 위해 프로젝트를 성공적으로 종료하는 데 중요한 요소이다. 본 연구는 국방 IT 융합실험 프로그램의 위험관리 요소를 파악하고 체계적으로 관리하기 위해 핵심전문가들과 면담를 통한 연구이다. 국방 IT 융합실험 프로그램의 위험관리 요소는 거버넌스 위험요소, 내부 위험요소 및 외부 위험요소로 분류되며 거버넌스 위험요소는 내부 위험 요소에 영향을 미치는 것으로 식별되었다. 본 연구는 국방 IT 융합실험 프로그램 수행에 있어 위험요인의 영향을 분석하기 위한 향후 연구방향을 제시한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0037467542&target=NART&cn=ATN0037467542",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방 IT 융합 실험 프로그램의 위험관리 요인에 대한 탐색적 연구 국방 IT 융합 실험 프로그램의 위험관리 요인에 대한 탐색적 연구 국방 IT 융합 실험 프로그램의 위험관리 요인에 대한 탐색적 연구 4차 산업혁명의 영향으로 국방에서는 IT 기술을 다양한 무기 및 비무기체계에 융합하여 혁신을 추구하고 있고 융합의 대상과 규모가 확대되고 있다. 위험을 식별하고 관리하는 것은 프로젝트 관리의 관점에서 성과를 달성하기 위해 프로젝트를 성공적으로 종료하는 데 중요한 요소이다. 본 연구는 국방 IT 융합실험 프로그램의 위험관리 요소를 파악하고 체계적으로 관리하기 위해 핵심전문가들과 면담를 통한 연구이다. 국방 IT 융합실험 프로그램의 위험관리 요소는 거버넌스 위험요소, 내부 위험요소 및 외부 위험요소로 분류되며 거버넌스 위험요소는 내부 위험 요소에 영향을 미치는 것으로 식별되었다. 본 연구는 국방 IT 융합실험 프로그램 수행에 있어 위험요인의 영향을 분석하기 위한 향후 연구방향을 제시한다."
+        },
+        {
+          "rank": 8,
+          "score": 0.5721620917320251,
+          "doc_id": "JAKO201409739052538",
+          "title": "Smart Defense 를 위한 IT 기술 개발",
+          "abstract": "정보통신기술과 타 산업분야 기술과의 융복합은 전통적인 제조업을 비롯한 의료, 건설 분야뿐 만이 아니라 국방 분야에서도 그 수요가 점점 증대되고 있어 민 군의 공통적인 기술 수요와 요구사항들이 새롭게 대두되고 있다. 미래 전장환경은 점차 네트워크를 근간으로 하는 NCW(Network Centric Warfare)로 전환될 것으로 예측되고 있다. NCW 는 C4I-ISR-PGM 의 사이클로 이루어지는 적의 탐지부터 타격까지를 의미하는 것이다. 이를 위하여는 정보통신 기술이 근간이 되어야 하며, 실제 전장을 모사할 수 있는 사이버 전장환경이 수반되어야 더욱 더 효과적이다. 본 논문에서는 최근에 연구개발이 본격화하고 있는 스마트 국방 IT 기술 개발 현황 및 향후 전망에 대해 제시하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201409739052538&target=NART&cn=JAKO201409739052538",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Smart Defense 를 위한 IT 기술 개발 Smart Defense 를 위한 IT 기술 개발 Smart Defense 를 위한 IT 기술 개발 정보통신기술과 타 산업분야 기술과의 융복합은 전통적인 제조업을 비롯한 의료, 건설 분야뿐 만이 아니라 국방 분야에서도 그 수요가 점점 증대되고 있어 민 군의 공통적인 기술 수요와 요구사항들이 새롭게 대두되고 있다. 미래 전장환경은 점차 네트워크를 근간으로 하는 NCW(Network Centric Warfare)로 전환될 것으로 예측되고 있다. NCW 는 C4I-ISR-PGM 의 사이클로 이루어지는 적의 탐지부터 타격까지를 의미하는 것이다. 이를 위하여는 정보통신 기술이 근간이 되어야 하며, 실제 전장을 모사할 수 있는 사이버 전장환경이 수반되어야 더욱 더 효과적이다. 본 논문에서는 최근에 연구개발이 본격화하고 있는 스마트 국방 IT 기술 개발 현황 및 향후 전망에 대해 제시하고자 한다."
+        },
+        {
+          "rank": 9,
+          "score": 0.5695223212242126,
+          "doc_id": "JAKO201207364424561",
+          "title": "공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점",
+          "abstract": "Information technology is a useful strategic weapon that can create competitive advantage and new business opportunity by applying it in the organization' value chain. IT convergence can be understood as an attempt of industrial level IT adoption to facilitate the innovation of the industry and the birth of a new industry. This study provides the comprehensive review of the Korean government' three IT assimilation programs, ubiquitous technology diffusion program of the Ministry of Knowledge Economy, u-service program of the Ministry of Public Administration and Security, and u-Defence cooperation program of the Department of Defense. The analysis is done through the interpretation of the existing literature and the logic model. The result proposes inter-agency cooperation and building of new technology road-map in the planning stage, flexible management in the execution phase, and failure tolerant evaluation system. The proposal for developing competencies and institutional foundations for IT convergence also presented.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201207364424561&target=NART&cn=JAKO201207364424561",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점 공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점 공공부문 IT신기술 적용사업의 추진현황 평가와 정책적 시사점 Information technology is a useful strategic weapon that can create competitive advantage and new business opportunity by applying it in the organization' value chain. IT convergence can be understood as an attempt of industrial level IT adoption to facilitate the innovation of the industry and the birth of a new industry. This study provides the comprehensive review of the Korean government' three IT assimilation programs, ubiquitous technology diffusion program of the Ministry of Knowledge Economy, u-service program of the Ministry of Public Administration and Security, and u-Defence cooperation program of the Department of Defense. The analysis is done through the interpretation of the existing literature and the logic model. The result proposes inter-agency cooperation and building of new technology road-map in the planning stage, flexible management in the execution phase, and failure tolerant evaluation system. The proposal for developing competencies and institutional foundations for IT convergence also presented."
+        },
+        {
+          "rank": 10,
+          "score": 0.5669804811477661,
+          "doc_id": "JAKO201122138618997",
+          "title": "국방정보화 전망과 미래 유망 국방정보기술 발굴",
+          "abstract": "최근 IT기술의 발전과 기술융합으로 다양한 기술이 급속하게 변화하고 있다. 이에 따라 정부에서도 중장기 전략적 기술개발 목표를 달성하기 위해 필요한 기술을 발굴하고 기술로드맵을 제시하고 있다. 국방에서는 무기체계 중심으로 국방과학기술 기획 프로세스를 정립하였으나, 국방 IT 분야는 아직 그 틀이 마련되지 못했다고 할 수 있다. 이에 따라, 본 논문에서는 국방 정보기술 환경분석을 통한 국방정보화 전망을 제시하였고, 국방 정보기술 조사 분석 방법론을 통한 미래 유망 국방정보기술을 발굴하고, 국방 정보기술 기획 발전 방안을 제시하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201122138618997&target=NART&cn=JAKO201122138618997",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방정보화 전망과 미래 유망 국방정보기술 발굴 국방정보화 전망과 미래 유망 국방정보기술 발굴 국방정보화 전망과 미래 유망 국방정보기술 발굴 최근 IT기술의 발전과 기술융합으로 다양한 기술이 급속하게 변화하고 있다. 이에 따라 정부에서도 중장기 전략적 기술개발 목표를 달성하기 위해 필요한 기술을 발굴하고 기술로드맵을 제시하고 있다. 국방에서는 무기체계 중심으로 국방과학기술 기획 프로세스를 정립하였으나, 국방 IT 분야는 아직 그 틀이 마련되지 못했다고 할 수 있다. 이에 따라, 본 논문에서는 국방 정보기술 환경분석을 통한 국방정보화 전망을 제시하였고, 국방 정보기술 조사 분석 방법론을 통한 미래 유망 국방정보기술을 발굴하고, 국방 정보기술 기획 발전 방안을 제시하였다."
+        },
+        {
+          "rank": 11,
+          "score": 0.5509689450263977,
+          "doc_id": "NART51554091",
+          "title": "IT 컨버전스기술 기반의 지역 방재정보통신산업 도출",
+          "abstract": "본 연구에서는 IT 선도 기술의 동향을 분석하고 IT 컨버전스 산업의 방향을 분석하였다. 또한 특정 지역의 산업 및 기술동향을 분석하여 산업간 융합을 통한 신산업 도출방법을 제안 하였는 바, 지역별 특수성을 분석하기 위하여 산업정책, 지역기반 산업과 IT 산업 그리고 인프라 등 과 같은 현황을 고려하였다. 결과적으로, 지역사업화 매력도와 사업화 경쟁력을 고려한 육성 사업군이 선정된 바, 방재산업과 연계된 방재정보통신 산업 모델을 제안한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART51554091&target=NART&cn=NART51554091",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 컨버전스기술 기반의 지역 방재정보통신산업 도출 IT 컨버전스기술 기반의 지역 방재정보통신산업 도출 IT 컨버전스기술 기반의 지역 방재정보통신산업 도출 본 연구에서는 IT 선도 기술의 동향을 분석하고 IT 컨버전스 산업의 방향을 분석하였다. 또한 특정 지역의 산업 및 기술동향을 분석하여 산업간 융합을 통한 신산업 도출방법을 제안 하였는 바, 지역별 특수성을 분석하기 위하여 산업정책, 지역기반 산업과 IT 산업 그리고 인프라 등 과 같은 현황을 고려하였다. 결과적으로, 지역사업화 매력도와 사업화 경쟁력을 고려한 육성 사업군이 선정된 바, 방재산업과 연계된 방재정보통신 산업 모델을 제안한다."
+        },
+        {
+          "rank": 12,
+          "score": 0.5445612072944641,
+          "doc_id": "ATN0030183928",
+          "title": "기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례",
+          "abstract": "본 연구는 기술연관분석으로 단기 상용화를 위한 기술개발과제에 투입된 기술간 융합현황을 분석하였다. 기술연관분석은 산업구조분석의 체계를 기술기획 분야에 적용한 것이다. 본 사례는 기술연관분석을 활용하여 기술과 제품 간 연관도를 중심으로 분석하였으며 분석대상은 중소기업기술정보진흥원의 ' '12년 중소기업 융 복합기술개발사업'에 신청한 401개 과제이다. 분석과정은 다음과 같다. 401개 개별과제에 대해서 투입된 기술은 기술로, 개발과제에서 산출을 제품으로 정의하고 이를 투입과 산출의 행렬로 정리하였다. 투입으로 정의한 기술은 국가과학기술표준분류 상의 소분류를 분류하고, 산출로 정의한 제품은 한국표준산업분류 상의 세세분류로 정의하였다. 즉, 기술을 투입으로, 제품을 산출로 정의하여 기술의 파급도를 분석하였으며 이에 기초하여 기술연관도를 작성하였다 분석결과, IT융합에서는 임베디드 S/W의 기술파급도가 가장 높았으며, ET융합에서는 금형의 기술파급도가 가장 높았고 BT융합은 기능성 화장품 개발기술의 기술파급도가 가장 높았다. 전체적으로 IT융합에서 기술파급도가 높은 요소기술이 많았으며, ET융합에서 기술파급도가 높은 요소기술이 작았다. 따라서 기술파급도가 높은 요소기술에 대한 투자가 융합을 활성화하는 데 중요하며 전체적으로 IT분야가 요소기술의 투자 효과가 높을 것으로 판단한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030183928&target=NART&cn=ATN0030183928",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례 기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례 기술연관분석을 활용한 기술융합구조 분석: 중소기업 융·복합기술개발사업 사례 본 연구는 기술연관분석으로 단기 상용화를 위한 기술개발과제에 투입된 기술간 융합현황을 분석하였다. 기술연관분석은 산업구조분석의 체계를 기술기획 분야에 적용한 것이다. 본 사례는 기술연관분석을 활용하여 기술과 제품 간 연관도를 중심으로 분석하였으며 분석대상은 중소기업기술정보진흥원의 ' '12년 중소기업 융 복합기술개발사업'에 신청한 401개 과제이다. 분석과정은 다음과 같다. 401개 개별과제에 대해서 투입된 기술은 기술로, 개발과제에서 산출을 제품으로 정의하고 이를 투입과 산출의 행렬로 정리하였다. 투입으로 정의한 기술은 국가과학기술표준분류 상의 소분류를 분류하고, 산출로 정의한 제품은 한국표준산업분류 상의 세세분류로 정의하였다. 즉, 기술을 투입으로, 제품을 산출로 정의하여 기술의 파급도를 분석하였으며 이에 기초하여 기술연관도를 작성하였다 분석결과, IT융합에서는 임베디드 S/W의 기술파급도가 가장 높았으며, ET융합에서는 금형의 기술파급도가 가장 높았고 BT융합은 기능성 화장품 개발기술의 기술파급도가 가장 높았다. 전체적으로 IT융합에서 기술파급도가 높은 요소기술이 많았으며, ET융합에서 기술파급도가 높은 요소기술이 작았다. 따라서 기술파급도가 높은 요소기술에 대한 투자가 융합을 활성화하는 데 중요하며 전체적으로 IT분야가 요소기술의 투자 효과가 높을 것으로 판단한다."
+        },
+        {
+          "rank": 13,
+          "score": 0.5442146062850952,
+          "doc_id": "ART003095034",
+          "title": "국방 AI 연구 및 개발을 위한 환경 구성 제안",
+          "abstract": "본 논문은 국방 분야 AI 연구 및 개발을 위한 환경 구성에 관한 체계적인 접근을제시한다. 이를 위해 상용 인터넷망, 국방 인터넷망, 그리고 국방망의 세 가지주요 구성 요소를 중심으로 연구 환경을 설명한다. 첫째, 상용 인터넷망은 민간공공 클라우드, 웹사이트, 그리고 제한 구역으로 구분된다. 민간 공공 클라우드는공개 데이터를 활용한 AI 연구 및 개발의 기본 플랫폼으로 활용되며, 웹사이트는필요한 외부 데이터 및 소프트웨어의 획득을 위해 사용된다. 특히 제한 구역은승인된 연구 인력만이 접근할 수 있으며, 외부 데이터 및 소프트웨어와 군데이터를 활용한 연구가 진행된다. 둘째, 국방 인터넷망은 상용 인터넷망과국방망 간의 AI 및 데이터 자료 교환을 담당한다. 이를 통해 개발된 AI 모델과데이터는 보다 안전하게 공유되며, 연동 작업이 이루어진다. 셋째, 국방망은 국방지능형 플랫폼과 각 군 및 연구기관의 AI 플랫폼으로 구성된다. 여기서는 상용인터넷망에서 개발된 AI 모델은 연합학습을 통해 지속적인 성능 개선이이루어진다. 이러한 체계적인 환경 구성은 국방 분야의 AI 연구 및 개발을효율적이고 안전하게 진행할 수 있는 기반을 마련한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ART003095034&target=NART&cn=ART003095034",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방 AI 연구 및 개발을 위한 환경 구성 제안 국방 AI 연구 및 개발을 위한 환경 구성 제안 국방 AI 연구 및 개발을 위한 환경 구성 제안 본 논문은 국방 분야 AI 연구 및 개발을 위한 환경 구성에 관한 체계적인 접근을제시한다. 이를 위해 상용 인터넷망, 국방 인터넷망, 그리고 국방망의 세 가지주요 구성 요소를 중심으로 연구 환경을 설명한다. 첫째, 상용 인터넷망은 민간공공 클라우드, 웹사이트, 그리고 제한 구역으로 구분된다. 민간 공공 클라우드는공개 데이터를 활용한 AI 연구 및 개발의 기본 플랫폼으로 활용되며, 웹사이트는필요한 외부 데이터 및 소프트웨어의 획득을 위해 사용된다. 특히 제한 구역은승인된 연구 인력만이 접근할 수 있으며, 외부 데이터 및 소프트웨어와 군데이터를 활용한 연구가 진행된다. 둘째, 국방 인터넷망은 상용 인터넷망과국방망 간의 AI 및 데이터 자료 교환을 담당한다. 이를 통해 개발된 AI 모델과데이터는 보다 안전하게 공유되며, 연동 작업이 이루어진다. 셋째, 국방망은 국방지능형 플랫폼과 각 군 및 연구기관의 AI 플랫폼으로 구성된다. 여기서는 상용인터넷망에서 개발된 AI 모델은 연합학습을 통해 지속적인 성능 개선이이루어진다. 이러한 체계적인 환경 구성은 국방 분야의 AI 연구 및 개발을효율적이고 안전하게 진행할 수 있는 기반을 마련한다."
+        },
+        {
+          "rank": 14,
+          "score": 0.5423780679702759,
+          "doc_id": "JAKO200665349434500",
+          "title": "IT-BT-NT 기술 융합에 따른 산업육성전략",
+          "abstract": "최근 IT, BT, NT 기술간 융합이 가속화되면서 새로운 형태의 기술과 서비스가 등장하고 있다. 미국, 일본, 유럽 등 선진국은 정부와 기업이 연대하여 기술간 융합을 고부가가치 창출에 필요한 첨단기술로 인식하고 융합기술 개발을 적극적으로 추진하고 있고, 우리 정부도 과학기술부, 산업자원부, 정보통신부를 중심으로 융합기술 발전계획을 수립하고 있다. 융합기술 개발을 통해 미래의 핵심기술을 확보하고, 컨버전스 시대의 조류에 대응하며, 새로운 성장동력을 창출하고, 건강하고 안전한 삶을 실현할 수 있다. 본고에서는 먼저 IT-BT-NT 융합기술의 분류, 특징 및 기대효과를 살펴보고, 산업육성전략 방안을 제시하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200665349434500&target=NART&cn=JAKO200665349434500",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT-BT-NT 기술 융합에 따른 산업육성전략 IT-BT-NT 기술 융합에 따른 산업육성전략 IT-BT-NT 기술 융합에 따른 산업육성전략 최근 IT, BT, NT 기술간 융합이 가속화되면서 새로운 형태의 기술과 서비스가 등장하고 있다. 미국, 일본, 유럽 등 선진국은 정부와 기업이 연대하여 기술간 융합을 고부가가치 창출에 필요한 첨단기술로 인식하고 융합기술 개발을 적극적으로 추진하고 있고, 우리 정부도 과학기술부, 산업자원부, 정보통신부를 중심으로 융합기술 발전계획을 수립하고 있다. 융합기술 개발을 통해 미래의 핵심기술을 확보하고, 컨버전스 시대의 조류에 대응하며, 새로운 성장동력을 창출하고, 건강하고 안전한 삶을 실현할 수 있다. 본고에서는 먼저 IT-BT-NT 융합기술의 분류, 특징 및 기대효과를 살펴보고, 산업육성전략 방안을 제시하고자 한다."
+        },
+        {
+          "rank": 15,
+          "score": 0.5373262166976929,
+          "doc_id": "NART69919368",
+          "title": "IT-융합을 통한 “지능형 에너지 소프트웨어 시스템의 핵심기술”을 개발하는 임베디드소프트웨어 융합연구센터",
+          "abstract": "",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART69919368&target=NART&cn=NART69919368",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT-융합을 통한 “지능형 에너지 소프트웨어 시스템의 핵심기술”을 개발하는 임베디드소프트웨어 융합연구센터 IT-융합을 통한 “지능형 에너지 소프트웨어 시스템의 핵심기술”을 개발하는 임베디드소프트웨어 융합연구센터 IT-융합을 통한 “지능형 에너지 소프트웨어 시스템의 핵심기술”을 개발하는 임베디드소프트웨어 융합연구센터 "
+        },
+        {
+          "rank": 16,
+          "score": 0.5338642001152039,
+          "doc_id": "JAKO201624240304501",
+          "title": "기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용",
+          "abstract": "본 사례는 기술융합의 구조를 네트워크 기법을 이용하여 분석한 것이다. 좀 더 구체적으로 설명하면, 제품군을 매개로 투입기술들 간의 융합구조를 네트워크 분석 기법을 적용하여 분석하였으며, 제품군과 투입기술을 동시에 고려하기 위해서 2-mode 네트워크 분석을 적용하였다. 제품군은 개발목표에서 파악하여 표준산업분류에 따라 정의하고 기술은 개발에 투입된 기술들로 파악하여 국가과학기술표준분류에 따라 정의하였다. 본 연구의 대상은 중소기술정보진흥원의 융복합기술개발 사업에 신청한 401개 과제이다. 분석결과, IT분야는 특정기술이 다양한 제품군에 연결되는 구조이지만 BT분야에서는 특정 제품군을 중심으로 일부 기술은 공통적으로 적용되지만 상당수의 기술이 각기 제품군에 투입되고 있는 형태이다. 따라서 융합분야 마다 기술융합의 구조가 다른 것을 파악할 수 있었다. 투입기술의 연결중심성과 제품군을 매개로한 투입기술의 연결 중심성도 약시 차이가 있다. IT분야에서는 임베디드S/W가 2가지 경우에 모두 연결중심성이 가장 높았다. BT에서 발효공학과 기능성화장품기술이 투입기술의 연결중심성은 가장 높았지만 기능성화장품기술만 제품군을 매개로 투입기술의 연결중심성은 가장 높다. 즉, 특정제품군에 투입빈도가 높은 기술이다. 본 사례는 실제 기술개발과제에서 기술융합을 정의하고 그 구조를 분석하였다는 것이다. 본 사례의 의미는 융합기술개발과제를 관리하고 기획하는 데 유용한 분석 툴을 제시했다는 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201624240304501&target=NART&cn=JAKO201624240304501",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용 기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용 기술융합 구조 분석을 위한 사례연구: 2-mode 네트워크분석 활용 본 사례는 기술융합의 구조를 네트워크 기법을 이용하여 분석한 것이다. 좀 더 구체적으로 설명하면, 제품군을 매개로 투입기술들 간의 융합구조를 네트워크 분석 기법을 적용하여 분석하였으며, 제품군과 투입기술을 동시에 고려하기 위해서 2-mode 네트워크 분석을 적용하였다. 제품군은 개발목표에서 파악하여 표준산업분류에 따라 정의하고 기술은 개발에 투입된 기술들로 파악하여 국가과학기술표준분류에 따라 정의하였다. 본 연구의 대상은 중소기술정보진흥원의 융복합기술개발 사업에 신청한 401개 과제이다. 분석결과, IT분야는 특정기술이 다양한 제품군에 연결되는 구조이지만 BT분야에서는 특정 제품군을 중심으로 일부 기술은 공통적으로 적용되지만 상당수의 기술이 각기 제품군에 투입되고 있는 형태이다. 따라서 융합분야 마다 기술융합의 구조가 다른 것을 파악할 수 있었다. 투입기술의 연결중심성과 제품군을 매개로한 투입기술의 연결 중심성도 약시 차이가 있다. IT분야에서는 임베디드S/W가 2가지 경우에 모두 연결중심성이 가장 높았다. BT에서 발효공학과 기능성화장품기술이 투입기술의 연결중심성은 가장 높았지만 기능성화장품기술만 제품군을 매개로 투입기술의 연결중심성은 가장 높다. 즉, 특정제품군에 투입빈도가 높은 기술이다. 본 사례는 실제 기술개발과제에서 기술융합을 정의하고 그 구조를 분석하였다는 것이다. 본 사례의 의미는 융합기술개발과제를 관리하고 기획하는 데 유용한 분석 툴을 제시했다는 것이다."
+        },
+        {
+          "rank": 17,
+          "score": 0.5318467617034912,
+          "doc_id": "JAKO201120661418793",
+          "title": "IT융합 헬스케어기술",
+          "abstract": "본고에서는 IT 기술의 급속한 발전과 보급에 힘입어 최근 많은 관심을 끌고 있는 미래의 의료형태인 유헬스케어에 필요한 IT융합 헬스케어기술을 소개하였다. IT융합 헬스케어기술이 성공적으로 실시되면 맞춤형 헬스케어 서비스와 웰빙을 필요로 하는 많은 이용자의 요구에 의해서 헬스케어는 환자 중심의 질병 및 증상을 완화하고, 치료하는 개념에서 점차 일반인의 건강을 증진하고 질병을 예방하는 개념으로 변화 되고 있다. 이를 위해서는 IT 기술과 의료서비스를 융합하여 언제 어디서나 예방, 진료, 치료 그리고 사후관리를 받을 수 있는 유헬스케어 서비스가 제공될 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201120661418793&target=NART&cn=JAKO201120661418793",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT융합 헬스케어기술 IT융합 헬스케어기술 IT융합 헬스케어기술 본고에서는 IT 기술의 급속한 발전과 보급에 힘입어 최근 많은 관심을 끌고 있는 미래의 의료형태인 유헬스케어에 필요한 IT융합 헬스케어기술을 소개하였다. IT융합 헬스케어기술이 성공적으로 실시되면 맞춤형 헬스케어 서비스와 웰빙을 필요로 하는 많은 이용자의 요구에 의해서 헬스케어는 환자 중심의 질병 및 증상을 완화하고, 치료하는 개념에서 점차 일반인의 건강을 증진하고 질병을 예방하는 개념으로 변화 되고 있다. 이를 위해서는 IT 기술과 의료서비스를 융합하여 언제 어디서나 예방, 진료, 치료 그리고 사후관리를 받을 수 있는 유헬스케어 서비스가 제공될 수 있을 것이다."
+        },
+        {
+          "rank": 18,
+          "score": 0.5289968252182007,
+          "doc_id": "JAKO200957957227608",
+          "title": "ST - IT 기술 융합 발전 방향",
+          "abstract": "본 논문에서는 우주기술과 정보기술 융합이 단순한 화두가 아니라 우리나라 신성장동력 엔진의 키워드로 자리매김 할 수 있도록 ST-IT 융합기술이 무엇이고, 우리나라의 ST 및 IT 기술현황을 소개한다. 향후 ST-IT 융합기술의 발달에 따라 기술 및 산업 간의 벽이 허물어지고 새로운 가치와 시장이 창출되는 등 역동적인 변화가 예상되기 때문에 향후 ST-IT 융합기술 발전 방향을 제시하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200957957227608&target=NART&cn=JAKO200957957227608",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "ST - IT 기술 융합 발전 방향 ST - IT 기술 융합 발전 방향 ST - IT 기술 융합 발전 방향 본 논문에서는 우주기술과 정보기술 융합이 단순한 화두가 아니라 우리나라 신성장동력 엔진의 키워드로 자리매김 할 수 있도록 ST-IT 융합기술이 무엇이고, 우리나라의 ST 및 IT 기술현황을 소개한다. 향후 ST-IT 융합기술의 발달에 따라 기술 및 산업 간의 벽이 허물어지고 새로운 가치와 시장이 창출되는 등 역동적인 변화가 예상되기 때문에 향후 ST-IT 융합기술 발전 방향을 제시하고자 한다."
+        },
+        {
+          "rank": 19,
+          "score": 0.5275036096572876,
+          "doc_id": "NART50293806",
+          "title": "NT-IT 융합기술의 연구개발 동향",
+          "abstract": "NT-IT 융합기술은 나노기술을 IT기술에 접목하여 기존의 IT기술이 구현하지 못하고 있는 새로운 IT 소재/부품/시스템을 가능하게 하는 핵심 원천 기술로서 한계에 다다르고 있는 IT산업 성장에 새로운 성장동력을 제공할 수 있을 것으로 예측되고 있다. 본 고에서는 향후 연구개발, 인력양성 및 국제협력교류 등을 위한 새로운 전략수립이 요구되고 있는 NT-IT 융합기술의 분야 중에서 나노 정보감지 기술, 나노 정보표시 기술, 나노 정보전원 기술에 대하여 국내.외 연구개발 동향 및 산업동향 등을 분석하고 고찰하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART50293806&target=NART&cn=NART50293806",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "NT-IT 융합기술의 연구개발 동향 NT-IT 융합기술의 연구개발 동향 NT-IT 융합기술의 연구개발 동향 NT-IT 융합기술은 나노기술을 IT기술에 접목하여 기존의 IT기술이 구현하지 못하고 있는 새로운 IT 소재/부품/시스템을 가능하게 하는 핵심 원천 기술로서 한계에 다다르고 있는 IT산업 성장에 새로운 성장동력을 제공할 수 있을 것으로 예측되고 있다. 본 고에서는 향후 연구개발, 인력양성 및 국제협력교류 등을 위한 새로운 전략수립이 요구되고 있는 NT-IT 융합기술의 분야 중에서 나노 정보감지 기술, 나노 정보표시 기술, 나노 정보전원 기술에 대하여 국내.외 연구개발 동향 및 산업동향 등을 분석하고 고찰하였다."
+        },
+        {
+          "rank": 20,
+          "score": 0.5272020697593689,
+          "doc_id": "NART131674185",
+          "title": "IT/OT Integration by Design",
+          "abstract": "<P><B>Abstract</B><P>The four Industry 4.0 design principles information transparency, technical assistance, interconnection and decentralized decisions pose challenges in integrating Information Technology (IT) and Operational Technology (OT) solutions in industrial systems. These different solutions have conflicting requirements, making interfaces between them problematic for both systems and organizations. An Industrial Business Process Twin (IBPT) entity, acting as an intermediary between the realms of IT and OT, has been proposed in a previous work, to effectively reduce the amount of required IT/OT interfaces in an attempt of overcoming this situation. In this work, we investigate the effects of this approach during the design phase. We argue that, by eliminating potentially conflicting direct interfaces between IT and OT stakeholders within the organizational structure, this approach effectively eliminates conflicting communication channels within the system design. To verify our argument, we develop a model of our IBPT concept according to the Reference Architecture Model Industrie 4.0 (RAMI4.0) using an Industry 4.0 scenario addressing the four essential Industry 4.0 design principles. Results show that the IBPT approach indeed eliminates potentially conflicting IT/OT interfaces during the system design phase.</P></P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART131674185&target=NART&cn=NART131674185",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT/OT Integration by Design IT/OT Integration by Design IT/OT Integration by Design <P><B>Abstract</B><P>The four Industry 4.0 design principles information transparency, technical assistance, interconnection and decentralized decisions pose challenges in integrating Information Technology (IT) and Operational Technology (OT) solutions in industrial systems. These different solutions have conflicting requirements, making interfaces between them problematic for both systems and organizations. An Industrial Business Process Twin (IBPT) entity, acting as an intermediary between the realms of IT and OT, has been proposed in a previous work, to effectively reduce the amount of required IT/OT interfaces in an attempt of overcoming this situation. In this work, we investigate the effects of this approach during the design phase. We argue that, by eliminating potentially conflicting direct interfaces between IT and OT stakeholders within the organizational structure, this approach effectively eliminates conflicting communication channels within the system design. To verify our argument, we develop a model of our IBPT concept according to the Reference Architecture Model Industrie 4.0 (RAMI4.0) using an Industry 4.0 scenario addressing the four essential Industry 4.0 design principles. Results show that the IBPT approach indeed eliminates potentially conflicting IT/OT interfaces during the system design phase.</P></P>"
+        },
+        {
+          "rank": 21,
+          "score": 0.5262883901596069,
+          "doc_id": "DIKO0014947039",
+          "title": "국방 분야 빅데이터 성숙도 모형 개발에 관한 연구",
+          "abstract": "Over the past decade, defense intelligence organizations have evolved rapidly to perform new missions. They have developed new capabilities and adapted their business processes, especially in support of joint and complex military operations. But in the coming decade, their greatest challenge will be to develop new capabilities to manage and exploit big data. We use the term big data to mean the exponentially increasing amount of digital information being created by new information technologies—such as mobile Internet, cloud storage, social networking, and the “Internet of things”—and the advanced analytics used to process that data. Big data yields not simply a quantitative increase in information, but a qualitative change in how we create new knowledge and understand the world. These data-related information technologies have already begun to revolutionize commerce and science, transforming the economy and acting as enablers for other game-changing technology trends. In defense intelligence communities, some of these technologies have been adopted for tasks, including technical collection and operational intelligence fusion—but big data의 impact on all-source intelligence analysis has scarcely been examined.&amp;#xD; Defense Big Data Maturity Models(DBDMM) are the artefacts used to measure defense big data maturity. These models help organizations to create structure around their big data capabilities and to identify where to start. They provide tools that assist organizations to define goals around their big data program and to communicate their big data vision to the entire organization. DBDMMs also provide a methodology to measure and monitor the state of a defense big data capability, the effort required to complete their current stage or phase of maturity and to progress to the next stage. Additionally, DBDMMs measure and manage the speed of both the progress and adoption of big data programs in the organization.&amp;#xD; &amp;#xD; The goals of DBDMMs are:&amp;#xD; 1) To provide a capability assessment tool that generates specific focus on big data in key defense areas&amp;#xD; 2) To help guide development milestones&amp;#xD; 3) To avoid pitfalls in establishing and building big data capabilities&amp;#xD; &amp;#xD; Six assessment areas of DBDMMs refer to ① big data policy, ② big data organization, ③ big data use and process, ④ big data technology, ⑤ big data security, and ⑥ big data people. And the subcomponents include alignment, architecture, data, data governance, delivery, development, measurement, program governance, scope, skills, statistical modelling, technology, value and visualization etc.&amp;#xD; &amp;#xD; The five stages of maturity of the proposed model are proposed as follows: &amp;#xD; 1) Awareness - the starting stage for use of a new or undocumented repeating process. The awarenes stage as a pre–big data environment. During this stage the organization has a low awareness of big data or its value; There is little to no executive support for the effort and only some people in the organization are interested in potential value of big data; The Organization understand the benefits of analytics and may have a data warehouse. An organization의 governance strategy is typically more IT-centric rather than being integrative business-and-IT centric.&amp;#xD; 2) Start-up - the process is at least big data sufficiently. During the pre-adoption stage: The organization start to investigate big data analytics.&amp;#xD; 3) Investment - the financing is defined/confirmed as a standard business process&amp;#xD; 4) Strategic utilization - the process is quantitatively managed in accordance with defense metric view point.&amp;#xD; 5) Optimization - process management includes deliberate process optimization/improvement.&amp;#xD; &amp;#xD; The study helps defense related organizations in Korea determine 1) where it currently lands on the big data maturity spectrum, and 2) take steps to get to the next level.빅데이터 시대를 맞이하여 국방부문에서도 앞 다투어 빅데이터 정책 및 사업을 추진하고 있다. 그러나 내부를 파악해보면 데이터 수집과 분석 능력을 보유한 일부 IT기업이나 금융회사 등 대기업 중심으로 추진되고 있고 국방 분야의 경우에는 단발성 프로젝트 위주로 빅데이터 사업을 제한적으로 시행하거나 기존에 수행해오던 정보화 관련 사업을 빅데이터 사업으로 사업 명칭만 바꾼 사례도 있다. &amp;#xD; 국방 빅데이터 성숙도 모형은 국방과 연관된 분야에서 빅데이터 정책을 계획수립 또는 수립하고 있거나 현재 도입중인 군관련 기관 및 방산업체들이 이러한 문제에 직면하게 되었을 때 필요한 일종의 지침을 제공하기 위한 목적으로 개발하였다. 즉, 국방 빅데이터 성숙도 모형은 국방 빅데이터 정책 전반에 대한 이해를 제고하고, 조직구성원들과 협력 및 의사소통을 구할 수 있으며, 빅데이터와 관련하여 무엇을 어디에서부터 개시해야 하는지에 대한 확실한 가이드라인을 제공한다. 그리고 지금 무엇을 하고 있으며 어떤 것을 못하고 있는지, 빅데이터 수준이 어디까지 와있고 어느 정도의 수준에까지 도달했는지 기준을 제공한다. 또한 향후 빅데이터 정책이나 추진의 방향성이 어떠한지도 제시해 주며, 또한 국방 분야의 빅데이터 수준을 진단하거나 상호 비교 및 평가하여 국방 분야 빅데이터 정책 수립에 활용될 수 있을 것이다. &amp;#xD; 빅데이터 성숙도 모형은 평가영역과 발전단계의 수로 구성된다. 본 논문에서는 평가영역을 설정하기 위하여 전문가를 대상으로 한 합의 델파이 방법(Consensus Delphi method)을 적용하여 ① 빅데이터 정책, ② 빅데이터 조직, ③ 빅데이터 활용 및 프로세스, ④ 빅데이터 기술, ⑤ 빅데이터 보안, ⑥ 빅데이터 인력의 6개 영역을 선정하였다. 빅데이터 정책에는 빅데이터 계획과 빅데이터 전략, 빅데이터 정책 결정 등을 포함하고 있으며, 빅데이터 조직에는 빅데이터 전담조직 및 추진 체계, 빅데이터 거버넌스 구축 및 빅데이터 표준화와 품질관리 조직 등을 평가 대상으로 하고 있으며, 빅데이터 활용 및 프로세스에는 데이터의 출처 및 용도, 빅데이터 생성과정, 빅데이터 구조를 포함하고 있으며, 빅데이터 기술에는 빅데이터의 수집, 저장 및 분석 역량과 최적화 기술역량을 등을 평가 한다. 빅데이터 보안에는 보안 등급 및 관련 규정 및 공공데이터의 성격을 가지는 경우 개방성에 대한 판단도 주요한 평가 대상으로 포함하고 있으며, 마지막으로 빅데이터 인력에서는 IT전문가 집단의 역량, 데이터 과학자의 역량 및 리더십과 운영인력 등을 평가할 수 있을 것이다. &amp;#xD; 6개의 평가영역과 더불어 성숙도 단계를 인지단계, 착수단계, 예산투입단계, 활용단계, 최적화 단계의 다섯 단계로 구성하였다. 인지단계는 전체적으로 빅데이터에 대한 인식 정도가 낮고 사용 가능한 수준의 빅데이터가 거의 없고 제한된 영역 내에서만 빅데이터 분석이 적용되는 단계를 의미한다. 착수단계는 국방 빅데이터에 대한 종사자의 인식 변화가 태동하며 국방 빅데이터 기술 및 지식을 습득하고 군 고유의 데이터 플랫폼과 인프라 스트럭처를 구성하지만, 도구(tool)과 기술이 제한적인 수준임을 의미한다. 예산투입 단계는 국방 빅데이터 분석 활동의 시작을 의미하는데, 효율적인 빅데이터 사용이 가능하고, 여러 가지 종류의 국방 빅데이터 기술과 빅데이터 조직과 거버넌스 체계가 존재하며 외부 사용자나 방산업체 등에서 생성된 데이터에 대한 이해도가 높은 수준을 의미한다. 활용단계는 빅데이터 분석 기술이 중요해지며 분석 및 해석이 중요해지는 단계로 예측과 시각화 응용 프로그램의 사용이 가능하며 IT 시스템 아키텍처가 군 내부자원의 보안을 보장하는 단계이다. 끝으로 최적화 단계는 국방 빅데이터 분석이 경제적 부가 가치를 창출하는 단계와 연관되며, 군 빅데이터가 강력한 빅데이터 거버넌스 하에 국방 관련 조직 전체로 공유되는 단계이며, 이 단계는 데이터 아트(art) 수준의 작업이 수행되는 단계를 말한다. &amp;#xD; 본 연구에서 개발한 국방 빅데이터 성숙도 모형은 시범 모형의 일종으로서 앞으로 국방 분야의 다양한 과업에서 실질적인 적용을 통하여 수정되고 보완되어 지속적으로 발전되어야 할 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0014947039&target=NART&cn=DIKO0014947039",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국방 분야 빅데이터 성숙도 모형 개발에 관한 연구 국방 분야 빅데이터 성숙도 모형 개발에 관한 연구 국방 분야 빅데이터 성숙도 모형 개발에 관한 연구 Over the past decade, defense intelligence organizations have evolved rapidly to perform new missions. They have developed new capabilities and adapted their business processes, especially in support of joint and complex military operations. But in the coming decade, their greatest challenge will be to develop new capabilities to manage and exploit big data. We use the term big data to mean the exponentially increasing amount of digital information being created by new information technologies—such as mobile Internet, cloud storage, social networking, and the “Internet of things”—and the advanced analytics used to process that data. Big data yields not simply a quantitative increase in information, but a qualitative change in how we create new knowledge and understand the world. These data-related information technologies have already begun to revolutionize commerce and science, transforming the economy and acting as enablers for other game-changing technology trends. In defense intelligence communities, some of these technologies have been adopted for tasks, including technical collection and operational intelligence fusion—but big data의 impact on all-source intelligence analysis has scarcely been examined.&amp;#xD; Defense Big Data Maturity Models(DBDMM) are the artefacts used to measure defense big data maturity. These models help organizations to create structure around their big data capabilities and to identify where to start. They provide tools that assist organizations to define goals around their big data program and to communicate their big data vision to the entire organization. DBDMMs also provide a methodology to measure and monitor the state of a defense big data capability, the effort required to complete their current stage or phase of maturity and to progress to the next stage. Additionally, DBDMMs measure and manage the speed of both the progress and adoption of big data programs in the organization.&amp;#xD; &amp;#xD; The goals of DBDMMs are:&amp;#xD; 1) To provide a capability assessment tool that generates specific focus on big data in key defense areas&amp;#xD; 2) To help guide development milestones&amp;#xD; 3) To avoid pitfalls in establishing and building big data capabilities&amp;#xD; &amp;#xD; Six assessment areas of DBDMMs refer to ① big data policy, ② big data organization, ③ big data use and process, ④ big data technology, ⑤ big data security, and ⑥ big data people. And the subcomponents include alignment, architecture, data, data governance, delivery, development, measurement, program governance, scope, skills, statistical modelling, technology, value and visualization etc.&amp;#xD; &amp;#xD; The five stages of maturity of the proposed model are proposed as follows: &amp;#xD; 1) Awareness - the starting stage for use of a new or undocumented repeating process. The awarenes stage as a pre–big data environment. During this stage the organization has a low awareness of big data or its value; There is little to no executive support for the effort and only some people in the organization are interested in potential value of big data; The Organization understand the benefits of analytics and may have a data warehouse. An organization의 governance strategy is typically more IT-centric rather than being integrative business-and-IT centric.&amp;#xD; 2) Start-up - the process is at least big data sufficiently. During the pre-adoption stage: The organization start to investigate big data analytics.&amp;#xD; 3) Investment - the financing is defined/confirmed as a standard business process&amp;#xD; 4) Strategic utilization - the process is quantitatively managed in accordance with defense metric view point.&amp;#xD; 5) Optimization - process management includes deliberate process optimization/improvement.&amp;#xD; &amp;#xD; The study helps defense related organizations in Korea determine 1) where it currently lands on the big data maturity spectrum, and 2) take steps to get to the next level.빅데이터 시대를 맞이하여 국방부문에서도 앞 다투어 빅데이터 정책 및 사업을 추진하고 있다. 그러나 내부를 파악해보면 데이터 수집과 분석 능력을 보유한 일부 IT기업이나 금융회사 등 대기업 중심으로 추진되고 있고 국방 분야의 경우에는 단발성 프로젝트 위주로 빅데이터 사업을 제한적으로 시행하거나 기존에 수행해오던 정보화 관련 사업을 빅데이터 사업으로 사업 명칭만 바꾼 사례도 있다. &amp;#xD; 국방 빅데이터 성숙도 모형은 국방과 연관된 분야에서 빅데이터 정책을 계획수립 또는 수립하고 있거나 현재 도입중인 군관련 기관 및 방산업체들이 이러한 문제에 직면하게 되었을 때 필요한 일종의 지침을 제공하기 위한 목적으로 개발하였다. 즉, 국방 빅데이터 성숙도 모형은 국방 빅데이터 정책 전반에 대한 이해를 제고하고, 조직구성원들과 협력 및 의사소통을 구할 수 있으며, 빅데이터와 관련하여 무엇을 어디에서부터 개시해야 하는지에 대한 확실한 가이드라인을 제공한다. 그리고 지금 무엇을 하고 있으며 어떤 것을 못하고 있는지, 빅데이터 수준이 어디까지 와있고 어느 정도의 수준에까지 도달했는지 기준을 제공한다. 또한 향후 빅데이터 정책이나 추진의 방향성이 어떠한지도 제시해 주며, 또한 국방 분야의 빅데이터 수준을 진단하거나 상호 비교 및 평가하여 국방 분야 빅데이터 정책 수립에 활용될 수 있을 것이다. &amp;#xD; 빅데이터 성숙도 모형은 평가영역과 발전단계의 수로 구성된다. 본 논문에서는 평가영역을 설정하기 위하여 전문가를 대상으로 한 합의 델파이 방법(Consensus Delphi method)을 적용하여 ① 빅데이터 정책, ② 빅데이터 조직, ③ 빅데이터 활용 및 프로세스, ④ 빅데이터 기술, ⑤ 빅데이터 보안, ⑥ 빅데이터 인력의 6개 영역을 선정하였다. 빅데이터 정책에는 빅데이터 계획과 빅데이터 전략, 빅데이터 정책 결정 등을 포함하고 있으며, 빅데이터 조직에는 빅데이터 전담조직 및 추진 체계, 빅데이터 거버넌스 구축 및 빅데이터 표준화와 품질관리 조직 등을 평가 대상으로 하고 있으며, 빅데이터 활용 및 프로세스에는 데이터의 출처 및 용도, 빅데이터 생성과정, 빅데이터 구조를 포함하고 있으며, 빅데이터 기술에는 빅데이터의 수집, 저장 및 분석 역량과 최적화 기술역량을 등을 평가 한다. 빅데이터 보안에는 보안 등급 및 관련 규정 및 공공데이터의 성격을 가지는 경우 개방성에 대한 판단도 주요한 평가 대상으로 포함하고 있으며, 마지막으로 빅데이터 인력에서는 IT전문가 집단의 역량, 데이터 과학자의 역량 및 리더십과 운영인력 등을 평가할 수 있을 것이다. &amp;#xD; 6개의 평가영역과 더불어 성숙도 단계를 인지단계, 착수단계, 예산투입단계, 활용단계, 최적화 단계의 다섯 단계로 구성하였다. 인지단계는 전체적으로 빅데이터에 대한 인식 정도가 낮고 사용 가능한 수준의 빅데이터가 거의 없고 제한된 영역 내에서만 빅데이터 분석이 적용되는 단계를 의미한다. 착수단계는 국방 빅데이터에 대한 종사자의 인식 변화가 태동하며 국방 빅데이터 기술 및 지식을 습득하고 군 고유의 데이터 플랫폼과 인프라 스트럭처를 구성하지만, 도구(tool)과 기술이 제한적인 수준임을 의미한다. 예산투입 단계는 국방 빅데이터 분석 활동의 시작을 의미하는데, 효율적인 빅데이터 사용이 가능하고, 여러 가지 종류의 국방 빅데이터 기술과 빅데이터 조직과 거버넌스 체계가 존재하며 외부 사용자나 방산업체 등에서 생성된 데이터에 대한 이해도가 높은 수준을 의미한다. 활용단계는 빅데이터 분석 기술이 중요해지며 분석 및 해석이 중요해지는 단계로 예측과 시각화 응용 프로그램의 사용이 가능하며 IT 시스템 아키텍처가 군 내부자원의 보안을 보장하는 단계이다. 끝으로 최적화 단계는 국방 빅데이터 분석이 경제적 부가 가치를 창출하는 단계와 연관되며, 군 빅데이터가 강력한 빅데이터 거버넌스 하에 국방 관련 조직 전체로 공유되는 단계이며, 이 단계는 데이터 아트(art) 수준의 작업이 수행되는 단계를 말한다. &amp;#xD; 본 연구에서 개발한 국방 빅데이터 성숙도 모형은 시범 모형의 일종으로서 앞으로 국방 분야의 다양한 과업에서 실질적인 적용을 통하여 수정되고 보완되어 지속적으로 발전되어야 할 것이다."
+        },
+        {
+          "rank": 22,
+          "score": 0.5231296420097351,
+          "doc_id": "JAKO201528764978526",
+          "title": "국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석",
+          "abstract": "Many scholars have addressed the technological convergence of small-medium sized firms in Korea and their impact on the economic growth of nation. Nevertheless, most studies have been investigated the relationship between entrepreneurship and venture creation, and a few studies have analyzed the innovation and technological convergence of SMEs. The purpose of this research is to gain industrial insight into the technological convergence and to suggest a dynamic growth policy for entrepreneurs of SMEs to improve their convergence performance based on IT and BT. Therefore, we intend to propose solutions to these key questions in convergence such as; what are the key patterns in the process of technological convergence of SMEs on IT and BT, and what kinds of strategy do their need? In order to answer these research questions, we adopt network analysis using patent citation information. Results of network analysis revealed that building ecosystem based on government and universities is one of the most important factors for the future growth of SMEs in Korea. Also, the fit between technological convergence direction of SMEs and division of convergence structure of government and universities will be positively associated with dynamic growth of SMEs in Korea. In conclusion, this research extends the current studies on important aspects of SMEs in the technological convergence process by proposing their growth in convergence process to a newly converging context, IT and BT, and shed light on the integrative perspectives of crucial roles of SMEs on innovation performance in the IT and BT technological convergence.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201528764978526&target=NART&cn=JAKO201528764978526",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석 국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석 국내 중소기업의 기술융합 전략 및 성장 정책: IT & BT 융합기술 기반 네트워크 분석 Many scholars have addressed the technological convergence of small-medium sized firms in Korea and their impact on the economic growth of nation. Nevertheless, most studies have been investigated the relationship between entrepreneurship and venture creation, and a few studies have analyzed the innovation and technological convergence of SMEs. The purpose of this research is to gain industrial insight into the technological convergence and to suggest a dynamic growth policy for entrepreneurs of SMEs to improve their convergence performance based on IT and BT. Therefore, we intend to propose solutions to these key questions in convergence such as; what are the key patterns in the process of technological convergence of SMEs on IT and BT, and what kinds of strategy do their need? In order to answer these research questions, we adopt network analysis using patent citation information. Results of network analysis revealed that building ecosystem based on government and universities is one of the most important factors for the future growth of SMEs in Korea. Also, the fit between technological convergence direction of SMEs and division of convergence structure of government and universities will be positively associated with dynamic growth of SMEs in Korea. In conclusion, this research extends the current studies on important aspects of SMEs in the technological convergence process by proposing their growth in convergence process to a newly converging context, IT and BT, and shed light on the integrative perspectives of crucial roles of SMEs on innovation performance in the IT and BT technological convergence."
+        },
+        {
+          "rank": 23,
+          "score": 0.5201191902160645,
+          "doc_id": "JAKO201120661418795",
+          "title": "IT기계융합기술",
+          "abstract": "기계간 지능형 자율 협업을 기반으로 유비쿼터스 생산시스템을 목표로 하는 u-Manufacturing 시스템은 IT와 기계간 융합을 통해 이를 차세대 생산시스템으로서 기존 단위기계 제어에서 공정상 혹은 운영상 연동이 요구되는 일련의 기계들이 상호정보를 교환하고 이를 근거로 제어가 자율적으로 이루어지는 지능형 제어방식을 근간으로 한다. 본고에서는 이러한 궁극적인 IT기계융합시스템의 내용과 그 전단계에 이루어진 다양한 형태의 IT기계융합사례들을 살펴본다. 특히 정밀 생산 공정이 요구되는 공장에서의 기반기술이라 할 수 있는 초정밀 모션시스템에 있어서의 IT융합기술 대한 내용을 고찰하여 미래 IT융합기술의 발전방향을 전망해본다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201120661418795&target=NART&cn=JAKO201120661418795",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT기계융합기술 IT기계융합기술 IT기계융합기술 기계간 지능형 자율 협업을 기반으로 유비쿼터스 생산시스템을 목표로 하는 u-Manufacturing 시스템은 IT와 기계간 융합을 통해 이를 차세대 생산시스템으로서 기존 단위기계 제어에서 공정상 혹은 운영상 연동이 요구되는 일련의 기계들이 상호정보를 교환하고 이를 근거로 제어가 자율적으로 이루어지는 지능형 제어방식을 근간으로 한다. 본고에서는 이러한 궁극적인 IT기계융합시스템의 내용과 그 전단계에 이루어진 다양한 형태의 IT기계융합사례들을 살펴본다. 특히 정밀 생산 공정이 요구되는 공장에서의 기반기술이라 할 수 있는 초정밀 모션시스템에 있어서의 IT융합기술 대한 내용을 고찰하여 미래 IT융합기술의 발전방향을 전망해본다."
+        },
+        {
+          "rank": 24,
+          "score": 0.5196556448936462,
+          "doc_id": "JAKO200316637999215",
+          "title": "비즈니스 모델 분석 프레임 워크의 개발과 적용",
+          "abstract": "본 논문은 신규 비즈니스 모델 설립 시 요구되는 단계적인 접근 방법과 다양한 비즈니스 모델을 분석하기 위한 비즈니스 모델 분석 프레임워크를 제시하는데 목적이 있다. 비즈니스 모델을 가치 창출 방식에 따라서 크게 4가지 유형으로 나누었으며 그 유형들의 파생모델을 제시 하였다. 또한 적용 사례로서 무선랜 서비스를 이용한 새로운 비즈니스 모델을 도출 하였으며 비즈니스 모델 분석 프레임워크를 이용하여 신규 서비스에 대한 적용 가능성을 평가하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200316637999215&target=NART&cn=JAKO200316637999215",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "비즈니스 모델 분석 프레임 워크의 개발과 적용 비즈니스 모델 분석 프레임 워크의 개발과 적용 비즈니스 모델 분석 프레임 워크의 개발과 적용 본 논문은 신규 비즈니스 모델 설립 시 요구되는 단계적인 접근 방법과 다양한 비즈니스 모델을 분석하기 위한 비즈니스 모델 분석 프레임워크를 제시하는데 목적이 있다. 비즈니스 모델을 가치 창출 방식에 따라서 크게 4가지 유형으로 나누었으며 그 유형들의 파생모델을 제시 하였다. 또한 적용 사례로서 무선랜 서비스를 이용한 새로운 비즈니스 모델을 도출 하였으며 비즈니스 모델 분석 프레임워크를 이용하여 신규 서비스에 대한 적용 가능성을 평가하였다."
+        },
+        {
+          "rank": 25,
+          "score": 0.5193228125572205,
+          "doc_id": "JAKO201029848353209",
+          "title": "IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로",
+          "abstract": "The IT convergence industry is expected to create some high added-value, yet the IT convergence service is still in its introductory stage, which requires the utilization of yet to be tried future technologies and development methodologies that have been never tried in the past; therefore, there is certain risk involved regarding the success of development during the introduction of service and the development of technology. From such perspective, this study found examples of the services in the IT convergence industries and the application technologies for the realization of those services; and conducted a research based on the examples, using the technical Characteristics classification; and based on the result, analyzed the standards and the peculiarity of technologies employed for the IT convergence service and the correlation and the complementarity between them; also identified the standards and the peculiarity of technologies required by the IT convergence services and analyzed the correlation between them; and finally analyzed the compatibility between the IT convergence services and the applied technologies. The conclusion of this study is expected to be utilized for selecting technologies for the introduction and the operation of the optimal IT convergence service and as a benchmark as well.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201029848353209&target=NART&cn=JAKO201029848353209",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로 IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로 IT 융합서비스 및 활용기술의 기술속성에 관한 연구 : 산업간 융합을 중심으로 The IT convergence industry is expected to create some high added-value, yet the IT convergence service is still in its introductory stage, which requires the utilization of yet to be tried future technologies and development methodologies that have been never tried in the past; therefore, there is certain risk involved regarding the success of development during the introduction of service and the development of technology. From such perspective, this study found examples of the services in the IT convergence industries and the application technologies for the realization of those services; and conducted a research based on the examples, using the technical Characteristics classification; and based on the result, analyzed the standards and the peculiarity of technologies employed for the IT convergence service and the correlation and the complementarity between them; also identified the standards and the peculiarity of technologies required by the IT convergence services and analyzed the correlation between them; and finally analyzed the compatibility between the IT convergence services and the applied technologies. The conclusion of this study is expected to be utilized for selecting technologies for the introduction and the operation of the optimal IT convergence service and as a benchmark as well."
+        },
+        {
+          "rank": 26,
+          "score": 0.5181753635406494,
+          "doc_id": "DIKO0009986351",
+          "title": "정보시스템의 비용효과 분석모형 : H기업의 사례를 중심으로",
+          "abstract": "기업간의 치열한 경쟁 속에서 정보기술(Information Technology; 이하 IT)이 기업의 경쟁우위 확보와 경영전반의 효율성 제고에 필수불가결한 요소로 인식되면서 이에 대한 투자의 규모는 점점 증가하고 있다. 하지만 점점 늘어가는 IT 에 대한 투자규모에 비해 정보화 투자에 대한 좀 더 합리적이고 체계적인 관리는 아직 부족한 실정이다. 본 연구는 지속적으로 많은 투자가 이루어지는 IT 자원의 효율적 사용을 도모하기 위하여 IT 서비스에 대한 실제 운영원가를 파악할 수 있는 세부절차를 제시하고자 하였다. 또한 동시에 경제적 타당성의 분석에 필요한 투자효과의 화폐화 방안을 제시하고 이를 사례기업에 적용하여 실무에의 활용 가능성을 검증하고자 하였다. 본 연구에서 제시하는 모형은 IT 부서가 현업 부서에 제공하는 IT 서비스의 운영에 필요한 비용을 상세히 분석하여 IT 원가를 체계적으로 파악하는 한편, IT 서비스를 이용함에 따른 효과를 측정하고 정량화함으로써 IT 투자의 타당성을 분석하여 최고 의사결정자나 예산 수립자에게 제시하는데 사용할 수 있도록 구성하였다. 분석모형의 핵심인 IT 비용 및 효과 분석 방법을 이용하여 H사에 실제 적용한 결과 기업들은 IT 서비스 제공에 소요되는 비용을 파악하는 한편 서비스별 원가의 산정 및 사용량에 따른 비용 부과 등에 활용할 수 있으며 IT 서비스 이용으로 인한 IT 효과분석을 통하여 IT 투자의 타당성을 점검하는 동시에 정보화 실천계획의 수립 등에 활용할 수 있을 것으로 보인다. 본 연구의 의의는 연구의 성격상 이론적인 측면보다는 실천적인 측면에 보다 큰 의의를 부여할 수 있다. 첫째, 기존의 IT 투자효과 평가에 관한 연구는 IT 비용의 측정과 투자효과의 측정을 통해 IT 투자의 타당성을 평가하고자 하였으나, 본 연구에서는 IT비용의 측정과 더불어 IT 서비스 제공에 필요한 원가를 세부 비용요소별로 파악함으로써 IT 비용을 통제하고 효율적으로 관리할 수 있는 기틀을 제시하였다. 둘째, IT 서비스의 이용으로 인한 재무적 효과항목 이외의 비재무적 효과항목의 도출 및 화폐가치 산출에 대한 가이드라인을 제시함으로써 본 모델의 적용을 통해 전문 지식 없이도 IT 투자효과 분석에 활용토록 했다. 셋째, 체계적인 IT 비용 및 효과분석을 통하여 IT 서비스의 활용실태를 파악하고 이를 바탕으로 IT 자원의 관리 수준을 제고할 수 있는 방안마련에 활용토록 했다는데 그 의미를 부여할 수 있겠다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0009986351&target=NART&cn=DIKO0009986351",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "정보시스템의 비용효과 분석모형 : H기업의 사례를 중심으로 정보시스템의 비용효과 분석모형 : H기업의 사례를 중심으로 정보시스템의 비용효과 분석모형 : H기업의 사례를 중심으로 기업간의 치열한 경쟁 속에서 정보기술(Information Technology; 이하 IT)이 기업의 경쟁우위 확보와 경영전반의 효율성 제고에 필수불가결한 요소로 인식되면서 이에 대한 투자의 규모는 점점 증가하고 있다. 하지만 점점 늘어가는 IT 에 대한 투자규모에 비해 정보화 투자에 대한 좀 더 합리적이고 체계적인 관리는 아직 부족한 실정이다. 본 연구는 지속적으로 많은 투자가 이루어지는 IT 자원의 효율적 사용을 도모하기 위하여 IT 서비스에 대한 실제 운영원가를 파악할 수 있는 세부절차를 제시하고자 하였다. 또한 동시에 경제적 타당성의 분석에 필요한 투자효과의 화폐화 방안을 제시하고 이를 사례기업에 적용하여 실무에의 활용 가능성을 검증하고자 하였다. 본 연구에서 제시하는 모형은 IT 부서가 현업 부서에 제공하는 IT 서비스의 운영에 필요한 비용을 상세히 분석하여 IT 원가를 체계적으로 파악하는 한편, IT 서비스를 이용함에 따른 효과를 측정하고 정량화함으로써 IT 투자의 타당성을 분석하여 최고 의사결정자나 예산 수립자에게 제시하는데 사용할 수 있도록 구성하였다. 분석모형의 핵심인 IT 비용 및 효과 분석 방법을 이용하여 H사에 실제 적용한 결과 기업들은 IT 서비스 제공에 소요되는 비용을 파악하는 한편 서비스별 원가의 산정 및 사용량에 따른 비용 부과 등에 활용할 수 있으며 IT 서비스 이용으로 인한 IT 효과분석을 통하여 IT 투자의 타당성을 점검하는 동시에 정보화 실천계획의 수립 등에 활용할 수 있을 것으로 보인다. 본 연구의 의의는 연구의 성격상 이론적인 측면보다는 실천적인 측면에 보다 큰 의의를 부여할 수 있다. 첫째, 기존의 IT 투자효과 평가에 관한 연구는 IT 비용의 측정과 투자효과의 측정을 통해 IT 투자의 타당성을 평가하고자 하였으나, 본 연구에서는 IT비용의 측정과 더불어 IT 서비스 제공에 필요한 원가를 세부 비용요소별로 파악함으로써 IT 비용을 통제하고 효율적으로 관리할 수 있는 기틀을 제시하였다. 둘째, IT 서비스의 이용으로 인한 재무적 효과항목 이외의 비재무적 효과항목의 도출 및 화폐가치 산출에 대한 가이드라인을 제시함으로써 본 모델의 적용을 통해 전문 지식 없이도 IT 투자효과 분석에 활용토록 했다. 셋째, 체계적인 IT 비용 및 효과분석을 통하여 IT 서비스의 활용실태를 파악하고 이를 바탕으로 IT 자원의 관리 수준을 제고할 수 있는 방안마련에 활용토록 했다는데 그 의미를 부여할 수 있겠다."
+        },
+        {
+          "rank": 27,
+          "score": 0.5147401094436646,
+          "doc_id": "JAKO200857154855768",
+          "title": "IT 기반 융합정책 방향",
+          "abstract": "최근 급격한 기술혁신으로 기술간 융합이 가속화되면서 융합정책이 새로운 화두로 부상하고 있다. 그러나, 최근까지의 연구결과와 정책과제들을 보면 '융합' 이라는 현상 전반에 대한 이해와 통찰에 기반한 것이 아니라 개별기술 분야에서 나타나고 있는 현상들을 종합하여 '융합정책' 이라는 이름으로 제시되고 있는 듯하여 우려된다. '융합기술'  이란 현재만이 아니라 기술의 진화와 혁신이 발생하는 곳에서는 늘 존재하였다. 단지 최근 들어 '융합' 이라는 용어가 더욱 강조되고 주목을 받는 이유는 기존에 발생하였던 '점진적 융합' 과는 달리 발생속도가 급격하고 그 영역이 대단히 광범위하게 나타나는 '혁신적.광역적 융합' 의 성격을 띄기 때문으로 판단된다. 이러한 '혁신적.광역적 융합' 의 공통점은 어느 분야에서 발생하든 IT를 기반으로 한다는 점이다. 이에 따라 IT는 융합의 실체가 IT로 나타나든 타 분야에 내재화되어 나타나든 모든 분야의 원천기술로 작용할 것이 확실시 된다. 본 고에서는 일대 전환기를 맞고 있는 IT 기반 융합의 의미와 현상을 살펴 보고, 이를 토대로 향후 국민소득 3만 달러, 4만 달러 달성을 위한 IT 기반 융합정책의 방향을 제시하고자 하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200857154855768&target=NART&cn=JAKO200857154855768",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT 기반 융합정책 방향 IT 기반 융합정책 방향 IT 기반 융합정책 방향 최근 급격한 기술혁신으로 기술간 융합이 가속화되면서 융합정책이 새로운 화두로 부상하고 있다. 그러나, 최근까지의 연구결과와 정책과제들을 보면 '융합' 이라는 현상 전반에 대한 이해와 통찰에 기반한 것이 아니라 개별기술 분야에서 나타나고 있는 현상들을 종합하여 '융합정책' 이라는 이름으로 제시되고 있는 듯하여 우려된다. '융합기술'  이란 현재만이 아니라 기술의 진화와 혁신이 발생하는 곳에서는 늘 존재하였다. 단지 최근 들어 '융합' 이라는 용어가 더욱 강조되고 주목을 받는 이유는 기존에 발생하였던 '점진적 융합' 과는 달리 발생속도가 급격하고 그 영역이 대단히 광범위하게 나타나는 '혁신적.광역적 융합' 의 성격을 띄기 때문으로 판단된다. 이러한 '혁신적.광역적 융합' 의 공통점은 어느 분야에서 발생하든 IT를 기반으로 한다는 점이다. 이에 따라 IT는 융합의 실체가 IT로 나타나든 타 분야에 내재화되어 나타나든 모든 분야의 원천기술로 작용할 것이 확실시 된다. 본 고에서는 일대 전환기를 맞고 있는 IT 기반 융합의 의미와 현상을 살펴 보고, 이를 토대로 향후 국민소득 3만 달러, 4만 달러 달성을 위한 IT 기반 융합정책의 방향을 제시하고자 하였다."
+        },
+        {
+          "rank": 28,
+          "score": 0.5132678747177124,
+          "doc_id": "NART36950600",
+          "title": "&#039;IT거버넌스&#039; 핵심 요소와 CEO의 역할 : 기업 업무의 필수 조건&#x2026; 프로세스 개선과정으로 이해해야",
+          "abstract": "",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART36950600&target=NART&cn=NART36950600",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "&#039;IT거버넌스&#039; 핵심 요소와 CEO의 역할 : 기업 업무의 필수 조건&#x2026; 프로세스 개선과정으로 이해해야 &#039;IT거버넌스&#039; 핵심 요소와 CEO의 역할 : 기업 업무의 필수 조건&#x2026; 프로세스 개선과정으로 이해해야 &#039;IT거버넌스&#039; 핵심 요소와 CEO의 역할 : 기업 업무의 필수 조건&#x2026; 프로세스 개선과정으로 이해해야 "
+        },
+        {
+          "rank": 29,
+          "score": 0.5132459998130798,
+          "doc_id": "JAKO201521052964495",
+          "title": "건강운동을 위한 IT 융합기술의 접근 동향",
+          "abstract": "IT 융합은 IT의 자체 고도화를 바탕으로 다른 분야의 기술개발과 산업발전을 견인하거나 새로운 산업창출을 목표로 국가전략적 차원에서 접근을 하고 있으며 연구자원을 집중 투자하고 있다. 이에 IT 융합은 주력산업을 고부가가치화하고, IT 신산업을 창출할 뿐만 아니라, 범부처적으로 추진하는 신성장동력 육성에 기여하는 첨단융합 산업분야로 부상하게 되었다. 건강관련 융합서비스는 기존의 질병 예방과 관리 중심의 치료기술 산업에서 운동/스포츠 및 재활 중심의 엔터테인먼트체험 산업으로 확장되는 추세이다. 따라서 본 논문에서는 IT 융합에 대하여 그 중요성을 지니는 것만큼 건강운동과 관련된 IT 융합기술개발 동향을 파악하고 기존에 진행되었던 주요 기술개발과 융합산업 발전을 위한 방향에 관한 제언을 하고자 한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201521052964495&target=NART&cn=JAKO201521052964495",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "건강운동을 위한 IT 융합기술의 접근 동향 건강운동을 위한 IT 융합기술의 접근 동향 건강운동을 위한 IT 융합기술의 접근 동향 IT 융합은 IT의 자체 고도화를 바탕으로 다른 분야의 기술개발과 산업발전을 견인하거나 새로운 산업창출을 목표로 국가전략적 차원에서 접근을 하고 있으며 연구자원을 집중 투자하고 있다. 이에 IT 융합은 주력산업을 고부가가치화하고, IT 신산업을 창출할 뿐만 아니라, 범부처적으로 추진하는 신성장동력 육성에 기여하는 첨단융합 산업분야로 부상하게 되었다. 건강관련 융합서비스는 기존의 질병 예방과 관리 중심의 치료기술 산업에서 운동/스포츠 및 재활 중심의 엔터테인먼트체험 산업으로 확장되는 추세이다. 따라서 본 논문에서는 IT 융합에 대하여 그 중요성을 지니는 것만큼 건강운동과 관련된 IT 융합기술개발 동향을 파악하고 기존에 진행되었던 주요 기술개발과 융합산업 발전을 위한 방향에 관한 제언을 하고자 한다."
+        },
+        {
+          "rank": 30,
+          "score": 0.5096762776374817,
+          "doc_id": "JAKO201732060956424",
+          "title": "ANP 모형을 이용한 ITIL v3 핵심 프로세스 도출 연구",
+          "abstract": "IT services are provided by many public institutions and companies in order to satisfy various needs of customers. As the modern IT systems become larger and more complex, it becomes more difficult for IT organizations to provide IT services. So, the IT organizations have applied or are planning to apply ITIL (Information Technology Infrastructure Library) in order to provide IT services systematically. The ITIL v3 was revised on July 2011 and have 5 categories, 37 processes, and 113 sub-processes. Therefore, it is known that it is very difficult to satisfy all processes of ITIL v3. If we can concentrate on the core processes of ITIL v3, we will be able to provide IT services more efficiently. The processes of ITIL v3 are defined as some processes influences other processes. Therefore, the core processes can be established using related techniques. We searched for previous research and related information, but we could not find any related research. In this study, we had applied the ANP (Analytic Network Process) techniques to find the core processes of ITIL v3. We expect that IT services will be provided more efficiently because we can be concentrate on the core processes of ITIL v3, which are the results of this study.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201732060956424&target=NART&cn=JAKO201732060956424",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "ANP 모형을 이용한 ITIL v3 핵심 프로세스 도출 연구 ANP 모형을 이용한 ITIL v3 핵심 프로세스 도출 연구 ANP 모형을 이용한 ITIL v3 핵심 프로세스 도출 연구 IT services are provided by many public institutions and companies in order to satisfy various needs of customers. As the modern IT systems become larger and more complex, it becomes more difficult for IT organizations to provide IT services. So, the IT organizations have applied or are planning to apply ITIL (Information Technology Infrastructure Library) in order to provide IT services systematically. The ITIL v3 was revised on July 2011 and have 5 categories, 37 processes, and 113 sub-processes. Therefore, it is known that it is very difficult to satisfy all processes of ITIL v3. If we can concentrate on the core processes of ITIL v3, we will be able to provide IT services more efficiently. The processes of ITIL v3 are defined as some processes influences other processes. Therefore, the core processes can be established using related techniques. We searched for previous research and related information, but we could not find any related research. In this study, we had applied the ANP (Analytic Network Process) techniques to find the core processes of ITIL v3. We expect that IT services will be provided more efficiently because we can be concentrate on the core processes of ITIL v3, which are the results of this study."
+        },
+        {
+          "rank": 31,
+          "score": 0.5083702802658081,
+          "doc_id": "JAKO201805260855341",
+          "title": "4차 산업혁명시대의 비즈니스 모델 유형",
+          "abstract": "4차 산업혁명이 쓰나미와 같이 우리 기업에 큰 변화를 주고 있다. 디지털시대로 대변되는 CPS시스템은 물리적인 영역에서 축적된 데이터를 기반으로 디지털 기술을 통해 과거에 상상하지 못했던 비즈니스를 현실로 만들어 내고 있다. 이로 인해 4차 산업혁명시대의 비즈니스 모델은 이전과는 다른 양상을 보이고 있다. 이에 본 연구에서는 비즈니스혁신 이론 연구의 흐름을 시대별 흐름과 쟁점을 분석하였다. 이후 디지털시대의 비즈니스 혁신 모델을 이전 시대와 비교 분석하였다. 이를 기반으로 4차 산업혁명 시대에 적합한 비즈니스 모델을 탐색하였으며, 기존 비즈니스 모델들로는 디지털 시대의 모형을 설명하기에는 많은 어려움이 있었고, 보다 많은 실증적인 연구가 뒷받침 되어야하겠지만 마이클 포터의 다이아몬드 모델이 가장적합함을 확인하였고, 이를 응용하여 4가지 유형의 비즈니스 모델을 도출하여 해당 사례를 살펴보았다. Type A : sharing outcome with customer로 고객 성과 창출 기반에 따라 차등적으로 비용을 지불하는 모델이며, Type B : Value Chain Digitalization로 제품, 서비스 및 SCM 디지털화로 보다 빠르고 저렴한 비용으로 제품, 서비스를 고객에 제공함으로 경쟁우위를 가지는 모델이며, Type C : Digital Platform는 가장 큰 파급효과를 가져다 주는 모델로 디지털 플랫폼 기반의 공유 경제 창출로 새로운 시장을 창출하여 더 확실한 수익성 확보가 가능한 모델이다. 마지막으로 Type D : Sharing Resources는 관련 산업 내 파트너와 협업으로 경쟁 우위 모델 구축하는 모델로 다른 파트너의 핵심 역량과 자신의 핵심 역량을 서로 보완하는 가장 효과적인 성공 방법이라 할 수 있겠다. 4차 산업혁명시대에 다수의 요소 기술과 수많은 유니콘, 데카콘 기업들이 자신들이 속해 있는 산업별 차별적 디지털 경쟁우위를 가지고 있음에도 불구하고 특정 대표기업의 디지털 비즈니스 모델을 상세 분석하여 학문적이고 실무적인 시사점을 도출하는 것 보다는 단편적으로 나열함에 한계가 있었다. 향후 연구에서는 더욱더 구체적인 실증적인 분석을 통해 디지털시대의 비즈니스모델을 더욱더 상세하게 규명할 필요가 있다. 아울러 산업별로 디지털 비즈니스 모델이 상이할 수 있으므로 산업간 비교분석을 해볼 필요 역시 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201805260855341&target=NART&cn=JAKO201805260855341",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "4차 산업혁명시대의 비즈니스 모델 유형 4차 산업혁명시대의 비즈니스 모델 유형 4차 산업혁명시대의 비즈니스 모델 유형 4차 산업혁명이 쓰나미와 같이 우리 기업에 큰 변화를 주고 있다. 디지털시대로 대변되는 CPS시스템은 물리적인 영역에서 축적된 데이터를 기반으로 디지털 기술을 통해 과거에 상상하지 못했던 비즈니스를 현실로 만들어 내고 있다. 이로 인해 4차 산업혁명시대의 비즈니스 모델은 이전과는 다른 양상을 보이고 있다. 이에 본 연구에서는 비즈니스혁신 이론 연구의 흐름을 시대별 흐름과 쟁점을 분석하였다. 이후 디지털시대의 비즈니스 혁신 모델을 이전 시대와 비교 분석하였다. 이를 기반으로 4차 산업혁명 시대에 적합한 비즈니스 모델을 탐색하였으며, 기존 비즈니스 모델들로는 디지털 시대의 모형을 설명하기에는 많은 어려움이 있었고, 보다 많은 실증적인 연구가 뒷받침 되어야하겠지만 마이클 포터의 다이아몬드 모델이 가장적합함을 확인하였고, 이를 응용하여 4가지 유형의 비즈니스 모델을 도출하여 해당 사례를 살펴보았다. Type A : sharing outcome with customer로 고객 성과 창출 기반에 따라 차등적으로 비용을 지불하는 모델이며, Type B : Value Chain Digitalization로 제품, 서비스 및 SCM 디지털화로 보다 빠르고 저렴한 비용으로 제품, 서비스를 고객에 제공함으로 경쟁우위를 가지는 모델이며, Type C : Digital Platform는 가장 큰 파급효과를 가져다 주는 모델로 디지털 플랫폼 기반의 공유 경제 창출로 새로운 시장을 창출하여 더 확실한 수익성 확보가 가능한 모델이다. 마지막으로 Type D : Sharing Resources는 관련 산업 내 파트너와 협업으로 경쟁 우위 모델 구축하는 모델로 다른 파트너의 핵심 역량과 자신의 핵심 역량을 서로 보완하는 가장 효과적인 성공 방법이라 할 수 있겠다. 4차 산업혁명시대에 다수의 요소 기술과 수많은 유니콘, 데카콘 기업들이 자신들이 속해 있는 산업별 차별적 디지털 경쟁우위를 가지고 있음에도 불구하고 특정 대표기업의 디지털 비즈니스 모델을 상세 분석하여 학문적이고 실무적인 시사점을 도출하는 것 보다는 단편적으로 나열함에 한계가 있었다. 향후 연구에서는 더욱더 구체적인 실증적인 분석을 통해 디지털시대의 비즈니스모델을 더욱더 상세하게 규명할 필요가 있다. 아울러 산업별로 디지털 비즈니스 모델이 상이할 수 있으므로 산업간 비교분석을 해볼 필요 역시 있다."
+        },
+        {
+          "rank": 32,
+          "score": 0.5067765116691589,
+          "doc_id": "ATN0030047980",
+          "title": "공공부문 ICT 신기술 사업의 평가 프레임워크 연구: 빅데이터, 클라우드, 사물인터넷을 중심으로",
+          "abstract": "Information Communication Technology is the key differentiator of national competitiveness.\nBig data, cloud computing, Internet of Things(IoT) is under the spotlight. Smart use ofthese technologies can create new industries and solve social problems. In adopting new ICTs onpublic sector, policy makers should consider not only the purpose of the program but also the socialand industrial impact of the program. To develop comprehensive framework in selecting and evaluatingnew ICT program, we studied IT evaluation frameworks of developed countries and collectedthe opinions of government officers and ICT experts using Delphi method. The proposedmodel is focused on demand generation, smart use, convergence effect, and contribution in safetyand trust. Specified indicator were developed to evaluate programs that applied these technology.\nThe framework can contribute in efficient use of the government's budget, achieving the originalgovernment goal, and upbringing of the economy by activating new industry development.\nKeywords: Big data, Cloud, Internet of things, Performance evaluation, IT adoption",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=ATN0030047980&target=NART&cn=ATN0030047980",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "공공부문 ICT 신기술 사업의 평가 프레임워크 연구: 빅데이터, 클라우드, 사물인터넷을 중심으로 공공부문 ICT 신기술 사업의 평가 프레임워크 연구: 빅데이터, 클라우드, 사물인터넷을 중심으로 공공부문 ICT 신기술 사업의 평가 프레임워크 연구: 빅데이터, 클라우드, 사물인터넷을 중심으로 Information Communication Technology is the key differentiator of national competitiveness.\nBig data, cloud computing, Internet of Things(IoT) is under the spotlight. Smart use ofthese technologies can create new industries and solve social problems. In adopting new ICTs onpublic sector, policy makers should consider not only the purpose of the program but also the socialand industrial impact of the program. To develop comprehensive framework in selecting and evaluatingnew ICT program, we studied IT evaluation frameworks of developed countries and collectedthe opinions of government officers and ICT experts using Delphi method. The proposedmodel is focused on demand generation, smart use, convergence effect, and contribution in safetyand trust. Specified indicator were developed to evaluate programs that applied these technology.\nThe framework can contribute in efficient use of the government's budget, achieving the originalgovernment goal, and upbringing of the economy by activating new industry development.\nKeywords: Big data, Cloud, Internet of things, Performance evaluation, IT adoption"
+        },
+        {
+          "rank": 33,
+          "score": 0.505303680896759,
+          "doc_id": "NART56312903",
+          "title": "여행업 인터넷 비즈니스 모델 유형 분류",
+          "abstract": "<P>The purpose of this study is to classify Internet business models of tourism-related Web sites. The procedure for this study is as follows;</P><P>&nbsp;1) Conduct literature review about the Internet business models</P><P>&nbsp;2) Choose tourism-related Web sites which can offer sales or reservations through Internet after surfing these kinds of Web sites in Korea</P><P>&nbsp;3) Suggest a framework for the Internet business model of tourism-related Web sites after classifying the business models of the chosen Web sites</P><P>&nbsp;For the future study, the number of samples should be increased and the tourism-related Web sites as the target objective for the empirical analysis should be subdivided into airlines, hotels or travel agents.</P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART56312903&target=NART&cn=NART56312903",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "여행업 인터넷 비즈니스 모델 유형 분류 여행업 인터넷 비즈니스 모델 유형 분류 여행업 인터넷 비즈니스 모델 유형 분류 <P>The purpose of this study is to classify Internet business models of tourism-related Web sites. The procedure for this study is as follows;</P><P>&nbsp;1) Conduct literature review about the Internet business models</P><P>&nbsp;2) Choose tourism-related Web sites which can offer sales or reservations through Internet after surfing these kinds of Web sites in Korea</P><P>&nbsp;3) Suggest a framework for the Internet business model of tourism-related Web sites after classifying the business models of the chosen Web sites</P><P>&nbsp;For the future study, the number of samples should be increased and the tourism-related Web sites as the target objective for the empirical analysis should be subdivided into airlines, hotels or travel agents.</P>"
+        },
+        {
+          "rank": 34,
+          "score": 0.5043091773986816,
+          "doc_id": "JAKO200724737430564",
+          "title": "신기술의 융합 유형에 관한 실증 분석",
+          "abstract": "본 연구는 최근 차세대 성장 동력으로 등장하고 있는 바이오기술(BT), 정보기술(IT), 그리고 나노기술(NT)의 새로운 신기술 융합 유형 및 발전 방향에 관한 연구로 융합의 학문적 의미, 융합의 촉발 요인과 향후 전개방향을 살펴보고, 선행연구를 통해 기존의 바이오기술, 정보기술 및 나노기술들의 한계와 문제점을 도출하여, 그 한계와 문제점을 극복하는 방안으로서의 융합의 필요성을 제시하였다. 또한 다양한 융합 유형 중 바이오기술(BT) 기반의 정보기술 융합인 BIT 융합기술과 나노기술 융합인 BNT 융합기술에 한하여 선행연구 및 델파이 실증 분석을 통해 차세대 기술로 등장할 7개의 BIT 및 10개의 BNT 세부 융합기술을 도출하여 제시하였다. 따라서 본 연구의 결과는 각각 융합기술을 연구하는 연구소, 기업, 및 학계에 융합의 필요성에 따라 상호 이해도를 높이고 산학간 협력할 수 있는 기회를 제공할 것으로 기대한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200724737430564&target=NART&cn=JAKO200724737430564",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "신기술의 융합 유형에 관한 실증 분석 신기술의 융합 유형에 관한 실증 분석 신기술의 융합 유형에 관한 실증 분석 본 연구는 최근 차세대 성장 동력으로 등장하고 있는 바이오기술(BT), 정보기술(IT), 그리고 나노기술(NT)의 새로운 신기술 융합 유형 및 발전 방향에 관한 연구로 융합의 학문적 의미, 융합의 촉발 요인과 향후 전개방향을 살펴보고, 선행연구를 통해 기존의 바이오기술, 정보기술 및 나노기술들의 한계와 문제점을 도출하여, 그 한계와 문제점을 극복하는 방안으로서의 융합의 필요성을 제시하였다. 또한 다양한 융합 유형 중 바이오기술(BT) 기반의 정보기술 융합인 BIT 융합기술과 나노기술 융합인 BNT 융합기술에 한하여 선행연구 및 델파이 실증 분석을 통해 차세대 기술로 등장할 7개의 BIT 및 10개의 BNT 세부 융합기술을 도출하여 제시하였다. 따라서 본 연구의 결과는 각각 융합기술을 연구하는 연구소, 기업, 및 학계에 융합의 필요성에 따라 상호 이해도를 높이고 산학간 협력할 수 있는 기회를 제공할 것으로 기대한다."
+        },
+        {
+          "rank": 35,
+          "score": 0.5038280487060547,
+          "doc_id": "JAKO201611962056398",
+          "title": "핀테크의 비즈니스 모델에 관한 연구 - 비즈니스 모델 캔버스를 중심으로-",
+          "abstract": "본 연구의 목적은 현재 전 세계적으로 시장을 선도하고 있는 핀테크의 성공적인 비즈니스 모델의 개념을 도출하고 국내의 핀테크 산업에 대한 비즈니스 모델의 구성요소들에 대한 전략을 제안하려 한다. 비즈니스 모델은 전략적적인 차원에서 제시되고 있지만 결국 기업이 가치를 창출하는 데 있다. 기존의 연구에서 비즈니스 모델에 대한 개념적 특성과 구성요소들을 검토하고 핀테크의 산업분야에 적용하고자 한다. 본 연구 내용을 통해 핀테크의 비즈니스 모델에 대한 개념을 이해할 수 있었으며, 성공적인 시장진입을 위한 비즈니스 모델의 구성요소의 방향성을 구축할 것을 제안하고 있다. 본 연구에서는 Alexander Osterwalder 등이 제안한 비즈니스 모델 캔버스를 이용하여 핀테크의 비즈니스 모델의 구성요소에 대한 개념적 이해를 분석하였다. 이 제안된 비즈니스 모델의 구성요소는 목표고객, 가치제안, 채널, 고객관계, 핵심 자원, 핵심 활동, 핵심 파트너십, 수익원 및 비용구조로 구성되어 있다. 이러한 구성요소들을 기반으로 핀테크 산업의 성공적인 시장진입과 정착을 위한 개념적 정의를 분석하였다. 이러한 핀테크의 비즈니스 모델의 구성요소들의 분석을 통해 비즈니스 모델의 지향성을 밝히고자 하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201611962056398&target=NART&cn=JAKO201611962056398",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "핀테크의 비즈니스 모델에 관한 연구 - 비즈니스 모델 캔버스를 중심으로- 핀테크의 비즈니스 모델에 관한 연구 - 비즈니스 모델 캔버스를 중심으로- 핀테크의 비즈니스 모델에 관한 연구 - 비즈니스 모델 캔버스를 중심으로- 본 연구의 목적은 현재 전 세계적으로 시장을 선도하고 있는 핀테크의 성공적인 비즈니스 모델의 개념을 도출하고 국내의 핀테크 산업에 대한 비즈니스 모델의 구성요소들에 대한 전략을 제안하려 한다. 비즈니스 모델은 전략적적인 차원에서 제시되고 있지만 결국 기업이 가치를 창출하는 데 있다. 기존의 연구에서 비즈니스 모델에 대한 개념적 특성과 구성요소들을 검토하고 핀테크의 산업분야에 적용하고자 한다. 본 연구 내용을 통해 핀테크의 비즈니스 모델에 대한 개념을 이해할 수 있었으며, 성공적인 시장진입을 위한 비즈니스 모델의 구성요소의 방향성을 구축할 것을 제안하고 있다. 본 연구에서는 Alexander Osterwalder 등이 제안한 비즈니스 모델 캔버스를 이용하여 핀테크의 비즈니스 모델의 구성요소에 대한 개념적 이해를 분석하였다. 이 제안된 비즈니스 모델의 구성요소는 목표고객, 가치제안, 채널, 고객관계, 핵심 자원, 핵심 활동, 핵심 파트너십, 수익원 및 비용구조로 구성되어 있다. 이러한 구성요소들을 기반으로 핀테크 산업의 성공적인 시장진입과 정착을 위한 개념적 정의를 분석하였다. 이러한 핀테크의 비즈니스 모델의 구성요소들의 분석을 통해 비즈니스 모델의 지향성을 밝히고자 하였다."
+        },
+        {
+          "rank": 36,
+          "score": 0.5031181573867798,
+          "doc_id": "JAKO201302757806163",
+          "title": "건설IT융합기술 : 스마트빌딩 기술 개발 사례",
+          "abstract": "본고에서는 건설기술과 IT기술이 융합된 건설IT융합기술에서 스마트 빌딩과 관련하여 안전, 건강, 편의, 에너지를 위한 기술들로 분류하여 사례와 함께 서술한다. 고층 빌딩의 안전성을 위한 건축 구조물 건전도 모니터링 기술, 빌딩 실내 또는 지하 주차장에서 쾌적한 공기 환경을 유지하기 위한 스마트 환기제어 시스템 기술, 빌딩 정보의 체계적인 데이터 관리를 위한 빌딩정보모델링 기반의 센서와 영상 인터페이스, 스마트 빌딩 네트워크 관리 시스템에 관하여 소개한다. 또한, 에너지 절감을 위한 빌딩 에너지 관리 시스템에 관하여 냉난방, 조명, 환기설비, 전력모니터링 관련 기술에 대하여 설명한다. 이러한 기술들을 적용한 스마트 빌딩은 유무선통신, 스마트디바이스와 같은 IT기술을 건축공학 및 빌딩자동제어, 설비 기술에 적용하여 빌딩 사용자에게는 안전 및 최적 환경을 제공하고 빌딩 소유주나 관리자에게는 관리비용 절감, 관리 편의, 빌딩가치 상승 등을 제공할 수 있다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201302757806163&target=NART&cn=JAKO201302757806163",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "건설IT융합기술 : 스마트빌딩 기술 개발 사례 건설IT융합기술 : 스마트빌딩 기술 개발 사례 건설IT융합기술 : 스마트빌딩 기술 개발 사례 본고에서는 건설기술과 IT기술이 융합된 건설IT융합기술에서 스마트 빌딩과 관련하여 안전, 건강, 편의, 에너지를 위한 기술들로 분류하여 사례와 함께 서술한다. 고층 빌딩의 안전성을 위한 건축 구조물 건전도 모니터링 기술, 빌딩 실내 또는 지하 주차장에서 쾌적한 공기 환경을 유지하기 위한 스마트 환기제어 시스템 기술, 빌딩 정보의 체계적인 데이터 관리를 위한 빌딩정보모델링 기반의 센서와 영상 인터페이스, 스마트 빌딩 네트워크 관리 시스템에 관하여 소개한다. 또한, 에너지 절감을 위한 빌딩 에너지 관리 시스템에 관하여 냉난방, 조명, 환기설비, 전력모니터링 관련 기술에 대하여 설명한다. 이러한 기술들을 적용한 스마트 빌딩은 유무선통신, 스마트디바이스와 같은 IT기술을 건축공학 및 빌딩자동제어, 설비 기술에 적용하여 빌딩 사용자에게는 안전 및 최적 환경을 제공하고 빌딩 소유주나 관리자에게는 관리비용 절감, 관리 편의, 빌딩가치 상승 등을 제공할 수 있다."
+        },
+        {
+          "rank": 37,
+          "score": 0.5020527243614197,
+          "doc_id": "JAKO201617338764404",
+          "title": "비즈니스 모델 분석도구에 관한 비교연구",
+          "abstract": "본 논문에서는 학계나 실무에서 주목하는 비즈니스 모델에 관한 두 가지 분석도구를 소개하고, 이를 활용하는 방법에 대해 설명하였다. Osterwalder and Pigneur(2010)가 소개한 '비즈니스 모델 캔버스'는 9개의 구성요소를 갖고 있으며, 한 장에 분석결과를 일목요연하게 정리할 수 있다. Keeley et al.(2013)가 소개한 '10가지 혁신 유형 모델'도 10개의 구성요소를 담고 있으며, 각 요소별로 혁신하는 방법을 제시하였다. 두 기법 모두 가치제안에서 가치창출, 가치전달, 가치확보에 이르기까지 비즈니스 모델이 갖추어야 할 전체 요소를 분석할 수 있다는 장점이 있다. 다만 기존 비즈니스 모델을 혁신할 때, 문제를 해결할 새로운 아이디어를 충분히 제공하지 못하는 단점이 있다. 향후 구성요소별로 다양한 혁신 사례들이 개발되고, 또한 혁신적인 비즈니스 모델의 원형들이 제시된다면, 기업 실무에서 보다 체계적으로 비즈니스 모델 설계나 혁신을 구현할 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201617338764404&target=NART&cn=JAKO201617338764404",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "비즈니스 모델 분석도구에 관한 비교연구 비즈니스 모델 분석도구에 관한 비교연구 비즈니스 모델 분석도구에 관한 비교연구 본 논문에서는 학계나 실무에서 주목하는 비즈니스 모델에 관한 두 가지 분석도구를 소개하고, 이를 활용하는 방법에 대해 설명하였다. Osterwalder and Pigneur(2010)가 소개한 '비즈니스 모델 캔버스'는 9개의 구성요소를 갖고 있으며, 한 장에 분석결과를 일목요연하게 정리할 수 있다. Keeley et al.(2013)가 소개한 '10가지 혁신 유형 모델'도 10개의 구성요소를 담고 있으며, 각 요소별로 혁신하는 방법을 제시하였다. 두 기법 모두 가치제안에서 가치창출, 가치전달, 가치확보에 이르기까지 비즈니스 모델이 갖추어야 할 전체 요소를 분석할 수 있다는 장점이 있다. 다만 기존 비즈니스 모델을 혁신할 때, 문제를 해결할 새로운 아이디어를 충분히 제공하지 못하는 단점이 있다. 향후 구성요소별로 다양한 혁신 사례들이 개발되고, 또한 혁신적인 비즈니스 모델의 원형들이 제시된다면, 기업 실무에서 보다 체계적으로 비즈니스 모델 설계나 혁신을 구현할 수 있을 것이다."
+        },
+        {
+          "rank": 38,
+          "score": 0.49931013584136963,
+          "doc_id": "JAKO201120661418791",
+          "title": "IT건설융합 스마트빌딩 기술",
+          "abstract": "본고에서는 IT기술과 건설기술의 융합 기술로서 스마트빌딩 기술에 대해 서술한다. 고층 빌딩의 안전성 평가를 위한 건물구조 건전도 모니터링 기술, 빌딩 실내에 쾌적한 공기 환경을 유지하기 위한 스마트 공기질/환기제어시스템 기술, 빌딩 설계부터 빌딩 사용단계까지 빌딩정보의 체계적인 데이터 관리를 위한 빌딩정보 모델링 기술과 빌딩 운영관리 인터페이스 기술 등에 대하여 소개한다. 또한, 세종대학교에서 개발한 프로토타입으로 빌딩에 설치하여 시험 중인 시스템에 대하여 설명한다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201120661418791&target=NART&cn=JAKO201120661418791",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT건설융합 스마트빌딩 기술 IT건설융합 스마트빌딩 기술 IT건설융합 스마트빌딩 기술 본고에서는 IT기술과 건설기술의 융합 기술로서 스마트빌딩 기술에 대해 서술한다. 고층 빌딩의 안전성 평가를 위한 건물구조 건전도 모니터링 기술, 빌딩 실내에 쾌적한 공기 환경을 유지하기 위한 스마트 공기질/환기제어시스템 기술, 빌딩 설계부터 빌딩 사용단계까지 빌딩정보의 체계적인 데이터 관리를 위한 빌딩정보 모델링 기술과 빌딩 운영관리 인터페이스 기술 등에 대하여 소개한다. 또한, 세종대학교에서 개발한 프로토타입으로 빌딩에 설치하여 시험 중인 시스템에 대하여 설명한다."
+        },
+        {
+          "rank": 39,
+          "score": 0.4987029433250427,
+          "doc_id": "JAKO200706942464811",
+          "title": "서비스 요청 관리 프로세스 개선을 통한 IT 운영비용 최적화 방안",
+          "abstract": "Recently, researches on IT Service Management (ITSM) for improving information system operation service and information system outsourcing cost estimation model are proliferating. This study suggests a new cost model of IT operation service and optimizing method based upon the characteristics of operation service as a long-term and continuous business service for both user's and service provider's point of view. This study explains the cost optimization model of IT operation service by improving service request management process, such as adequate reception and control, proper valuation, process management using project management methodology, effective organization and time management of service personnel. Especially in this study, service ability improvement effect and fixed operation cost reduction effect are defined to prove the proposed new cost model.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200706942464811&target=NART&cn=JAKO200706942464811",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "서비스 요청 관리 프로세스 개선을 통한 IT 운영비용 최적화 방안 서비스 요청 관리 프로세스 개선을 통한 IT 운영비용 최적화 방안 서비스 요청 관리 프로세스 개선을 통한 IT 운영비용 최적화 방안 Recently, researches on IT Service Management (ITSM) for improving information system operation service and information system outsourcing cost estimation model are proliferating. This study suggests a new cost model of IT operation service and optimizing method based upon the characteristics of operation service as a long-term and continuous business service for both user's and service provider's point of view. This study explains the cost optimization model of IT operation service by improving service request management process, such as adequate reception and control, proper valuation, process management using project management methodology, effective organization and time management of service personnel. Especially in this study, service ability improvement effect and fixed operation cost reduction effect are defined to prove the proposed new cost model."
+        },
+        {
+          "rank": 40,
+          "score": 0.4952685534954071,
+          "doc_id": "JAKO201222653561945",
+          "title": "한국 IT융합 신산업 역량강화요인",
+          "abstract": "IT는 한국의 경제성장에 큰 기여를 해왔으며 사회전반의 패러다임 혁신을 통해 생산성, 효율성, 편의성, 소통성을 증진시키고 삶의 양식에 전면적 변화를 가져왔다. 국민경제와 사회문화에서 지대한 의미를 지니는 IT는 다른 기술 또는 산업과의 융합이라는 새로운 변화와 혁신의 중심에 위치하고 있다. IT융합은 IT의 자체 고도화를 바탕으로 다른 분야의 기술개발과 산업발전을 견인하거나 새로운 산업을 창출하는 것으로, 우리나라를 비롯하여 주요국에서는 자원과 역량을 선택적으로 집중하고 있다. 이 논문에서는 IT 융합 신산업 역량강화요인을 도출하고자 2011년도에 실시한 정책연구의 학계 및 공공기관 전문가 델파이 결과를 선행연구들과 비교하여 한국의 IT 융합역량의 수준 변화를 평가하고 결론적으로 한국의 IT융합 신산업 역량강화요인을 도출하고자 하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201222653561945&target=NART&cn=JAKO201222653561945",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "한국 IT융합 신산업 역량강화요인 한국 IT융합 신산업 역량강화요인 한국 IT융합 신산업 역량강화요인 IT는 한국의 경제성장에 큰 기여를 해왔으며 사회전반의 패러다임 혁신을 통해 생산성, 효율성, 편의성, 소통성을 증진시키고 삶의 양식에 전면적 변화를 가져왔다. 국민경제와 사회문화에서 지대한 의미를 지니는 IT는 다른 기술 또는 산업과의 융합이라는 새로운 변화와 혁신의 중심에 위치하고 있다. IT융합은 IT의 자체 고도화를 바탕으로 다른 분야의 기술개발과 산업발전을 견인하거나 새로운 산업을 창출하는 것으로, 우리나라를 비롯하여 주요국에서는 자원과 역량을 선택적으로 집중하고 있다. 이 논문에서는 IT 융합 신산업 역량강화요인을 도출하고자 2011년도에 실시한 정책연구의 학계 및 공공기관 전문가 델파이 결과를 선행연구들과 비교하여 한국의 IT 융합역량의 수준 변화를 평가하고 결론적으로 한국의 IT융합 신산업 역량강화요인을 도출하고자 하였다."
+        },
+        {
+          "rank": 41,
+          "score": 0.49407491087913513,
+          "doc_id": "JAKO200311922036859",
+          "title": "프로그래머블 네트워크 기술을 이용한 네트워크 보안 관리 구조 제안",
+          "abstract": "본 논문에서는 이기종의 보안 장비를 보다 효율적으로 관리할 수 있는 보안 관리 구조와 관리 트래픽의 부하를 줄일 수 있는 프로그래머블 미들웨어를 제안하였다. 제안된 보안 관리 구조는 정책 기반 네트워크 관리 (Policy Based Network Management: PBNM) 구조에 프로그래머블 네트워크 기법을 접목한 것으로, 다양한 이기종의 보안 장비를 보안 정책을 통해 관리할 수 있으며, 보안 장비 간 연동을 제공한다. 또한, 미들웨어에서 보안 정책을 실행 가능한 형태로 변환해 줌으로써 관리상의 편이성을 제공하고 정책 서버의 부하를 줄일 수 있다. 본 논문에서는 제안된 구조와 PBNM 구조에서의 정책적용 및 변환시간과 메시지 전달시간을 비교함으로써 프로그래머블 미들웨어가 관리 트래픽의 부하를 줄일 수 있다는 것을 검증하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200311922036859&target=NART&cn=JAKO200311922036859",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "프로그래머블 네트워크 기술을 이용한 네트워크 보안 관리 구조 제안 프로그래머블 네트워크 기술을 이용한 네트워크 보안 관리 구조 제안 프로그래머블 네트워크 기술을 이용한 네트워크 보안 관리 구조 제안 본 논문에서는 이기종의 보안 장비를 보다 효율적으로 관리할 수 있는 보안 관리 구조와 관리 트래픽의 부하를 줄일 수 있는 프로그래머블 미들웨어를 제안하였다. 제안된 보안 관리 구조는 정책 기반 네트워크 관리 (Policy Based Network Management: PBNM) 구조에 프로그래머블 네트워크 기법을 접목한 것으로, 다양한 이기종의 보안 장비를 보안 정책을 통해 관리할 수 있으며, 보안 장비 간 연동을 제공한다. 또한, 미들웨어에서 보안 정책을 실행 가능한 형태로 변환해 줌으로써 관리상의 편이성을 제공하고 정책 서버의 부하를 줄일 수 있다. 본 논문에서는 제안된 구조와 PBNM 구조에서의 정책적용 및 변환시간과 메시지 전달시간을 비교함으로써 프로그래머블 미들웨어가 관리 트래픽의 부하를 줄일 수 있다는 것을 검증하였다."
+        },
+        {
+          "rank": 42,
+          "score": 0.49388718605041504,
+          "doc_id": "JAKO201213660554160",
+          "title": "모의실험 기반의 해양무기체계 전투실험 프로세스 표준화 방안연구",
+          "abstract": "Modeling & simulation-based battle experiments(BEx) is being used extensively as an efficient, scientific and rational verification methodology for maritime weapon system acquisition. However, research of definition and concept of BEx and standardized rules and process for the BEx are insufficient in recent military field of BEx. In this study, we discussed the definition and process of BEx based on the role of MND(including JCS), Navy and ADD and proposed the standardized process of BEx for maritime weapon system. Secondly suggested a evaluation methods of modeling and simulation-based BEx with MOP, MOF, MOE in linkage of engineering, engagement, mission and constructive model. Finally presented validate result that applied to the Torpedo using standardized process based on our proposed methodology.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201213660554160&target=NART&cn=JAKO201213660554160",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "모의실험 기반의 해양무기체계 전투실험 프로세스 표준화 방안연구 모의실험 기반의 해양무기체계 전투실험 프로세스 표준화 방안연구 모의실험 기반의 해양무기체계 전투실험 프로세스 표준화 방안연구 Modeling & simulation-based battle experiments(BEx) is being used extensively as an efficient, scientific and rational verification methodology for maritime weapon system acquisition. However, research of definition and concept of BEx and standardized rules and process for the BEx are insufficient in recent military field of BEx. In this study, we discussed the definition and process of BEx based on the role of MND(including JCS), Navy and ADD and proposed the standardized process of BEx for maritime weapon system. Secondly suggested a evaluation methods of modeling and simulation-based BEx with MOP, MOF, MOE in linkage of engineering, engagement, mission and constructive model. Finally presented validate result that applied to the Torpedo using standardized process based on our proposed methodology."
+        },
+        {
+          "rank": 43,
+          "score": 0.49337852001190186,
+          "doc_id": "JAKO200820055488505",
+          "title": "BT-IT(BIT) 융합기술",
+          "abstract": "본고에서는 최신 과학기술 분야의 화두가 되고 있는 생명공학(BT)과 정보통신(IT)의 융합기술에 대해서 소개한다. 대표적인 기술로 바이오인포매틱스, 바이오칩, 바이오센서, 그리고 이들의 총체적인 기술인 유비쿼터스 헬스케어 시스템에 대해서 알아본다. BT, IT 융합기술을 통해 과학기술 분야에 새로운 연구분야와 효율적인 분석 기술을 제공해줌으로써, 인류의 건강에 큰 도움을 줄 것으로 기대된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO200820055488505&target=NART&cn=JAKO200820055488505",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "BT-IT(BIT) 융합기술 BT-IT(BIT) 융합기술 BT-IT(BIT) 융합기술 본고에서는 최신 과학기술 분야의 화두가 되고 있는 생명공학(BT)과 정보통신(IT)의 융합기술에 대해서 소개한다. 대표적인 기술로 바이오인포매틱스, 바이오칩, 바이오센서, 그리고 이들의 총체적인 기술인 유비쿼터스 헬스케어 시스템에 대해서 알아본다. BT, IT 융합기술을 통해 과학기술 분야에 새로운 연구분야와 효율적인 분석 기술을 제공해줌으로써, 인류의 건강에 큰 도움을 줄 것으로 기대된다."
+        },
+        {
+          "rank": 44,
+          "score": 0.49324464797973633,
+          "doc_id": "DIKO0016148534",
+          "title": "방산 중소기업의 핵심역량 및 경쟁우위 결정요인이 경영성과에 미치는 영향 연구 : 공급사슬파트너십과 정부지원제도의 조절효과",
+          "abstract": "방위산업은 국가 안보를 위해 전투기, 전차, 잠수함 등 고도의 무기체계를 개발, 생산하는 국가 전략산업으로서의 특성을 가지고 있으며, 고도의 첨단기술이 융·복합되어 산업 전반에 파급효과가 매우 커 4차 산업 혁명을 주도할 미래 성장동력 산업으로 평가받고 있다. 국내 방위산업이 글로벌 경쟁력을 확보하기 위해서는 무기체계 완제품을 생산하는 대기업뿐만 아니라 완제품을 구성하는 각종 구성품과 부품, 수리부속류, 소재, 장비를 생산 하는 많은 중소 방위산업체의 육성이 필수적으로 이루어져야 할 것이다. 그러나 국내 방위산업의 현실은 방위산업의 저변확대와 육성에 대한 중요성은 높은 반면, 많은 중소 방위산업체들의 경영여건과 글로벌 경쟁력이 매우 취약한 실정이다. 타 산업의 중소업체들의 주요 경영지표를 비교하여도 방위산업의 중소업체 경영실태가 상대적으로 취약한 상황이다. 그리고 국내 각종 학술지와 연구논문으로 다수의 연구 자료가 있으나 대부분 정부의 방산육성정책이 방위산업 경영성과 분석을 통한 정책의 실효성 평가에 중점을 두고 있는 것으로 파악된다. 따라서 방산 중소기업의 국가적인 경쟁력을 높이기 위해서는 연구보고서에서 지적한 문제점들에 대해서 정책의 효과성을 보기 위해서는 기업 본연의 경영활동 속에서 경영성과를 극대화할 수 있는 전략적 방안 차원에서 대·중소기업간 상생협력(공급사슬 파트너십)의 역할과 정부지원제도의 수혜여부와 활용도에 따라 경영성과에 미치는 영향 변화를 심도있게 분석해 볼 필요성이 있다고 판단된다. &amp;#xD; 본 연구의 목적은 국내 방위산업에 참여하는 다수 중소기업의 경영여건을 개선하고 방산 중소기업의 경쟁력을 향상시키는데 도움을 줄 수 있는 다양한 연구가 필요하다는 전제를 바탕으로, 방산 중소기업의 경영성과 제고에 영향을 미칠 수 있는 내부 핵심역량과 경쟁우위전략 유형, 경영성과 등 기업 경영의 본원적인 틀 속에서 인과관계와 상관관계를 살펴보고, 이러한 틀 속에서 기업의 경영활동에 큰 영향요인이라 판단되는 원청업체와의 공급사슬 파트너십과 정부지원제도의 활용도에 따라 이러한 변수들 간에 어떠한 조절효과를 나타내는지 실증연구 함으로써 실효성 있는 경영성과 제고 방안을 도출해 보고 기업 경영에 유의미한 시사점을 제시하고자 하였다. 이를 위해 기존의 선행연구를 토대로 연구모형과 연구가설을 설정하였고, 국내 방위산업 중소기업을 대상으로 한 설문조사를 통해 이를 실증적으로 분석, 검증하여 그 결과를 도출하였다. 본 연구결과에 대한 학문적 시사점은 다음과 같다. 첫째, 핵심역량이 경영성과에 미치는 영향관계에서 재무적 성과에서는 연구개발역량과 기업가역량이, 비재무적성과에서는 모든 핵심역량이 유의하게 나타났다. 둘째, 핵심역량이 경쟁우위전략에 미치는 영향관계에서 원가우위전략에는 자원역량과 기업가역량이, 차별화전략에는 모든 핵심역량이, 집중화전략에는 연구개발역량과 기업가역량이 유의하게 나타났다. 셋째, 경쟁우위전략이 경영성과에 미치는 영향관계에서는 재무적성과에는 차별화전략과 집중화전략이, 비재무적성과에는 차별화전략만이 유의하게 나타났다. 기존 선행연구에서도 핵심역량과 경쟁전략의 유형에 따라 경영성과에 미치는 영향이 서로 상이한 결과를 보여주고 있다. 넷째, 핵심역량과 경영성과 간의 조절효과에서 공급사슬파트너십 정도가 높을수록 연구개발역량이 강화되어 비재무적성과를 향상시키는 것으로 나타났으며, 정부지원제도(금융지원) 만족도가 높을수록 수출마케팅 역량이 강화되어 비재무적 성과를 향상시키는 것으로 나타났다. 그러나 정부지원 수혜기업의 경영성과 제고 효과는 미미한 것으로 나타나 정부지원제도의 지원규모를 보다 확대하고 수혜기업의 범위를 보다 확대해 나갈 필요성이 확인되었다. 이러한 연구결과는 현 방위산업 중소기업의 경영자 및 신규참여를 희망하는 중소기업 경영자에게 많은 도움이 될 것으로 판단되며, 정부지원제도의 경우도 방위산업 육성차원에서 중소기업 친화적인 지원제도를 마련하는데 많은 시사점을 줄 수 있을 것으로 생각된다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=DIKO0016148534&target=NART&cn=DIKO0016148534",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "방산 중소기업의 핵심역량 및 경쟁우위 결정요인이 경영성과에 미치는 영향 연구 : 공급사슬파트너십과 정부지원제도의 조절효과 방산 중소기업의 핵심역량 및 경쟁우위 결정요인이 경영성과에 미치는 영향 연구 : 공급사슬파트너십과 정부지원제도의 조절효과 방산 중소기업의 핵심역량 및 경쟁우위 결정요인이 경영성과에 미치는 영향 연구 : 공급사슬파트너십과 정부지원제도의 조절효과 방위산업은 국가 안보를 위해 전투기, 전차, 잠수함 등 고도의 무기체계를 개발, 생산하는 국가 전략산업으로서의 특성을 가지고 있으며, 고도의 첨단기술이 융·복합되어 산업 전반에 파급효과가 매우 커 4차 산업 혁명을 주도할 미래 성장동력 산업으로 평가받고 있다. 국내 방위산업이 글로벌 경쟁력을 확보하기 위해서는 무기체계 완제품을 생산하는 대기업뿐만 아니라 완제품을 구성하는 각종 구성품과 부품, 수리부속류, 소재, 장비를 생산 하는 많은 중소 방위산업체의 육성이 필수적으로 이루어져야 할 것이다. 그러나 국내 방위산업의 현실은 방위산업의 저변확대와 육성에 대한 중요성은 높은 반면, 많은 중소 방위산업체들의 경영여건과 글로벌 경쟁력이 매우 취약한 실정이다. 타 산업의 중소업체들의 주요 경영지표를 비교하여도 방위산업의 중소업체 경영실태가 상대적으로 취약한 상황이다. 그리고 국내 각종 학술지와 연구논문으로 다수의 연구 자료가 있으나 대부분 정부의 방산육성정책이 방위산업 경영성과 분석을 통한 정책의 실효성 평가에 중점을 두고 있는 것으로 파악된다. 따라서 방산 중소기업의 국가적인 경쟁력을 높이기 위해서는 연구보고서에서 지적한 문제점들에 대해서 정책의 효과성을 보기 위해서는 기업 본연의 경영활동 속에서 경영성과를 극대화할 수 있는 전략적 방안 차원에서 대·중소기업간 상생협력(공급사슬 파트너십)의 역할과 정부지원제도의 수혜여부와 활용도에 따라 경영성과에 미치는 영향 변화를 심도있게 분석해 볼 필요성이 있다고 판단된다. &amp;#xD; 본 연구의 목적은 국내 방위산업에 참여하는 다수 중소기업의 경영여건을 개선하고 방산 중소기업의 경쟁력을 향상시키는데 도움을 줄 수 있는 다양한 연구가 필요하다는 전제를 바탕으로, 방산 중소기업의 경영성과 제고에 영향을 미칠 수 있는 내부 핵심역량과 경쟁우위전략 유형, 경영성과 등 기업 경영의 본원적인 틀 속에서 인과관계와 상관관계를 살펴보고, 이러한 틀 속에서 기업의 경영활동에 큰 영향요인이라 판단되는 원청업체와의 공급사슬 파트너십과 정부지원제도의 활용도에 따라 이러한 변수들 간에 어떠한 조절효과를 나타내는지 실증연구 함으로써 실효성 있는 경영성과 제고 방안을 도출해 보고 기업 경영에 유의미한 시사점을 제시하고자 하였다. 이를 위해 기존의 선행연구를 토대로 연구모형과 연구가설을 설정하였고, 국내 방위산업 중소기업을 대상으로 한 설문조사를 통해 이를 실증적으로 분석, 검증하여 그 결과를 도출하였다. 본 연구결과에 대한 학문적 시사점은 다음과 같다. 첫째, 핵심역량이 경영성과에 미치는 영향관계에서 재무적 성과에서는 연구개발역량과 기업가역량이, 비재무적성과에서는 모든 핵심역량이 유의하게 나타났다. 둘째, 핵심역량이 경쟁우위전략에 미치는 영향관계에서 원가우위전략에는 자원역량과 기업가역량이, 차별화전략에는 모든 핵심역량이, 집중화전략에는 연구개발역량과 기업가역량이 유의하게 나타났다. 셋째, 경쟁우위전략이 경영성과에 미치는 영향관계에서는 재무적성과에는 차별화전략과 집중화전략이, 비재무적성과에는 차별화전략만이 유의하게 나타났다. 기존 선행연구에서도 핵심역량과 경쟁전략의 유형에 따라 경영성과에 미치는 영향이 서로 상이한 결과를 보여주고 있다. 넷째, 핵심역량과 경영성과 간의 조절효과에서 공급사슬파트너십 정도가 높을수록 연구개발역량이 강화되어 비재무적성과를 향상시키는 것으로 나타났으며, 정부지원제도(금융지원) 만족도가 높을수록 수출마케팅 역량이 강화되어 비재무적 성과를 향상시키는 것으로 나타났다. 그러나 정부지원 수혜기업의 경영성과 제고 효과는 미미한 것으로 나타나 정부지원제도의 지원규모를 보다 확대하고 수혜기업의 범위를 보다 확대해 나갈 필요성이 확인되었다. 이러한 연구결과는 현 방위산업 중소기업의 경영자 및 신규참여를 희망하는 중소기업 경영자에게 많은 도움이 될 것으로 판단되며, 정부지원제도의 경우도 방위산업 육성차원에서 중소기업 친화적인 지원제도를 마련하는데 많은 시사점을 줄 수 있을 것으로 생각된다."
+        },
+        {
+          "rank": 45,
+          "score": 0.49233049154281616,
+          "doc_id": "NART133199369",
+          "title": "Corporate Social Contribution and Impact Business: Focusing on Proposing a Stakeholder-centric Business Model",
+          "abstract": "<P>본 연구의 목적은 임팩트 비즈니스의 특성을 고려한 비즈니스 모델의 설계와 사례연구를 통해서 학술적&#x2024;실무적 시사점을 제시하는 것이다. 임팩트 비즈니스는 사회적 가치와 경제적 가치를 동시에 추구하는 사업 유형으로 2007년 록펠러 재단이 임팩트 투자의 개념을 제시하면서 유래하였다. 임팩트 비즈니스는 다양한 이해관계자가 겪고 있는 사회문제 혹은 환경문제의 해결을 목적으로 하며, 이해관계자의 적극적 참여가 이루어진다는 특성을 갖는다. 따라서 임팩트 비즈니스 모델의 설계 시에는 기업이 해결하고자 하는 문제가 무엇이고 이해관계자가 누구인지, 그리고 그들의 역할이 무엇인지를 명확하게 기술해야 한다. 본 연구에서는 선행문헌에서 다루어지고 있는 비즈니스 모델 구성요소들을 참고하여 해결과제, 이해관계자, 가치제안, 가치창출, 가치획득을 구성요소로 하여 비즈니스 모델을 설계하였다. 여타의 비즈니스와 달리 임팩트 비즈니스는 이해관계자의 역할이 중요하기 때문에 우리는 이 모델을 &ldquo;이해관계자 중심 비즈니스 모델&rdquo;이라고 부르고자 한다. 연구에서 제시한 비즈니스 모델을 분석 프레임워크로 하여 국내 인구감소지역의 소농 및 소상공인의 하락한 경제적 지위의 회복을 사업목표로 창업한 ㈜미스터아빠의 사례를 분석하였다. 사례기업은 전국 단위 소분/물류 센터와 자사가 보유하고 있는 IT 플랫폼 기술을 핵심자산으로 하여 산지에서 생산된 농산물을 산지의 수요자에게 공급하는 유통직선화와 소상공인의 디지털전환 지원을 통해 소농과 소상공인이 겪고 있는 문제를 해결하고 창업 3년 만에 300억 매출과 영업이익 흑자 전환이라는 경제적 가치를 실현하였다. 본 연구는 임팩트 비즈니스의 특성을 고려하여 전통적인 비즈니스 모델과 차별화된 이해관계자 중심의 임팩트 비즈니스 모델의 개념을 제시하고 있다는 점에서 학술적 의의가 있고, 임팩트 비즈니스의 전형적인 성과를 창출하고 있는 기업을 발굴하여 사례연구를 통해 연구에서 제시된 비즈니스 모델의 실무 적용 가능성을 확인하고 있다는 점에서 실무적 의의가 있다.</P>",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART133199369&target=NART&cn=NART133199369",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Corporate Social Contribution and Impact Business: Focusing on Proposing a Stakeholder-centric Business Model Corporate Social Contribution and Impact Business: Focusing on Proposing a Stakeholder-centric Business Model Corporate Social Contribution and Impact Business: Focusing on Proposing a Stakeholder-centric Business Model <P>본 연구의 목적은 임팩트 비즈니스의 특성을 고려한 비즈니스 모델의 설계와 사례연구를 통해서 학술적&#x2024;실무적 시사점을 제시하는 것이다. 임팩트 비즈니스는 사회적 가치와 경제적 가치를 동시에 추구하는 사업 유형으로 2007년 록펠러 재단이 임팩트 투자의 개념을 제시하면서 유래하였다. 임팩트 비즈니스는 다양한 이해관계자가 겪고 있는 사회문제 혹은 환경문제의 해결을 목적으로 하며, 이해관계자의 적극적 참여가 이루어진다는 특성을 갖는다. 따라서 임팩트 비즈니스 모델의 설계 시에는 기업이 해결하고자 하는 문제가 무엇이고 이해관계자가 누구인지, 그리고 그들의 역할이 무엇인지를 명확하게 기술해야 한다. 본 연구에서는 선행문헌에서 다루어지고 있는 비즈니스 모델 구성요소들을 참고하여 해결과제, 이해관계자, 가치제안, 가치창출, 가치획득을 구성요소로 하여 비즈니스 모델을 설계하였다. 여타의 비즈니스와 달리 임팩트 비즈니스는 이해관계자의 역할이 중요하기 때문에 우리는 이 모델을 &ldquo;이해관계자 중심 비즈니스 모델&rdquo;이라고 부르고자 한다. 연구에서 제시한 비즈니스 모델을 분석 프레임워크로 하여 국내 인구감소지역의 소농 및 소상공인의 하락한 경제적 지위의 회복을 사업목표로 창업한 ㈜미스터아빠의 사례를 분석하였다. 사례기업은 전국 단위 소분/물류 센터와 자사가 보유하고 있는 IT 플랫폼 기술을 핵심자산으로 하여 산지에서 생산된 농산물을 산지의 수요자에게 공급하는 유통직선화와 소상공인의 디지털전환 지원을 통해 소농과 소상공인이 겪고 있는 문제를 해결하고 창업 3년 만에 300억 매출과 영업이익 흑자 전환이라는 경제적 가치를 실현하였다. 본 연구는 임팩트 비즈니스의 특성을 고려하여 전통적인 비즈니스 모델과 차별화된 이해관계자 중심의 임팩트 비즈니스 모델의 개념을 제시하고 있다는 점에서 학술적 의의가 있고, 임팩트 비즈니스의 전형적인 성과를 창출하고 있는 기업을 발굴하여 사례연구를 통해 연구에서 제시된 비즈니스 모델의 실무 적용 가능성을 확인하고 있다는 점에서 실무적 의의가 있다.</P>"
+        },
+        {
+          "rank": 46,
+          "score": 0.4897535443305969,
+          "doc_id": "JAKO201008054533446",
+          "title": "병렬 이벤트 기반 원격 IT 융합 개발",
+          "abstract": "본 논문에서는 첨단 통신 기술을 포함한 IT 기술을 전통산업과 융합한 병렬 이벤트 기반 원격 IT 융합 사례들을 개발하였다. IT 융합 사례들은 다수의 장치와 사용자가 동시에 시스템에서 제공되는 서비스를 이용하거나 이벤트를 발생시킨다. 따라서 다양한 장치들로부터 동시에 발생되는 이벤트를 처리하기 위해 병렬 처리 기법이 필요하다. 이에 본 논문에서는 스레드를 생성하여 병렬 처리가 가능하도록 개발하였으며, 또한 장치와 원격 정보 송수신을 위해 무선 통신 및 전력선 통신과의 연결을 할 수 있는 기술을 개발하였다. 그리고 장치 및 장치와 사용자 포털에서 발생하는 이벤트들을 논리적으로 모델링하기 위해 XML을 이용하여 객체 지향 모델링 기법으로 모델링하였다. 특히 결과들을 효과적으로 보여주기 위해 다양한 시각적인 사용자 인터페이스, 즉 그래프, 테이블 및 그래프와 테이블을 혼합한 방식을 이용하여 실시간으로 볼 수 있도록 개발하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201008054533446&target=NART&cn=JAKO201008054533446",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "병렬 이벤트 기반 원격 IT 융합 개발 병렬 이벤트 기반 원격 IT 융합 개발 병렬 이벤트 기반 원격 IT 융합 개발 본 논문에서는 첨단 통신 기술을 포함한 IT 기술을 전통산업과 융합한 병렬 이벤트 기반 원격 IT 융합 사례들을 개발하였다. IT 융합 사례들은 다수의 장치와 사용자가 동시에 시스템에서 제공되는 서비스를 이용하거나 이벤트를 발생시킨다. 따라서 다양한 장치들로부터 동시에 발생되는 이벤트를 처리하기 위해 병렬 처리 기법이 필요하다. 이에 본 논문에서는 스레드를 생성하여 병렬 처리가 가능하도록 개발하였으며, 또한 장치와 원격 정보 송수신을 위해 무선 통신 및 전력선 통신과의 연결을 할 수 있는 기술을 개발하였다. 그리고 장치 및 장치와 사용자 포털에서 발생하는 이벤트들을 논리적으로 모델링하기 위해 XML을 이용하여 객체 지향 모델링 기법으로 모델링하였다. 특히 결과들을 효과적으로 보여주기 위해 다양한 시각적인 사용자 인터페이스, 즉 그래프, 테이블 및 그래프와 테이블을 혼합한 방식을 이용하여 실시간으로 볼 수 있도록 개발하였다."
+        },
+        {
+          "rank": 47,
+          "score": 0.4887915253639221,
+          "doc_id": "JAKO201226960571506",
+          "title": "우리나라 BT 융합기술 시장의 특성에 관한 실증연구",
+          "abstract": "생명공학(BT) 분야는 고부가가치의 새로운 시장기회를 제공할 수 있는 잠재력이 있으며, 타분야와 융합 연구개발이 활발하게 진행되고 있다. 본 연구는 2000년부터 2010년동안 한국특허청(KIPO)에 등록된 특허를 기준으로 우리나라 BT 융합기술의 실태를 실증분석 하고자 한다. 특히 국제특허분류(IPC) 체계에 따라 융합기술을 동종융합과 이종융합 기술로 구분하였으며, 그 시장의 특성을 파악을 위하여 기술 및 기업집중도, 시장확보력지수(PFS) 비교 실증분석을 한다. 또한 FOS 기술-분류표를 활용하여 BT기술과 이종융합이 일어나고 있는 산업군을 파악하여 신시장 창출현황을 살펴보고 이에 대한 시사점을 찾고자 한다. 그간 특허분석으로 많은 연구가 수행되었으나 우리나라 BT 융합기술 시장에 초점이 맞추어 진 연구는 거의 드문 실정으로 이러한 분석은 매우 의미가 있는 연구라고 사료된다. 본 연구에서는 우리나라 융합기술 시장이 급속도로 확장되고 있으며, 소수 기업에 의하여 독과점화되고 있다는 사실을 확인하고, 종합적으로 BINET 융합 분야의 핵심 키워드 및 기술을 파악한다. 이러한 BT 융합의 추세는 향후 BT 산업화가 가속화되면서 더욱 강화될 것으로 전망되며, 본 연구를 통하여 확인된 향후 BT 기반 융합기술 정책수립에 많은 시사점을 제공할 수 있을 것이다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201226960571506&target=NART&cn=JAKO201226960571506",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "우리나라 BT 융합기술 시장의 특성에 관한 실증연구 우리나라 BT 융합기술 시장의 특성에 관한 실증연구 우리나라 BT 융합기술 시장의 특성에 관한 실증연구 생명공학(BT) 분야는 고부가가치의 새로운 시장기회를 제공할 수 있는 잠재력이 있으며, 타분야와 융합 연구개발이 활발하게 진행되고 있다. 본 연구는 2000년부터 2010년동안 한국특허청(KIPO)에 등록된 특허를 기준으로 우리나라 BT 융합기술의 실태를 실증분석 하고자 한다. 특히 국제특허분류(IPC) 체계에 따라 융합기술을 동종융합과 이종융합 기술로 구분하였으며, 그 시장의 특성을 파악을 위하여 기술 및 기업집중도, 시장확보력지수(PFS) 비교 실증분석을 한다. 또한 FOS 기술-분류표를 활용하여 BT기술과 이종융합이 일어나고 있는 산업군을 파악하여 신시장 창출현황을 살펴보고 이에 대한 시사점을 찾고자 한다. 그간 특허분석으로 많은 연구가 수행되었으나 우리나라 BT 융합기술 시장에 초점이 맞추어 진 연구는 거의 드문 실정으로 이러한 분석은 매우 의미가 있는 연구라고 사료된다. 본 연구에서는 우리나라 융합기술 시장이 급속도로 확장되고 있으며, 소수 기업에 의하여 독과점화되고 있다는 사실을 확인하고, 종합적으로 BINET 융합 분야의 핵심 키워드 및 기술을 파악한다. 이러한 BT 융합의 추세는 향후 BT 산업화가 가속화되면서 더욱 강화될 것으로 전망되며, 본 연구를 통하여 확인된 향후 BT 기반 융합기술 정책수립에 많은 시사점을 제공할 수 있을 것이다."
+        },
+        {
+          "rank": 48,
+          "score": 0.48637616634368896,
+          "doc_id": "JAKO201117463448631",
+          "title": "산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구",
+          "abstract": "2030년대는 BT시장이 활짝 열리는 시대로 고도화된 IT기술, 데이터 해석기술, 집적회로개발기술, 생화학기술 등 모든 영역의 기술이 필요할 것이며, 앞으로의 기술개발은 융합을 전제로 하여 IT와 BT의 융합이 관건이 될 것으로 기술개발의 시너지를 내기 위해서는 관련 산업과 대학이 물리적으로 적정한 위치에 임해야 할 것이다. 우리나라에는 2009년 말 현재 819개의 산업클러스터가 만들어졌으며, 한국산업단지공단이 집적화 된 산업단지에 여러 가지 지원시설, 지원제도 등을 제공하고 있으나 기술융합을 위한 지식재산서비스에 관한 지원제도는 미미하거나 거의 없는 실정에 있다. 이를 위해 우리나라 산업단지의 현재기능을 살펴보고 문제점을 분석하여 산업클러스터 내의 기업들이 서로 유기적인 협력을 통하여 융합기술 개발의 시너지 효과를 극대화 할 수 있는 길을 모색하며, 특히 한국산업단지공단에 꼭 필요하다고 판단하는 지식재산 관련 지원제도(지식재산지원본부)의 기능과 조직구성에 대한 개념과 산업클러스터 내의 기업에게 지식재산전략 수립을 지원할 수 있는Flow를 제안하여 산업클러스터의 지식재산서비스 지원방안을 제시하였다. 또한 정부에서 다양하게 시행되고 있는 지식재산 관련 제도와 정책이 산업단지공단에 입주해 있는 중소기업에게 가시적인 효과를 기대할 수 있는 방안을 제시하였다.",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO201117463448631&target=NART&cn=JAKO201117463448631",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구 산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구 산업클러스터 기술융합 활성화를 위한 효율적인 지식재산서비스 지원 방안 연구 2030년대는 BT시장이 활짝 열리는 시대로 고도화된 IT기술, 데이터 해석기술, 집적회로개발기술, 생화학기술 등 모든 영역의 기술이 필요할 것이며, 앞으로의 기술개발은 융합을 전제로 하여 IT와 BT의 융합이 관건이 될 것으로 기술개발의 시너지를 내기 위해서는 관련 산업과 대학이 물리적으로 적정한 위치에 임해야 할 것이다. 우리나라에는 2009년 말 현재 819개의 산업클러스터가 만들어졌으며, 한국산업단지공단이 집적화 된 산업단지에 여러 가지 지원시설, 지원제도 등을 제공하고 있으나 기술융합을 위한 지식재산서비스에 관한 지원제도는 미미하거나 거의 없는 실정에 있다. 이를 위해 우리나라 산업단지의 현재기능을 살펴보고 문제점을 분석하여 산업클러스터 내의 기업들이 서로 유기적인 협력을 통하여 융합기술 개발의 시너지 효과를 극대화 할 수 있는 길을 모색하며, 특히 한국산업단지공단에 꼭 필요하다고 판단하는 지식재산 관련 지원제도(지식재산지원본부)의 기능과 조직구성에 대한 개념과 산업클러스터 내의 기업에게 지식재산전략 수립을 지원할 수 있는Flow를 제안하여 산업클러스터의 지식재산서비스 지원방안을 제시하였다. 또한 정부에서 다양하게 시행되고 있는 지식재산 관련 제도와 정책이 산업단지공단에 입주해 있는 중소기업에게 가시적인 효과를 기대할 수 있는 방안을 제시하였다."
+        },
+        {
+          "rank": 49,
+          "score": 0.48570600152015686,
+          "doc_id": "NART36961904",
+          "title": "IT chip과 나노 바이오 융합 플랫폼 기술",
+          "abstract": "",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=NART36961904&target=NART&cn=NART36961904",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "IT chip과 나노 바이오 융합 플랫폼 기술 IT chip과 나노 바이오 융합 플랫폼 기술 IT chip과 나노 바이오 융합 플랫폼 기술 "
+        },
+        {
+          "rank": 50,
+          "score": 0.4856342077255249,
+          "doc_id": "JAKO198867656224751",
+          "title": "전산망 표준화-전산망 표준화 추진체계",
+          "abstract": "",
+          "source": "http://click.ndsl.kr/servlet/OpenAPIDetailView?keyValue=JAKO198867656224751&target=NART&cn=JAKO198867656224751",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "전산망 표준화-전산망 표준화 추진체계 전산망 표준화-전산망 표준화 추진체계 전산망 표준화-전산망 표준화 추진체계 "
+        }
+      ]
+    }
+  ],
+  "meta": {},
+  "timestamp_kst": "2025-09-20T23:58:15.154179",
+  "trial_id": "e12b12eb"
+}
