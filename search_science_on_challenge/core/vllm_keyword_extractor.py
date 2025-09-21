@@ -1,7 +1,8 @@
 """
 vLLM 키워드 추출기 모듈
 - vLLM OpenAI 호환 API를 사용한 키워드 추출
-- 한국어/영어 키워드 분리
+- 영어 키워드만 생성
+- pubmed는 영어 논문이므로 한국어 키워드 비활성화
 - 검색어 생성
 """
 
@@ -225,25 +226,24 @@ class VLLMKeywordExtractor:
             검색어 리스트
         """
         try:
-            korean_kw = keywords.get('korean', [])
+            # korean_kw = keywords.get('korean', [])  # PubMed는 영어 논문이므로 한국어 키워드 비활성화
             english_kw = keywords.get('english', [])
             
             # 검색어 조합 생성
             search_terms = []
             
-            # 한국어 검색어 (파이프로 구분)
-            if korean_kw:
-                korean_term = '|'.join(korean_kw)
-                search_terms.append(korean_term)
+            # 한국어 검색어 (파이프로 구분) - 비활성화
+            # if korean_kw:
+            #     korean_term = '|'.join(korean_kw)
+            #     search_terms.append(korean_term)
             
             # 영어 검색어 (파이프로 구분)
             if english_kw:
                 english_term = '|'.join(english_kw)
                 search_terms.append(english_term)
-            # print(f"DEBUG - 한국어 키워드: {korean_kw}")
             # print(f"DEBUG - 영어 키워드: {english_kw}")
-            # 혼합 검색어 생성
-            mixed_terms = self._generate_mixed_terms(korean_kw, english_kw)
+            # 혼합 검색어 생성 (영어만)
+            mixed_terms = self._generate_mixed_terms([], english_kw)  # 한국어 키워드 빈 리스트로 전달
             search_terms.extend(mixed_terms)
             
             # 중복 제거 및 정리

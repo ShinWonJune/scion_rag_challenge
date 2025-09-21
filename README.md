@@ -46,12 +46,18 @@ python preprocess_and_generate_answer.py \
 # output in ../results/final_answers/
 
 ```
-9. results are in /workspace/data/expr/final_result, once you execute preprocess_and_generate_answer.py, it will overwrite so make sure execute once or and the name of folder
+9. After runnigng preprocess_and_generate_answer.py, results are in /workspace/data/expr/final_result, once you execute preprocess_and_generate_answer.py, it will overwrite so make sure execute once or and the name of folder.
+
+10. Gathering answers as a csv file with final_result.py (scienceon) or final_result_pubmed.py (pubmed)
 
 ```
 python final_result.py
 
 #output in ../results/competition_submission
+
+python final_result_pubmed.py
+#output in ../results/p
 ```
+
 
 
