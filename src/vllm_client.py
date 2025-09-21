@@ -50,14 +50,16 @@ class VLLMClient:
         return response.choices[0].message.content.strip()
 
     def generate_answer(self, question, context, max_tokens=8192):
-        """답변 생성"""
+        """ PubMedQA 답변 생성"""
         prompt = f"""Answer the question based on the provided context.
-        
+        Answer should be in 2-3 sentences. Final decision should be 'yes', 'no', or 'maybe'.
+
         Context: {context}
         
         Question: {question}
         
-        Answer:"""
+        Answer:
+        Final decision:"""
         
         response = self.client.chat.completions.create(
             model="openai/gpt-oss-120B",

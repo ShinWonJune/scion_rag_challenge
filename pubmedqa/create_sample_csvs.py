@@ -2,10 +2,12 @@
 PubMedQA 데이터에서 샘플 CSV 파일 생성
 1. subquestion.csv: 첫 번째 컬럼에 질문만 포함 (50개 샘플)
 2. pubmedqa_complete.csv: 질문, long_answer, final_decision 모두 포함
+3. questions.jsonl: JSONL 형태의 질문 데이터
 """
 
 import pandas as pd
 import random
+import json
 from datasets import load_dataset
 
 def create_sample_csvs():
@@ -30,39 +32,52 @@ def create_sample_csvs():
         'question': [item['question'] for item in sampled_data]
     })
     
-    questions_df.to_csv('/app/pubmedqa/subquestion.csv', index=False)
-    print("subquestion.csv 파일이 생성되었습니다. (50개 질문)")
+    questions_df.to_csv('./data/questions/subquestion.csv', index=False)
+    print("data/questions/subquestion.csv 파일이 생성되었습니다. (50개 질문)")
     
-    # 2. pubmedqa_complete.csv 생성 (모든 정보 포함)
+    # 2. pubmedqa_complete.csv 생성 (모든 정보 포함 - context 포함)
     complete_df = pd.DataFrame({
         'question': [item['question'] for item in sampled_data],
+        'context': [' '.join(item['context']['contexts']) if isinstance(item['context'], dict) and 'contexts' in item['context'] else str(item['context']) for item in sampled_data],
         'long_answer': [item['long_answer'] for item in sampled_data],
         'final_decision': [item['final_decision'] for item in sampled_data],
         'pubid': [item['pubid'] for item in sampled_data]
     })
     
-    complete_df.to_csv('/app/pubmedqa/pubmedqa_complete.csv', index=False)
-    print("pubmedqa_complete.csv 파일이 생성되었습니다. (질문, 답변, 결정 포함)")
+    complete_df.to_csv('./data/evaluation/pubmedqa_complete.csv', index=False)
+    print("data/evaluation/pubmedqa_complete.csv 파일이 생성되었습니다. (질문, 컨텍스트, 답변, 결정 포함)")
     
-    # 3. 평가용 데이터 생성 (질문과 정답만)
-    evaluation_df = pd.DataFrame({
-        'question': [item['question'] for item in sampled_data],
-        'ground_truth_answer': [item['long_answer'] for item in sampled_data],
-        'ground_truth_decision': [item['final_decision'] for item in sampled_data]
-    })
+    # # 3. 평가용 데이터 생성 (질문과 정답만)
+    # evaluation_df = pd.DataFrame({
+    #     'question': [item['question'] for item in sampled_data],
+    #     'ground_truth_answer': [item['long_answer'] for item in sampled_data],
+    #     'ground_truth_decision': [item['final_decision'] for item in sampled_data]
+    # })
     
-    evaluation_df.to_csv('/app/pubmedqa/pubmedqa_evaluation.csv', index=False)
-    print("pubmedqa_evaluation.csv 파일이 생성되었습니다. (평가용)")
+    # evaluation_df.to_csv('./data/evaluation/pubmedqa_evaluation.csv', index=False)
+    # print("data/evaluation/pubmedqa_evaluation.csv 파일이 생성되었습니다. (평가용)")
+    
+    # 4. questions.jsonl 생성 (JSONL 형태)
+    with open('./data/questions/questions.jsonl', 'w', encoding='utf-8') as f:
+        for i, item in enumerate(sampled_data):
+            json_obj = {
+                'id': f'row_{i+1:06d}',
+                'question': item['question']
+            }
+            f.write(json.dumps(json_obj, ensure_ascii=False) + '\n')
+    print("data/questions/questions.jsonl 파일이 생성되었습니다. (JSONL 형태)")
     
     # 생성된 파일들 정보 출력
-    print(f"\n생성된 파일들:")
-    print(f"1. subquestion.csv: {len(questions_df)} 개 질문")
-    print(f"2. pubmedqa_complete.csv: {len(complete_df)} 개 완전한 데이터")
-    print(f"3. pubmedqa_evaluation.csv: {len(evaluation_df)} 개 평가용 데이터")
+    # print(f"\n생성된 파일들:")
+    # print(f"1. data/questions/subquestion.csv: {len(questions_df)} 개 질문")
+    # print(f"2. data/evaluation/pubmedqa_complete.csv: {len(complete_df)} 개 완전한 데이터")
+    # print(f"3. data/evaluation/pubmedqa_evaluation.csv: {len(evaluation_df)} 개 평가용 데이터")
+    # print(f"4. data/questions/questions.jsonl: {len(sampled_data)} 개 JSONL 형태 질문")
     
     # 샘플 데이터 출력
     print(f"\n첫 번째 질문 예시:")
     print(f"질문: {sampled_data[0]['question']}")
+    print(f"컨텍스트: {(' '.join(sampled_data[0]['context']['contexts']) if isinstance(sampled_data[0]['context'], dict) and 'contexts' in sampled_data[0]['context'] else str(sampled_data[0]['context']))[:200]}...")
     print(f"답변: {sampled_data[0]['long_answer'][:200]}...")
     print(f"결정: {sampled_data[0]['final_decision']}")
 
