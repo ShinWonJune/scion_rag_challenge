@@ -43,12 +43,15 @@ python -m retrieval_system.main --config_json ../configs/query_encoder/config_gt
 
 python preprocess_and_generate_answer.py \
   --input_dir /workspace/results/retrival_docs/250908_235532 --max_rank 1 --parallel True
+# output in ../results/final_answers/
+
 ```
 9. results are in /workspace/data/expr/final_result, once you execute preprocess_and_generate_answer.py, it will overwrite so make sure execute once or and the name of folder
 
 ```
 python final_result.py
 
+#output in ../results/competition_submission
 ```
 
 

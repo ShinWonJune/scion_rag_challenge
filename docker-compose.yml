@@ -7,11 +7,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./src:/app/src
-      - ./data:/app/data
-      - ./configs:/app/configs
-      - ./outputs:/app/outputs
-      - ./model_cache:/app/model_cache
+      - .:/app
     environment:
       - CUDA_VISIBLE_DEVICES=0,1,2,3
       - HF_HOME=/app/model_cache
