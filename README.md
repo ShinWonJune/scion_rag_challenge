@@ -17,8 +17,16 @@ TARGET_DOCUMENTS=50 python main.py --use-vllm --use-pubmed batch test.csv # vllm
 
 4. you needs api key for gemini and science_on_api
 5. take /workspace/search_science_on_chellenge/outputs/search_documents_20250912_013206.jsonl to /workspace/data/expr
-6. Move to src/ and execute line by line in main.ipynb
-7. if you want to execute fast you and you the command in the ipynb shell to bash directly ipynb require to setup to use gpu
+6. Move to src/ and build vector database for embeddings:
+
+```bash
+# Build vector database with specific GPU (recommended when vLLM is running)
+python build_vectordb_search.py --gpu_id 2 # select gpu id 
+python build_vectordb_search.py --config_path ../configs/query_encoder/config_bge_m3.json --gpu_id 2
+```
+
+7. Execute line by line in main.ipynb
+8. if you want to execute fast you and you the command in the ipynb shell to bash directly ipynb require to setup to use gpu
 
 > Other Option
 
@@ -30,13 +38,17 @@ python multi_hop_to_single_hop.py \
   --mode decompose --model gemini-2.5-flash
 
 
+
 python -m retrieval_system.main --config_json ../configs/query_encoder/config_gte-multilingual-base.json --questions_jsonl /workspace/data/expr singlehop_decompose.jsonl  --range  1-50 \ --top_k  50 \ --device  auto \ --schema_json  /workspace/configs/csv_schema/
 
 python preprocess_and_generate_answer.py \
   --input_dir /workspace/results/retrival_docs/250908_235532 --max_rank 1 --parallel True
+```
+9. results are in /workspace/data/expr/final_result, once you execute preprocess_and_generate_answer.py, it will overwrite so make sure execute once or and the name of folder
 
+```
 python final_result.py
 
 ```
 
-8. results are in /workspace/data/expr/final_result, once you execute preprocess_and_generate_answer.py, it will overwrite so make sure execute once or and the name of folder
+

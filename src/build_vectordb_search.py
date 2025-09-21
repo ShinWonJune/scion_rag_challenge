@@ -1,7 +1,8 @@
 # main.py
 import os
 import json
-from typing import List
+import argparse
+from typing import List, Optional
 from utils.load_json import load_config
 from utils.load_jsonl_and_make_text_for_embedding import (
     load_jsonl_and_make_text_for_embedding as load_jsonl_docs,
@@ -14,10 +15,11 @@ from data_handler.for_embedding import prepare_documents, save_results
 
 
 def build_vectordb_search(
-    config_path="../configs/query_encoder/config_gte-multilingual-base.json",
-    data_schema="/workspace/configs/csv_schema/test_2.json",
-    docs_jsonl_path="/workspace/data/expr/search_documents_20250912_013206.jsonl",
+    config_path="../configs/query_encoder/config_bge_m3.json",
+    data_schema="../configs/csv_schema/test_2.json",
+    docs_jsonl_path="/app/search_science_on_chellenge/outputs/search_documents_20250912_013206.jsonl",
     auto_data_load=False,
+    gpu_id: Optional[int] = None,
 ):
     # 1. Load configurations and create dynamic document class
     config = load_config(config_path)
@@ -44,7 +46,7 @@ def build_vectordb_search(
     # This function is now focused only on the ML model and vector generation.
     model_name = config["model_name"]
     embeddings = generate_batch_embeddings(
-        documents_data, model_name, config["embedding_dim"]
+        documents_data, model_name, config["embedding_dim"], gpu_id=gpu_id
     )
 
     if embeddings is None:
@@ -72,4 +74,43 @@ def build_vectordb_search(
 
 
 if __name__ == "__main__":
-    build_vectordb_search()
+    parser = argparse.ArgumentParser(
+        description="벡터 데이터베이스 구축을 위한 문서 임베딩 생성"
+    )
+    
+    parser.add_argument(
+        "--config_path",
+        default="../configs/query_encoder/config_bge_m3.json",
+        help="임베딩 모델 설정 파일 경로"
+    )
+    parser.add_argument(
+        "--data_schema",
+        default="../configs/csv_schema/test_2.json",
+        help="데이터 스키마 파일 경로"
+    )
+    parser.add_argument(
+        "--docs_jsonl_path",
+        default="/app/search_science_on_chellenge/outputs/search_documents_20250912_013206.jsonl",
+        help="문서 JSONL 파일 경로"
+    )
+    parser.add_argument(
+        "--auto_data_load",
+        action="store_true",
+        help="설정 파일에서 데이터 경로를 자동으로 로드"
+    )
+    parser.add_argument(
+        "--gpu_id",
+        type=int,
+        default=None,
+        help="사용할 GPU ID (예: 0, 1, 2, 3). 지정하지 않으면 자동 선택"
+    )
+    
+    args = parser.parse_args()
+    
+    build_vectordb_search(
+        config_path=args.config_path,
+        data_schema=args.data_schema,
+        docs_jsonl_path=args.docs_jsonl_path,
+        auto_data_load=args.auto_data_load,
+        gpu_id=args.gpu_id
+    )

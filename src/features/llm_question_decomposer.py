@@ -55,7 +55,7 @@ def process_single_record(
         "id": record.get("id"),
         "mode": mode,
         **(
-            {"original_question": question} if "original_question" not in record else {}
+            {"question": question} if "question" not in record else {}
         ),
     }
 

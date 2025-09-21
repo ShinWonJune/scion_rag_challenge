@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 """
+변경사항:
+output "original_question" -> "question" 
+
+이유:
+멀티홉을 거치지 않은 원본 question.jsonl 도 retrieve_system.main.py에서 처리할 수 있도록 하기 위함.
+retrieval_system.main 의 output key "query"와 "question" 이 매핑되도록 수정
+
+
 multi_hopt_to_single_hop.py
 
 Convert multi-hop questions into single-hop questions using Google's Gemini models.

@@ -3,6 +3,7 @@ import os
 import glob
 import pandas as pd
 import datetime
+import argparse
 
 
 def process_json_files(directory_path):
@@ -31,9 +32,9 @@ def process_json_files(directory_path):
             result_prediction = data.get("result")
             retrieval_data = data.get("retrival", {})
 
-            # Collect all 'hits' from all 'queries'
+            # Collect all 'hits' from all 'retrieval_results'
             all_hits = []
-            for query in retrieval_data.get("queries", []):
+            for query in retrieval_data.get("retrieval_results", []):
                 all_hits.extend(query.get("hits", []))
 
             # Sort all hits by rank to prioritize higher-ranked documents
@@ -141,29 +142,72 @@ def append_new_data_frame_to_base_csv(
 
 # --- Execution Example ---
 if __name__ == "__main__":
-    # Define the path to your JSON files.
-    # IMPORTANT: Replace this with the actual path to your files.
-    # For example: '/workspace/results/final_result/'
+    parser = argparse.ArgumentParser(
+        description="JSON 파일들을 처리하여 최종 CSV 결과를 생성합니다."
+    )
+    
+    # 필수 인자
+    parser.add_argument(
+        "--input_dir",
+        type=str,
+        default="/workspace/data/expr/final_result",
+        help="처리할 JSON 파일이 있는 입력 디렉토리 경로 (기본값: /workspace/data/expr/final_result)."
+    )
+    parser.add_argument(
+        "--base_csv",
+        type=str,
+        default="../data/rag_test_data/scion.csv",
+        help="기본 CSV 파일 경로 (기본값: ../data/rag_test_data/scion.csv)."
+    )
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        default=None,
+        help="결과 CSV 파일을 저장할 출력 디렉토리 경로. 지정하지 않으면 타임스탬프 기반 경로를 사용합니다."
+    )
+    parser.add_argument(
+        "--output_file",
+        type=str,
+        default=None,
+        help="출력 CSV 파일명. 지정하지 않으면 타임스탬프 기반 파일명을 사용합니다."
+    )
+    
+    args = parser.parse_args()
+    
     # 현재 날짜와 시간을 가져옵니다.
     now = datetime.datetime.now()
-
     # 원하는 형식(yymmdd_hhmmss)으로 문자열을 만듭니다.
     timestamp_str = now.strftime("%y%m%d_%H%M%S")
-    retrival_docs_folder = "/workspace/data/expr/final_result"
-    output_directory = (
-        "/workspace/data/expr/competition_submission/" + timestamp_str + "/"
-    )  # Assuming the files are in the same directory as the script for this example
-
-    # Define the desired path for the output CSV file.
-    output_file = "final_predictions_" + timestamp_str + ".csv"
-    base_csv_uri = "/workspace/data/rag_test_data/scion.csv"
-    # Create dummy files for demonstration purposes
-    # In your real case, you would already have these files.
+    
+    # 출력 디렉토리 설정
+    if args.output_dir is None:
+        output_directory = f"/workspace/data/expr/competition_submission/{timestamp_str}/"
+    else:
+        output_directory = args.output_dir
+        if not output_directory.endswith('/'):
+            output_directory += '/'
+    
+    # 출력 파일명 설정
+    if args.output_file is None:
+        output_file = f"final_predictions_{timestamp_str}.csv"
+    else:
+        output_file = args.output_file
+    
+    # 출력 디렉토리 생성
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
-
-    new_df = process_json_files(retrival_docs_folder)
-    print(new_df)
-    append_new_data_frame_to_base_csv(
-        base_csv_uri, output_directory, output_file, new_df
-    )
+    
+    print(f"입력 디렉토리: {args.input_dir}")
+    print(f"기본 CSV 파일: {args.base_csv}")
+    print(f"출력 디렉토리: {output_directory}")
+    print(f"출력 파일명: {output_file}")
+    
+    # JSON 파일들 처리
+    new_df = process_json_files(args.input_dir)
+    if new_df is not None:
+        print(new_df)
+        append_new_data_frame_to_base_csv(
+            args.base_csv, output_directory, output_file, new_df
+        )
+    else:
+        print("처리할 데이터가 없습니다.")

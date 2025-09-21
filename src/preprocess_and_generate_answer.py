@@ -13,24 +13,26 @@ import time
 from llm_client.init_gemini import init_gemini
 from llm_client.call_gemini import call_gemini
 from prompts.general.generate_answer_base_v2 import build_prompt
+from vllm_client import VLLMClient
 
 # --- Gemini API 호출을 위한 기본 설정 및 함수 ---
 """
 
 python preprocess_and_generate_answer.py     \
-  --input_dir /workspace/results/retrival_docs/250908_235532 --max_rank 1 --parallel True
+  --input_dir /workspace/results/retrieval_docs/250908_235532 --max_rank 1 --parallel True
 """
 
 
 def process_file(
-    filepath: str, max_rank: int, model_obj: genai.GenerativeModel
+    filepath: str, max_rank: int, model_obj: Optional[genai.GenerativeModel] = None, 
+    vllm_client: Optional[VLLMClient] = None
 ) -> List[Dict]:
     """
     단일 JSON 파일을 처리하는 주 함수입니다.
     1. 파일을 읽고 'original' 타입의 질문을 찾습니다.
     2. 전체 데이터의 'hits'를 max_rank 기준으로 필터링합니다.
     3. 필터링된 전체 JSON 객체를 문자열로 변환하여 컨텍스트로 사용합니다.
-    4. 'original' 질문과 컨텍스트로 Gemini API를 호출합니다.
+    4. 'original' 질문과 컨텍스트로 Gemini API 또는 vLLM을 호출합니다.
     5. 최종 결과를 지정된 형식으로 반환합니다.
     """
     print(f"--- Processing file: {os.path.basename(filepath)} ---")
@@ -74,17 +76,25 @@ def process_file(
     context_str = json.dumps(filtered_data, ensure_ascii=False, indent=2)
 
     # 4. 프롬프트를 생성하고 API를 호출합니다.
-    prompt = build_prompt(original_query_text, context_str)
-    messages = [{"role": "user", "parts": [prompt]}]
-    api_result = call_gemini(model_obj, messages)
+    if vllm_client:
+        # vLLM 사용
+        api_result = vllm_client.generate_answer(original_query_text, context_str)
+        model_name = "vllm"
+    elif model_obj:
+        # Gemini 사용
+        prompt = build_prompt(original_query_text, context_str)
+        messages = [{"role": "user", "parts": [prompt]}]
+        api_result = call_gemini(model_obj, messages)
+        model_name = model_obj.model_name
+    else:
+        raise ValueError("Either model_obj or vllm_client must be provided")
 
     # 5. 최종 결과 데이터를 구성합니다.
     file_id = data.get("id", os.path.basename(filepath).split("_")[1])
-    model_name = model_obj.model_name
     result_data = {
         "id": file_id,
         "result": api_result,
-        "prompt": prompt,
+        "prompt": build_prompt(original_query_text, context_str) if not vllm_client else f"Question: {original_query_text}\nContext: {context_str}",
         "model": model_name,
         "retrival": filtered_data,
     }
@@ -99,8 +109,9 @@ def process_file(
 def process_files_parallel(
     filepaths: List[str],
     max_rank: int,
-    model_obj: genai.GenerativeModel,
-    max_workers: int,
+    model_obj: Optional[genai.GenerativeModel] = None,
+    vllm_client: Optional[VLLMClient] = None,
+    max_workers: int = 10,
 ) -> List[Dict]:
     """
     여러 파일을 병렬로 처리합니다.
@@ -109,6 +120,7 @@ def process_files_parallel(
         filepaths (List[str]): 처리할 JSON 파일 경로의 리스트.
         max_rank (int): 'hits'를 필터링할 최대 순위.
         model_obj (genai.GenerativeModel): 초기화된 Gemini 모델 객체.
+        vllm_client (VLLMClient): 초기화된 vLLM 클라이언트 객체.
         max_workers (int): 동시에 실행할 최대 스레드(작업자) 수.
 
     Returns:
@@ -118,9 +130,13 @@ def process_files_parallel(
         print("Warning: No filepaths provided for parallel processing.")
         return []
 
-    # functools.partial을 사용하여 process_file 함수에 고정 인자(max_rank, model_obj)를 미리 전달합니다.
-    # 이렇게 하면 스레드 풀의 map 함수에 파일 경로만 인자로 넘겨줄 수 있습니다.
-    worker_func = partial(process_file, max_rank=max_rank, model_obj=model_obj)
+    # functools.partial을 사용하여 process_file 함수에 고정 인자들을 미리 전달합니다.
+    worker_func = partial(
+        process_file, 
+        max_rank=max_rank, 
+        model_obj=model_obj,
+        vllm_client=vllm_client
+    )
 
     all_results = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -177,6 +193,17 @@ def main():
     )
     parser.add_argument("--temperature", type=float, default=0.2)
     parser.add_argument("--seed", type=int, default=None)
+    # vLLM 관련 인자 추가
+    parser.add_argument(
+        "--use-vllm",
+        action="store_true",
+        help="vLLM을 사용하여 답변을 생성합니다.",
+    )
+    parser.add_argument(
+        "--vllm-url",
+        default="http://localhost:8000/v1",
+        help="vLLM 서버 URL (기본값: http://localhost:8000/v1).",
+    )
     # 출력 디렉토리 인자
     parser.add_argument(
         "--output_dir",
@@ -187,13 +214,20 @@ def main():
     MAX_PARALLEL_FILES = 10  # 동시에 처리할 최대 파일 수
     args = parser.parse_args()
 
-    if not args.api_key:
-        raise ValueError(
-            "API 키가 필요합니다. --api_key 인자를 사용하거나 GOOGLE_API_KEY 환경 변수를 설정해주세요."
-        )
-
-    # Gemini 모델 초기화
-    model_obj = init_gemini(args.model, args.api_key, args.temperature, args.seed)
+    # vLLM 또는 Gemini 초기화
+    model_obj = None
+    vllm_client = None
+    
+    if args.use_vllm:
+        print(f"Initializing vLLM client with URL: {args.vllm_url}")
+        vllm_client = VLLMClient(base_url=args.vllm_url)
+    else:
+        if not args.api_key:
+            raise ValueError(
+                "API 키가 필요합니다. --api_key 인자를 사용하거나 GOOGLE_API_KEY 환경 변수를 설정해주세요."
+            )
+        print(f"Initializing Gemini model: {args.model}")
+        model_obj = init_gemini(args.model, args.api_key, args.temperature, args.seed)
 
     # 출력 디렉토리 생성
     os.makedirs(args.output_dir, exist_ok=True)
@@ -211,7 +245,9 @@ def main():
     processed_count = 0
     if not args.parallel:
         for path in file_paths:
-            processed_data_list = process_file(path, args.max_rank, model_obj)
+            processed_data_list = process_file(
+                path, args.max_rank, model_obj=model_obj, vllm_client=vllm_client
+            )
 
             if processed_data_list:
                 result_data = processed_data_list[0]
@@ -246,6 +282,7 @@ def main():
             filepaths=file_paths,
             max_rank=args.max_rank,
             model_obj=model_obj,
+            vllm_client=vllm_client,
             max_workers=MAX_PARALLEL_FILES,
         )
 

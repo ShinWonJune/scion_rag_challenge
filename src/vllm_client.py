@@ -1,6 +1,16 @@
 """
 vLLM OpenAI 호환 클라이언트 예제
 기존 Gemini API 대신 사용할 클라이언트
+
+python -m vllm.entrypoints.openai.api_server \
+  --model openai/gpt-oss-120B \
+  --host 0.0.0.0 \
+  --port 8000 \
+  --tensor-parallel-size 4 \
+  --gpu-memory-utilization 0.8
+
+
+
 """
 from openai import OpenAI
 import os

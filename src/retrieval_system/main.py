@@ -23,7 +23,7 @@ def run_retrieval_for_question(
     query_instruction: str | None = None,
 ) -> dict[str, any]:
     """Runs retrieval for a single question item (original + single-hop)."""
-    queries = [(q_item.original_question, {"type": "original"})]
+    queries = [(q_item.question, {"type": "original"})]
     queries.extend(
         (q, {"type": "single_hop", "index": i})
         for i, q in enumerate(q_item.single_hop_questions)

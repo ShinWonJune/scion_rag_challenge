@@ -28,7 +28,7 @@ class QuestionItem:
     """Represents a single question with its decomposed parts."""
 
     qid: str
-    original_question: str
+    question: str
     single_hop_questions: List[str]
     meta: Dict[str, Any]
 
@@ -141,7 +141,7 @@ def load_questions_jsonl(path: str) -> List[QuestionItem]:
             items.append(
                 QuestionItem(
                     qid=str(obj.get("id")),
-                    original_question=str(obj.get("original_question", "")),
+                    question=str(obj.get("question", "")),
                     single_hop_questions=obj.get("single_hop_questions", []) or [],
                     meta=obj.get("meta", {}) or {},
                 )
