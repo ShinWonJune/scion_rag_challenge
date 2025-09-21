@@ -10,6 +10,7 @@ here is how to execute
 3. execute below
 
 ```bash
+# api search
 TARGET_DOCUMENTS=50 python main.py batch test.csv  # 각 질문당 100개 문서
 TARGET_DOCUMENTS=50 python main.py --use-vllm batch test.csv # vllm 사용시 
 TARGET_DOCUMENTS=50 python main.py --use-vllm --use-pubmed batch test.csv # vllm 사용시 & pubmed에 검색할 때
@@ -21,8 +22,11 @@ TARGET_DOCUMENTS=50 python main.py --use-vllm --use-pubmed batch test.csv # vllm
 
 ```bash
 # Build vector database with specific GPU (recommended when vLLM is running)
+# specifiy searched documents directory with  --docs_jsonl_path 
 python build_vectordb_search.py --gpu_id 2 # select gpu id 
-python build_vectordb_search.py --config_path ../configs/query_encoder/config_bge_m3.json --gpu_id 2
+python build_vectordb_search.py --config_path ../configs/query_encoder/config_bge_m3.json  --docs_jsonl_path ../search_science_on_challenge/outputs/search_documents_20250921_111520.jsonl --gpu_id 2 
+
+
 ```
 
 7. Execute line by line in main.ipynb
@@ -38,8 +42,8 @@ python multi_hop_to_single_hop.py \
   --mode decompose --model gemini-2.5-flash
 
 
-
-python -m retrieval_system.main --config_json ../configs/query_encoder/config_gte-multilingual-base.json --questions_jsonl /workspace/data/expr singlehop_decompose.jsonl  --range  1-50 \ --top_k  50 \ --device  auto \ --schema_json  /workspace/configs/csv_schema/
+CUDA_VISIBLE_DEVICES=2 #when using vLLM
+python -m retrieval_system.main --config_json ../configs/query_encoder/config_gte-multilingual-base.json --questions_jsonl /workspace/data/expr singlehop_decompose.jsonl --vectordb_csv ../results/vectordb/250921_112956/vector_db_bge_m3_test_BAAI_bge-m3.csv \ --range  1-50 \ --top_k  50 \ --device  auto \ --schema_json  /workspace/configs/csv_schema/
 
 python preprocess_and_generate_answer.py \
   --input_dir /workspace/results/retrival_docs/250908_235532 --max_rank 1 --parallel True
@@ -51,13 +55,14 @@ python preprocess_and_generate_answer.py \
 10. Gathering answers as a csv file with final_result.py (scienceon) or final_result_pubmed.py (pubmed)
 
 ```
-python final_result.py
+python final_result.py  #output in ../results/competition_submission
 
-#output in ../results/competition_submission
-
-python final_result_pubmed.py
-#output in ../results/p
+python final_result_pubmed.py  #output in ../results/pumbedqa_final_answers
 ```
 
 
+11. Evaluation with BLEU, METEOR
 
+```
+python evaluate_pubmedqa.py --input_path /app/results/pubmedqa_final_answers/pubmedqa_final_predictions_250921_113523.csv
+```

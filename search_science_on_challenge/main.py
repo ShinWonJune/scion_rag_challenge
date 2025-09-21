@@ -12,6 +12,7 @@ import logging
 from pathlib import Path
 from typing import Optional
 import argparse
+import json
 
 # 상위 디렉토리의 모듈 import를 위한 경로 추가
 sys.path.append(str(Path(__file__).parent.parent))
@@ -37,8 +38,15 @@ def print_usage():
 📝 예시:
   python main.py single "인공지능의 미래는 어떻게 될까요?"
   python main.py batch test.csv
+  python main.py --input-dir /path/to/data batch questions.csv
   python main.py convert
   python main.py info
+
+⚙️  주요 옵션:
+  --input-dir DIR        - 입력 파일이 위치한 디렉토리 (기본: 현재 디렉토리)
+  --use-vllm             - vLLM 사용 (기본: Gemini)
+  --use-pubmed           - PubMed 검색 사용
+  --skip-keyword-extraction - 키워드 추출 건너뛰기
 
 ⚙️  환경 변수:
   GEMINI_API_KEY         - Gemini API 키 (필수)
@@ -73,6 +81,9 @@ def parse_arguments():
     # 검색 방식 옵션
     parser.add_argument('--skip-keyword-extraction', action='store_true', 
                        help='키워드 추출을 건너뛰고 질문을 직접 검색에 사용')
+    
+    # 파일 경로 옵션
+    parser.add_argument('--input-dir', default='.', help='입력 파일이 위치한 디렉토리 경로')
 
     # 기존 위치 인수들
     parser.add_argument('command', nargs='?', help='실행할 명령어')
@@ -167,22 +178,29 @@ def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = Fal
         print(f"❌ 실행 중 오류 발생: {e}")
         logging.error(f"단일 모드 실행 실패: {e}")
 
-def run_batch_mode(system: SearchMetaSystem, csv_path: str, max_queries: int = None):
+def run_batch_mode(system: SearchMetaSystem, csv_path: str, input_dir: str = '.', max_queries: int = None):
     """배치 모드 실행"""
     print(f"📊 배치 처리 시작")
     print("=" * 50)
-    print(f"CSV 파일: {csv_path}")
+    
+    # 상대 경로인 경우 input_dir과 결합
+    if not os.path.isabs(csv_path):
+        full_csv_path = os.path.join(input_dir, csv_path)
+    else:
+        full_csv_path = csv_path
+    
+    print(f"CSV 파일: {full_csv_path}")
     if max_queries:
         print(f"최대 처리 질문 수: {max_queries}개")
     print("=" * 50)
     
     try:
         # CSV 파일 존재 확인
-        if not Path(csv_path).exists():
-            print(f"❌ CSV 파일을 찾을 수 없습니다: {csv_path}")
+        if not Path(full_csv_path).exists():
+            print(f"❌ CSV 파일을 찾을 수 없습니다: {full_csv_path}")
             return
         
-        result = system.process_batch_from_csv(csv_path, max_queries=max_queries)
+        result = system.process_batch_from_csv(full_csv_path, max_queries=max_queries)
         
         batch_info = result.get("batch_statistics", {})
         if batch_info.get("total_queries", 0) > 0:
@@ -317,7 +335,7 @@ def main():
                     print("❌ 최대 질문 수는 숫자여야 합니다.")
                     return
             
-            run_batch_mode(system, csv_path, max_queries)
+            run_batch_mode(system, csv_path, args.input_dir, max_queries)
             
         elif command == "convert":
             run_convert_mode(system)

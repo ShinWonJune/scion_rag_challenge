@@ -91,25 +91,36 @@ def preprocess_text(text: str) -> List[str]:
 
 def calculate_bleu_score(references: List[str], predictions: List[str]) -> float:
     """
-    BLEU 점수를 corpus-level에서 계산합니다.
+    BLEU 점수를 계산합니다 (corpus-level).
     
     Args:
         references: 정답 텍스트 리스트
         predictions: 예측 텍스트 리스트
-        
+    
     Returns:
-        BLEU 점수 (0-1)
+        BLEU 점수 (0.0 ~ 1.0)
     """
-    print("Calculating BLEU score (corpus-level)...")
+    # 빈 데이터셋 처리
+    if not references or not predictions or len(references) == 0 or len(predictions) == 0:
+        print("⚠️ 빈 데이터셋: BLEU 점수를 0.0으로 설정합니다.")
+        return 0.0
     
     # 전처리된 토큰 리스트로 변환
     ref_tokens = [[preprocess_text(ref)] for ref in references]  # 각 reference를 리스트로 감싸기
     pred_tokens = [preprocess_text(pred) for pred in predictions]
     
-    # corpus-level BLEU 계산
-    bleu_score = corpus_bleu(ref_tokens, pred_tokens)
+    # 빈 토큰 처리
+    if not any(ref_tokens) or not any(pred_tokens):
+        print("⚠️ 전처리 후 빈 토큰: BLEU 점수를 0.0으로 설정합니다.")
+        return 0.0
     
-    return bleu_score
+    try:
+        # corpus-level BLEU 계산
+        bleu_score = corpus_bleu(ref_tokens, pred_tokens)
+        return bleu_score
+    except ZeroDivisionError:
+        print("⚠️ BLEU 계산 중 ZeroDivisionError: BLEU 점수를 0.0으로 설정합니다.")
+        return 0.0
 
 def calculate_meteor_scores(references: List[str], predictions: List[str]) -> float:
     """
@@ -123,6 +134,11 @@ def calculate_meteor_scores(references: List[str], predictions: List[str]) -> fl
         평균 METEOR 점수 (0-1)
     """
     print("Calculating METEOR scores (sentence-level averaged)...")
+    
+    # 빈 데이터셋 처리
+    if not references or not predictions or len(references) == 0 or len(predictions) == 0:
+        print("⚠️ 빈 데이터셋: METEOR 점수를 0.0으로 설정합니다.")
+        return 0.0
     
     meteor_scores = []
     
@@ -139,6 +155,10 @@ def calculate_meteor_scores(references: List[str], predictions: List[str]) -> fl
             except:
                 meteor_scores.append(0.0)
     
+    if not meteor_scores:
+        print("⚠️ METEOR 점수가 없음: 0.0으로 설정합니다.")
+        return 0.0
+    
     avg_meteor = np.mean(meteor_scores)
     return avg_meteor
 
@@ -154,6 +174,11 @@ def calculate_context_inclusion_ratio(gt_contexts: List[str], pred_contexts: Lis
         포함 비율 (0-1)
     """
     print("Calculating context inclusion ratio...")
+    
+    # 빈 데이터셋 처리
+    if not gt_contexts or not pred_contexts or len(gt_contexts) == 0 or len(pred_contexts) == 0:
+        print("⚠️ 빈 데이터셋: Context inclusion ratio를 0.0으로 설정합니다.")
+        return 0.0
     
     inclusion_count = 0
     total_count = 0
@@ -311,7 +336,36 @@ def main():
     print(f"\nEvaluating {len(gt_df)} samples...")
     print("-"*40)
     
+    # 샘플 수가 0인 경우 처리
+    if len(gt_df) == 0:
+        print("❌ 평가할 샘플이 없습니다. 파일 경로와 내용을 확인해주세요.")
+        print(f"   Ground truth 파일: {args.ground_truth_path}")
+        print(f"   Prediction 파일: {args.input_path}")
+        
+        # 빈 결과로 CSV 파일 생성
+        results_df = pd.DataFrame([{
+            'timestamp': timestamp_str,
+            'ground_truth_file': args.ground_truth_path,
+            'prediction_file': args.input_path,
+            'total_samples': 0,
+            'bleu_score': 0.0,
+            'meteor_score': 0.0,
+            'context_inclusion_ratio': 0.0,
+            'accuracy': 0.0,
+            'yes_count': 0,
+            'no_count': 0,
+            'maybe_count': 0,
+            'tp': 0, 'tn': 0, 'fp': 0, 'fn': 0,
+            'precision': 0.0, 'recall': 0.0, 'f1_score': 0.0,
+            'notes': 'No samples to evaluate'
+        }])
+        
+        results_df.to_csv(output_path, index=False)
+        print(f"\n💾 결과가 저장되었습니다: {output_path}")
+        return
+    
     # 1. BLEU 점수 계산 (corpus-level)
+    print("Calculating BLEU score (corpus-level)...")
     bleu_score = calculate_bleu_score(
         gt_df['long_answer'].tolist(),
         pred_df['long_answer'].tolist()

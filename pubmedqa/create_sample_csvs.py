@@ -44,9 +44,9 @@ def create_sample_csvs():
         'pubid': [item['pubid'] for item in sampled_data]
     })
     
-    complete_df.to_csv('./data/evaluation/pubmedqa_complete.csv', index=False)
-    print("data/evaluation/pubmedqa_complete.csv 파일이 생성되었습니다. (질문, 컨텍스트, 답변, 결정 포함)")
-    
+    complete_df.to_csv('./data/evaluation/pubmedqa_answer.csv', index=False)
+    print("data/evaluation/pubmedqa_answer.csv 파일이 생성되었습니다. (질문, 컨텍스트, 답변, 결정 포함)")
+
     # # 3. 평가용 데이터 생성 (질문과 정답만)
     # evaluation_df = pd.DataFrame({
     #     'question': [item['question'] for item in sampled_data],
