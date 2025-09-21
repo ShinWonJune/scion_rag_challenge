@@ -466,14 +466,22 @@ class PubMedIntegration:
                     'query': query
                 }
             
-            # 단일 검색어로 간단 검색
-            documents = self.pubmed_client.search_single_term_test(query, max_results=5)
+            # 키워드 추출 또는 직접 질문 사용
+            if hasattr(self.system, 'skip_keyword_extraction') and self.system.skip_keyword_extraction:
+                # 키워드 추출을 건너뛰고 직접 질문 사용
+                search_term = query
+                logging.info(f"키워드 추출 생략, 직접 질문 사용: {query}")
+            else:
+                # 단일 검색어로 간단 검색
+                search_term = query
+            
+            documents = self.pubmed_client.search_single_term_test(search_term, max_results=5)
             
             return {
                 'status': 'success',
                 'query': query,
-                'keywords': [query],
-                'search_terms': [query],
+                'keywords': [search_term],
+                'search_terms': [search_term],
                 'documents': documents,
                 'document_count': len(documents),
                 'processing_time': time.time() - start_time,
@@ -504,9 +512,16 @@ class PubMedIntegration:
         """
         start_time = time.time()
         try:
-            # 기존 키워드 추출
-            keywords = self.system.keyword_extractor.extract_keywords(query)
-            search_terms = self.system.keyword_extractor.generate_search_terms(keywords)
+            # 키워드 추출 또는 직접 질문 사용
+            if hasattr(self.system, 'skip_keyword_extraction') and self.system.skip_keyword_extraction:
+                # 키워드 추출을 건너뛰고 직접 질문 사용
+                keywords = {"english": [query], "korean": []}
+                search_terms = [query]
+                logging.info(f"키워드 추출 생략, 직접 질문 사용: {query}")
+            else:
+                # 기존 키워드 추출
+                keywords = self.system.keyword_extractor.extract_keywords(query)
+                search_terms = self.system.keyword_extractor.generate_search_terms(keywords)
             
             all_documents = []
 

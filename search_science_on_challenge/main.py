@@ -69,6 +69,10 @@ def parse_arguments():
     parser.add_argument('--use-scienceon', action='store_true', help='ScienceON 사용')
     parser.add_argument('--use-pubmed', action='store_true', help='PubMed 사용')
     parser.add_argument('--simple-test', action='store_true', help='간단 테스트 모드')
+    
+    # 검색 방식 옵션
+    parser.add_argument('--skip-keyword-extraction', action='store_true', 
+                       help='키워드 추출을 건너뛰고 질문을 직접 검색에 사용')
 
     # 기존 위치 인수들
     parser.add_argument('command', nargs='?', help='실행할 명령어')
@@ -265,7 +269,8 @@ def main():
                 pubmed_api_key=pubmed_api_key,
                 pubmed_email=pubmed_email,
                 vllm_base_url=args.vllm_url,
-                vllm_model=args.vllm_model
+                vllm_model=args.vllm_model,
+                skip_keyword_extraction=args.skip_keyword_extraction
             )
         else:
             # Gemini 사용 (기본)
@@ -278,7 +283,8 @@ def main():
             system = SearchMetaSystem(
                 gemini_api_key=api_key,
                 pubmed_api_key=pubmed_api_key,
-                pubmed_email=pubmed_email
+                pubmed_email=pubmed_email,
+                skip_keyword_extraction=args.skip_keyword_extraction
           )
             
     except Exception as e:

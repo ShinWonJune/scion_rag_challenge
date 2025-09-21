@@ -14,8 +14,8 @@ def create_sample_csvs():
     """PubMedQA 데이터에서 CSV 파일들을 생성합니다."""
     
     # pqa_labeled 데이터셋 로드 (1000개 샘플, 가장 적절한 크기)
-    print("pqa_labeled 데이터셋 로딩 중...")
-    dataset = load_dataset("qiaojin/PubMedQA", "pqa_labeled")
+    print("pqa_artificial 데이터셋 로딩 중...")
+    dataset = load_dataset("qiaojin/PubMedQA", "pqa_artificial")
     data = dataset['train']
     
     print(f"총 {len(data)} 개의 샘플이 있습니다.")

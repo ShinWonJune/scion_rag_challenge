@@ -29,7 +29,8 @@ class SearchMetaSystem:
                  pubmed_api_key: str = None,
                  pubmed_email: str = None,
                  pubmed_credentials_path: str = "./configs/pubmed_api_credentials.json",
-                 scienceon_credentials_path: str = "./configs/scienceon_api_credentials.json"):
+                 scienceon_credentials_path: str = "./configs/scienceon_api_credentials.json",
+                 skip_keyword_extraction: bool = False):
         """
         검색 메타데이터 시스템 초기화
         
@@ -40,10 +41,12 @@ class SearchMetaSystem:
             vllm_model: vLLM 모델명
             scienceon_credentials_path: ScienceON API 자격증명 파일 경로
             pubmed_credentials_path: PubMed API 자격증명 파일 경로
+            skip_keyword_extraction: 키워드 추출을 건너뛰고 직접 질문 사용 여부
         """
         # 설정 로드
         self.settings = Settings()
         self.use_vllm = use_vllm
+        self.skip_keyword_extraction = skip_keyword_extraction
         
         if use_vllm:
             self.settings.set("use_vllm", True)

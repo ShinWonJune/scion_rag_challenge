@@ -1,0 +1,35 @@
+{
+  "experiment_info": {
+    "timestamp": "20250921_095303",
+    "sample_count": 5,
+    "questions": [
+      "Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?",
+      "Landolt C and snellen e acuity: differences in strabismus amblyopia?",
+      "Syncope during bathing in infants, a pediatric form of water-induced urticaria?",
+      "Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?",
+      "Can tailored interventions increase mammography use among HMO women?"
+    ]
+  },
+  "execution_times": {
+    "keyword_extraction": 61.16788077354431,
+    "direct_question": 9.818479061126709
+  },
+  "analysis": {
+    "keyword_extraction": {
+      "documents": 0,
+      "search_terms": 0,
+      "processing_time": 0,
+      "results_count": 157
+    },
+    "direct_question": {
+      "documents": 0,
+      "search_terms": 0,
+      "processing_time": 0,
+      "results_count": 13
+    }
+  },
+  "files": {
+    "keyword_extraction": "/app/search_science_on_challenge/outputs/search_documents_20250921_095252.jsonl",
+    "direct_question": "/app/search_science_on_challenge/outputs/search_documents_20250921_095302.jsonl"
+  }
+}
