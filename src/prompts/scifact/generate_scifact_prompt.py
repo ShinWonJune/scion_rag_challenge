@@ -13,7 +13,7 @@ def build_scifact_prompt(original_query: str, context_json_string: str) -> str:
 
 Given a scientific claim and relevant research documents, you must:
 1. Carefully analyze the provided research evidence
-2. Determine if the claim is supported, refuted, or insufficient evidence exists
+2. Determine if the claim is supported or refuted.
 3. Provide a clear, evidence-based response
 
 Do not use external knowledge. Base your analysis solely on the provided context.
@@ -30,7 +30,7 @@ Determine whether the claim is SUPPORTED or REFUTED by the evidence.
 Provide a clear explanation based on the scientific evidence in the documents.
 
 Your response should include:
-1. Your determination (SUPPORTED/REFUTED)
+1. Begin your determination (SUPPORTED/REFUTED)
 2. Key evidence from the provided documents
 3. Scientific reasoning for your conclusion
 

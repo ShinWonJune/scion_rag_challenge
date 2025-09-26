@@ -197,8 +197,8 @@ def main():
     )
     parser.add_argument(
         "--api_key",
-        default=os.environ.get("GOOGLE_API_KEY"),
-        help="Google API 키. 설정하지 않으면 GOOGLE_API_KEY 환경 변수를 사용합니다.",
+        default=None,
+        help="Google API 키. 설정하지 않으면 설정 파일에서 가져옵니다.",
     )
     parser.add_argument("--temperature", type=float, default=0.2)
     parser.add_argument("--seed", type=int, default=None)
@@ -236,12 +236,29 @@ def main():
         print(f"Initializing vLLM client with URL: {args.vllm_url}")
         vllm_client = VLLMClient(base_url=args.vllm_url)
     else:
-        if not args.api_key:
+        # API 키 로딩 - 설정 파일에서 가져오기
+        api_key = args.api_key
+        if not api_key:
+            gemini_config_path = "/app/search_science_on_challenge/configs/gemini_api_credentials.json"
+            try:
+                with open(gemini_config_path, "r", encoding="utf-8") as f:
+                    config = json.load(f)
+                    api_key = config.get("api_key")
+                    print(f"✓ API 키를 설정 파일에서 로드했습니다: {gemini_config_path}")
+            except (FileNotFoundError, json.JSONDecodeError, KeyError) as e:
+                print(f"⚠️ 설정 파일에서 API 키를 로드할 수 없습니다: {e}")
+                api_key = os.environ.get("GOOGLE_API_KEY")
+                if api_key:
+                    print("환경 변수 GOOGLE_API_KEY에서 API 키를 사용합니다.")
+        
+        if not api_key:
             raise ValueError(
-                "API 키가 필요합니다. --api_key 인자를 사용하거나 GOOGLE_API_KEY 환경 변수를 설정해주세요."
+                "API 키가 필요합니다. --api_key 인자를 사용하거나 "
+                f"{gemini_config_path} 설정 파일에 api_key를 설정하거나 "
+                "GOOGLE_API_KEY 환경 변수를 설정해주세요."
             )
         print(f"Initializing Gemini model: {args.model}")
-        model_obj = init_gemini(args.model, args.api_key, args.temperature, args.seed)
+        model_obj = init_gemini(args.model, api_key, args.temperature, args.seed)
 
     # 출력 디렉토리 생성
     os.makedirs(args.output_dir, exist_ok=True)

@@ -1,0 +1,268 @@
+{
+  "dataset": "SciFact",
+  "description": "Scientific fact verification dataset with SUPPORT/REFUTE labels",
+  "total_questions": 50,
+  "created_at": "2025-09-26",
+  "categories": {
+    "medical_health": "의학 및 건강 관련 주장",
+    "climate_environment": "기후 및 환경 관련 주장",
+    "technology_ai": "기술 및 AI 관련 주장",
+    "biology_science": "생물학 및 과학 관련 주장"
+  },
+  "labels": {
+    "SUPPORT": "과학적 증거로 뒷받침되는 주장",
+    "REFUTE": "과학적 증거로 반박되는 주장"
+  },
+  "data_samples": [
+    {
+      "doc_id": "101",
+      "question": "Coronavirus disease 2019 (COVID-19) spreads primarily through respiratory droplets.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "201",
+      "question": "Vitamin C supplements prevent the common cold.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "301",
+      "question": "Regular exercise improves cardiovascular health.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "401",
+      "question": "Smoking increases the risk of lung cancer.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "501",
+      "question": "Antioxidant supplements reduce cancer risk in healthy individuals.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "601",
+      "question": "Moderate alcohol consumption protects against heart disease.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "701",
+      "question": "Mobile phone radiation causes brain tumors.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "801",
+      "question": "Meditation reduces symptoms of anxiety and depression.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "901",
+      "question": "Probiotics improve digestive health in healthy adults.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1001",
+      "question": "Artificial sweeteners are safer than sugar for diabetics.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1101",
+      "question": "Sleep deprivation impairs immune function.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1201",
+      "question": "Homeopathic remedies are effective for treating flu symptoms.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "1301",
+      "question": "Omega-3 fatty acids reduce inflammation in rheumatoid arthritis.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1401",
+      "question": "Excessive screen time causes myopia in children.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1501",
+      "question": "Acupuncture is effective for chronic pain management.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1601",
+      "question": "Low-carbohydrate diets are more effective for weight loss than low-fat diets.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1701",
+      "question": "Fluoride in drinking water prevents tooth decay.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "1801",
+      "question": "Cranberry juice prevents urinary tract infections.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "1901",
+      "question": "Wearing masks reduces transmission of respiratory infections.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "2001",
+      "question": "Multivitamins improve cognitive function in elderly adults.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "2101",
+      "question": "Climate change is caused primarily by human activities.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "2201",
+      "question": "Renewable energy sources can meet global energy demands.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "2301",
+      "question": "Deforestation contributes significantly to global warming.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "2401",
+      "question": "Ocean acidification threatens marine ecosystems.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "2501",
+      "question": "Solar panels reduce greenhouse gas emissions over their lifetime.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "2601",
+      "question": "Plastic pollution has no significant impact on marine life.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "2701",
+      "question": "Carbon capture technology can reverse climate change.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "2801",
+      "question": "Urban green spaces improve air quality.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "2901",
+      "question": "Electric vehicles produce zero emissions.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "3001",
+      "question": "Biodegradable plastics completely decompose in marine environments.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "3101",
+      "question": "Artificial intelligence can diagnose diseases more accurately than human doctors.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "3201",
+      "question": "5G networks pose health risks to humans.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "3301",
+      "question": "Quantum computers will break current encryption methods.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "3401",
+      "question": "Autonomous vehicles are safer than human-driven cars.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "3501",
+      "question": "Social media algorithms contribute to political polarization.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "3601",
+      "question": "Blockchain technology is more secure than traditional databases.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "3701",
+      "question": "Virtual reality therapy is effective for treating phobias.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "3801",
+      "question": "Machine learning models are immune to bias.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "3901",
+      "question": "Internet of Things devices improve home energy efficiency.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "4001",
+      "question": "Facial recognition technology is 100% accurate.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "4101",
+      "question": "Evolution by natural selection explains the diversity of life on Earth.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "4201",
+      "question": "CRISPR gene editing can cure genetic diseases.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "4301",
+      "question": "GMO foods are harmful to human health.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "4401",
+      "question": "Stem cell therapy can regenerate damaged organs.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "4501",
+      "question": "Antibiotics are effective against viral infections.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "4601",
+      "question": "Biodiversity loss threatens ecosystem stability.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "4701",
+      "question": "Telomeres determine human lifespan.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "4801",
+      "question": "Organic foods have higher nutritional value than conventional foods.",
+      "label": "REFUTE"
+    },
+    {
+      "doc_id": "4901",
+      "question": "Microbiome diversity is linked to overall health.",
+      "label": "SUPPORT"
+    },
+    {
+      "doc_id": "5001",
+      "question": "Epigenetic changes can be inherited across generations.",
+      "label": "SUPPORT"
+    }
+  ]
+}
