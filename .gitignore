@@ -20,5 +20,5 @@ model_cache/
 
 #credentials
 search_science_on_challenge/configs/chatgpt_api_credentials.json
-search_science_on_challenge/configs/pubmed_credentials.json
+search_science_on_challenge/configs/pubmed_api_credentials.json
 search_science_on_challenge/configs/scienceon_api_credentials.json
