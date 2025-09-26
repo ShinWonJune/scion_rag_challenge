@@ -13,16 +13,18 @@ import google.generativeai as genai
 class KeywordExtractor:
     """Gemini API를 사용한 키워드 추출기"""
     
-    def __init__(self, api_key: str, model_name: str = "gemini-2.5-flash"):
+    def __init__(self, api_key: str, model_name: str = "gemini-2.5-flash", language: str = "all"):
         """
         키워드 추출기 초기화
         
         Args:
             api_key: Google API 키
             model_name: 사용할 Gemini 모델명
+            language: 키워드 추출 언어 ("korean", "english", "all")
         """
         self.api_key = api_key
         self.model_name = model_name
+        self.language = language
         self.model = self._init_gemini()
         
     def _init_gemini(self) -> genai.GenerativeModel:
@@ -49,11 +51,16 @@ class KeywordExtractor:
             {'korean': [...], 'english': [...]} 형태의 키워드 딕셔너리
         """
         try:
-            # 한국어 키워드 추출
-            korean_keywords = self._extract_korean_keywords(query)
+            korean_keywords = []
+            english_keywords = []
             
-            # 영어 키워드 추출
-            english_keywords = self._extract_english_keywords(query)
+            if self.language in ["korean", "all"]:
+                # 한국어 키워드 추출
+                korean_keywords = self._extract_korean_keywords(query)
+            
+            if self.language in ["english", "all"]:
+                # 영어 키워드 추출
+                english_keywords = self._extract_english_keywords(query)
             
             return {
                 'korean': korean_keywords,
@@ -67,23 +74,19 @@ class KeywordExtractor:
     def _extract_korean_keywords(self, query: str) -> List[str]:
         """한국어 키워드 추출"""
         prompt = f"""
-당신은 논문 검색을 위한 키워드 추출 전문가입니다. 주어진 질문에서 ScienceON API 검색에 최적화된 핵심 키워드들을 한국어와 영어로 각각 추출해주세요.
+당신은 논문 검색을 위한 키워드 추출 전문가입니다. 주어진 질문에서 가장 중요하고 검색에 유용한 키워드를 한국어로 추출해주세요.
 
 질문: "{query}"
 
-다음 형식으로 키워드를 추출하세요:
-
-1. 한국어 키워드: 3-5개의 핵심 키워드를 쉼표로 구분 (전자교과서)
-
-규칙:
+요구사항:
 - 전문용어와 기술용어를 우선적으로 선택
-- 축약어, 전체용어를 모두 알 경우, 모두 사용 키워드로 만드세요. 전문용어가 전체용어로 질문에 들어온 경우 확실하게 키워드로 만드세요.
+- 축약어의 경우에는 축약어와 전체단어 모두 사용 키워드로 만드세요. 
 - 각 키워드는 1-20자 이내로 간결하게
+- 3-7개 단어
+- 중요도가 높은 순서대로 나열
 
 
-출력 형식:
-한국어: 키워드1, 키워드2, 키워드3, 키워드4
-
+출력 형식:키워드1, 키워드2, 키워드3, 키워드4
 
 
 키워드:
@@ -92,6 +95,9 @@ class KeywordExtractor:
         try:
             response = self.model.generate_content(prompt)
             keywords_text = response.text.strip()
+            
+            # 불필요한 접두사 제거
+            keywords_text = keywords_text.replace("키워드:", "").strip()
             
             # 쉼표로 분리하고 정리
             keywords = [kw.strip() for kw in keywords_text.split(',')]
@@ -106,30 +112,29 @@ class KeywordExtractor:
     def _extract_english_keywords(self, query: str) -> List[str]:
         """영어 키워드 추출"""
         prompt = f"""
-당신은 논문 검색을 위한 키워드 추출 전문가입니다. 주어진 질문에서 ScienceON API 검색에 최적화된 핵심 키워드들을 한국어와 영어로 각각 추출해주세요.
+You are an expert in extracting keywords for academic paper searches. From the given query, please extract the most important and useful keywords for the search in English.
 
-질문: "{query}"
+Query: "{query}"
 
+Requirements:
+1. Extract ONLY English keywords
+2. Prioritize technical terms and scientific jargon
+3. In the case of abbreviations, use both the abbreviation and the full term as keywords
+4. Each keyword should be concise, within 1-20 characters
+5. Extract 3-7 keywords
+6. List them in descending order of importance
 
-영어 키워드: 3-5개의 핵심 키워드를 쉼표로 구분 (texkbook, artificial intelligence)
+Output Format: keyword1, keyword2, keyword3, keyword4
 
-규칙:
-- 전문용어와 기술용어를 우선적으로 선택
-- 축약어, 전체용어를 모두 알 경우, 모두 사용 키워드로 만드세요. 전문용어가 전체용어로 질문에 들어온 경우 확실하게 키워드로 만드세요. (예: SVM, DTG, NLP, artificial intelligence, Warehouse Management System)
-- 각 키워드는 1-20자 이내로 간결하게
-
-
-출력 형식:
-영어: keyword1, keyword2, keyword3, keyword4
-
-
-
-키워드:
+Keywords:
 """
         
         try:
             response = self.model.generate_content(prompt)
             keywords_text = response.text.strip()
+            
+            # 불필요한 접두사 제거
+            keywords_text = keywords_text.replace("English Keywords:", "").strip()
             
             # 쉼표로 분리하고 정리
             keywords = [kw.strip() for kw in keywords_text.split(',')]

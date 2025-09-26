@@ -108,13 +108,16 @@ def get_gemini_api_key() -> str:
         return api_key
     
     # 설정 파일에서 확인
-    config_path = Path("./configs/gemini_api_credentials.json")
+    script_dir = Path(__file__).parent
+    config_path = script_dir / "configs" / "gemini_api_credentials.json"
     if config_path.exists():
         try:
             import json
             with open(config_path, 'r', encoding='utf-8') as f:
                 config = json.load(f)
-                return config.get("api_key", "")
+                api_key = config.get("api_key", "")
+                if api_key:  # 빈 문자열이 아닌 경우에만 반환
+                    return api_key
         except Exception as e:
             logging.warning(f"설정 파일 읽기 실패: {e}")
     
@@ -136,12 +139,15 @@ def get_openai_api_key() -> str:
         return api_key
     
     # 설정 파일에서 확인
-    config_path = Path("./configs/chatgpt_api_credentials.json")
+    script_dir = Path(__file__).parent
+    config_path = script_dir / "configs" / "chatgpt_api_credentials.json"
     if config_path.exists():
         try:
             with open(config_path, 'r', encoding='utf-8') as f:
                 config = json.load(f)
-                return config.get("api_key", "")
+                api_key = config.get("api_key", "")
+                if api_key:  # 빈 문자열이 아닌 경우에만 반환
+                    return api_key
         except Exception as e:
             logging.warning(f"ChatGPT 설정 파일 읽기 실패: {e}")
     
@@ -357,10 +363,11 @@ def main():
             
             system = SearchMetaSystem(
                 gemini_api_key=api_key,
+                keyword_lang=args.keyword_lang,
                 pubmed_api_key=pubmed_api_key,
                 pubmed_email=pubmed_email,
                 skip_keyword_extraction=args.skip_keyword_extraction
-          )
+            )
             
     except Exception as e:
         print(f"❌ 시스템 초기화 실패: {e}")

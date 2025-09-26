@@ -68,6 +68,7 @@ class SearchMetaSystem:
             self.settings.set("keyword_lang", keyword_lang)
         else:
             self.settings.set("gemini_api_key", gemini_api_key)
+            self.settings.set("keyword_lang", keyword_lang)
         
         # 로깅 설정
         self._setup_logging()
@@ -128,7 +129,12 @@ class SearchMetaSystem:
                     language=self.settings.get("keyword_lang")
                 )
         else:
-            self.keyword_extractor = KeywordExtractor(self.settings.get("gemini_api_key"))
+            # Gemini 사용 - 언어 설정도 전달
+            language = self.settings.get("keyword_lang", "all")  # ChatGPT 설정이 있으면 사용, 없으면 all
+            self.keyword_extractor = KeywordExtractor(
+                api_key=self.settings.get("gemini_api_key"),
+                language=language
+            )
         
         # 문서 검색기
         self.document_searcher = DocumentSearcher(self.scienceon_client)

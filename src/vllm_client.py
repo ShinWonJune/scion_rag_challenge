@@ -75,6 +75,32 @@ class VLLMClient:
         print("="*50)
 
         return response.choices[0].message.content.strip()
+    
+    def generate_answer_with_prompt(self, prompt: str, max_tokens=2000):
+        """
+        미리 작성된 프롬프트를 사용해 답변 생성
+        
+        Args:
+            prompt: 완성된 프롬프트 문자열
+            max_tokens: 최대 토큰 수
+            
+        Returns:
+            생성된 답변 문자열
+        """
+        response = self.client.chat.completions.create(
+            model="openai/gpt-oss-120B",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=max_tokens,
+            temperature=0.1
+        )
+
+        print("="*50)
+        print("Full response:", response)
+        print("="*50)
+        print("Content:", response.choices[0].message.content)
+        print("="*50)
+
+        return response.choices[0].message.content.strip()
 
 # 사용 예시
 if __name__ == "__main__":

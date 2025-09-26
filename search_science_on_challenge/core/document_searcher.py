@@ -69,7 +69,7 @@ class DocumentSearcher:
                 results = self.scienceon_client.search_articles(
                     query=term,
                     cur_page=page,
-                    row_count=20
+                    row_count=10  # 각 검색어당 10개로 제한
                 )
                 
                 if results and isinstance(results, list):
@@ -79,7 +79,9 @@ class DocumentSearcher:
                     filtered_docs = self._filter_quality(documents)
                     
                     if filtered_docs:
-                        page_documents.extend(filtered_docs)
+                        # 각 검색어당 최대 10개로 제한
+                        limited_docs = filtered_docs[:10]
+                        page_documents.extend(limited_docs)
                         used_terms.add(term)
                         
                         # 목표 달성 시 중단

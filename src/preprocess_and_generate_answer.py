@@ -13,6 +13,7 @@ import time
 from llm_client.init_gemini import init_gemini
 from llm_client.call_gemini import call_gemini
 from prompts.general.generate_answer_base_v2 import build_prompt
+from prompts.scifact.generate_scifact_prompt import build_scifact_prompt
 from vllm_client import VLLMClient
 
 # --- Gemini API 호출을 위한 기본 설정 및 함수 ---
@@ -25,7 +26,7 @@ python preprocess_and_generate_answer.py     \
 
 def process_file(
     filepath: str, max_rank: int, model_obj: Optional[genai.GenerativeModel] = None, 
-    vllm_client: Optional[VLLMClient] = None
+    vllm_client: Optional[VLLMClient] = None, use_scifact: bool = False
 ) -> List[Dict]:
     """
     단일 JSON 파일을 처리하는 주 함수입니다.
@@ -76,13 +77,18 @@ def process_file(
     context_str = json.dumps(filtered_data, ensure_ascii=False, indent=2)
 
     # 4. 프롬프트를 생성하고 API를 호출합니다.
+    # SciFact 사용 여부에 따라 다른 프롬프트 사용
+    if use_scifact:
+        prompt = build_scifact_prompt(original_query_text, context_str)
+    else:
+        prompt = build_prompt(original_query_text, context_str)
+    
     if vllm_client:
         # vLLM 사용
-        api_result = vllm_client.generate_answer(original_query_text, context_str)
+        api_result = vllm_client.generate_answer_with_prompt(prompt)
         model_name = "vllm"
     elif model_obj:
         # Gemini 사용
-        prompt = build_prompt(original_query_text, context_str)
         messages = [{"role": "user", "parts": [prompt]}]
         api_result = call_gemini(model_obj, messages)
         model_name = model_obj.model_name
@@ -94,8 +100,9 @@ def process_file(
     result_data = {
         "id": file_id,
         "result": api_result,
-        "prompt": build_prompt(original_query_text, context_str) if not vllm_client else f"Question: {original_query_text}\nContext: {context_str}",
+        "prompt": prompt,
         "model": model_name,
+        "prompt_type": "scifact" if use_scifact else "general",
         "retrival": filtered_data,
     }
 
@@ -112,6 +119,7 @@ def process_files_parallel(
     model_obj: Optional[genai.GenerativeModel] = None,
     vllm_client: Optional[VLLMClient] = None,
     max_workers: int = 10,
+    use_scifact: bool = False,
 ) -> List[Dict]:
     """
     여러 파일을 병렬로 처리합니다.
@@ -135,7 +143,8 @@ def process_files_parallel(
         process_file, 
         max_rank=max_rank, 
         model_obj=model_obj,
-        vllm_client=vllm_client
+        vllm_client=vllm_client,
+        use_scifact=use_scifact
     )
 
     all_results = []
@@ -210,6 +219,11 @@ def main():
         default="/workspace/data/expr/final_result",
         help="각 결과를 개별 JSON 파일로 저장할 디렉토리 경로.",
     )
+    parser.add_argument(
+        "--scifact",
+        action="store_true",
+        help="SciFact 데이터셋용 프롬프트를 사용합니다.",
+    )
     parser.add_argument("--parallel", required=False)
     MAX_PARALLEL_FILES = 10  # 동시에 처리할 최대 파일 수
     args = parser.parse_args()
@@ -246,7 +260,7 @@ def main():
     if not args.parallel:
         for path in file_paths:
             processed_data_list = process_file(
-                path, args.max_rank, model_obj=model_obj, vllm_client=vllm_client
+                path, args.max_rank, model_obj=model_obj, vllm_client=vllm_client, use_scifact=args.scifact
             )
 
             if processed_data_list:
@@ -284,6 +298,7 @@ def main():
             model_obj=model_obj,
             vllm_client=vllm_client,
             max_workers=MAX_PARALLEL_FILES,
+            use_scifact=args.scifact,
         )
 
         end_time = time.time()
