@@ -17,3 +17,4 @@ data2/
 
 #vllm models
 model_cache/
+search_science_on_challenge/configs
