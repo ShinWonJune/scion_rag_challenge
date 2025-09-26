@@ -45,6 +45,9 @@ def print_usage():
 ⚙️  주요 옵션:
   --input-dir DIR        - 입력 파일이 위치한 디렉토리 (기본: 현재 디렉토리)
   --use-vllm             - vLLM 사용 (기본: Gemini)
+  --use-chatgpt          - ChatGPT API 사용
+  --chatgpt-model MODEL  - ChatGPT 모델 (기본: gpt-4o-mini)
+  --keyword-lang LANG    - 키워드 언어 (all/korean/english, 기본: all)
   --use-pubmed           - PubMed 검색 사용
   --skip-keyword-extraction - 키워드 추출 건너뛰기
 
@@ -72,6 +75,12 @@ def parse_arguments():
     parser.add_argument('--use-vllm', action='store_true', help='vLLM 사용')
     parser.add_argument('--vllm-url', default='http://localhost:8000/v1', help='vLLM 서버 URL')
     parser.add_argument('--vllm-model', default='openai/gpt-oss-120B', help='vLLM 모델명')
+    
+    # ChatGPT 옵션
+    parser.add_argument('--use-chatgpt', action='store_true', help='ChatGPT API 사용')
+    parser.add_argument('--chatgpt-model', default='gpt-4o-mini', help='ChatGPT 모델명')
+    parser.add_argument('--keyword-lang', choices=['all', 'korean', 'english'], default='all', 
+                       help='키워드 추출 언어 선택')
     
     # 검색 플랫폼 옵션
     parser.add_argument('--use-scienceon', action='store_true', help='ScienceON 사용')
@@ -112,6 +121,33 @@ def get_gemini_api_key() -> str:
     # 사용자 입력 요청
     print("⚠️  GEMINI_API_KEY 환경 변수가 설정되지 않았습니다.")
     api_key = input("Gemini API 키를 입력하세요: ").strip()
+    
+    if not api_key:
+        print("❌ API 키가 필요합니다.")
+        sys.exit(1)
+    
+    return api_key
+
+def get_openai_api_key() -> str:
+    """OpenAI API 키 가져오기"""
+    # 환경 변수에서 먼저 확인
+    api_key = os.getenv("OPENAI_API_KEY")
+    if api_key:
+        return api_key
+    
+    # 설정 파일에서 확인
+    config_path = Path("./configs/chatgpt_api_credentials.json")
+    if config_path.exists():
+        try:
+            with open(config_path, 'r', encoding='utf-8') as f:
+                config = json.load(f)
+                return config.get("api_key", "")
+        except Exception as e:
+            logging.warning(f"ChatGPT 설정 파일 읽기 실패: {e}")
+    
+    # 사용자 입력 요청
+    print("⚠️  OPENAI_API_KEY 환경 변수가 설정되지 않았습니다.")
+    api_key = input("OpenAI API 키를 입력하세요: ").strip()
     
     if not api_key:
         print("❌ API 키가 필요합니다.")
@@ -271,6 +307,8 @@ def main():
     
     if args.use_vllm:
         print(f"🤖 AI 모델: vLLM ({args.vllm_model})")
+    elif args.use_chatgpt:
+        print(f"🤖 AI 모델: ChatGPT ({args.chatgpt_model})")
     else:
         print(f"🤖 AI 모델: Gemini")
     
@@ -288,6 +326,25 @@ def main():
                 pubmed_email=pubmed_email,
                 vllm_base_url=args.vllm_url,
                 vllm_model=args.vllm_model,
+                skip_keyword_extraction=args.skip_keyword_extraction
+            )
+        elif args.use_chatgpt:
+            
+            # ChatGPT 사용
+            try:
+                openai_api_key = get_openai_api_key()
+            except KeyboardInterrupt:
+                print("\n❌ 사용자가 취소했습니다.")
+                return
+                
+            system = SearchMetaSystem(
+                gemini_api_key=None,
+                use_chatgpt=True,
+                chatgpt_model=args.chatgpt_model,
+                openai_api_key=openai_api_key,
+                keyword_lang=args.keyword_lang,
+                pubmed_api_key=pubmed_api_key,
+                pubmed_email=pubmed_email,
                 skip_keyword_extraction=args.skip_keyword_extraction
             )
         else:

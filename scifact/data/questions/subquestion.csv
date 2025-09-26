@@ -1,0 +1,51 @@
+question,label,doc_id
+Coronavirus disease 2019 (COVID-19) spreads primarily through respiratory droplets.,SUPPORT,101
+Vitamin C supplements prevent the common cold.,REFUTE,201
+Regular exercise improves cardiovascular health.,SUPPORT,301
+Smoking increases the risk of lung cancer.,SUPPORT,401
+Antioxidant supplements reduce cancer risk in healthy individuals.,REFUTE,501
+Moderate alcohol consumption protects against heart disease.,SUPPORT,601
+Mobile phone radiation causes brain tumors.,REFUTE,701
+Meditation reduces symptoms of anxiety and depression.,SUPPORT,801
+Probiotics improve digestive health in healthy adults.,SUPPORT,901
+Artificial sweeteners are safer than sugar for diabetics.,SUPPORT,1001
+Sleep deprivation impairs immune function.,SUPPORT,1101
+Homeopathic remedies are effective for treating flu symptoms.,REFUTE,1201
+Omega-3 fatty acids reduce inflammation in rheumatoid arthritis.,SUPPORT,1301
+Excessive screen time causes myopia in children.,SUPPORT,1401
+Acupuncture is effective for chronic pain management.,SUPPORT,1501
+Low-carbohydrate diets are more effective for weight loss than low-fat diets.,SUPPORT,1601
+Fluoride in drinking water prevents tooth decay.,SUPPORT,1701
+Cranberry juice prevents urinary tract infections.,REFUTE,1801
+Wearing masks reduces transmission of respiratory infections.,SUPPORT,1901
+Multivitamins improve cognitive function in elderly adults.,REFUTE,2001
+Climate change is caused primarily by human activities.,SUPPORT,2101
+Renewable energy sources can meet global energy demands.,SUPPORT,2201
+Deforestation contributes significantly to global warming.,SUPPORT,2301
+Ocean acidification threatens marine ecosystems.,SUPPORT,2401
+Solar panels reduce greenhouse gas emissions over their lifetime.,SUPPORT,2501
+Plastic pollution has no significant impact on marine life.,REFUTE,2601
+Carbon capture technology can reverse climate change.,REFUTE,2701
+Urban green spaces improve air quality.,SUPPORT,2801
+Electric vehicles produce zero emissions.,REFUTE,2901
+Biodegradable plastics completely decompose in marine environments.,REFUTE,3001
+Artificial intelligence can diagnose diseases more accurately than human doctors.,SUPPORT,3101
+5G networks pose health risks to humans.,REFUTE,3201
+Quantum computers will break current encryption methods.,SUPPORT,3301
+Autonomous vehicles are safer than human-driven cars.,SUPPORT,3401
+Social media algorithms contribute to political polarization.,SUPPORT,3501
+Blockchain technology is more secure than traditional databases.,SUPPORT,3601
+Virtual reality therapy is effective for treating phobias.,SUPPORT,3701
+Machine learning models are immune to bias.,REFUTE,3801
+Internet of Things devices improve home energy efficiency.,SUPPORT,3901
+Facial recognition technology is 100% accurate.,REFUTE,4001
+Evolution by natural selection explains the diversity of life on Earth.,SUPPORT,4101
+CRISPR gene editing can cure genetic diseases.,SUPPORT,4201
+GMO foods are harmful to human health.,REFUTE,4301
+Stem cell therapy can regenerate damaged organs.,SUPPORT,4401
+Antibiotics are effective against viral infections.,REFUTE,4501
+Biodiversity loss threatens ecosystem stability.,SUPPORT,4601
+Telomeres determine human lifespan.,SUPPORT,4701
+Organic foods have higher nutritional value than conventional foods.,REFUTE,4801
+Microbiome diversity is linked to overall health.,SUPPORT,4901
+Epigenetic changes can be inherited across generations.,SUPPORT,5001

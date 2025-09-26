@@ -26,6 +26,10 @@ class SearchMetaSystem:
     def __init__(self, gemini_api_key: str = None, use_vllm: bool = False,
                  vllm_base_url: str = "http://localhost:8000/v1",
                  vllm_model: str = "openai/gpt-oss-120B",
+                 use_chatgpt: bool = False,
+                 chatgpt_model: str = "gpt-4o-mini",
+                 openai_api_key: str = None,
+                 keyword_lang: str = "all",
                  pubmed_api_key: str = None,
                  pubmed_email: str = None,
                  pubmed_credentials_path: str = "./configs/pubmed_api_credentials.json",
@@ -35,10 +39,14 @@ class SearchMetaSystem:
         검색 메타데이터 시스템 초기화
         
         Args:
-            gemini_api_key: Gemini API 키 (use_vllm=False일 때 필수)
+            gemini_api_key: Gemini API 키 (use_vllm=False, use_chatgpt=False일 때 필수)
             use_vllm: vLLM 사용 여부
             vllm_base_url: vLLM 서버 URL
             vllm_model: vLLM 모델명
+            use_chatgpt: ChatGPT 사용 여부
+            chatgpt_model: ChatGPT 모델명
+            openai_api_key: OpenAI API 키 (use_chatgpt=True일 때 필요)
+            keyword_lang: 키워드 추출 언어 (all, korean, english)
             scienceon_credentials_path: ScienceON API 자격증명 파일 경로
             pubmed_credentials_path: PubMed API 자격증명 파일 경로
             skip_keyword_extraction: 키워드 추출을 건너뛰고 직접 질문 사용 여부
@@ -46,12 +54,18 @@ class SearchMetaSystem:
         # 설정 로드
         self.settings = Settings()
         self.use_vllm = use_vllm
+        self.use_chatgpt = use_chatgpt
         self.skip_keyword_extraction = skip_keyword_extraction
         
         if use_vllm:
             self.settings.set("use_vllm", True)
             self.settings.set("vllm_base_url", vllm_base_url)
             self.settings.set("vllm_model", vllm_model)
+        elif use_chatgpt:
+            self.settings.set("use_chatgpt", True)
+            self.settings.set("chatgpt_model", chatgpt_model)
+            self.settings.set("openai_api_key", openai_api_key)
+            self.settings.set("keyword_lang", keyword_lang)
         else:
             self.settings.set("gemini_api_key", gemini_api_key)
         
@@ -96,6 +110,23 @@ class SearchMetaSystem:
                 self.settings.get("vllm_base_url"),
                 self.settings.get("vllm_model")
             )
+        elif self.use_chatgpt:
+            from core.chatgpt_keyword_extractor import ChatGPTKeywordExtractor
+            openai_key = self.settings.get("openai_api_key")
+            if openai_key:
+                # API 키를 직접 전달
+                self.keyword_extractor = ChatGPTKeywordExtractor(
+                    api_key=openai_key,
+                    model=self.settings.get("chatgpt_model"),
+                    language=self.settings.get("keyword_lang")
+                )
+            else:
+                # 설정 파일에서 로드
+                self.keyword_extractor = ChatGPTKeywordExtractor(
+                    credentials_file="./configs/chatgpt_api_credentials.json",
+                    model=self.settings.get("chatgpt_model"),
+                    language=self.settings.get("keyword_lang")
+                )
         else:
             self.keyword_extractor = KeywordExtractor(self.settings.get("gemini_api_key"))
         
