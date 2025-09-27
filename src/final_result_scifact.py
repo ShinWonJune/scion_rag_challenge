@@ -15,6 +15,34 @@ from datetime import datetime
 from typing import Dict, List, Any, Optional
 
 
+def load_ground_truth_labels(ground_truth_path: str) -> Dict[str, str]:
+    """
+    subquestion.csv에서 정답 라벨을 로드
+    
+    Args:
+        ground_truth_path: subquestion.csv 파일 경로
+        
+    Returns:
+        Dict[str, str]: {question: label} 매핑
+    """
+    ground_truth = {}
+    
+    try:
+        with open(ground_truth_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                question = row['question'].strip()
+                label = row['label'].strip()
+                ground_truth[question] = label
+                
+        print(f"✅ 정답 라벨 로드 완료: {len(ground_truth)}개 항목")
+        return ground_truth
+        
+    except Exception as e:
+        print(f"⚠️ 정답 라벨 로드 오류: {e}")
+        return {}
+
+
 def extract_abstracts_from_retrieval(retrieval_data: Dict) -> Dict[str, str]:
     """
     retrieval 데이터에서 abstract들을 추출하여 딕셔너리로 반환
@@ -63,12 +91,9 @@ def process_json_file(filepath: str) -> Optional[Dict[str, Any]]:
         
         row_data = {}
         
-        # 기본 정보 추출
-        row_data['id'] = data.get('id', '')
-        
-        # result에서 determination 추출
+        # result에서 determination 추출 (predicted_label로 저장)
         result = data.get('result', {})
-        row_data['label'] = result.get('determination', '')
+        row_data['predicted_label'] = result.get('determination', '')
         
         # retrieval에서 query와 abstracts 추출
         retrieval = data.get('retrival', {})  # 오타 있음 ('retrival' -> 'retrieval')
@@ -122,13 +147,14 @@ def determine_max_docs(input_dir: str) -> int:
     return min(max_docs, 20)  # 최대 20개로 제한
 
 
-def create_csv_from_json_files(input_dir: str, output_dir: str) -> str:
+def create_csv_from_json_files(input_dir: str, output_dir: str, ground_truth_path: str = None) -> str:
     """
     JSON 파일들을 CSV로 변환
     
     Args:
         input_dir: JSON 파일들이 있는 디렉토리
         output_dir: CSV 파일을 저장할 디렉토리
+        ground_truth_path: subquestion.csv 파일 경로 (true_label을 위해)
         
     Returns:
         str: 생성된 CSV 파일 경로
@@ -136,12 +162,17 @@ def create_csv_from_json_files(input_dir: str, output_dir: str) -> str:
     # 출력 디렉토리 생성
     os.makedirs(output_dir, exist_ok=True)
     
+    # 정답 라벨 로드 (제공된 경우)
+    ground_truth_labels = {}
+    if ground_truth_path and os.path.exists(ground_truth_path):
+        ground_truth_labels = load_ground_truth_labels(ground_truth_path)
+    
     # 최대 문서 수 결정
     max_docs = determine_max_docs(input_dir)
     print(f"📄 최대 문서 수: {max_docs}")
     
     # CSV 헤더 생성
-    headers = ['id', 'question', 'label']
+    headers = ['question', 'true_label', 'predicted_label']
     for i in range(1, max_docs + 1):
         headers.append(f'retrieve_docs_{i}')
     
@@ -167,6 +198,13 @@ def create_csv_from_json_files(input_dir: str, output_dir: str) -> str:
         for json_file in json_files:
             row_data = process_json_file(json_file)
             if row_data:
+                # true_label 추가 (정답 라벨이 있는 경우)
+                question = row_data.get('question', '')
+                if question in ground_truth_labels:
+                    row_data['true_label'] = ground_truth_labels[question]
+                else:
+                    row_data['true_label'] = ''
+                
                 # 모든 헤더에 대해 값이 없으면 빈 문자열로 채우기
                 for header in headers:
                     if header not in row_data:
@@ -195,6 +233,11 @@ def main():
         default="/app/results/scifact_final_answers",
         help="CSV 파일을 저장할 디렉토리 경로 (기본값: /app/results/scifact_final_answers)"
     )
+    parser.add_argument(
+        "--ground_truth",
+        default="/app/scifact/data/questions/subquestion.csv",
+        help="정답이 포함된 CSV 파일 경로 (기본값: /app/scifact/data/questions/subquestion.csv)"
+    )
     
     args = parser.parse_args()
     
@@ -204,7 +247,7 @@ def main():
         return 1
     
     try:
-        output_file = create_csv_from_json_files(args.input_dir, args.output_dir)
+        output_file = create_csv_from_json_files(args.input_dir, args.output_dir, args.ground_truth)
         print(f"\n🎉 변환 완료!")
         print(f"📍 출력 파일: {output_file}")
         

@@ -1,0 +1,17 @@
+{
+  "accuracy": 0.46,
+  "support_precision": 1.0,
+  "support_recall": 0.20588235294117646,
+  "support_f1": 0.34146341463414637,
+  "support_count": 34,
+  "refute_precision": 0.37209302325581395,
+  "refute_recall": 1.0,
+  "refute_f1": 0.5423728813559322,
+  "refute_count": 16,
+  "macro_precision": 0.686046511627907,
+  "macro_recall": 0.6029411764705882,
+  "macro_f1": 0.44191814799503926,
+  "weighted_precision": 0.7990697674418604,
+  "weighted_recall": 0.46,
+  "weighted_f1": 0.40575444398511784
+}

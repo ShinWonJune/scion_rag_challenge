@@ -15,7 +15,7 @@ from data_handler.for_embedding import prepare_documents, save_results
 
 
 def build_vectordb_search(
-    config_path="../configs/query_encoder/config_bge_m3.json",
+    config_path="../configs/query_encoder/config_gte-multilingual-base.json",
     data_schema="../configs/csv_schema/test_2.json",
     docs_jsonl_path="/app/search_science_on_chellenge/outputs/search_documents_20250912_013206.jsonl",
     auto_data_load=False,
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     
     parser.add_argument(
         "--config_path",
-        default="../configs/query_encoder/config_bge_m3.json",
+        default="../configs/query_encoder/config_gte-multilingual-base.json",
         help="임베딩 모델 설정 파일 경로"
     )
     parser.add_argument(

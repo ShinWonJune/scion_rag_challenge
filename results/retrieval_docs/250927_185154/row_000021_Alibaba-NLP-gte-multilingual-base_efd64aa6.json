@@ -1,0 +1,517 @@
+{
+  "id": "row_000021",
+  "model_name": "Alibaba-NLP/gte-multilingual-base",
+  "retrieval_results": [
+    {
+      "query": "Climate change is caused primarily by human activities.",
+      "query_meta": {
+        "type": "original"
+      },
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.5578709840774536,
+          "doc_id": "",
+          "title": "Advancing CO",
+          "abstract": "The rising global energy demand has accelerated fossil fuel consumption, leading to an increase in CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Advancing CO Advancing CO Advancing CO The rising global energy demand has accelerated fossil fuel consumption, leading to an increase in CO"
+        },
+        {
+          "rank": 2,
+          "score": 0.5474995374679565,
+          "doc_id": "",
+          "title": "Abatement of CO2 under the microwave plasma torch system assisted with low-density coal.",
+          "abstract": "Greenhouse gas emissions are abundantly produced every year by human activities. They are the main cause of global warming and the changes observed in the climate. In this study, we used the microwave plasma torch system (MPT) to drive the conversion of CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Abatement of CO2 under the microwave plasma torch system assisted with low-density coal. Abatement of CO2 under the microwave plasma torch system assisted with low-density coal. Abatement of CO2 under the microwave plasma torch system assisted with low-density coal. Greenhouse gas emissions are abundantly produced every year by human activities. They are the main cause of global warming and the changes observed in the climate. In this study, we used the microwave plasma torch system (MPT) to drive the conversion of CO"
+        },
+        {
+          "rank": 3,
+          "score": 0.518552839756012,
+          "doc_id": "",
+          "title": "Global health risk attributable to PM",
+          "abstract": "Ambient fine particulate matter (PM",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Global health risk attributable to PM Global health risk attributable to PM Global health risk attributable to PM Ambient fine particulate matter (PM"
+        },
+        {
+          "rank": 4,
+          "score": 0.5111097097396851,
+          "doc_id": "",
+          "title": "Impact of temperature on the biogenic volatile organic compound (BVOC) emissions in China: A review.",
+          "abstract": "Temperature has a substantial impact on the emission of biogenic volatile organic compounds (BVOCs). Moderate warm temperatures, e.g., 30-40 °C, could boost plant metabolism, increasing BVOC emissions. Against the backdrop of global warming, plants emit more BVOCs to cope with thermal stress, leading to elevated concentrations of tropospheric ozone (O",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Impact of temperature on the biogenic volatile organic compound (BVOC) emissions in China: A review. Impact of temperature on the biogenic volatile organic compound (BVOC) emissions in China: A review. Impact of temperature on the biogenic volatile organic compound (BVOC) emissions in China: A review. Temperature has a substantial impact on the emission of biogenic volatile organic compounds (BVOCs). Moderate warm temperatures, e.g., 30-40 °C, could boost plant metabolism, increasing BVOC emissions. Against the backdrop of global warming, plants emit more BVOCs to cope with thermal stress, leading to elevated concentrations of tropospheric ozone (O"
+        },
+        {
+          "rank": 5,
+          "score": 0.5081843137741089,
+          "doc_id": "",
+          "title": "Carbon Capture from Natural Gas Flue Emissions and Air via (Bi)Carbonate Formation in a Cyclodextrin-Based Metal-Organic Framework.",
+          "abstract": "Carbon capture and utilization or sequestration (CCUS) from industrial point sources and direct air capture (DAC) are both necessary to curb the rising atmospheric levels of CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Carbon Capture from Natural Gas Flue Emissions and Air via (Bi)Carbonate Formation in a Cyclodextrin-Based Metal-Organic Framework. Carbon Capture from Natural Gas Flue Emissions and Air via (Bi)Carbonate Formation in a Cyclodextrin-Based Metal-Organic Framework. Carbon Capture from Natural Gas Flue Emissions and Air via (Bi)Carbonate Formation in a Cyclodextrin-Based Metal-Organic Framework. Carbon capture and utilization or sequestration (CCUS) from industrial point sources and direct air capture (DAC) are both necessary to curb the rising atmospheric levels of CO"
+        },
+        {
+          "rank": 6,
+          "score": 0.5011094808578491,
+          "doc_id": "",
+          "title": "Intelligent predictive modeling for the optimization of advanced algal photobioreactors in greenhouse gas capture and utilization.",
+          "abstract": "Approximately 76 % of global greenhouse gas emissions are attributed to carbon dioxide (CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Intelligent predictive modeling for the optimization of advanced algal photobioreactors in greenhouse gas capture and utilization. Intelligent predictive modeling for the optimization of advanced algal photobioreactors in greenhouse gas capture and utilization. Intelligent predictive modeling for the optimization of advanced algal photobioreactors in greenhouse gas capture and utilization. Approximately 76 % of global greenhouse gas emissions are attributed to carbon dioxide (CO"
+        },
+        {
+          "rank": 7,
+          "score": 0.48709505796432495,
+          "doc_id": "",
+          "title": "Association of multiple air pollutants exposure with heart rate variability in children: From two panel studies.",
+          "abstract": "Air pollution has been associated with adverse cardiovascular effects in adults, but its impact on children's heart rate variability (HRV) is unclear. We conducted two longitudinal panel studies among 271 children aged 4-13 years each with up to three repeated visits over three distinct seasons within a one-year period. Each visit occurred in a separate season. Personal real-time PM Strongest inverse dose-responsive associations emerged for O Short-term air pollution exposure shows dose-responsive associations with decreased pediatric HRV, with O",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Association of multiple air pollutants exposure with heart rate variability in children: From two panel studies. Association of multiple air pollutants exposure with heart rate variability in children: From two panel studies. Association of multiple air pollutants exposure with heart rate variability in children: From two panel studies. Air pollution has been associated with adverse cardiovascular effects in adults, but its impact on children's heart rate variability (HRV) is unclear. We conducted two longitudinal panel studies among 271 children aged 4-13 years each with up to three repeated visits over three distinct seasons within a one-year period. Each visit occurred in a separate season. Personal real-time PM Strongest inverse dose-responsive associations emerged for O Short-term air pollution exposure shows dose-responsive associations with decreased pediatric HRV, with O"
+        },
+        {
+          "rank": 8,
+          "score": 0.4806981682777405,
+          "doc_id": "",
+          "title": "Ammonia emission from real-world in-use vehicle fleets in a megacity in China - based on tunnel measurement.",
+          "abstract": "Ammonia (NH",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Ammonia emission from real-world in-use vehicle fleets in a megacity in China - based on tunnel measurement. Ammonia emission from real-world in-use vehicle fleets in a megacity in China - based on tunnel measurement. Ammonia emission from real-world in-use vehicle fleets in a megacity in China - based on tunnel measurement. Ammonia (NH"
+        },
+        {
+          "rank": 9,
+          "score": 0.47982630133628845,
+          "doc_id": "",
+          "title": "Assessing the feasibility and environmental benefits of electrifying construction machinery in Beijing, China.",
+          "abstract": "Oil-fired construction machinery (OCM) is a major source of urban air pollutants and CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Assessing the feasibility and environmental benefits of electrifying construction machinery in Beijing, China. Assessing the feasibility and environmental benefits of electrifying construction machinery in Beijing, China. Assessing the feasibility and environmental benefits of electrifying construction machinery in Beijing, China. Oil-fired construction machinery (OCM) is a major source of urban air pollutants and CO"
+        },
+        {
+          "rank": 10,
+          "score": 0.4796416461467743,
+          "doc_id": "",
+          "title": "Six-Year Trends of Concentration, Chemical Composition, Sources and Health Risks of Halogenated, Nitro and Oxygenated PAHs in Winter PM",
+          "abstract": "Polycyclic aromatic hydrocarbon (PAH) derivatives have attracted increasing attention due to their stronger persistence and toxicity compared to parent PAHs. Atmospheric PM",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Six-Year Trends of Concentration, Chemical Composition, Sources and Health Risks of Halogenated, Nitro and Oxygenated PAHs in Winter PM Six-Year Trends of Concentration, Chemical Composition, Sources and Health Risks of Halogenated, Nitro and Oxygenated PAHs in Winter PM Six-Year Trends of Concentration, Chemical Composition, Sources and Health Risks of Halogenated, Nitro and Oxygenated PAHs in Winter PM Polycyclic aromatic hydrocarbon (PAH) derivatives have attracted increasing attention due to their stronger persistence and toxicity compared to parent PAHs. Atmospheric PM"
+        },
+        {
+          "rank": 11,
+          "score": 0.47194451093673706,
+          "doc_id": "",
+          "title": "Characterization, sources and reactivity of carbonyl volatile organic compounds in North China: Based on long-term observations.",
+          "abstract": "Carbonyl compounds play a pivotal role in the formation of secondary pollutants such as O",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Characterization, sources and reactivity of carbonyl volatile organic compounds in North China: Based on long-term observations. Characterization, sources and reactivity of carbonyl volatile organic compounds in North China: Based on long-term observations. Characterization, sources and reactivity of carbonyl volatile organic compounds in North China: Based on long-term observations. Carbonyl compounds play a pivotal role in the formation of secondary pollutants such as O"
+        },
+        {
+          "rank": 12,
+          "score": 0.4716756343841553,
+          "doc_id": "",
+          "title": "Opposing physiological performances of two coexisting gastropods to changing ocean climate.",
+          "abstract": "The impact of climate change on the structure of ecological communities will be influenced by how different species respond to changing environmental conditions. In this study, we investigated the effects of increased temperature (summer Control, 21 °C; HT, 24 °C) and elevated CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Opposing physiological performances of two coexisting gastropods to changing ocean climate. Opposing physiological performances of two coexisting gastropods to changing ocean climate. Opposing physiological performances of two coexisting gastropods to changing ocean climate. The impact of climate change on the structure of ecological communities will be influenced by how different species respond to changing environmental conditions. In this study, we investigated the effects of increased temperature (summer Control, 21 °C; HT, 24 °C) and elevated CO"
+        },
+        {
+          "rank": 13,
+          "score": 0.4620493948459625,
+          "doc_id": "",
+          "title": "Polycyclic aromatic hydrocarbons contamination in Amazonian environments: a systematic review.",
+          "abstract": "The Amazon River has become contaminated with organic pollutants, such as polycyclic aromatic hydrocarbons (PAHs). This systematic review aimed to evaluate environmental samples, including water, sediment, and biological matrices, as monitoring tools for determining PAHs concentrations within the Amazon ecosystem. A comprehensive literature search was conducted across four databases (PubMed, ScienceDirect, Web of Science, and Scopus) from January 2013 to June 2024, resulting in 25 studies meeting the inclusion criteria. The systematic review revealed widespread significant contamination of PAHs in the Amazon, with sediments being the most affected matrix. Ecuador's Aguarico and Napo River basins showed the highest PAH levels, linked to extensive oil extraction activities, while Brazil's São Raimundo Harbor and Barcarena also exhibited high contamination due to industrial and fossil fuel activities. The PAHs values found in water range from 4 to 5,363,000 ng L",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Polycyclic aromatic hydrocarbons contamination in Amazonian environments: a systematic review. Polycyclic aromatic hydrocarbons contamination in Amazonian environments: a systematic review. Polycyclic aromatic hydrocarbons contamination in Amazonian environments: a systematic review. The Amazon River has become contaminated with organic pollutants, such as polycyclic aromatic hydrocarbons (PAHs). This systematic review aimed to evaluate environmental samples, including water, sediment, and biological matrices, as monitoring tools for determining PAHs concentrations within the Amazon ecosystem. A comprehensive literature search was conducted across four databases (PubMed, ScienceDirect, Web of Science, and Scopus) from January 2013 to June 2024, resulting in 25 studies meeting the inclusion criteria. The systematic review revealed widespread significant contamination of PAHs in the Amazon, with sediments being the most affected matrix. Ecuador's Aguarico and Napo River basins showed the highest PAH levels, linked to extensive oil extraction activities, while Brazil's São Raimundo Harbor and Barcarena also exhibited high contamination due to industrial and fossil fuel activities. The PAHs values found in water range from 4 to 5,363,000 ng L"
+        },
+        {
+          "rank": 14,
+          "score": 0.45925629138946533,
+          "doc_id": "",
+          "title": "Mortality From Parkinson's Disease With Influenza and Pneumonia as Contributing Causes in the United States, 1999-2020.",
+          "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder and a leading cause of morbidity and mortality among older adults. Respiratory infections such as influenza and pneumonia further increase mortality due to impaired cough reflex, dysphagia, and reduced immunity. Limited research has examined long-term mortality trends where these infections contribute to PD-related deaths. This study aimed to evaluate the crude and age-adjusted mortality rates (AAMRs) of individuals with PD where influenza or pneumonia were contributing factors. We conducted a retrospective study using the CDC Wide-Ranging Online Data for Epidemiologic Research (WONDER) Multiple Cause of Death (MCD) database (1999-2020). Individuals aged ≥45 years with PD (ICD-10: G20) as the underlying cause of death and influenza or pneumonia (ICD-10: J09-J18) as contributing causes were included. Mortality rates were calculated per 1,000,000 population and age-adjusted to the 2000 US Standard Population. Demographic, geographic, and temporal patterns were analyzed using JoinPoint regression. From 1999 to 2020, 43,644 deaths were identified. Males accounted for 28,831 deaths (66.1%), and White individuals accounted for 40,716 deaths (93.3%). Most deaths occurred in metropolitan areas (35,261 deaths, 80.8%) and nursing homes/long-term care facilities (19,223 deaths, 44%). The crude mortality rate was 16.6 per 1,000,000 population. AAMRs showed a significant overall decline (annual percentage change (APC), -4.41%; p < 0.05). Male mortality remained consistently higher than female mortality (14,813 deaths, 33.9%). Racial disparities were observed, with White individuals showing the greatest burden (40,716 deaths, 93.3%), while Black (1,581 deaths, 3.6%) and Asian or Pacific Islander groups (1,205 deaths, 2.8%) demonstrated fluctuating but declining trends. Mortality from PD with influenza or pneumonia declined significantly between 1999 and 2020, reflecting improvements in infection control and elderly care. However, disparities by sex, race, and geography persist, underscoring the need for targeted interventions, particularly in long-term care settings.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Mortality From Parkinson's Disease With Influenza and Pneumonia as Contributing Causes in the United States, 1999-2020. Mortality From Parkinson's Disease With Influenza and Pneumonia as Contributing Causes in the United States, 1999-2020. Mortality From Parkinson's Disease With Influenza and Pneumonia as Contributing Causes in the United States, 1999-2020. Parkinson's disease (PD) is a progressive neurodegenerative disorder and a leading cause of morbidity and mortality among older adults. Respiratory infections such as influenza and pneumonia further increase mortality due to impaired cough reflex, dysphagia, and reduced immunity. Limited research has examined long-term mortality trends where these infections contribute to PD-related deaths. This study aimed to evaluate the crude and age-adjusted mortality rates (AAMRs) of individuals with PD where influenza or pneumonia were contributing factors. We conducted a retrospective study using the CDC Wide-Ranging Online Data for Epidemiologic Research (WONDER) Multiple Cause of Death (MCD) database (1999-2020). Individuals aged ≥45 years with PD (ICD-10: G20) as the underlying cause of death and influenza or pneumonia (ICD-10: J09-J18) as contributing causes were included. Mortality rates were calculated per 1,000,000 population and age-adjusted to the 2000 US Standard Population. Demographic, geographic, and temporal patterns were analyzed using JoinPoint regression. From 1999 to 2020, 43,644 deaths were identified. Males accounted for 28,831 deaths (66.1%), and White individuals accounted for 40,716 deaths (93.3%). Most deaths occurred in metropolitan areas (35,261 deaths, 80.8%) and nursing homes/long-term care facilities (19,223 deaths, 44%). The crude mortality rate was 16.6 per 1,000,000 population. AAMRs showed a significant overall decline (annual percentage change (APC), -4.41%; p < 0.05). Male mortality remained consistently higher than female mortality (14,813 deaths, 33.9%). Racial disparities were observed, with White individuals showing the greatest burden (40,716 deaths, 93.3%), while Black (1,581 deaths, 3.6%) and Asian or Pacific Islander groups (1,205 deaths, 2.8%) demonstrated fluctuating but declining trends. Mortality from PD with influenza or pneumonia declined significantly between 1999 and 2020, reflecting improvements in infection control and elderly care. However, disparities by sex, race, and geography persist, underscoring the need for targeted interventions, particularly in long-term care settings."
+        },
+        {
+          "rank": 15,
+          "score": 0.4591403007507324,
+          "doc_id": "",
+          "title": "Political ideology-driven perceptions of experts and their claims.",
+          "abstract": "US conservatives are often seen as distrusting scientists, and liberals as more trusting. This article examines how alignment between an expert's field and individual political ideology affects claims perceptions. US adults (",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Political ideology-driven perceptions of experts and their claims. Political ideology-driven perceptions of experts and their claims. Political ideology-driven perceptions of experts and their claims. US conservatives are often seen as distrusting scientists, and liberals as more trusting. This article examines how alignment between an expert's field and individual political ideology affects claims perceptions. US adults ("
+        },
+        {
+          "rank": 16,
+          "score": 0.45894622802734375,
+          "doc_id": "",
+          "title": "Living things are showing increasing anomalies in their seasonal activity, which could disrupt the dynamics of biodiversity and ecosystems.",
+          "abstract": "The IPCC reported that the 2011-2020 decade has been the warmest on record worldwide. The frequency of climate extremes has increased and the future rates of warming will be well above historical averages. Climate warming has already modified species seasonal activity with cascading effects on species interactions, geographical ranges, ecosystems productivity and feedback to the atmosphere. However, we lack information on how the new climate regime will translate in terms of impacts for human populations and ecosystems. Here we report on abnormal seasonal activities of plants and animals, which took place in Europe and other countries worldwide since 2015. We show that they are unpreceded, related to warmer fall and winter as well as drier summer conditions. These anomalies are projected to increase in frequency in a near future and might have dramatic consequences for biodiversity dynamics, ecosystems functioning and human activities.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Living things are showing increasing anomalies in their seasonal activity, which could disrupt the dynamics of biodiversity and ecosystems. Living things are showing increasing anomalies in their seasonal activity, which could disrupt the dynamics of biodiversity and ecosystems. Living things are showing increasing anomalies in their seasonal activity, which could disrupt the dynamics of biodiversity and ecosystems. The IPCC reported that the 2011-2020 decade has been the warmest on record worldwide. The frequency of climate extremes has increased and the future rates of warming will be well above historical averages. Climate warming has already modified species seasonal activity with cascading effects on species interactions, geographical ranges, ecosystems productivity and feedback to the atmosphere. However, we lack information on how the new climate regime will translate in terms of impacts for human populations and ecosystems. Here we report on abnormal seasonal activities of plants and animals, which took place in Europe and other countries worldwide since 2015. We show that they are unpreceded, related to warmer fall and winter as well as drier summer conditions. These anomalies are projected to increase in frequency in a near future and might have dramatic consequences for biodiversity dynamics, ecosystems functioning and human activities."
+        },
+        {
+          "rank": 17,
+          "score": 0.4556228518486023,
+          "doc_id": "",
+          "title": "Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation.",
+          "abstract": "Bivalve farming, a vital component of global aquaculture, has been proposed as a potential marine carbon dioxide removal (mCDR) strategy, yet its role remains contentious. Using field mesocosms, we demonstrate that oyster filter-feeding enhances mCDR by accelerating the formation of particulate and dissolved organic carbon in the water column and promoting organic carbon deposition in sediments. This process shifts the water column toward a more autotrophic and alkaline state, effectively sequestering CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation. Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation. Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation. Bivalve farming, a vital component of global aquaculture, has been proposed as a potential marine carbon dioxide removal (mCDR) strategy, yet its role remains contentious. Using field mesocosms, we demonstrate that oyster filter-feeding enhances mCDR by accelerating the formation of particulate and dissolved organic carbon in the water column and promoting organic carbon deposition in sediments. This process shifts the water column toward a more autotrophic and alkaline state, effectively sequestering CO"
+        },
+        {
+          "rank": 18,
+          "score": 0.4543265104293823,
+          "doc_id": "",
+          "title": "Recent slowing of Arctic sea ice melt tied to multidecadal NAO variability.",
+          "abstract": "The reduction of Arctic sea ice concentration (SIC) is a key indicator of global warming. In September 2012, SIC reached its lowest recorded value. Since then, sea ice melt has slowed down, showing a linear trend of only -0.4±6.8%/decade from 2012 to 2023, compared to -11.3±3.3%/decade from 1996 to 2011. Here, we demonstrate that the recent slowdown in September sea ice melt is closely coupled with the multi-decadal variability of the preceding summer North Atlantic Oscillation (NAO), which has transitioned from the lowest point of its negative phase in the early 2010s to a positive phase. During this shift, decreased heat and moisture, along with reduced downward longwave radiation, have contributed to offsetting the long-term decline, leading to a slowdown in Arctic sea ice melting. Additionally, the Atlantic Multidecadal Oscillation plays a primary role in driving the interdecadal variability of the NAO and Arctic sea ice by modulating wave-mean flow interactions.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Recent slowing of Arctic sea ice melt tied to multidecadal NAO variability. Recent slowing of Arctic sea ice melt tied to multidecadal NAO variability. Recent slowing of Arctic sea ice melt tied to multidecadal NAO variability. The reduction of Arctic sea ice concentration (SIC) is a key indicator of global warming. In September 2012, SIC reached its lowest recorded value. Since then, sea ice melt has slowed down, showing a linear trend of only -0.4±6.8%/decade from 2012 to 2023, compared to -11.3±3.3%/decade from 1996 to 2011. Here, we demonstrate that the recent slowdown in September sea ice melt is closely coupled with the multi-decadal variability of the preceding summer North Atlantic Oscillation (NAO), which has transitioned from the lowest point of its negative phase in the early 2010s to a positive phase. During this shift, decreased heat and moisture, along with reduced downward longwave radiation, have contributed to offsetting the long-term decline, leading to a slowdown in Arctic sea ice melting. Additionally, the Atlantic Multidecadal Oscillation plays a primary role in driving the interdecadal variability of the NAO and Arctic sea ice by modulating wave-mean flow interactions."
+        },
+        {
+          "rank": 19,
+          "score": 0.453355073928833,
+          "doc_id": "",
+          "title": "Patterns, drivers and projections of carbon footprints in urban Chinese households: Based on interdisciplinary approaches.",
+          "abstract": "Climate change, driven by greenhouse gas emissions from human activities, poses a significant challenge to global sustainability. The urban household sector is a major contributor to carbon emissions, and the measurement and control of urban household carbon footprints is a global challenge. We compiled a novel and extensive dataset comprising 283,529 household-level emission records from 208 cities across China, spanning the period from 2002 to 2020. Employing interdisciplinary methods, including environmental input-output models, the Logarithmic Mean Divisia Index (LMDI), and Random Forest with SHapley Additive Explanations (SHAP) algorithms, we analyze the patterns, drivers, and projections of urban household carbon emissions. Our findings indicate that indirect emissions consistently exceeded direct emissions, with a peak around 2016, while direct emissions exhibited a steady increase. Spatial disparities are evident, with higher emissions observed in eastern coastal regions, municipalities, and provincial capitals. Key drivers of emissions include per capita GDP, population density, and extreme weather, while technological advancements have a strong suppressive effect and shifts in consumption patterns offer substantial mitigation potential. The low-carbon development path accelerates the decline of indirect carbon emissions and slows the increase of direct carbon emissions, while the fossil fuel-driven path slows the decline of indirect carbon emissions and accelerates the increase of direct carbon emissions. The study underscores the necessity of integrated optimized urban planning, climate policies, technological innovation and the adoption of clean energy to mitigate emissions and achieve long-term sustainability goals.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Patterns, drivers and projections of carbon footprints in urban Chinese households: Based on interdisciplinary approaches. Patterns, drivers and projections of carbon footprints in urban Chinese households: Based on interdisciplinary approaches. Patterns, drivers and projections of carbon footprints in urban Chinese households: Based on interdisciplinary approaches. Climate change, driven by greenhouse gas emissions from human activities, poses a significant challenge to global sustainability. The urban household sector is a major contributor to carbon emissions, and the measurement and control of urban household carbon footprints is a global challenge. We compiled a novel and extensive dataset comprising 283,529 household-level emission records from 208 cities across China, spanning the period from 2002 to 2020. Employing interdisciplinary methods, including environmental input-output models, the Logarithmic Mean Divisia Index (LMDI), and Random Forest with SHapley Additive Explanations (SHAP) algorithms, we analyze the patterns, drivers, and projections of urban household carbon emissions. Our findings indicate that indirect emissions consistently exceeded direct emissions, with a peak around 2016, while direct emissions exhibited a steady increase. Spatial disparities are evident, with higher emissions observed in eastern coastal regions, municipalities, and provincial capitals. Key drivers of emissions include per capita GDP, population density, and extreme weather, while technological advancements have a strong suppressive effect and shifts in consumption patterns offer substantial mitigation potential. The low-carbon development path accelerates the decline of indirect carbon emissions and slows the increase of direct carbon emissions, while the fossil fuel-driven path slows the decline of indirect carbon emissions and accelerates the increase of direct carbon emissions. The study underscores the necessity of integrated optimized urban planning, climate policies, technological innovation and the adoption of clean energy to mitigate emissions and achieve long-term sustainability goals."
+        },
+        {
+          "rank": 20,
+          "score": 0.45112207531929016,
+          "doc_id": "",
+          "title": "Freeze-Thaw Cycles Accelerate Plastic Pollution Invasion in Agriculture: Trojan Horse Effect of Microplastic-Plasticizer Contamination Revealed in Rye via Computational Chemistry and Multiomics.",
+          "abstract": "Climate change-related freeze-thaw (FT) cycles intensify combined contamination from diethyl phthalate (DEP) and microplastics (MPs) in agricultural systems. This study examines their synergistic phytotoxicity in hydroponic rye using multidisciplinary approaches, including physiology, transcriptomics, and computational modeling. FT dramatically increased cocontamination risks. Notably, DEP promoted MP uptake into plants by elevating MP surface charge─an effect intensified by FT─resulting in disrupted root function and nutrient absorption. Molecular analyses showed that DEP binds strongly to key proteins (e.g., HSP70; Δ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Freeze-Thaw Cycles Accelerate Plastic Pollution Invasion in Agriculture: Trojan Horse Effect of Microplastic-Plasticizer Contamination Revealed in Rye via Computational Chemistry and Multiomics. Freeze-Thaw Cycles Accelerate Plastic Pollution Invasion in Agriculture: Trojan Horse Effect of Microplastic-Plasticizer Contamination Revealed in Rye via Computational Chemistry and Multiomics. Freeze-Thaw Cycles Accelerate Plastic Pollution Invasion in Agriculture: Trojan Horse Effect of Microplastic-Plasticizer Contamination Revealed in Rye via Computational Chemistry and Multiomics. Climate change-related freeze-thaw (FT) cycles intensify combined contamination from diethyl phthalate (DEP) and microplastics (MPs) in agricultural systems. This study examines their synergistic phytotoxicity in hydroponic rye using multidisciplinary approaches, including physiology, transcriptomics, and computational modeling. FT dramatically increased cocontamination risks. Notably, DEP promoted MP uptake into plants by elevating MP surface charge─an effect intensified by FT─resulting in disrupted root function and nutrient absorption. Molecular analyses showed that DEP binds strongly to key proteins (e.g., HSP70; Δ"
+        },
+        {
+          "rank": 21,
+          "score": 0.45110976696014404,
+          "doc_id": "",
+          "title": "What doesn't kill you makes you stronger: the sea urchin Arbacia lixula living on volcanic CO",
+          "abstract": "Anthropogenic CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "What doesn't kill you makes you stronger: the sea urchin Arbacia lixula living on volcanic CO What doesn't kill you makes you stronger: the sea urchin Arbacia lixula living on volcanic CO What doesn't kill you makes you stronger: the sea urchin Arbacia lixula living on volcanic CO Anthropogenic CO"
+        },
+        {
+          "rank": 22,
+          "score": 0.44969263672828674,
+          "doc_id": "",
+          "title": "Divergent Changes in Peak Fat Oxidation and Fat",
+          "abstract": "Dietary intake has an important influence on rates of fuel use during exercise, but the extent to which short-term diet changes affect peak fat oxidation (PFO) and the intensity at which this occurs (Fat",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Divergent Changes in Peak Fat Oxidation and Fat Divergent Changes in Peak Fat Oxidation and Fat Divergent Changes in Peak Fat Oxidation and Fat Dietary intake has an important influence on rates of fuel use during exercise, but the extent to which short-term diet changes affect peak fat oxidation (PFO) and the intensity at which this occurs (Fat"
+        },
+        {
+          "rank": 23,
+          "score": 0.449659526348114,
+          "doc_id": "",
+          "title": "An ELSI for AI: Learning from genetics to govern algorithms.",
+          "abstract": "In the United States, the summer of 2025 will be remembered as artificial intelligence's (AI's) cruel summer-a season when the unheeded risks and dangers of AI became undeniably clear. Recent months have made visible the stakes of the unchecked use of AI: The parents of 16-year-old Adam Raine filed the first known wrongful death lawsuit against OpenAI, claiming ChatGPT contributed to their son's suicide by advising him on methods and offering to write his suicide note. A psychiatrist's investigation revealed that AI therapy chatbots encouraged troubled teens to \"get rid of\" parents and made sexual suggestions while falsely claiming to be licensed therapists. Reports emerged of a man hospitalized after following ChatGPT's advice to add sodium bromide to his diet. Trevis Williams reportedly spent more than 2 days wrongfully jailed after facial recognition technology misidentified him despite obvious physical differences and geolocation data proving he was miles away from the crime scene.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "An ELSI for AI: Learning from genetics to govern algorithms. An ELSI for AI: Learning from genetics to govern algorithms. An ELSI for AI: Learning from genetics to govern algorithms. In the United States, the summer of 2025 will be remembered as artificial intelligence's (AI's) cruel summer-a season when the unheeded risks and dangers of AI became undeniably clear. Recent months have made visible the stakes of the unchecked use of AI: The parents of 16-year-old Adam Raine filed the first known wrongful death lawsuit against OpenAI, claiming ChatGPT contributed to their son's suicide by advising him on methods and offering to write his suicide note. A psychiatrist's investigation revealed that AI therapy chatbots encouraged troubled teens to \"get rid of\" parents and made sexual suggestions while falsely claiming to be licensed therapists. Reports emerged of a man hospitalized after following ChatGPT's advice to add sodium bromide to his diet. Trevis Williams reportedly spent more than 2 days wrongfully jailed after facial recognition technology misidentified him despite obvious physical differences and geolocation data proving he was miles away from the crime scene."
+        },
+        {
+          "rank": 24,
+          "score": 0.4492419958114624,
+          "doc_id": "",
+          "title": "Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions.",
+          "abstract": "With rising urban population and urbanization, discharge of domestic wastewater increased dramatically. Centrally operated wastewater treatment plants (WWTPs) are being pressed for energy conservation and carbon footprint minimization, specifically in generating and emitting greenhouse gases (GHG) such as nitrous oxide (N",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions. Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions. Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions. With rising urban population and urbanization, discharge of domestic wastewater increased dramatically. Centrally operated wastewater treatment plants (WWTPs) are being pressed for energy conservation and carbon footprint minimization, specifically in generating and emitting greenhouse gases (GHG) such as nitrous oxide (N"
+        },
+        {
+          "rank": 25,
+          "score": 0.44770562648773193,
+          "doc_id": "",
+          "title": "Residential greenness, air pollution, and incident age-related macular degeneration: A prospective cohort study.",
+          "abstract": "Existing evidence suggests residential greenness is beneficial to human, while no research to date explored the associations of greenness with age-related macular degeneration (AMD). To evaluate the association of greenness with AMD, modification and mediation effect of air pollution, we conducted this prospective study. We constructed weighted quantile sum (WQS) index as co-exposure to nitrogen oxides (NO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Residential greenness, air pollution, and incident age-related macular degeneration: A prospective cohort study. Residential greenness, air pollution, and incident age-related macular degeneration: A prospective cohort study. Residential greenness, air pollution, and incident age-related macular degeneration: A prospective cohort study. Existing evidence suggests residential greenness is beneficial to human, while no research to date explored the associations of greenness with age-related macular degeneration (AMD). To evaluate the association of greenness with AMD, modification and mediation effect of air pollution, we conducted this prospective study. We constructed weighted quantile sum (WQS) index as co-exposure to nitrogen oxides (NO"
+        },
+        {
+          "rank": 26,
+          "score": 0.4475809931755066,
+          "doc_id": "",
+          "title": "Relation of wind direction and coal terminal activity patterns with air pollution burden in a community bordering a coal export terminal, Curtis Bay, Maryland, USA.",
+          "abstract": "Residents of Curtis Bay, South Baltimore, Maryland living near an open-air coal terminal have raised concerns about dark dust in their community. Coal particles have been detected in this dark dust, however, the relationship between coal terminal activity and air pollution in Curtis Bay remains unclear. This study aimed to determine how air quality varied in relation to changes in wind direction and observed coal terminal activity. We measured particulate matter (PM",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Relation of wind direction and coal terminal activity patterns with air pollution burden in a community bordering a coal export terminal, Curtis Bay, Maryland, USA. Relation of wind direction and coal terminal activity patterns with air pollution burden in a community bordering a coal export terminal, Curtis Bay, Maryland, USA. Relation of wind direction and coal terminal activity patterns with air pollution burden in a community bordering a coal export terminal, Curtis Bay, Maryland, USA. Residents of Curtis Bay, South Baltimore, Maryland living near an open-air coal terminal have raised concerns about dark dust in their community. Coal particles have been detected in this dark dust, however, the relationship between coal terminal activity and air pollution in Curtis Bay remains unclear. This study aimed to determine how air quality varied in relation to changes in wind direction and observed coal terminal activity. We measured particulate matter (PM"
+        },
+        {
+          "rank": 27,
+          "score": 0.44646936655044556,
+          "doc_id": "",
+          "title": "Effects of Simulated Ocean Acidification on the Activity, Escape Response, and Muscle Physiology of Marine Threespine Stickleback (Gasterosteus aculeatus).",
+          "abstract": "Rapidly increasing anthropogenic CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Effects of Simulated Ocean Acidification on the Activity, Escape Response, and Muscle Physiology of Marine Threespine Stickleback (Gasterosteus aculeatus). Effects of Simulated Ocean Acidification on the Activity, Escape Response, and Muscle Physiology of Marine Threespine Stickleback (Gasterosteus aculeatus). Effects of Simulated Ocean Acidification on the Activity, Escape Response, and Muscle Physiology of Marine Threespine Stickleback (Gasterosteus aculeatus). Rapidly increasing anthropogenic CO"
+        },
+        {
+          "rank": 28,
+          "score": 0.44550713896751404,
+          "doc_id": "",
+          "title": "Correction: Realistic expectations for changes to average human lifespan in the near future.",
+          "abstract": "",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Correction: Realistic expectations for changes to average human lifespan in the near future. Correction: Realistic expectations for changes to average human lifespan in the near future. Correction: Realistic expectations for changes to average human lifespan in the near future. "
+        },
+        {
+          "rank": 29,
+          "score": 0.44467800855636597,
+          "doc_id": "",
+          "title": "Robust inference and errors in studies of wildlife control.",
+          "abstract": "Randomized, controlled trials (RCT) are seen as the strongest basis for causal inference, but their strengths of inference and error rates relative to other study designs have never been quantified for interventions designed to prevent wildlife damage to property and game. We simulate common study designs from simple correlation to RCT with crossover design. We report rates of false positive, false negative, and over-estimation of treatment effects for five common study designs under various confounding interactions and effect sizes. We find non-randomized study designs mostly unreliable and that randomized designs with suitable safeguards against biases have much lower error rates. One implication is that virtually all studies of lethal interventions against predatory wildlife appear unreliable. Generally, applied fields can benefit from more robust designs against the common confounding effects we simulated.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Robust inference and errors in studies of wildlife control. Robust inference and errors in studies of wildlife control. Robust inference and errors in studies of wildlife control. Randomized, controlled trials (RCT) are seen as the strongest basis for causal inference, but their strengths of inference and error rates relative to other study designs have never been quantified for interventions designed to prevent wildlife damage to property and game. We simulate common study designs from simple correlation to RCT with crossover design. We report rates of false positive, false negative, and over-estimation of treatment effects for five common study designs under various confounding interactions and effect sizes. We find non-randomized study designs mostly unreliable and that randomized designs with suitable safeguards against biases have much lower error rates. One implication is that virtually all studies of lethal interventions against predatory wildlife appear unreliable. Generally, applied fields can benefit from more robust designs against the common confounding effects we simulated."
+        },
+        {
+          "rank": 30,
+          "score": 0.44352585077285767,
+          "doc_id": "",
+          "title": "Prenatal exposure to dietary levels of glyphosate disrupts metabolic, immune, and behavioral markers across generations in mice.",
+          "abstract": "Glyphosate, a widely used herbicide in North America, has become prevalent in the food supply, raising concerns about potential health impacts. In this exploratory study, male and female F0 mice were exposed to glyphosate through drinking water during mating and gestation. We investigated whether prenatal exposure at dietary-relevant levels (0.01 mg/kg/day, Average American Diet, [AAD]) or the U.S. EPA's acceptable daily intake (1.75 mg/kg/day, [EPA Upper Limit]) altered gut, metabolic, and behavioral outcomes across two generations in mice with or without genetic susceptibility to colitis (Muc2",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Prenatal exposure to dietary levels of glyphosate disrupts metabolic, immune, and behavioral markers across generations in mice. Prenatal exposure to dietary levels of glyphosate disrupts metabolic, immune, and behavioral markers across generations in mice. Prenatal exposure to dietary levels of glyphosate disrupts metabolic, immune, and behavioral markers across generations in mice. Glyphosate, a widely used herbicide in North America, has become prevalent in the food supply, raising concerns about potential health impacts. In this exploratory study, male and female F0 mice were exposed to glyphosate through drinking water during mating and gestation. We investigated whether prenatal exposure at dietary-relevant levels (0.01 mg/kg/day, Average American Diet, [AAD]) or the U.S. EPA's acceptable daily intake (1.75 mg/kg/day, [EPA Upper Limit]) altered gut, metabolic, and behavioral outcomes across two generations in mice with or without genetic susceptibility to colitis (Muc2"
+        },
+        {
+          "rank": 31,
+          "score": 0.44335269927978516,
+          "doc_id": "",
+          "title": "Nitrogen and oxygen isotopes in nitrate and nitrite in the polluted surface waters from the Arno River Basin (Central Italy).",
+          "abstract": "The Arno River Basin (Central Italy) is affected by a considerable anthropogenic pressure due to the presence of large cities and widespread industrial and agricultural practices. In this work, 26 water samples from the Arno River and its main tributaries were analyzed to assess the water pollution status. The geochemical composition of the Arno River changes from the source (dominated by a Ca-HCO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Nitrogen and oxygen isotopes in nitrate and nitrite in the polluted surface waters from the Arno River Basin (Central Italy). Nitrogen and oxygen isotopes in nitrate and nitrite in the polluted surface waters from the Arno River Basin (Central Italy). Nitrogen and oxygen isotopes in nitrate and nitrite in the polluted surface waters from the Arno River Basin (Central Italy). The Arno River Basin (Central Italy) is affected by a considerable anthropogenic pressure due to the presence of large cities and widespread industrial and agricultural practices. In this work, 26 water samples from the Arno River and its main tributaries were analyzed to assess the water pollution status. The geochemical composition of the Arno River changes from the source (dominated by a Ca-HCO"
+        },
+        {
+          "rank": 32,
+          "score": 0.4400198459625244,
+          "doc_id": "",
+          "title": "Glycaemic control is a modifiable risk factor for pancreatic cancer development in patients with diabetes: a population-based cohort study.",
+          "abstract": "Effect of glycaemic control on pancreatic cancer (PC) development in patients with long-standing type 2 diabetes (T2D) remains unclear. To investigate effects of glycaemic control on PC development in patients with T2D. Retrospective cohort study. Adults from a territory-wide healthcare registry were followed from T2D diagnosis until PC, death, pancreatectomy or end of study (December 2020). Exclusions were PC within 3 years after T2D diagnosis (addressing reverse causality), prior PC, immunoglobulin G Among 458 331 patients (median age: 59.8 (P25-P75: 51.8-68.5) years; 51.2% male), there were 1382 (0.3%; 2.8 per 10 000 person-years) PC, 922 (0.2%; 1.9 per 10 000 person-years) PC-related deaths, and 70 936 (15.5%; 142.9 per 10 000 person-years) deaths over a median follow-up of 9.9 (P25-P75: 7.4-14.1) years. Optimal glycaemic control was associated with lower PC risk-A1c<7%(aHR: 0.43; 95% CI: 0.37 to 0.48) and FG≤7 mmol/L (aHR: 0.71; 95% CI: 0.63 to 0.80). Optimal control of both A1c and FG conferred lowest PC risk (aHR: 0.39; 95% CI: 0.33 to 0.46). PC risk increased stepwise with A1c (P Optimal glycaemic control was associated with lower PC risk in T2D. Further multicentre cohort studies are warranted to confirm its oncopreventive strategy.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Glycaemic control is a modifiable risk factor for pancreatic cancer development in patients with diabetes: a population-based cohort study. Glycaemic control is a modifiable risk factor for pancreatic cancer development in patients with diabetes: a population-based cohort study. Glycaemic control is a modifiable risk factor for pancreatic cancer development in patients with diabetes: a population-based cohort study. Effect of glycaemic control on pancreatic cancer (PC) development in patients with long-standing type 2 diabetes (T2D) remains unclear. To investigate effects of glycaemic control on PC development in patients with T2D. Retrospective cohort study. Adults from a territory-wide healthcare registry were followed from T2D diagnosis until PC, death, pancreatectomy or end of study (December 2020). Exclusions were PC within 3 years after T2D diagnosis (addressing reverse causality), prior PC, immunoglobulin G Among 458 331 patients (median age: 59.8 (P25-P75: 51.8-68.5) years; 51.2% male), there were 1382 (0.3%; 2.8 per 10 000 person-years) PC, 922 (0.2%; 1.9 per 10 000 person-years) PC-related deaths, and 70 936 (15.5%; 142.9 per 10 000 person-years) deaths over a median follow-up of 9.9 (P25-P75: 7.4-14.1) years. Optimal glycaemic control was associated with lower PC risk-A1c<7%(aHR: 0.43; 95% CI: 0.37 to 0.48) and FG≤7 mmol/L (aHR: 0.71; 95% CI: 0.63 to 0.80). Optimal control of both A1c and FG conferred lowest PC risk (aHR: 0.39; 95% CI: 0.33 to 0.46). PC risk increased stepwise with A1c (P Optimal glycaemic control was associated with lower PC risk in T2D. Further multicentre cohort studies are warranted to confirm its oncopreventive strategy."
+        },
+        {
+          "rank": 33,
+          "score": 0.43944787979125977,
+          "doc_id": "",
+          "title": "Risk assessment and environmental influencing factors of urinary polycyclic aromatic hydrocarbons metabolites in pregnant women in Zunyi, China.",
+          "abstract": "Despite the widespread presence and frequent detection of polycyclic aromatic hydrocarbons (PAHs) in various aspects of life, there is limited research on their exposure levels in pregnant women and cumulative exposure from the living environment. This study included 1311 women in late pregnancy from the Zunyi birth cohort and measured the urinary concentrations of 10 hydroxylated PAH metabolites (OH-PAHs). Risk assessment was conducted based on the estimated daily intake to calculate the hazard quotient and hazard index (HI). A linear regression model was used to analyze the relationship between creatinine-adjusted OH-PAHs concentrations and living environment and lifestyle factors, while principal component analysis was applied to trace the sources of PAHs exposure. 1-OHPYR was detected in all participants' urine, with naphthalene metabolites having the highest concentrations among creatinine-adjusted PAHs. OH-PAHs concentrations were associated with housing type, room number, cooking frequency, household size, exercise frequency, fuel type, distance from main road, and drinking water source. Pregnant women using traditional fuels and living in bungalows had higher health risks than those using clean energy and living in buildings. Those living within 100 m of a main road had higher HI than those farther away. Coal combustion was identified as the primary source of PAHs exposure. The study emphasizes the importance of reducing PAHs exposure, especially for pregnant women living in polluted environments. It recommends public health interventions such as improving indoor ventilation and providing clean energy to reduce related health risks.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Risk assessment and environmental influencing factors of urinary polycyclic aromatic hydrocarbons metabolites in pregnant women in Zunyi, China. Risk assessment and environmental influencing factors of urinary polycyclic aromatic hydrocarbons metabolites in pregnant women in Zunyi, China. Risk assessment and environmental influencing factors of urinary polycyclic aromatic hydrocarbons metabolites in pregnant women in Zunyi, China. Despite the widespread presence and frequent detection of polycyclic aromatic hydrocarbons (PAHs) in various aspects of life, there is limited research on their exposure levels in pregnant women and cumulative exposure from the living environment. This study included 1311 women in late pregnancy from the Zunyi birth cohort and measured the urinary concentrations of 10 hydroxylated PAH metabolites (OH-PAHs). Risk assessment was conducted based on the estimated daily intake to calculate the hazard quotient and hazard index (HI). A linear regression model was used to analyze the relationship between creatinine-adjusted OH-PAHs concentrations and living environment and lifestyle factors, while principal component analysis was applied to trace the sources of PAHs exposure. 1-OHPYR was detected in all participants' urine, with naphthalene metabolites having the highest concentrations among creatinine-adjusted PAHs. OH-PAHs concentrations were associated with housing type, room number, cooking frequency, household size, exercise frequency, fuel type, distance from main road, and drinking water source. Pregnant women using traditional fuels and living in bungalows had higher health risks than those using clean energy and living in buildings. Those living within 100 m of a main road had higher HI than those farther away. Coal combustion was identified as the primary source of PAHs exposure. The study emphasizes the importance of reducing PAHs exposure, especially for pregnant women living in polluted environments. It recommends public health interventions such as improving indoor ventilation and providing clean energy to reduce related health risks."
+        },
+        {
+          "rank": 34,
+          "score": 0.43891093134880066,
+          "doc_id": "",
+          "title": "Association of socioeconomic status with respiratory mortality and hospitalisations in COPD: a nationwide cohort study.",
+          "abstract": "Socioeconomic status (SES) and air pollution are independently associated with adverse outcomes in patients with chronic obstructive pulmonary disease (COPD). This study investigated the association of SES with respiratory mortality and hospitalisation, while adjusting for air pollution. This retrospective cohort study analysed the individual-level and area-level SES indicators, as well as long-term air pollution exposure, associated with COPD in the Korean National Health Insurance Service-National Sample Cohort. The associations of SES with respiratory mortality and hospitalisation were evaluated using Cox proportional hazards models after adjusting for clinical factors and air pollution. Among 12 820 patients (mean age: 63.5 years, 47.2% male), 115 (0.9%) and 1870 (14.6%) experienced respiratory mortality and respiratory-related hospitalisation, respectively. Self-employed members had higher mortality risks than self-employed heads (HR=2.397, 95% CI=1.044 to 5.501). Regions with older adults constituting 20-50% of the population exhibited reduced mortality risks (HR=0.516, 95% CI 0.269 to 0.991). The area-level covariates significant in the clinically adjusted models lost significance after adjusting for air pollution. Income level (HR=0.979, 95% CI 0.965 to 0.993) exhibited a negative association with respiratory hospitalisation risks. Suburban (HR=1.321, 95% CI 1.141 to 1.530) and rural (HR=1.398, 95% CI 1.202 to 1.626) residential status was associated with a higher hospitalisation risk. A higher older-adult population was positively associated with hospitalisation risk (HR=1.023, 95% CI 1.014 to 1.033). Higher education level and gross regional domestic product quartiles exhibited reduced hospitalisation risk. The associations between SES and mortality and hospitalisation risks remained attenuated and persistent, respectively, after adjusting for air pollution.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Association of socioeconomic status with respiratory mortality and hospitalisations in COPD: a nationwide cohort study. Association of socioeconomic status with respiratory mortality and hospitalisations in COPD: a nationwide cohort study. Association of socioeconomic status with respiratory mortality and hospitalisations in COPD: a nationwide cohort study. Socioeconomic status (SES) and air pollution are independently associated with adverse outcomes in patients with chronic obstructive pulmonary disease (COPD). This study investigated the association of SES with respiratory mortality and hospitalisation, while adjusting for air pollution. This retrospective cohort study analysed the individual-level and area-level SES indicators, as well as long-term air pollution exposure, associated with COPD in the Korean National Health Insurance Service-National Sample Cohort. The associations of SES with respiratory mortality and hospitalisation were evaluated using Cox proportional hazards models after adjusting for clinical factors and air pollution. Among 12 820 patients (mean age: 63.5 years, 47.2% male), 115 (0.9%) and 1870 (14.6%) experienced respiratory mortality and respiratory-related hospitalisation, respectively. Self-employed members had higher mortality risks than self-employed heads (HR=2.397, 95% CI=1.044 to 5.501). Regions with older adults constituting 20-50% of the population exhibited reduced mortality risks (HR=0.516, 95% CI 0.269 to 0.991). The area-level covariates significant in the clinically adjusted models lost significance after adjusting for air pollution. Income level (HR=0.979, 95% CI 0.965 to 0.993) exhibited a negative association with respiratory hospitalisation risks. Suburban (HR=1.321, 95% CI 1.141 to 1.530) and rural (HR=1.398, 95% CI 1.202 to 1.626) residential status was associated with a higher hospitalisation risk. A higher older-adult population was positively associated with hospitalisation risk (HR=1.023, 95% CI 1.014 to 1.033). Higher education level and gross regional domestic product quartiles exhibited reduced hospitalisation risk. The associations between SES and mortality and hospitalisation risks remained attenuated and persistent, respectively, after adjusting for air pollution."
+        },
+        {
+          "rank": 35,
+          "score": 0.43805792927742004,
+          "doc_id": "",
+          "title": "To Bio or not to Bio? Organic Food Consumption in Switzerland.",
+          "abstract": "Our study aimed to gain from a comprehensive understanding of organic food consumption in Switzerland. Data from the Swiss National Nutrition Survey menuCH (2014-2015, n = 2057, 18 to 75 years old)and a cross-sectional, population-based survey were used. Dietary information was collected using two non-consecutive 24-hour dietary recalls (24HDRs). Organic foods were classified using information about food descriptors and labels. Participants were classified as organic food consumers if they had consumed organic foods in at least one 24HDR. Binomial logistic regression models were used to identify factors associated with organic food consumption. This study determined that 27.8% of the Swiss population consumed organic food. However, only 3.6% of all food consumed within this group of organic food consumers was organic. Food products of plant origin tended to be consumed more frequently as organic than were those of animal origin, except for eggs and dairy products. Organic food consumption was positively associated with female sex (odds ratio (OR) = 2.18, 95% confidence interval (CI) 1.69, 2.80), high educational degree (OR = 1.28, 95% CI 1.02, 1.61), and high alternate healthy eating index (OR = 5.45, 95% CI 3.70, 8.02), and negatively associated with young age (OR = 0.56, 95% CI 0.40, 0.78), French-speaking living area (OR = 0.73, 95% CI 0.56, 0.93), non-Swiss nationality (OR = 0.74, 95% CI 0.56, 0.98), large household size (OR = 0.59 95% CI 0.38, 0.89), and obesity (OR = 0.53, 95% CI 0.36, 0.77). The present study provides a better understanding of the distribution of organic food consumption within the Swiss population and which subgroups consume particularly little organically produced food. Clinical Trial Registration: ISRCTN 16778734; https://www.isrctn.com/search?q=menuch.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "To Bio or not to Bio? Organic Food Consumption in Switzerland. To Bio or not to Bio? Organic Food Consumption in Switzerland. To Bio or not to Bio? Organic Food Consumption in Switzerland. Our study aimed to gain from a comprehensive understanding of organic food consumption in Switzerland. Data from the Swiss National Nutrition Survey menuCH (2014-2015, n = 2057, 18 to 75 years old)and a cross-sectional, population-based survey were used. Dietary information was collected using two non-consecutive 24-hour dietary recalls (24HDRs). Organic foods were classified using information about food descriptors and labels. Participants were classified as organic food consumers if they had consumed organic foods in at least one 24HDR. Binomial logistic regression models were used to identify factors associated with organic food consumption. This study determined that 27.8% of the Swiss population consumed organic food. However, only 3.6% of all food consumed within this group of organic food consumers was organic. Food products of plant origin tended to be consumed more frequently as organic than were those of animal origin, except for eggs and dairy products. Organic food consumption was positively associated with female sex (odds ratio (OR) = 2.18, 95% confidence interval (CI) 1.69, 2.80), high educational degree (OR = 1.28, 95% CI 1.02, 1.61), and high alternate healthy eating index (OR = 5.45, 95% CI 3.70, 8.02), and negatively associated with young age (OR = 0.56, 95% CI 0.40, 0.78), French-speaking living area (OR = 0.73, 95% CI 0.56, 0.93), non-Swiss nationality (OR = 0.74, 95% CI 0.56, 0.98), large household size (OR = 0.59 95% CI 0.38, 0.89), and obesity (OR = 0.53, 95% CI 0.36, 0.77). The present study provides a better understanding of the distribution of organic food consumption within the Swiss population and which subgroups consume particularly little organically produced food. Clinical Trial Registration: ISRCTN 16778734; https://www.isrctn.com/search?q=menuch."
+        },
+        {
+          "rank": 36,
+          "score": 0.4352761507034302,
+          "doc_id": "",
+          "title": "Ecological Niche Modeling Predicts Alarming Impacts of Global Climate Change on Economically Important Neotropical Trees.",
+          "abstract": "The neotropical papilionoid legume genus ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Ecological Niche Modeling Predicts Alarming Impacts of Global Climate Change on Economically Important Neotropical Trees. Ecological Niche Modeling Predicts Alarming Impacts of Global Climate Change on Economically Important Neotropical Trees. Ecological Niche Modeling Predicts Alarming Impacts of Global Climate Change on Economically Important Neotropical Trees. The neotropical papilionoid legume genus "
+        },
+        {
+          "rank": 37,
+          "score": 0.4350484013557434,
+          "doc_id": "",
+          "title": "Well-to-Gate Greenhouse Gas Emissions of Petrochemical Products across the Supply Chain and Sources of Variability in China.",
+          "abstract": "The carbon-intensive petrochemical sector plays a critical role in numerous industrial supply chains. However, existing databases lack comprehensive carbon footprint profiles for petroleum products, hindering reliable assessments of greenhouse gas (GHG) emissions associated with derived chemicals and various downstream products. This study developed a quantification method that converts the material flows of oil refineries into input-output coefficient matrices using actual plant data, which further refined process-specific GHG emission estimates and identified key sources of variability across the full spectrum of petroleum products. The results show that inconsistent allocation methods lead to 40%-80% of the variation in emission estimates, while data uncertainty has a moderate influence. Configuration heterogeneity also affects GHG assessments by altering the process mix and upstream processes─specifically, a lower proportion of straight-run oil and deeper processing of heavier fractions result in higher emissions. Additionally, the aggregation of oil-based intermediates as chemical feedstocks introduces an uncertainty range of -19% to +44% in assessing the GHG emissions of major chemicals. This underscores the importance of comprehensive GHG emission profiles and variability analysis of petroleum products in advancing reliable emission assessments and decarbonization strategies for the petrochemical industry.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Well-to-Gate Greenhouse Gas Emissions of Petrochemical Products across the Supply Chain and Sources of Variability in China. Well-to-Gate Greenhouse Gas Emissions of Petrochemical Products across the Supply Chain and Sources of Variability in China. Well-to-Gate Greenhouse Gas Emissions of Petrochemical Products across the Supply Chain and Sources of Variability in China. The carbon-intensive petrochemical sector plays a critical role in numerous industrial supply chains. However, existing databases lack comprehensive carbon footprint profiles for petroleum products, hindering reliable assessments of greenhouse gas (GHG) emissions associated with derived chemicals and various downstream products. This study developed a quantification method that converts the material flows of oil refineries into input-output coefficient matrices using actual plant data, which further refined process-specific GHG emission estimates and identified key sources of variability across the full spectrum of petroleum products. The results show that inconsistent allocation methods lead to 40%-80% of the variation in emission estimates, while data uncertainty has a moderate influence. Configuration heterogeneity also affects GHG assessments by altering the process mix and upstream processes─specifically, a lower proportion of straight-run oil and deeper processing of heavier fractions result in higher emissions. Additionally, the aggregation of oil-based intermediates as chemical feedstocks introduces an uncertainty range of -19% to +44% in assessing the GHG emissions of major chemicals. This underscores the importance of comprehensive GHG emission profiles and variability analysis of petroleum products in advancing reliable emission assessments and decarbonization strategies for the petrochemical industry."
+        },
+        {
+          "rank": 38,
+          "score": 0.434792160987854,
+          "doc_id": "",
+          "title": "Associations of indoor airborne microbiome with systemic inflammation in the context of indoor particulate matter pollution and the metabolic mechanisms.",
+          "abstract": "Microorganisms constitute an essential component in the indoor environment, which is closely related to human health. However, there is limited evidence regarding the associations between indoor airborne microbiome and systemic inflammation, as well as whether this association is modified by indoor particulate matter and the underlying mechanisms. In this prospective repeated-measure study among 66 participants, indoor airborne microbiome was characterized using amplicon sequencing and qPCR. Indoor fine particulate matter (PM",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Associations of indoor airborne microbiome with systemic inflammation in the context of indoor particulate matter pollution and the metabolic mechanisms. Associations of indoor airborne microbiome with systemic inflammation in the context of indoor particulate matter pollution and the metabolic mechanisms. Associations of indoor airborne microbiome with systemic inflammation in the context of indoor particulate matter pollution and the metabolic mechanisms. Microorganisms constitute an essential component in the indoor environment, which is closely related to human health. However, there is limited evidence regarding the associations between indoor airborne microbiome and systemic inflammation, as well as whether this association is modified by indoor particulate matter and the underlying mechanisms. In this prospective repeated-measure study among 66 participants, indoor airborne microbiome was characterized using amplicon sequencing and qPCR. Indoor fine particulate matter (PM"
+        },
+        {
+          "rank": 39,
+          "score": 0.434460312128067,
+          "doc_id": "",
+          "title": "Urbanization homogenized soil viral communities across three climate zones.",
+          "abstract": "Soil viruses play critical roles in shaping microbial communities and propelling the evolution of microorganisms. However, our understanding of how land use and climate factors modulate soil viral communities across broader geographical scales remains limited. Here, we conducted deep metagenomic sequencing and analysis of soil samples from different land use types including forests, farmland, residential areas, and parks across 13 cities spanning three climatic zones in China. Integrating local and global soil virome data (n = 2.1◊10",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Urbanization homogenized soil viral communities across three climate zones. Urbanization homogenized soil viral communities across three climate zones. Urbanization homogenized soil viral communities across three climate zones. Soil viruses play critical roles in shaping microbial communities and propelling the evolution of microorganisms. However, our understanding of how land use and climate factors modulate soil viral communities across broader geographical scales remains limited. Here, we conducted deep metagenomic sequencing and analysis of soil samples from different land use types including forests, farmland, residential areas, and parks across 13 cities spanning three climatic zones in China. Integrating local and global soil virome data (n = 2.1◊10"
+        },
+        {
+          "rank": 40,
+          "score": 0.4340205788612366,
+          "doc_id": "",
+          "title": "Impacts of urban and cropland expansions on natural habitats in Southeast Asia.",
+          "abstract": "Urban and cropland expansions greatly contribute to natural habitat loss. Few studies have focused on the direct and indirect impacts of urban and cropland expansions on natural habitats in Southeast Asia, a biodiversity hotspot. In this study, these impacts were quantified from 2000 to 2020 across three scales (country, ecoregion, and biome) and future Shared Socioeconomic Pathways (SSPs) (by 2030 and 2050). From 2000 to 2020, the impact of cropland expansion on natural habitats in Southeast Asia was nearly 16 times greater than that of urban expansion. The impact of cropland expansion was primarily direct, whereas the indirect impact of urban expansion was approximately 14 times greater than the direct impact during the same period. Under the 2050 SSP3 (regional rivalry scenario), the projected areas of cropland expansion reaches 113.19 × 10",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Impacts of urban and cropland expansions on natural habitats in Southeast Asia. Impacts of urban and cropland expansions on natural habitats in Southeast Asia. Impacts of urban and cropland expansions on natural habitats in Southeast Asia. Urban and cropland expansions greatly contribute to natural habitat loss. Few studies have focused on the direct and indirect impacts of urban and cropland expansions on natural habitats in Southeast Asia, a biodiversity hotspot. In this study, these impacts were quantified from 2000 to 2020 across three scales (country, ecoregion, and biome) and future Shared Socioeconomic Pathways (SSPs) (by 2030 and 2050). From 2000 to 2020, the impact of cropland expansion on natural habitats in Southeast Asia was nearly 16 times greater than that of urban expansion. The impact of cropland expansion was primarily direct, whereas the indirect impact of urban expansion was approximately 14 times greater than the direct impact during the same period. Under the 2050 SSP3 (regional rivalry scenario), the projected areas of cropland expansion reaches 113.19 × 10"
+        },
+        {
+          "rank": 41,
+          "score": 0.43367987871170044,
+          "doc_id": "",
+          "title": "AI cancer driver mutation predictions are valid in real-world data.",
+          "abstract": "Characterizing and validating which mutations influence development of cancer is challenging. Artificial intelligence (AI) has delivered significant advances in protein structure prediction, but its utility for identifying cancer drivers is less explored. We evaluate multiple computational methods for identifying cancer driver mutations. For re-identifying known drivers, methods incorporating protein structure or functional genomic data outperform methods trained only on evolutionary data. We validate variants of unknown significance (VUSs) annotated as pathogenic by testing their association with overall survival in two cohorts of patients with non-small cell lung cancer (N = 7965 and 977). VUSs identified as pathogenic drivers by AI in KEAP1 and SMARCA4 are associated with worse survival, unlike \"benign\" VUSs. \"Pathogenic\" VUSs also exhibit mutual exclusivity with known oncogenic alterations at the pathway level, further suggesting biological validity. AI predictions thus contribute to a more comprehensive understanding of tumor genetics as validated by real-world data.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "AI cancer driver mutation predictions are valid in real-world data. AI cancer driver mutation predictions are valid in real-world data. AI cancer driver mutation predictions are valid in real-world data. Characterizing and validating which mutations influence development of cancer is challenging. Artificial intelligence (AI) has delivered significant advances in protein structure prediction, but its utility for identifying cancer drivers is less explored. We evaluate multiple computational methods for identifying cancer driver mutations. For re-identifying known drivers, methods incorporating protein structure or functional genomic data outperform methods trained only on evolutionary data. We validate variants of unknown significance (VUSs) annotated as pathogenic by testing their association with overall survival in two cohorts of patients with non-small cell lung cancer (N = 7965 and 977). VUSs identified as pathogenic drivers by AI in KEAP1 and SMARCA4 are associated with worse survival, unlike \"benign\" VUSs. \"Pathogenic\" VUSs also exhibit mutual exclusivity with known oncogenic alterations at the pathway level, further suggesting biological validity. AI predictions thus contribute to a more comprehensive understanding of tumor genetics as validated by real-world data."
+        },
+        {
+          "rank": 42,
+          "score": 0.4335976839065552,
+          "doc_id": "",
+          "title": "The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study.",
+          "abstract": "Ocean acidification (OA) due to anthropogenic CO2 emissions has significantly altered ocean chemistry since the industrial era. Ocean alkalinity enhancement (OAE) is an innovative strategy to mitigate excess CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study. The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study. The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study. Ocean acidification (OA) due to anthropogenic CO2 emissions has significantly altered ocean chemistry since the industrial era. Ocean alkalinity enhancement (OAE) is an innovative strategy to mitigate excess CO"
+        },
+        {
+          "rank": 43,
+          "score": 0.4325544834136963,
+          "doc_id": "",
+          "title": "Is Diet Perceived as a Cancer Risk Factor? Lay Perceptions in a Representative French Sample.",
+          "abstract": "The French Cancer Barometer is a survey performed at five-year intervals investigating awareness of cancer risk factors, including dietary factors. The aims of this study were (1) to report the results of the survey concerning participants' awareness of diet/foods as cancer risk factors, (2) to describe the determinants of this awareness, and (3) to compare the results of the 2010, 2015, and 2021 surveys. A randomly selected representative sample of participants aged from 15 to 85 years (n = 4938) was surveyed in 2021. Questions concerned awareness of diet, specific foods, and behaviors as cancer risk factors. More than 40% of the participants spontaneously identified diet as a cancer risk factor, and almost 92% considered it to be a cancer risk factor in a closed-ended question. Some foods were considered by most participants to increase cancer risk (ultra-processed food, processed meats, and red meat), whereas others (fruit and vegetables) were perceived as decreasing cancer risk or were thought either to decrease risk or to have no effect (organic foods and pulses). Demographic factors were found to be associated with risk factor perceptions and specific perceptions of cancer (i.e., having a cancer someday, being well informed) and behaviors (i.e., having consulted a general practitioner recently). Interestingly, the perception of diet/food as risk factors was greater in 2021 than in previous surveys. In addition to continuing efforts to target interventions for individuals with lower educational levels, efforts should also be made to target individuals who consult their general practitioner infrequently.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Is Diet Perceived as a Cancer Risk Factor? Lay Perceptions in a Representative French Sample. Is Diet Perceived as a Cancer Risk Factor? Lay Perceptions in a Representative French Sample. Is Diet Perceived as a Cancer Risk Factor? Lay Perceptions in a Representative French Sample. The French Cancer Barometer is a survey performed at five-year intervals investigating awareness of cancer risk factors, including dietary factors. The aims of this study were (1) to report the results of the survey concerning participants' awareness of diet/foods as cancer risk factors, (2) to describe the determinants of this awareness, and (3) to compare the results of the 2010, 2015, and 2021 surveys. A randomly selected representative sample of participants aged from 15 to 85 years (n = 4938) was surveyed in 2021. Questions concerned awareness of diet, specific foods, and behaviors as cancer risk factors. More than 40% of the participants spontaneously identified diet as a cancer risk factor, and almost 92% considered it to be a cancer risk factor in a closed-ended question. Some foods were considered by most participants to increase cancer risk (ultra-processed food, processed meats, and red meat), whereas others (fruit and vegetables) were perceived as decreasing cancer risk or were thought either to decrease risk or to have no effect (organic foods and pulses). Demographic factors were found to be associated with risk factor perceptions and specific perceptions of cancer (i.e., having a cancer someday, being well informed) and behaviors (i.e., having consulted a general practitioner recently). Interestingly, the perception of diet/food as risk factors was greater in 2021 than in previous surveys. In addition to continuing efforts to target interventions for individuals with lower educational levels, efforts should also be made to target individuals who consult their general practitioner infrequently."
+        },
+        {
+          "rank": 44,
+          "score": 0.432086706161499,
+          "doc_id": "",
+          "title": "An Olive Oil-Based High-Fat Diet Promotes Obesity-Driven Metastasis of Triple-Negative Breast Cancer.",
+          "abstract": "Obesity is strongly associated with triple-negative breast cancer (TNBC). A better understanding of the molecular mechanisms driving obesity-induced TNBC progression could facilitate development of precision dietary intervention strategies. Here, we used murine models of obesity induced by different high-fat diets (HFDs) to examine their impact on TNBC progression. Compared to a low-fat diet (LFD), both cocoa butter and olive oil HFD induced similar levels of obesity. However, only the olive oil HFD-induced obesity increased TNBC stemness and lung metastasis. Mechanistically, oleic acid (OA) in the olive oil HFD facilitated TNBC metastasis by activating the protein kinase C (PKC)-aldehyde dehydrogenase (ALDH) pathway. Furthermore, fatty acid-binding protein 5 (FABP5) in TNBC cells was identified as essential for OA-mediated PKC/ALDH pathway activation. FABP5 deficiency reduced TNBC metastasis in multiple mouse models, whereas higher FABP5 expression correlated with worse outcomes of TNBC in various human studies. These findings collectively suggest that consumption of olive oil HFD promotes obesity-associated TNBC metastasis through OA/FABP5-driven oncogenic signaling.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "An Olive Oil-Based High-Fat Diet Promotes Obesity-Driven Metastasis of Triple-Negative Breast Cancer. An Olive Oil-Based High-Fat Diet Promotes Obesity-Driven Metastasis of Triple-Negative Breast Cancer. An Olive Oil-Based High-Fat Diet Promotes Obesity-Driven Metastasis of Triple-Negative Breast Cancer. Obesity is strongly associated with triple-negative breast cancer (TNBC). A better understanding of the molecular mechanisms driving obesity-induced TNBC progression could facilitate development of precision dietary intervention strategies. Here, we used murine models of obesity induced by different high-fat diets (HFDs) to examine their impact on TNBC progression. Compared to a low-fat diet (LFD), both cocoa butter and olive oil HFD induced similar levels of obesity. However, only the olive oil HFD-induced obesity increased TNBC stemness and lung metastasis. Mechanistically, oleic acid (OA) in the olive oil HFD facilitated TNBC metastasis by activating the protein kinase C (PKC)-aldehyde dehydrogenase (ALDH) pathway. Furthermore, fatty acid-binding protein 5 (FABP5) in TNBC cells was identified as essential for OA-mediated PKC/ALDH pathway activation. FABP5 deficiency reduced TNBC metastasis in multiple mouse models, whereas higher FABP5 expression correlated with worse outcomes of TNBC in various human studies. These findings collectively suggest that consumption of olive oil HFD promotes obesity-associated TNBC metastasis through OA/FABP5-driven oncogenic signaling."
+        },
+        {
+          "rank": 45,
+          "score": 0.42591434717178345,
+          "doc_id": "",
+          "title": "Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China.",
+          "abstract": "Returning straw to soil after harvest is not a simple binary decision for agricultural stakeholders. Optimizing straw management under site-specific conditions is crucial to balance the trade-off between climatic changes mitigation and food security in rice production. Here, we developed an integrated framework to determine the optimal ratios of straw return and removal across major rice-cropping regions in China. Using machine learning (ML) models, we identified site-specific straw return ratios that minimize greenhouse gas (GHG) emissions without compromising rice yield. Additionally, a complementary straw logistics model was proposed to manage excess straw instead of burning. Among five ML models evaluated, XGBoost demonstrated superior performance in predicting the impact of straw return on CH",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China. Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China. Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China. Returning straw to soil after harvest is not a simple binary decision for agricultural stakeholders. Optimizing straw management under site-specific conditions is crucial to balance the trade-off between climatic changes mitigation and food security in rice production. Here, we developed an integrated framework to determine the optimal ratios of straw return and removal across major rice-cropping regions in China. Using machine learning (ML) models, we identified site-specific straw return ratios that minimize greenhouse gas (GHG) emissions without compromising rice yield. Additionally, a complementary straw logistics model was proposed to manage excess straw instead of burning. Among five ML models evaluated, XGBoost demonstrated superior performance in predicting the impact of straw return on CH"
+        },
+        {
+          "rank": 46,
+          "score": 0.42521482706069946,
+          "doc_id": "",
+          "title": "Impact of Antibiotic Therapy on the Upper Respiratory Tract and Gut Mycobiome in Patients with Cystic Fibrosis.",
+          "abstract": "Patients with cystic fibrosis (CF) are frequently exposed to antibiotic treatments, which can alter the fungal communities (mycobiome) across their mucosal sites. This pilot study investigated the impact of antibiotic exposure on the mycobiome by analyzing fungal community dynamics in the upper respiratory- (nasal lavage) and gastrointestinal- (stool samples) tracts of 12 patients with CF following (a) long-term antibiotic treatment over a three-year period and (b) short-term antibiotic therapy during acute pulmonary exacerbations. Mycobiome profiles of the samples obtained from 38 healthy individuals were also analyzed and used for comparison purposes. The ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Impact of Antibiotic Therapy on the Upper Respiratory Tract and Gut Mycobiome in Patients with Cystic Fibrosis. Impact of Antibiotic Therapy on the Upper Respiratory Tract and Gut Mycobiome in Patients with Cystic Fibrosis. Impact of Antibiotic Therapy on the Upper Respiratory Tract and Gut Mycobiome in Patients with Cystic Fibrosis. Patients with cystic fibrosis (CF) are frequently exposed to antibiotic treatments, which can alter the fungal communities (mycobiome) across their mucosal sites. This pilot study investigated the impact of antibiotic exposure on the mycobiome by analyzing fungal community dynamics in the upper respiratory- (nasal lavage) and gastrointestinal- (stool samples) tracts of 12 patients with CF following (a) long-term antibiotic treatment over a three-year period and (b) short-term antibiotic therapy during acute pulmonary exacerbations. Mycobiome profiles of the samples obtained from 38 healthy individuals were also analyzed and used for comparison purposes. The "
+        },
+        {
+          "rank": 47,
+          "score": 0.4240962564945221,
+          "doc_id": "",
+          "title": "Should we favour organic foods over non-organic products in cardiovascular disease prevention?",
+          "abstract": "",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Should we favour organic foods over non-organic products in cardiovascular disease prevention? Should we favour organic foods over non-organic products in cardiovascular disease prevention? Should we favour organic foods over non-organic products in cardiovascular disease prevention? "
+        },
+        {
+          "rank": 48,
+          "score": 0.42089635133743286,
+          "doc_id": "",
+          "title": "Unveiling the origins of Northern Thailand's haze: comprehensive chemical characterization and source apportionment of PM",
+          "abstract": "Annual haze in Northern Thailand has become increasingly severe, impacting health and the environment. However, the sources of the haze remain poorly quantified due to limited observational data on aerosol molecular tracers. This study comprehensively investigates chemical composition of PM",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Unveiling the origins of Northern Thailand's haze: comprehensive chemical characterization and source apportionment of PM Unveiling the origins of Northern Thailand's haze: comprehensive chemical characterization and source apportionment of PM Unveiling the origins of Northern Thailand's haze: comprehensive chemical characterization and source apportionment of PM Annual haze in Northern Thailand has become increasingly severe, impacting health and the environment. However, the sources of the haze remain poorly quantified due to limited observational data on aerosol molecular tracers. This study comprehensively investigates chemical composition of PM"
+        },
+        {
+          "rank": 49,
+          "score": 0.4208107888698578,
+          "doc_id": "",
+          "title": "Central African mpox spillovers: a harbinger of accelerating zoonotic threats.",
+          "abstract": "",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Central African mpox spillovers: a harbinger of accelerating zoonotic threats. Central African mpox spillovers: a harbinger of accelerating zoonotic threats. Central African mpox spillovers: a harbinger of accelerating zoonotic threats. "
+        },
+        {
+          "rank": 50,
+          "score": 0.4207882285118103,
+          "doc_id": "",
+          "title": "Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas.",
+          "abstract": "This study introduces a photoreactive system that integrates the capture of dilute CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas. Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas. Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas. This study introduces a photoreactive system that integrates the capture of dilute CO"
+        }
+      ]
+    }
+  ],
+  "meta": {},
+  "timestamp_kst": "2025-09-27T18:51:55.656739",
+  "trial_id": "efd64aa6"
+}

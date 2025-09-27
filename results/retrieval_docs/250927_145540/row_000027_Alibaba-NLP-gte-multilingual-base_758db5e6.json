@@ -1,0 +1,517 @@
+{
+  "id": "row_000027",
+  "model_name": "Alibaba-NLP/gte-multilingual-base",
+  "retrieval_results": [
+    {
+      "query": "Carbon capture technology can reverse climate change.",
+      "query_meta": {
+        "type": "original"
+      },
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.6456722021102905,
+          "doc_id": "",
+          "title": "Carbon Dioxide Capture and Functionalization from a Molecular Ti(III) Oxo Anion.",
+          "abstract": "Carbon dioxide capture and functionalization sequesters carbon dioxide in more robust products and offers a viable route to reducing greenhouse gas emissions. We present herein a unique molecular Ti",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Carbon Dioxide Capture and Functionalization from a Molecular Ti(III) Oxo Anion. Carbon Dioxide Capture and Functionalization from a Molecular Ti(III) Oxo Anion. Carbon Dioxide Capture and Functionalization from a Molecular Ti(III) Oxo Anion. Carbon dioxide capture and functionalization sequesters carbon dioxide in more robust products and offers a viable route to reducing greenhouse gas emissions. We present herein a unique molecular Ti"
+        },
+        {
+          "rank": 2,
+          "score": 0.6386431455612183,
+          "doc_id": "",
+          "title": "Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation.",
+          "abstract": "Bivalve farming, a vital component of global aquaculture, has been proposed as a potential marine carbon dioxide removal (mCDR) strategy, yet its role remains contentious. Using field mesocosms, we demonstrate that oyster filter-feeding enhances mCDR by accelerating the formation of particulate and dissolved organic carbon in the water column and promoting organic carbon deposition in sediments. This process shifts the water column toward a more autotrophic and alkaline state, effectively sequestering CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation. Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation. Oyster farming acts as a marine carbon dioxide removal (mCDR) hotspot for climate change mitigation. Bivalve farming, a vital component of global aquaculture, has been proposed as a potential marine carbon dioxide removal (mCDR) strategy, yet its role remains contentious. Using field mesocosms, we demonstrate that oyster filter-feeding enhances mCDR by accelerating the formation of particulate and dissolved organic carbon in the water column and promoting organic carbon deposition in sediments. This process shifts the water column toward a more autotrophic and alkaline state, effectively sequestering CO"
+        },
+        {
+          "rank": 3,
+          "score": 0.62816321849823,
+          "doc_id": "",
+          "title": "Abatement of CO2 under the microwave plasma torch system assisted with low-density coal.",
+          "abstract": "Greenhouse gas emissions are abundantly produced every year by human activities. They are the main cause of global warming and the changes observed in the climate. In this study, we used the microwave plasma torch system (MPT) to drive the conversion of CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Abatement of CO2 under the microwave plasma torch system assisted with low-density coal. Abatement of CO2 under the microwave plasma torch system assisted with low-density coal. Abatement of CO2 under the microwave plasma torch system assisted with low-density coal. Greenhouse gas emissions are abundantly produced every year by human activities. They are the main cause of global warming and the changes observed in the climate. In this study, we used the microwave plasma torch system (MPT) to drive the conversion of CO"
+        },
+        {
+          "rank": 4,
+          "score": 0.6239172220230103,
+          "doc_id": "",
+          "title": "The role of microalgae in circular carbon capture systems.",
+          "abstract": "Microalgae offer a simple and sustainable way to capture carbon dioxide (CO2 ) from industrial emissions while producing valuable biomass for fuels, feed and other bioproducts. In this review, we summarize recent progress in designing and improving closed-loop microalgae systems that capture CO2 and recycle nutrients and energy. We compare several industrial pilot projects around the world to show which designs work best at scale and highlight remaining hurdles. To organize these challenges, we introduce a Barrier-Impact Matrix that maps technical, economic and regulatory obstacles alongside potential solutions. Finally, we discuss how to get more value from the harvested biomass and how life cycle assessments (LCAs) can guide future improvements.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "The role of microalgae in circular carbon capture systems. The role of microalgae in circular carbon capture systems. The role of microalgae in circular carbon capture systems. Microalgae offer a simple and sustainable way to capture carbon dioxide (CO2 ) from industrial emissions while producing valuable biomass for fuels, feed and other bioproducts. In this review, we summarize recent progress in designing and improving closed-loop microalgae systems that capture CO2 and recycle nutrients and energy. We compare several industrial pilot projects around the world to show which designs work best at scale and highlight remaining hurdles. To organize these challenges, we introduce a Barrier-Impact Matrix that maps technical, economic and regulatory obstacles alongside potential solutions. Finally, we discuss how to get more value from the harvested biomass and how life cycle assessments (LCAs) can guide future improvements."
+        },
+        {
+          "rank": 5,
+          "score": 0.6222302317619324,
+          "doc_id": "",
+          "title": "Enhancing CO",
+          "abstract": "Zeolite synthesis from fly ash offers recycling and environmental benefits for carbon dioxide capture, but varying fly ash composition from different sources has different compositions, leading to inconsistent adsorption results. To achieve high CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Enhancing CO Enhancing CO Enhancing CO Zeolite synthesis from fly ash offers recycling and environmental benefits for carbon dioxide capture, but varying fly ash composition from different sources has different compositions, leading to inconsistent adsorption results. To achieve high CO"
+        },
+        {
+          "rank": 6,
+          "score": 0.6135408878326416,
+          "doc_id": "",
+          "title": "Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas.",
+          "abstract": "This study introduces a photoreactive system that integrates the capture of dilute CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas. Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas. Photoreactive Capture and Conversion of Dilute Carbon Dioxide into Synthetic Natural Gas. This study introduces a photoreactive system that integrates the capture of dilute CO"
+        },
+        {
+          "rank": 7,
+          "score": 0.5996423959732056,
+          "doc_id": "",
+          "title": "Constructing porous aluminum borate/polymeric carbon nitride for efficient carbon dioxide capture and photocatalytic conversion.",
+          "abstract": "Photocatalytic CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Constructing porous aluminum borate/polymeric carbon nitride for efficient carbon dioxide capture and photocatalytic conversion. Constructing porous aluminum borate/polymeric carbon nitride for efficient carbon dioxide capture and photocatalytic conversion. Constructing porous aluminum borate/polymeric carbon nitride for efficient carbon dioxide capture and photocatalytic conversion. Photocatalytic CO"
+        },
+        {
+          "rank": 8,
+          "score": 0.5949082970619202,
+          "doc_id": "",
+          "title": "Enhanced Carbon Sequestration Performance and Mechanism of Adsorption-Catalytic Bifunctional ZIF‑8 Coupled Microalgae.",
+          "abstract": "To support the development of a low-carbon economy and contribute to the achievement of carbon neutrality, this study synthesized bifunctional zeolitic imidazolate framework-8-based nanozymes (ZNZs) with dual functionality: CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Enhanced Carbon Sequestration Performance and Mechanism of Adsorption-Catalytic Bifunctional ZIF‑8 Coupled Microalgae. Enhanced Carbon Sequestration Performance and Mechanism of Adsorption-Catalytic Bifunctional ZIF‑8 Coupled Microalgae. Enhanced Carbon Sequestration Performance and Mechanism of Adsorption-Catalytic Bifunctional ZIF‑8 Coupled Microalgae. To support the development of a low-carbon economy and contribute to the achievement of carbon neutrality, this study synthesized bifunctional zeolitic imidazolate framework-8-based nanozymes (ZNZs) with dual functionality: CO"
+        },
+        {
+          "rank": 9,
+          "score": 0.57708740234375,
+          "doc_id": "",
+          "title": "Designing the Ethylene Factory for Products of Carbon Dioxide Reduction: Techno-Economic and Life Cycle Assessments.",
+          "abstract": "The global ethylene market is rapidly expanding, and as demand grows, emissions are projected to rise, underscoring the urgent need for sustainable technologies to mitigate its carbon footprint. An original manufacturing approach integrated carbon capture and utilization (CCU), esterification, and dehydration to explore the utilization of intermediate chemicals for a circular economy. Initially, CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Designing the Ethylene Factory for Products of Carbon Dioxide Reduction: Techno-Economic and Life Cycle Assessments. Designing the Ethylene Factory for Products of Carbon Dioxide Reduction: Techno-Economic and Life Cycle Assessments. Designing the Ethylene Factory for Products of Carbon Dioxide Reduction: Techno-Economic and Life Cycle Assessments. The global ethylene market is rapidly expanding, and as demand grows, emissions are projected to rise, underscoring the urgent need for sustainable technologies to mitigate its carbon footprint. An original manufacturing approach integrated carbon capture and utilization (CCU), esterification, and dehydration to explore the utilization of intermediate chemicals for a circular economy. Initially, CO"
+        },
+        {
+          "rank": 10,
+          "score": 0.5724795460700989,
+          "doc_id": "",
+          "title": "Advancing CO",
+          "abstract": "The rising global energy demand has accelerated fossil fuel consumption, leading to an increase in CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Advancing CO Advancing CO Advancing CO The rising global energy demand has accelerated fossil fuel consumption, leading to an increase in CO"
+        },
+        {
+          "rank": 11,
+          "score": 0.5723701119422913,
+          "doc_id": "",
+          "title": "Fruit tree-based restoration strategy to mitigate greenhouse gas emissions, and enhance the profitability of degraded land in semi-arid tropics.",
+          "abstract": "Degraded lands are crucial for achieving the CoP-26 targets such as, achieving net-zero to limit global warming by 2030. Transforming these lands with sustainable and nature positive practice is vital to increasing C stocks, offsetting greenhouse gas (GHG) emissions, and improving land values. The degraded shallow basaltic landscape was rehabilitated through bio-engineering strategies in 2012-13 and assessed the impact of fruit trees (mango, pomegranate, and coconut) cultivation on GHG mitigation potential, yield, generating C credits, and oxygen production over eight-years (up to 2021-22). Restoration efforts successfully transformed barren land into productive fruit-growing systems. Mango system emitted the highest GHG (31.8 Mg CO₂-eq/ha) with highest C stock (91.3 Mg C/ha) due to greater biomass production and soil carbon improvements. Initial establishment activities accounted for the highest fuel consumption; 67 % of total GHG emissions. Among non-renewable resources, diesel contributed the most to GHG emissions; it is 53 % in mango, 45 % in coconut, and 18 % in pomegranate systems. Notably poor soil conditions enhanced the belowground biomass carbon (roots) production in fruit trees. All three systems were found net positive for GHG emissions. However, mango had the highest GHG mitigation potential, followed by coconut and pomegranate. While, coconut systems proved to be the most environmentally efficient, with higher C efficiency, and the lowest C footprint. Economically, pomegranate was the most profitable, with maximum net returns over 8-years, a benefit-cost ratio of 4.95, and the highest land expectation value. In conclusion, transforming degraded lands supports land degradation neutrality, net-zero emissions, oxygen supply, income security, and Sustainable development goals (SDG's) in semi-arid conditions.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Fruit tree-based restoration strategy to mitigate greenhouse gas emissions, and enhance the profitability of degraded land in semi-arid tropics. Fruit tree-based restoration strategy to mitigate greenhouse gas emissions, and enhance the profitability of degraded land in semi-arid tropics. Fruit tree-based restoration strategy to mitigate greenhouse gas emissions, and enhance the profitability of degraded land in semi-arid tropics. Degraded lands are crucial for achieving the CoP-26 targets such as, achieving net-zero to limit global warming by 2030. Transforming these lands with sustainable and nature positive practice is vital to increasing C stocks, offsetting greenhouse gas (GHG) emissions, and improving land values. The degraded shallow basaltic landscape was rehabilitated through bio-engineering strategies in 2012-13 and assessed the impact of fruit trees (mango, pomegranate, and coconut) cultivation on GHG mitigation potential, yield, generating C credits, and oxygen production over eight-years (up to 2021-22). Restoration efforts successfully transformed barren land into productive fruit-growing systems. Mango system emitted the highest GHG (31.8 Mg CO₂-eq/ha) with highest C stock (91.3 Mg C/ha) due to greater biomass production and soil carbon improvements. Initial establishment activities accounted for the highest fuel consumption; 67 % of total GHG emissions. Among non-renewable resources, diesel contributed the most to GHG emissions; it is 53 % in mango, 45 % in coconut, and 18 % in pomegranate systems. Notably poor soil conditions enhanced the belowground biomass carbon (roots) production in fruit trees. All three systems were found net positive for GHG emissions. However, mango had the highest GHG mitigation potential, followed by coconut and pomegranate. While, coconut systems proved to be the most environmentally efficient, with higher C efficiency, and the lowest C footprint. Economically, pomegranate was the most profitable, with maximum net returns over 8-years, a benefit-cost ratio of 4.95, and the highest land expectation value. In conclusion, transforming degraded lands supports land degradation neutrality, net-zero emissions, oxygen supply, income security, and Sustainable development goals (SDG's) in semi-arid conditions."
+        },
+        {
+          "rank": 12,
+          "score": 0.5717721581459045,
+          "doc_id": "",
+          "title": "Supercapacitive CO",
+          "abstract": "Aqueous electrolytes offer a safer, more cost-effective, and scalable solution for electrochemical CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Supercapacitive CO Supercapacitive CO Supercapacitive CO Aqueous electrolytes offer a safer, more cost-effective, and scalable solution for electrochemical CO"
+        },
+        {
+          "rank": 13,
+          "score": 0.5697301030158997,
+          "doc_id": "",
+          "title": "Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions.",
+          "abstract": "With rising urban population and urbanization, discharge of domestic wastewater increased dramatically. Centrally operated wastewater treatment plants (WWTPs) are being pressed for energy conservation and carbon footprint minimization, specifically in generating and emitting greenhouse gases (GHG) such as nitrous oxide (N",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions. Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions. Comprehensive review of constructed wetlands implemented with advanced biotechnologies for carbon-neutral treatment of urban wastewater: Enhanced removal of nitrogen and reduction of greenhouse gas emissions. With rising urban population and urbanization, discharge of domestic wastewater increased dramatically. Centrally operated wastewater treatment plants (WWTPs) are being pressed for energy conservation and carbon footprint minimization, specifically in generating and emitting greenhouse gases (GHG) such as nitrous oxide (N"
+        },
+        {
+          "rank": 14,
+          "score": 0.5640466213226318,
+          "doc_id": "",
+          "title": "Enhanced carbon dioxide mineralization of industrial alkaline wastes through date palm waste-derived activated biochar.",
+          "abstract": "This study presents a sustainable approach for synthesizing activated biochar (BC) from date palm waste and enhancing its carbon dioxide (CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Enhanced carbon dioxide mineralization of industrial alkaline wastes through date palm waste-derived activated biochar. Enhanced carbon dioxide mineralization of industrial alkaline wastes through date palm waste-derived activated biochar. Enhanced carbon dioxide mineralization of industrial alkaline wastes through date palm waste-derived activated biochar. This study presents a sustainable approach for synthesizing activated biochar (BC) from date palm waste and enhancing its carbon dioxide (CO"
+        },
+        {
+          "rank": 15,
+          "score": 0.5621747374534607,
+          "doc_id": "",
+          "title": "Synthetic autotrophic yeast enables high itaconic acid production from CO",
+          "abstract": "Single carbon (C1) substrates are gaining importance as future feedstocks for the production of bio-based chemicals. Carbon dioxide, a major greenhouse gas, offers a promising alternative to the traditional feedstocks to shift towards C1-based, sustainable processes. Here, we present a synthetic autotrophic ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Synthetic autotrophic yeast enables high itaconic acid production from CO Synthetic autotrophic yeast enables high itaconic acid production from CO Synthetic autotrophic yeast enables high itaconic acid production from CO Single carbon (C1) substrates are gaining importance as future feedstocks for the production of bio-based chemicals. Carbon dioxide, a major greenhouse gas, offers a promising alternative to the traditional feedstocks to shift towards C1-based, sustainable processes. Here, we present a synthetic autotrophic "
+        },
+        {
+          "rank": 16,
+          "score": 0.5581337809562683,
+          "doc_id": "",
+          "title": "High Shear Conversion of Elemental Bismuth in Water Under Air to 2D Bismuth Oxycarbonate.",
+          "abstract": "2D Bismuth oxycarbonate (2D BOC) nanosheets have a unique layered structure with many applications, including capture and reduction of carbon dioxide. Processing powdered elemental bismuth in water under ambient air conditions using a vortex fluidic device (VFD) results in the formation of 2D BOC without the need of surfactants or other excipients. The induced high shear mechanical energy in the form of micron/submicron topological typhoon like spinning top (ST) fluid flow drives the conversion, which we propose initially melts the metal particles which are spontaneously oxidised at the liquid-quartz tube interface to form 2D bismuth oxide (Bi",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "High Shear Conversion of Elemental Bismuth in Water Under Air to 2D Bismuth Oxycarbonate. High Shear Conversion of Elemental Bismuth in Water Under Air to 2D Bismuth Oxycarbonate. High Shear Conversion of Elemental Bismuth in Water Under Air to 2D Bismuth Oxycarbonate. 2D Bismuth oxycarbonate (2D BOC) nanosheets have a unique layered structure with many applications, including capture and reduction of carbon dioxide. Processing powdered elemental bismuth in water under ambient air conditions using a vortex fluidic device (VFD) results in the formation of 2D BOC without the need of surfactants or other excipients. The induced high shear mechanical energy in the form of micron/submicron topological typhoon like spinning top (ST) fluid flow drives the conversion, which we propose initially melts the metal particles which are spontaneously oxidised at the liquid-quartz tube interface to form 2D bismuth oxide (Bi"
+        },
+        {
+          "rank": 17,
+          "score": 0.556307315826416,
+          "doc_id": "",
+          "title": "MOF Fibrous Membranes with Efficient Gas Transfer Channel for Carbon Dioxide Capture.",
+          "abstract": "Metal-organic frameworks (MOFs), known for their high surface area, adjustable pore structure, and ease of functional modification, have attracted considerable interest for carbon dioxide (CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "MOF Fibrous Membranes with Efficient Gas Transfer Channel for Carbon Dioxide Capture. MOF Fibrous Membranes with Efficient Gas Transfer Channel for Carbon Dioxide Capture. MOF Fibrous Membranes with Efficient Gas Transfer Channel for Carbon Dioxide Capture. Metal-organic frameworks (MOFs), known for their high surface area, adjustable pore structure, and ease of functional modification, have attracted considerable interest for carbon dioxide (CO"
+        },
+        {
+          "rank": 18,
+          "score": 0.5497644543647766,
+          "doc_id": "",
+          "title": "Restoring Porosity and Uncovering Flexibility in Pillared 3D-Linker Metal-Organic Frameworks.",
+          "abstract": "Porous adsorbents have emerged as leading materials for carbon capture, where pressure-controlled regeneration offers a key advantage over energy-demanding temperature swing adsorption. Flexible metal-organic frameworks (MOFs) comprised of pillared linkers are proposed to meet this need due to the unique ability to adjust their pores to maximize host-guest interactions. However, many pillared MOFs show structural collapse following activation. We highlight a new approach to constructing pillared MOFs which retain their porosity upon activation, while also showing flexibility and selective gas adsorption. Two different MOFs were formed using cubane-1,4-dicarboxylate (cdc) as a pillar linking zinc triazolate sheets, [Zn",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Restoring Porosity and Uncovering Flexibility in Pillared 3D-Linker Metal-Organic Frameworks. Restoring Porosity and Uncovering Flexibility in Pillared 3D-Linker Metal-Organic Frameworks. Restoring Porosity and Uncovering Flexibility in Pillared 3D-Linker Metal-Organic Frameworks. Porous adsorbents have emerged as leading materials for carbon capture, where pressure-controlled regeneration offers a key advantage over energy-demanding temperature swing adsorption. Flexible metal-organic frameworks (MOFs) comprised of pillared linkers are proposed to meet this need due to the unique ability to adjust their pores to maximize host-guest interactions. However, many pillared MOFs show structural collapse following activation. We highlight a new approach to constructing pillared MOFs which retain their porosity upon activation, while also showing flexibility and selective gas adsorption. Two different MOFs were formed using cubane-1,4-dicarboxylate (cdc) as a pillar linking zinc triazolate sheets, [Zn"
+        },
+        {
+          "rank": 19,
+          "score": 0.546832799911499,
+          "doc_id": "",
+          "title": "Evaluating and Improving Light Absorption Retrievals of Black Carbon Using In Situ Polar Nephelometry.",
+          "abstract": "Black carbon (BC) is among the major contributors to global warming, yet significant uncertainties exist in remote sensing retrievals of BC light absorption. A key issue is the mismatch between the simplified spherical morphology assumption commonly used in these retrievals and the actual fractal-like morphology of BC particles. In situ polar nephelometry provides a unique opportunity to improve these retrieval algorithms. Laboratory-based polarimetric measurements allow for a comparison of retrieved and directly measured properties using independent instrumentation. In our experiments, bare BC aggregates were generated, and phase functions were measured using our newly developed polar nephelometer uNeph. Standard retrievals based on Lorenz-Mie theory poorly reproduced the phase function and polarized phase function of BC, leading to significant bias in retrieved properties beyond the uncertainty of independent measurements. Contrary to previous studies, we demonstrate a good closure between measured and simulated phase functions when using the Multi-Sphere T-Matrix (MSTM) method for BC aggregates in the accumulation size range. BC properties, particularly absorption coefficient and volume concentration, were accurately and precisely retrieved by accounting for the fractal-like morphology. Only two additional parameters were used in MSTM retrieval. This suggests that considering aggregates in remote sensing retrievals under real atmospheric conditions could be feasible.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Evaluating and Improving Light Absorption Retrievals of Black Carbon Using In Situ Polar Nephelometry. Evaluating and Improving Light Absorption Retrievals of Black Carbon Using In Situ Polar Nephelometry. Evaluating and Improving Light Absorption Retrievals of Black Carbon Using In Situ Polar Nephelometry. Black carbon (BC) is among the major contributors to global warming, yet significant uncertainties exist in remote sensing retrievals of BC light absorption. A key issue is the mismatch between the simplified spherical morphology assumption commonly used in these retrievals and the actual fractal-like morphology of BC particles. In situ polar nephelometry provides a unique opportunity to improve these retrieval algorithms. Laboratory-based polarimetric measurements allow for a comparison of retrieved and directly measured properties using independent instrumentation. In our experiments, bare BC aggregates were generated, and phase functions were measured using our newly developed polar nephelometer uNeph. Standard retrievals based on Lorenz-Mie theory poorly reproduced the phase function and polarized phase function of BC, leading to significant bias in retrieved properties beyond the uncertainty of independent measurements. Contrary to previous studies, we demonstrate a good closure between measured and simulated phase functions when using the Multi-Sphere T-Matrix (MSTM) method for BC aggregates in the accumulation size range. BC properties, particularly absorption coefficient and volume concentration, were accurately and precisely retrieved by accounting for the fractal-like morphology. Only two additional parameters were used in MSTM retrieval. This suggests that considering aggregates in remote sensing retrievals under real atmospheric conditions could be feasible."
+        },
+        {
+          "rank": 20,
+          "score": 0.5423991680145264,
+          "doc_id": "",
+          "title": "Effects of Pd/CeO",
+          "abstract": "Unburnt hydrocarbon emissions from gasoline vehicles contribute to air pollution and pose health risks, necessitating effective removal strategies. Conventional three-way catalysts (TWCs) effectively oxidize hydrocarbons to CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Effects of Pd/CeO Effects of Pd/CeO Effects of Pd/CeO Unburnt hydrocarbon emissions from gasoline vehicles contribute to air pollution and pose health risks, necessitating effective removal strategies. Conventional three-way catalysts (TWCs) effectively oxidize hydrocarbons to CO"
+        },
+        {
+          "rank": 21,
+          "score": 0.5409747362136841,
+          "doc_id": "",
+          "title": "Hydrologic and water quality performance of an 8-year old bioretention cell treating residential runoff.",
+          "abstract": "Bioretention cells (BRCs) are among the most popular low-impact development techniques in the United States. They effectively mitigate the runoff hydrograph and excessive pollutant loadings affected by widespread urbanization. Overwhelmingly, the literature focuses on the effectiveness of newly constructed BRCs and does not account for the variety of designs found in BRCs installed less recently. The objective of this study was to evaluate the efficacy of a BRC in mitigating runoff quantity, reducing peak flow rate, and improving water quality parameters (i.e., sediment, nutrients, heavy metals, and indicator bacteria) 8 years post-construction. Total runoff volume reduction was substantial (83%), accredited to mature vegetation promoting evapotranspiration, canopy interception, and hydraulic properties of the mature BRC soil. Additionally, the BRC provided similar peak flow mitigation (median 93%) to newly constructed BRCs in the literature. Significant reductions in event mean concentrations and loads of sediments (>88%), particulate-bound nutrients (>60%), and heavy metals (>70%) were observed. In many cases, the BRC had better - or at least similar - pollutant removal efficiencies than younger BRCs. The excellent function of this BRC provides evidence that these systems may improve over time, given proper long-term maintenance.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Hydrologic and water quality performance of an 8-year old bioretention cell treating residential runoff. Hydrologic and water quality performance of an 8-year old bioretention cell treating residential runoff. Hydrologic and water quality performance of an 8-year old bioretention cell treating residential runoff. Bioretention cells (BRCs) are among the most popular low-impact development techniques in the United States. They effectively mitigate the runoff hydrograph and excessive pollutant loadings affected by widespread urbanization. Overwhelmingly, the literature focuses on the effectiveness of newly constructed BRCs and does not account for the variety of designs found in BRCs installed less recently. The objective of this study was to evaluate the efficacy of a BRC in mitigating runoff quantity, reducing peak flow rate, and improving water quality parameters (i.e., sediment, nutrients, heavy metals, and indicator bacteria) 8 years post-construction. Total runoff volume reduction was substantial (83%), accredited to mature vegetation promoting evapotranspiration, canopy interception, and hydraulic properties of the mature BRC soil. Additionally, the BRC provided similar peak flow mitigation (median 93%) to newly constructed BRCs in the literature. Significant reductions in event mean concentrations and loads of sediments (>88%), particulate-bound nutrients (>60%), and heavy metals (>70%) were observed. In many cases, the BRC had better - or at least similar - pollutant removal efficiencies than younger BRCs. The excellent function of this BRC provides evidence that these systems may improve over time, given proper long-term maintenance."
+        },
+        {
+          "rank": 22,
+          "score": 0.539789080619812,
+          "doc_id": "",
+          "title": "Unveiling the dual potential of microalgae and seaweed biomass for sustainable biofuel production: a review.",
+          "abstract": "Fossil fuels account for 82% of the overall energy supply, meeting rising global energy demand. Oil accounts for 35%, coal for 29%, and natural gas for 24%. However, fossil fuels are limited and largely contribute to environmental damage. Global energy consumption is expected to rise by 2040, emphasizing the urgent need for sustainable energy solutions. Although renewable energy technologies can meet this need, they account for less than 13% of the overall energy supply. Algae have received attention as a prospective source of third-generation biofuels such as biodiesel, bioethanol, biogas, and biohydrogen. They grow quickly, consume less area, absorb more CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Unveiling the dual potential of microalgae and seaweed biomass for sustainable biofuel production: a review. Unveiling the dual potential of microalgae and seaweed biomass for sustainable biofuel production: a review. Unveiling the dual potential of microalgae and seaweed biomass for sustainable biofuel production: a review. Fossil fuels account for 82% of the overall energy supply, meeting rising global energy demand. Oil accounts for 35%, coal for 29%, and natural gas for 24%. However, fossil fuels are limited and largely contribute to environmental damage. Global energy consumption is expected to rise by 2040, emphasizing the urgent need for sustainable energy solutions. Although renewable energy technologies can meet this need, they account for less than 13% of the overall energy supply. Algae have received attention as a prospective source of third-generation biofuels such as biodiesel, bioethanol, biogas, and biohydrogen. They grow quickly, consume less area, absorb more CO"
+        },
+        {
+          "rank": 23,
+          "score": 0.5397347807884216,
+          "doc_id": "",
+          "title": "Towards zero CO",
+          "abstract": "Transport tailpipe CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Towards zero CO Towards zero CO Towards zero CO Transport tailpipe CO"
+        },
+        {
+          "rank": 24,
+          "score": 0.5391901731491089,
+          "doc_id": "",
+          "title": "Effects of guest molecular occupancy and electric field on thermal conductivity of CO2 hydrates.",
+          "abstract": "CO2 hydrate technology plays a pivotal role in carbon dioxide capture/storage, gas separation, and natural gas recovery from natural gas hydrates, while simultaneously serving as a cost-effective phase-change material for thermal energy storage. The thermal transport characteristics of CO2 hydrates are of particular importance in these promising applications. Here, the role of CO2 molecular occupancy and external electric fields on the thermal conductivity (κ) of sI-type CO2 hydrates is explored using equilibrium molecular dynamics simulations. Results reveal that increasing CO2 occupancy in large 51262 cages enhances κ by up to 27.2%, while small 512 cages contribute minimally (<1%). The water framework dominates heat transport (>90%), with CO2@51262 and CO2@512 cages contributing ∼17%-18% and <1%, respectively, mediated by synergistic host-guest interactions. External electric fields reduce κ by around 4%-5% due to enhanced low-frequency phonon localization in CO2 and intensified anharmonic scattering. Phonon analyses, including phonon density of states, phonon lifetime, phonon participation ratio, and spectral energy density, reveal that CO2 occupancy suppresses water lattice vibrations, while electric fields redistribute phonon modes, reducing delocalization. This work advances the fundamental understanding of thermal transport in hydrate systems.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Effects of guest molecular occupancy and electric field on thermal conductivity of CO2 hydrates. Effects of guest molecular occupancy and electric field on thermal conductivity of CO2 hydrates. Effects of guest molecular occupancy and electric field on thermal conductivity of CO2 hydrates. CO2 hydrate technology plays a pivotal role in carbon dioxide capture/storage, gas separation, and natural gas recovery from natural gas hydrates, while simultaneously serving as a cost-effective phase-change material for thermal energy storage. The thermal transport characteristics of CO2 hydrates are of particular importance in these promising applications. Here, the role of CO2 molecular occupancy and external electric fields on the thermal conductivity (κ) of sI-type CO2 hydrates is explored using equilibrium molecular dynamics simulations. Results reveal that increasing CO2 occupancy in large 51262 cages enhances κ by up to 27.2%, while small 512 cages contribute minimally (<1%). The water framework dominates heat transport (>90%), with CO2@51262 and CO2@512 cages contributing ∼17%-18% and <1%, respectively, mediated by synergistic host-guest interactions. External electric fields reduce κ by around 4%-5% due to enhanced low-frequency phonon localization in CO2 and intensified anharmonic scattering. Phonon analyses, including phonon density of states, phonon lifetime, phonon participation ratio, and spectral energy density, reveal that CO2 occupancy suppresses water lattice vibrations, while electric fields redistribute phonon modes, reducing delocalization. This work advances the fundamental understanding of thermal transport in hydrate systems."
+        },
+        {
+          "rank": 25,
+          "score": 0.535916805267334,
+          "doc_id": "",
+          "title": "Water-soluble pyridinium redox mediators for pH-swing CO",
+          "abstract": "Electrochemical pH-swing processes offer a promising route for energy-efficient CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Water-soluble pyridinium redox mediators for pH-swing CO Water-soluble pyridinium redox mediators for pH-swing CO Water-soluble pyridinium redox mediators for pH-swing CO Electrochemical pH-swing processes offer a promising route for energy-efficient CO"
+        },
+        {
+          "rank": 26,
+          "score": 0.5355439186096191,
+          "doc_id": "",
+          "title": "Covalent organic frameworks functionalization with ionic liquid and single metal ions for CO",
+          "abstract": "The ecofriendly conversion of captured CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Covalent organic frameworks functionalization with ionic liquid and single metal ions for CO Covalent organic frameworks functionalization with ionic liquid and single metal ions for CO Covalent organic frameworks functionalization with ionic liquid and single metal ions for CO The ecofriendly conversion of captured CO"
+        },
+        {
+          "rank": 27,
+          "score": 0.535088062286377,
+          "doc_id": "",
+          "title": "Platinum nanoparticle-decorated carbon nanowall anodes fabricated via top-down approach for abiotic glucose fuel cells.",
+          "abstract": "A glucose fuel cell (GFC) was fabricated using abiotic catalysts supported on carbon nanowalls (CNWs) as the anode electrode. The CNWs were immobilized on a 50 nm-thick patterned Pt thin film and selectively grown on the unmasked regions of heat-resistant spin-on-glass (SOG) films. They were vertically aligned and uniformly spaced at approximately 150 nm through radical injection plasma-enhanced chemical vapor deposition (RI-PECVD) at 650 °C. The top and side surfaces of the CNWs, serving as electrically conductive supports, were fully decorated with platinum nanoparticles (PtNPs) averaging 1.8 nm in diameter. This decoration was achieved via supercritical fluid chemical deposition (SFCD) using trimethyl(methylcyclopentadienyl)platinum(IV) [(CH₃C₅H₄)Pt(CH₃)₃] as the precursor at 175 °C under a CO₂ pressure of 10 MPa. After etching the SOG films with buffered hydrogen fluoride (BHF) solution, the PtNP-supported CNWs (PtNP/CNWs) were lifted from the masked regions. This method provides a straightforward approach for GFC fabrication. The GFC, incorporating top-down-fabricated PtNP/CNWs as the anode and a carbon nanotube-based cathode, achieved a maximum power density of 25.3 nW/cm².",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Platinum nanoparticle-decorated carbon nanowall anodes fabricated via top-down approach for abiotic glucose fuel cells. Platinum nanoparticle-decorated carbon nanowall anodes fabricated via top-down approach for abiotic glucose fuel cells. Platinum nanoparticle-decorated carbon nanowall anodes fabricated via top-down approach for abiotic glucose fuel cells. A glucose fuel cell (GFC) was fabricated using abiotic catalysts supported on carbon nanowalls (CNWs) as the anode electrode. The CNWs were immobilized on a 50 nm-thick patterned Pt thin film and selectively grown on the unmasked regions of heat-resistant spin-on-glass (SOG) films. They were vertically aligned and uniformly spaced at approximately 150 nm through radical injection plasma-enhanced chemical vapor deposition (RI-PECVD) at 650 °C. The top and side surfaces of the CNWs, serving as electrically conductive supports, were fully decorated with platinum nanoparticles (PtNPs) averaging 1.8 nm in diameter. This decoration was achieved via supercritical fluid chemical deposition (SFCD) using trimethyl(methylcyclopentadienyl)platinum(IV) [(CH₃C₅H₄)Pt(CH₃)₃] as the precursor at 175 °C under a CO₂ pressure of 10 MPa. After etching the SOG films with buffered hydrogen fluoride (BHF) solution, the PtNP-supported CNWs (PtNP/CNWs) were lifted from the masked regions. This method provides a straightforward approach for GFC fabrication. The GFC, incorporating top-down-fabricated PtNP/CNWs as the anode and a carbon nanotube-based cathode, achieved a maximum power density of 25.3 nW/cm²."
+        },
+        {
+          "rank": 28,
+          "score": 0.5319855213165283,
+          "doc_id": "",
+          "title": "Satellite-driven assessment of methane trends, seasonal variability, and emission hotspots in Botswana's Central and Ngamiland Regions.",
+          "abstract": "This study investigates methane, a potent greenhouse gas linked to global warming, using high-resolution satellite data from the Sentinel-5P TROPOMI between 2020 and 2023. The research analyzed trends, seasonal changes, and emission hotspots in two different regions of Botswana: Central and Ngamiland. These areas have different methane sources, including human activities and natural processes. The results indicate significantly varying mean CH",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Satellite-driven assessment of methane trends, seasonal variability, and emission hotspots in Botswana's Central and Ngamiland Regions. Satellite-driven assessment of methane trends, seasonal variability, and emission hotspots in Botswana's Central and Ngamiland Regions. Satellite-driven assessment of methane trends, seasonal variability, and emission hotspots in Botswana's Central and Ngamiland Regions. This study investigates methane, a potent greenhouse gas linked to global warming, using high-resolution satellite data from the Sentinel-5P TROPOMI between 2020 and 2023. The research analyzed trends, seasonal changes, and emission hotspots in two different regions of Botswana: Central and Ngamiland. These areas have different methane sources, including human activities and natural processes. The results indicate significantly varying mean CH"
+        },
+        {
+          "rank": 29,
+          "score": 0.5289061665534973,
+          "doc_id": "",
+          "title": "Unravelling the nanoarchitectonics of -C-N- linkages in covalent organic frameworks for CO",
+          "abstract": "Covalent Organic Frameworks (COFs) featuring carbon-nitrogen (C-N) linkages represent a versatile class of crystalline, porous materials constructed through the dynamic covalent bonding of organic monomers. Schiff-base, C-N imine-linked COFs have garnered considerable interest for carbon dioxide (CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Unravelling the nanoarchitectonics of -C-N- linkages in covalent organic frameworks for CO Unravelling the nanoarchitectonics of -C-N- linkages in covalent organic frameworks for CO Unravelling the nanoarchitectonics of -C-N- linkages in covalent organic frameworks for CO Covalent Organic Frameworks (COFs) featuring carbon-nitrogen (C-N) linkages represent a versatile class of crystalline, porous materials constructed through the dynamic covalent bonding of organic monomers. Schiff-base, C-N imine-linked COFs have garnered considerable interest for carbon dioxide (CO"
+        },
+        {
+          "rank": 30,
+          "score": 0.5284209251403809,
+          "doc_id": "",
+          "title": "Fluorinated Graphene-Coated N95 Respirators for Enhanced Protection Against Viral Accumulation and Transmission.",
+          "abstract": "Highly contagious respiratory infection diseases such as COVID-19 can be transmitted by inhaling virus laden liquid droplets and short-range aerosols, released by an infected person. Particularly, in hospitals, spraying of the respiratory droplets containing pathogens from the conjunctiva or mucus of a susceptible person plays a key role in transferring the infectious diseases. N95 filtering respirators are a critical personal protective equipment. However, due to concerns over the virus accumulation on the N95 respirators, there is an urgent need to make the N95 respirators less contaminated. To address this critical issue, we develop a one-step spray coating approach to coat the fluorinated graphene (FG) nanosheet onto the N95 respirators. The synergistic effect of FG nanosheet with a low surface energy and the increased surface roughness by FG on the respirator's surface makes it superhydrophobic. For respiratory droplets like saliva and mucus, the FG coated respirators also show excellent superhydrophobicity. Furthermore, the ability against virus accumulation on the FG coated respirators is tested by using the mucus droplets laden with SARS-CoV-2. The results show that FG coated respirators largely increase the virus repel efficiency even under multiple contacts and effectively reduce the virus accumulation.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Fluorinated Graphene-Coated N95 Respirators for Enhanced Protection Against Viral Accumulation and Transmission. Fluorinated Graphene-Coated N95 Respirators for Enhanced Protection Against Viral Accumulation and Transmission. Fluorinated Graphene-Coated N95 Respirators for Enhanced Protection Against Viral Accumulation and Transmission. Highly contagious respiratory infection diseases such as COVID-19 can be transmitted by inhaling virus laden liquid droplets and short-range aerosols, released by an infected person. Particularly, in hospitals, spraying of the respiratory droplets containing pathogens from the conjunctiva or mucus of a susceptible person plays a key role in transferring the infectious diseases. N95 filtering respirators are a critical personal protective equipment. However, due to concerns over the virus accumulation on the N95 respirators, there is an urgent need to make the N95 respirators less contaminated. To address this critical issue, we develop a one-step spray coating approach to coat the fluorinated graphene (FG) nanosheet onto the N95 respirators. The synergistic effect of FG nanosheet with a low surface energy and the increased surface roughness by FG on the respirator's surface makes it superhydrophobic. For respiratory droplets like saliva and mucus, the FG coated respirators also show excellent superhydrophobicity. Furthermore, the ability against virus accumulation on the FG coated respirators is tested by using the mucus droplets laden with SARS-CoV-2. The results show that FG coated respirators largely increase the virus repel efficiency even under multiple contacts and effectively reduce the virus accumulation."
+        },
+        {
+          "rank": 31,
+          "score": 0.5243253707885742,
+          "doc_id": "",
+          "title": "Scrutinizing the redox activity of MOF-derived Fe-Se-C and P@Fe-Se-C species to improve overall water electrolysis and alkaline zinc-air batteries.",
+          "abstract": "Versatile electrocatalysts made from Earth-rich elements are essential for the design of energy storage and conversion devices such as those involved in electrolytic water splitting and zinc-air batteries. In this research, MOF-derived rod-like Fe-Se-C and P@Fe-Se-C nanocatalysts were applied to modify various active species on catalytic structures. TEM, XRD, XPS, and XAS characterization of the MOF nanorod scaffold indicated a high abundance of catalytically active species, including the P@Fe-Se-C composite encased in Se on a carbon layer. High dual-functional activity of the OER with ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Scrutinizing the redox activity of MOF-derived Fe-Se-C and P@Fe-Se-C species to improve overall water electrolysis and alkaline zinc-air batteries. Scrutinizing the redox activity of MOF-derived Fe-Se-C and P@Fe-Se-C species to improve overall water electrolysis and alkaline zinc-air batteries. Scrutinizing the redox activity of MOF-derived Fe-Se-C and P@Fe-Se-C species to improve overall water electrolysis and alkaline zinc-air batteries. Versatile electrocatalysts made from Earth-rich elements are essential for the design of energy storage and conversion devices such as those involved in electrolytic water splitting and zinc-air batteries. In this research, MOF-derived rod-like Fe-Se-C and P@Fe-Se-C nanocatalysts were applied to modify various active species on catalytic structures. TEM, XRD, XPS, and XAS characterization of the MOF nanorod scaffold indicated a high abundance of catalytically active species, including the P@Fe-Se-C composite encased in Se on a carbon layer. High dual-functional activity of the OER with "
+        },
+        {
+          "rank": 32,
+          "score": 0.5231865644454956,
+          "doc_id": "",
+          "title": "The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study.",
+          "abstract": "Ocean acidification (OA) due to anthropogenic CO2 emissions has significantly altered ocean chemistry since the industrial era. Ocean alkalinity enhancement (OAE) is an innovative strategy to mitigate excess CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study. The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study. The effect of ocean alkalinity enhancement on zooplankton standing stock and community composition in the Eastern Mediterranean Sea: a mesocosm study. Ocean acidification (OA) due to anthropogenic CO2 emissions has significantly altered ocean chemistry since the industrial era. Ocean alkalinity enhancement (OAE) is an innovative strategy to mitigate excess CO"
+        },
+        {
+          "rank": 33,
+          "score": 0.5227097272872925,
+          "doc_id": "",
+          "title": "Life cycle assessment of high value activated carbon production based on mass and functional performance metrics.",
+          "abstract": "The production of activated carbon (AC) from biomass holds substantial environmental potential, but its impact varies widely depending on the synthesis methods employed. However, unreliable experimental data results in inconsistent life cycle assessments (LCA), often dependent on generic or highly localized information. Most available data focuses solely on production metrics, neglecting crucial performance-based indicators. This study conducts LCA for a conceptual AC production facility designed to produce 1 kg of AC per batch of coconut shell (CS), particularly examining potassium hydroxide (KOH) and sodium hydroxide (NaOH) activation routes. Environmental impacts (EIs) are evaluated using two functional units-mass-based and adsorption-based-and span eighteen metrics, including six key ones: net energy, climate change (CC), ozone depletion, fine particulate matter formation, marine eutrophication, and metal depletion. CC (kg CO₂ eq.) for 1 kg of AC production is 1.255 for KOH and 1.209 for NaOH, while energy requirements (in MJ) are 28.314 for KOH and 27.063 for NaOH. Notably, the pyrolysis step emerges as the most energy-intensive and significant contributor to carbon emissions. Per the adsorption-based unit, the KOH-led pathway shows a higher adsorption capacity of 729 g/kg versus 662 g/kg for NaOH, requiring less AC per kg of dye adsorbed. Consequently, the KOH pathway achieves 5% greater energy efficiency and 6% lower carbon emissions than the NaOH pathway. Synthesized ACs outperform commercial AC in all metrics, especially in energy use and carbon emissions. The study proposes improvements, such as alternative drying methods, to mitigate EIs and emphasizes the need to consider both production efficiency and functional performance to guide sustainable AC production and application.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Life cycle assessment of high value activated carbon production based on mass and functional performance metrics. Life cycle assessment of high value activated carbon production based on mass and functional performance metrics. Life cycle assessment of high value activated carbon production based on mass and functional performance metrics. The production of activated carbon (AC) from biomass holds substantial environmental potential, but its impact varies widely depending on the synthesis methods employed. However, unreliable experimental data results in inconsistent life cycle assessments (LCA), often dependent on generic or highly localized information. Most available data focuses solely on production metrics, neglecting crucial performance-based indicators. This study conducts LCA for a conceptual AC production facility designed to produce 1 kg of AC per batch of coconut shell (CS), particularly examining potassium hydroxide (KOH) and sodium hydroxide (NaOH) activation routes. Environmental impacts (EIs) are evaluated using two functional units-mass-based and adsorption-based-and span eighteen metrics, including six key ones: net energy, climate change (CC), ozone depletion, fine particulate matter formation, marine eutrophication, and metal depletion. CC (kg CO₂ eq.) for 1 kg of AC production is 1.255 for KOH and 1.209 for NaOH, while energy requirements (in MJ) are 28.314 for KOH and 27.063 for NaOH. Notably, the pyrolysis step emerges as the most energy-intensive and significant contributor to carbon emissions. Per the adsorption-based unit, the KOH-led pathway shows a higher adsorption capacity of 729 g/kg versus 662 g/kg for NaOH, requiring less AC per kg of dye adsorbed. Consequently, the KOH pathway achieves 5% greater energy efficiency and 6% lower carbon emissions than the NaOH pathway. Synthesized ACs outperform commercial AC in all metrics, especially in energy use and carbon emissions. The study proposes improvements, such as alternative drying methods, to mitigate EIs and emphasizes the need to consider both production efficiency and functional performance to guide sustainable AC production and application."
+        },
+        {
+          "rank": 34,
+          "score": 0.520417332649231,
+          "doc_id": "",
+          "title": "Green synthesis of zinc oxide nanoparticles for copper-ion detection and energy storage in aqueous media: an electrochemical and DFT study.",
+          "abstract": "This study compares the detection of copper ions using two carbon paste electrodes (CPEs) modified with ZnO nanoparticles: one synthesized by conventional chemical methods and the other ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Green synthesis of zinc oxide nanoparticles for copper-ion detection and energy storage in aqueous media: an electrochemical and DFT study. Green synthesis of zinc oxide nanoparticles for copper-ion detection and energy storage in aqueous media: an electrochemical and DFT study. Green synthesis of zinc oxide nanoparticles for copper-ion detection and energy storage in aqueous media: an electrochemical and DFT study. This study compares the detection of copper ions using two carbon paste electrodes (CPEs) modified with ZnO nanoparticles: one synthesized by conventional chemical methods and the other "
+        },
+        {
+          "rank": 35,
+          "score": 0.5202687978744507,
+          "doc_id": "",
+          "title": "Retrofitted watershed scale green infrastructure reduces heavy metals in urban stormwater from residential land use.",
+          "abstract": "The City of Columbus, Ohio, USA began retrofitting green infrastructure (GI) into existing development through a multi-decade project. Primary design goals were reducing TSS loads in runoff by 20 % and stormwater infiltration and inflow to the sanitary sewer. GI also contributed to modest heavy metal reductions at the watershed scale. Through this 3.5-year paired watershed study, heavy metal reductions were observed in an 11.5-hectare watershed where three online bioretention cells treated 66.5 % of the imperviousness. Significant event mean concentration (EMC) reductions of 18.1 % for copper and 31.2 % for nickel were observed. Storm event load reductions were also significant: 44.0 % for cadmium, 33.6 % for copper, 46.0 % for nickel, 5.9 % for zinc. Reductions are likely due to sedimentation, filtration, sorption, and biological uptake within GI. Bioretention dampened effects of high rainfall intensity, a primary contributor to heavy metal loadings in that watershed before GI. However, another treatment watershed (47.8 ha) with 32 offline bioretention cells and four permeable pavement roads treating 69.7 % of the imperviousness demonstrated no significant reductions in heavy metal EMCs or storm event loads following GI retrofits. Further watershed scale field studies are needed to understand the factors driving successful heavy metal reduction. Structural and non-structural best management practices are recommended.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Retrofitted watershed scale green infrastructure reduces heavy metals in urban stormwater from residential land use. Retrofitted watershed scale green infrastructure reduces heavy metals in urban stormwater from residential land use. Retrofitted watershed scale green infrastructure reduces heavy metals in urban stormwater from residential land use. The City of Columbus, Ohio, USA began retrofitting green infrastructure (GI) into existing development through a multi-decade project. Primary design goals were reducing TSS loads in runoff by 20 % and stormwater infiltration and inflow to the sanitary sewer. GI also contributed to modest heavy metal reductions at the watershed scale. Through this 3.5-year paired watershed study, heavy metal reductions were observed in an 11.5-hectare watershed where three online bioretention cells treated 66.5 % of the imperviousness. Significant event mean concentration (EMC) reductions of 18.1 % for copper and 31.2 % for nickel were observed. Storm event load reductions were also significant: 44.0 % for cadmium, 33.6 % for copper, 46.0 % for nickel, 5.9 % for zinc. Reductions are likely due to sedimentation, filtration, sorption, and biological uptake within GI. Bioretention dampened effects of high rainfall intensity, a primary contributor to heavy metal loadings in that watershed before GI. However, another treatment watershed (47.8 ha) with 32 offline bioretention cells and four permeable pavement roads treating 69.7 % of the imperviousness demonstrated no significant reductions in heavy metal EMCs or storm event loads following GI retrofits. Further watershed scale field studies are needed to understand the factors driving successful heavy metal reduction. Structural and non-structural best management practices are recommended."
+        },
+        {
+          "rank": 36,
+          "score": 0.519873321056366,
+          "doc_id": "",
+          "title": "Low carbon optimization for wind integrated power systems with carbon capture and energy storage under carbon pricing.",
+          "abstract": "The integration of wind power is vital for enabling a low-carbon energy transition and fostering a sustainable society. However, its intermittent nature and the power system's limited transmission capacity challenge system stability. This study develops a low-carbon optimal scheduling model incorporating post-combustion carbon capture technology, energy storage, and an improved genetic algorithm (GA) to solve the optimization problem efficiently. The model evaluates the impact of carbon capture prices on energy storage allocation and unit power supply costs under high wind power penetration. Results demonstrate that increasing wind power capacity reduces the unit cost of electricity supply from 0.202 CNY/kWh to 0.164 CNY/kWh while improving system stability through energy storage deployment. Additionally, increasing the carbon capture price raises generation costs, peaking at 3.584 million CNY, but significantly reduces carbon emissions. For instance, at a carbon capture price of 100 CNY per ton, energy storage capacity reaches 127.6 MWh with a power output of 74.9 MW, achieving a unit cost of 0.152 CNY/kWh. These findings highlight the effectiveness of the proposed model and the improved GA in balancing economic, environmental, and system stability goals, offering a robust strategy for sustainable power system operation.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Low carbon optimization for wind integrated power systems with carbon capture and energy storage under carbon pricing. Low carbon optimization for wind integrated power systems with carbon capture and energy storage under carbon pricing. Low carbon optimization for wind integrated power systems with carbon capture and energy storage under carbon pricing. The integration of wind power is vital for enabling a low-carbon energy transition and fostering a sustainable society. However, its intermittent nature and the power system's limited transmission capacity challenge system stability. This study develops a low-carbon optimal scheduling model incorporating post-combustion carbon capture technology, energy storage, and an improved genetic algorithm (GA) to solve the optimization problem efficiently. The model evaluates the impact of carbon capture prices on energy storage allocation and unit power supply costs under high wind power penetration. Results demonstrate that increasing wind power capacity reduces the unit cost of electricity supply from 0.202 CNY/kWh to 0.164 CNY/kWh while improving system stability through energy storage deployment. Additionally, increasing the carbon capture price raises generation costs, peaking at 3.584 million CNY, but significantly reduces carbon emissions. For instance, at a carbon capture price of 100 CNY per ton, energy storage capacity reaches 127.6 MWh with a power output of 74.9 MW, achieving a unit cost of 0.152 CNY/kWh. These findings highlight the effectiveness of the proposed model and the improved GA in balancing economic, environmental, and system stability goals, offering a robust strategy for sustainable power system operation."
+        },
+        {
+          "rank": 37,
+          "score": 0.5155651569366455,
+          "doc_id": "",
+          "title": "The climate and health impact of U.S. radiation therapy: estimating greenhouse gas emissions, DALYs, and potential of hypofractionation.",
+          "abstract": "Climate change is a global crisis, with the healthcare sector contributing 8.5-10% of greenhouse gas (GHG) emissions in the United States (U.S.). Radiation oncology, particularly through patient transportation for external beam radiation therapy (EBRT), is known to contribute to these emissions. In this study, we aim to quantify the annual GHG emissions in carbon dioxide equivalents (CO This is a retrospective analysis using life cycle assessment (LCA) methodologies, integrating real-world data on patient transportation and energy use, and simulations of alternative fractionation schedules following previously established breast treatment guidelines. The study included 556,426 patients who received EBRT for nine cancer types (breast, central nervous system, gastrointestinal, genitourinary, gynecological, head and neck, musculoskeletal, skin, and thoracic), as recorded in the National Cancer Database (NCDB) in 2019 and 2020. Of these, 49,909 patients with early-stage breast cancer (stages I-II, node-negative) were modeled for hypofractionation scenarios. In 2019 and 2020, EBRT treatments in the U.S. resulted in 3.3 and 2.7 million metric tonnes of CO Establishing baseline U.S. GHG emissions from EBRT offers a foundation for identifying opportunities to mitigate emissions. Investigating clinical practices from an environmental perspective can yield dual benefits: improved quality of care and significant emissions reductions.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "The climate and health impact of U.S. radiation therapy: estimating greenhouse gas emissions, DALYs, and potential of hypofractionation. The climate and health impact of U.S. radiation therapy: estimating greenhouse gas emissions, DALYs, and potential of hypofractionation. The climate and health impact of U.S. radiation therapy: estimating greenhouse gas emissions, DALYs, and potential of hypofractionation. Climate change is a global crisis, with the healthcare sector contributing 8.5-10% of greenhouse gas (GHG) emissions in the United States (U.S.). Radiation oncology, particularly through patient transportation for external beam radiation therapy (EBRT), is known to contribute to these emissions. In this study, we aim to quantify the annual GHG emissions in carbon dioxide equivalents (CO This is a retrospective analysis using life cycle assessment (LCA) methodologies, integrating real-world data on patient transportation and energy use, and simulations of alternative fractionation schedules following previously established breast treatment guidelines. The study included 556,426 patients who received EBRT for nine cancer types (breast, central nervous system, gastrointestinal, genitourinary, gynecological, head and neck, musculoskeletal, skin, and thoracic), as recorded in the National Cancer Database (NCDB) in 2019 and 2020. Of these, 49,909 patients with early-stage breast cancer (stages I-II, node-negative) were modeled for hypofractionation scenarios. In 2019 and 2020, EBRT treatments in the U.S. resulted in 3.3 and 2.7 million metric tonnes of CO Establishing baseline U.S. GHG emissions from EBRT offers a foundation for identifying opportunities to mitigate emissions. Investigating clinical practices from an environmental perspective can yield dual benefits: improved quality of care and significant emissions reductions."
+        },
+        {
+          "rank": 38,
+          "score": 0.5153224468231201,
+          "doc_id": "",
+          "title": "Development of a waterlily-inspired autonomous cloud connected platform for Ca",
+          "abstract": "In this study, we developed an innovative water quality monitoring platform that enables cloud-based data transmission using a calcium ion-selective electrode. On-field measurement systems offer significant advantages for water quality monitoring, as they eliminate the need for laboratory infrastructure and associated logistics required by traditional methods. However, to achieve effective implementation with ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Development of a waterlily-inspired autonomous cloud connected platform for Ca Development of a waterlily-inspired autonomous cloud connected platform for Ca Development of a waterlily-inspired autonomous cloud connected platform for Ca In this study, we developed an innovative water quality monitoring platform that enables cloud-based data transmission using a calcium ion-selective electrode. On-field measurement systems offer significant advantages for water quality monitoring, as they eliminate the need for laboratory infrastructure and associated logistics required by traditional methods. However, to achieve effective implementation with "
+        },
+        {
+          "rank": 39,
+          "score": 0.5150107145309448,
+          "doc_id": "",
+          "title": "Integrating hydrological and economic assessments of soil infiltration enhancement for urban flood resilience.",
+          "abstract": "Urban flooding, exacerbated by climate change and the expansion of impervious surfaces, poses growing risks to sustainable urban development. Enhancing soil infiltration through green infrastructure is a promising nature-based solution, yet its hydrological effectiveness and economic viability under diverse rainfall scenarios remain insufficiently quantified. This study develops an interdisciplinary framework integrating column experiments, physically distributed hydrological modeling, and cost-benefit analysis to assess ceramsite-amended soils for urban flood resilience. In laboratory tests, ceramsite content (C) of 10 %, 20 %, and 30 % increased cumulative infiltration by 8.9 %, 74.0 %, and 138.6 %, respectively, corresponding to modeled infiltration multipliers (K) of 2, 4, and 6. These empirical results informed a distributed GSSHA model of a 14.3 km",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Integrating hydrological and economic assessments of soil infiltration enhancement for urban flood resilience. Integrating hydrological and economic assessments of soil infiltration enhancement for urban flood resilience. Integrating hydrological and economic assessments of soil infiltration enhancement for urban flood resilience. Urban flooding, exacerbated by climate change and the expansion of impervious surfaces, poses growing risks to sustainable urban development. Enhancing soil infiltration through green infrastructure is a promising nature-based solution, yet its hydrological effectiveness and economic viability under diverse rainfall scenarios remain insufficiently quantified. This study develops an interdisciplinary framework integrating column experiments, physically distributed hydrological modeling, and cost-benefit analysis to assess ceramsite-amended soils for urban flood resilience. In laboratory tests, ceramsite content (C) of 10 %, 20 %, and 30 % increased cumulative infiltration by 8.9 %, 74.0 %, and 138.6 %, respectively, corresponding to modeled infiltration multipliers (K) of 2, 4, and 6. These empirical results informed a distributed GSSHA model of a 14.3 km"
+        },
+        {
+          "rank": 40,
+          "score": 0.5145354866981506,
+          "doc_id": "",
+          "title": "Biochemical production of bio-based terephthalic acid from lignocellulosic biomass for CO2 emission reduction.",
+          "abstract": "Terephthalic acid, a key precursor for polyester production, is traditionally derived from fossil resources, contributing to global warming. Although numerous studies have explored the production of terephthalic acid from biomass polysaccharides, energy-intensive chemical processes are predominantly employed. In this study, we have developed a biochemical process to produce bio-based terephthalic acid from lignocellulosic biomass for reducing CO2 emissions. Among the tested six underutilized lignocellulosic biomasses, hardwood, with high cellulose contents of 52.8%, was subjected to alkaline pretreatment (165°C for 2.5 h) to eliminate lignin, and the resulting water-insoluble fraction was hydrolyzed by cellulases to yield monosaccharides. These monosaccharides were then biochemically transformed into terephthalic acid via p-tolualdehyde using two microorganisms, Phlebia sp. (a p-tolualdehyde-producing strain) and Comamonas testosteroni DSM6577. C. testosteroni DSM6577 was used to oxidize the side chains of p-tolualdehyde into carboxylic acid to obtain terephthalic acid. This report describes the successful production of small amounts of bio-based terephthalic acid from lignocellulosic biomass.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Biochemical production of bio-based terephthalic acid from lignocellulosic biomass for CO2 emission reduction. Biochemical production of bio-based terephthalic acid from lignocellulosic biomass for CO2 emission reduction. Biochemical production of bio-based terephthalic acid from lignocellulosic biomass for CO2 emission reduction. Terephthalic acid, a key precursor for polyester production, is traditionally derived from fossil resources, contributing to global warming. Although numerous studies have explored the production of terephthalic acid from biomass polysaccharides, energy-intensive chemical processes are predominantly employed. In this study, we have developed a biochemical process to produce bio-based terephthalic acid from lignocellulosic biomass for reducing CO2 emissions. Among the tested six underutilized lignocellulosic biomasses, hardwood, with high cellulose contents of 52.8%, was subjected to alkaline pretreatment (165°C for 2.5 h) to eliminate lignin, and the resulting water-insoluble fraction was hydrolyzed by cellulases to yield monosaccharides. These monosaccharides were then biochemically transformed into terephthalic acid via p-tolualdehyde using two microorganisms, Phlebia sp. (a p-tolualdehyde-producing strain) and Comamonas testosteroni DSM6577. C. testosteroni DSM6577 was used to oxidize the side chains of p-tolualdehyde into carboxylic acid to obtain terephthalic acid. This report describes the successful production of small amounts of bio-based terephthalic acid from lignocellulosic biomass."
+        },
+        {
+          "rank": 41,
+          "score": 0.5139737129211426,
+          "doc_id": "",
+          "title": "Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China.",
+          "abstract": "Returning straw to soil after harvest is not a simple binary decision for agricultural stakeholders. Optimizing straw management under site-specific conditions is crucial to balance the trade-off between climatic changes mitigation and food security in rice production. Here, we developed an integrated framework to determine the optimal ratios of straw return and removal across major rice-cropping regions in China. Using machine learning (ML) models, we identified site-specific straw return ratios that minimize greenhouse gas (GHG) emissions without compromising rice yield. Additionally, a complementary straw logistics model was proposed to manage excess straw instead of burning. Among five ML models evaluated, XGBoost demonstrated superior performance in predicting the impact of straw return on CH",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China. Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China. Data-driven optimization of county-scale straw management for low-carbon and income-enhancing rice production in China. Returning straw to soil after harvest is not a simple binary decision for agricultural stakeholders. Optimizing straw management under site-specific conditions is crucial to balance the trade-off between climatic changes mitigation and food security in rice production. Here, we developed an integrated framework to determine the optimal ratios of straw return and removal across major rice-cropping regions in China. Using machine learning (ML) models, we identified site-specific straw return ratios that minimize greenhouse gas (GHG) emissions without compromising rice yield. Additionally, a complementary straw logistics model was proposed to manage excess straw instead of burning. Among five ML models evaluated, XGBoost demonstrated superior performance in predicting the impact of straw return on CH"
+        },
+        {
+          "rank": 42,
+          "score": 0.5127618312835693,
+          "doc_id": "",
+          "title": "Nitrate modulates high CO",
+          "abstract": "Intensive studies have explored the feasibility of using high CO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Nitrate modulates high CO Nitrate modulates high CO Nitrate modulates high CO Intensive studies have explored the feasibility of using high CO"
+        },
+        {
+          "rank": 43,
+          "score": 0.5117208957672119,
+          "doc_id": "",
+          "title": "Scalable Mixed-Dimensional Nanogenerator for the Sunlight-Driven Water-Energy Nexus.",
+          "abstract": "The realization of net-zero emissions requires high-efficiency, solar-driven, and sustainable technologies that can co-generate clean water and renewable energy. We report a scalable plasma-engineered solar thermal matrix (STM) integrating graphene quantum dots (GQDs), MXene nanosheets, and a chitosan-based framework. Microplasma-assisted synthesis enables hierarchical porous architectures with angstrom-scale nanochannels, which synergistically enhance photothermal conversion, water transport, and ion mobility. The optimized STM exhibits a high photothermal efficiency of 95.7% and a solar steam generation rate of 4.2 kg m",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Scalable Mixed-Dimensional Nanogenerator for the Sunlight-Driven Water-Energy Nexus. Scalable Mixed-Dimensional Nanogenerator for the Sunlight-Driven Water-Energy Nexus. Scalable Mixed-Dimensional Nanogenerator for the Sunlight-Driven Water-Energy Nexus. The realization of net-zero emissions requires high-efficiency, solar-driven, and sustainable technologies that can co-generate clean water and renewable energy. We report a scalable plasma-engineered solar thermal matrix (STM) integrating graphene quantum dots (GQDs), MXene nanosheets, and a chitosan-based framework. Microplasma-assisted synthesis enables hierarchical porous architectures with angstrom-scale nanochannels, which synergistically enhance photothermal conversion, water transport, and ion mobility. The optimized STM exhibits a high photothermal efficiency of 95.7% and a solar steam generation rate of 4.2 kg m"
+        },
+        {
+          "rank": 44,
+          "score": 0.5113208293914795,
+          "doc_id": "",
+          "title": "Harnessing reactive manganese species for geosmin abatement in the permanganate/bisulfite process: From bench-scale to pilot-scale applications.",
+          "abstract": "The eutrophication of drinking water sources has led to outbreaks of algal blooms during hot weather, leading to significant odor issues in the drinking water supply. Addressing these odor challenges remains a critical task for drinking water plants. In this study, sodium bisulfite (BS) activated potassium permanganate (PM), namely, the PM/BS process, was employed for the removal of geosmin (GSM), and its applicability to 2-methylisoborneol (2-MIB), another common odorant was assessed. This study demonstrated a removal efficiency of up to 94 % for GSM, identified the optimal PM:BS mass ratio (1:3.3), and explored key reactive species involved at the laboratory scale. The practical application of natural organic matter (NOM) in raw water has been identified as the main factor influencing efficacy of the PM/BS process. Powdered activated carbon (PAC) was integrated into the PM/BS process to enhance the removal of GSM. The effectiveness of PAC, PM/BS, and PM/BS-PAC for GSM removal was investigated in both laboratory- and pilot-scale trials. In addition, the residual Mn",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Harnessing reactive manganese species for geosmin abatement in the permanganate/bisulfite process: From bench-scale to pilot-scale applications. Harnessing reactive manganese species for geosmin abatement in the permanganate/bisulfite process: From bench-scale to pilot-scale applications. Harnessing reactive manganese species for geosmin abatement in the permanganate/bisulfite process: From bench-scale to pilot-scale applications. The eutrophication of drinking water sources has led to outbreaks of algal blooms during hot weather, leading to significant odor issues in the drinking water supply. Addressing these odor challenges remains a critical task for drinking water plants. In this study, sodium bisulfite (BS) activated potassium permanganate (PM), namely, the PM/BS process, was employed for the removal of geosmin (GSM), and its applicability to 2-methylisoborneol (2-MIB), another common odorant was assessed. This study demonstrated a removal efficiency of up to 94 % for GSM, identified the optimal PM:BS mass ratio (1:3.3), and explored key reactive species involved at the laboratory scale. The practical application of natural organic matter (NOM) in raw water has been identified as the main factor influencing efficacy of the PM/BS process. Powdered activated carbon (PAC) was integrated into the PM/BS process to enhance the removal of GSM. The effectiveness of PAC, PM/BS, and PM/BS-PAC for GSM removal was investigated in both laboratory- and pilot-scale trials. In addition, the residual Mn"
+        },
+        {
+          "rank": 45,
+          "score": 0.5104402303695679,
+          "doc_id": "",
+          "title": "Laser-Programmed Spatial Relay Catalysis on Co─Ag Dual Heterojunctions for Efficient Nitrate-to-Ammonia Conversion via Migratory *NO",
+          "abstract": "Electrocatalytic nitrate (NO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Laser-Programmed Spatial Relay Catalysis on Co─Ag Dual Heterojunctions for Efficient Nitrate-to-Ammonia Conversion via Migratory *NO Laser-Programmed Spatial Relay Catalysis on Co─Ag Dual Heterojunctions for Efficient Nitrate-to-Ammonia Conversion via Migratory *NO Laser-Programmed Spatial Relay Catalysis on Co─Ag Dual Heterojunctions for Efficient Nitrate-to-Ammonia Conversion via Migratory *NO Electrocatalytic nitrate (NO"
+        },
+        {
+          "rank": 46,
+          "score": 0.5092941522598267,
+          "doc_id": "",
+          "title": "Enhancing nitrogen removal in low C/N wastewater via carbon resource recovery from biochar-mediated anaerobic digestion of discarded cefradine residues.",
+          "abstract": "Carbon source limitation remains a key bottleneck for efficient nitrogen removal in low C/N wastewater treatment. Discarded medicines, rich in excipients, represent a potential carbon source, but their recovery is challenged by residual pharmaceutical toxicity. In this study, a novel integrated strategy was proposed that combines carbon recovery from discarded cefradine medicine residues (DCMR) with nitrogen removal in low C/N municipal wastewater (LCNMW). Thermo-alkaline pretreatment effectively degraded cefradine and reduced biotoxicity, producing sucrose-rich DCMR, and then DCMR were subjected to biochar-mediated anaerobic digestion. Biochar alleviated acid inhibition and maintained stable anaerobic digestion performance, enabling the production of methane (286.8 mL/g COD) and bioavailable carbon-rich fermentation liquid (4081.3 mg/L COD). The biochar's porous structure and conductivity not only facilitated the enrichment of acidogenic bacteria (e.g., Mesotoga), antibiotic-degrading and electroactive microbes (e.g., Desulfovibrio, Syntrophobacter), and methanogens (e.g., Methanobacterium, Methanosaeta), but also stimulated microbial interspecies hydrogen transfer and direct interspecies electron transfer. These accelerated volatile fatty acids consumption, cefradine removal, and methane production. Subsequently, fermentation liquid was used as the supplementary carbon source for LCNMW biotreatment, improving total nitrogen (TN) removal by over 30%, and effluent concentrations of COD, TN, and NH₄⁺-N met local discharge standards. Enhanced TN removal was supported by the increased abundances of nitrification and denitrification genes (e.g., hao, nxr, nar, nir). The low ecological risks and non-biotoxicity of final effluent, obvious costs saving of commercial carbon source, as well as great potential of carbon emissions reduction confirmed the environmental and economic sustainability of whole process. This study provides a promising approach for coupling hazardous waste valorization with enhanced nitrogen removal in low C/N wastewater treatment systems.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Enhancing nitrogen removal in low C/N wastewater via carbon resource recovery from biochar-mediated anaerobic digestion of discarded cefradine residues. Enhancing nitrogen removal in low C/N wastewater via carbon resource recovery from biochar-mediated anaerobic digestion of discarded cefradine residues. Enhancing nitrogen removal in low C/N wastewater via carbon resource recovery from biochar-mediated anaerobic digestion of discarded cefradine residues. Carbon source limitation remains a key bottleneck for efficient nitrogen removal in low C/N wastewater treatment. Discarded medicines, rich in excipients, represent a potential carbon source, but their recovery is challenged by residual pharmaceutical toxicity. In this study, a novel integrated strategy was proposed that combines carbon recovery from discarded cefradine medicine residues (DCMR) with nitrogen removal in low C/N municipal wastewater (LCNMW). Thermo-alkaline pretreatment effectively degraded cefradine and reduced biotoxicity, producing sucrose-rich DCMR, and then DCMR were subjected to biochar-mediated anaerobic digestion. Biochar alleviated acid inhibition and maintained stable anaerobic digestion performance, enabling the production of methane (286.8 mL/g COD) and bioavailable carbon-rich fermentation liquid (4081.3 mg/L COD). The biochar's porous structure and conductivity not only facilitated the enrichment of acidogenic bacteria (e.g., Mesotoga), antibiotic-degrading and electroactive microbes (e.g., Desulfovibrio, Syntrophobacter), and methanogens (e.g., Methanobacterium, Methanosaeta), but also stimulated microbial interspecies hydrogen transfer and direct interspecies electron transfer. These accelerated volatile fatty acids consumption, cefradine removal, and methane production. Subsequently, fermentation liquid was used as the supplementary carbon source for LCNMW biotreatment, improving total nitrogen (TN) removal by over 30%, and effluent concentrations of COD, TN, and NH₄⁺-N met local discharge standards. Enhanced TN removal was supported by the increased abundances of nitrification and denitrification genes (e.g., hao, nxr, nar, nir). The low ecological risks and non-biotoxicity of final effluent, obvious costs saving of commercial carbon source, as well as great potential of carbon emissions reduction confirmed the environmental and economic sustainability of whole process. This study provides a promising approach for coupling hazardous waste valorization with enhanced nitrogen removal in low C/N wastewater treatment systems."
+        },
+        {
+          "rank": 47,
+          "score": 0.5090157389640808,
+          "doc_id": "",
+          "title": "Selective breeding boosts oyster resilience to ocean acidification via energy budget modulation.",
+          "abstract": "Natural pH variability in coastal-estuarine systems exacerbates OAX events through frequent pCO",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Selective breeding boosts oyster resilience to ocean acidification via energy budget modulation. Selective breeding boosts oyster resilience to ocean acidification via energy budget modulation. Selective breeding boosts oyster resilience to ocean acidification via energy budget modulation. Natural pH variability in coastal-estuarine systems exacerbates OAX events through frequent pCO"
+        },
+        {
+          "rank": 48,
+          "score": 0.5063947439193726,
+          "doc_id": "",
+          "title": "Improving Perovskite/CIGS Tandem Solar Cells for Higher Power Conversion Efficiency through Light Management and Bandgap Engineering.",
+          "abstract": "Perovskite and chalcopyrite materials are excellent absorbers for highly efficient, all-thin-film tandem solar cells. This work presents a certified world record for such a device, achieving a power conversion efficiency of 24.6 ± 1.1% under steady-state conditions. The best ",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "Improving Perovskite/CIGS Tandem Solar Cells for Higher Power Conversion Efficiency through Light Management and Bandgap Engineering. Improving Perovskite/CIGS Tandem Solar Cells for Higher Power Conversion Efficiency through Light Management and Bandgap Engineering. Improving Perovskite/CIGS Tandem Solar Cells for Higher Power Conversion Efficiency through Light Management and Bandgap Engineering. Perovskite and chalcopyrite materials are excellent absorbers for highly efficient, all-thin-film tandem solar cells. This work presents a certified world record for such a device, achieving a power conversion efficiency of 24.6 ± 1.1% under steady-state conditions. The best "
+        },
+        {
+          "rank": 49,
+          "score": 0.5060375332832336,
+          "doc_id": "",
+          "title": "The CtrCBL1/CtrCIPK6 Complex of Citrus Phosphorylates CtrBBX32 to Regulate CtrSTP1-Mediated Sugar Accumulation and Cold Tolerance.",
+          "abstract": "Sugar accumulation is a crucial adaptive strategy for plant cold tolerance, yet its regulatory mechanisms in the roots under cold conditions remain largely unclear. Here, a cold-inducible sugar transporter protein (CtrSTP1), which is highly expressed in the roots of trifoliate orange (Citrus trifoliata L.), is identified. CtrSTP1 functions positively in cold tolerance by facilitating sugar accumulation in the roots. Two transcription factors, CtrBBX32 and CtrZAT10, bind to the CtrSTP1 promoter, with CtrBBX32 acting as transcriptional repressor and CtrZAT10 as activator. CtrBBX32 also suppresses CtrZAT10 expression. Accordingly, CtrBBX32 and CtrZAT10 act as negative and positive regulators, respectively, of cold tolerance by modulating CtrSTP1 expression. Moreover, CtrCBL1 and CtrCIPK6 form a complex to phosphorylate CtrBBX32 and promote its protein degradation, leading to relief of CtrBBX32-mediated repression on CtrZAT10 and CtrSTP1. Further transgenic evidence confirms that CtrCIPK6 plays a positive role in cold tolerance through modulating the sugar pathway. Taken together, these findings uncover a novel regulatory module composed of CtrCBL1/CtrCIPK6-CtrBBX32 that controls cold-induced sugar accumulation by directly or indirectly (via CtrZAT10) modulating the expression of the root-localized CtrSTP1. The work provides valuable knowledge to advance the understanding of sugar transport and homeostasis in the roots when plants are exposed to adverse environments.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "The CtrCBL1/CtrCIPK6 Complex of Citrus Phosphorylates CtrBBX32 to Regulate CtrSTP1-Mediated Sugar Accumulation and Cold Tolerance. The CtrCBL1/CtrCIPK6 Complex of Citrus Phosphorylates CtrBBX32 to Regulate CtrSTP1-Mediated Sugar Accumulation and Cold Tolerance. The CtrCBL1/CtrCIPK6 Complex of Citrus Phosphorylates CtrBBX32 to Regulate CtrSTP1-Mediated Sugar Accumulation and Cold Tolerance. Sugar accumulation is a crucial adaptive strategy for plant cold tolerance, yet its regulatory mechanisms in the roots under cold conditions remain largely unclear. Here, a cold-inducible sugar transporter protein (CtrSTP1), which is highly expressed in the roots of trifoliate orange (Citrus trifoliata L.), is identified. CtrSTP1 functions positively in cold tolerance by facilitating sugar accumulation in the roots. Two transcription factors, CtrBBX32 and CtrZAT10, bind to the CtrSTP1 promoter, with CtrBBX32 acting as transcriptional repressor and CtrZAT10 as activator. CtrBBX32 also suppresses CtrZAT10 expression. Accordingly, CtrBBX32 and CtrZAT10 act as negative and positive regulators, respectively, of cold tolerance by modulating CtrSTP1 expression. Moreover, CtrCBL1 and CtrCIPK6 form a complex to phosphorylate CtrBBX32 and promote its protein degradation, leading to relief of CtrBBX32-mediated repression on CtrZAT10 and CtrSTP1. Further transgenic evidence confirms that CtrCIPK6 plays a positive role in cold tolerance through modulating the sugar pathway. Taken together, these findings uncover a novel regulatory module composed of CtrCBL1/CtrCIPK6-CtrBBX32 that controls cold-induced sugar accumulation by directly or indirectly (via CtrZAT10) modulating the expression of the root-localized CtrSTP1. The work provides valuable knowledge to advance the understanding of sugar transport and homeostasis in the roots when plants are exposed to adverse environments."
+        },
+        {
+          "rank": 50,
+          "score": 0.5050649642944336,
+          "doc_id": "",
+          "title": "An environmentally friendly process for Si recovery from end-of-life photovoltaic panels: Green swelling and mechanical crushing.",
+          "abstract": "The rapid growth in the installation of photovoltaic (PV) panels has made the recycling of end-of-life PV panels an urgent concern. Mechanical crushing is a promising approach for separating various components. However, the separation of glass and silicon powder remains challenging. This paper proposes an environmentally friendly process by combining green solvent swelling and mechanical crushing for glass separation and silicon enrichment from PV panels. The ethyl acetate was successfully used to separate glass from PV panels for the first time. Complete separation of glass was achieved under the optimal conditions (60 °C, 60 min, 8 ml/g, 120 W). The PV panels without glass were then crushed mechanically under shear force. The silicon was enriched to -0.25 mm with a recovery rate of 73.30 % and purity of 88.71 %. This study provides a new option for glass and silicon recovery from waste PV panels, which shows significant potential for industrial application.",
+          "source": "PubMed",
+          "embedding_mode": "3*title+abstract",
+          "embedding_text": "An environmentally friendly process for Si recovery from end-of-life photovoltaic panels: Green swelling and mechanical crushing. An environmentally friendly process for Si recovery from end-of-life photovoltaic panels: Green swelling and mechanical crushing. An environmentally friendly process for Si recovery from end-of-life photovoltaic panels: Green swelling and mechanical crushing. The rapid growth in the installation of photovoltaic (PV) panels has made the recycling of end-of-life PV panels an urgent concern. Mechanical crushing is a promising approach for separating various components. However, the separation of glass and silicon powder remains challenging. This paper proposes an environmentally friendly process by combining green solvent swelling and mechanical crushing for glass separation and silicon enrichment from PV panels. The ethyl acetate was successfully used to separate glass from PV panels for the first time. Complete separation of glass was achieved under the optimal conditions (60 °C, 60 min, 8 ml/g, 120 W). The PV panels without glass were then crushed mechanically under shear force. The silicon was enriched to -0.25 mm with a recovery rate of 73.30 % and purity of 88.71 %. This study provides a new option for glass and silicon recovery from waste PV panels, which shows significant potential for industrial application."
+        }
+      ]
+    }
+  ],
+  "meta": {},
+  "timestamp_kst": "2025-09-27T14:55:41.403811",
+  "trial_id": "758db5e6"
+}

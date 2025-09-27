@@ -12,7 +12,7 @@ def build_scifact_prompt(original_query: str, context_json_string: str) -> str:
     prompt_template = """You are a scientific fact verification system. Your task is to determine whether a scientific claim is SUPPORTED or REFUTED by the provided scientific literature.
 
 Given a scientific claim and relevant research documents, you must:
-1. Carefully analyze the provided research evidence
+1. Carefully analyze the provided research Documents
 2. Determine if the claim is supported or refuted.
 3. Provide a clear, evidence-based response
 
@@ -25,14 +25,13 @@ Do not use external knowledge. Base your analysis solely on the provided context
 {query}
 
 --- Instructions ---
-Analyze the scientific claim above using only the provided research documents. 
-Determine whether the claim is SUPPORTED or REFUTED by the evidence.
+Analyze the scientific claim above using only the provided research documents.
+Determine whether the claim is SUPPORT or REFUTE by the evidence.
 Provide a clear explanation based on the scientific evidence in the documents.
 
-Your response should include:
-1. Begin your determination (SUPPORTED/REFUTED)
+Your response should only include:
+1. Begin your determination (SUPPORT/REFUTE)
 2. Key evidence from the provided documents
-3. Scientific reasoning for your conclusion
 
 """
     return prompt_template.format(context=context_json_string, query=original_query)

@@ -9,6 +9,6 @@
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/250926_162151/vector_db_bge_m3_test_BAAI_bge-m3.csv",
-  "last_run": "250926_162151"
+  "output_file": "../results/vectordb/250927_053954/vector_db_bge_m3_test_BAAI_bge-m3.csv",
+  "last_run": "250927_053954"
 }

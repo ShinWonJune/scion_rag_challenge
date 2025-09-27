@@ -357,8 +357,14 @@ def main():
             # Gemini 사용 (기본)
             try:
                 api_key = get_gemini_api_key()
+                if not api_key:
+                    print("❌ Gemini API 키가 필요합니다.")
+                    return
             except KeyboardInterrupt:
                 print("\n❌ 사용자가 취소했습니다.")
+                return
+            except Exception as e:
+                print(f"❌ API 키 가져오기 실패: {e}")
                 return
             
             system = SearchMetaSystem(

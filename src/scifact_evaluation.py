@@ -60,7 +60,8 @@ def load_predictions(file_path: str) -> Dict[str, str]:
             reader = csv.DictReader(f)
             for row in reader:
                 question = row['question'].strip()
-                label = row['label'].strip()
+                # 새로운 형식에서는 predicted_label 사용
+                label = row.get('predicted_label', row.get('label', '')).strip()
                 predictions[question] = label
                 
         print(f"✅ 예측 데이터 로드 완료: {len(predictions)}개 항목")
@@ -316,12 +317,16 @@ def evaluate_scifact_predictions(ground_truth_path: str, predictions_path: str, 
     analyze_errors(questions, true_labels, pred_labels)
     
     # 결과 저장
-    if output_dir:
-        os.makedirs(output_dir, exist_ok=True)
-        from datetime import datetime
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_path = os.path.join(output_dir, f"scifact_evaluation_{timestamp}.json")
-        save_evaluation_results(metrics, output_path)
+    from datetime import datetime
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # output_dir이 제공되지 않으면 기본 디렉토리에 저장
+    if not output_dir:
+        output_dir = "/app/results/scifact_evaluation"
+    
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"scifact_evaluation_{timestamp}.json")
+    save_evaluation_results(metrics, output_path)
     
     return metrics
 

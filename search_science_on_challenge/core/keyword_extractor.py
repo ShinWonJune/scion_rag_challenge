@@ -1,4 +1,7 @@
 """
+다듬은 영문 프롬프트  + 중요도 기준 검색어 부분조합 세밀화 (키워드 3개 조합도 추가)
+
+
 키워드 추출기 모듈
 - Gemini API를 사용한 키워드 추출
 - 한국어/영어 키워드 분리
@@ -22,6 +25,9 @@ class KeywordExtractor:
             model_name: 사용할 Gemini 모델명
             language: 키워드 추출 언어 ("korean", "english", "all")
         """
+        if not api_key:
+            raise ValueError("API 키가 필요합니다. api_key 매개변수가 None이거나 비어있습니다.")
+        
         self.api_key = api_key
         self.model_name = model_name
         self.language = language
@@ -134,14 +140,14 @@ Keywords:
             keywords_text = response.text.strip()
             
             # 불필요한 접두사 제거
-            keywords_text = keywords_text.replace("English Keywords:", "").strip()
+            keywords_text = keywords_text.replace("Keywords:", "").strip()
             
             # 쉼표로 분리하고 정리
             keywords = [kw.strip() for kw in keywords_text.split(',')]
             keywords = [kw for kw in keywords if kw and len(kw) > 1]
-            
-            return keywords[:5]  # 최대 5개
-            
+
+            return keywords[:6]  # 최대 6개
+
         except Exception as e:
             logging.error(f"영어 키워드 추출 실패: {e}")
             return []
@@ -180,9 +186,9 @@ Keywords:
             # 중복 제거 및 정리
             search_terms = list(set(search_terms))
             search_terms = [term for term in search_terms if term.strip()]
-            
+
             return search_terms[:15]  # 최대 15개 검색어
-            
+
         except Exception as e:
             logging.error(f"검색어 생성 실패: {e}")
             return []
@@ -206,6 +212,7 @@ Keywords:
         if len(english_kw) > 1:
             mixed_terms.append('|'.join(english_kw[:4]))  # 4개까지
             if len(english_kw) > 2:
+                mixed_terms.append('|'.join(english_kw[:3]))  # 3개 조합도 추가
                 mixed_terms.append('|'.join(english_kw[:2]))  # 2개 조합도 추가
         
         # 개별 키워드도 검색어로 추가
@@ -213,3 +220,29 @@ Keywords:
         mixed_terms.extend(english_kw[:3])  # 상위 3개 영어 키워드
         
         return mixed_terms
+    
+    def _generate_keyword_rotations(self, keywords: List[str]) -> List[str]:
+        """
+        각 키워드가 맨 앞으로 한번씩 오는 검색어 조합 생성
+        
+        Args:
+            keywords: 키워드 리스트
+            
+        Returns:
+            각 키워드를 맨 앞으로 한 조합들의 리스트
+        """
+        rotations = []
+        
+        if len(keywords) <= 1:
+            return rotations
+            
+        # 원본 순서 (이미 포함되어 있으므로 주석 처리)
+        # rotations.append('|'.join(keywords))
+        
+        # 각 키워드를 맨 앞으로 한 조합 (첫 번째 제외, 이미 원본에 포함)
+        for i in range(1, len(keywords)):
+            # i번째 키워드를 맨 앞으로, 나머지는 원본 순서 유지
+            rotated = [keywords[i]] + keywords[:i] + keywords[i+1:]
+            rotations.append('|'.join(rotated))
+        
+        return rotations
