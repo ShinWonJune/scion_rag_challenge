@@ -126,8 +126,8 @@ Requirements:
 1. Extract ONLY English keywords
 2. Prioritize technical terms and scientific jargon
 3. In the case of abbreviations, use both the abbreviation and the full term as keywords
-4. Each keyword should be concise, within 1-20 characters
-5. Extract 3-7 keywords
+4. For a keyword phrase consisting of two or more words, like 'RNA surveillance', split it into individual keywords: 'RNA' and 'surveillance'. 'Healthy volunteers' -> 'Healthy', 'volunteers'
+5. After extracting the keywords, list 5~7 in order of importance
 6. List them in descending order of importance
 
 Output Format: keyword1, keyword2, keyword3, keyword4
