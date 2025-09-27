@@ -1,0 +1,15 @@
+{
+  "dataset": "MIRACL Korean (Real)",
+  "language": "ko",
+  "source": "HuggingFace: miracl/miracl",
+  "total_queries": 213,
+  "total_qrels": 3057,
+  "download_date": "2025-09-27",
+  "files": {
+    "topics_tsv": "miracl-v1.0-ko/topics/topics.miracl-v1.0-ko-dev.tsv",
+    "qrels_tsv": "miracl-v1.0-ko/qrels/qrels.miracl-v1.0-ko-dev.tsv",
+    "topics_jsonl": "topics_ko_dev.jsonl",
+    "qrels_jsonl": "qrels_ko_dev.jsonl"
+  },
+  "note": "이는 실제 MIRACL 데이터셋입니다. 코퍼스는 별도로 다운로드해야 합니다."
+}
