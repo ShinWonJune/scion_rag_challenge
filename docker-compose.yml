@@ -5,7 +5,7 @@ services:
     build: .
     container_name: vllm-rag-server
     ports:
-      - "8000:8000"
+      - "8004:8000"
     volumes:
       - .:/app
     environment:
