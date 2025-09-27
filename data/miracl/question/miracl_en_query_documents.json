@@ -1,0 +1,528 @@
+[
+  {
+    "query_id": "5",
+    "query": "Was there a year 0?",
+    "documents": [
+      {
+        "doc_id": "2551",
+        "title": "Astronomical year numbering"
+      },
+      {
+        "doc_id": "4145437",
+        "title": "Year zero"
+      },
+      {
+        "doc_id": "4145437",
+        "title": "Year zero"
+      },
+      {
+        "doc_id": "4145437",
+        "title": "Year zero"
+      }
+    ]
+  },
+  {
+    "query_id": "8",
+    "query": "Have the Colorado Rockies won a title?",
+    "documents": [
+      {
+        "doc_id": "6669",
+        "title": "Colorado Rockies"
+      },
+      {
+        "doc_id": "20243618",
+        "title": "List of Colorado Rockies seasons"
+      }
+    ]
+  },
+  {
+    "query_id": "9",
+    "query": "Who invented Hangul?",
+    "documents": [
+      {
+        "doc_id": "16749",
+        "title": "Korea"
+      },
+      {
+        "doc_id": "159204",
+        "title": "Sejong the Great"
+      },
+      {
+        "doc_id": "17470560",
+        "title": "Origin of Hangul"
+      },
+      {
+        "doc_id": "293150",
+        "title": "Hangul Day"
+      },
+      {
+        "doc_id": "44065032",
+        "title": "Hangul supremacy"
+      },
+      {
+        "doc_id": "430052",
+        "title": "Christianity in Korea"
+      },
+      {
+        "doc_id": "53450764",
+        "title": "Statue of King Sejong (Gwanghwamun)"
+      }
+    ]
+  },
+  {
+    "query_id": "30",
+    "query": "When was special relativity developed?",
+    "documents": [
+      {
+        "doc_id": "14909",
+        "title": "Inertia"
+      },
+      {
+        "doc_id": "26962",
+        "title": "Special relativity"
+      },
+      {
+        "doc_id": "20069953",
+        "title": "Special relativity (alternative formulations)"
+      },
+      {
+        "doc_id": "198507",
+        "title": "Scientific theory"
+      }
+    ]
+  },
+  {
+    "query_id": "45",
+    "query": "What is within a nucleus of a cell?",
+    "documents": [
+      {
+        "doc_id": "5184",
+        "title": "Cytoplasm"
+      },
+      {
+        "doc_id": "6235",
+        "title": "Cell nucleus"
+      },
+      {
+        "doc_id": "47719891",
+        "title": "Cell communication (biology)"
+      }
+    ]
+  },
+  {
+    "query_id": "58",
+    "query": "When did Michelangelo create the David?",
+    "documents": [
+      {
+        "doc_id": "21019",
+        "title": "Michelangelo"
+      },
+      {
+        "doc_id": "36684",
+        "title": "David (Michelangelo)"
+      }
+    ]
+  },
+  {
+    "query_id": "59",
+    "query": "When was the Nazi party founded?",
+    "documents": [
+      {
+        "doc_id": "21736",
+        "title": "Nazi Party"
+      },
+      {
+        "doc_id": "5080441",
+        "title": "Ulrich Graf"
+      }
+    ]
+  },
+  {
+    "query_id": "65",
+    "query": "When was the Prohibition Era in the US?",
+    "documents": [
+      {
+        "doc_id": "6886",
+        "title": "Chicago"
+      },
+      {
+        "doc_id": "24856",
+        "title": "Prohibition"
+      },
+      {
+        "doc_id": "1749065",
+        "title": "Beer in the United States"
+      },
+      {
+        "doc_id": "22418955",
+        "title": "Prohibition in the United States"
+      },
+      {
+        "doc_id": "307316",
+        "title": "Prohibition Party"
+      }
+    ]
+  },
+  {
+    "query_id": "69",
+    "query": "What is the largest asteroid?",
+    "documents": [
+      {
+        "doc_id": "791",
+        "title": "Asteroid"
+      },
+      {
+        "doc_id": "4511790",
+        "title": "Asteroids in fiction"
+      },
+      {
+        "doc_id": "5595163",
+        "title": "Ceres (dwarf planet)"
+      },
+      {
+        "doc_id": "532253",
+        "title": "C-type asteroid"
+      }
+    ]
+  },
+  {
+    "query_id": "70",
+    "query": "When did the American Renaissance happen?",
+    "documents": [
+      {
+        "doc_id": "25532",
+        "title": "Renaissance"
+      },
+      {
+        "doc_id": "1496260",
+        "title": "American Renaissance (literature)"
+      },
+      {
+        "doc_id": "324483",
+        "title": "American Renaissance"
+      }
+    ]
+  },
+  {
+    "query_id": "71",
+    "query": "What does GDP stand for?",
+    "documents": [
+      {
+        "doc_id": "12594",
+        "title": "Gross domestic product"
+      },
+      {
+        "doc_id": "8497211",
+        "title": "Income and fertility"
+      },
+      {
+        "doc_id": "380845",
+        "title": "List of countries by GDP (nominal)"
+      },
+      {
+        "doc_id": "510501",
+        "title": "Real gross domestic product"
+      },
+      {
+        "doc_id": "717591",
+        "title": "Real versus nominal value (economics)"
+      },
+      {
+        "doc_id": "972079",
+        "title": "Genuine progress indicator"
+      }
+    ]
+  },
+  {
+    "query_id": "83",
+    "query": "Can you over-water a cactus?",
+    "documents": [
+      {
+        "doc_id": "7819",
+        "title": "Cactus"
+      },
+      {
+        "doc_id": "1878531",
+        "title": "Cleistocactus strausii"
+      },
+      {
+        "doc_id": "18947783",
+        "title": "Echinopsis pachanoi"
+      }
+    ]
+  },
+  {
+    "query_id": "86",
+    "query": "What is the newest member country to join NATO?",
+    "documents": [
+      {
+        "doc_id": "21133",
+        "title": "NATO"
+      },
+      {
+        "doc_id": "17046267",
+        "title": "Enlargement of NATO"
+      },
+      {
+        "doc_id": "22354388",
+        "title": "Accession of Macedonia to NATO"
+      }
+    ]
+  },
+  {
+    "query_id": "95",
+    "query": "Who has to initiate a plea bargain?",
+    "documents": [
+      {
+        "doc_id": "23476",
+        "title": "Plea bargain"
+      },
+      {
+        "doc_id": "27178362",
+        "title": "Plea bargaining in the United States"
+      }
+    ]
+  },
+  {
+    "query_id": "115",
+    "query": "Is there a language other than Spanish spoken in Spain?",
+    "documents": [
+      {
+        "doc_id": "26667",
+        "title": "Spain"
+      },
+      {
+        "doc_id": "26825",
+        "title": "Spanish language"
+      },
+      {
+        "doc_id": "55002",
+        "title": "Autonomous communities of Spain"
+      },
+      {
+        "doc_id": "125290",
+        "title": "Names given to the Spanish language"
+      }
+    ]
+  },
+  {
+    "query_id": "122",
+    "query": "Who is the current political leader of Indonesia?",
+    "documents": [
+      {
+        "doc_id": "14579",
+        "title": "Indonesia"
+      },
+      {
+        "doc_id": "10011631",
+        "title": "President of Indonesia"
+      },
+      {
+        "doc_id": "10011631",
+        "title": "President of Indonesia"
+      }
+    ]
+  },
+  {
+    "query_id": "135",
+    "query": "Do jelly fish have nervous systems?",
+    "documents": [
+      {
+        "doc_id": "5232",
+        "title": "Chondrichthyes"
+      },
+      {
+        "doc_id": "21944",
+        "title": "Nervous system"
+      },
+      {
+        "doc_id": "47271",
+        "title": "Sponge"
+      },
+      {
+        "doc_id": "50185",
+        "title": "Jellyfish"
+      },
+      {
+        "doc_id": "12968838",
+        "title": "Atolla jellyfish"
+      },
+      {
+        "doc_id": "33644895",
+        "title": "Evolution of nervous systems"
+      }
+    ]
+  },
+  {
+    "query_id": "241",
+    "query": "When was Heart of Darkness published?",
+    "documents": [
+      {
+        "doc_id": "13535",
+        "title": "Heart of Darkness"
+      },
+      {
+        "doc_id": "190287",
+        "title": "Congo Free State"
+      }
+    ]
+  },
+  {
+    "query_id": "252",
+    "query": "How old were the West Memphis Three when they were convicted in 1994?",
+    "documents": [
+      {
+        "doc_id": "8832",
+        "title": "West Memphis Three"
+      }
+    ]
+  },
+  {
+    "query_id": "253",
+    "query": "What language was spoken in Punjab?",
+    "documents": [
+      {
+        "doc_id": "23235",
+        "title": "Pakistan"
+      },
+      {
+        "doc_id": "24717",
+        "title": "Punjab"
+      },
+      {
+        "doc_id": "24751",
+        "title": "Punjab, Pakistan"
+      },
+      {
+        "doc_id": "25044",
+        "title": "Punjabi language"
+      },
+      {
+        "doc_id": "6237447",
+        "title": "Punjabi culture"
+      },
+      {
+        "doc_id": "583048",
+        "title": "Punjabis"
+      },
+      {
+        "doc_id": "680210",
+        "title": "West Punjab"
+      }
+    ]
+  },
+  {
+    "query_id": "264",
+    "query": "What is encryption?",
+    "documents": [
+      {
+        "doc_id": "10294",
+        "title": "Encryption"
+      },
+      {
+        "doc_id": "1287154",
+        "title": "Share (P2P)"
+      },
+      {
+        "doc_id": "1467336",
+        "title": "Secure communication"
+      },
+      {
+        "doc_id": "1845155",
+        "title": "Disk encryption software"
+      },
+      {
+        "doc_id": "26283156",
+        "title": "State v. Levie"
+      }
+    ]
+  },
+  {
+    "query_id": "278",
+    "query": "Who was the first heavy metal band?",
+    "documents": [
+      {
+        "doc_id": "13869",
+        "title": "Heavy metal music"
+      }
+    ]
+  },
+  {
+    "query_id": "279",
+    "query": "How much money did the Sydney Opera House cost to build?",
+    "documents": [
+      {
+        "doc_id": "28222",
+        "title": "Sydney Opera House"
+      },
+      {
+        "doc_id": "903029",
+        "title": "Planning fallacy"
+      }
+    ]
+  },
+  {
+    "query_id": "289",
+    "query": "What is atomic mass?",
+    "documents": [
+      {
+        "doc_id": "902",
+        "title": "Atom"
+      },
+      {
+        "doc_id": "5659",
+        "title": "Chemical element"
+      },
+      {
+        "doc_id": "19604151",
+        "title": "Atomic mass"
+      },
+      {
+        "doc_id": "19604151",
+        "title": "Atomic mass"
+      },
+      {
+        "doc_id": "19604151",
+        "title": "Atomic mass"
+      },
+      {
+        "doc_id": "19604151",
+        "title": "Atomic mass"
+      },
+      {
+        "doc_id": "19604151",
+        "title": "Atomic mass"
+      },
+      {
+        "doc_id": "19604151",
+        "title": "Atomic mass"
+      },
+      {
+        "doc_id": "19604151",
+        "title": "Atomic mass"
+      },
+      {
+        "doc_id": "213968",
+        "title": "Relative atomic mass"
+      }
+    ]
+  },
+  {
+    "query_id": "292",
+    "query": "Does the Netherlands have universal healthcare?",
+    "documents": [
+      {
+        "doc_id": "21148",
+        "title": "Netherlands"
+      },
+      {
+        "doc_id": "15297282",
+        "title": "Healthcare in the Netherlands"
+      },
+      {
+        "doc_id": "15297282",
+        "title": "Healthcare in the Netherlands"
+      }
+    ]
+  }
+]
