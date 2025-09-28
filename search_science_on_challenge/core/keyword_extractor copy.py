@@ -1,6 +1,5 @@
 """
-Wikipedia를 위한 extractor
-검색어에 한국어 영어 혼용하지 않음
+다듬은 영문 프롬프트  + 중요도 기준 검색어 부분조합 세밀화 (키워드 3개 조합도 추가)
 
 
 키워드 추출기 모듈
@@ -81,15 +80,15 @@ class KeywordExtractor:
     def _extract_korean_keywords(self, query: str) -> List[str]:
         """한국어 키워드 추출"""
         prompt = f"""
-당신은 검색을 위한 키워드 추출 전문가입니다. 주어진 질문에서 가장 중요하고 검색에 유용한 키워드를 한국어로 추출해주세요.
+당신은 논문 검색을 위한 키워드 추출 전문가입니다. 주어진 질문에서 가장 중요하고 검색에 유용한 키워드를 한국어로 추출해주세요.
 
 질문: "{query}"
 
 요구사항:
 - 전문용어와 기술용어를 우선적으로 선택
 - 축약어의 경우에는 축약어와 전체단어 모두 사용 키워드로 만드세요. 
-- 두개 이상의 단어로 이루어진 키워드 구절의 경우, 'RNA 감시' -> 'RNA', '감시' 처럼 개별 키워드로 분리하세요. '건강한 자원자' -> '건강한', '자원자'
-- 2~5개 단어 추출
+- 각 키워드는 1-20자 이내로 간결하게
+- 3-7개 단어
 - 중요도가 높은 순서대로 나열
 
 
@@ -128,7 +127,7 @@ Requirements:
 2. Prioritize technical terms and scientific jargon
 3. In the case of abbreviations, use both the abbreviation and the full term as keywords
 4. For a keyword phrase consisting of two or more words, like 'RNA surveillance', split it into individual keywords: 'RNA' and 'surveillance'. 'Healthy volunteers' -> 'Healthy', 'volunteers'
-5. After extracting the keywords, list 2~5 in order of importance
+5. After extracting the keywords, list 5~7 in order of importance
 6. List them in descending order of importance
 
 Output Format: keyword1, keyword2, keyword3, keyword4
@@ -147,7 +146,7 @@ Keywords:
             keywords = [kw.strip() for kw in keywords_text.split(',')]
             keywords = [kw for kw in keywords if kw and len(kw) > 1]
 
-            return keywords[:5]  # 최대 5개
+            return keywords[:6]  # 최대 6개
 
         except Exception as e:
             logging.error(f"영어 키워드 추출 실패: {e}")
@@ -199,28 +198,22 @@ Keywords:
         mixed_terms = []
         
         # 한국어 + 영어 조합 (더 많은 조합)
-        # if korean_kw and english_kw:
-        #     for kr in korean_kw[:3]:  # 상위 3개
-        #         for en in english_kw[:3]:  # 상위 3개
-        #             mixed_terms.append(f"{kr}|{en}")
+        if korean_kw and english_kw:
+            for kr in korean_kw[:3]:  # 상위 3개
+                for en in english_kw[:3]:  # 상위 3개
+                    mixed_terms.append(f"{kr}|{en}")
         
         # 부분 조합 (더 긴 조합)
-        if len(korean_kw) >=4:
+        if len(korean_kw) > 1:
             mixed_terms.append('|'.join(korean_kw[:4]))  # 4개까지
-        elif len(korean_kw) >=3:
-            mixed_terms.append('|'.join(korean_kw[:3]))
-        elif len(korean_kw) >=2:
-            mixed_terms.append('|'.join(korean_kw[:2]))# 2개 조합도 추가
-
-        if len(english_kw) >=4:
-            mixed_terms.append('|'.join(english_kw[:4]))
-            mixed_terms.append('|'.join(english_kw[:3]))
-            mixed_terms.append('|'.join(english_kw[:2]))  # 4개까지
-        elif len(english_kw) >=3:
-            mixed_terms.append('|'.join(english_kw[:3]))
-            mixed_terms.append('|'.join(english_kw[:2]))  # 3개 조합도 추가
-        elif len(english_kw) >=2:
-            mixed_terms.append('|'.join(english_kw[:2]))  # 2개 조합도 추가
+            if len(korean_kw) > 2:
+                mixed_terms.append('|'.join(korean_kw[:2]))  # 2개 조합도 추가
+        
+        if len(english_kw) > 1:
+            mixed_terms.append('|'.join(english_kw[:4]))  # 4개까지
+            if len(english_kw) > 2:
+                mixed_terms.append('|'.join(english_kw[:3]))  # 3개 조합도 추가
+                mixed_terms.append('|'.join(english_kw[:2]))  # 2개 조합도 추가
         
         # 개별 키워드도 검색어로 추가
         mixed_terms.extend(korean_kw[:3])  # 상위 3개 한국어 키워드

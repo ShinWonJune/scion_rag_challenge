@@ -1,0 +1,379 @@
+{
+  "batch_statistics": {
+    "total_queries": 2,
+    "successful_queries": 2,
+    "failed_queries": 0,
+    "success_rate": 100.0,
+    "total_documents_found": 21,
+    "avg_documents_per_query": 10.5
+  },
+  "results": [
+    {
+      "status": "success",
+      "query": "로마의 면적은 서울시의 2배인가요?",
+      "keywords": {
+        "korean": [],
+        "english": [
+          "Rome",
+          "Seoul",
+          "Area",
+          "Size"
+        ]
+      },
+      "search_terms": [
+        "Seoul",
+        "Rome",
+        "Area",
+        "Rome|Seoul|Area|Size"
+      ],
+      "documents": [
+        {
+          "title": "Seoul",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Seoul",
+          "url": "https://en.wikipedia.org/wiki/Seoul",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "seoul"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "FC Seoul",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about FC Seoul",
+          "url": "https://en.wikipedia.org/wiki/FC_Seoul",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "fc seoul"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "1988 Summer Olympics",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about 1988 Summer Olympics",
+          "url": "https://en.wikipedia.org/wiki/1988_Summer_Olympics",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "1988 summer olympics"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Rome",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Rome",
+          "url": "https://en.wikipedia.org/wiki/Rome",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "rome"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Ancient Rome",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Ancient Rome",
+          "url": "https://en.wikipedia.org/wiki/Ancient_Rome",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "ancient rome"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Roman Empire",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Roman Empire",
+          "url": "https://en.wikipedia.org/wiki/Roman_Empire",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "roman empire"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Area",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Area",
+          "url": "https://en.wikipedia.org/wiki/Area",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "area"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Urban area",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Urban area",
+          "url": "https://en.wikipedia.org/wiki/Urban_area",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "urban area"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Schengen Area",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Schengen Area",
+          "url": "https://en.wikipedia.org/wiki/Schengen_Area",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "schengen area"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Second Battle of Seoul",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Second Battle of Seoul",
+          "url": "https://en.wikipedia.org/wiki/Second_Battle_of_Seoul",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "second battle of seoul"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        }
+      ],
+      "document_count": 10,
+      "processing_time": 9.494355916976929,
+      "sources": {
+        "Wikipedia": 10
+      }
+    },
+    {
+      "status": "success",
+      "query": "철학적 자연주의의 이론이 처음으로 등장한 것은 언제인가요?",
+      "keywords": {
+        "korean": [],
+        "english": [
+          "Naturalism",
+          "Philosophical",
+          "Origin",
+          "Emergence"
+        ]
+      },
+      "search_terms": [
+        "Origin",
+        "Naturalism|Philosophical|Origin|Emergence",
+        "Philosophical",
+        "Naturalism"
+      ],
+      "documents": [
+        {
+          "title": "Origin",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Origin",
+          "url": "https://en.wikipedia.org/wiki/Origin",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "origin"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "UBlock Origin",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about UBlock Origin",
+          "url": "https://en.wikipedia.org/wiki/UBlock_Origin",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "ublock origin"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Origin (Brown novel)",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Origin (Brown novel)",
+          "url": "https://en.wikipedia.org/wiki/Origin_(Brown_novel)",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "origin (brown novel)"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Philosophy",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Philosophy",
+          "url": "https://en.wikipedia.org/wiki/Philosophy",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "philosophy"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Nihilism",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Nihilism",
+          "url": "https://en.wikipedia.org/wiki/Nihilism",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "nihilism"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Emergence",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Emergence",
+          "url": "https://en.wikipedia.org/wiki/Emergence",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "emergence"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Philosophical skepticism",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Philosophical skepticism",
+          "url": "https://en.wikipedia.org/wiki/Philosophical_skepticism",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "philosophical skepticism"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Philosophical realism",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Philosophical realism",
+          "url": "https://en.wikipedia.org/wiki/Philosophical_realism",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "philosophical realism"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Naturalism",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Naturalism",
+          "url": "https://en.wikipedia.org/wiki/Naturalism",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "naturalism"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Naturalism (philosophy)",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Naturalism (philosophy)",
+          "url": "https://en.wikipedia.org/wiki/Naturalism_(philosophy)",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "naturalism (philosophy)"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        },
+        {
+          "title": "Naturalism (literature)",
+          "authors": "Wikipedia Contributors",
+          "abstract": "Wikipedia article about Naturalism (literature)",
+          "url": "https://en.wikipedia.org/wiki/Naturalism_(literature)",
+          "publication_year": "",
+          "journal": "Wikipedia",
+          "keywords": [
+            "naturalism (literature)"
+          ],
+          "source": "Wikipedia",
+          "page_id": "",
+          "last_modified": "",
+          "word_count": 0
+        }
+      ],
+      "document_count": 11,
+      "processing_time": 15.309191703796387,
+      "sources": {
+        "Wikipedia": 11
+      }
+    }
+  ]
+}

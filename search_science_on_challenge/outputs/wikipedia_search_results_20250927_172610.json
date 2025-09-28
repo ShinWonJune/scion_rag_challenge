@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-27T17:26:10.604180",
+    "total_results": 1,
+    "language": "english",
+    "processing_stats": {
+      "start_time": null,
+      "end_time": null,
+      "total_queries": 0,
+      "successful_queries": 0,
+      "failed_queries": 0,
+      "total_documents": 0
+    }
+  },
+  "results": [
+    {
+      "status": "success",
+      "query": "What is machine learning?",
+      "search_terms": [
+        "What is machine learning?",
+        "learning",
+        "machine"
+      ],
+      "keywords": {
+        "korean": [],
+        "english": [
+          "learning",
+          "machine"
+        ]
+      },
+      "documents": [
+        {
+          "title": "Machine learning",
+          "page_id": 233488,
+          "url": "https://en.wikipedia.org/wiki/Machine_learning",
+          "snippet": "<span class=\"searchmatch\">Machine</span> <span class=\"searchmatch\">learning</span> (ML) <span class=\"searchmatch\">is</span> a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn"
+        },
+        {
+          "title": "Active learning (machine learning)",
+          "page_id": 28801798,
+          "url": "https://en.wikipedia.org/wiki/Active_learning_%28machine_learning%29",
+          "snippet": "Active <span class=\"searchmatch\">learning</span> <span class=\"searchmatch\">is</span> a special case of <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> in which a <span class=\"searchmatch\">learning</span> algorithm can interactively query a human user (or some other information source)"
+        },
+        {
+          "title": "Adversarial machine learning",
+          "page_id": 45049676,
+          "url": "https://en.wikipedia.org/wiki/Adversarial_machine_learning",
+          "snippet": "Adversarial <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> <span class=\"searchmatch\">is</span> the study of the attacks on <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> algorithms, and of the defenses against such attacks. A survey from May 2020"
+        },
+        {
+          "title": "Grokking (machine learning)",
+          "page_id": 77080272,
+          "url": "https://en.wikipedia.org/wiki/Grokking_%28machine_learning%29",
+          "snippet": "improvement on the held-out data. This contrasts with <span class=\"searchmatch\">what</span> <span class=\"searchmatch\">is</span> typically observed in <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span>, where generalization occurs gradually alongside improved"
+        },
+        {
+          "title": "Boosting (machine learning)",
+          "page_id": 90500,
+          "url": "https://en.wikipedia.org/wiki/Boosting_%28machine_learning%29",
+          "snippet": "In <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> (ML), boosting <span class=\"searchmatch\">is</span> an ensemble <span class=\"searchmatch\">learning</span> method that combines a set of less accurate models (called &quot;weak learners&quot;) to create a single"
+        },
+        {
+          "title": "Embedding (machine learning)",
+          "page_id": 79351893,
+          "url": "https://en.wikipedia.org/wiki/Embedding_%28machine_learning%29",
+          "snippet": "Embedding in <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> refers to a representation <span class=\"searchmatch\">learning</span> technique that maps complex, high-dimensional data into a lower-dimensional vector space"
+        },
+        {
+          "title": "Torch (machine learning)",
+          "page_id": 42571226,
+          "url": "https://en.wikipedia.org/wiki/Torch_%28machine_learning%29",
+          "snippet": "Torch <span class=\"searchmatch\">is</span> an open-source <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> library, a scientific computing framework, and a scripting language based on Lua. It provides LuaJIT interfaces"
+        },
+        {
+          "title": "Quantum machine learning",
+          "page_id": 44108758,
+          "url": "https://en.wikipedia.org/wiki/Quantum_machine_learning",
+          "snippet": "Quantum <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> (QML), pioneered by Ventura and Martinez and by Trugenberger in the late 1990s and early 2000s, <span class=\"searchmatch\">is</span> the study of quantum algorithms"
+        },
+        {
+          "title": "Timeline of machine learning",
+          "page_id": 50828755,
+          "url": "https://en.wikipedia.org/wiki/Timeline_of_machine_learning",
+          "snippet": "This page <span class=\"searchmatch\">is</span> a timeline of <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span>. Major discoveries, achievements, milestones and other major events in <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> are included. History"
+        },
+        {
+          "title": "Explainable artificial intelligence",
+          "page_id": 54575571,
+          "url": "https://en.wikipedia.org/wiki/Explainable_artificial_intelligence",
+          "snippet": "(XAI), often overlapping with interpretable AI or explainable <span class=\"searchmatch\">machine</span> <span class=\"searchmatch\">learning</span> (XML), <span class=\"searchmatch\">is</span> a field of research that explores methods that provide humans"
+        },
+        {
+          "title": "Learning",
+          "page_id": 183403,
+          "url": "https://en.wikipedia.org/wiki/Learning",
+          "snippet": "<span class=\"searchmatch\">Learning</span> is the process of acquiring new understanding, knowledge, behaviors, skills, values, attitudes, and preferences. The ability to learn is possessed"
+        },
+        {
+          "title": "Learning object",
+          "page_id": 18126,
+          "url": "https://en.wikipedia.org/wiki/Learning_object",
+          "snippet": "A <span class=\"searchmatch\">learning</span> object is &quot;a collection of content items, practice items, and assessment items that are combined based on a single <span class=\"searchmatch\">learning</span> objective&quot;. The"
+        },
+        {
+          "title": "Reinforcement learning",
+          "page_id": 66294,
+          "url": "https://en.wikipedia.org/wiki/Reinforcement_learning",
+          "snippet": "Reinforcement <span class=\"searchmatch\">learning</span> is one of the three basic machine <span class=\"searchmatch\">learning</span> paradigms, alongside supervised <span class=\"searchmatch\">learning</span> and unsupervised <span class=\"searchmatch\">learning</span>. Reinforcement <span class=\"searchmatch\">learning</span> differs"
+        },
+        {
+          "title": "Deep learning",
+          "page_id": 32472154,
+          "url": "https://en.wikipedia.org/wiki/Deep_learning",
+          "snippet": "In machine <span class=\"searchmatch\">learning</span>, deep <span class=\"searchmatch\">learning</span> focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation"
+        },
+        {
+          "title": "Learning curve (machine learning)",
+          "page_id": 59968610,
+          "url": "https://en.wikipedia.org/wiki/Learning_curve_%28machine_learning%29",
+          "snippet": "In machine <span class=\"searchmatch\">learning</span> (ML), a <span class=\"searchmatch\">learning</span> curve (or training curve) is a graphical representation that shows how a model&#039;s performance on a training set (and"
+        },
+        {
+          "title": "Sleep-learning",
+          "page_id": 1197808,
+          "url": "https://en.wikipedia.org/wiki/Sleep-learning",
+          "snippet": "Sleep-<span class=\"searchmatch\">learning</span> or sleep-teaching (also known as hypnopædia or hypnopedia) is an attempt to convey information to a sleeping person, typically by playing"
+        },
+        {
+          "title": "Meta-learning",
+          "page_id": 2432280,
+          "url": "https://en.wikipedia.org/wiki/Meta-learning",
+          "snippet": "Meta-<span class=\"searchmatch\">learning</span> is a branch of metacognition concerned with <span class=\"searchmatch\">learning</span> about one&#039;s own <span class=\"searchmatch\">learning</span> and <span class=\"searchmatch\">learning</span> processes. The term comes from the meta prefix&#039;s"
+        },
+        {
+          "title": "Educational technology",
+          "page_id": 1944675,
+          "url": "https://en.wikipedia.org/wiki/Educational_technology",
+          "snippet": "encompasses several domains including <span class=\"searchmatch\">learning</span> theory, computer-based training, online <span class=\"searchmatch\">learning</span>, and m-<span class=\"searchmatch\">learning</span> where mobile technologies are used. The"
+        },
+        {
+          "title": "Machine",
+          "page_id": 51462,
+          "url": "https://en.wikipedia.org/wiki/Machine",
+          "snippet": "A <span class=\"searchmatch\">machine</span> is a thermodynamic system that uses power to apply forces and control movement to perform an action. The term is commonly applied to artificial"
+        },
+        {
+          "title": "Wayback Machine",
+          "page_id": 23538754,
+          "url": "https://en.wikipedia.org/wiki/Wayback_Machine",
+          "snippet": "The Wayback <span class=\"searchmatch\">Machine</span> is a digital archive of the World Wide Web founded by the Internet Archive, an American nonprofit organization based in San Francisco"
+        },
+        {
+          "title": "Machine gun",
+          "page_id": 19690,
+          "url": "https://en.wikipedia.org/wiki/Machine_gun",
+          "snippet": "A <span class=\"searchmatch\">machine</span> gun (MG) is a fully automatic and rifled firearm designed for sustained direct fire. Automatic firearms of 20 mm (0.79 in) caliber or more are"
+        },
+        {
+          "title": "Machine to machine",
+          "page_id": 3867338,
+          "url": "https://en.wikipedia.org/wiki/Machine_to_machine",
+          "snippet": "<span class=\"searchmatch\">Machine</span> to <span class=\"searchmatch\">machine</span> (M2M) is direct communication between devices using any communications channel, including wired and wireless. M2M communication can"
+        },
+        {
+          "title": "Machining",
+          "page_id": 365765,
+          "url": "https://en.wikipedia.org/wiki/Machining",
+          "snippet": "<span class=\"searchmatch\">Machining</span> is a manufacturing process where a desired shape or part is created using the controlled removal of material, most often metal, from a larger"
+        },
+        {
+          "title": "Machine perception",
+          "page_id": 11920671,
+          "url": "https://en.wikipedia.org/wiki/Machine_perception",
+          "snippet": "<span class=\"searchmatch\">Machine</span> perception is the capability of a computer system to interpret data in a manner that is similar to the way humans use their senses to relate to"
+        },
+        {
+          "title": "Machine code",
+          "page_id": 20683,
+          "url": "https://en.wikipedia.org/wiki/Machine_code",
+          "snippet": "In computing, <span class=\"searchmatch\">machine</span> code is data encoded and structured to control a computer&#039;s central processing unit (CPU) via its programmable interface. A computer"
+        },
+        {
+          "title": "Gary Dell'Abate",
+          "page_id": 38207891,
+          "url": "https://en.wikipedia.org/wiki/Gary_Dell%27Abate",
+          "snippet": "House. Retrieved April 29, 2010. Archived at Ghostarchive and the Wayback <span class=\"searchmatch\">Machine</span>: &quot;Gary Dell&#039;Abate Finds Out He Might Not Be Italian&quot;. YouTube. 9 June 2020"
+        },
+        {
+          "title": "Machine (disambiguation)",
+          "page_id": 3128804,
+          "url": "https://en.wikipedia.org/wiki/Machine_%28disambiguation%29",
+          "snippet": "<span class=\"searchmatch\">machine</span>, or <span class=\"searchmatch\">machines</span> in Wiktionary, the free dictionary. A <span class=\"searchmatch\">machine</span> is a device that uses energy to perform some activity or task. <span class=\"searchmatch\">Machine</span>, <span class=\"searchmatch\">Machines</span>,"
+        }
+      ],
+      "document_count": 27,
+      "processing_time": 16.946670293807983,
+      "timestamp": "2025-09-27T17:26:10.603804"
+    }
+  ]
+}

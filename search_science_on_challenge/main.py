@@ -48,7 +48,9 @@ def print_usage():
   --use-chatgpt          - ChatGPT API 사용
   --chatgpt-model MODEL  - ChatGPT 모델 (기본: gpt-4o-mini)
   --keyword-lang LANG    - 키워드 언어 (all/korean/english, 기본: all)
-  --use-pubmed           - PubMed 검색 사용
+  --use-pubmed           - PubMed 검색 활성화 (기본: ScienceON 사용)
+  --use-scienceon        - ScienceON 검색 명시적 활성화
+  --use-wiki             - Wikipedia 검색 활성화
   --skip-keyword-extraction - 키워드 추출 건너뛰기
 
 ⚙️  환경 변수:
@@ -85,6 +87,7 @@ def parse_arguments():
     # 검색 플랫폼 옵션
     parser.add_argument('--use-scienceon', action='store_true', help='ScienceON 사용')
     parser.add_argument('--use-pubmed', action='store_true', help='PubMed 사용')
+    parser.add_argument('--use-wiki', action='store_true', help='Wikipedia 사용')
     parser.add_argument('--simple-test', action='store_true', help='간단 테스트 모드')
     
     # 검색 방식 옵션
@@ -182,7 +185,7 @@ def get_pubmed_credentials() -> tuple[str, str]:
     return "", ""
 
 
-def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = False, simple_test: bool = False):
+def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = False, use_wiki: bool = False, simple_test: bool = False):
     """단일 모드 실행"""
     print(f"🔍 단일 질문 처리 시작")
     print("=" * 50)
@@ -195,6 +198,13 @@ def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = Fal
         # 간단 테스트 모드
         if simple_test and use_pubmed:
             result = system.process_single_query_with_pubmed_simple(query)
+        # Wikipedia 사용
+        elif use_wiki:
+            if hasattr(system, 'process_single_query_with_wikipedia'):
+                result = system.process_single_query_with_wikipedia(query)
+            else:
+                print("⚠️  Wikipedia 검색 기능이 아직 구현되지 않았습니다. 기본 검색을 사용합니다.")
+                result = system.process_single_query(query)
         # PubMed 사용 여부에 따라 다른 메서드 호출
         elif use_pubmed:
             result = system.process_single_query_with_pubmed(query, True)
@@ -220,7 +230,101 @@ def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = Fal
         print(f"❌ 실행 중 오류 발생: {e}")
         logging.error(f"단일 모드 실행 실패: {e}")
 
-def run_batch_mode(system: SearchMetaSystem, csv_path: str, input_dir: str = '.', max_queries: int = None):
+def process_batch_with_platform(system: SearchMetaSystem, csv_path: str, max_queries: int = None, platform: str = 'scienceon'):
+    """플랫폼별 배치 처리"""
+    import pandas as pd
+    import time
+    from pathlib import Path
+    
+    try:
+        # CSV 파일 읽기
+        df = pd.read_csv(csv_path)
+        
+        # 컬럼 이름을 유연하게 찾기 (대소문자 무관)
+        question_col = None
+        for col in df.columns:
+            if col.lower() in ['question', 'query', 'text']:
+                question_col = col
+                break
+        
+        if question_col is None:
+            available_cols = ', '.join(df.columns.tolist())
+            return {"error": f"CSV 파일에 질문 컬럼을 찾을 수 없습니다. 사용 가능한 컬럼: {available_cols}"}
+        
+        questions = df[question_col].tolist()
+        if max_queries:
+            questions = questions[:max_queries]
+        
+        results = []
+        successful_queries = 0
+        failed_queries = 0
+        total_documents_found = 0
+        
+        print(f"📊 {len(questions)}개의 질문을 {platform.upper()}로 처리합니다...")
+        
+        for i, question in enumerate(questions):
+            print(f"진행률: {i+1}/{len(questions)} - {question[:30]}...")
+            
+            try:
+                if platform == 'wikipedia':
+                    result = system.process_single_query_with_wikipedia(question)
+                elif platform == 'pubmed':
+                    result = system.process_single_query_with_pubmed(question, True)
+                else:
+                    result = system.process_single_query(question)
+                
+                if result.get("status") == "success":
+                    successful_queries += 1
+                    total_documents_found += result.get('document_count', 0)
+                else:
+                    failed_queries += 1
+                
+                results.append(result)
+                
+            except Exception as e:
+                print(f"❌ 질문 {i+1} 처리 실패: {e}")
+                failed_queries += 1
+                results.append({"status": "error", "query": question, "error_message": str(e)})
+        
+        # 통계 계산
+        success_rate = (successful_queries / len(questions) * 100) if questions else 0
+        avg_documents_per_query = (total_documents_found / successful_queries) if successful_queries > 0 else 0
+        
+        # 결과를 기존 format과 맞추기
+        batch_result = {
+            "batch_statistics": {
+                "total_queries": len(questions),
+                "successful_queries": successful_queries,
+                "failed_queries": failed_queries,
+                "success_rate": success_rate,
+                "total_documents_found": total_documents_found,
+                "avg_documents_per_query": avg_documents_per_query
+            },
+            "results": results
+        }
+        
+        # 기존 로직과 동일하게 결과 저장
+        try:
+            output_file = system.file_manager.save_json_results(batch_result)
+            logging.info(f"결과가 {output_file}에 저장되었습니다.")
+            print(f"📁 결과 파일: {output_file}")
+        except Exception as e:
+            logging.error(f"결과 저장 실패: {e}")
+            print(f"⚠️  결과 저장 실패: {e}")
+        
+        return batch_result
+        
+    except FileNotFoundError:
+        return {"error": f"CSV 파일을 찾을 수 없습니다: {csv_path}"}
+    except pd.errors.EmptyDataError:
+        return {"error": f"CSV 파일이 비어있습니다: {csv_path}"}
+    except pd.errors.ParserError as e:
+        return {"error": f"CSV 파일 파싱 오류: {str(e)}"}
+    except Exception as e:
+        import traceback
+        return {"error": f"배치 처리 중 오류 발생: {str(e)}\n상세 오류:\n{traceback.format_exc()}"}
+
+def run_batch_mode(system: SearchMetaSystem, csv_path: str, input_dir: str = '.', max_queries: int = None, use_wiki: bool = False, use_pubmed: bool = False):
     """배치 모드 실행"""
     print(f"📊 배치 처리 시작")
     print("=" * 50)
@@ -242,7 +346,21 @@ def run_batch_mode(system: SearchMetaSystem, csv_path: str, input_dir: str = '.'
             print(f"❌ CSV 파일을 찾을 수 없습니다: {full_csv_path}")
             return
         
-        result = system.process_batch_from_csv(full_csv_path, max_queries=max_queries)
+        # 플랫폼에 따라 다른 배치 처리 방식 사용
+        if use_wiki:
+            print("🔍 Wikipedia 배치 처리 모드")
+            result = process_batch_with_platform(system, full_csv_path, max_queries, 'wikipedia')
+        elif use_pubmed:
+            print("🔍 PubMed 배치 처리 모드")
+            result = process_batch_with_platform(system, full_csv_path, max_queries, 'pubmed')
+        else:
+            print("🔍 ScienceON 배치 처리 모드")
+            result = system.process_batch_from_csv(full_csv_path, max_queries=max_queries)
+        
+        # 결과에 오류가 있는지 먼저 확인
+        if "error" in result:
+            print(f"❌ 배치 처리 실패: {result['error']}")
+            return
         
         batch_info = result.get("batch_statistics", {})
         if batch_info.get("total_queries", 0) > 0:
@@ -293,14 +411,10 @@ def main():
 
     command = args.command.lower()
 
-    # 플랫폼 선택
-    use_scienceon = args.use_scienceon or (not args.use_pubmed and not args.use_scienceon)  # 아무것도 안 쓰면 기본값
+    # 플랫폼 선택 로직 개선
     use_pubmed = args.use_pubmed
-    
-    # 플랫폼 선택 유효성 검사
-    if not use_scienceon and not use_pubmed:
-        print("❌ 적어도 하나의 검색 플랫폼을 선택해야 합니다.")
-        return
+    use_wiki = args.use_wiki
+    use_scienceon = args.use_scienceon or (not use_pubmed and not use_wiki)  # 다른 플랫폼이 선택되지 않으면 기본적으로 ScienceON 사용
     
     # 사용할 플랫폼 출력
     platforms = []
@@ -308,6 +422,8 @@ def main():
         platforms.append("ScienceON")
     if use_pubmed:
         platforms.append("PubMed")
+    if use_wiki:
+        platforms.append("Wikipedia")
     
     print(f"🔍 검색 플랫폼: {', '.join(platforms)}")
     
@@ -320,22 +436,16 @@ def main():
     
     # API 키 가져오기
     try:
-        # pubmed API 키 및 이메일 가져오기
-        pubmed_api_key, pubmed_email = get_pubmed_credentials()
         if args.use_vllm:
-            
             # vLLM 사용
             system = SearchMetaSystem(
                 gemini_api_key=None,
                 use_vllm=True,
-                pubmed_api_key=pubmed_api_key,
-                pubmed_email=pubmed_email,
                 vllm_base_url=args.vllm_url,
                 vllm_model=args.vllm_model,
                 skip_keyword_extraction=args.skip_keyword_extraction
             )
         elif args.use_chatgpt:
-            
             # ChatGPT 사용
             try:
                 openai_api_key = get_openai_api_key()
@@ -349,8 +459,6 @@ def main():
                 chatgpt_model=args.chatgpt_model,
                 openai_api_key=openai_api_key,
                 keyword_lang=args.keyword_lang,
-                pubmed_api_key=pubmed_api_key,
-                pubmed_email=pubmed_email,
                 skip_keyword_extraction=args.skip_keyword_extraction
             )
         else:
@@ -370,8 +478,6 @@ def main():
             system = SearchMetaSystem(
                 gemini_api_key=api_key,
                 keyword_lang=args.keyword_lang,
-                pubmed_api_key=pubmed_api_key,
-                pubmed_email=pubmed_email,
                 skip_keyword_extraction=args.skip_keyword_extraction
             )
             
@@ -388,7 +494,7 @@ def main():
                 return
 
             query = args.args[0]
-            run_single_mode(system, query, use_pubmed, args.simple_test)
+            run_single_mode(system, query, use_pubmed, use_wiki, args.simple_test)
             
         elif command == "batch":
             if len(args.args) < 1:
@@ -405,7 +511,7 @@ def main():
                     print("❌ 최대 질문 수는 숫자여야 합니다.")
                     return
             
-            run_batch_mode(system, csv_path, args.input_dir, max_queries)
+            run_batch_mode(system, csv_path, args.input_dir, max_queries, use_wiki, use_pubmed)
             
         elif command == "convert":
             run_convert_mode(system)

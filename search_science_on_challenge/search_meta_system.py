@@ -20,6 +20,7 @@ from configs.settings import Settings
 # ScienceON API 클라이언트 import
 from scienceon_api_example import ScienceONAPIClient
 from pubmed_api_client import PubMedAPIClient, PubMedIntegration
+from wikipedia_api_client import WikipediaIntegration
 class SearchMetaSystem:
     """검색 메타데이터 시스템 - 통합 관리"""
 
@@ -77,6 +78,8 @@ class SearchMetaSystem:
         self.scienceon_client = ScienceONAPIClient(Path(scienceon_credentials_path))
         # PubMed API 클라이언트 및 통합 초기화
         self.pubmed_integration = PubMedIntegration(self, pubmed_credentials_path)
+        # Wikipedia 통합 초기화
+        self.wikipedia_integration = WikipediaIntegration(self)
 
         # 핵심 컴포넌트 초기화
         self._initialize_components()
@@ -179,6 +182,10 @@ class SearchMetaSystem:
     def process_single_query_with_pubmed_simple(self, query: str) -> Dict[str, Any]:
         """PubMed 간단 검색 (테스트용)"""
         return self.pubmed_integration.search_with_pubmed_simple(query)
+    
+    def process_single_query_with_wikipedia(self, query: str) -> Dict[str, Any]:
+        """Wikipedia 검색"""
+        return self.wikipedia_integration.search_with_wikipedia(query)
     
     def process_batch_from_csv(self, csv_path: str, max_queries: Optional[int] = None, 
                               target_documents: int = None) -> Dict[str, Any]:

@@ -1,0 +1,54 @@
+{
+  "batch_statistics": {
+    "total_queries": 3,
+    "successful_queries": 3,
+    "failed_queries": 0,
+    "success_rate": 100.0,
+    "total_documents_found": 0,
+    "avg_documents_per_query": 0.0,
+    "total_korean_keywords": 0,
+    "total_english_keywords": 0,
+    "avg_korean_keywords_per_query": 0.0,
+    "avg_english_keywords_per_query": 0.0,
+    "total_search_queries_generated": 3,
+    "avg_search_queries_per_query": 1.0,
+    "processing_timestamp": "2025-09-27T16:51:03.331327"
+  },
+  "results": [
+    {
+      "status": "success",
+      "query": "로마의 면적은 서울시의 2배인가요?",
+      "search_terms": [
+        "로마의 면적은 서울시의 2배인가요?"
+      ],
+      "documents": [],
+      "document_count": 0,
+      "processing_time": 0.9040849208831787,
+      "search_platform": "wikipedia"
+    },
+    {
+      "status": "success",
+      "query": "철학적 자연주의의 이론이 처음으로 등장한 것은 언제인가요?",
+      "search_terms": [
+        "철학적 자연주의의 이론이 처음으로 등장한 것은 언제인가요?"
+      ],
+      "documents": [],
+      "document_count": 0,
+      "processing_time": 0.8268253803253174,
+      "search_platform": "wikipedia"
+    },
+    {
+      "status": "success",
+      "query": "오대호의 크기는?",
+      "search_terms": [
+        "오대호의 크기는?"
+      ],
+      "documents": [],
+      "document_count": 0,
+      "processing_time": 0.820831298828125,
+      "search_platform": "wikipedia"
+    }
+  ],
+  "execution_mode": "batch",
+  "batch_timestamp": "2025-09-27T16:51:03.331352"
+}

@@ -523,6 +523,23 @@ class PubMedIntegration:
                 keywords = self.system.keyword_extractor.extract_keywords(query)
                 search_terms = self.system.keyword_extractor.generate_search_terms(keywords)
             
+            # 키워드와 검색어 로그 출력
+            korean_kw = keywords.get('korean', [])
+            english_kw = keywords.get('english', [])
+            if korean_kw or english_kw:
+                print(f"🔑 키워드 ({len(korean_kw + english_kw)}개):")
+                if korean_kw:
+                    print(f"     한국어: {', '.join(korean_kw)}")
+                if english_kw:
+                    print(f"     영어: {', '.join(english_kw)}")
+            
+            if search_terms:
+                print(f"🔍 검색어 ({len(search_terms)}개):")
+                for i, term in enumerate(search_terms[:10], 1):  # 처음 10개만 표시
+                    print(f"     {i}. {term}")
+                if len(search_terms) > 10:
+                    print(f"     ... 외 {len(search_terms) - 10}개")
+            
             all_documents = []
 
             
