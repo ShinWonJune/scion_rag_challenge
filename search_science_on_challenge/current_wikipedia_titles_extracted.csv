@@ -1,0 +1,372 @@
+query_number,query,title,url,source
+1,Was there a year 0?,Year,https://en.wikipedia.org/wiki/Year,Wikipedia
+1,Was there a year 0?,Leap year,https://en.wikipedia.org/wiki/Leap_year,Wikipedia
+1,Was there a year 0?,Light-year,https://en.wikipedia.org/wiki/Light-year,Wikipedia
+1,Was there a year 0?,Facebook,https://en.wikipedia.org/wiki/Facebook,Wikipedia
+2,Have the Colorado Rockies won a title?,Colorado,https://en.wikipedia.org/wiki/Colorado,Wikipedia
+2,Have the Colorado Rockies won a title?,"Colorado Springs, Colorado","https://en.wikipedia.org/wiki/Colorado_Springs,_Colorado",Wikipedia
+2,Have the Colorado Rockies won a title?,"Colorado City, Colorado","https://en.wikipedia.org/wiki/Colorado_City,_Colorado",Wikipedia
+2,Have the Colorado Rockies won a title?,Denver,https://en.wikipedia.org/wiki/Denver,Wikipedia
+2,Have the Colorado Rockies won a title?,Rocky Mountains,https://en.wikipedia.org/wiki/Rocky_Mountains,Wikipedia
+2,Have the Colorado Rockies won a title?,Colorado Rockies,https://en.wikipedia.org/wiki/Colorado_Rockies,Wikipedia
+2,Have the Colorado Rockies won a title?,Canadian Rockies,https://en.wikipedia.org/wiki/Canadian_Rockies,Wikipedia
+2,Have the Colorado Rockies won a title?,Rocky,https://en.wikipedia.org/wiki/Rocky,Wikipedia
+2,Have the Colorado Rockies won a title?,Colorado Rockies (NHL),https://en.wikipedia.org/wiki/Colorado_Rockies_(NHL),Wikipedia
+2,Have the Colorado Rockies won a title?,List of Colorado Rockies seasons,https://en.wikipedia.org/wiki/List_of_Colorado_Rockies_seasons,Wikipedia
+2,Have the Colorado Rockies won a title?,2007 Colorado Rockies season,https://en.wikipedia.org/wiki/2007_Colorado_Rockies_season,Wikipedia
+2,Have the Colorado Rockies won a title?,Title,https://en.wikipedia.org/wiki/Title,Wikipedia
+2,Have the Colorado Rockies won a title?,Title case,https://en.wikipedia.org/wiki/Title_case,Wikipedia
+2,Have the Colorado Rockies won a title?,Title IX,https://en.wikipedia.org/wiki/Title_IX,Wikipedia
+2,Have the Colorado Rockies won a title?,Title track,https://en.wikipedia.org/wiki/Title_track,Wikipedia
+2,Have the Colorado Rockies won a title?,Colorado Rockies (disambiguation),https://en.wikipedia.org/wiki/Colorado_Rockies_(disambiguation),Wikipedia
+2,Have the Colorado Rockies won a title?,History of the Colorado Rockies,https://en.wikipedia.org/wiki/History_of_the_Colorado_Rockies,Wikipedia
+3,Who invented Hangul?,Origin of Hangul,https://en.wikipedia.org/wiki/Origin_of_Hangul,Wikipedia
+3,Who invented Hangul?,Hangul,https://en.wikipedia.org/wiki/Hangul,Wikipedia
+3,Who invented Hangul?,History of writing,https://en.wikipedia.org/wiki/History_of_writing,Wikipedia
+3,Who invented Hangul?,Debate on the use of Korean mixed script,https://en.wikipedia.org/wiki/Debate_on_the_use_of_Korean_mixed_script,Wikipedia
+3,Who invented Hangul?,Sejong the Great,https://en.wikipedia.org/wiki/Sejong_the_Great,Wikipedia
+3,Who invented Hangul?,Hangul Day,https://en.wikipedia.org/wiki/Hangul_Day,Wikipedia
+3,Who invented Hangul?,Korean language and computers,https://en.wikipedia.org/wiki/Korean_language_and_computers,Wikipedia
+3,Who invented Hangul?,Origin,https://en.wikipedia.org/wiki/Origin,Wikipedia
+3,Who invented Hangul?,UBlock Origin,https://en.wikipedia.org/wiki/UBlock_Origin,Wikipedia
+3,Who invented Hangul?,Origin OS,https://en.wikipedia.org/wiki/Origin_OS,Wikipedia
+3,Who invented Hangul?,Origin (Brown novel),https://en.wikipedia.org/wiki/Origin_(Brown_novel),Wikipedia
+3,Who invented Hangul?,Invention,https://en.wikipedia.org/wiki/Invention,Wikipedia
+3,Who invented Hangul?,Invention (disambiguation),https://en.wikipedia.org/wiki/Invention_(disambiguation),Wikipedia
+3,Who invented Hangul?,Timeline of historic inventions,https://en.wikipedia.org/wiki/Timeline_of_historic_inventions,Wikipedia
+3,Who invented Hangul?,Invention disclosure,https://en.wikipedia.org/wiki/Invention_disclosure,Wikipedia
+3,Who invented Hangul?,Hangul (disambiguation),https://en.wikipedia.org/wiki/Hangul_(disambiguation),Wikipedia
+3,Who invented Hangul?,Hanja,https://en.wikipedia.org/wiki/Hanja,Wikipedia
+4,When was special relativity developed?,Theory of relativity,https://en.wikipedia.org/wiki/Theory_of_relativity,Wikipedia
+4,When was special relativity developed?,Special relativity,https://en.wikipedia.org/wiki/Special_relativity,Wikipedia
+4,When was special relativity developed?,General relativity,https://en.wikipedia.org/wiki/General_relativity,Wikipedia
+4,When was special relativity developed?,Relativity,https://en.wikipedia.org/wiki/Relativity,Wikipedia
+4,When was special relativity developed?,Principle of relativity,https://en.wikipedia.org/wiki/Principle_of_relativity,Wikipedia
+4,When was special relativity developed?,Acceleration (special relativity),https://en.wikipedia.org/wiki/Acceleration_(special_relativity),Wikipedia
+4,When was special relativity developed?,Developed country,https://en.wikipedia.org/wiki/Developed_country,Wikipedia
+4,When was special relativity developed?,Development,https://en.wikipedia.org/wiki/Development,Wikipedia
+4,When was special relativity developed?,Developing country,https://en.wikipedia.org/wiki/Developing_country,Wikipedia
+4,When was special relativity developed?,Least developed countries,https://en.wikipedia.org/wiki/Least_developed_countries,Wikipedia
+4,When was special relativity developed?,History of special relativity,https://en.wikipedia.org/wiki/History_of_special_relativity,Wikipedia
+4,When was special relativity developed?,Special,https://en.wikipedia.org/wiki/Special,Wikipedia
+4,When was special relativity developed?,The Specials,https://en.wikipedia.org/wiki/The_Specials,Wikipedia
+4,When was special relativity developed?,Special forces,https://en.wikipedia.org/wiki/Special_forces,Wikipedia
+5,What is within a nucleus of a cell?,Nucleus,https://en.wikipedia.org/wiki/Nucleus,Wikipedia
+5,What is within a nucleus of a cell?,Cell nucleus,https://en.wikipedia.org/wiki/Cell_nucleus,Wikipedia
+5,What is within a nucleus of a cell?,Atomic nucleus,https://en.wikipedia.org/wiki/Atomic_nucleus,Wikipedia
+5,What is within a nucleus of a cell?,Syllable,https://en.wikipedia.org/wiki/Syllable,Wikipedia
+5,What is within a nucleus of a cell?,Cell (biology),https://en.wikipedia.org/wiki/Cell_(biology),Wikipedia
+5,What is within a nucleus of a cell?,Suprachiasmatic nucleus,https://en.wikipedia.org/wiki/Suprachiasmatic_nucleus,Wikipedia
+5,What is within a nucleus of a cell?,Cell,https://en.wikipedia.org/wiki/Cell,Wikipedia
+5,What is within a nucleus of a cell?,Cell (processor),https://en.wikipedia.org/wiki/Cell_(processor),Wikipedia
+5,What is within a nucleus of a cell?,Cell membrane,https://en.wikipedia.org/wiki/Cell_membrane,Wikipedia
+6,When did Michelangelo create the David?,Michelangelo,https://en.wikipedia.org/wiki/Michelangelo,Wikipedia
+6,When did Michelangelo create the David?,Pietà (Michelangelo),https://en.wikipedia.org/wiki/Pietà_(Michelangelo),Wikipedia
+6,When did Michelangelo create the David?,David (Michelangelo),https://en.wikipedia.org/wiki/David_(Michelangelo),Wikipedia
+6,When did Michelangelo create the David?,Michelangelo (disambiguation),https://en.wikipedia.org/wiki/Michelangelo_(disambiguation),Wikipedia
+6,When did Michelangelo create the David?,Create,https://en.wikipedia.org/wiki/Create,Wikipedia
+6,When did Michelangelo create the David?,WCET (TV),https://en.wikipedia.org/wiki/WCET_(TV),Wikipedia
+6,When did Michelangelo create the David?,CreateSpace,https://en.wikipedia.org/wiki/CreateSpace,Wikipedia
+6,When did Michelangelo create the David?,Article,https://en.wikipedia.org/wiki/Article,Wikipedia
+6,When did Michelangelo create the David?,Replicas of Michelangelo's David,https://en.wikipedia.org/wiki/Replicas_of_Michelangelo's_David,Wikipedia
+6,When did Michelangelo create the David?,David,https://en.wikipedia.org/wiki/David,Wikipedia
+6,When did Michelangelo create the David?,David Letterman,https://en.wikipedia.org/wiki/David_Letterman,Wikipedia
+6,When did Michelangelo create the David?,David Ellison,https://en.wikipedia.org/wiki/David_Ellison,Wikipedia
+6,When did Michelangelo create the David?,David (disambiguation),https://en.wikipedia.org/wiki/David_(disambiguation),Wikipedia
+6,When did Michelangelo create the David?,Michelangelo Antonioni,https://en.wikipedia.org/wiki/Michelangelo_Antonioni,Wikipedia
+6,When did Michelangelo create the David?,Caravaggio,https://en.wikipedia.org/wiki/Caravaggio,Wikipedia
+7,When was the Nazi party founded?,Neo-Nazism,https://en.wikipedia.org/wiki/Neo-Nazism,Wikipedia
+7,When was the Nazi party founded?,Nazism,https://en.wikipedia.org/wiki/Nazism,Wikipedia
+7,When was the Nazi party founded?,American Nazi Party,https://en.wikipedia.org/wiki/American_Nazi_Party,Wikipedia
+7,When was the Nazi party founded?,Nazi Germany,https://en.wikipedia.org/wiki/Nazi_Germany,Wikipedia
+7,When was the Nazi party founded?,Nazi Party,https://en.wikipedia.org/wiki/Nazi_Party,Wikipedia
+7,When was the Nazi party founded?,Nazi symbolism,https://en.wikipedia.org/wiki/Nazi_symbolism,Wikipedia
+7,When was the Nazi party founded?,Founding,https://en.wikipedia.org/wiki/Founding,Wikipedia
+7,When was the Nazi party founded?,Found,https://en.wikipedia.org/wiki/Found,Wikipedia
+7,When was the Nazi party founded?,HTTP 404,https://en.wikipedia.org/wiki/HTTP_404,Wikipedia
+7,When was the Nazi party founded?,Founding of Rome,https://en.wikipedia.org/wiki/Founding_of_Rome,Wikipedia
+7,When was the Nazi party founded?,Party,https://en.wikipedia.org/wiki/Party,Wikipedia
+7,When was the Nazi party founded?,The Party,https://en.wikipedia.org/wiki/The_Party,Wikipedia
+7,When was the Nazi party founded?,Political party,https://en.wikipedia.org/wiki/Political_party,Wikipedia
+7,When was the Nazi party founded?,Political parties in the United States,https://en.wikipedia.org/wiki/Political_parties_in_the_United_States,Wikipedia
+7,When was the Nazi party founded?,List of Nazi Party leaders and officials,https://en.wikipedia.org/wiki/List_of_Nazi_Party_leaders_and_officials,Wikipedia
+8,When was the Prohibition Era in the US?,Prohibition,https://en.wikipedia.org/wiki/Prohibition,Wikipedia
+8,When was the Prohibition Era in the US?,Prohibition in the United States,https://en.wikipedia.org/wiki/Prohibition_in_the_United_States,Wikipedia
+8,When was the Prohibition Era in the US?,Prohibition Party,https://en.wikipedia.org/wiki/Prohibition_Party,Wikipedia
+8,When was the Prohibition Era in the US?,Prohibition (disambiguation),https://en.wikipedia.org/wiki/Prohibition_(disambiguation),Wikipedia
+8,When was the Prohibition Era in the US?,Constitution of the United States,https://en.wikipedia.org/wiki/Constitution_of_the_United_States,Wikipedia
+8,When was the Prohibition Era in the US?,List of amendments to the Constitution of the United States,https://en.wikipedia.org/wiki/List_of_amendments_to_the_Constitution_of_the_United_States,Wikipedia
+8,When was the Prohibition Era in the US?,Republican Party (United States),https://en.wikipedia.org/wiki/Republican_Party_(United_States),Wikipedia
+8,When was the Prohibition Era in the US?,Us,https://en.wikipedia.org/wiki/Us,Wikipedia
+8,When was the Prohibition Era in the US?,.us,https://en.wikipedia.org/wiki/.us,Wikipedia
+8,When was the Prohibition Era in the US?,This Is Us,https://en.wikipedia.org/wiki/This_Is_Us,Wikipedia
+8,When was the Prohibition Era in the US?,United States,https://en.wikipedia.org/wiki/United_States,Wikipedia
+8,When was the Prohibition Era in the US?,Democratic Party (United States),https://en.wikipedia.org/wiki/Democratic_Party_(United_States),Wikipedia
+8,When was the Prohibition Era in the US?,Repeal of Prohibition in the United States,https://en.wikipedia.org/wiki/Repeal_of_Prohibition_in_the_United_States,Wikipedia
+8,When was the Prohibition Era in the US?,Eighteenth Amendment to the United States Constitution,https://en.wikipedia.org/wiki/Eighteenth_Amendment_to_the_United_States_Constitution,Wikipedia
+8,When was the Prohibition Era in the US?,List of states and territories of the United States,https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States,Wikipedia
+8,When was the Prohibition Era in the US?,List of presidents of the United States,https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States,Wikipedia
+8,When was the Prohibition Era in the US?,United States Army,https://en.wikipedia.org/wiki/United_States_Army,Wikipedia
+9,What is the largest asteroid?,Large,https://en.wikipedia.org/wiki/Large,Wikipedia
+9,What is the largest asteroid?,List of largest banks,https://en.wikipedia.org/wiki/List_of_largest_banks,Wikipedia
+9,What is the largest asteroid?,Biggest ball of twine,https://en.wikipedia.org/wiki/Biggest_ball_of_twine,Wikipedia
+9,What is the largest asteroid?,Largest organisms,https://en.wikipedia.org/wiki/Largest_organisms,Wikipedia
+9,What is the largest asteroid?,List of exceptional asteroids,https://en.wikipedia.org/wiki/List_of_exceptional_asteroids,Wikipedia
+9,What is the largest asteroid?,Asteroid,https://en.wikipedia.org/wiki/Asteroid,Wikipedia
+9,What is the largest asteroid?,Asteroid belt,https://en.wikipedia.org/wiki/Asteroid_belt,Wikipedia
+9,What is the largest asteroid?,Asteroid City,https://en.wikipedia.org/wiki/Asteroid_City,Wikipedia
+9,What is the largest asteroid?,Asteroid mining,https://en.wikipedia.org/wiki/Asteroid_mining,Wikipedia
+10,When did the American Renaissance happen?,Renaissance,https://en.wikipedia.org/wiki/Renaissance,Wikipedia
+10,When did the American Renaissance happen?,Renaissance architecture,https://en.wikipedia.org/wiki/Renaissance_architecture,Wikipedia
+10,When did the American Renaissance happen?,Harlem Renaissance,https://en.wikipedia.org/wiki/Harlem_Renaissance,Wikipedia
+10,When did the American Renaissance happen?,Renaissance Technologies,https://en.wikipedia.org/wiki/Renaissance_Technologies,Wikipedia
+10,When did the American Renaissance happen?,American,https://en.wikipedia.org/wiki/American,Wikipedia
+10,When did the American Renaissance happen?,Americans,https://en.wikipedia.org/wiki/Americans,Wikipedia
+10,When did the American Renaissance happen?,American football,https://en.wikipedia.org/wiki/American_football,Wikipedia
+10,When did the American Renaissance happen?,African Americans,https://en.wikipedia.org/wiki/African_Americans,Wikipedia
+10,When did the American Renaissance happen?,American Renaissance,https://en.wikipedia.org/wiki/American_Renaissance,Wikipedia
+10,When did the American Renaissance happen?,American Renaissance (magazine),https://en.wikipedia.org/wiki/American_Renaissance_(magazine),Wikipedia
+10,When did the American Renaissance happen?,American Renaissance (literature),https://en.wikipedia.org/wiki/American_Renaissance_(literature),Wikipedia
+11,What does GDP stand for?,Gross domestic product,https://en.wikipedia.org/wiki/Gross_domestic_product,Wikipedia
+11,What does GDP stand for?,List of countries by GDP (nominal),https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal),Wikipedia
+11,What does GDP stand for?,Economy of India,https://en.wikipedia.org/wiki/Economy_of_India,Wikipedia
+11,What does GDP stand for?,Economy of the United States,https://en.wikipedia.org/wiki/Economy_of_the_United_States,Wikipedia
+11,What does GDP stand for?,Gross,https://en.wikipedia.org/wiki/Gross,Wikipedia
+11,What does GDP stand for?,Gross (surname),https://en.wikipedia.org/wiki/Gross_(surname),Wikipedia
+11,What does GDP stand for?,Gross (unit),https://en.wikipedia.org/wiki/Gross_(unit),Wikipedia
+11,What does GDP stand for?,Gross anatomy,https://en.wikipedia.org/wiki/Gross_anatomy,Wikipedia
+11,What does GDP stand for?,Domestic,https://en.wikipedia.org/wiki/Domestic,Wikipedia
+11,What does GDP stand for?,Domestic violence,https://en.wikipedia.org/wiki/Domestic_violence,Wikipedia
+11,What does GDP stand for?,Domestic worker,https://en.wikipedia.org/wiki/Domestic_worker,Wikipedia
+11,What does GDP stand for?,Domestic partnership,https://en.wikipedia.org/wiki/Domestic_partnership,Wikipedia
+11,What does GDP stand for?,Gross regional domestic product,https://en.wikipedia.org/wiki/Gross_regional_domestic_product,Wikipedia
+11,What does GDP stand for?,Real gross domestic product,https://en.wikipedia.org/wiki/Real_gross_domestic_product,Wikipedia
+11,What does GDP stand for?,List of Indian states and union territories by GDP,https://en.wikipedia.org/wiki/List_of_Indian_states_and_union_territories_by_GDP,Wikipedia
+11,What does GDP stand for?,List of Canadian provinces and territories by gross domestic product,https://en.wikipedia.org/wiki/List_of_Canadian_provinces_and_territories_by_gross_domestic_product,Wikipedia
+11,What does GDP stand for?,GDP deflator,https://en.wikipedia.org/wiki/GDP_deflator,Wikipedia
+11,What does GDP stand for?,List of U.S. states and territories by GDP,https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_GDP,Wikipedia
+12,Can you over-water a cactus?,Overwatering,https://en.wikipedia.org/wiki/Overwatering,Wikipedia
+12,Can you over-water a cactus?,Arcitalitrus sylvaticus,https://en.wikipedia.org/wiki/Arcitalitrus_sylvaticus,Wikipedia
+12,Can you over-water a cactus?,Pitaya,https://en.wikipedia.org/wiki/Pitaya,Wikipedia
+12,Can you over-water a cactus?,Eustoma,https://en.wikipedia.org/wiki/Eustoma,Wikipedia
+12,Can you over-water a cactus?,Cactus,https://en.wikipedia.org/wiki/Cactus,Wikipedia
+12,Can you over-water a cactus?,Cactus Pears,https://en.wikipedia.org/wiki/Cactus_Pears,Wikipedia
+12,Can you over-water a cactus?,Cactus (disambiguation),https://en.wikipedia.org/wiki/Cactus_(disambiguation),Wikipedia
+12,Can you over-water a cactus?,Mick Foley,https://en.wikipedia.org/wiki/Mick_Foley,Wikipedia
+12,Can you over-water a cactus?,Echinocereus rigidissimus,https://en.wikipedia.org/wiki/Echinocereus_rigidissimus,Wikipedia
+12,Can you over-water a cactus?,Hydrozoning,https://en.wikipedia.org/wiki/Hydrozoning,Wikipedia
+12,Can you over-water a cactus?,Lithops,https://en.wikipedia.org/wiki/Lithops,Wikipedia
+13,What is the newest member country to join NATO?,Member states of NATO,https://en.wikipedia.org/wiki/Member_states_of_NATO,Wikipedia
+13,What is the newest member country to join NATO?,NATO,https://en.wikipedia.org/wiki/NATO,Wikipedia
+13,What is the newest member country to join NATO?,Secretary General of NATO,https://en.wikipedia.org/wiki/Secretary_General_of_NATO,Wikipedia
+13,What is the newest member country to join NATO?,NATO headquarters,https://en.wikipedia.org/wiki/NATO_headquarters,Wikipedia
+13,What is the newest member country to join NATO?,Membership of Kosovo in international organizations,https://en.wikipedia.org/wiki/Membership_of_Kosovo_in_international_organizations,Wikipedia
+13,What is the newest member country to join NATO?,5.56×45mm NATO,https://en.wikipedia.org/wiki/5.56×45mm_NATO,Wikipedia
+13,What is the newest member country to join NATO?,Outline of Denmark,https://en.wikipedia.org/wiki/Outline_of_Denmark,Wikipedia
+13,What is the newest member country to join NATO?,Organization,https://en.wikipedia.org/wiki/Organization,Wikipedia
+13,What is the newest member country to join NATO?,Nonprofit organization,https://en.wikipedia.org/wiki/Nonprofit_organization,Wikipedia
+13,What is the newest member country to join NATO?,Parachurch organization,https://en.wikipedia.org/wiki/Parachurch_organization,Wikipedia
+13,What is the newest member country to join NATO?,World Health Organization,https://en.wikipedia.org/wiki/World_Health_Organization,Wikipedia
+13,What is the newest member country to join NATO?,NATO Medal,https://en.wikipedia.org/wiki/NATO_Medal,Wikipedia
+13,What is the newest member country to join NATO?,NATO phonetic alphabet,https://en.wikipedia.org/wiki/NATO_phonetic_alphabet,Wikipedia
+13,What is the newest member country to join NATO?,Enlargement of NATO,https://en.wikipedia.org/wiki/Enlargement_of_NATO,Wikipedia
+13,What is the newest member country to join NATO?,Member,https://en.wikipedia.org/wiki/Member,Wikipedia
+13,What is the newest member country to join NATO?,Member of parliament,https://en.wikipedia.org/wiki/Member_of_parliament,Wikipedia
+13,What is the newest member country to join NATO?,Member state of the European Union,https://en.wikipedia.org/wiki/Member_state_of_the_European_Union,Wikipedia
+13,What is the newest member country to join NATO?,Withdrawal from NATO,https://en.wikipedia.org/wiki/Withdrawal_from_NATO,Wikipedia
+14,Who has to initiate a plea bargain?,Plea bargain,https://en.wikipedia.org/wiki/Plea_bargain,Wikipedia
+14,Who has to initiate a plea bargain?,JBS plea bargain in Operation Car Wash,https://en.wikipedia.org/wiki/JBS_plea_bargain_in_Operation_Car_Wash,Wikipedia
+14,Who has to initiate a plea bargain?,Information (formal criminal charge),https://en.wikipedia.org/wiki/Information_(formal_criminal_charge),Wikipedia
+14,Who has to initiate a plea bargain?,Inquisitorial system,https://en.wikipedia.org/wiki/Inquisitorial_system,Wikipedia
+14,Who has to initiate a plea bargain?,Initiate,https://en.wikipedia.org/wiki/Initiate,Wikipedia
+14,Who has to initiate a plea bargain?,Initiator,https://en.wikipedia.org/wiki/Initiator,Wikipedia
+14,Who has to initiate a plea bargain?,The Initiate,https://en.wikipedia.org/wiki/The_Initiate,Wikipedia
+14,Who has to initiate a plea bargain?,Radical initiator,https://en.wikipedia.org/wiki/Radical_initiator,Wikipedia
+14,Who has to initiate a plea bargain?,Alford plea,https://en.wikipedia.org/wiki/Alford_plea,Wikipedia
+14,Who has to initiate a plea bargain?,Karla Homolka,https://en.wikipedia.org/wiki/Karla_Homolka,Wikipedia
+14,Who has to initiate a plea bargain?,Plea,https://en.wikipedia.org/wiki/Plea,Wikipedia
+14,Who has to initiate a plea bargain?,Bargain,https://en.wikipedia.org/wiki/Bargain,Wikipedia
+14,Who has to initiate a plea bargain?,Bargaining,https://en.wikipedia.org/wiki/Bargaining,Wikipedia
+14,Who has to initiate a plea bargain?,Collective bargaining,https://en.wikipedia.org/wiki/Collective_bargaining,Wikipedia
+14,Who has to initiate a plea bargain?,Nolo contendere,https://en.wikipedia.org/wiki/Nolo_contendere,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Languages of Spain,https://en.wikipedia.org/wiki/Languages_of_Spain,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Judaeo-Spanish,https://en.wikipedia.org/wiki/Judaeo-Spanish,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,List of countries and territories where Spanish is an official language,https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Spanish_is_an_official_language,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Spanish language,https://en.wikipedia.org/wiki/Spanish_language,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Spanish-based creole languages,https://en.wikipedia.org/wiki/Spanish-based_creole_languages,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Name of the Spanish language,https://en.wikipedia.org/wiki/Name_of_the_Spanish_language,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Spanish,https://en.wikipedia.org/wiki/Spanish,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Spain,https://en.wikipedia.org/wiki/Spain,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Spanish Empire,https://en.wikipedia.org/wiki/Spanish_Empire,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Language,https://en.wikipedia.org/wiki/Language,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Language (magazine),https://en.wikipedia.org/wiki/Language_(magazine),Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,English language,https://en.wikipedia.org/wiki/English_language,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,French language,https://en.wikipedia.org/wiki/French_language,Wikipedia
+15,Is there a language other than Spanish spoken in Spain?,Flag of Spain,https://en.wikipedia.org/wiki/Flag_of_Spain,Wikipedia
+16,Who is the current political leader of Indonesia?,List of presidents of Indonesia,https://en.wikipedia.org/wiki/List_of_presidents_of_Indonesia,Wikipedia
+16,Who is the current political leader of Indonesia?,Indonesia,https://en.wikipedia.org/wiki/Indonesia,Wikipedia
+16,Who is the current political leader of Indonesia?,President of Indonesia,https://en.wikipedia.org/wiki/President_of_Indonesia,Wikipedia
+16,Who is the current political leader of Indonesia?,2025 in Indonesia,https://en.wikipedia.org/wiki/2025_in_Indonesia,Wikipedia
+16,Who is the current political leader of Indonesia?,Indonesians,https://en.wikipedia.org/wiki/Indonesians,Wikipedia
+16,Who is the current political leader of Indonesia?,Indonesian language,https://en.wikipedia.org/wiki/Indonesian_language,Wikipedia
+16,Who is the current political leader of Indonesia?,Indonesian,https://en.wikipedia.org/wiki/Indonesian,Wikipedia
+16,Who is the current political leader of Indonesia?,Politics of Indonesia,https://en.wikipedia.org/wiki/Politics_of_Indonesia,Wikipedia
+16,Who is the current political leader of Indonesia?,List of political parties in Indonesia,https://en.wikipedia.org/wiki/List_of_political_parties_in_Indonesia,Wikipedia
+16,Who is the current political leader of Indonesia?,Islam in Indonesia,https://en.wikipedia.org/wiki/Islam_in_Indonesia,Wikipedia
+16,Who is the current political leader of Indonesia?,Politics,https://en.wikipedia.org/wiki/Politics,Wikipedia
+16,Who is the current political leader of Indonesia?,Political science,https://en.wikipedia.org/wiki/Political_science,Wikipedia
+16,Who is the current political leader of Indonesia?,Political party,https://en.wikipedia.org/wiki/Political_party,Wikipedia
+16,Who is the current political leader of Indonesia?,Political spectrum,https://en.wikipedia.org/wiki/Political_spectrum,Wikipedia
+16,Who is the current political leader of Indonesia?,Leadership,https://en.wikipedia.org/wiki/Leadership,Wikipedia
+16,Who is the current political leader of Indonesia?,Leader (disambiguation),https://en.wikipedia.org/wiki/Leader_(disambiguation),Wikipedia
+16,Who is the current political leader of Indonesia?,Party leader,https://en.wikipedia.org/wiki/Party_leader,Wikipedia
+16,Who is the current political leader of Indonesia?,Reform UK,https://en.wikipedia.org/wiki/Reform_UK,Wikipedia
+17,Do jelly fish have nervous systems?,Nervous,https://en.wikipedia.org/wiki/Nervous,Wikipedia
+17,Do jelly fish have nervous systems?,Nervous system,https://en.wikipedia.org/wiki/Nervous_system,Wikipedia
+17,Do jelly fish have nervous systems?,Central nervous system,https://en.wikipedia.org/wiki/Central_nervous_system,Wikipedia
+17,Do jelly fish have nervous systems?,Nervous tissue,https://en.wikipedia.org/wiki/Nervous_tissue,Wikipedia
+17,Do jelly fish have nervous systems?,Jelly,https://en.wikipedia.org/wiki/Jelly,Wikipedia
+17,Do jelly fish have nervous systems?,Jelly Roll (singer),https://en.wikipedia.org/wiki/Jelly_Roll_(singer),Wikipedia
+17,Do jelly fish have nervous systems?,Petroleum jelly,https://en.wikipedia.org/wiki/Petroleum_jelly,Wikipedia
+17,Do jelly fish have nervous systems?,Jelly roll,https://en.wikipedia.org/wiki/Jelly_roll,Wikipedia
+17,Do jelly fish have nervous systems?,Autonomic nervous system,https://en.wikipedia.org/wiki/Autonomic_nervous_system,Wikipedia
+17,Do jelly fish have nervous systems?,Enteric nervous system,https://en.wikipedia.org/wiki/Enteric_nervous_system,Wikipedia
+17,Do jelly fish have nervous systems?,Jellyfish,https://en.wikipedia.org/wiki/Jellyfish,Wikipedia
+17,Do jelly fish have nervous systems?,Box jellyfish,https://en.wikipedia.org/wiki/Box_jellyfish,Wikipedia
+17,Do jelly fish have nervous systems?,Ctenophora,https://en.wikipedia.org/wiki/Ctenophora,Wikipedia
+17,Do jelly fish have nervous systems?,System,https://en.wikipedia.org/wiki/System,Wikipedia
+17,Do jelly fish have nervous systems?,System of systems,https://en.wikipedia.org/wiki/System_of_systems,Wikipedia
+17,Do jelly fish have nervous systems?,BAE Systems Electronic Systems,https://en.wikipedia.org/wiki/BAE_Systems_Electronic_Systems,Wikipedia
+17,Do jelly fish have nervous systems?,Open system (systems theory),https://en.wikipedia.org/wiki/Open_system_(systems_theory),Wikipedia
+17,Do jelly fish have nervous systems?,Biological system,https://en.wikipedia.org/wiki/Biological_system,Wikipedia
+17,Do jelly fish have nervous systems?,Evolution of nervous systems,https://en.wikipedia.org/wiki/Evolution_of_nervous_systems,Wikipedia
+18,When was Heart of Darkness published?,Publishing,https://en.wikipedia.org/wiki/Publishing,Wikipedia
+18,When was Heart of Darkness published?,Self-publishing,https://en.wikipedia.org/wiki/Self-publishing,Wikipedia
+18,When was Heart of Darkness published?,Newspapers published in Nigeria,https://en.wikipedia.org/wiki/Newspapers_published_in_Nigeria,Wikipedia
+18,When was Heart of Darkness published?,List of Nintendo products,https://en.wikipedia.org/wiki/List_of_Nintendo_products,Wikipedia
+18,When was Heart of Darkness published?,Heart of Darkness,https://en.wikipedia.org/wiki/Heart_of_Darkness,Wikipedia
+18,When was Heart of Darkness published?,Kurtz (Heart of Darkness),https://en.wikipedia.org/wiki/Kurtz_(Heart_of_Darkness),Wikipedia
+18,When was Heart of Darkness published?,Heart of Darkness (1994 film),https://en.wikipedia.org/wiki/Heart_of_Darkness_(1994_film),Wikipedia
+18,When was Heart of Darkness published?,Heart of Darkness (video game),https://en.wikipedia.org/wiki/Heart_of_Darkness_(video_game),Wikipedia
+18,When was Heart of Darkness published?,An Image of Africa,https://en.wikipedia.org/wiki/An_Image_of_Africa,Wikipedia
+18,When was Heart of Darkness published?,Au coeur des ténèbres,https://en.wikipedia.org/wiki/Au_coeur_des_ténèbres,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,West Memphis Three,https://en.wikipedia.org/wiki/West_Memphis_Three,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Lester Street Massacre,https://en.wikipedia.org/wiki/Lester_Street_Massacre,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Samuel Little,https://en.wikipedia.org/wiki/Samuel_Little,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,List of wrongful convictions in the United States,https://en.wikipedia.org/wiki/List_of_wrongful_convictions_in_the_United_States,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Conviction,https://en.wikipedia.org/wiki/Conviction,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Conviction (disambiguation),https://en.wikipedia.org/wiki/Conviction_(disambiguation),Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Conviction rate,https://en.wikipedia.org/wiki/Conviction_rate,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,The Conviction,https://en.wikipedia.org/wiki/The_Conviction,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Memphis,https://en.wikipedia.org/wiki/Memphis,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,"Memphis, Tennessee","https://en.wikipedia.org/wiki/Memphis,_Tennessee",Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Memphis Depay,https://en.wikipedia.org/wiki/Memphis_Depay,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,"Memphis, Egypt","https://en.wikipedia.org/wiki/Memphis,_Egypt",Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Devil's Knot: The True Story of the West Memphis Three,https://en.wikipedia.org/wiki/Devil's_Knot:_The_True_Story_of_the_West_Memphis_Three,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,James Earl Ray,https://en.wikipedia.org/wiki/James_Earl_Ray,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Machine Gun Kelly (gangster),https://en.wikipedia.org/wiki/Machine_Gun_Kelly_(gangster),Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Free the West Memphis 3,https://en.wikipedia.org/wiki/Free_the_West_Memphis_3,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,David Burnett (politician),https://en.wikipedia.org/wiki/David_Burnett_(politician),Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,1994,https://en.wikipedia.org/wiki/1994,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,Belarus,https://en.wikipedia.org/wiki/Belarus,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,1994 in film,https://en.wikipedia.org/wiki/1994_in_film,Wikipedia
+19,How old were the West Memphis Three when they were convicted in 1994?,AllMusic,https://en.wikipedia.org/wiki/AllMusic,Wikipedia
+20,What language was spoken in Punjab?,Punjab,https://en.wikipedia.org/wiki/Punjab,Wikipedia
+20,What language was spoken in Punjab?,"Punjab, Pakistan","https://en.wikipedia.org/wiki/Punjab,_Pakistan",Wikipedia
+20,What language was spoken in Punjab?,"Punjab, India","https://en.wikipedia.org/wiki/Punjab,_India",Wikipedia
+20,What language was spoken in Punjab?,Punjabi language,https://en.wikipedia.org/wiki/Punjabi_language,Wikipedia
+20,What language was spoken in Punjab?,"2025 Punjab, India floods","https://en.wikipedia.org/wiki/2025_Punjab,_India_floods",Wikipedia
+20,What language was spoken in Punjab?,History,https://en.wikipedia.org/wiki/History,Wikipedia
+20,What language was spoken in Punjab?,Historical drama,https://en.wikipedia.org/wiki/Historical_drama,Wikipedia
+20,What language was spoken in Punjab?,Historical present,https://en.wikipedia.org/wiki/Historical_present,Wikipedia
+20,What language was spoken in Punjab?,Historical mystery,https://en.wikipedia.org/wiki/Historical_mystery,Wikipedia
+20,What language was spoken in Punjab?,Punjabi dialects and languages,https://en.wikipedia.org/wiki/Punjabi_dialects_and_languages,Wikipedia
+20,What language was spoken in Punjab?,Indo-European languages,https://en.wikipedia.org/wiki/Indo-European_languages,Wikipedia
+20,What language was spoken in Punjab?,Marwari language,https://en.wikipedia.org/wiki/Marwari_language,Wikipedia
+20,What language was spoken in Punjab?,Saraiki language,https://en.wikipedia.org/wiki/Saraiki_language,Wikipedia
+20,What language was spoken in Punjab?,Language,https://en.wikipedia.org/wiki/Language,Wikipedia
+20,What language was spoken in Punjab?,Language (magazine),https://en.wikipedia.org/wiki/Language_(magazine),Wikipedia
+20,What language was spoken in Punjab?,French language,https://en.wikipedia.org/wiki/French_language,Wikipedia
+20,What language was spoken in Punjab?,Russian language,https://en.wikipedia.org/wiki/Russian_language,Wikipedia
+21,What is encryption?,Public-key cryptography,https://en.wikipedia.org/wiki/Public-key_cryptography,Wikipedia
+21,What is encryption?,Symmetric-key algorithm,https://en.wikipedia.org/wiki/Symmetric-key_algorithm,Wikipedia
+21,What is encryption?,Cryptography,https://en.wikipedia.org/wiki/Cryptography,Wikipedia
+21,What is encryption?,Data Encryption Standard,https://en.wikipedia.org/wiki/Data_Encryption_Standard,Wikipedia
+21,What is encryption?,Encryption,https://en.wikipedia.org/wiki/Encryption,Wikipedia
+21,What is encryption?,Advanced Encryption Standard,https://en.wikipedia.org/wiki/Advanced_Encryption_Standard,Wikipedia
+21,What is encryption?,Authenticated encryption,https://en.wikipedia.org/wiki/Authenticated_encryption,Wikipedia
+21,What is encryption?,Key (cryptography),https://en.wikipedia.org/wiki/Key_(cryptography),Wikipedia
+21,What is encryption?,Post-quantum cryptography,https://en.wikipedia.org/wiki/Post-quantum_cryptography,Wikipedia
+21,What is encryption?,Cryptographic protocol,https://en.wikipedia.org/wiki/Cryptographic_protocol,Wikipedia
+21,What is encryption?,Data security,https://en.wikipedia.org/wiki/Data_security,Wikipedia
+21,What is encryption?,Tokenization (data security),https://en.wikipedia.org/wiki/Tokenization_(data_security),Wikipedia
+21,What is encryption?,RSA Security,https://en.wikipedia.org/wiki/RSA_Security,Wikipedia
+21,What is encryption?,Payment Card Industry Data Security Standard,https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard,Wikipedia
+22,Who was the first heavy metal band?,List of heavy metal bands,https://en.wikipedia.org/wiki/List_of_heavy_metal_bands,Wikipedia
+22,Who was the first heavy metal band?,Heavy metal genres,https://en.wikipedia.org/wiki/Heavy_metal_genres,Wikipedia
+22,Who was the first heavy metal band?,Bangladeshi heavy metal,https://en.wikipedia.org/wiki/Bangladeshi_heavy_metal,Wikipedia
+22,Who was the first heavy metal band?,List of glam metal bands and artists,https://en.wikipedia.org/wiki/List_of_glam_metal_bands_and_artists,Wikipedia
+22,Who was the first heavy metal band?,Metal,https://en.wikipedia.org/wiki/Metal,Wikipedia
+22,Who was the first heavy metal band?,Heavy metal music,https://en.wikipedia.org/wiki/Heavy_metal_music,Wikipedia
+22,Who was the first heavy metal band?,Black metal,https://en.wikipedia.org/wiki/Black_metal,Wikipedia
+22,Who was the first heavy metal band?,Nu metal,https://en.wikipedia.org/wiki/Nu_metal,Wikipedia
+22,Who was the first heavy metal band?,Band,https://en.wikipedia.org/wiki/Band,Wikipedia
+22,Who was the first heavy metal band?,The Band,https://en.wikipedia.org/wiki/The_Band,Wikipedia
+22,Who was the first heavy metal band?,+/- (band),https://en.wikipedia.org/wiki/+/-_(band),Wikipedia
+22,Who was the first heavy metal band?,A (band),https://en.wikipedia.org/wiki/A_(band),Wikipedia
+22,Who was the first heavy metal band?,Glam metal,https://en.wikipedia.org/wiki/Glam_metal,Wikipedia
+22,Who was the first heavy metal band?,Orchid (heavy metal band),https://en.wikipedia.org/wiki/Orchid_(heavy_metal_band),Wikipedia
+22,Who was the first heavy metal band?,Heavy,https://en.wikipedia.org/wiki/Heavy,Wikipedia
+22,Who was the first heavy metal band?,The Heavy,https://en.wikipedia.org/wiki/The_Heavy,Wikipedia
+22,Who was the first heavy metal band?,Heavy water,https://en.wikipedia.org/wiki/Heavy_water,Wikipedia
+22,Who was the first heavy metal band?,Heavy metals,https://en.wikipedia.org/wiki/Heavy_metals,Wikipedia
+22,Who was the first heavy metal band?,Heavy Metal (film),https://en.wikipedia.org/wiki/Heavy_Metal_(film),Wikipedia
+22,Who was the first heavy metal band?,2025 in heavy metal music,https://en.wikipedia.org/wiki/2025_in_heavy_metal_music,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Cost,https://en.wikipedia.org/wiki/Cost,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Cost (disambiguation),https://en.wikipedia.org/wiki/Cost_(disambiguation),Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Capital cost,https://en.wikipedia.org/wiki/Capital_cost,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Opportunity cost,https://en.wikipedia.org/wiki/Opportunity_cost,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Sydney,https://en.wikipedia.org/wiki/Sydney,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Sydney Sweeney,https://en.wikipedia.org/wiki/Sydney_Sweeney,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,The Sydney Morning Herald,https://en.wikipedia.org/wiki/The_Sydney_Morning_Herald,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Sydney Airport,https://en.wikipedia.org/wiki/Sydney_Airport,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Sydney Opera House,https://en.wikipedia.org/wiki/Sydney_Opera_House,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Guangzhou Opera House,https://en.wikipedia.org/wiki/Guangzhou_Opera_House,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Jørn Utzon,https://en.wikipedia.org/wiki/Jørn_Utzon,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,2000 Summer Olympics,https://en.wikipedia.org/wiki/2000_Summer_Olympics,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Sydney Opera House Grand Organ,https://en.wikipedia.org/wiki/Sydney_Opera_House_Grand_Organ,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Opera Australia,https://en.wikipedia.org/wiki/Opera_Australia,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Live at the Sydney Opera House,https://en.wikipedia.org/wiki/Live_at_the_Sydney_Opera_House,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Opera,https://en.wikipedia.org/wiki/Opera,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,OPERA experiment,https://en.wikipedia.org/wiki/OPERA_experiment,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Soap opera,https://en.wikipedia.org/wiki/Soap_opera,Wikipedia
+23,How much money did the Sydney Opera House cost to build?,Opera (web browser),https://en.wikipedia.org/wiki/Opera_(web_browser),Wikipedia
+24,What is atomic mass?,Mass,https://en.wikipedia.org/wiki/Mass,Wikipedia
+24,What is atomic mass?,Maß,https://en.wikipedia.org/wiki/Maß,Wikipedia
+24,What is atomic mass?,Mass (disambiguation),https://en.wikipedia.org/wiki/Mass_(disambiguation),Wikipedia
+24,What is atomic mass?,Mass media,https://en.wikipedia.org/wiki/Mass_media,Wikipedia
+24,What is atomic mass?,Atomic mass,https://en.wikipedia.org/wiki/Atomic_mass,Wikipedia
+24,What is atomic mass?,Relative atomic mass,https://en.wikipedia.org/wiki/Relative_atomic_mass,Wikipedia
+24,What is atomic mass?,Dalton (unit),https://en.wikipedia.org/wiki/Dalton_(unit),Wikipedia
+24,What is atomic mass?,Molar mass,https://en.wikipedia.org/wiki/Molar_mass,Wikipedia
+24,What is atomic mass?,Atomic,https://en.wikipedia.org/wiki/Atomic,Wikipedia
+24,What is atomic mass?,Atomic Habits,https://en.wikipedia.org/wiki/Atomic_Habits,Wikipedia
+24,What is atomic mass?,Atomic bombings of Hiroshima and Nagasaki,https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki,Wikipedia
+24,What is atomic mass?,Atomic number,https://en.wikipedia.org/wiki/Atomic_number,Wikipedia
+25,Does the Netherlands have universal healthcare?,Universal health care,https://en.wikipedia.org/wiki/Universal_health_care,Wikipedia
+25,Does the Netherlands have universal healthcare?,Single-payer healthcare,https://en.wikipedia.org/wiki/Single-payer_healthcare,Wikipedia
+25,Does the Netherlands have universal healthcare?,Universal health care by country,https://en.wikipedia.org/wiki/Universal_health_care_by_country,Wikipedia
+25,Does the Netherlands have universal healthcare?,Universal Coverage (Thailand),https://en.wikipedia.org/wiki/Universal_Coverage_(Thailand),Wikipedia
+25,Does the Netherlands have universal healthcare?,Healthcare in the Netherlands,https://en.wikipedia.org/wiki/Healthcare_in_the_Netherlands,Wikipedia
+25,Does the Netherlands have universal healthcare?,Netherlands,https://en.wikipedia.org/wiki/Netherlands,Wikipedia
+25,Does the Netherlands have universal healthcare?,Utrecht,https://en.wikipedia.org/wiki/Utrecht,Wikipedia
+25,Does the Netherlands have universal healthcare?,Kingdom of the Netherlands,https://en.wikipedia.org/wiki/Kingdom_of_the_Netherlands,Wikipedia
+25,Does the Netherlands have universal healthcare?,Netherlands (disambiguation),https://en.wikipedia.org/wiki/Netherlands_(disambiguation),Wikipedia
+25,Does the Netherlands have universal healthcare?,Health care,https://en.wikipedia.org/wiki/Health_care,Wikipedia
+25,Does the Netherlands have universal healthcare?,Killing of Brian Thompson,https://en.wikipedia.org/wiki/Killing_of_Brian_Thompson,Wikipedia
+25,Does the Netherlands have universal healthcare?,HCA Healthcare,https://en.wikipedia.org/wiki/HCA_Healthcare,Wikipedia
+25,Does the Netherlands have universal healthcare?,UnitedHealth Group,https://en.wikipedia.org/wiki/UnitedHealth_Group,Wikipedia
+25,Does the Netherlands have universal healthcare?,Universal,https://en.wikipedia.org/wiki/Universal,Wikipedia
+25,Does the Netherlands have universal healthcare?,Universal Pictures,https://en.wikipedia.org/wiki/Universal_Pictures,Wikipedia
+25,Does the Netherlands have universal healthcare?,Universalism,https://en.wikipedia.org/wiki/Universalism,Wikipedia
+25,Does the Netherlands have universal healthcare?,Coordinated Universal Time,https://en.wikipedia.org/wiki/Coordinated_Universal_Time,Wikipedia

@@ -90,8 +90,8 @@ def compare_titles(miracl_csv: str, wikipedia_csv: str):
 
 if __name__ == "__main__":
     # 파일 경로
-    miracl_file = "miracl_titles_extracted_unique_titles.csv"
-    wikipedia_file = "wikipedia_titles_unique.csv"
+    miracl_file = "/app/search_science_on_challenge/miracl_wiki_compare/miracl_title/miracl_titles.csv"
+    wikipedia_file = "/app/search_science_on_challenge/miracl_wiki_compare/wiki_title/wikipedia_titles.csv"
     
     # 비교 실행
     compare_titles(miracl_file, wikipedia_file)
