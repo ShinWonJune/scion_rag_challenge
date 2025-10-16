@@ -112,7 +112,7 @@ def get_gemini_api_key() -> str:
     
     # 설정 파일에서 확인
     script_dir = Path(__file__).parent
-    config_path = script_dir / "configs" / "gemini_api_credentials.json"
+    config_path = Path("./configs/gemini_api_credentials.json")
     if config_path.exists():
         try:
             import json
@@ -195,16 +195,11 @@ def run_single_mode(system: SearchMetaSystem, query: str, use_pubmed: bool = Fal
     print("=" * 50)
     
     try:
-        # 간단 테스트 모드
-        if simple_test and use_pubmed:
-            result = system.process_single_query_with_pubmed_simple(query)
+
         # Wikipedia 사용
-        elif use_wiki:
-            if hasattr(system, 'process_single_query_with_wikipedia'):
-                result = system.process_single_query_with_wikipedia(query)
-            else:
-                print("⚠️  Wikipedia 검색 기능이 아직 구현되지 않았습니다. 기본 검색을 사용합니다.")
-                result = system.process_single_query(query)
+        if use_wiki:
+            result = system.process_single_query_with_wikipedia(query)
+
         # PubMed 사용 여부에 따라 다른 메서드 호출
         elif use_pubmed:
             result = system.process_single_query_with_pubmed(query, True)

@@ -101,6 +101,7 @@ class KeywordExtractor:
         
         try:
             response = self.model.generate_content(prompt)
+            print(f"한국어 전체 응답: {response}")
             keywords_text = response.text.strip()
             
             # 불필요한 접두사 제거
@@ -138,6 +139,7 @@ Keywords:
         
         try:
             response = self.model.generate_content(prompt)
+            print(f"영어 전체 응답: {response}")
             keywords_text = response.text.strip()
             
             # 불필요한 접두사 제거

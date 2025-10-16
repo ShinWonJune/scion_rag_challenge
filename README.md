@@ -14,6 +14,15 @@ here is how to execute
 TARGET_DOCUMENTS=50 python main.py batch test.csv  # 각 질문당 100개 문서
 TARGET_DOCUMENTS=50 python main.py --use-vllm batch test.csv # vllm 사용시 
 TARGET_DOCUMENTS=50 python main.py --use-vllm --use-pubmed batch test.csv # vllm 사용시 & pubmed에 검색할 때
+TARGET_DOCUMENTS=20 python main.py --input-dir /app/data/miracl/questions --keyword-lang english --use-wiki batch subquestion.csv 
+# --input-dir 은 quetstion (subquestion.csv) 의 경로를 지정
+# --use-wiki: 위키피디아 사용
+# --keyword-lang english: 키워드추출 영어만 활성화 (english, korean)
+# 키워드 추출 언어를 제한한 이유:
+# wikipedia의 경우, 한국 위키피디아 주소와 영어 위키피디아 주소가 구분됨. 검색어의 언어에 따라서 api 주소도 변경해야함. 
+# 그러나 현재 wikipedia_api_client.py (위키 검색 모듈) 은 동적인 주소 변환을 지원하지 않음. 현재 영어 wiki 로 설정된 상태.
+# 따라서 --keyword-lang 의 arg를 추가하여 키워드 생성 언어를 지정해줌. 영어 wiki에는 영어 질문만 할 수 있도록.
+
 ```
 
 4. you needs api key for gemini and science_on_api
@@ -24,7 +33,7 @@ TARGET_DOCUMENTS=50 python main.py --use-vllm --use-pubmed batch test.csv # vllm
 # Build vector database with specific GPU (recommended when vLLM is running)
 # specifiy searched documents directory with  --docs_jsonl_path 
 python build_vectordb_search.py --gpu_id 2 # select gpu id 
-python build_vectordb_search.py --config_path ../configs/query_encoder/config_bge_m3.json  --docs_jsonl_path ../search_science_on_challenge/outputs/search_documents_20250921_111520.jsonl --gpu_id 2 
+python build_vectordb_search.py --config_path ../configs/query_encoder/config_bge_m3.json  --docs_jsonl_path ../search_science_on_challenge/outputs/search_documents_20250921_111520.jsonl
 
 
 ```
