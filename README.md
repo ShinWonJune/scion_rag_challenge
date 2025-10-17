@@ -17,7 +17,7 @@ TARGET_DOCUMENTS=50 python main.py --use-vllm --use-pubmed batch test.csv # vllm
 TARGET_DOCUMENTS=20 python main.py --input-dir /app/data/miracl/questions --keyword-lang english --use-wiki batch subquestion.csv 
 # --input-dir 은 quetstion (subquestion.csv) 의 경로를 지정
 # --use-wiki: 위키피디아 사용
-# --keyword-lang english: 키워드추출 영어만 활성화 (english, korean)
+# --keyword-lang LANG: 키워드추출 언어 지정 (all, english, korean)
 # 키워드 추출 언어를 제한한 이유:
 # wikipedia의 경우, 한국 위키피디아 주소와 영어 위키피디아 주소가 구분됨. 검색어의 언어에 따라서 api 주소도 변경해야함. 
 # 그러나 현재 wikipedia_api_client.py (위키 검색 모듈) 은 동적인 주소 변환을 지원하지 않음. 현재 영어 wiki 로 설정된 상태.

@@ -1,12 +1,12 @@
 """
-Wikipedia를 위한 extractor
+    Wikipedia를 위한 extractor
+
+
 검색어에 한국어 영어 혼용하지 않음
+키워드에 공백 제거 (영어 키워드만)
 
+AND 조합 추가
 
-키워드 추출기 모듈
-- Gemini API를 사용한 키워드 추출
-- 한국어/영어 키워드 분리
-- 검색어 생성
 """
 
 import re
@@ -139,7 +139,7 @@ Keywords:
         
         try:
             response = self.model.generate_content(prompt)
-            print(f"영어 전체 응답: {response}")
+            # print(f"영어 전체 응답: {response}")
             keywords_text = response.text.strip()
             
             # 불필요한 접두사 제거
@@ -149,7 +149,18 @@ Keywords:
             keywords = [kw.strip() for kw in keywords_text.split(',')]
             keywords = [kw for kw in keywords if kw and len(kw) > 1]
 
-            return keywords[:5]  # 최대 5개
+            # 공백이 포함된 키워드를 분리하여 개별 키워드로 추가
+            final_keywords = []
+            for kw in keywords:
+                if ' ' in kw:
+                    # 공백 기준으로 분리하여 각각 추가
+                    split_keywords = [word.strip() for word in kw.split() if word.strip() and len(word.strip()) > 1]
+                    final_keywords.extend(split_keywords)
+                else:
+                    # 공백이 없으면 그대로 추가
+                    final_keywords.append(kw)
+
+            return final_keywords  # 최대 5개
 
         except Exception as e:
             logging.error(f"영어 키워드 추출 실패: {e}")
@@ -179,13 +190,20 @@ Keywords:
             
             # 영어 검색어 (파이프로 구분)
             if english_kw:
-                english_term = '|'.join(english_kw)
-                search_terms.append(english_term)
+                for i in range(len(english_kw)):
+                    english_term = '|'.join(english_kw)
+                    search_terms.append(english_term)
+                    english_kw = english_kw[:-1]
+
             
             # 혼합 검색어 생성
-            mixed_terms = self._generate_mixed_terms(korean_kw, english_kw)
-            search_terms.extend(mixed_terms)
+            # mixed_terms = self._generate_mixed_terms(korean_kw, english_kw)
+            # search_terms.extend(mixed_terms)
+
             
+            
+            
+
             # 중복 제거 및 정리
             search_terms = list(set(search_terms))
             search_terms = [term for term in search_terms if term.strip()]
@@ -196,39 +214,23 @@ Keywords:
             logging.error(f"검색어 생성 실패: {e}")
             return []
     
-    def _generate_mixed_terms(self, korean_kw: List[str], english_kw: List[str]) -> List[str]:
-        """혼합 검색어 생성 (더 많은 조합 생성)"""
-        mixed_terms = []
+    # def _generate_mixed_terms(self, korean_kw: List[str], english_kw: List[str]) -> List[str]:
+    #     """혼합 검색어 생성 (더 많은 조합 생성)"""
+    #     mixed_terms = []
         
-        # 한국어 + 영어 조합 (더 많은 조합)
-        # if korean_kw and english_kw:
-        #     for kr in korean_kw[:3]:  # 상위 3개
-        #         for en in english_kw[:3]:  # 상위 3개
-        #             mixed_terms.append(f"{kr}|{en}")
+    #     # 한국어 + 영어 조합 (더 많은 조합)
+    #     if korean_kw and english_kw:
+    #         for kr in korean_kw[:3]:  # 상위 3개
+    #             for en in english_kw[:3]:  # 상위 3개
+    #                 mixed_terms.append(f"{kr}|{en}")
         
-        # 부분 조합 (더 긴 조합)
-        if len(korean_kw) >=4:
-            mixed_terms.append('|'.join(korean_kw[:4]))  # 4개까지
-        elif len(korean_kw) >=3:
-            mixed_terms.append('|'.join(korean_kw[:3]))
-        elif len(korean_kw) >=2:
-            mixed_terms.append('|'.join(korean_kw[:2]))# 2개 조합도 추가
 
-        if len(english_kw) >=4:
-            mixed_terms.append('|'.join(english_kw[:4]))
-            mixed_terms.append('|'.join(english_kw[:3]))
-            mixed_terms.append('|'.join(english_kw[:2]))  # 4개까지
-        elif len(english_kw) >=3:
-            mixed_terms.append('|'.join(english_kw[:3]))
-            mixed_terms.append('|'.join(english_kw[:2]))  # 3개 조합도 추가
-        elif len(english_kw) >=2:
-            mixed_terms.append('|'.join(english_kw[:2]))  # 2개 조합도 추가
         
-        # 개별 키워드도 검색어로 추가
-        mixed_terms.extend(korean_kw[:3])  # 상위 3개 한국어 키워드
-        mixed_terms.extend(english_kw[:3])  # 상위 3개 영어 키워드
+    #     # 개별 키워드도 검색어로 추가
+    #     mixed_terms.extend(korean_kw[:3])  # 상위 3개 한국어 키워드
+    #     mixed_terms.extend(english_kw[:3])  # 상위 3개 영어 키워드
         
-        return mixed_terms
+    #     return mixed_terms
     
     def _generate_keyword_rotations(self, keywords: List[str]) -> List[str]:
         """

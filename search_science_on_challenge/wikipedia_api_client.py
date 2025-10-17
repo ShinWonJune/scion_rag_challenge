@@ -25,7 +25,7 @@ class WikipediaAPIClient:
             'User-Agent': 'SearchMetaSystem/1.0 (https://github.com/example/searchmetasystem; contact@example.com)'
         }
         
-    def search_multiple_terms(self, search_terms: List[str], max_results_per_term: int = 5) -> List[Dict[str, Any]]:
+    def search_multiple_terms(self, search_terms: List[str], max_results_per_term: int = 10) -> List[Dict[str, Any]]:
         """
         여러 검색어로 Wikipedia 검색
         
@@ -38,7 +38,7 @@ class WikipediaAPIClient:
         """
         all_documents = []
         
-        for term in search_terms[:10]:  # 최대 10개 검색어로 제한
+        for term in search_terms:  
             try:
                 documents = self._search_single_term(term, max_results_per_term)
                 all_documents.extend(documents)
@@ -55,7 +55,7 @@ class WikipediaAPIClient:
         
         return unique_documents
     
-    def _search_single_term(self, term: str, max_results: int = 5) -> List[Dict[str, Any]]:
+    def _search_single_term(self, term: str, max_results: int = 10) -> List[Dict[str, Any]]:
         """
         단일 검색어로 Wikipedia 검색
         

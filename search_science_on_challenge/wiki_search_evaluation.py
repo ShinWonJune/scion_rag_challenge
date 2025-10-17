@@ -7,7 +7,7 @@ def analyze_document_overlap():
     """
     
     # 파일 경로
-    search_results_path = "./outputs/search_meta_results_20250928_031105.json"
+    search_results_path = "./outputs/search_meta_results_20251017_030125.json"
     miracl_path = "../data/miracl/questions/miracl_en_query_documents.json"
     
     # 파일 로드
