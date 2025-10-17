@@ -36,7 +36,7 @@ class DocumentSearcher:
         """
         all_documents = []
         used_terms = set()
-        print(f"DEBUG - 검색어 리스트: {search_terms}")
+        # print(f"DEBUG - 검색어 리스트: {search_terms}")
         for page in range(1, self.max_pages + 1):
             if len(all_documents) >= self.target_documents:
                 break
