@@ -1,5 +1,6 @@
 {
   "total_answer_documents": 45,
+  "generation_time": "2025년 10월 17일 19시 33분 57초",
   "analysis_1": {
     "description": "전체 검색 결과에 포함되지 않은 정답 문서",
     "missing_count": 4,
@@ -11,7 +12,7 @@
       },
       {
         "question_id": "39",
-        "title": "산업생태계 관점에서 바라본 IT융합 촉진전략 ㅌ"
+        "title": "산업생태계 관점에서 바라본 IT융합 촉진전략"
       },
       {
         "question_id": "41",
@@ -75,7 +76,7 @@
       },
       {
         "question_id": "39",
-        "answer_title": "산업생태계 관점에서 바라본 IT융합 촉진전략 ㅌ",
+        "answer_title": "산업생태계 관점에서 바라본 IT융합 촉진전략",
         "extracted_count": 23
       },
       {

@@ -7,6 +7,7 @@
 import json
 from typing import Dict, List, Tuple, Set
 import re
+from datetime import datetime
 
 
 def normalize_title(title: str) -> str:
@@ -235,7 +236,10 @@ def main():
     """메인 실행 함수"""
     answer_docs_file = "outputs/scion_answer_docs.json"
     extracted_questions_file = "outputs/extracted_questions_titles.json"
-    output_file = "outputs/document_coverage_analysis.json"
+    
+    # 현재 시간으로 출력 파일명 생성
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = f"outputs/document_coverage_analysis_{timestamp}.json"
     
     print("문서 커버리지 분석을 시작합니다...")
     results = analyze_document_coverage(
