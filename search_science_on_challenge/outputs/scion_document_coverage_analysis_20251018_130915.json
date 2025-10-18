@@ -1,0 +1,422 @@
+{
+  "total_answer_documents": 45,
+  "analysis_1": {
+    "description": "전체 검색 결과에 포함되지 않은 정답 문서",
+    "missing_count": 45,
+    "coverage_rate": 0.0,
+    "missing_docs": [
+      {
+        "question_id": "0",
+        "title": "인공지능(Artificial Intelligence)과 대학수학교육"
+      },
+      {
+        "question_id": "1",
+        "title": "Artificial Intelligence, Language Intelligence, and Mathematics"
+      },
+      {
+        "question_id": "2",
+        "title": "Artificial Intelligence for Artificial Artificial Intelligence"
+      },
+      {
+        "question_id": "3",
+        "title": "Sustainable artificial intelligence"
+      },
+      {
+        "question_id": "4",
+        "title": "Artificial intelligence in obstetrics"
+      },
+      {
+        "question_id": "5",
+        "title": "초등 인공지능 교육을 위한 설명 가능한 인공지능의 교육적 의미 연구"
+      },
+      {
+        "question_id": "6",
+        "title": "인공지능 생성 콘텐츠(Artificial Intelligence Generated Content)와 인공지능 사용 공개(Artificial Intelligence Disclaimer)에 대한 소비자 인식 연구: 콘텐츠 가치와 형식을 중심으로"
+      },
+      {
+        "question_id": "7",
+        "title": "항공분야의 인공지능"
+      },
+      {
+        "question_id": "8",
+        "title": "구성적 인공지능"
+      },
+      {
+        "question_id": "9",
+        "title": "마음,지능,인공지능"
+      },
+      {
+        "question_id": "10",
+        "title": "Keynote speech 6: Big Data, IoT and the 2nd sustainable development goal"
+      },
+      {
+        "question_id": "11",
+        "title": "Artificial intelligence and Big Data in neurology"
+      },
+      {
+        "question_id": "12",
+        "title": "Big Data, Big Waste? A Reflection on the Environmental Sustainability of Big Data Initiatives"
+      },
+      {
+        "question_id": "13",
+        "title": "Big Data, Big Knowledge: Big Data for Personalized Healthcare"
+      },
+      {
+        "question_id": "14",
+        "title": "Demystifying big data: Anatomy of big data developmental process"
+      },
+      {
+        "question_id": "15",
+        "title": "Big data를 이용한 Warehouse Management System 모델 연구 : SAP S/4 Hana를 중심으로"
+      },
+      {
+        "question_id": "16",
+        "title": "DTG 실 주행데이터 및 공간정보를 이용한 빅데이터 기반 연료소모량 추정 모델 연구"
+      },
+      {
+        "question_id": "17",
+        "title": "빅데이터 처리 프로세스에 따른 빅데이터 위험요인 분석"
+      },
+      {
+        "question_id": "18",
+        "title": "패키징(Packaging) 분야에서의 빅데이터(Big data) 적용방안 연구"
+      },
+      {
+        "question_id": "19",
+        "title": "Big Data 활용을 위한 제조 품질 개선 방법에 대한 연구"
+      },
+      {
+        "question_id": "20",
+        "title": "Deep learning for radar"
+      },
+      {
+        "question_id": "21",
+        "title": "A Comparison of Deep Reinforcement Learning and Deep learning for Complex Image Analysis,"
+      },
+      {
+        "question_id": "22",
+        "title": "Diabetes detection using deep learning algorithms"
+      },
+      {
+        "question_id": "23",
+        "title": "Effective Electricity Demand Prediction via Deep Learning"
+      },
+      {
+        "question_id": "24",
+        "title": "Deep Learning Research Trend Analysis using Text Mining"
+      },
+      {
+        "question_id": "25",
+        "title": "Deep Learning 프레임워크 성능 비교 연구 : Cloud Computing 환경에서"
+      },
+      {
+        "question_id": "26",
+        "title": "딥 러닝을 이용한 DC 모터 제어"
+      },
+      {
+        "question_id": "27",
+        "title": "딥러닝 알고리즘에 기반한 기업부도 예측"
+      },
+      {
+        "question_id": "28",
+        "title": "딥 러닝기반 고객평점 예측모델"
+      },
+      {
+        "question_id": "29",
+        "title": "바둑에 적용된 깊은 학습: 응용 및 실험에 대한 조사"
+      },
+      {
+        "question_id": "30",
+        "title": "The Trends of IT Convergence in Korea"
+      },
+      {
+        "question_id": "31",
+        "title": "u-IT Convergence 기기의 성능평가기준과 표준화 연구"
+      },
+      {
+        "question_id": "32",
+        "title": "IT/OT Convergence 기반의 Advanced Distribution Management System의 설계"
+      },
+      {
+        "question_id": "33",
+        "title": "IT기업 관점에서의 국방IT융합 추진방향"
+      },
+      {
+        "question_id": "34",
+        "title": "IT 기반의 convergence 제품의 구입태도에 대한 연구"
+      },
+      {
+        "question_id": "35",
+        "title": "한국 IT융합 신산업 역량강화요인"
+      },
+      {
+        "question_id": "36",
+        "title": "Technological Convergence of IT and BT"
+      },
+      {
+        "question_id": "37",
+        "title": "그린산업 육성을 위한 농업분야 IT융합기술"
+      },
+      {
+        "question_id": "38",
+        "title": "국방 IT융합 비즈니스 모델 사례와 성과 분석"
+      },
+      {
+        "question_id": "39",
+        "title": "산업생태계 관점에서 바라본 IT융합 촉진전략"
+      },
+      {
+        "question_id": "41",
+        "title": "정보통신 융합기기 연계를 고려한 데이터 중심의 정보시스템 모델의 설계 및 분석"
+      },
+      {
+        "question_id": "43",
+        "title": "Speech Recognition using Machine Learning"
+      },
+      {
+        "question_id": "44",
+        "title": "Machine Learning and Deep Learning for the Pharmacogenomics of Antidepressant Treatments"
+      },
+      {
+        "question_id": "46",
+        "title": "Machine learning-based adaptive CSI feedback interval"
+      },
+      {
+        "question_id": "47",
+        "title": "Speech Recognition using Machine Learning"
+      }
+    ]
+  },
+  "analysis_2": {
+    "description": "각 질문별로 정답 문서가 누락된 경우",
+    "missing_count": 45,
+    "coverage_rate": 0.0,
+    "missing_per_question": [
+      {
+        "question_id": "0",
+        "answer_title": "인공지능(Artificial Intelligence)과 대학수학교육",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "1",
+        "answer_title": "Artificial Intelligence, Language Intelligence, and Mathematics",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "2",
+        "answer_title": "Artificial Intelligence for Artificial Artificial Intelligence",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "3",
+        "answer_title": "Sustainable artificial intelligence",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "4",
+        "answer_title": "Artificial intelligence in obstetrics",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "5",
+        "answer_title": "초등 인공지능 교육을 위한 설명 가능한 인공지능의 교육적 의미 연구",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "6",
+        "answer_title": "인공지능 생성 콘텐츠(Artificial Intelligence Generated Content)와 인공지능 사용 공개(Artificial Intelligence Disclaimer)에 대한 소비자 인식 연구: 콘텐츠 가치와 형식을 중심으로",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "7",
+        "answer_title": "항공분야의 인공지능",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "8",
+        "answer_title": "구성적 인공지능",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "9",
+        "answer_title": "마음,지능,인공지능",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "10",
+        "answer_title": "Keynote speech 6: Big Data, IoT and the 2nd sustainable development goal",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "11",
+        "answer_title": "Artificial intelligence and Big Data in neurology",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "12",
+        "answer_title": "Big Data, Big Waste? A Reflection on the Environmental Sustainability of Big Data Initiatives",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "13",
+        "answer_title": "Big Data, Big Knowledge: Big Data for Personalized Healthcare",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "14",
+        "answer_title": "Demystifying big data: Anatomy of big data developmental process",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "15",
+        "answer_title": "Big data를 이용한 Warehouse Management System 모델 연구 : SAP S/4 Hana를 중심으로",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "16",
+        "answer_title": "DTG 실 주행데이터 및 공간정보를 이용한 빅데이터 기반 연료소모량 추정 모델 연구",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "17",
+        "answer_title": "빅데이터 처리 프로세스에 따른 빅데이터 위험요인 분석",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "18",
+        "answer_title": "패키징(Packaging) 분야에서의 빅데이터(Big data) 적용방안 연구",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "19",
+        "answer_title": "Big Data 활용을 위한 제조 품질 개선 방법에 대한 연구",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "20",
+        "answer_title": "Deep learning for radar",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "21",
+        "answer_title": "A Comparison of Deep Reinforcement Learning and Deep learning for Complex Image Analysis,",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "22",
+        "answer_title": "Diabetes detection using deep learning algorithms",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "23",
+        "answer_title": "Effective Electricity Demand Prediction via Deep Learning",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "24",
+        "answer_title": "Deep Learning Research Trend Analysis using Text Mining",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "25",
+        "answer_title": "Deep Learning 프레임워크 성능 비교 연구 : Cloud Computing 환경에서",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "26",
+        "answer_title": "딥 러닝을 이용한 DC 모터 제어",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "27",
+        "answer_title": "딥러닝 알고리즘에 기반한 기업부도 예측",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "28",
+        "answer_title": "딥 러닝기반 고객평점 예측모델",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "29",
+        "answer_title": "바둑에 적용된 깊은 학습: 응용 및 실험에 대한 조사",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "30",
+        "answer_title": "The Trends of IT Convergence in Korea",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "31",
+        "answer_title": "u-IT Convergence 기기의 성능평가기준과 표준화 연구",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "32",
+        "answer_title": "IT/OT Convergence 기반의 Advanced Distribution Management System의 설계",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "33",
+        "answer_title": "IT기업 관점에서의 국방IT융합 추진방향",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "34",
+        "answer_title": "IT 기반의 convergence 제품의 구입태도에 대한 연구",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "35",
+        "answer_title": "한국 IT융합 신산업 역량강화요인",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "36",
+        "answer_title": "Technological Convergence of IT and BT",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "37",
+        "answer_title": "그린산업 육성을 위한 농업분야 IT융합기술",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "38",
+        "answer_title": "국방 IT융합 비즈니스 모델 사례와 성과 분석",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "39",
+        "answer_title": "산업생태계 관점에서 바라본 IT융합 촉진전략",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "41",
+        "answer_title": "정보통신 융합기기 연계를 고려한 데이터 중심의 정보시스템 모델의 설계 및 분석",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "43",
+        "answer_title": "Speech Recognition using Machine Learning",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "44",
+        "answer_title": "Machine Learning and Deep Learning for the Pharmacogenomics of Antidepressant Treatments",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "46",
+        "answer_title": "Machine learning-based adaptive CSI feedback interval",
+        "extracted_count": 0
+      },
+      {
+        "question_id": "47",
+        "answer_title": "Speech Recognition using Machine Learning",
+        "extracted_count": 0
+      }
+    ]
+  }
+}

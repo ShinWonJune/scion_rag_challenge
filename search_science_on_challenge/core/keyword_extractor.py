@@ -130,7 +130,7 @@ class KeywordExtractor:
                         final_keywords.append(kw)
                         seen_keywords.add(kw.lower())
 
-            return final_keywords 
+            return final_keywords[:10]
             
         except Exception as e:
             logging.error(f"한국어 키워드 추출 실패: {e}")
@@ -186,7 +186,7 @@ Keywords:
                         final_keywords.append(kw)
                         seen_keywords.add(kw.lower())
 
-            return final_keywords
+            return final_keywords[:10]
 
         except Exception as e:
             logging.error(f"영어 키워드 추출 실패: {e}")
@@ -224,7 +224,7 @@ Keywords:
                     english_kw = english_kw[:-1]
 
             # AND 조합 추가
-            search_terms = self._add_operator(search_terms, number_of_operators=10)
+            search_terms = self._add_operator(search_terms, number_of_operators=0)
             # print(search_terms)
             
             # 혼합 검색어 생성

@@ -8,13 +8,13 @@ def analyze_document_overlap():
     
     # 파일 경로
     search_results_path = "./outputs/search_meta_results_20251017_061626.json"
-    miracl_path = "../data/miracl/questions/miracl_en_query_documents.json"
+    answer_docs_file = "../data/miracl/questions/miracl_en_query_documents.json"
     
     # 파일 로드
     with open(search_results_path, 'r', encoding='utf-8') as f:
         search_results = json.load(f)
     
-    with open(miracl_path, 'r', encoding='utf-8') as f:
+    with open(answer_docs_file, 'r', encoding='utf-8') as f:
         miracl_data = json.load(f)
     
     # MIRACL 데이터를 쿼리별로 매핑 (query_id를 키로 사용)

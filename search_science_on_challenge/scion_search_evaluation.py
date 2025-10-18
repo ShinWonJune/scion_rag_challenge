@@ -1,13 +1,14 @@
 """
-정답 문서와 검색 결과 간의 포함/누락 분석
-1. 전체 검색 결과에 포함되지 않은 정답 문서 찾기
-2. 각 질문별로 정답 문서가 누락된 경우 찾기
+메타데이터로부터 문서 커버리지 분석을 수행하는 통합 스크립트
+1. 검색 결과에서 질문과 문서 제목 추출
+2. 정답 문서와 검색 결과 간의 포함/누락 분석
 """
 
 import json
-from typing import Dict, List, Tuple, Set
+from typing import Dict, List, Tuple, Set, Any
 import re
 from datetime import datetime
+from pathlib import Path
 
 
 def normalize_title(title: str) -> str:
@@ -21,6 +22,60 @@ def normalize_title(title: str) -> str:
     return normalized
 
 
+def extract_questions_and_titles(input_file: str, output_file: str = None) -> List[Dict[str, Any]]:
+    """
+    검색 결과 파일에서 질문과 문서 제목들을 추출
+    
+    Args:
+        input_file: 입력 JSON 파일 경로
+        output_file: 출력 JSON 파일 경로 (선택적)
+        
+    Returns:
+        추출된 데이터 리스트
+    """
+    try:
+        # JSON 파일 읽기
+        with open(input_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        extracted_data = []
+        
+        # 각 결과에서 질문과 문서 제목들 추출
+        for idx, result in enumerate(data.get('results', [])):
+            # 성공한 결과는 'question', 실패한 결과는 'query' 키 사용
+            question = result.get('question', result.get('query', ''))
+            documents = result.get('documents', [])
+            
+            # 문서 제목들 추출
+            document_titles = []
+            for doc in documents:
+                title = doc.get('title', '').strip()
+                if title:
+                    document_titles.append(title)
+            
+            # 데이터 구성
+            question_data = {
+                'question_id': idx,  # 0부터 시작
+                'question': question,
+                'document_titles': document_titles,
+                'document_count': len(document_titles)
+            }
+            
+            extracted_data.append(question_data)
+        
+        # 출력 파일이 지정된 경우 저장
+        if output_file:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(extracted_data, f, ensure_ascii=False, indent=2)
+            print(f"추출된 데이터가 {output_file}에 저장되었습니다.")
+        
+        return extracted_data
+        
+    except Exception as e:
+        print(f"데이터 추출 중 오류 발생: {e}")
+        return []
+
+
 def load_answer_docs(file_path: str) -> Dict[str, str]:
     """정답 문서 JSON 파일 로딩"""
     try:
@@ -29,16 +84,6 @@ def load_answer_docs(file_path: str) -> Dict[str, str]:
     except Exception as e:
         print(f"정답 문서 로딩 중 오류: {e}")
         return {}
-
-
-def load_extracted_questions(file_path: str) -> List[Dict]:
-    """검색된 질문 데이터 JSON 파일 로딩"""
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"검색 결과 로딩 중 오류: {e}")
-        return []
 
 
 def is_title_match(title1: str, title2: str) -> bool:
@@ -130,20 +175,36 @@ def find_missing_answer_docs_per_question(answer_docs: Dict[str, str],
     return missing_per_question
 
 
-def analyze_document_coverage(answer_docs_file: str, extracted_questions_file: str, output_file: str = None):
+def print_extraction_summary(extracted_data: List[Dict[str, Any]]):
+    """추출된 데이터 요약 출력"""
+    if not extracted_data:
+        print("추출된 데이터가 없습니다.")
+        return
+    
+    total_questions = len(extracted_data)
+    total_documents = sum(item['document_count'] for item in extracted_data)
+    avg_docs_per_question = total_documents / total_questions if total_questions > 0 else 0
+    
+    print(f"\n=== 추출 결과 요약 ===")
+    print(f"총 질문 수: {total_questions}")
+    print(f"총 문서 수: {total_documents}")
+    print(f"질문당 평균 문서 수: {avg_docs_per_question:.2f}")
+
+
+def analyze_document_coverage(answer_docs: Dict[str, str], extracted_questions: List[Dict], 
+                            analysis_output_file: str = None) -> Dict:
     """
-    메인 분석 함수
+    문서 커버리지 분석 수행
     
     Args:
-        answer_docs_file: 정답 문서 JSON 파일 경로
-        extracted_questions_file: 검색 결과 JSON 파일 경로
-        output_file: 결과 저장 파일 경로 (선택적)
+        answer_docs: 정답 문서 딕셔너리
+        extracted_questions: 추출된 질문 데이터 리스트
+        analysis_output_file: 분석 결과 저장 파일 경로 (선택적)
+        
+    Returns:
+        분석 결과 딕셔너리
     """
-    print("데이터 로딩 중...")
-    answer_docs = load_answer_docs(answer_docs_file)
-    extracted_questions = load_extracted_questions(extracted_questions_file)
-    
-    print(f"정답 문서 수: {len(answer_docs)}")
+    print(f"\n정답 문서 수: {len(answer_docs)}")
     print(f"검색된 질문 수: {len(extracted_questions)}")
     
     # 분석 1: 전체 검색 결과에 포함되지 않은 정답 문서
@@ -221,11 +282,11 @@ def analyze_document_coverage(answer_docs_file: str, extracted_questions_file: s
     print(f"질문별 검색 결과 커버리지: {question_coverage:.2f}% ({total_answer_docs - question_missing}/{total_answer_docs})")
     
     # 결과 저장
-    if output_file:
+    if analysis_output_file:
         try:
-            with open(output_file, 'w', encoding='utf-8') as f:
+            with open(analysis_output_file, 'w', encoding='utf-8') as f:
                 json.dump(summary, f, ensure_ascii=False, indent=2)
-            print(f"\n분석 결과가 {output_file}에 저장되었습니다.")
+            print(f"\n분석 결과가 {analysis_output_file}에 저장되었습니다.")
         except Exception as e:
             print(f"파일 저장 중 오류: {e}")
     
@@ -234,21 +295,58 @@ def analyze_document_coverage(answer_docs_file: str, extracted_questions_file: s
 
 def main():
     """메인 실행 함수"""
-    answer_docs_file = "outputs/scion_answer_docs.json"
-    extracted_questions_file = "outputs/extracted_questions_titles.json"
-    
-    # 현재 시간으로 출력 파일명 생성
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = f"outputs/document_coverage_analysis_{timestamp}.json"
     
-    print("문서 커버리지 분석을 시작합니다...")
-    results = analyze_document_coverage(
-        answer_docs_file, 
-        extracted_questions_file, 
-        output_file
+    # 입력 파일 경로
+    search_results_file = "outputs/search_meta_results_20251018_130445.json"
+    answer_docs_file = "outputs/scion_answer_docs.json"
+    
+    # 출력 파일 경로 (타임스탬프 포함) - 최종 결과만 저장
+    analysis_output_file = f"outputs/scion_document_coverage_analysis_{timestamp}.json"
+    
+    print("="*80)
+    print("메타데이터로부터 문서 커버리지 분석 시작")
+    print("="*80)
+    
+    # 1단계: 검색 결과에서 질문과 문서 제목 추출 (메모리에만 저장)
+    print(f"\n1단계: 검색 결과에서 질문과 문서 제목 추출")
+    print(f"입력 파일: {search_results_file}")
+    
+    extracted_questions = extract_questions_and_titles(search_results_file, output_file=None)
+    
+    if not extracted_questions:
+        print("질문 데이터 추출에 실패했습니다.")
+        return
+    
+    print_extraction_summary(extracted_questions)
+    
+    # 2단계: 정답 문서 로딩
+    print(f"\n2단계: 정답 문서 로딩")
+    print(f"정답 파일: {answer_docs_file}")
+    
+    answer_docs = load_answer_docs(answer_docs_file)
+    
+    if not answer_docs:
+        print("정답 문서 로딩에 실패했습니다.")
+        return
+    
+    print(f"정답 문서 {len(answer_docs)}개 로딩 완료")
+    
+    # 3단계: 문서 커버리지 분석
+    print(f"\n3단계: 문서 커버리지 분석")
+    
+    analysis_results = analyze_document_coverage(
+        answer_docs, 
+        extracted_questions, 
+        analysis_output_file
     )
     
-    return results
+    print("\n" + "="*80)
+    print("분석 완료!")
+    print("="*80)
+    print(f"분석 결과: {analysis_output_file}")
+    
+    return analysis_results
 
 
 if __name__ == "__main__":
