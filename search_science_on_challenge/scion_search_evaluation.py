@@ -192,7 +192,7 @@ def print_extraction_summary(extracted_data: List[Dict[str, Any]]):
 
 
 def analyze_document_coverage(answer_docs: Dict[str, str], extracted_questions: List[Dict], 
-                            analysis_output_file: str = None) -> Dict:
+                            analysis_output_file: str = None, search_results_file: str = None) -> Dict:
     """
     문서 커버리지 분석 수행
     
@@ -200,6 +200,7 @@ def analyze_document_coverage(answer_docs: Dict[str, str], extracted_questions: 
         answer_docs: 정답 문서 딕셔너리
         extracted_questions: 추출된 질문 데이터 리스트
         analysis_output_file: 분석 결과 저장 파일 경로 (선택적)
+        search_results_file: 분석에 사용된 검색 결과 파일 경로 (선택적)
         
     Returns:
         분석 결과 딕셔너리
@@ -255,6 +256,7 @@ def analyze_document_coverage(answer_docs: Dict[str, str], extracted_questions: 
     question_coverage = (total_answer_docs - question_missing) / total_answer_docs * 100
     
     summary = {
+        'metadata': {},
         'total_answer_documents': total_answer_docs,
         'analysis_1': {
             'description': '전체 검색 결과에 포함되지 않은 정답 문서',
@@ -275,11 +277,17 @@ def analyze_document_coverage(answer_docs: Dict[str, str], extracted_questions: 
                 for qid, title, extracted in missing_per_question
             ]
         }
+          # 메타데이터는 main()에서 추가됨
     }
     
     print(f"전체 정답 문서 수: {total_answer_docs}")
     print(f"전체 검색 결과 커버리지: {global_coverage:.2f}% ({total_answer_docs - global_missing}/{total_answer_docs})")
     print(f"질문별 검색 결과 커버리지: {question_coverage:.2f}% ({total_answer_docs - question_missing}/{total_answer_docs})")
+    
+    # 메타데이터 추가
+    if search_results_file:
+        summary['metadata']['search_results_file'] = search_results_file
+    summary['metadata']['analysis_timestamp'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     # 결과 저장
     if analysis_output_file:
@@ -298,7 +306,7 @@ def main():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     # 입력 파일 경로
-    search_results_file = "outputs/search_meta_results_20251018_130445.json"
+    search_results_file = "outputs/search_meta_results_20251019_134217.json"
     answer_docs_file = "outputs/scion_answer_docs.json"
     
     # 출력 파일 경로 (타임스탬프 포함) - 최종 결과만 저장
@@ -338,7 +346,8 @@ def main():
     analysis_results = analyze_document_coverage(
         answer_docs, 
         extracted_questions, 
-        analysis_output_file
+        analysis_output_file,
+        search_results_file
     )
     
     print("\n" + "="*80)
