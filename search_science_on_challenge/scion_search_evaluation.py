@@ -306,7 +306,7 @@ def main():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     # 입력 파일 경로
-    search_results_file = "outputs/search_meta_results_20251019_134217.json"
+    search_results_file = "outputs/search_meta_results_20251021_114157.json"
     answer_docs_file = "outputs/scion_answer_docs.json"
     
     # 출력 파일 경로 (타임스탬프 포함) - 최종 결과만 저장

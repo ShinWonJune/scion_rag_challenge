@@ -18,15 +18,14 @@
     ```
     output json 파일 예시
     ```
-    {
-  "total_answer_documents": 45,
-  "analysis_1": {
+    {  "total_answer_documents": 45,
+    "analysis_1": {
     "description": "전체 검색 결과에 포함되지 않은 정답 문서",
     "missing_count": 4,
     "coverage_rate": 91.11,
     "missing_docs": [
         ...
-   "analysis_2": {
+    "analysis_2": {
     "description": "각 질문별로 정답 문서가 누락된 경우",
     "missing_count": 14,
     "coverage_rate": 68.89,

@@ -3,6 +3,9 @@ Wikipedia API 클라이언트
 - Wikipedia Search API 사용
 - 기존 ScienceON, PubMed 구조와 호환
 - 키워드 기반 검색 지원
+
+현재 한글 Wikipedia만 지원
+self.base_url = "https://ko.wikipedia.org/w/api.php"
 """
 
 import requests
@@ -19,7 +22,7 @@ class WikipediaAPIClient:
         """
         Wikipedia API 클라이언트 초기화
         """
-        self.base_url = "https://en.wikipedia.org/w/api.php"
+        self.base_url = "https://ko.wikipedia.org/w/api.php"
         self.rate_limit_delay = 0.1  # Wikipedia API rate limiting
         self.headers = {
             'User-Agent': 'SearchMetaSystem/1.0 (https://github.com/example/searchmetasystem; contact@example.com)'
@@ -113,7 +116,7 @@ class WikipediaAPIClient:
         """
         try:
             # Wikipedia URL 생성
-            url = f"https://en.wikipedia.org/wiki/{title.replace(' ', '_')}"
+            url = f"https://ko.wikipedia.org/wiki/{title.replace(' ', '_')}"
             
             return {
                 'title': title,

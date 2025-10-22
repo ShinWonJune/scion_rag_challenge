@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "search_results_file": "outputs/search_meta_results_20251021_021807.json",
+    "analysis_timestamp": "2025-10-21 02:18:50"
+  },
+  "total_answer_documents": 45,
+  "analysis_1": {
+    "description": "전체 검색 결과에 포함되지 않은 정답 문서",
+    "missing_count": 8,
+    "coverage_rate": 82.22,
+    "missing_docs": [
+      {
+        "question_id": "18",
+        "title": "패키징(Packaging) 분야에서의 빅데이터(Big data) 적용방안 연구"
+      },
+      {
+        "question_id": "24",
+        "title": "Deep Learning Research Trend Analysis using Text Mining"
+      },
+      {
+        "question_id": "37",
+        "title": "그린산업 육성을 위한 농업분야 IT융합기술"
+      },
+      {
+        "question_id": "39",
+        "title": "산업생태계 관점에서 바라본 IT융합 촉진전략"
+      },
+      {
+        "question_id": "41",
+        "title": "정보통신 융합기기 연계를 고려한 데이터 중심의 정보시스템 모델의 설계 및 분석"
+      },
+      {
+        "question_id": "43",
+        "title": "Speech Recognition using Machine Learning"
+      },
+      {
+        "question_id": "46",
+        "title": "Machine learning-based adaptive CSI feedback interval"
+      },
+      {
+        "question_id": "47",
+        "title": "Speech Recognition using Machine Learning"
+      }
+    ]
+  },
+  "analysis_2": {
+    "description": "각 질문별로 정답 문서가 누락된 경우",
+    "missing_count": 13,
+    "coverage_rate": 71.11,
+    "missing_per_question": [
+      {
+        "question_id": "2",
+        "answer_title": "Artificial Intelligence for Artificial Artificial Intelligence",
+        "extracted_count": 25
+      },
+      {
+        "question_id": "10",
+        "answer_title": "Keynote speech 6: Big Data, IoT and the 2nd sustainable development goal",
+        "extracted_count": 49
+      },
+      {
+        "question_id": "11",
+        "answer_title": "Artificial intelligence and Big Data in neurology",
+        "extracted_count": 49
+      },
+      {
+        "question_id": "18",
+        "answer_title": "패키징(Packaging) 분야에서의 빅데이터(Big data) 적용방안 연구",
+        "extracted_count": 45
+      },
+      {
+        "question_id": "24",
+        "answer_title": "Deep Learning Research Trend Analysis using Text Mining",
+        "extracted_count": 49
+      },
+      {
+        "question_id": "25",
+        "answer_title": "Deep Learning 프레임워크 성능 비교 연구 : Cloud Computing 환경에서",
+        "extracted_count": 45
+      },
+      {
+        "question_id": "34",
+        "answer_title": "IT 기반의 convergence 제품의 구입태도에 대한 연구",
+        "extracted_count": 50
+      },
+      {
+        "question_id": "37",
+        "answer_title": "그린산업 육성을 위한 농업분야 IT융합기술",
+        "extracted_count": 48
+      },
+      {
+        "question_id": "39",
+        "answer_title": "산업생태계 관점에서 바라본 IT융합 촉진전략",
+        "extracted_count": 43
+      },
+      {
+        "question_id": "41",
+        "answer_title": "정보통신 융합기기 연계를 고려한 데이터 중심의 정보시스템 모델의 설계 및 분석",
+        "extracted_count": 50
+      },
+      {
+        "question_id": "43",
+        "answer_title": "Speech Recognition using Machine Learning",
+        "extracted_count": 47
+      },
+      {
+        "question_id": "46",
+        "answer_title": "Machine learning-based adaptive CSI feedback interval",
+        "extracted_count": 42
+      },
+      {
+        "question_id": "47",
+        "answer_title": "Speech Recognition using Machine Learning",
+        "extracted_count": 41
+      }
+    ]
+  }
+}

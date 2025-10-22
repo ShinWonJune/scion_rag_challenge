@@ -224,7 +224,7 @@ Keywords:
                     english_kw = english_kw[:-1]
 
             # AND 조합 추가
-            search_terms = self._add_operator(search_terms, number_of_operators=1)
+            search_terms = self._add_operator(search_terms, number_of_operators=3)
             # print(search_terms)
             
             # 혼합 검색어 생성
