@@ -13,6 +13,7 @@ __pycache__/
 # Data & Results
 src/data2/
 data2/
+
 # results/ 
 
 #vllm models

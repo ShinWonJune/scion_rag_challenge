@@ -3,6 +3,9 @@ Wikipedia API 클라이언트
 - Wikipedia Search API 사용
 - 기존 ScienceON, PubMed 구조와 호환
 - 키워드 기반 검색 지원
+
+현재 한글 Wikipedia만 지원
+self.base_url = "https://ko.wikipedia.org/w/api.php"
 """
 
 import requests
@@ -19,13 +22,13 @@ class WikipediaAPIClient:
         """
         Wikipedia API 클라이언트 초기화
         """
-        self.base_url = "https://en.wikipedia.org/w/api.php"
+        self.base_url = "https://ko.wikipedia.org/w/api.php"
         self.rate_limit_delay = 0.1  # Wikipedia API rate limiting
         self.headers = {
             'User-Agent': 'SearchMetaSystem/1.0 (https://github.com/example/searchmetasystem; contact@example.com)'
         }
         
-    def search_multiple_terms(self, search_terms: List[str], max_results_per_term: int = 5) -> List[Dict[str, Any]]:
+    def search_multiple_terms(self, search_terms: List[str], max_results_per_term: int = 10) -> List[Dict[str, Any]]:
         """
         여러 검색어로 Wikipedia 검색
         
@@ -38,7 +41,7 @@ class WikipediaAPIClient:
         """
         all_documents = []
         
-        for term in search_terms[:10]:  # 최대 10개 검색어로 제한
+        for term in search_terms:  
             try:
                 documents = self._search_single_term(term, max_results_per_term)
                 all_documents.extend(documents)
@@ -55,7 +58,7 @@ class WikipediaAPIClient:
         
         return unique_documents
     
-    def _search_single_term(self, term: str, max_results: int = 5) -> List[Dict[str, Any]]:
+    def _search_single_term(self, term: str, max_results: int = 10) -> List[Dict[str, Any]]:
         """
         단일 검색어로 Wikipedia 검색
         
@@ -113,7 +116,7 @@ class WikipediaAPIClient:
         """
         try:
             # Wikipedia URL 생성
-            url = f"https://en.wikipedia.org/wiki/{title.replace(' ', '_')}"
+            url = f"https://ko.wikipedia.org/wiki/{title.replace(' ', '_')}"
             
             return {
                 'title': title,

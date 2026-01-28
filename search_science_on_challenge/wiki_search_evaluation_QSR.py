@@ -23,14 +23,15 @@ def analyze_document_overlap():
     """
     
     # 파일 경로
-    search_results_path = "./outputs/search_meta_results_20250928_031105.json"
-    miracl_path = "../data/miracl/questions/miracl_en_query_documents.json"
+    search_results_path = "./outputs/search_meta_results_20251021_120731.json"
+    answer_docs_file = "../data/miracl/questions/miracl_ko_query_documents.json"
+    # answer_docs_file = "../data/miracl/questions/miracl_en_query_documents.json" # 영어 질의 사용시
     
     # 파일 로드
     with open(search_results_path, 'r', encoding='utf-8') as f:
         search_results = json.load(f)
     
-    with open(miracl_path, 'r', encoding='utf-8') as f:
+    with open(answer_docs_file, 'r', encoding='utf-8') as f:
         miracl_data = json.load(f)
     
     # MIRACL 데이터를 쿼리별로 매핑 (query_id를 키로 사용)
@@ -88,13 +89,13 @@ def analyze_document_overlap():
             queries_with_no_overlap.append(overlap_info)
         
         # 개별 결과 출력
-        print(f"Query ID {miracl_match['query_id']}: {query_text}")
-        print(f"  Search 문서 수: {len(search_titles)}")
-        print(f"  MIRACL 문서 수: {len(miracl_titles)}")
-        print(f"  겹치는 문서 수: {overlap_count}")
-        if overlap_count > 0:
-            print(f"  겹치는 제목들: {', '.join(overlapping_titles)}")
-        print()
+        # print(f"Query ID {miracl_match['query_id']}: {query_text}")
+        # print(f"  Search 문서 수: {len(search_titles)}")
+        # print(f"  MIRACL 문서 수: {len(miracl_titles)}")
+        # print(f"  겹치는 문서 수: {overlap_count}")
+        # if overlap_count > 0:
+        #     print(f"  겹치는 제목들: {', '.join(overlapping_titles)}")
+        # print()
     
     # 전체 통계 출력
     print("=" * 50)
