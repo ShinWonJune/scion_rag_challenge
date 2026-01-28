@@ -1,3 +1,19 @@
+"""
+이 스크립트는 search_meta_results(쿼리 검색 결과) 와 miracl_en_query_documents(쿼리 답변을 위한 정답 문서 리스트)
+간의 문서 제목 겹침을 분석하기 위하여 Query Success Rate(QSR)을 도출합니다.
+
+주어진 쿼리 집합에 대하여 
+
+QSR은 쿼리 집합에 대하여 각 쿼리에 대해 `검색된 문서 제목`과 
+MIRACL 데이터셋에서 제공된 각 쿼리별 `정답 문서 제목` 간의 교집합을 계산하여,
+겹치는 문서가 하나 이상 있는 쿼리의 비율을 나타냅니다.
+
+문서 제목 비교 시 대소문자는 구분하지 않으며, 집합(Set) intersection 메서드 연산을 통해 문자열이 정확히 일치하는지 판별합니다.
+
+
+"""
+
+
 import json
 from typing import Dict, List, Set
 
@@ -21,7 +37,8 @@ def analyze_document_overlap():
     miracl_by_query_id = {}
     for item in miracl_data:
         miracl_by_query_id[item["query_id"]] = item
-    
+    # id : {id, query, documents[]} 형태
+
     # 결과 저장용 변수들
     overlap_results = []
     queries_with_no_overlap = []
@@ -30,14 +47,16 @@ def analyze_document_overlap():
     print("=== 쿼리별 문서 제목 겹침 분석 ===\n")
     
     # search_results의 각 쿼리에 대해 분석
+    # search_results의 list에 있는 dict 객체를 result로 할당
     for result in search_results["results"]:
         query_text = result["query"]
+        
         
         # 해당 쿼리와 매칭되는 MIRACL 데이터 찾기
         miracl_match = None
         for query_id, miracl_item in miracl_by_query_id.items():
             if miracl_item["query"] == query_text:
-                miracl_match = miracl_item
+                miracl_match = miracl_item # {id, query, documents[]}
                 break
         
         if not miracl_match:
@@ -45,7 +64,7 @@ def analyze_document_overlap():
             continue
         
         # 문서 제목 추출 (대소문자 구분 없이 비교)
-        search_titles = set(doc["title"].lower() for doc in result["documents"])
+        search_titles = set(doc["title"].lower() for doc in result["documents"]) 
         miracl_titles = set(doc["title"].lower() for doc in miracl_match["documents"])
         
         # 겹치는 제목 찾기
