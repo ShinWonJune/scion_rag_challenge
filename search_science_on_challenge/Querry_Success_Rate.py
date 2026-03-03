@@ -46,7 +46,7 @@ def load_json(filepath: str) -> Any:
 
 def evaluate_search_performance(search_path: str, gt_path: str) -> Dict[str, Any]:
     """
-    검색 결과와 정답 데이터를 비교하여 평가 지표를 계산합니다.
+    검색 결과와 정답 문서를 비교하여 평가 지표를 계산합니다.
     """
     # 0. 경로 보정 (입력된 파일이 없으면 outputs 폴더 확인)
     if not os.path.exists(search_path):
@@ -62,8 +62,7 @@ def evaluate_search_performance(search_path: str, gt_path: str) -> Dict[str, Any
     if not search_data or not miracl_data:
         return {}
 
-    # 2. 정답 데이터 매핑 (Query Text -> Data) 최적화
-    # 검색 결과에는 query_id가 없을 수 있으므로 텍스트로 매칭
+    # 2. 정답 데이터 준비 (딕셔너리로 변환)
     gt_map = {item["query"]: item for item in miracl_data} # {query_text: {id, query, documents[]}}
 
     overlap_results = []
@@ -77,7 +76,7 @@ def evaluate_search_performance(search_path: str, gt_path: str) -> Dict[str, Any
         query_text = result["query"] 
         
         
-        gt_item = gt_map.get(query_text)  # {id, query, documents[]} 
+        gt_item = gt_map.get(query_text)  # 딕셔너리 기반 정답 데이터, {id, query, documents[]} 
         if not gt_item:
             print(f"⚠️  Skip: MIRACL 데이터셋에 없는 쿼리입니다: '{query_text}'")
             continue
