@@ -60,23 +60,43 @@ ScienceON 챌린지를 위한 **과학 문헌 RAG(Retrieval-Augmented Generation
 
 ---
 
+## 1-1. 타당성 점검 (레포 실제 상태 기준)
+
+아래는 **현재 레포의 실제 파일/설정**을 확인한 결과로, 기존 분석 내용의 타당성을 검증한 요약이다.
+
+- ✅ **핵심 파이프라인 설명**은 전체 구조와 대체로 부합함.  
+  `search_science_on_challenge/`에서 검색 → `src/`에서 임베딩/검색/생성 흐름이 맞고, README의 실행 순서도 이를 반영.
+- ✅ **하드코딩 경로 문제**는 실제로 다수 존재함.  
+  `src/build_vectordb_search.py`, `configs/query_encoder/*.json`뿐 아니라 `src/`의 여러 스크립트와 `README.md`에도 `/app`, `/workspace` 절대 경로가 광범위하게 박혀 있음.
+- ✅ **`retrival` 오타 키**는 실제 결과 JSON들과 코드에 반영되어 있음.  
+  단순 오타 수정은 downstream 파이프라인과 기존 결과 호환성에 영향을 주므로, “동시 지원” 또는 마이그레이션 계획이 필요.
+- ⚠️ **API 자격증명 Git 포함 이슈**는 맞지만, 일부는 `.gitignore`에 이미 추가되어 있음.  
+  다만 이미 커밋된 파일은 `.gitignore`로 보호되지 않으므로 **`git rm --cached` + 히스토리 정리 + 키 회전**이 필요.
+- ⚠️ **`pumbedqa_final_answers` 오타**는 실제 디렉토리명이 아니라 README 내 출력 설명 문구의 오타임.  
+  실제 코드는 `results/pubmedqa_final_answers`를 사용 중.
+
+---
+
 ## 2. 구조 및 코드 개선 제안
 
 ### 2-1. 보안 — 🔴 즉시 수정 필요
 
 | 문제 | 현황 | 제안 |
 |------|------|------|
-| **실제 API 자격증명이 Git에 포함** | `configs/credientials/scienceon_api_credentials.json`에 `access_token`, `client_id`, `auth_key` 등 민감 정보가 평문으로 저장되어 있으며 `.gitignore`에 없음 | 즉시 `git rm --cached` 후 `.gitignore`에 추가. `.env` 파일로 관리하고 `.env.example`을 제공 |
-| **Gemini API 키 관리 방식 불명확** | 코드 내 `GEMINI_API_KEY` 환경변수 참조와 JSON 파일 방식이 혼재 | `.env` 단일 방식으로 통일 |
+| **실제 API 자격증명이 Git에 포함** | `configs/credientials/scienceon_api_credentials.json` 및 `search_science_on_challenge/configs/scienceon_api_credentials.json`가 커밋됨. 후자는 `.gitignore`에 있어도 이미 추적 중 | 하지만 중요한 자격증명이 아니기 때문에 gitignore 수준에서 정리 |
+| **Gemini/ChatGPT 키 관리 방식 혼재** | `GEMINI_API_KEY`/`OPENAI_API_KEY` 환경변수와 JSON 파일(`configs/*_api_credentials.json`) 혼재 | `.env` 단일 방식으로 통일하고 JSON은 `.example`만 유지 |
+| **PubMed 자격증명 파일명 불일치** | 코드: `./configs/pubmed_credentials.json` / `.gitignore`: `pubmed_api_credentials.json` | 파일명/경로 통일 (문서·코드·gitignore 동일 명칭) |
 
 ```bash
 # 추가 권장 .gitignore 항목
 configs/credientials/*.json
+search_science_on_challenge/configs/*.json
 .env
 *.csv          # 출력 데이터
 outputs/
 results/
 data/
+.DS_Store
 ```
 
 ---
@@ -153,7 +173,8 @@ scion_rag_challenge/
 
 #### 문제
 
-여러 파일에서 절대 경로가 하드코딩되어 있어 다른 머신에서 실행 불가:
+여러 파일에서 절대 경로가 하드코딩되어 있어 다른 머신에서 실행 불가  
+(예: `src/*.py`, `configs/query_encoder/*.json`, `README.md`, `main.ipynb` 등 전반):
 
 ```python
 # src/build_vectordb_search.py
@@ -170,6 +191,7 @@ docs_jsonl_path="/app/search_science_on_chellenge/outputs/search_documents_20250
 - 모든 경로를 CLI 인수 또는 `.env` 파일에서 주입
 - config JSON에서 날짜가 포함된 특정 파일명 제거 (빌드 시 자동 탐색)
 - `WORKSPACE_ROOT` 환경변수 하나로 기준 경로 통일
+- **경로 해석 유틸**(예: `src/utils/paths.py`)을 두고 `/app`, `/workspace` 문자열을 제거
 
 ---
 
@@ -180,7 +202,7 @@ docs_jsonl_path="/app/search_science_on_chellenge/outputs/search_documents_20250
 | `search_science_on_chellenge` | `search_science_on_challenge` | `src/build_vectordb_search.py`, `configs/*.json` 여러 곳 |
 | `configs/credientials/` | `configs/credentials/` | 디렉토리명 |
 | `retrival` (키 이름) | `retrieval` | `src/final_result.py` L33 |
-| `pumbedqa_final_answers` | `pubmedqa_final_answers` | `results/` 디렉토리명 |
+| `pumbedqa_final_answers` | `pubmedqa_final_answers` | README 문구 (코드/폴더는 정상) |
 
 ---
 
@@ -216,6 +238,7 @@ python run_pipeline.py \
 | `search_results_all_fields.json` | 루트와 `search_science_on_challenge/` 양쪽에 중복 존재 | 하나 삭제 |
 | `jobs.json` | 용도 불명확, 문서화 없음 | 용도 명시 또는 삭제 |
 | `test.zip` | 루트에 있는 테스트 압축 파일 | `data/`로 이동 또는 gitignore |
+| `.DS_Store` | macOS 메타 파일이 추적됨 | 삭제 + `.gitignore` 추가 |
 
 ---
 
@@ -260,15 +283,25 @@ VLLM_MODEL_NAME=openai/gpt-oss-120B
 
 ---
 
+### 2-9. 레포 위생 및 데이터 추적 — 🟠 단기
+
+- `results/`, `outputs/`, `data/`가 실제로 Git에 대량 추적됨  
+  → 용량/재현성 모두 악화. **gitignore 추가 + tracked 파일 제거** 필요.
+- 결과물 및 임베딩 산출물이 `configs/query_encoder/*.json`에 기록(`output_file`, `last_run`)  
+  → 설정과 실행 아티팩트가 섞여 있음. **런타임 기록은 별도 로그/메타 파일로 분리** 권장.
+
+---
+
 ## 3. 우선순위 요약
 
 | 우선순위 | 항목 | 난이도 |
 |----------|------|--------|
-| 🔴 즉시 | 자격증명 파일 gitignore 처리 + `.env` 방식으로 전환 | 낮음 |
+| 🔴 즉시 | 자격증명 파일 **추적 제거 + 히스토리 정리 + 키 회전** | 중간 |
 | 🔴 즉시 | `search_science_on_chellenge` 오타 일괄 수정 | 낮음 |
 | 🟠 단기 | 불필요한 백업 파일 (`_old`, `copy`) 삭제 | 낮음 |
 | 🟠 단기 | 하드코딩된 절대 경로를 환경변수/CLI 인수로 전환 | 중간 |
 | 🟠 단기 | `run_pipeline.py` 전체 파이프라인 진입점 생성 | 중간 |
 | 🟡 중기 | `search_science_on_challenge/`와 `src/`의 역할 경계 명확화 | 높음 |
 | 🟡 중기 | `outputs/` 디렉토리 단일화 | 중간 |
+| 🟡 중기 | `results/`·`outputs/`·`data/` Git 추적 제거 + .gitignore 정리 | 중간 |
 | 🟢 장기 | 단위 테스트 추가 + CI 설정 | 높음 |
