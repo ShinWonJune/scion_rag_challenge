@@ -10,6 +10,9 @@ __pycache__/
 .vscode/
 .devcontainer/.env
 
+# macOS
+.DS_Store
+
 # Data & Results
 src/data2/
 data2/
