@@ -34,7 +34,7 @@ class VLLMClient:
             model="openai/gpt-oss-120B",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=8192,
-            temperature=0.3
+            temperature=0.1
         )
         
         # 전체 응답 확인
