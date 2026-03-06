@@ -1,4 +1,0 @@
-[
-  {"dataset":"pubmed_qa","config":"pqa_labeled","splits":["train"],"outdir":"./data","max_bytes":2000000000},
-  {"dataset":"taesiri/arxiv_qa","splits":["train"],"outdir":"./data"}
-]

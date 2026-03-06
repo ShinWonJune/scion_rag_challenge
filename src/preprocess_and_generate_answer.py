@@ -213,6 +213,11 @@ def main():
         default="http://localhost:8000/v1",
         help="vLLM 서버 URL (기본값: http://localhost:8000/v1).",
     )
+    parser.add_argument(
+        "--vllm-model",
+        default="openai/gpt-oss-20b",
+        help="vLLM model name.",
+    )
     # 출력 디렉토리 인자
     parser.add_argument(
         "--output_dir",
@@ -234,7 +239,7 @@ def main():
     
     if args.use_vllm:
         print(f"Initializing vLLM client with URL: {args.vllm_url}")
-        vllm_client = VLLMClient(base_url=args.vllm_url)
+        vllm_client = VLLMClient(base_url=args.vllm_url, model=args.vllm_model)
     else:
         # API 키 로딩 - 설정 파일에서 가져오기
         api_key = args.api_key

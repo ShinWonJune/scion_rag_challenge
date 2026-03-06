@@ -9,7 +9,7 @@
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/250912_055407/vector_db_PwC_test_SamilPwC-AXNode-GenAI_PwC-Embedding_expr.csv",
+  "output_file": "../results/vectordb/vector_db_PwC_test_SamilPwC-AXNode-GenAI_PwC-Embedding_expr.csv",
   "json_path": "./test.json",
   "last_run": "250912_055407"
 }

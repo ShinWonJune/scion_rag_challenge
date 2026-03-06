@@ -2,13 +2,13 @@
   "model_name": "BAAI/bge-m3",
   "nickname": "bge_m3_test",
   "embedding_dim": 1024,
-  "jsonl_path": "/app/search_science_on_chellenge/outputs/search_documents_20250912_013206.jsonl",
+  "jsonl_path": "/app/outputs/search/search_documents.jsonl",
   "embedding_mode": "3*title+abstract",
   "text_fields": [
     "context"
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/250927_053954/vector_db_bge_m3_test_BAAI_bge-m3.csv",
+  "output_file": "../results/vectordb/vector_db_bge_m3_test_BAAI_bge-m3.csv",
   "last_run": "250927_053954"
 }

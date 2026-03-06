@@ -2,24 +2,27 @@ version: '3.8'
 
 services:
   vllm-rag:
-    build: .
+    image: vllm/vllm-openai:v0.10.2
     container_name: vllm-rag-server
-    ports:
-      - "8004:8000"
+    network_mode: host
     volumes:
-      - .:/workspace
+      - /your/path/to/models:/models
     environment:
-      - CUDA_VISIBLE_DEVICES=0
-      - HF_HOME=/workspace/model_cache
+      - HF_HOME=/models/.cache
+    ipc: host
     deploy:
       resources:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ['0']
+              device_ids: ['1']
               capabilities: [gpu]
-    shm_size: 64g
     ulimits:
       memlock: -1
       stack: 67108864
-    command: tail -f /dev/null
+    command: >
+      --model openai/gpt-oss-20b
+      --host 0.0.0.0
+      --port 8004
+      --tensor-parallel-size 1
+      --gpu-memory-utilization 0.9

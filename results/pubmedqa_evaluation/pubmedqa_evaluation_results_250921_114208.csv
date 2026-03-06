@@ -1,2 +1,0 @@
-timestamp,bleu_score,meteor_score,context_inclusion_ratio,final_decision_accuracy,total_samples,ground_truth_file,prediction_file
-250921_114208,0.0494799271168005,0.2706261273422096,0.28,0.3,50,/app/pubmedqa/data/evaluation/pubmedqa_answer.csv,/app/results/pubmedqa_final_answers/pubmedqa_final_predictions_250921_113523.csv

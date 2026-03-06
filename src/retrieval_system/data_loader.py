@@ -133,7 +133,7 @@ def load_questions_jsonl(path: str) -> List[QuestionItem]:
     if not os.path.exists(path):
         raise FileNotFoundError(f"Questions JSONL not found: {path}")
     items: List[QuestionItem] = []
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8-sig") as f:
         for line in f:
             if not line.strip():
                 continue

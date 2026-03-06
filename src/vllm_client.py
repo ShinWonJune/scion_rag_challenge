@@ -1,118 +1,50 @@
-"""
-vLLM OpenAI 호환 클라이언트 예제
-기존 Gemini API 대신 사용할 클라이언트
+﻿from openai import OpenAI
 
-python -m vllm.entrypoints.openai.api_server \
-  --model openai/gpt-oss-120B \
-  --host 0.0.0.0 \
-  --port 8000 \
-  --tensor-parallel-size 4 \
-  --gpu-memory-utilization 0.8
-
-
-
-"""
-from openai import OpenAI
-import os
 
 class VLLMClient:
-    def __init__(self, base_url="http://localhost:8000/v1"):
+    def __init__(self, base_url: str = "http://localhost:8000/v1", model: str = "openai/gpt-oss-20b"):
         self.client = OpenAI(
             base_url=base_url,
-            api_key="token-abc123",  # vLLM은 dummy key 사용
+            api_key="token-abc123",
         )
-    
-    def extract_keywords(self, text, max_keywords=10):
-        """키워드 추출"""
-        prompt = f"""Extract {max_keywords} key terms from the following text:
-        
-        Text: {text}
-        
-        Return only the keywords, separated by commas:"""
-        
+        self.model = model
+
+    def extract_keywords(self, text: str, max_keywords: int = 10) -> str:
+        prompt = f"""Extract {max_keywords} key terms from the following text:\n\nText: {text}\n\nReturn only the keywords, separated by commas:"""
         response = self.client.chat.completions.create(
-            model="openai/gpt-oss-120B",
+            model=self.model,
             messages=[{"role": "user", "content": prompt}],
             max_tokens=8192,
-            temperature=0.1
+            temperature=0.1,
         )
-        
-        # 전체 응답 확인
-        print("="*50)
-        print("Full response:", response)
-        print("="*50)
-        print("Content:", response.choices[0].message.content)
-        print("="*50)
-        
-        if response.choices[0].message.content is None:
-            return "No content generated"
+        content = response.choices[0].message.content
+        return (content or "").strip()
 
-        return response.choices[0].message.content.strip()
-
-    def generate_answer(self, question, context, max_tokens=8192):
-        """ PubMedQA 답변 생성"""
+    def generate_answer(self, question: str, context: str, max_tokens: int = 8192) -> str:
         prompt = f"""Answer the question based on the provided context.
-        Answer should be in 2-3 sentences. Final decision should be 'yes', 'no', or 'maybe'.
+Answer should be in 2-3 sentences. Final decision should be 'yes', 'no', or 'maybe'.
 
-        Context: {context}
-        
-        Question: {question}
-        
-        Answer:
-        Final decision:"""
-        
+Context: {context}
+
+Question: {question}
+
+Answer:
+Final decision:"""
         response = self.client.chat.completions.create(
-            model="openai/gpt-oss-120B",
+            model=self.model,
             messages=[{"role": "user", "content": prompt}],
             max_tokens=max_tokens,
-            temperature=0.1
+            temperature=0.1,
         )
+        content = response.choices[0].message.content
+        return (content or "").strip()
 
-        print("="*50)
-        print("Full response:", response)
-        print("="*50)
-        print("Content:", response.choices[0].message.content)
-        print("="*50)
-
-        return response.choices[0].message.content.strip()
-    
-    def generate_answer_with_prompt(self, prompt: str, max_tokens=2000):
-        """
-        미리 작성된 프롬프트를 사용해 답변 생성
-        
-        Args:
-            prompt: 완성된 프롬프트 문자열
-            max_tokens: 최대 토큰 수
-            
-        Returns:
-            생성된 답변 문자열
-        """
+    def generate_answer_with_prompt(self, prompt: str, max_tokens: int = 2000) -> str:
         response = self.client.chat.completions.create(
-            model="openai/gpt-oss-120B",
+            model=self.model,
             messages=[{"role": "user", "content": prompt}],
             max_tokens=max_tokens,
-            temperature=0.1
+            temperature=0.1,
         )
-
-        print("="*50)
-        print("Full response:", response)
-        print("="*50)
-        print("Content:", response.choices[0].message.content)
-        print("="*50)
-
-        return response.choices[0].message.content.strip()
-
-# 사용 예시
-if __name__ == "__main__":
-    client = VLLMClient()  # 같은 컨테이너 내에서 localhost 사용
-    
-    # 키워드 추출 테스트
-    text = "Machine learning is transforming various industries."
-    keywords = client.extract_keywords(text)
-    print(f"Keywords: {keywords}")
-    
-    # 답변 생성 테스트
-    question = "What is machine learning?"
-    context = "Machine learning is a subset of artificial intelligence that enables computers to learn from data."
-    answer = client.generate_answer(question, context)
-    print(f"Answer: {answer}")
+        content = response.choices[0].message.content
+        return (content or "").strip()

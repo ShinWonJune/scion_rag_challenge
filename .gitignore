@@ -6,6 +6,7 @@ __pycache__/
 .venv/
 .env
 .cache
+
 # VSCode & Devcontainer
 .vscode/
 .devcontainer/.env
@@ -14,16 +15,19 @@ __pycache__/
 .DS_Store
 
 # Data & Results
+data/
+outputs/
+results/
 src/data2/
 data2/
-
-# results/ 
 
 #vllm models
 model_cache/
 
 #credentials
-search_science_on_challenge/configs/chatgpt_api_credentials.json
-search_science_on_challenge/configs/pubmed_api_credentials.json
-search_science_on_challenge/configs/scienceon_api_credentials.json
-search_science_on_challenge/configs/gemini_api_credentials.json
+configs/credentials/*.json
+
+# local agent docs
+AGENTS.md
+ANALYSIS.md
+

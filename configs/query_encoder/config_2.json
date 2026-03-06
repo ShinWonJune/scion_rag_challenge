@@ -8,5 +8,5 @@
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/250904_081147/test_sentence-transformers_paraphrase-multilingual-MiniLM-L12-v2.csv"
+  "output_file": "../results/vectordb/test_sentence-transformers_paraphrase-multilingual-MiniLM-L12-v2.csv"
 }

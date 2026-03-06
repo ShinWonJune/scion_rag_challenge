@@ -9,5 +9,5 @@
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/250907_055734/snowflake_test_title_abstract_Snowflake_snowflake-arctic-embed-l-v2.0.csv"
+  "output_file": "../results/vectordb/snowflake_test_title_abstract_Snowflake_snowflake-arctic-embed-l-v2.0.csv"
 }

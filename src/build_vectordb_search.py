@@ -17,7 +17,7 @@ from data_handler.for_embedding import prepare_documents, save_results
 def build_vectordb_search(
     config_path="../configs/query_encoder/config_gte-multilingual-base.json",
     data_schema="../configs/csv_schema/test_2.json",
-    docs_jsonl_path="/app/search_science_on_chellenge/outputs/search_documents_20250912_013206.jsonl",
+    docs_jsonl_path: Optional[str] = None,
     auto_data_load=False,
     gpu_id: Optional[int] = None,
 ):
@@ -33,6 +33,9 @@ def build_vectordb_search(
     if auto_data_load:
         jsonl_path = config.get("jsonl_path", config_path)
     else:
+        if not docs_jsonl_path:
+            print("Error: --docs_jsonl_path is required when --auto_data_load is not set.")
+            return
         jsonl_path = docs_jsonl_path
     print(f"Loading documents from {jsonl_path}: Auto Loading Data", auto_data_load)
     documents_data = load_jsonl_docs(jsonl_path)
@@ -90,7 +93,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--docs_jsonl_path",
-        default="/app/search_science_on_chellenge/outputs/search_documents_20250912_013206.jsonl",
+        default=None,
         help="문서 JSONL 파일 경로"
     )
     parser.add_argument(
