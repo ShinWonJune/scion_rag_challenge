@@ -94,7 +94,6 @@ python pipeline/run_pipeline.py \
   - `decompose/` (옵션)
   - `retrieval/`
   - `final/`
-- 참고: `run_pipeline` 실행 시 Step4는 `retrieval/` 아래에 추가 타임스탬프 폴더를 만들지 않습니다.
 
 2. `step1_search.py` 단독 실행
 - 기본 루트: `outputs/search/`
