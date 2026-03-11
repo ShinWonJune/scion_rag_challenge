@@ -54,7 +54,7 @@ def make_text_for_embedding(
     documents_data = []
 
     for doc in documents:
-        cn = doc.get("CN", "")
+        cn = doc.get("doc_id") or doc.get("CN") or doc.get("cn", "")
         title = doc.get("title", "")
         abstract = doc.get("abstract", "")
         source = doc.get("source", "")

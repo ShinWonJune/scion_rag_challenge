@@ -16,7 +16,7 @@ import json
 
 # 상위 디렉토리의 모듈 import를 위한 경로 추가
 
-from search_meta_system import SearchMetaSystem
+from src.search.services.search_meta_system import SearchMetaSystem
 
 def print_usage():
     """사용법 출력"""

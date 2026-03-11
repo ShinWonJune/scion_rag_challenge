@@ -21,7 +21,7 @@ def create_search_client(source: str, config: Dict[str, Any]) -> BaseSearchClien
 
     if source_norm == "scienceon":
         from src.search.scienceon_adapter import ScienceONAdapter
-        from pipeline.scienceon_api_example import ScienceONAPIClient
+        from src.search.clients.scienceon_api_example import ScienceONAPIClient
 
         credentials_path = Path(
             config.get(
@@ -29,10 +29,13 @@ def create_search_client(source: str, config: Dict[str, Any]) -> BaseSearchClien
                 "configs/credentials/scienceon_api_credentials.json",
             )
         )
-        return ScienceONAdapter(ScienceONAPIClient(credentials_path))
+        return ScienceONAdapter(
+            ScienceONAPIClient(credentials_path),
+            max_pages=int(config.get("scienceon_max_pages", 5)),
+        )
 
     if source_norm == "pubmed":
-        from pipeline.pubmed_api_client import PubMedAPIClient
+        from src.search.clients.pubmed_api_client import PubMedAPIClient
 
         credentials_path = Path(
             config.get(
@@ -43,7 +46,7 @@ def create_search_client(source: str, config: Dict[str, Any]) -> BaseSearchClien
         return PubMedAPIClient(credentials_path)
 
     if source_norm == "wikipedia":
-        from pipeline.wikipedia_api_client import WikipediaAPIClient
+        from src.search.clients.wikipedia_api_client import WikipediaAPIClient
 
         return WikipediaAPIClient(lang=config.get("lang", "ko"))
 

@@ -17,10 +17,10 @@ from src.utils.dedup import remove_duplicates
 
 try:
     from src.search_pipeline.core.extractor_factory import create_keyword_extractor
-    from pipeline.search_client_factory import create_search_client
+    from src.search.factories.search_client_factory import create_search_client
 except ImportError:
     from search_pipeline.core.extractor_factory import create_keyword_extractor
-    from search_client_factory import create_search_client
+    from src.search.factories.search_client_factory import create_search_client
 
 
 def _sources_to_list(sources: str) -> list[str]:
@@ -74,12 +74,22 @@ def run_step1(
     keyword_extractor: Any,
     search_clients: dict[str, Any],
     target_documents: int = 50,
+    use_timestamp_subdir: bool = True,
 ) -> tuple[str, str]:
     out_dir = Path(output_dir)
+    if use_timestamp_subdir:
+        out_dir = out_dir / datetime.now().strftime("%y%m%d_%H%M%S")
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    if len(search_clients) != 1:
+        raise ValueError(
+            "Step1 supports exactly one source per run. "
+            f"Received: {', '.join(search_clients.keys()) or '<none>'}"
+        )
 
     results: list[dict[str, Any]] = []
     all_docs: list[dict[str, Any]] = []
+    source_name, client = next(iter(search_clients.items()))
 
     for row in _load_questions(Path(questions_path)):
         query = row["query"]
@@ -93,20 +103,18 @@ def run_step1(
             keywords = {"english": [query], "korean": []}
             search_terms = [query]
 
-        docs_per_source = max(1, target_documents // max(1, len(search_clients)))
         docs: list[dict[str, Any]] = []
-        for source, client in search_clients.items():
-            try:
-                source_docs = client.search(search_terms, max_results=docs_per_source)
-                docs.extend(source_docs)
-            except Exception as e:
-                logging.error("%s search failed for query '%s': %s", source, query, e)
+        try:
+            docs = client.search(search_terms, max_results=target_documents)
+        except Exception as e:
+            logging.error("%s search failed for query '%s': %s", source_name, query, e)
         docs = remove_duplicates(docs, key="title")[:target_documents]
 
         results.append(
             {
                 "question_id": row["question_id"],
                 "query": query,
+                "source": source_name,
                 "keywords": keywords,
                 "search_terms": search_terms,
                 "documents": docs,
@@ -139,12 +147,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--questions", required=True, help="Input questions file (.csv or .jsonl)")
     parser.add_argument("--output-dir", default="outputs/search", help="Search output directory")
     parser.add_argument("--extractor", default="gemini", help="Keyword extractor backend")
-    parser.add_argument("--sources", default="scienceon", help="Comma separated: scienceon,pubmed,wikipedia")
+    parser.add_argument("--sources", default="scienceon", help="Single source: scienceon|pubmed|wikipedia")
     parser.add_argument("--keyword-lang", choices=["all", "korean", "english"], default="all")
     parser.add_argument("--vllm-url", default="http://localhost:8000/v1", help="vLLM endpoint URL")
     parser.add_argument("--vllm-model", default="openai/gpt-oss-20b", help="vLLM model name")
     parser.add_argument("--target-documents", type=int, default=50, help="Target documents per query")
     parser.add_argument("--scienceon-credentials", default="configs/credentials/scienceon_api_credentials.json")
+    parser.add_argument("--scienceon-max-pages", type=int, default=5, help="Max ScienceON pages per query")
     parser.add_argument("--pubmed-credentials", default="configs/credentials/pubmed_api_credentials.json")
     return parser.parse_args()
 
@@ -166,6 +175,7 @@ def main() -> None:
             {
                 "lang": _to_wiki_lang(args.keyword_lang),
                 "scienceon_credentials_path": args.scienceon_credentials,
+                "scienceon_max_pages": args.scienceon_max_pages,
                 "pubmed_credentials_path": args.pubmed_credentials,
             },
         )

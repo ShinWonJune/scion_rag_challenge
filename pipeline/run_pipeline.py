@@ -13,10 +13,10 @@ if str(ROOT) not in sys.path:
 
 try:
     from src.search_pipeline.core.extractor_factory import create_keyword_extractor
-    from pipeline.search_client_factory import create_search_client
+    from src.search.factories.search_client_factory import create_search_client
 except ImportError:
     from search_pipeline.core.extractor_factory import create_keyword_extractor
-    from search_client_factory import create_search_client
+    from src.search.factories.search_client_factory import create_search_client
 
 try:
     from src.llm_client.llm_factory import create_llm_client
@@ -45,12 +45,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--questions", required=True, help="Questions file (.jsonl or .csv)")
     parser.add_argument("--encoder", required=True, help="Query encoder config JSON")
     parser.add_argument("--llm", default="gemini", choices=["gemini", "chatgpt", "vllm"])
-    parser.add_argument("--sources", default="scienceon", help="Comma separated: scienceon,pubmed,wikipedia")
+    parser.add_argument("--sources", default="scienceon", help="Single source: scienceon|pubmed|wikipedia")
     parser.add_argument("--extractor", default="gemini", help="Keyword extractor backend")
     parser.add_argument("--keyword-lang", choices=["all", "korean", "english"], default="all")
     parser.add_argument("--vllm-url", default="http://localhost:8000/v1", help="vLLM endpoint URL")
     parser.add_argument("--vllm-model", default="openai/gpt-oss-20b", help="vLLM model name")
     parser.add_argument("--scienceon-credentials", default="configs/credentials/scienceon_api_credentials.json")
+    parser.add_argument("--scienceon-max-pages", type=int, default=5)
     parser.add_argument("--pubmed-credentials", default="configs/credentials/pubmed_api_credentials.json")
     parser.add_argument("--schema", default="configs/csv_schema/test_2.json", help="VectorDB schema JSON")
     parser.add_argument("--output", default=None, help="Output root directory")
@@ -104,6 +105,7 @@ def build_components(args: argparse.Namespace) -> tuple[Any, Any, dict[str, Any]
             {
                 "lang": _to_wiki_lang(args.keyword_lang),
                 "scienceon_credentials_path": args.scienceon_credentials,
+                "scienceon_max_pages": args.scienceon_max_pages,
                 "pubmed_credentials_path": args.pubmed_credentials,
             },
         )
@@ -127,6 +129,7 @@ def main() -> None:
         keyword_extractor=keyword_extractor,
         search_clients=search_clients,
         target_documents=args.target_documents,
+        use_timestamp_subdir=False,
     )
     if _count_jsonl_lines(search_docs) == 0:
         raise RuntimeError(
@@ -141,6 +144,7 @@ def main() -> None:
             output_path=str(decompose_dir / "singlehop_decompose.jsonl"),
             model=args.decompose_model,
             mode="decompose",
+            use_timestamp_subdir=False,
         )
 
     run_step3(args.encoder, search_docs, args.schema)
@@ -152,7 +156,8 @@ def main() -> None:
         schema=args.schema,
         vectordb=vectordb_csv,
         top_k=args.top_k,
-        output_root=str(retrieval_dir),
+        output_dir=str(retrieval_dir),
+        output_subdir="",
     )
 
     run_step5(
@@ -163,6 +168,7 @@ def main() -> None:
         llm_client=llm_client,
         vllm_url=args.vllm_url,
         vllm_model=args.vllm_model,
+        use_timestamp_subdir=False,
     )
 
     print(f"Pipeline completed: {output_root}")

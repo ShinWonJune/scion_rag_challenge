@@ -17,6 +17,7 @@ __pycache__/
 # Data & Results
 data/
 outputs/
+pipeline/outputs/
 results/
 src/data2/
 data2/
@@ -30,4 +31,7 @@ configs/credentials/*.json
 # local agent docs
 AGENTS.md
 ANALYSIS.md
+
+# test files
+test.zip
 

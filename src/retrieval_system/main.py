@@ -81,6 +81,11 @@ def main():
         default="../results/retrieval_docs",
         help="Root directory for output files.",
     )
+    p.add_argument(
+        "--output_subdir",
+        default=None,
+        help="Optional output subdirectory. If omitted, timestamp subdirectory is used.",
+    )
     # --- Arguments for question selection ---
     p.add_argument("--ids", help="Comma-separated question IDs to process.")
     p.add_argument("--idx", help="Comma-separated 1-based indices to process.")
@@ -133,7 +138,7 @@ def main():
         print("[WARN] No questions to process. Exiting.", file=sys.stderr)
         return
 
-    saver = result_saver.ResultSaver(args.output_root)
+    saver = result_saver.ResultSaver(args.output_root, output_subdir=args.output_subdir)
     saved_files = []
 
     for q_item in selected_questions:

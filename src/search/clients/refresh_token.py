@@ -2,13 +2,13 @@
 """ScienceON API 토큰 강제 갱신 스크립트"""
 
 from pathlib import Path
-from scienceon_api_example import ScienceONAPIClient
+from src.search.clients.scienceon_api_example import ScienceONAPIClient
 import logging
 
 logging.basicConfig(level=logging.INFO)
 
 def main():
-    credentials_path = Path(__file__).parent / 'configs/scienceon_api_credentials.json'
+    credentials_path = Path("configs/credentials/scienceon_api_credentials.json")
     
     print("토큰 갱신 시작...")
     client = ScienceONAPIClient(credentials_path=credentials_path)

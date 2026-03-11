@@ -62,13 +62,13 @@ class SearchMetaSystem:
         self._setup_logging()
 
         try:
-            from .scienceon_api_example import ScienceONAPIClient
-            from .pubmed_api_client import PubMedIntegration
-            from .wikipedia_api_client import WikipediaIntegration
+            from src.search.clients.scienceon_api_example import ScienceONAPIClient
+            from src.search.clients.pubmed_api_client import PubMedIntegration
+            from src.search.clients.wikipedia_api_client import WikipediaIntegration
         except ImportError:
-            from scienceon_api_example import ScienceONAPIClient
-            from pubmed_api_client import PubMedIntegration
-            from wikipedia_api_client import WikipediaIntegration
+            from search.clients.scienceon_api_example import ScienceONAPIClient
+            from search.clients.pubmed_api_client import PubMedIntegration
+            from search.clients.wikipedia_api_client import WikipediaIntegration
 
         self.scienceon_client = ScienceONAPIClient(Path(scienceon_credentials_path))
         self.scienceon_adapter = ScienceONAdapter(self.scienceon_client)

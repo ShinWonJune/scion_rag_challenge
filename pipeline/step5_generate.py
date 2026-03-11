@@ -3,6 +3,8 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+from datetime import datetime
+from pathlib import Path
 
 
 def parse_args() -> argparse.Namespace:
@@ -26,7 +28,13 @@ def run_step5(
     vllm_url: str = "http://localhost:8000/v1",
     vllm_model: str = "openai/gpt-oss-20b",
     scifact: bool = False,
+    use_timestamp_subdir: bool = True,
 ) -> None:
+    target_dir = Path(output_dir)
+    if use_timestamp_subdir:
+        target_dir = target_dir / datetime.now().strftime("%y%m%d_%H%M%S")
+    target_dir.mkdir(parents=True, exist_ok=True)
+
     if llm_client is not None and hasattr(llm_client, "backend"):
         llm = getattr(llm_client, "backend", llm)
     cmd = [
@@ -37,7 +45,7 @@ def run_step5(
         "--max_rank",
         str(max_rank),
         "--output_dir",
-        output_dir,
+        str(target_dir),
     ]
     if llm == "vllm":
         cmd.extend(["--use-vllm", "--vllm-url", vllm_url, "--vllm-model", vllm_model])

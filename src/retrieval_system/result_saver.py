@@ -13,10 +13,13 @@ from retrieval_system import utils
 class ResultSaver:
     """Manages the creation of output directories and saving of JSON results."""
 
-    def __init__(self, output_root: str):
+    def __init__(self, output_root: str, output_subdir: str | None = None):
         self.output_root = output_root
-        self.timestamp_folder = utils.timestamp_folder_kst()
-        self.output_dir = os.path.join(self.output_root, self.timestamp_folder)
+        if output_subdir is None:
+            folder = utils.timestamp_folder_kst()
+        else:
+            folder = output_subdir
+        self.output_dir = os.path.join(self.output_root, folder) if folder else self.output_root
         utils.ensure_dir(self.output_dir)
 
     def save_result(self, payload: dict[str, any]) -> str:
