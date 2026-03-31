@@ -142,6 +142,5 @@ python pipeline/evaluate/eval_answers.py \
 
 ## Notes
 
-- 현재 Step1은 단일 source 실행 정책입니다.
-- 과거 실험/분석 산출물은 `outputs/old_outputs/` 및 `pipeline/evaluate/legacy/`로 분리 관리하는 것을 권장합니다.
+- Step1은 단일 source(검색 플랫폼) 실행 정책입니다.
 - 평가 CLI는 `run_pipeline.py`에서 자동 호출되지 않으며, 실행 후 별도로 수행합니다.
