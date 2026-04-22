@@ -6,7 +6,7 @@ from typing import List, Dict, Any, Type
 from dataclasses import fields
 
 # Assuming save_documents_batch is in this utility file
-from utils.save_as_csv_with_metadata import save_documents_batch
+from src.utils.save_as_csv_with_metadata import save_documents_batch
 
 
 def prepare_documents(

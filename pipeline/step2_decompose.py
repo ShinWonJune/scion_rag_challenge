@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 from datetime import datetime
@@ -44,7 +45,8 @@ def run_step2(
     out_path.parent.mkdir(parents=True, exist_ok=True)
     cmd = [
         sys.executable,
-        "src/multi_hop_to_single_hop.py",
+        "-m",
+        "src.multi_hop_to_single_hop",
         "--input",
         input_path,
         "--output",
@@ -58,7 +60,9 @@ def run_step2(
         "--model",
         model,
     ]
-    subprocess.run(cmd, check=True)
+    env = os.environ.copy()
+    env.setdefault("PYTHONIOENCODING", "utf-8")
+    subprocess.run(cmd, check=True, env=env)
     return str(out_path)
 
 

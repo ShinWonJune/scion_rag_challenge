@@ -9,8 +9,8 @@ import os
 import sys
 
 # retrieval_system 패키지의 모듈들을 절대 경로로 임포트
-from retrieval_system import data_loader, query_encoder, result_saver, utils
-from retrieval_system.retrievers import get_retriever
+from src.retrieval_system import data_loader, query_encoder, result_saver, utils
+from src.retrieval_system.retrievers import get_retriever
 
 
 def run_retrieval_for_question(

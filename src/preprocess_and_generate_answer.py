@@ -10,11 +10,11 @@ from functools import partial
 import time
 
 # --- 사용자 요청 기능 구현 ---
-from llm_client.init_gemini import init_gemini
-from llm_client.call_gemini import call_gemini
-from prompts.general.generate_answer_base_v2 import build_prompt
-from prompts.scifact.generate_scifact_prompt import build_scifact_prompt
-from vllm_client import VLLMClient
+from src.llm_client.init_gemini import init_gemini
+from src.llm_client.call_gemini import call_gemini
+from src.prompts.general.generate_answer_base_v2 import build_prompt
+from src.prompts.scifact.generate_scifact_prompt import build_scifact_prompt
+from src.vllm_client import VLLMClient
 
 # --- Gemini API 호출을 위한 기본 설정 및 함수 ---
 """
@@ -271,12 +271,15 @@ def main():
     # 입력 디렉토리에서 모든 관련 JSON 파일 찾기
     search_pattern = os.path.join(args.input_dir, "row_*.json")
     file_paths = glob.glob(search_pattern)
+    if not file_paths:
+        file_paths = glob.glob(os.path.join(args.input_dir, "*.json"))
 
     if not file_paths:
         print(
             f"경고: '{args.input_dir}'에서 'row_*.json' 패턴과 일치하는 파일을 찾을 수 없습니다."
         )
         return
+    file_paths = sorted(file_paths)
 
     processed_count = 0
     if not args.parallel:

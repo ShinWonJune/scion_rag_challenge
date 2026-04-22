@@ -40,7 +40,8 @@ def run_step4(
     before = {p.name for p in root.iterdir() if p.is_dir()}
     cmd = [
         sys.executable,
-        "src/retrieval_system/main.py",
+        "-m",
+        "src.retrieval_system.main",
         "--config_json",
         encoder,
         "--questions_jsonl",
@@ -60,8 +61,7 @@ def run_step4(
         cmd.extend(["--vectordb_csv", vectordb])
 
     env = os.environ.copy()
-    existing = env.get("PYTHONPATH", "")
-    env["PYTHONPATH"] = "src" if not existing else f"src{os.pathsep}{existing}"
+    env.setdefault("PYTHONIOENCODING", "utf-8")
     subprocess.run(cmd, check=True, env=env)
     if output_subdir == "":
         return output_dir

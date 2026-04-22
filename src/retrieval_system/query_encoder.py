@@ -8,7 +8,7 @@ from typing import List, Optional
 import numpy as np
 
 # retrieval_system 패키지의 모듈들을 절대 경로로 임포트
-from retrieval_system import utils
+from src.retrieval_system import utils
 
 
 class QueryEncoder:

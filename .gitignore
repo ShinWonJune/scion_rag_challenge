@@ -30,8 +30,15 @@ configs/credentials/*.json
 
 # local agent docs
 AGENTS.md
+AGENTS_refctoring.md
 ANALYSIS.md
+프로젝트 요약.md
+프로젝트기술서.md
+VERIFY_REPORT.md
 
 # test files
 test.zip
+tmp_verify/
 
+# paper
+shrag.pdf

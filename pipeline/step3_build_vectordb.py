@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 
@@ -21,7 +22,8 @@ def parse_args() -> argparse.Namespace:
 def run_step3(encoder: str, docs: str, schema: str, gpu_id: int | None = None) -> None:
     cmd = [
         sys.executable,
-        "src/build_vectordb_search.py",
+        "-m",
+        "src.build_vectordb_search",
         "--config_path",
         encoder,
         "--data_schema",
@@ -31,7 +33,9 @@ def run_step3(encoder: str, docs: str, schema: str, gpu_id: int | None = None) -
     ]
     if gpu_id is not None:
         cmd.extend(["--gpu_id", str(gpu_id)])
-    subprocess.run(cmd, check=True)
+    env = os.environ.copy()
+    env.setdefault("PYTHONIOENCODING", "utf-8")
+    subprocess.run(cmd, check=True, env=env)
 
 
 def main() -> None:

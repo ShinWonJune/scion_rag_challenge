@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 from datetime import datetime
@@ -39,7 +40,8 @@ def run_step5(
         llm = getattr(llm_client, "backend", llm)
     cmd = [
         sys.executable,
-        "src/preprocess_and_generate_answer.py",
+        "-m",
+        "src.preprocess_and_generate_answer",
         "--input_dir",
         input_dir,
         "--max_rank",
@@ -51,7 +53,9 @@ def run_step5(
         cmd.extend(["--use-vllm", "--vllm-url", vllm_url, "--vllm-model", vllm_model])
     if scifact:
         cmd.append("--scifact")
-    subprocess.run(cmd, check=True)
+    env = os.environ.copy()
+    env.setdefault("PYTHONIOENCODING", "utf-8")
+    subprocess.run(cmd, check=True, env=env)
 
 
 def main() -> None:

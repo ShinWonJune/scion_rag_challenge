@@ -7,7 +7,7 @@ import json
 import os
 import uuid
 
-from retrieval_system import utils
+from src.retrieval_system import utils
 
 
 class ResultSaver:

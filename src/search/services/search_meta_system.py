@@ -5,20 +5,11 @@ SearchMetaSystem orchestration class.
 from __future__ import annotations
 
 import logging
-import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
-try:
-    from src.search_pipeline.settings import Settings
-except ImportError:
-    from search_pipeline.settings import Settings
-
 from src.search.scienceon_adapter import ScienceONAdapter
+from src.search_pipeline.settings import Settings
 
 
 class SearchMetaSystem:
@@ -61,14 +52,9 @@ class SearchMetaSystem:
 
         self._setup_logging()
 
-        try:
-            from src.search.clients.scienceon_api_example import ScienceONAPIClient
-            from src.search.clients.pubmed_api_client import PubMedIntegration
-            from src.search.clients.wikipedia_api_client import WikipediaIntegration
-        except ImportError:
-            from search.clients.scienceon_api_example import ScienceONAPIClient
-            from search.clients.pubmed_api_client import PubMedIntegration
-            from search.clients.wikipedia_api_client import WikipediaIntegration
+        from src.search.clients.pubmed_api_client import PubMedIntegration
+        from src.search.clients.scienceon_api_example import ScienceONAPIClient
+        from src.search.clients.wikipedia_api_client import WikipediaIntegration
 
         self.scienceon_client = ScienceONAPIClient(Path(scienceon_credentials_path))
         self.scienceon_adapter = ScienceONAdapter(self.scienceon_client)
@@ -84,35 +70,24 @@ class SearchMetaSystem:
         logging.basicConfig(level=getattr(logging, log_level.upper()), format=log_format)
 
     def _initialize_components(self) -> None:
-        try:
-            from src.search_pipeline.core.document_searcher import DocumentSearcher
-            from src.search_pipeline.processors.batch_query_processor import BatchQueryProcessor
-            from src.search_pipeline.processors.single_query_processor import SingleQueryProcessor
-            from src.search_pipeline.utils.file_manager import FileManager
-            from src.search_pipeline.utils.result_converter import ResultConverter
-        except ImportError:
-            from search_pipeline.core.document_searcher import DocumentSearcher
-            from search_pipeline.processors.batch_query_processor import BatchQueryProcessor
-            from search_pipeline.processors.single_query_processor import SingleQueryProcessor
-            from search_pipeline.utils.file_manager import FileManager
-            from search_pipeline.utils.result_converter import ResultConverter
+        from src.search_pipeline.core.document_searcher import DocumentSearcher
+        from src.search_pipeline.processors.batch_query_processor import BatchQueryProcessor
+        from src.search_pipeline.processors.single_query_processor import SingleQueryProcessor
+        from src.search_pipeline.utils.file_manager import FileManager
+        from src.search_pipeline.utils.result_converter import ResultConverter
 
         self.file_manager = FileManager(output_dir=self.settings.get("output_directory"))
         self.result_converter = ResultConverter(self.file_manager)
 
         if self.use_vllm:
-            try:
-                from src.search_pipeline.core.vllm_keyword_extractor import VLLMKeywordExtractor
-            except ImportError:
-                from search_pipeline.core.vllm_keyword_extractor import VLLMKeywordExtractor
+            from src.search_pipeline.core.vllm_keyword_extractor import VLLMKeywordExtractor
+
             self.keyword_extractor = VLLMKeywordExtractor(
                 self.settings.get("vllm_base_url"), self.settings.get("vllm_model")
             )
         elif self.use_chatgpt:
-            try:
-                from src.search_pipeline.core.chatgpt_keyword_extractor import ChatGPTKeywordExtractor
-            except ImportError:
-                from search_pipeline.core.chatgpt_keyword_extractor import ChatGPTKeywordExtractor
+            from src.search_pipeline.core.chatgpt_keyword_extractor import ChatGPTKeywordExtractor
+
             openai_key = self.settings.get("openai_api_key")
             if openai_key:
                 self.keyword_extractor = ChatGPTKeywordExtractor(
@@ -127,10 +102,8 @@ class SearchMetaSystem:
                     language=self.settings.get("keyword_lang"),
                 )
         else:
-            try:
-                from src.search_pipeline.core.keyword_extractor import KeywordExtractor
-            except ImportError:
-                from search_pipeline.core.keyword_extractor import KeywordExtractor
+            from src.search_pipeline.core.keyword_extractor import KeywordExtractor
+
             self.keyword_extractor = KeywordExtractor(
                 api_key=self.settings.get("gemini_api_key"),
                 language=self.settings.get("keyword_lang", "all"),
@@ -209,12 +182,8 @@ class SearchMetaSystem:
         self._update_components()
 
     def _update_components(self) -> None:
-        try:
-            from src.search_pipeline.utils.file_manager import FileManager
-            from src.search_pipeline.utils.result_converter import ResultConverter
-        except ImportError:
-            from search_pipeline.utils.file_manager import FileManager
-            from search_pipeline.utils.result_converter import ResultConverter
+        from src.search_pipeline.utils.file_manager import FileManager
+        from src.search_pipeline.utils.result_converter import ResultConverter
 
         search_config = self.settings.get_search_config()
         self.document_searcher.set_target_documents(search_config["target_documents"])

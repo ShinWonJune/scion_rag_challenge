@@ -8,9 +8,9 @@ from typing import Dict, Any, Optional
 
 # 필요한 유틸리티 및 클라이언트 함수들을 임포트합니다.
 # 실제 프로젝트 구조에 맞게 경로를 조정해야 할 수 있습니다.
-from llm_client.call_gemini import call_gemini
-from llm_client.prompts_tools import build_prompts
-from prompts.general.breakdown_multi_hop_question_as_single_hop import DEFAULT_PROMPT
+from src.llm_client.call_gemini import call_gemini
+from src.llm_client.prompts_tools import build_prompts
+from src.prompts.general.breakdown_multi_hop_question_as_single_hop import DEFAULT_PROMPT
 
 
 def process_single_record(

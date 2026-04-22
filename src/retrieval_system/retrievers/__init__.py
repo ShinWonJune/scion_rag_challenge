@@ -8,7 +8,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     import numpy as np
-    from retrieval_system.retrievers.base import Retriever
+    from src.retrieval_system.retrievers.base import Retriever
 
 _HAS_FAISS = False
 try:
@@ -25,12 +25,12 @@ def get_retriever(embeddings: np.ndarray, force_numpy: bool = False) -> Retrieve
     Prefers FaissRetriever if available, otherwise falls back to NumpyRetriever.
     """
     if _HAS_FAISS and not force_numpy:
-        from retrieval_system.retrievers.faiss_retriever import FaissRetriever
+        from src.retrieval_system.retrievers.faiss_retriever import FaissRetriever
 
         print("[INFO] Using FAISS for retrieval.", file=sys.stderr)
         return FaissRetriever(embeddings)
 
-    from retrieval_system.retrievers.numpy_retriever import NumpyRetriever
+    from src.retrieval_system.retrievers.numpy_retriever import NumpyRetriever
 
     print(
         "[INFO] FAISS not found or disabled. Using NumPy for retrieval (slower).",

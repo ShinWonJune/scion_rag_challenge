@@ -11,7 +11,7 @@ import os
 from typing import Any, Dict, List, Optional
 
 import numpy as np
-from retrieval_system import utils
+from src.retrieval_system import utils
 
 
 @dataclasses.dataclass
@@ -157,7 +157,7 @@ def select_questions(
 ) -> List[QuestionItem]:
     """Selects a subset of questions based on IDs, indices, or a range."""
     if not (ids or idxs or range_spec):
-        return [all_items[0]] if all_items else []
+        return all_items
 
     selected: List[QuestionItem] = []
     id_map = {it.qid: it for it in all_items}

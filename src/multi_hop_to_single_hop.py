@@ -62,12 +62,12 @@ from typing import Dict, Any, List
 
 # --- 핵심 로직 임포트 ---
 # llm_processor.py 파일이 같은 디렉토리나 PYTHONPATH에 있다고 가정합니다.
-from features.llm_question_decomposer import process_single_record
+from src.features.llm_question_decomposer import process_single_record
 
 # --- 유틸리티 및 클라이언트 임포트 ---
-from llm_client.init_gemini import init_gemini
-from llm_client.prompts_tools import read_jsonl
-from utils.write_jsonl import write_jsonl
+from src.llm_client.init_gemini import init_gemini
+from src.llm_client.prompts_tools import read_jsonl
+from src.utils.write_jsonl import write_jsonl
 
 
 def run_batch_processing(args: argparse.Namespace, model_obj: Any):

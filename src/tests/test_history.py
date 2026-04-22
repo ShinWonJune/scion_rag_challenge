@@ -1,5 +1,5 @@
-from llm_client.history import InMemoryHistoryStore
-from llm_client.types import Message
+from src.llm_client.history import InMemoryHistoryStore
+from src.llm_client.types import Message
 
 
 def test_inmemory_append_get_prune_clear():

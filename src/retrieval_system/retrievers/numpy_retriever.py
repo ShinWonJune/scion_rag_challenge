@@ -8,7 +8,7 @@ from typing import Tuple
 import numpy as np
 
 # Use absolute import path
-from retrieval_system.retrievers.base import Retriever
+from src.retrieval_system.retrievers.base import Retriever
 
 
 class NumpyRetriever(Retriever):

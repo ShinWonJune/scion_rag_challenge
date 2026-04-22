@@ -3,15 +3,15 @@ import os
 import json
 import argparse
 from typing import List, Optional
-from utils.load_json import load_config
-from utils.load_jsonl_and_make_text_for_embedding import (
+from src.utils.load_json import load_config
+from src.utils.load_jsonl_and_make_text_for_embedding import (
     load_jsonl_and_make_text_for_embedding as load_jsonl_docs,
 )
-from utils.create_class_from_schema import create_class_from_schema
+from src.utils.create_class_from_schema import create_class_from_schema
 
 # Import the newly created modules
-from features.embedding_processor import generate_batch_embeddings
-from data_handler.for_embedding import prepare_documents, save_results
+from src.features.embedding_processor import generate_batch_embeddings
+from src.data_handler.for_embedding import prepare_documents, save_results
 
 
 def build_vectordb_search(

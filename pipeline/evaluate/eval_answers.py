@@ -2,17 +2,8 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
-from pathlib import Path
 
-
-def _load_evaluate_answers():
-    root = Path(__file__).resolve().parents[2]
-    if str(root) not in sys.path:
-        sys.path.insert(0, str(root))
-    from src.evaluate.eval_answers import evaluate_answers
-
-    return evaluate_answers
+from src.evaluate.eval_answers import evaluate_answers
 
 
 def parse_args() -> argparse.Namespace:
@@ -31,7 +22,6 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    evaluate_answers = _load_evaluate_answers()
     report = evaluate_answers(args.predictions, args.ground_truth, args.dataset)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     if args.output:

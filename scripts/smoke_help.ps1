@@ -1,17 +1,32 @@
 #!/usr/bin/env pwsh
 $ErrorActionPreference = "Stop"
 
+$PythonExe = "python"
+$VenvPython = Join-Path (Get-Location) ".venv\Scripts\python.exe"
+if (Test-Path $VenvPython) {
+    $PythonExe = $VenvPython
+}
+
 $commands = @(
-    @("python", "pipeline/main.py", "--help"),
-    @("python", "src/build_vectordb_search.py", "--help"),
-    @("python", "src/retrieval_system/main.py", "--help"),
-    @("python", "src/preprocess_and_generate_answer.py", "--help"),
-    @("python", "pipeline/run_pipeline.py", "--help")
+    @($PythonExe, "-m", "pipeline.run_pipeline", "--help"),
+    @($PythonExe, "-m", "pipeline.step1_search", "--help"),
+    @($PythonExe, "-m", "pipeline.step2_decompose", "--help"),
+    @($PythonExe, "-m", "pipeline.step3_build_vectordb", "--help"),
+    @($PythonExe, "-m", "pipeline.step4_retrieve", "--help"),
+    @($PythonExe, "-m", "pipeline.step5_generate", "--help"),
+    @($PythonExe, "-m", "pipeline.evaluate.eval_search", "--help"),
+    @($PythonExe, "-m", "pipeline.evaluate.eval_answers", "--help"),
+    @($PythonExe, "-m", "src.build_vectordb_search", "--help"),
+    @($PythonExe, "-m", "src.retrieval_system.main", "--help"),
+    @($PythonExe, "-m", "src.preprocess_and_generate_answer", "--help"),
+    @($PythonExe, "-m", "src.multi_hop_to_single_hop", "--help")
 )
 
 foreach ($cmd in $commands) {
     Write-Host ("Running: " + ($cmd -join " "))
-    & $cmd[0] $cmd[1] $cmd[2]
+    $exe = $cmd[0]
+    $args = $cmd[1..($cmd.Length - 1)]
+    & $exe @args
     if ($LASTEXITCODE -ne 0) {
         throw ("Smoke help check failed: " + ($cmd -join " "))
     }

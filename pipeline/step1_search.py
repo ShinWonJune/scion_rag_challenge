@@ -4,23 +4,13 @@ import argparse
 import csv
 import json
 import logging
-import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
 from src.utils.dedup import remove_duplicates
-
-try:
-    from src.search_pipeline.core.extractor_factory import create_keyword_extractor
-    from src.search.factories.search_client_factory import create_search_client
-except ImportError:
-    from search_pipeline.core.extractor_factory import create_keyword_extractor
-    from src.search.factories.search_client_factory import create_search_client
+from src.search.factories.search_client_factory import create_search_client
+from src.search_pipeline.core.extractor_factory import create_keyword_extractor
 
 
 def _sources_to_list(sources: str) -> list[str]:
