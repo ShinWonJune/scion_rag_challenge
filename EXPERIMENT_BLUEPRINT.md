@@ -367,7 +367,7 @@ def test_fallback_to_title_when_no_doc_id():
 **편집 파일**:
 
 - `src/search/throttle.py` — `get_counters() -> dict` 추가 (누적 `rate_limit_count`, `request_count`). AIMD 끄고 고정 concurrency 로 동작시키는 `fixed_concurrency` 플래그 지원.
-- `pipeline/step1_search.py` — `--max-concurrency N` / `--fixed-concurrency` CLI pass-through.
+- `pipeline/step1_search.py` — `--scienceon-max-concurrency N` / `--scienceon-fixed-concurrency` CLI pass-through (sibling `--scienceon-*` 플래그와 namespace 일관성 유지, 멀티 source 확장 시 충돌 방지).
 - 신규 `experiments/shared/evaluate/concurrency_report.py` — 각 sweep run의 counter 집계 + `report.md` 생성.
 - 신규 `experiments/exp0_concurrency_sweep/run.sh`
 - 신규 `experiments/exp0_concurrency_sweep/README.md`
@@ -389,8 +389,8 @@ for MAX_C in 1 2 3 5 8; do
     --questions data/test.csv \
     --sources scienceon \
     --extractor vllm \
-    --max-concurrency "${MAX_C}" \
-    --fixed-concurrency \
+    --scienceon-max-concurrency "${MAX_C}" \
+    --scienceon-fixed-concurrency \
     --output-dir "${OUT_ROOT}/c${MAX_C}"
 done
 
