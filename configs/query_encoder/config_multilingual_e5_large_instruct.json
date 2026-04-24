@@ -1,0 +1,14 @@
+{
+  "model_name": "intfloat/multilingual-e5-large-instruct",
+  "nickname": "multilingual_e5_large_instruct_test",
+  "embedding_dim": 1024,
+  "jsonl_path": "/app/outputs/search/search_documents.jsonl",
+  "embedding_mode": "3*title+abstract",
+  "text_fields": [
+    "context"
+  ],
+  "output_dir": "../outputs/vectordb",
+  "output_format": "csv",
+  "output_file": "../outputs/vectordb/vector_db_multilingual_e5_large_instruct_intfloat_multilingual-e5-large-instruct.csv",
+  "last_run": null
+}

@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
+import subprocess
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -29,6 +32,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--vllm-model", default="openai/gpt-oss-20b", help="vLLM model name")
     parser.add_argument("--scienceon-credentials", default="configs/credentials/scienceon_api_credentials.json")
     parser.add_argument("--scienceon-max-pages", type=int, default=5)
+    parser.add_argument("--scienceon-max-concurrency", type=int, default=2)
+    parser.add_argument("--scienceon-min-interval-sec", type=float, default=0.5)
+    parser.add_argument("--scienceon-fixed-concurrency", action="store_true")
+    parser.add_argument("--scienceon-max-retries", type=int, default=5)
+    parser.add_argument("--scienceon-retry-base-sleep-sec", type=float, default=2.0)
+    parser.add_argument("--scienceon-retry-max-sleep-sec", type=float, default=60.0)
+    parser.add_argument("--cache-root", default="outputs/_shared_cache")
+    parser.add_argument("--no-cache", action="store_true")
+    parser.add_argument("--frozen-queries", default=None, help="Optional JSONL with precomputed keywords/search terms")
     parser.add_argument("--pubmed-credentials", default="configs/credentials/pubmed_api_credentials.json")
     parser.add_argument("--schema", default="configs/csv_schema/test_2.json", help="VectorDB schema JSON")
     parser.add_argument("--output", default=None, help="Output root directory")
@@ -135,10 +147,42 @@ def build_components(args: argparse.Namespace) -> tuple[Any, Any, dict[str, Any]
                 "lang": _to_wiki_lang(args.keyword_lang),
                 "scienceon_credentials_path": args.scienceon_credentials,
                 "scienceon_max_pages": args.scienceon_max_pages,
+                "scienceon_max_concurrency": args.scienceon_max_concurrency,
+                "scienceon_min_interval_sec": args.scienceon_min_interval_sec,
+                "scienceon_fixed_concurrency": args.scienceon_fixed_concurrency,
+                "scienceon_max_retries": args.scienceon_max_retries,
+                "scienceon_retry_base_sleep_sec": args.scienceon_retry_base_sleep_sec,
+                "scienceon_retry_max_sleep_sec": args.scienceon_retry_max_sleep_sec,
+                "cache_root": args.cache_root,
+                "disable_cache": args.no_cache,
                 "pubmed_credentials_path": args.pubmed_credentials,
             },
         )
     return llm_client, keyword_extractor, search_clients
+
+
+def _file_sha1(path: Path) -> str:
+    if not path.exists():
+        return "missing"
+    return hashlib.sha1(path.read_bytes()).hexdigest()
+
+
+def _credential_fingerprint(path: str) -> str:
+    return f"sha1:{_file_sha1(Path(path))[:12]}"
+
+
+def _git_sha_and_dirty() -> tuple[str, bool]:
+    try:
+        sha = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+        dirty = bool(subprocess.check_output(["git", "status", "--porcelain"], text=True).strip())
+        return sha, dirty
+    except Exception:
+        return "unknown", False
+
+
+def _write_run_manifest(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def main() -> None:
@@ -151,15 +195,60 @@ def main() -> None:
     retrieval_dir = output_root / "retrieval"
     final_dir = output_root / "final"
     output_root.mkdir(parents=True, exist_ok=True)
+    started_at = datetime.now().astimezone()
+    git_sha, dirty = _git_sha_and_dirty()
+    manifest: dict[str, Any] = {
+        "run_id": output_root.name,
+        "git_sha": git_sha,
+        "git_dirty": dirty,
+        "requirements_sha1": _file_sha1(Path("requirements.txt")),
+        "started_at": started_at.isoformat(),
+        "finished_at": None,
+        "cli_args": vars(args),
+        "vllm": {"url": args.vllm_url, "model": args.vllm_model, "version": None},
+        "credentials_fingerprint": {
+            "scienceon": _credential_fingerprint(args.scienceon_credentials),
+            "pubmed": _credential_fingerprint(args.pubmed_credentials),
+        },
+        "cache": {
+            "enabled": not args.no_cache,
+            "root": args.cache_root,
+            "hit_count": 0,
+            "miss_count": 0,
+            "write_count": 0,
+        },
+        "runtime": {},
+        "steps_completed": [],
+    }
+    _write_run_manifest(output_root / "run_manifest.json", manifest)
 
-    _, search_docs = run_step1(
+    step1_started = time.perf_counter()
+    search_meta, search_docs = run_step1(
         questions_path=args.questions,
         output_dir=str(search_dir),
         keyword_extractor=keyword_extractor,
         search_clients=search_clients,
         target_documents=args.target_documents,
         use_timestamp_subdir=False,
+        frozen_queries_path=args.frozen_queries,
     )
+    manifest["runtime"]["step1_search_sec"] = round(time.perf_counter() - step1_started, 4)
+    manifest["steps_completed"].append("step1")
+    try:
+        search_payload = json.loads(Path(search_meta).read_text(encoding="utf-8"))
+        request_stats = search_payload.get("request_stats", {})
+        cache_stats = request_stats.get("cache", {})
+        manifest["cache"].update(
+            {
+                "hit_count": cache_stats.get("hit_count", 0),
+                "miss_count": cache_stats.get("miss_count", 0),
+                "write_count": cache_stats.get("write_count", 0),
+            }
+        )
+        manifest["search_request_stats"] = request_stats
+    except Exception:
+        pass
+    _write_run_manifest(output_root / "run_manifest.json", manifest)
     if _count_jsonl_lines(search_docs) == 0:
         raise RuntimeError(
             f"Step1 produced no documents: {search_docs}. "
@@ -171,6 +260,7 @@ def main() -> None:
         output_root / "questions.jsonl",
     )
     if args.decompose:
+        step2_started = time.perf_counter()
         retrieval_questions = run_step2(
             input_path=retrieval_questions,
             output_path=str(decompose_dir / "singlehop_decompose.jsonl"),
@@ -178,10 +268,18 @@ def main() -> None:
             mode="decompose",
             use_timestamp_subdir=False,
         )
+        manifest["runtime"]["step2_decompose_sec"] = round(time.perf_counter() - step2_started, 4)
+        manifest["steps_completed"].append("step2")
+        _write_run_manifest(output_root / "run_manifest.json", manifest)
 
+    step3_started = time.perf_counter()
     run_step3(args.encoder, search_docs, args.schema)
+    manifest["runtime"]["step3_build_vectordb_sec"] = round(time.perf_counter() - step3_started, 4)
+    manifest["steps_completed"].append("step3")
+    _write_run_manifest(output_root / "run_manifest.json", manifest)
     vectordb_csv = read_vectordb_from_encoder(args.encoder)
 
+    step4_started = time.perf_counter()
     retrieval_output_dir = run_step4(
         encoder=args.encoder,
         questions=retrieval_questions,
@@ -191,7 +289,11 @@ def main() -> None:
         output_dir=str(retrieval_dir),
         output_subdir="",
     )
+    manifest["runtime"]["step4_retrieve_sec"] = round(time.perf_counter() - step4_started, 4)
+    manifest["steps_completed"].append("step4")
+    _write_run_manifest(output_root / "run_manifest.json", manifest)
 
+    step5_started = time.perf_counter()
     run_step5(
         input_dir=str(retrieval_output_dir),
         output_dir=str(final_dir),
@@ -202,6 +304,14 @@ def main() -> None:
         vllm_model=args.vllm_model,
         use_timestamp_subdir=False,
     )
+    manifest["runtime"]["step5_generate_sec"] = round(time.perf_counter() - step5_started, 4)
+    manifest["steps_completed"].append("step5")
+    manifest["finished_at"] = datetime.now().astimezone().isoformat()
+    manifest["runtime"]["total_sec"] = round(
+        sum(value for value in manifest["runtime"].values() if isinstance(value, (int, float))),
+        4,
+    )
+    _write_run_manifest(output_root / "run_manifest.json", manifest)
 
     print(f"Pipeline completed: {output_root}")
 

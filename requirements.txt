@@ -17,6 +17,8 @@ sentence-transformers==5.1.0
 
 # Evaluation
 nltk==3.9.1
+PyYAML==6.0.2
+bm25s==0.2.14
 
 # Optional acceleration for dense retrieval (falls back to NumPy if absent)
 # faiss-cpu==1.8.0.post1

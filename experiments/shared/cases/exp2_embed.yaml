@@ -1,0 +1,21 @@
+cases:
+  - case_id: E_BM25
+    retriever: bm25
+    encoder_config: null
+    bm25_tokenizer: whitespace
+  - case_id: E0_gte
+    encoder_config: configs/query_encoder/config_gte-multilingual-base.json
+    retriever: dense
+  - case_id: E1_bge_m3
+    encoder_config: configs/query_encoder/config_bge_m3.json
+    retriever: dense
+  - case_id: E2_jina_v3
+    encoder_config: configs/query_encoder/config_jina_v3.json
+    retriever: dense
+  - case_id: E3_me5_large
+    encoder_config: configs/query_encoder/config_multilingual_e5_large.json
+    retriever: dense
+    query_instruction: "query: "
+  - case_id: E4_me5_instruct
+    encoder_config: configs/query_encoder/config_multilingual_e5_large_instruct.json
+    retriever: dense

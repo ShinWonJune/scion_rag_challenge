@@ -19,7 +19,12 @@ $commands = @(
     @($PythonExe, "-m", "src.build_vectordb_search", "--help"),
     @($PythonExe, "-m", "src.retrieval_system.main", "--help"),
     @($PythonExe, "-m", "src.preprocess_and_generate_answer", "--help"),
-    @($PythonExe, "-m", "src.multi_hop_to_single_hop", "--help")
+    @($PythonExe, "-m", "src.multi_hop_to_single_hop", "--help"),
+    @($PythonExe, "-m", "experiments.shared.evaluate.embed_benchmark", "--help"),
+    @($PythonExe, "-m", "experiments.shared.evaluate.judge", "--help"),
+    @($PythonExe, "-m", "experiments.shared.evaluate.significance", "--help"),
+    @($PythonExe, "-m", "experiments.shared.evaluate.concurrency_report", "--help"),
+    @($PythonExe, "-m", "experiments.shared.rerank.cross_encoder", "--help")
 )
 
 foreach ($cmd in $commands) {

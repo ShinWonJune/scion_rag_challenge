@@ -99,10 +99,22 @@ def process_file(
     file_id = data.get("id", os.path.basename(filepath).split("_")[1])
     result_data = {
         "id": file_id,
+        "question_id": file_id,
+        "question": original_query_text,
         "result": api_result,
+        "answer": api_result,
         "prompt": prompt,
         "model": model_name,
         "prompt_type": "scifact" if use_scifact else "general",
+        "used_context": [
+            {
+                "doc_id": hit.get("doc_id", ""),
+                "rank": hit.get("rank"),
+                "from_step": "step4",
+            }
+            for hit in original_query_obj.get("hits", [])
+            if hit.get("rank", float("inf")) <= max_rank
+        ],
         "retrival": filtered_data,
     }
 
@@ -282,6 +294,7 @@ def main():
     file_paths = sorted(file_paths)
 
     processed_count = 0
+    written_results = []
     if not args.parallel:
         for path in file_paths:
             processed_data_list = process_file(
@@ -295,6 +308,7 @@ def main():
 
                 with open(output_filename, "w", encoding="utf-8") as f:
                     json.dump(result_data, f, ensure_ascii=False, indent=4)
+                written_results.append(result_data)
 
                 processed_count += 1
                 print(
@@ -309,6 +323,8 @@ def main():
         print(
             f"\n✅ 처리가 완료되었습니다. 총 {processed_count}개의 결과 파일이 '{args.output_dir}'에 저장되었습니다."
         )
+        with open(os.path.join(args.output_dir, "predictions.json"), "w", encoding="utf-8") as f:
+            json.dump(written_results, f, ensure_ascii=False, indent=2)
     if args.parallel:
         # --- 병렬 처리 실행 ---
 
@@ -343,6 +359,8 @@ def main():
 
             with open(output_filename, "w", encoding="utf-8") as f:
                 json.dump(dataaa, f, ensure_ascii=False, indent=4)
+        with open(os.path.join(args.output_dir, "predictions.json"), "w", encoding="utf-8") as f:
+            json.dump(final_results, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,21 @@
+cases:
+  - case_id: Q_raw
+    encoder_config: configs/query_encoder/config_gte-multilingual-base.json
+    retriever: dense
+    query_transform: raw
+  - case_id: Q_keywords
+    encoder_config: configs/query_encoder/config_gte-multilingual-base.json
+    retriever: dense
+    query_transform: keywords
+  - case_id: Q_hyde_mean_1
+    encoder_config: configs/query_encoder/config_gte-multilingual-base.json
+    retriever: dense
+    query_transform: hyde_mean_1
+  - case_id: Q_hyde_mean_3
+    encoder_config: configs/query_encoder/config_gte-multilingual-base.json
+    retriever: dense
+    query_transform: hyde_mean_3
+  - case_id: Q_hyde_union_3
+    encoder_config: configs/query_encoder/config_gte-multilingual-base.json
+    retriever: dense
+    query_transform: hyde_union_3

@@ -55,6 +55,13 @@ def build_vectordb_search(
     if embeddings is None:
         print("Embedding generation failed. Exiting.")
         return
+    expected_dim = int(config["embedding_dim"])
+    actual_dim = int(embeddings.shape[1])
+    if actual_dim != expected_dim:
+        raise ValueError(
+            f"embedding_dim mismatch for {config['model_name']}: "
+            f"config={expected_dim} actual={actual_dim}"
+        )
 
     # 4. Prepare Document Objects for Saving (Separated Logic)
     # This function handles the data structuring, combining raw data with embeddings.

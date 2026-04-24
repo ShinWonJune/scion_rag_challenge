@@ -1,7 +1,7 @@
 {
   "model_name": "Alibaba-NLP/gte-multilingual-base",
   "nickname": "gte_test",
-  "embedding_dim": 1024,
+  "embedding_dim": 768,
   "jsonl_path": "/app/outputs/search/search_documents.jsonl",
   "embedding_mode": "3*title+abstract",
   "text_fields": [

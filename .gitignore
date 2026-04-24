@@ -45,3 +45,5 @@ shrag.pdf
 
 .omc/
 .claude/
+
+pytest*
