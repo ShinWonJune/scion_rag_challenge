@@ -11,6 +11,7 @@ from typing import Any, Dict, List
 import requests
 
 from src.search.base_client import BaseSearchClient
+from src.search.resilient_caller import ResilientCaller
 from src.utils.dedup import remove_duplicates
 
 
@@ -20,31 +21,44 @@ def _wiki_api_url(lang: str) -> str:
 
 
 class WikipediaAPIClient(BaseSearchClient):
-    def __init__(self, lang: str = "ko"):
+    source_name = "Wikipedia"
+
+    def __init__(
+        self,
+        lang: str = "ko",
+        *,
+        caller: ResilientCaller | None = None,
+    ):
         self.lang = lang
         self.base_url = _wiki_api_url(lang)
         self.rate_limit_delay = 0.1
         self.headers = {
             "User-Agent": "SearchMetaSystem/1.0 (contact: example@example.com)"
         }
+        self.caller = caller or ResilientCaller()
 
     def search(self, search_terms: List[str], max_results: int) -> List[Dict[str, Any]]:
         per_term = max(1, min(10, max_results // max(1, len(search_terms))))
         docs = self.search_multiple_terms(search_terms, max_results_per_term=per_term)
         return docs[:max_results]
 
+    def get_request_stats(self) -> dict[str, Any]:
+        return self.caller.stats()
+
     def search_multiple_terms(
         self, search_terms: List[str], max_results_per_term: int = 10
     ) -> List[Dict[str, Any]]:
         all_documents: List[Dict[str, Any]] = []
         for term in search_terms:
-            try:
-                all_documents.extend(
-                    self._search_single_term(term, max_results=max_results_per_term)
-                )
-                time.sleep(self.rate_limit_delay)
-            except Exception as e:
-                logging.warning("Wikipedia term search failed (%s): %s", term, e)
+            docs = self.caller.call(
+                source=f"wikipedia.{self.lang}",
+                term=term,
+                cur_page=1,
+                row_count=max_results_per_term,
+                fields=["title", "snippet"],
+                fetch=lambda t=term, n=max_results_per_term: self._search_single_term(t, max_results=n),
+            )
+            all_documents.extend(docs)
         return remove_duplicates(all_documents, key="title")
 
     def _search_single_term(self, term: str, max_results: int = 10) -> List[Dict[str, Any]]:

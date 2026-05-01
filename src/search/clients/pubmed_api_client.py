@@ -13,18 +13,31 @@ from typing import Any, Dict, List
 
 import requests
 from src.search.base_client import BaseSearchClient
+from src.search.resilient_caller import ResilientCaller
 from src.utils.dedup import remove_duplicates
 
 
 class PubMedAPIClient(BaseSearchClient):
     """PubMed E-utilities API client."""
 
-    def __init__(self, credentials_path: Path):
+    source_name = "PubMed"
+
+    def __init__(
+        self,
+        credentials_path: Path,
+        *,
+        caller: ResilientCaller | None = None,
+        per_term_max_results: int = 10,
+        max_terms: int = 10,
+    ):
         self.credentials = self._load_credentials(credentials_path)
         self.api_key = self.credentials.get("api_key", "")
         self.email = self.credentials.get("email", "")
         self.base_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
         self.rate_limit_delay = 0.1
+        self.caller = caller or ResilientCaller()
+        self.per_term_max_results = per_term_max_results
+        self.max_terms = max_terms
 
         if not self.api_key:
             raise ValueError("PubMed API key is not configured.")
@@ -41,8 +54,11 @@ class PubMedAPIClient(BaseSearchClient):
             return {}
 
     def search(self, search_terms: List[str], max_results: int) -> List[Dict[str, Any]]:
-        docs = self.search_multiple_terms(search_terms, max_terms=10)
+        docs = self.search_multiple_terms(search_terms, max_terms=self.max_terms)
         return docs[:max_results]
+
+    def get_request_stats(self) -> dict[str, Any]:
+        return self.caller.stats()
 
     def search_multiple_terms(
         self, search_terms: List[str], max_terms: int = 10
@@ -52,12 +68,15 @@ class PubMedAPIClient(BaseSearchClient):
             all_documents: List[Dict[str, Any]] = []
 
             for term in sorted_terms:
-                try:
-                    docs = self._search_and_fetch_term(term, max_results=10)
-                    all_documents.extend(docs)
-                    time.sleep(self.rate_limit_delay)
-                except Exception as e:
-                    logging.warning("PubMed term search failed (%s): %s", term, e)
+                docs = self.caller.call(
+                    source="pubmed",
+                    term=term,
+                    cur_page=1,
+                    row_count=self.per_term_max_results,
+                    fields=["pmid", "title", "abstract", "authors", "year", "url"],
+                    fetch=lambda t=term: self._search_and_fetch_term(t, self.per_term_max_results),
+                )
+                all_documents.extend(docs)
 
             unique = remove_duplicates(all_documents, key="id")
             return [self._to_common_schema(d) for d in unique]
