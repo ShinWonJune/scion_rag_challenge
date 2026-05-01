@@ -1,0 +1,8 @@
+cases:
+  - case_id: E3_me5_large
+    encoder_config: configs/query_encoder/config_multilingual_e5_large.json
+    retriever: dense
+    query_instruction: "query: "
+  - case_id: E4_me5_instruct
+    encoder_config: configs/query_encoder/config_multilingual_e5_large_instruct.json
+    retriever: dense

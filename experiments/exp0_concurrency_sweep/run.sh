@@ -9,7 +9,9 @@ for MAX_C in 1 2 3 5 8; do
   python -m pipeline.step1_search \
     --questions data/test.csv \
     --sources scienceon \
-    --extractor vllm \
+    --extractor chatgpt \
+    --extractor-model gpt-4.1-mini \
+    --extractor-temperature 0 \
     --scienceon-max-concurrency "${MAX_C}" \
     --scienceon-fixed-concurrency \
     --output-dir "${OUT_ROOT}/c${MAX_C}"

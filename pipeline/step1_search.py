@@ -191,6 +191,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--questions", required=True, help="Input questions file (.csv or .jsonl)")
     parser.add_argument("--output-dir", default="outputs/search", help="Search output directory")
     parser.add_argument("--extractor", default="gemini", help="Keyword extractor backend")
+    parser.add_argument("--chatgpt-model", default=None, help="Deprecated alias for --extractor-model.")
+    parser.add_argument("--extractor-model", default="gpt-4o-mini", help="Model name for --extractor chatgpt.")
+    parser.add_argument(
+        "--extractor-temperature",
+        default="0",
+        help="Temperature for ChatGPT keyword extraction. Use 'none' to omit the parameter.",
+    )
     parser.add_argument("--sources", default="scienceon", help="Single source: scienceon|pubmed|wikipedia")
     parser.add_argument("--keyword-lang", choices=["all", "korean", "english"], default="all")
     parser.add_argument("--vllm-url", default="http://localhost:8000/v1", help="vLLM endpoint URL")
@@ -214,12 +221,17 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    extractor_temperature = None
+    if str(args.extractor_temperature).strip().lower() not in {"none", "null", ""}:
+        extractor_temperature = float(args.extractor_temperature)
     extractor = create_keyword_extractor(
         args.extractor,
         {
             "language": args.keyword_lang,
             "vllm_base_url": args.vllm_url,
             "vllm_model": args.vllm_model,
+            "model": args.chatgpt_model or args.extractor_model,
+            "temperature": extractor_temperature,
         },
     )
     if args.emit_frozen_queries:

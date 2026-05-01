@@ -1,0 +1,48 @@
+# Gold Judge Review
+
+## Summary
+
+```json
+{
+  "evaluated_count": 41,
+  "total_gold_count": 41,
+  "missing_prediction_count": 0,
+  "missing_prediction_qids": [],
+  "label_counts": {
+    "dry_run": 41
+  },
+  "grounding_flag_counts": {
+    "dry_run": 41
+  },
+  "escape_used_count": 0,
+  "overall_avg": 0.0,
+  "answer_relevance_avg": 0.0,
+  "evidence_coverage_avg": 0.0,
+  "faithfulness_to_gold_avg": 0.0,
+  "faithfulness_to_retrieved_avg": 0.0,
+  "specificity_avg": 0.0,
+  "hit_at_1_on_evaluated": 0.6341,
+  "hit_at_3_on_evaluated": 0.6341,
+  "hit_at_5_on_evaluated": 0.6341,
+  "hit_at_1_on_full_gold": 0.6341,
+  "hit_at_3_on_full_gold": 0.6341,
+  "hit_at_5_on_full_gold": 0.6341,
+  "mrr_on_evaluated": 0.6341,
+  "mrr_on_full_gold": 0.6341,
+  "label_mismatch_count": 0,
+  "api_error_count": 0,
+  "parse_error_count": 0
+}
+```
+
+## Worst Overall Scores
+
+- No scored rows available.
+
+## Ungrounded Answers (possible prior-knowledge leakage)
+
+- None.
+
+## Errors And Mismatches
+
+- None.

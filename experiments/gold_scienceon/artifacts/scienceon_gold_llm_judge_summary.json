@@ -1,0 +1,29 @@
+{
+  "total_questions": 50,
+  "llm_judge_label_counts": {
+    "PARTIAL": 9,
+    "FULL": 41
+  },
+  "multi_gold_label_counts": {
+    "NO": 44,
+    "DUPLICATE_RECORD": 5,
+    "POSSIBLE_SECONDARY": 1
+  },
+  "partial_qids": [
+    "0",
+    "3",
+    "15",
+    "17",
+    "19",
+    "25",
+    "26",
+    "34",
+    "35"
+  ],
+  "insufficient_qids": [],
+  "criteria": {
+    "FULL": "초록만으로 질문의 핵심 대상과 대부분의 하위 요구에 답변 가능",
+    "PARTIAL": "문서는 관련되거나 맞지만 초록만으로 결과/절차/요인/구조 일부가 부족",
+    "INSUFFICIENT": "초록이 질문 답변 근거로 부족"
+  }
+}

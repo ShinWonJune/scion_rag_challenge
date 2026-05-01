@@ -39,13 +39,20 @@ def create_keyword_extractor(backend: str, config: Dict[str, Any]) -> BaseKeywor
         api_key = config.get("openai_api_key") or os.environ.get("OPENAI_API_KEY")
         language = config.get("language", "all")
         model = config.get("model", "gpt-4o-mini")
+        temperature = config.get("temperature", 0.0)
         credentials_file = config.get("credentials_file", "./configs/chatgpt_api_credentials.json")
         if api_key:
-            return ChatGPTKeywordExtractor(api_key=api_key, model=model, language=language)
+            return ChatGPTKeywordExtractor(
+                api_key=api_key,
+                model=model,
+                language=language,
+                temperature=temperature,
+            )
         return ChatGPTKeywordExtractor(
             credentials_file=credentials_file,
             model=model,
             language=language,
+            temperature=temperature,
         )
 
     if backend_norm == "vllm":
@@ -54,6 +61,17 @@ def create_keyword_extractor(backend: str, config: Dict[str, Any]) -> BaseKeywor
         return VLLMKeywordExtractor(
             base_url=config.get("vllm_base_url", "http://localhost:8000/v1"),
             model=config.get("vllm_model", "openai/gpt-oss-120B"),
+            language=config.get("language", "all"),
+        )
+
+    if backend_norm == "codex":
+        from .codex_keyword_extractor import CodexKeywordExtractor
+
+        return CodexKeywordExtractor(
+            model=config.get("model", "gpt-5.4"),
+            timeout_sec=int(config.get("timeout_sec", 600)),
+            language=config.get("language", "all"),
+            max_tokens=int(config.get("max_tokens", 1500)),
         )
 
     raise ValueError(f"Unsupported extractor backend: {backend}")
