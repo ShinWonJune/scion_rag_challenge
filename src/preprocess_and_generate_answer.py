@@ -12,9 +12,10 @@ import time
 # --- 사용자 요청 기능 구현 ---
 from src.llm_client.init_gemini import init_gemini
 from src.llm_client.call_gemini import call_gemini
-from src.prompts.general.generate_answer_base_v2 import build_prompt
+from src.prompts.general.generate_answer_base_v3 import build_prompt
 from src.prompts.scifact.generate_scifact_prompt import build_scifact_prompt
 from src.vllm_client import VLLMClient
+from src.openai_client import OpenAIClient
 
 # --- Gemini API 호출을 위한 기본 설정 및 함수 ---
 """
@@ -25,8 +26,11 @@ python preprocess_and_generate_answer.py     \
 
 
 def process_file(
-    filepath: str, max_rank: int, model_obj: Optional[genai.GenerativeModel] = None, 
-    vllm_client: Optional[VLLMClient] = None, use_scifact: bool = False
+    filepath: str, max_rank: int, model_obj: Optional[genai.GenerativeModel] = None,
+    vllm_client: Optional[VLLMClient] = None,
+    openai_client: Optional[OpenAIClient] = None,
+    max_answer_tokens: int = 4000,
+    use_scifact: bool = False
 ) -> List[Dict]:
     """
     단일 JSON 파일을 처리하는 주 함수입니다.
@@ -85,15 +89,18 @@ def process_file(
     
     if vllm_client:
         # vLLM 사용
-        api_result = vllm_client.generate_answer_with_prompt(prompt)
-        model_name = "vllm"
+        api_result = vllm_client.generate_answer_with_prompt(prompt, max_tokens=max_answer_tokens)
+        model_name = vllm_client.model
+    elif openai_client:
+        api_result = openai_client.generate_answer_with_prompt(prompt, max_tokens=max_answer_tokens)
+        model_name = openai_client.model
     elif model_obj:
         # Gemini 사용
         messages = [{"role": "user", "parts": [prompt]}]
         api_result = call_gemini(model_obj, messages)
         model_name = model_obj.model_name
     else:
-        raise ValueError("Either model_obj or vllm_client must be provided")
+        raise ValueError("Either model_obj, vllm_client, or openai_client must be provided")
 
     # 5. 최종 결과 데이터를 구성합니다.
     file_id = data.get("id", os.path.basename(filepath).split("_")[1])
@@ -130,6 +137,8 @@ def process_files_parallel(
     max_rank: int,
     model_obj: Optional[genai.GenerativeModel] = None,
     vllm_client: Optional[VLLMClient] = None,
+    openai_client: Optional[OpenAIClient] = None,
+    max_answer_tokens: int = 4000,
     max_workers: int = 10,
     use_scifact: bool = False,
 ) -> List[Dict]:
@@ -152,10 +161,12 @@ def process_files_parallel(
 
     # functools.partial을 사용하여 process_file 함수에 고정 인자들을 미리 전달합니다.
     worker_func = partial(
-        process_file, 
-        max_rank=max_rank, 
+        process_file,
+        max_rank=max_rank,
         model_obj=model_obj,
         vllm_client=vllm_client,
+        openai_client=openai_client,
+        max_answer_tokens=max_answer_tokens,
         use_scifact=use_scifact
     )
 
@@ -230,6 +241,38 @@ def main():
         default="openai/gpt-oss-20b",
         help="vLLM model name.",
     )
+    parser.add_argument(
+        "--use-openai",
+        action="store_true",
+        help="Use OpenAI Responses API to generate answers.",
+    )
+    parser.add_argument(
+        "--openai-model",
+        default="gpt-5.4",
+        help="OpenAI model name.",
+    )
+    parser.add_argument(
+        "--openai-api-key",
+        default=None,
+        help="OpenAI API key. Falls back to OPENAI_API_KEY.",
+    )
+    parser.add_argument(
+        "--openai-base-url",
+        default=None,
+        help="Optional OpenAI-compatible base URL.",
+    )
+    parser.add_argument(
+        "--openai-reasoning-effort",
+        choices=["low", "medium", "high", "xhigh"],
+        default=None,
+        help="Optional reasoning effort for OpenAI reasoning models.",
+    )
+    parser.add_argument(
+        "--max_answer_tokens",
+        type=int,
+        default=4000,
+        help="Max answer output tokens. For OpenAI Responses this includes reasoning tokens.",
+    )
     # 출력 디렉토리 인자
     parser.add_argument(
         "--output_dir",
@@ -245,13 +288,24 @@ def main():
     MAX_PARALLEL_FILES = 10  # 동시에 처리할 최대 파일 수
     args = parser.parse_args()
 
-    # vLLM 또는 Gemini 초기화
+    # vLLM / OpenAI / Gemini 초기화
     model_obj = None
     vllm_client = None
-    
+    openai_client = None
+
+    if args.use_vllm and args.use_openai:
+        raise ValueError("--use-vllm and --use-openai are mutually exclusive.")
     if args.use_vllm:
         print(f"Initializing vLLM client with URL: {args.vllm_url}")
         vllm_client = VLLMClient(base_url=args.vllm_url, model=args.vllm_model)
+    elif args.use_openai:
+        print(f"Initializing OpenAI client with model: {args.openai_model}")
+        openai_client = OpenAIClient(
+            model=args.openai_model,
+            api_key=args.openai_api_key,
+            base_url=args.openai_base_url,
+            reasoning_effort=args.openai_reasoning_effort,
+        )
     else:
         # API 키 로딩 - 설정 파일에서 가져오기
         api_key = args.api_key
@@ -298,7 +352,13 @@ def main():
     if not args.parallel:
         for path in file_paths:
             processed_data_list = process_file(
-                path, args.max_rank, model_obj=model_obj, vllm_client=vllm_client, use_scifact=args.scifact
+                path,
+                args.max_rank,
+                model_obj=model_obj,
+                vllm_client=vllm_client,
+                openai_client=openai_client,
+                max_answer_tokens=args.max_answer_tokens,
+                use_scifact=args.scifact,
             )
 
             if processed_data_list:
@@ -338,6 +398,8 @@ def main():
             max_rank=args.max_rank,
             model_obj=model_obj,
             vllm_client=vllm_client,
+            openai_client=openai_client,
+            max_answer_tokens=args.max_answer_tokens,
             max_workers=MAX_PARALLEL_FILES,
             use_scifact=args.scifact,
         )

@@ -15,7 +15,6 @@ from pipeline.step2_decompose import run_step2
 from pipeline.step3_build_vectordb import run_step3
 from pipeline.step4_retrieve import run_step4
 from pipeline.step5_generate import run_step5
-from src.llm_client.llm_factory import create_llm_client
 from src.search.factories.search_client_factory import create_search_client
 from src.search_pipeline.core.extractor_factory import create_keyword_extractor
 
@@ -27,9 +26,25 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--llm", default="gemini", choices=["gemini", "chatgpt", "vllm"])
     parser.add_argument("--sources", default="scienceon", help="Single source: scienceon|pubmed|wikipedia")
     parser.add_argument("--extractor", default="gemini", help="Keyword extractor backend")
+    parser.add_argument("--chatgpt-model", default=None, help="Deprecated alias for --extractor-model.")
+    parser.add_argument("--extractor-model", default="gpt-4o-mini", help="Model name for --extractor chatgpt")
+    parser.add_argument("--llm-model", default="gpt-5.4", help="Model name for --llm chatgpt")
+    parser.add_argument(
+        "--extractor-temperature",
+        default="0",
+        help="Temperature for ChatGPT keyword extraction. Use 'none' to omit the parameter.",
+    )
     parser.add_argument("--keyword-lang", choices=["all", "korean", "english"], default="all")
     parser.add_argument("--vllm-url", default="http://localhost:8000/v1", help="vLLM endpoint URL")
     parser.add_argument("--vllm-model", default="openai/gpt-oss-20b", help="vLLM model name")
+    parser.add_argument("--openai-base-url", default=None, help="Optional OpenAI-compatible base URL for --llm chatgpt")
+    parser.add_argument(
+        "--openai-reasoning-effort",
+        choices=["low", "medium", "high", "xhigh"],
+        default=None,
+        help="Optional reasoning effort for OpenAI answer generation",
+    )
+    parser.add_argument("--max-answer-tokens", type=int, default=4000, help="Maximum answer output tokens, including reasoning tokens for OpenAI Responses")
     parser.add_argument("--scienceon-credentials", default="configs/credentials/scienceon_api_credentials.json")
     parser.add_argument("--scienceon-max-pages", type=int, default=5)
     parser.add_argument("--scienceon-max-concurrency", type=int, default=2)
@@ -48,7 +63,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--decompose-model", default="gemini-2.5-flash")
     parser.add_argument("--target-documents", type=int, default=50)
     parser.add_argument("--top-k", type=int, default=50)
-    parser.add_argument("--max-rank", type=int, default=1)
+    parser.add_argument("--max-rank", type=int, default=5)
     return parser.parse_args()
 
 
@@ -125,18 +140,27 @@ def _sources_to_list(sources: str) -> list[str]:
     return [s.strip().lower() for s in sources.split(",") if s.strip()]
 
 
+def _parse_optional_float(value: Any) -> float | None:
+    if value is None:
+        return None
+    if isinstance(value, str) and value.strip().lower() in {"none", "null", ""}:
+        return None
+    return float(value)
+
+
 def _to_wiki_lang(keyword_lang: str) -> str:
     return "ko" if keyword_lang == "korean" else "en"
 
 
-def build_components(args: argparse.Namespace) -> tuple[Any, Any, dict[str, Any]]:
-    llm_client = create_llm_client(args.llm, {"dry_run": False})
+def build_components(args: argparse.Namespace) -> tuple[Any, dict[str, Any]]:
     keyword_extractor = create_keyword_extractor(
         args.extractor,
         {
             "language": args.keyword_lang,
             "vllm_base_url": args.vllm_url,
             "vllm_model": args.vllm_model,
+            "model": args.chatgpt_model or args.extractor_model,
+            "temperature": _parse_optional_float(args.extractor_temperature),
         },
     )
     search_clients: dict[str, Any] = {}
@@ -158,7 +182,7 @@ def build_components(args: argparse.Namespace) -> tuple[Any, Any, dict[str, Any]
                 "pubmed_credentials_path": args.pubmed_credentials,
             },
         )
-    return llm_client, keyword_extractor, search_clients
+    return keyword_extractor, search_clients
 
 
 def _file_sha1(path: Path) -> str:
@@ -187,7 +211,7 @@ def _write_run_manifest(path: Path, payload: dict[str, Any]) -> None:
 
 def main() -> None:
     args = parse_args()
-    llm_client, keyword_extractor, search_clients = build_components(args)
+    keyword_extractor, search_clients = build_components(args)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_root = Path(args.output or f"outputs/run_{timestamp}")
     search_dir = output_root / "search"
@@ -206,6 +230,12 @@ def main() -> None:
         "finished_at": None,
         "cli_args": vars(args),
         "vllm": {"url": args.vllm_url, "model": args.vllm_model, "version": None},
+        "openai": {
+            "model": args.llm_model if args.llm == "chatgpt" else None,
+            "base_url": args.openai_base_url,
+            "reasoning_effort": args.openai_reasoning_effort,
+            "max_answer_tokens": args.max_answer_tokens,
+        } if args.llm == "chatgpt" else None,
         "credentials_fingerprint": {
             "scienceon": _credential_fingerprint(args.scienceon_credentials),
             "pubmed": _credential_fingerprint(args.pubmed_credentials),
@@ -298,10 +328,13 @@ def main() -> None:
         input_dir=str(retrieval_output_dir),
         output_dir=str(final_dir),
         max_rank=args.max_rank,
-        llm="vllm" if args.llm == "vllm" else "gemini",
-        llm_client=llm_client,
+        llm=args.llm,
         vllm_url=args.vllm_url,
         vllm_model=args.vllm_model,
+        openai_model=args.llm_model,
+        openai_base_url=args.openai_base_url,
+        openai_reasoning_effort=args.openai_reasoning_effort,
+        max_answer_tokens=args.max_answer_tokens,
         use_timestamp_subdir=False,
     )
     manifest["runtime"]["step5_generate_sec"] = round(time.perf_counter() - step5_started, 4)
