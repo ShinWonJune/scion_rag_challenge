@@ -1,0 +1,11 @@
+{
+  "csv_headers": [
+    "CN",
+    "title",
+    "abstract",
+    "source",
+    "embedding_mode",
+    "embedding_text",
+    "embedding"
+  ]
+}
