@@ -6,7 +6,7 @@ mkdir -p "${OUT_ROOT}"
 rm -rf outputs/_shared_cache/scienceon
 
 for MAX_C in 1 2 3 5 8; do
-  python -m pipeline.step1_search \
+  python -m shrag.pipeline.steps.step1_search \
     --questions data/test.csv \
     --sources scienceon \
     --extractor chatgpt \

@@ -9,7 +9,7 @@
   ],
   "output_dir": "../outputs/vectordb",
   "output_format": "csv",
-  "output_file": "../outputs/vectordb\\260306_153714\\vector_db_gte_test_Alibaba-NLP_gte-multilingual-base.csv",
+  "output_file": "../outputs/vectordb/260505_001927/vector_db_gte_test_Alibaba-NLP_gte-multilingual-base.csv",
   "json_path": "./test.json",
-  "last_run": "260306_153714"
+  "last_run": "260505_001927"
 }

@@ -12,7 +12,7 @@ for EXTRACTOR in gemini vllm; do
     else
       EXTRA_ARGS+=(--scienceon-max-retries 0)
     fi
-    python -m pipeline.step1_search \
+    python -m shrag.pipeline.steps.step1_search \
       --questions data/test.csv \
       --sources scienceon \
       --extractor "${EXTRACTOR}" \

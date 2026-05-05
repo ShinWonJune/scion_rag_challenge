@@ -48,7 +48,7 @@ esac
 
 echo "=== Exp4 cell=$CELL llm=$LLM_ARGS at $(date) ==="
 
-python -m pipeline.run_pipeline \
+python -m shrag.pipeline.run \
   --questions data/test.csv \
   --encoder "${SHRAG_BEST_ENCODER}" \
   ${LLM_ARGS} \

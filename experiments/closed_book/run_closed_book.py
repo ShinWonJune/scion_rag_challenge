@@ -27,9 +27,9 @@ from pathlib import Path
 from typing import Any
 
 from experiments.closed_book.prompts import build_closed_book_prompt
-from src.codex_client import CodexClient
-from src.openai_client import OpenAIClient
-from src.vllm_client import VLLMClient
+from shrag.llm.codex_client import CodexClient
+from shrag.llm.openai_client import OpenAIClient
+from shrag.llm.vllm_client import VLLMClient
 
 logger = logging.getLogger(__name__)
 

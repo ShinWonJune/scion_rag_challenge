@@ -22,7 +22,7 @@ import time
 from pathlib import Path
 from typing import Any, Optional, Set
 
-from src.codex_client import CodexClient
+from shrag.llm.codex_client import CodexClient
 
 from experiments.target_sweep.legacy_v1_prompts import (
     v1_combined_prompt,

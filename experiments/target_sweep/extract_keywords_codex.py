@@ -21,7 +21,7 @@ import time
 from pathlib import Path
 from typing import Any, Optional, Set
 
-from src.search_pipeline.core.extractor_factory import create_keyword_extractor
+from shrag.search.extractors.extractor_factory import create_keyword_extractor
 
 logger = logging.getLogger(__name__)
 

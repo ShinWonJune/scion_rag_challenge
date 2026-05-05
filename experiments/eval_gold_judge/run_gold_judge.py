@@ -184,7 +184,7 @@ def call_judge(
         )
         return (response.text or "").strip()
     if backend == "codex":
-        from src.codex_client import CodexClient  # lazy
+        from shrag.llm.codex_client import CodexClient  # lazy
 
         client = CodexClient(model=model, timeout_sec=600)
         return client.generate_answer_with_prompt(prompt, max_tokens=max_tokens)

@@ -11,9 +11,9 @@ from typing import Any
 from experiments.shared.evaluate.metrics_ir import summarize_ir_metrics
 from experiments.shared.rerank.cross_encoder import CrossEncoderReranker
 from experiments.shared.retrievers.bm25 import BM25Retriever
-from src.build_vectordb_search import build_vectordb_search
-from src.retrieval_system import data_loader, query_encoder
-from src.retrieval_system.retrievers import get_retriever
+from shrag.pipeline._impl.build_vectordb import build_vectordb_search
+from shrag.retrieval import data_loader, query_encoder
+from shrag.retrieval.retrievers import get_retriever
 
 
 @dataclass

@@ -26,7 +26,7 @@ run_pipeline_cell() {
   local pipeline_dir="outputs/e2e_${run_tag}"
   local judge_dir="experiments/outputs/eval/${run_tag}"
 
-  python -m pipeline.run_pipeline \
+  python -m shrag.pipeline.run \
     --questions data/test.csv \
     --encoder "${BEST_ENCODER}" \
     --sources scienceon \
