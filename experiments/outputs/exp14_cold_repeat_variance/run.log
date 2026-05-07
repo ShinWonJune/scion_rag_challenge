@@ -1,0 +1,9 @@
+Some weights of the model checkpoint at Alibaba-NLP/gte-multilingual-base were not used when initializing NewModel: ['classifier.bias', 'classifier.weight']
+- This IS expected if you are initializing NewModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing NewModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Loading documents from C:\Users\wonjune\workspace\RAG\scion_rag_challenge\experiments\outputs\exp3_encoder\corpus.jsonl: Auto Loading Data False
+Loaded 3557 documents (embedding_mode=3T+A)
+모델 로딩: Alibaba-NLP/gte-multilingual-base (임베딩 차원을 768으로 조절합니다)
+자동 선택된 디바이스: cpu
+문서 인코딩 중...
+Batches:   0%|          | 0/112 [00:00<?, ?it/s]Batches:   1%|          | 1/112 [05:14<9:41:34, 314.37s/it]
