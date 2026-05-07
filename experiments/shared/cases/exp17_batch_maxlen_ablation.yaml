@@ -1,0 +1,70 @@
+# Exp17: cold ablation for batch-size vs max-sequence-length effects and BGE-M3 batch extension.
+# All new cases use the same Q41 corpus and 3T+A embedding text.
+# Exp15 default b32/len8192 results are reused as baseline; do not rerun expensive len8192 defaults here.
+cases:
+  # GTE batch-only effect against Exp15 E15_gte_default_b32:
+  # dtype and max_len stay default; only batch changes.
+  - case_id: E17_gte_default_b64_len8192
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    batch_size: 64
+
+  # GTE max_len effect against Exp15 E15_gte_default_b32:
+  # dtype and batch stay default; only max_seq_length changes.
+  - case_id: E17_gte_default_b32_len512
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    batch_size: 32
+    max_seq_length: 512
+
+  # BGE-M3 max_len effect against Exp15 E15_bge_m3_default_b32:
+  # dtype and batch stay default; only max_seq_length changes.
+  - case_id: E17_bge_m3_default_b32_len512
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    batch_size: 32
+    max_seq_length: 512
+
+  - case_id: E17_bge_m3_default_b32_len1024
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    batch_size: 32
+    max_seq_length: 1024
+
+  # BGE-M3 optimized batch extension against Exp15 E15_bge_m3_fp16_b8_len1024_bucket:
+  # keep dtype/max_len/bucket fixed and increase batch.
+  - case_id: E17_bge_m3_fp16_b12_len1024_bucket
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    batch_size: 12
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    length_bucket: true
+
+  - case_id: E17_bge_m3_fp16_b16_len1024_bucket
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    length_bucket: true
+
+  - case_id: E17_bge_m3_fp16_b24_len1024_bucket
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    batch_size: 24
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    length_bucket: true
+
+  - case_id: E17_bge_m3_fp16_b32_len1024_bucket
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    batch_size: 32
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    length_bucket: true

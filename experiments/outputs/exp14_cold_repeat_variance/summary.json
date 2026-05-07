@@ -1,73 +1,61 @@
 {
-  "generated_at": "2026-05-07T04:14:23.642079+00:00",
-  "purpose": "Exp14 cold repeat variance summary for Exp12/Exp13 GTE cold conditions",
+  "experiment": "exp14_cold_repeat_variance",
+  "purpose": "Repeat Exp12/Exp13 GTE Q41 cold embedding conditions to assess timing variance.",
   "corpus": "experiments/outputs/exp3_encoder/corpus.jsonl",
   "doc_count": 3557,
   "schema": "configs/csv_schema/test_2.json",
-  "rerun_status": "attempted_but_aborted_cpu_only",
-  "rerun_attempt": {
-    "command": "python -m experiments.shared.evaluate.embedding_cold_benchmark --cases experiments/shared/cases/exp14_cold_repeat_variance.yaml --corpus C:/Users/wonjune/workspace/RAG/scion_rag_challenge/experiments/outputs/exp3_encoder/corpus.jsonl --schema configs/csv_schema/test_2.json --output experiments/outputs/exp14_cold_repeat_variance",
-    "environment": {
-      "torch": "2.8.0+cpu",
-      "cuda_available": false,
-      "cuda_device_count": 0
-    },
-    "observed_progress": "1/112 batches after 314.37s; tqdm ETA 9:41:34 on CPU",
-    "log": "experiments/outputs/exp14_cold_repeat_variance/run.log",
-    "reason_aborted": "CPU-only environment made full cold rerun impractical compared with original ~99-129s GPU-class timings."
-  },
-  "source_runs": [
+  "cache_policy": "embedding cache disabled by removing cache_db_path from temporary configs",
+  "scope": "document embedding + vector DB build only; excludes search/acquisition/query encoding/retrieval/rerank/generation",
+  "leader_gpu_rerun_note": "OMX worker-1 attempted a CPU-only rerun and aborted; the comparable reruns in this summary were executed by the leader in the GPU-enabled runtime.",
+  "baseline_results": [
     {
       "case_id": "E12_gte_3TA_cold_embed",
-      "model_name": "Alibaba-NLP/gte-multilingual-base",
-      "embedding_dim": 768,
-      "doc_count": 3557,
+      "source": "experiments/outputs/exp12_q41_embedding_cold/summary.json",
       "build_sec": 98.6966,
-      "docs_per_sec": 36.0397,
-      "temp_config": "experiments/outputs/exp12_q41_embedding_cold/cases/E12_gte_3TA_cold_embed/encoder_config.cold.json",
-      "vectordb": "experiments/outputs/exp12_q41_embedding_cold/cases/E12_gte_3TA_cold_embed/260507_002722/vector_db_gte_3T_A_Alibaba-NLP_gte-multilingual-base.csv"
+      "docs_per_sec": 36.0397
     },
     {
       "case_id": "E13_gte_3TA_exp3_cold_rerun",
-      "model_name": "Alibaba-NLP/gte-multilingual-base",
-      "embedding_dim": 768,
-      "doc_count": 3557,
+      "source": "experiments/outputs/exp13_exp3_gte_cold_rerun/summary.json",
       "build_sec": 128.9104,
-      "docs_per_sec": 27.5928,
-      "temp_config": "experiments/outputs/exp13_exp3_gte_cold_rerun/cases/E13_gte_3TA_exp3_cold_rerun/encoder_config.cold.json",
-      "vectordb": "experiments/outputs/exp13_exp3_gte_cold_rerun/cases/E13_gte_3TA_exp3_cold_rerun/260507_121942/vector_db_gte_3T_A_Alibaba-NLP_gte-multilingual-base.csv"
+      "docs_per_sec": 27.5928
     }
   ],
-  "bge_reference": {
-    "case_id": "E12_bge_m3_1024_3TA_cold_embed",
-    "model_name": "BAAI/bge-m3",
-    "embedding_dim": 1024,
-    "doc_count": 3557,
-    "build_sec": 642.1254,
-    "docs_per_sec": 5.5394,
-    "temp_config": "experiments/outputs/exp12_q41_embedding_cold/cases/E12_bge_m3_1024_3TA_cold_embed/encoder_config.cold.json",
-    "vectordb": "experiments/outputs/exp12_q41_embedding_cold/cases/E12_bge_m3_1024_3TA_cold_embed/260507_003849/vector_db_bge_m3_3T_A_BAAI_bge-m3.csv"
-  },
-  "gte_variance": {
-    "build_sec_values": [
-      98.6966,
-      128.9104
-    ],
-    "min_sec": 98.6966,
-    "max_sec": 128.9104,
-    "range_sec": 30.2138,
-    "mean_sec": 113.8035,
-    "sample_stdev_sec": 21.3644,
-    "range_pct_of_fastest": 30.61,
-    "slow_fast_ratio": 1.3061,
-    "docs_per_sec_values": [
-      36.0397,
-      27.5928
-    ],
-    "docs_per_sec_drop_pct": 23.44
-  },
-  "interpretation": [
-    "Exp12 and Exp13 GTE temp configs differ only in output path/run metadata per context, so the 30.2138s difference is consistent with cold-run variance rather than a config change.",
-    "Observed local rerun selected CPU because installed torch is CPU-only; this environment cannot reproduce the original GTE timing envelope without GPU-enabled torch/runtime."
-  ]
+  "repeat_results": [
+    {
+      "case_id": "E14_gte_repeat_a",
+      "source": "experiments/outputs/exp14_cold_repeat_variance/rerun_a/summary.json",
+      "build_sec": 149.9598,
+      "docs_per_sec": 23.7197,
+      "first_batch_observed_sec": 42.37
+    },
+    {
+      "case_id": "E14_gte_repeat_b",
+      "source": "experiments/outputs/exp14_cold_repeat_variance/rerun_b/summary.json",
+      "build_sec": 175.0776,
+      "docs_per_sec": 20.3167,
+      "first_batch_observed_sec": 56.14
+    },
+    {
+      "case_id": "E14_gte_repeat_c",
+      "source": "experiments/outputs/exp14_cold_repeat_variance/rerun_c/summary.json",
+      "build_sec": 129.3573,
+      "docs_per_sec": 27.4975,
+      "first_batch_observed_sec": 42.47
+    }
+  ],
+  "repeat_mean_build_sec": 151.4649,
+  "repeat_range_sec": 45.7203,
+  "all_gte_cold_observations_sec": [
+    98.6966,
+    128.9104,
+    149.9598,
+    175.0776,
+    129.3573
+  ],
+  "all_mean_build_sec": 136.4003,
+  "all_min_build_sec": 98.6966,
+  "all_max_build_sec": 175.0776,
+  "all_range_sec": 76.381,
+  "interpretation": "The same corpus/config can vary materially because the benchmark times model load, CUDA/PyTorch initialization, first-batch warmup, encoding, Python object conversion, CSV write, and config write together. The repeated GPU runs make the Exp12-vs-Exp13 30s gap plausible runtime variance rather than an input/config difference."
 }

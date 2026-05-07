@@ -1,0 +1,42 @@
+# Exp16: retrieval metric check for Exp15 optimized embedding settings.
+# Uses Exp15 precomputed document embeddings and encodes queries with matching model settings.
+cases:
+  - case_id: E16_gte_fp16_b64_len512_dense50
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp15_embedding_speed_tuning/cases/E15_gte_fp16_b64_len512/embeddings.npy
+    batch_size: 64
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+
+  - case_id: E16_gte_fp16_b96_len512_bucket_dense50
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp15_embedding_speed_tuning/cases/E15_gte_fp16_b96_len512_bucket/embeddings.npy
+    batch_size: 96
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+
+  - case_id: E16_bge_m3_fp16_b12_len512_bucket_dense50
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp15_embedding_speed_tuning/cases/E15_bge_m3_fp16_b12_len512_bucket/embeddings.npy
+    batch_size: 12
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+
+  - case_id: E16_bge_m3_fp16_b8_len1024_bucket_dense50
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp15_embedding_speed_tuning/cases/E15_bge_m3_fp16_b8_len1024_bucket/embeddings.npy
+    batch_size: 8
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    top_k: 50

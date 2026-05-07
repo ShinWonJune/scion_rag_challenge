@@ -1,0 +1,118 @@
+# exp18 retrieval-quality eval — 13 cases reusing precomputed doc embeddings.
+cases:
+  - case_id: E18r_gte_fp16_b32_len8192
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_gte_fp16_b32_len8192/embeddings.npy
+    batch_size: 32
+    torch_dtype: float16
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_gte_fp16_b32_len512
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_gte_fp16_b32_len512/embeddings.npy
+    batch_size: 32
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_gte_fp16_b64_len512
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_gte_fp16_b64_len512/embeddings.npy
+    batch_size: 64
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_gte_fp16_b96_len512
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_gte_fp16_b96_len512/embeddings.npy
+    batch_size: 96
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_gte_fp16_b32_len1024
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_gte_fp16_b32_len1024/embeddings.npy
+    batch_size: 32
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_gte_fp16_b64_len1024
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_gte_fp16_b64_len1024/embeddings.npy
+    batch_size: 64
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_gte_fp16_b96_len1024
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_gte_fp16_b96_len1024/embeddings.npy
+    batch_size: 96
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_bge_fp16_b12_len512
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_bge_fp16_b12_len512/embeddings.npy
+    batch_size: 12
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_bge_fp16_b16_len512
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_bge_fp16_b16_len512/embeddings.npy
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_bge_fp16_b32_len512
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_bge_fp16_b32_len512/embeddings.npy
+    batch_size: 32
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_bge_fp16_b12_len1024
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_bge_fp16_b12_len1024/embeddings.npy
+    batch_size: 12
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_bge_fp16_b16_len1024
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_bge_fp16_b16_len1024/embeddings.npy
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    top_k: 50
+  - case_id: E18r_bge_fp16_b32_len1024
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    doc_embeddings: experiments/outputs/exp18_isolated_speed/cases/E18_bge_fp16_b32_len1024/embeddings.npy
+    batch_size: 32
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    top_k: 50

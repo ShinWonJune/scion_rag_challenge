@@ -1,0 +1,66 @@
+# Exp15: fair embedding-path speed sweep on the fixed Q41 corpus.
+#
+# All cases use the same corpus and embedding_mode=3T+A.
+# The script records load/encode/save stages separately and saves embeddings as .npy.
+cases:
+  # GTE first, from current default to proposed faster settings.
+  - case_id: E15_gte_default_b32
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    embedding_mode: 3T+A
+    batch_size: 32
+
+  - case_id: E15_gte_fp16_b64_len512
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    embedding_mode: 3T+A
+    batch_size: 64
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+
+  - case_id: E15_gte_fp16_b96_len512_bucket
+    model_name: Alibaba-NLP/gte-multilingual-base
+    embedding_dim: 768
+    embedding_mode: 3T+A
+    batch_size: 96
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    length_bucket: true
+
+  # BGE-M3 next, from current SentenceTransformers default to conservative fast settings.
+  - case_id: E15_bge_m3_default_b32
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    embedding_mode: 3T+A
+    batch_size: 32
+
+  - case_id: E15_bge_m3_fp16_b8_len512
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    embedding_mode: 3T+A
+    batch_size: 8
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+
+  - case_id: E15_bge_m3_fp16_b12_len512_bucket
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    embedding_mode: 3T+A
+    batch_size: 12
+    torch_dtype: float16
+    max_seq_length: 512
+    attn_implementation: sdpa
+    length_bucket: true
+
+  - case_id: E15_bge_m3_fp16_b8_len1024_bucket
+    model_name: BAAI/bge-m3
+    embedding_dim: 1024
+    embedding_mode: 3T+A
+    batch_size: 8
+    torch_dtype: float16
+    max_seq_length: 1024
+    attn_implementation: sdpa
+    length_bucket: true
