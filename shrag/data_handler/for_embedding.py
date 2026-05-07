@@ -101,7 +101,6 @@ def save_results(
         {
             "output_file": output_file,
             "jsonl_path": config.get("jsonl_path"),
-            "embedding_mode": "3*title+abstract",
             "last_run": timestamp,
         }
     )

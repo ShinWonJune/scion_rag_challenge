@@ -1,0 +1,21 @@
+# Exp3: encoder comparison — fixed corpus (from Exp1 best), fixed strategy (3T+A)
+# corpus/queries/gold filled in from experiments/outputs/exp1_kmn/best_config.json at run time
+# Run with: python -m experiments.shared.evaluate.embed_benchmark \
+#   --cases experiments/shared/cases/exp3_encoder.yaml \
+#   --corpus ${EXP1_CORPUS} --queries ${EXP1_QUERIES} --gold ${EXP1_GOLD} \
+#   --output experiments/outputs/exp3_encoder
+cases:
+  - case_id: E3_gte_3TA
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E3_bge_m3_1024_3TA
+    encoder_config: configs/query_encoder/exp4/config_bge_m3_3T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E3_bge_m3_768_3TA
+    encoder_config: configs/query_encoder/config_bge_m3_768.json
+    retriever: dense
+    top_k: 50

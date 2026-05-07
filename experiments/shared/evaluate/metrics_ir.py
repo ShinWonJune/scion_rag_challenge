@@ -41,7 +41,7 @@ def ndcg_at_k(hits: list[str], gold: set[str], k: int) -> float:
 def summarize_ir_metrics(
     ranked_doc_ids: dict[str, list[str]],
     gold_by_qid: dict[str, set[str]],
-    ks: Iterable[int] = (5, 10, 50),
+    ks: Iterable[int] = (5, 7, 10, 50),
 ) -> dict[str, float | int | list[float]]:
     qids = [qid for qid in ranked_doc_ids if qid in gold_by_qid]
     metrics: dict[str, float | int | list[float]] = {"n_queries": len(qids)}

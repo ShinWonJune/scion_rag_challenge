@@ -1,0 +1,21 @@
+# Exp4 sampled20 follow-up: compare longer composition strategies on 20 sampled questions.
+cases:
+  - case_id: E4S20_gte_T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4S20_gte_2T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_2T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4S20_gte_3T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4S20_gte_5T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_5T_A.json
+    retriever: dense
+    top_k: 50

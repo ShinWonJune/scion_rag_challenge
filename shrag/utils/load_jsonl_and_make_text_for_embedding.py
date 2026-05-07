@@ -63,8 +63,26 @@ def make_text_for_embedding(
             continue
 
         # embedding_mode에 따라 텍스트 생성
-        if embedding_mode == "3*title+abstract":
+        if embedding_mode == "T":
+            embedding_text = title
+        elif embedding_mode == "A":
+            embedding_text = abstract
+        elif embedding_mode == "T+A":
+            embedding_text = f"{title} {abstract}"
+        elif embedding_mode == "2T+A":
+            embedding_text = f"{title} {title} {abstract}"
+        elif embedding_mode in ("3T+A", "3*title+abstract"):
             embedding_text = f"{title} {title} {title} {abstract}"
+        elif embedding_mode == "5T+A":
+            embedding_text = f"{title} {title} {title} {title} {title} {abstract}"
+        elif embedding_mode == "T+A_trunc":
+            # title+abstract truncated to 512 tokens (approx 2048 chars)
+            embedding_text = f"{title} {abstract}"[:2048]
+        elif embedding_mode == "sliding_window":
+            # sliding window: title prepended to each 256-char abstract chunk, joined by [SEP]
+            chunk_size = 256
+            chunks = [abstract[i:i+chunk_size] for i in range(0, max(len(abstract), 1), chunk_size)]
+            embedding_text = f" [SEP] ".join(f"{title} {chunk}" for chunk in chunks)
         elif embedding_mode == "title+abstract":
             embedding_text = f"{title} {abstract}"
         elif embedding_mode == "title":
@@ -88,16 +106,17 @@ def make_text_for_embedding(
     return documents_data
 
 
-def load_jsonl_and_make_text_for_embedding(jsonl_path, embedding_mode="title+abstract"):
+def load_jsonl_and_make_text_for_embedding(jsonl_path, embedding_mode="3T+A"):
     """
     JSONL 파일에서 모든 문서를 로드하고 임베딩할 텍스트 생성
 
     Args:
         jsonl_path: JSONL 파일 경로
+        embedding_mode: 텍스트 생성 방식
 
     Returns:
         documents_data: 문서 정보가 담긴 리스트
     """
     docs = load_jsonl(jsonl_path)
-    docs_with_emb = make_text_for_embedding(docs, embedding_mode="3*title+abstract")
+    docs_with_emb = make_text_for_embedding(docs, embedding_mode=embedding_mode)
     return docs_with_emb

@@ -1,0 +1,18 @@
+# Exp9: compare reranked top3 context against dense top5 context.
+cases:
+  - case_id: E9_dense_top5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 5
+  - case_id: E9_rerank_c5_out3
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 5
+    rerank_output_top_k: 3
+  - case_id: E9_rerank_c20_out3
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 20
+    rerank_output_top_k: 3

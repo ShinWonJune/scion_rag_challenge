@@ -1,0 +1,66 @@
+# Exp8 rerun after installing FAISS.
+# Dense top_k controls returned context size for dense-only.
+# Reranker top_k controls dense candidates; rerank_output_top_k controls final context size.
+cases:
+  - case_id: E8F_dense_top5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 5
+  - case_id: E8F_dense_top7
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 7
+  - case_id: E8F_dense_top10
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 10
+  - case_id: E8F_dense_top20
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 20
+  - case_id: E8F_dense_top50
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 50
+  - case_id: E8F_rerank_c5_out5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 5
+    rerank_output_top_k: 5
+  - case_id: E8F_rerank_c7_out5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 7
+    rerank_output_top_k: 5
+  - case_id: E8F_rerank_c7_out7
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 7
+    rerank_output_top_k: 7
+  - case_id: E8F_rerank_c10_out5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 10
+    rerank_output_top_k: 5
+  - case_id: E8F_rerank_c10_out7
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 10
+    rerank_output_top_k: 7
+  - case_id: E8F_rerank_c20_out5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 20
+    rerank_output_top_k: 5
+  - case_id: E8F_rerank_c20_out7
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 20
+    rerank_output_top_k: 7

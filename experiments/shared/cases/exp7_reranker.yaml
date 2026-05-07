@@ -1,0 +1,8 @@
+# Exp7: reranker spot-check on Exp1 best corpus.
+# Start with the lowest-cost informative reranker cell before expanding.
+cases:
+  - case_id: E7_gte_3TA_bge_reranker_top20
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 20

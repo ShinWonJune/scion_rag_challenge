@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from experiments.shared.evaluate.metrics_ir import summarize_ir_metrics
+from experiments.shared.evaluate.retrieval_eval import evaluate as retrieval_evaluate
 from experiments.shared.rerank.cross_encoder import CrossEncoderReranker
 from experiments.shared.retrievers.bm25 import BM25Retriever
 from shrag.pipeline._impl.build_vectordb import build_vectordb_search
@@ -23,6 +24,7 @@ class BenchmarkCase:
     retriever: str = "dense"
     rerank_model: str | None = None
     top_k: int = 50
+    rerank_output_top_k: int = 5
     query_instruction: str | None = None
     bm25_tokenizer: str = "whitespace"
 
@@ -56,6 +58,7 @@ def _case_from_dict(item: dict[str, Any]) -> BenchmarkCase:
         retriever=item.get("retriever", "dense"),
         rerank_model=item.get("rerank_model"),
         top_k=int(item.get("top_k", 50)),
+        rerank_output_top_k=int(item.get("rerank_output_top_k", 5)),
         query_instruction=item.get("query_instruction"),
         bm25_tokenizer=item.get("bm25_tokenizer", "whitespace"),
     )
@@ -75,10 +78,11 @@ def _dense_search_for_case(
     corpus_jsonl: Path,
     queries: list[dict[str, Any]],
     case_dir: Path,
-) -> dict[str, list[dict[str, Any]]]:
+) -> tuple[dict[str, list[dict[str, Any]]], float, float]:
     if case.encoder_config is None:
         raise ValueError(f"Dense case requires encoder_config: {case.case_id}")
     temp_config = _prepare_temp_config(case.encoder_config, case_dir)
+    step3_started = time.perf_counter()
     build_vectordb_search(
         config_path=str(temp_config),
         data_schema="configs/csv_schema/test_2.json",
@@ -86,6 +90,9 @@ def _dense_search_for_case(
         auto_data_load=False,
         gpu_id=None,
     )
+    step3_sec = time.perf_counter() - step3_started
+
+    step4_started = time.perf_counter()
     config = json.loads(temp_config.read_text(encoding="utf-8"))
     vectordb = data_loader.load_vectordb_from_csv(config["output_file"], "configs/csv_schema/test_2.json")
     encoder = query_encoder.QueryEncoder(model_name=config["model_name"], device="auto")
@@ -110,9 +117,10 @@ def _dense_search_for_case(
                 }
             )
         if reranker is not None:
-            hits = reranker.rerank(base_query, hits, top_k=min(5, len(hits)))
+            hits = reranker.rerank(base_query, hits, top_k=min(case.rerank_output_top_k, len(hits)))
         retrieval_by_qid[qid] = hits
-    return retrieval_by_qid
+    step4_sec = time.perf_counter() - step4_started
+    return retrieval_by_qid, step3_sec, step4_sec
 
 
 def _bm25_search_for_case(
@@ -148,14 +156,26 @@ def _write_case_outputs(
     retrieval_by_qid: dict[str, list[dict[str, Any]]],
     gold_by_qid: dict[str, set[str]],
     runtime_sec: float,
+    step3_sec: float | None = None,
+    step4_sec: float | None = None,
 ) -> dict[str, Any]:
     ranked_doc_ids = {
         qid: [hit.get("doc_id", "") for hit in hits]
         for qid, hits in retrieval_by_qid.items()
     }
     metrics = summarize_ir_metrics(ranked_doc_ids, gold_by_qid)
+    # Add Hit@k and mean_gold_rank via retrieval_evaluate
+    hit_metrics = retrieval_evaluate(ranked_doc_ids, gold_by_qid, ks=[1, 3, 5, 7, 10, 20])
+    for k in [1, 3, 5, 7, 10, 20]:
+        metrics[f"hit_at_{k}"] = hit_metrics.get(f"hit_at_{k}", 0.0)
+    metrics["mean_gold_rank"] = hit_metrics.get("mean_gold_rank")
+    metrics["gold_found_rate"] = hit_metrics.get("gold_found_rate", 0.0)
     metrics["case_id"] = case.case_id
     metrics["runtime_sec"] = round(runtime_sec, 4)
+    if step3_sec is not None:
+        metrics["step3_build_vectordb_sec"] = round(step3_sec, 4)
+    if step4_sec is not None:
+        metrics["step4_retrieve_sec"] = round(step4_sec, 4)
     (case_dir / "retrieval.jsonl").write_text(
         "\n".join(
             json.dumps({"question_id": qid, "hits": hits}, ensure_ascii=False)
@@ -187,24 +207,39 @@ def run_benchmark(
         case_dir = output_root / "cases" / case.case_id
         case_dir.mkdir(parents=True, exist_ok=True)
         started = time.perf_counter()
+        step3_sec = step4_sec = None
         if case.retriever == "bm25":
             retrieval_by_qid = _bm25_search_for_case(case, corpus_jsonl, queries)
         else:
-            retrieval_by_qid = _dense_search_for_case(case, corpus_jsonl, queries, case_dir)
+            retrieval_by_qid, step3_sec, step4_sec = _dense_search_for_case(
+                case, corpus_jsonl, queries, case_dir
+            )
         metrics = _write_case_outputs(
-            case, case_dir, retrieval_by_qid, gold_by_qid, time.perf_counter() - started
+            case, case_dir, retrieval_by_qid, gold_by_qid,
+            time.perf_counter() - started, step3_sec, step4_sec,
         )
         reports.append(metrics)
     lines = [
         "# Benchmark Report",
         "",
-        "| case | R@5 | R@10 | MRR@10 | nDCG@10 | runtime sec |",
-        "|---|---:|---:|---:|---:|---:|",
+        "| case | Hit@5 | Hit@7 | Hit@10 | R@5 | R@7 | R@10 | MRR@10 | nDCG@10 | mean_gold_rank | step3_sec | step4_sec | runtime_sec |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for report in reports:
         lines.append(
-            f"| {report['case_id']} | {report.get('recall_at_5', 0)} | {report.get('recall_at_10', 0)} | "
-            f"{report.get('mrr_at_10', 0)} | {report.get('ndcg_at_10', 0)} | {report.get('runtime_sec', 0)} |"
+            f"| {report['case_id']}"
+            f" | {report.get('hit_at_5', 0)}"
+            f" | {report.get('hit_at_7', 0)}"
+            f" | {report.get('hit_at_10', 0)}"
+            f" | {report.get('recall_at_5', 0)}"
+            f" | {report.get('recall_at_7', 0)}"
+            f" | {report.get('recall_at_10', 0)}"
+            f" | {report.get('mrr_at_10', 0)}"
+            f" | {report.get('ndcg_at_10', 0)}"
+            f" | {report.get('mean_gold_rank', '-')}"
+            f" | {report.get('step3_build_vectordb_sec', '-')}"
+            f" | {report.get('step4_retrieve_sec', '-')}"
+            f" | {report.get('runtime_sec', 0)} |"
         )
     (output_root / "report.md").write_text("\n".join(lines), encoding="utf-8")
 

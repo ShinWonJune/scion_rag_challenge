@@ -1,0 +1,36 @@
+# Exp10: hot-path end-to-end latency on 3 stratified questions.
+sample_qids:
+  - "1"   # easy: all selected retrieval paths place gold at rank 1
+  - "13"  # reranker-improved: dense rank 5 -> rerank rank 1
+  - "40"  # hard: no selected retrieval path finds gold in top context
+
+cases:
+  - case_id: E10_gte_dense_top5
+    label: gte + 3T+A + dense top5
+    encoder_model: Alibaba-NLP/gte-multilingual-base
+    vector_db: experiments/outputs/exp9_rerank_top3_vllm/retrieval/cases/E9_dense_top5/260506_224042/vector_db_gte_3T_A_Alibaba-NLP_gte-multilingual-base.csv
+    retrieve_top_k: 5
+    llm_context_top_k: 5
+
+  - case_id: E10_gte_rerank_c5_top3
+    label: gte + 3T+A + rerank c5 -> top3
+    encoder_model: Alibaba-NLP/gte-multilingual-base
+    vector_db: experiments/outputs/exp9_rerank_top3_vllm/retrieval/cases/E9_dense_top5/260506_224042/vector_db_gte_3T_A_Alibaba-NLP_gte-multilingual-base.csv
+    retrieve_top_k: 5
+    rerank_model: BAAI/bge-reranker-v2-m3
+    llm_context_top_k: 3
+
+  - case_id: E10_gte_rerank_c5_top5
+    label: gte + 3T+A + rerank c5 -> top5
+    encoder_model: Alibaba-NLP/gte-multilingual-base
+    vector_db: experiments/outputs/exp9_rerank_top3_vllm/retrieval/cases/E9_dense_top5/260506_224042/vector_db_gte_3T_A_Alibaba-NLP_gte-multilingual-base.csv
+    retrieve_top_k: 5
+    rerank_model: BAAI/bge-reranker-v2-m3
+    llm_context_top_k: 5
+
+  - case_id: E10_bge_m3_dense_top5
+    label: bge-m3@1024 + 3T+A + dense top5
+    encoder_model: BAAI/bge-m3
+    vector_db: experiments/outputs/exp3_encoder/cases/E3_bge_m3_1024_3TA/260506_172830/vector_db_bge_m3_3T_A_BAAI_bge-m3.csv
+    retrieve_top_k: 5
+    llm_context_top_k: 5

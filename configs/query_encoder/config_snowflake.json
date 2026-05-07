@@ -9,5 +9,6 @@
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/snowflake_test_title_abstract_Snowflake_snowflake-arctic-embed-l-v2.0.csv"
+  "output_file": "../results/vectordb/snowflake_test_title_abstract_Snowflake_snowflake-arctic-embed-l-v2.0.csv",
+  "cache_db_path": "/mnt/c/Users/wonjune/workspace/RAG/scion_rag_challenge/outputs/_embedding_cache.db"
 }

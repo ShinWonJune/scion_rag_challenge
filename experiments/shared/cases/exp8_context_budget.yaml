@@ -1,0 +1,49 @@
+# Exp8: retrieve/rerank budget sweep on Exp1 best corpus with gte 3T+A.
+# Dense-only top_k controls the returned context size directly.
+# Reranker top_k controls dense candidates passed to cross-encoder; reranker returns final top5.
+cases:
+  - case_id: E8_dense_top5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 5
+  - case_id: E8_dense_top7
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 7
+  - case_id: E8_dense_top10
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 10
+  - case_id: E8_dense_top20
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 20
+  - case_id: E8_dense_top50
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 50
+  - case_id: E8_rerank_candidates5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 5
+  - case_id: E8_rerank_candidates7
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 7
+  - case_id: E8_rerank_candidates10
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 10
+  - case_id: E8_rerank_candidates20
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 20
+  - case_id: E8_rerank_candidates50
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 50

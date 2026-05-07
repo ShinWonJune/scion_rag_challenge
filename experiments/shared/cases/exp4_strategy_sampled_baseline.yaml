@@ -1,0 +1,6 @@
+# Exp4 sampled baseline: completed 3T+A on the same sample8 corpus.
+cases:
+  - case_id: E4S_gte_3T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 50

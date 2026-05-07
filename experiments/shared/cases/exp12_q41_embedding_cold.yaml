@@ -1,0 +1,6 @@
+# Exp12: Q41 fixed corpus cold embedding-only benchmark.
+cases:
+  - case_id: E12_gte_3TA_cold_embed
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+  - case_id: E12_bge_m3_1024_3TA_cold_embed
+    encoder_config: configs/query_encoder/exp4/config_bge_m3_3T_A.json

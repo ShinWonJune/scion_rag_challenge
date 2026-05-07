@@ -1,16 +1,13 @@
 {
   "model_name": "Alibaba-NLP/gte-multilingual-base",
-  "nickname": "gte_test",
+  "nickname": "gte_2T_A",
   "embedding_dim": 768,
+  "embedding_mode": "2T+A",
   "jsonl_path": "/app/outputs/search/search_documents.jsonl",
-  "embedding_mode": "3*title+abstract",
   "text_fields": [
     "context"
   ],
-  "output_dir": "../outputs/vectordb",
+  "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../outputs/vectordb/260505_001927/vector_db_gte_test_Alibaba-NLP_gte-multilingual-base.csv",
-  "json_path": "./test.json",
-  "last_run": "260505_001927",
   "cache_db_path": "/mnt/c/Users/wonjune/workspace/RAG/scion_rag_challenge/outputs/_embedding_cache.db"
 }

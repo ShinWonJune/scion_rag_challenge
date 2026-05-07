@@ -1,15 +1,13 @@
 {
   "model_name": "BAAI/bge-m3",
-  "nickname": "bge_m3_test",
+  "nickname": "bge_m3_T",
   "embedding_dim": 1024,
+  "embedding_mode": "T",
   "jsonl_path": "/app/outputs/search/search_documents.jsonl",
-  "embedding_mode": "3*title+abstract",
   "text_fields": [
     "context"
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/260505_010800/vector_db_bge_m3_test_BAAI_bge-m3.csv",
-  "last_run": "260505_010800",
   "cache_db_path": "/mnt/c/Users/wonjune/workspace/RAG/scion_rag_challenge/outputs/_embedding_cache.db"
 }

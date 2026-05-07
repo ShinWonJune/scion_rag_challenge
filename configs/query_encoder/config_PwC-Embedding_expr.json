@@ -11,5 +11,6 @@
   "output_format": "csv",
   "output_file": "../results/vectordb/vector_db_PwC_test_SamilPwC-AXNode-GenAI_PwC-Embedding_expr.csv",
   "json_path": "./test.json",
-  "last_run": "250912_055407"
+  "last_run": "250912_055407",
+  "cache_db_path": "/mnt/c/Users/wonjune/workspace/RAG/scion_rag_challenge/outputs/_embedding_cache.db"
 }

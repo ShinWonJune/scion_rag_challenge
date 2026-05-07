@@ -1,0 +1,7 @@
+# Exp7 follow-up: rerank full dense top50 candidates with the selected reranker.
+cases:
+  - case_id: E7_gte_3TA_bge_reranker_top50
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 50

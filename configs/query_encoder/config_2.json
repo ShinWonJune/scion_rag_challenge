@@ -8,5 +8,6 @@
   ],
   "output_dir": "../results/vectordb",
   "output_format": "csv",
-  "output_file": "../results/vectordb/test_sentence-transformers_paraphrase-multilingual-MiniLM-L12-v2.csv"
+  "output_file": "../results/vectordb/test_sentence-transformers_paraphrase-multilingual-MiniLM-L12-v2.csv",
+  "cache_db_path": "/mnt/c/Users/wonjune/workspace/RAG/scion_rag_challenge/outputs/_embedding_cache.db"
 }

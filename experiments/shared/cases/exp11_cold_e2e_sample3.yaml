@@ -1,0 +1,44 @@
+# Exp11: cold-path e2e latency including search-term generation and acquisition.
+sample_qids:
+  - "1"
+  - "13"
+  - "40"
+
+search:
+  source: scienceon
+  extractor: vllm
+  k: 30
+  n: 10
+  m: 50
+  scienceon_max_pages: 3
+  scienceon_max_concurrency: 2
+  scienceon_min_interval_sec: 0.5
+  scienceon_timeout_sec: 20
+  no_cache: true
+
+cases:
+  - case_id: E11_gte_dense_top5
+    label: gte + 3T+A + dense top5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retrieve_top_k: 5
+    llm_context_top_k: 5
+
+  - case_id: E11_gte_rerank_c5_top3
+    label: gte + 3T+A + rerank c5 -> top3
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retrieve_top_k: 5
+    rerank_model: BAAI/bge-reranker-v2-m3
+    llm_context_top_k: 3
+
+  - case_id: E11_gte_rerank_c5_top5
+    label: gte + 3T+A + rerank c5 -> top5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retrieve_top_k: 5
+    rerank_model: BAAI/bge-reranker-v2-m3
+    llm_context_top_k: 5
+
+  - case_id: E11_bge_m3_dense_top5
+    label: bge-m3@1024 + 3T+A + dense top5
+    encoder_config: configs/query_encoder/exp4/config_bge_m3_3T_A.json
+    retrieve_top_k: 5
+    llm_context_top_k: 5

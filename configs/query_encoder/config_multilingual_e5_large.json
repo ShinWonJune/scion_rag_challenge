@@ -10,5 +10,6 @@
   "output_dir": "../outputs/vectordb",
   "output_format": "csv",
   "output_file": "../outputs/vectordb/vector_db_multilingual_e5_large_intfloat_multilingual-e5-large.csv",
-  "last_run": null
+  "last_run": null,
+  "cache_db_path": "/mnt/c/Users/wonjune/workspace/RAG/scion_rag_challenge/outputs/_embedding_cache.db"
 }

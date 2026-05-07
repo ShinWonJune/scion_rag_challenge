@@ -1,0 +1,4 @@
+# Exp13: rerun Exp3 GTE cold embedding/vector DB build on the fixed Q41 corpus.
+cases:
+  - case_id: E13_gte_3TA_exp3_cold_rerun
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json

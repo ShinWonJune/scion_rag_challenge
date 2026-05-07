@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Retriever implementation using FAISS."""
+"""Retriever implementations using FAISS."""
 from __future__ import annotations
 
+import os
 from typing import Tuple
 
 import numpy as np
@@ -31,8 +32,50 @@ class FaissRetriever(Retriever):
         if query_vecs.ndim != 2 or query_vecs.shape[1] != self.dim:
             raise ValueError(f"Query vectors must have shape (Q, {self.dim})")
         
-        k = min(top_k, self.n_docs)
+        k = min(top_k, self.num_docs)
         scores, indices = self.index.search(query_vecs.astype(np.float32), k)
         return scores, indices
 
 
+class GpuFaissRetriever(Retriever):
+    """A FAISS GPU retriever using a flat inner-product index."""
+
+    def __init__(
+        self,
+        embeddings: np.ndarray,
+        device_id: int = 0,
+        temp_memory_gb: float | None = None,
+    ):
+        if not _HAS_FAISS:
+            raise ImportError("FAISS is not installed.")
+        if not hasattr(faiss, "StandardGpuResources"):
+            raise ImportError("Installed FAISS does not include GPU support.")
+        if faiss.get_num_gpus() <= device_id:
+            raise RuntimeError(
+                f"FAISS sees {faiss.get_num_gpus()} GPU(s), cannot use device {device_id}."
+            )
+        super().__init__(embeddings)
+        self.device_id = device_id
+        self.resources = faiss.StandardGpuResources()
+
+        if temp_memory_gb is None:
+            raw = os.environ.get("SHRAG_FAISS_GPU_TEMP_MEMORY_GB", "8")
+            temp_memory_gb = float(raw)
+        if temp_memory_gb > 0:
+            self.resources.setTempMemory(int(temp_memory_gb * 1024**3))
+
+        config = faiss.GpuIndexFlatConfig()
+        config.device = device_id
+        self.index = faiss.GpuIndexFlatIP(self.resources, self.dim, config)
+        self.index.add(self.embeddings.astype(np.float32))
+
+    def search(
+        self, query_vecs: np.ndarray, top_k: int
+    ) -> Tuple[np.ndarray, np.ndarray]:
+        """Performs a search using the FAISS GPU index."""
+        if query_vecs.ndim != 2 or query_vecs.shape[1] != self.dim:
+            raise ValueError(f"Query vectors must have shape (Q, {self.dim})")
+
+        k = min(top_k, self.num_docs)
+        scores, indices = self.index.search(query_vecs.astype(np.float32), k)
+        return scores, indices

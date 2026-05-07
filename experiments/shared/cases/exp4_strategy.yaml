@@ -1,0 +1,47 @@
+# Exp4: strategy × encoder — reduced scope (8 cells = 8 strategies × gte only)
+# gte chosen as primary encoder per reduced plan (GPU bottleneck: ~25-28min/cell on RTX 4070).
+# corpus/queries/gold filled in from experiments/outputs/exp1_kmn/best_config.json at run time.
+# Run with: python -m experiments.shared.evaluate.embed_benchmark \
+#   --cases experiments/shared/cases/exp4_strategy.yaml \
+#   --corpus ${EXP1_CORPUS} --queries ${EXP1_QUERIES} --gold ${EXP1_GOLD} \
+#   --output experiments/outputs/exp4_strategy
+cases:
+  - case_id: E4_gte_T
+    encoder_config: configs/query_encoder/exp4/config_gte_T.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4_gte_A
+    encoder_config: configs/query_encoder/exp4/config_gte_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4_gte_T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4_gte_2T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_2T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4_gte_3T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4_gte_5T_A
+    encoder_config: configs/query_encoder/exp4/config_gte_5T_A.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4_gte_T_A_trunc
+    encoder_config: configs/query_encoder/exp4/config_gte_T_A_trunc.json
+    retriever: dense
+    top_k: 50
+
+  - case_id: E4_gte_sliding_window
+    encoder_config: configs/query_encoder/exp4/config_gte_sliding_window.json
+    retriever: dense
+    top_k: 50

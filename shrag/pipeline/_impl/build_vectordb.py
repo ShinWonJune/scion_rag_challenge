@@ -10,8 +10,12 @@ from shrag.utils.load_jsonl_and_make_text_for_embedding import (
 from shrag.utils.create_class_from_schema import create_class_from_schema
 
 # Import the newly created modules
-from shrag.features.embedding_processor import generate_batch_embeddings
+from shrag.features.embedding_processor import (
+    generate_batch_embeddings,
+    generate_batch_embeddings_cached,
+)
 from shrag.data_handler.for_embedding import prepare_documents, save_results
+from shrag.utils.embedding_cache import EmbeddingCache
 
 
 def build_vectordb_search(
@@ -37,9 +41,10 @@ def build_vectordb_search(
             print("Error: --docs_jsonl_path is required when --auto_data_load is not set.")
             return
         jsonl_path = docs_jsonl_path
+    embedding_mode = config.get("embedding_mode", "3T+A")
     print(f"Loading documents from {jsonl_path}: Auto Loading Data", auto_data_load)
-    documents_data = load_jsonl_docs(jsonl_path)
-    print(f"Loaded {len(documents_data)} documents")
+    documents_data = load_jsonl_docs(jsonl_path, embedding_mode=embedding_mode)
+    print(f"Loaded {len(documents_data)} documents (embedding_mode={embedding_mode})")
 
     if not documents_data:
         print("No documents found. Exiting.")
@@ -48,9 +53,21 @@ def build_vectordb_search(
     # 3. Generate Embeddings (Separated Logic)
     # This function is now focused only on the ML model and vector generation.
     model_name = config["model_name"]
-    embeddings = generate_batch_embeddings(
-        documents_data, model_name, config["embedding_dim"], gpu_id=gpu_id
-    )
+    cache_db_path = config.get("cache_db_path")
+    if cache_db_path:
+        cache = EmbeddingCache(cache_db_path)
+        embeddings = generate_batch_embeddings_cached(
+            documents_data,
+            model_name,
+            embedding_mode=embedding_mode,
+            truncate_dimension=config["embedding_dim"],
+            gpu_id=gpu_id,
+            cache=cache,
+        )
+    else:
+        embeddings = generate_batch_embeddings(
+            documents_data, model_name, config["embedding_dim"], gpu_id=gpu_id
+        )
 
     if embeddings is None:
         print("Embedding generation failed. Exiting.")
