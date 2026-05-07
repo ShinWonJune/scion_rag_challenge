@@ -69,6 +69,18 @@ Notes:
 5. **Use dense-only BGE-M3 if BGE is retained.** BGE-M3 can return dense, sparse, and ColBERT-style vectors. For current SHRAG vector DB generation, request dense only (`return_dense=True`, `return_sparse=False`, `return_colbert_vecs=False`) if using `FlagEmbedding.BGEM3FlagModel`; do not compute sparse/ColBERT outputs unless the retrieval pipeline consumes them. Source: <https://bge-model.com/tutorial/1_Embedding/1.2.1.html>
 6. **Try ONNX/OpenVINO after PyTorch knobs.** SentenceTransformers supports `backend="onnx"` and `backend="openvino"`; its guidance recommends ONNX-O4 for GPU short texts and OpenVINO/int8 variants for some CPU cases, but also warns to test with the specific model/data because longer texts can be slower than PyTorch. Sources: <https://www.sbert.net/docs/sentence_transformer/usage/efficiency.html#onnx>, <https://www.sbert.net/docs/sentence_transformer/usage/efficiency.html#openvino>, <https://www.sbert.net/docs/sentence_transformer/usage/efficiency.html#recommendations>
 
+## Practical safe defaults for RTX 4070
+
+Use these as starting points, not final values; confirm with Exp14-style timings and retrieval metrics. An RTX 4070 typically has enough memory for larger GTE batches, but BGE-M3's larger model and 8192-token path need conservative first trials.
+
+| Model/path | First safe trial | Escalation trial | Notes |
+| --- | --- | --- | --- |
+| GTE `Alibaba-NLP/gte-multilingual-base` | `batch_size=64`, `torch_dtype=float16`, `max_seq_length=512`, `attn_implementation=sdpa`, no output quantization | `batch_size=96` then `128` if peak memory is safe | Best candidate for production baseline because Exp12 already showed much lower cold time than BGE-M3. |
+| GTE with short texts | Same as above, plus an ONNX-O4 trial | Keep PyTorch fp16 if ONNX export/setup overhead outweighs speed | SentenceTransformers recommends ONNX-O4 mainly for shorter GPU texts; benchmark on actual SHRAG chunks. |
+| BGE-M3 dense only | `batch_size=8`, `use_fp16=True`, `passage_max_length/max_length=512`, dense-only outputs | `batch_size=12` and/or `passage_max_length=1024` if quality needs longer context | Avoid 8192-token defaults unless token histograms and retrieval quality justify the cost. |
+
+For SHRAG config naming, prefer `max_seq_length` for SentenceTransformers-backed encoders and `passage_max_length`/`max_length` when using the FlagEmbedding BGE-M3 API; internally normalize these to one effective tokenizer/model length before encoding.
+
 ## Model-specific guidance
 
 ### GTE (`Alibaba-NLP/gte-multilingual-base`)
