@@ -1,0 +1,10 @@
+# Exp14: repeat Exp12/Exp13 GTE cold embedding/vector DB builds on the fixed Exp3 corpus.
+# The Exp12 and Exp13 GTE configurations are identical except for generated output paths/metadata,
+# so this case list repeats that same encoder config under separate labels to measure run-to-run variance.
+cases:
+  - case_id: E14_gte_repeat1_exp12_like_cold
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+  - case_id: E14_gte_repeat2_exp13_like_cold
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+  - case_id: E14_gte_repeat3_exp12_like_cold
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
