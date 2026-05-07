@@ -1,0 +1,13 @@
+{
+  "model_name": "Alibaba-NLP/gte-multilingual-base",
+  "nickname": "gte_3T_A",
+  "embedding_dim": 768,
+  "embedding_mode": "3T+A",
+  "jsonl_path": "/app/outputs/search/search_documents.jsonl",
+  "text_fields": [
+    "context"
+  ],
+  "output_dir": "experiments\\outputs\\exp14_cold_repeat_variance\\cases\\E14_gte_repeat1_exp12_like_cold",
+  "output_format": "csv",
+  "output_file": "experiments\\outputs\\exp14_cold_repeat_variance\\cases\\E14_gte_repeat1_exp12_like_cold\\vectordb.csv"
+}
