@@ -17,7 +17,12 @@ class CrossEncoderReranker:
 
         self.model_name = model_name
         self.batch_size = batch_size
-        self.model = CrossEncoder(model_name, device=device)
+        # trust_remote_code 필요한 모델: gte-multilingual-reranker-base 등.
+        # 안전한 모델에는 영향 없음.
+        try:
+            self.model = CrossEncoder(model_name, device=device, trust_remote_code=True)
+        except TypeError:
+            self.model = CrossEncoder(model_name, device=device)
 
     def rerank(self, query: str, candidates: list[dict[str, Any]], top_k: int = 5) -> list[dict[str, Any]]:
         pairs = [

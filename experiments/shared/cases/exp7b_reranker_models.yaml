@@ -1,0 +1,35 @@
+# Exp7b: cross-encoder reranker model fair comparison.
+# 3개 model을 같은 sweep (single process)에서 동일 조건으로 측정 → step4_sec 공정 비교 가능.
+#
+# 기존 Exp8 BGE-v2-m3 cand=5와 Exp7b 1차 결과는 측정 시점/설정 다름 → 재측정으로 normalize.
+#
+# 가설:
+#  (A) gte family 일치: gte-encoder + gte-reranker가 cross-family bge-reranker와 비등?
+#  (B) KO fine-tune: dragonkue/bge-reranker-v2-m3-ko가 KO 비중 큰 ScienceON에 우위?
+#  (C) BGE-v2-m3 base와 dragonkue-KO base 속도 동등? (architecture 동일, weights만 다름)
+#
+# Setup:
+#  - encoder = gte-multilingual-base 3T+A (Exp3 baseline 동일)
+#  - retriever = dense top-5 (candidates=5, Exp8 best)
+#  - rerank_output_top_k = 5
+cases:
+  - case_id: E7b_bge_v2m3_c5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: BAAI/bge-reranker-v2-m3
+    top_k: 5
+    rerank_output_top_k: 5
+
+  - case_id: E7b_gte_reranker_base_c5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: Alibaba-NLP/gte-multilingual-reranker-base
+    top_k: 5
+    rerank_output_top_k: 5
+
+  - case_id: E7b_dragonkue_bge_v2m3_ko_c5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: dragonkue/bge-reranker-v2-m3-ko
+    top_k: 5
+    rerank_output_top_k: 5

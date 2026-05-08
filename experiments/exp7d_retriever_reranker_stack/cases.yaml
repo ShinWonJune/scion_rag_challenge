@@ -1,0 +1,32 @@
+# Exp7d: retriever × reranker stack 측정 (cold/warm stage-by-stage)
+# - retriever: gte / dragonkue/BGE-m3-ko (encoder)
+# - reranker: dragonkue/bge-reranker-v2-m3-ko (Exp7b 채택)
+# - candidates: 5, 10
+cases:
+  - case_id: E7d_gte_drk_c5
+    retriever: Alibaba-NLP/gte-multilingual-base
+    reranker: dragonkue/bge-reranker-v2-m3-ko
+    candidates: 5
+    retriever_batch: 32
+    reranker_batch: 16
+
+  - case_id: E7d_gte_drk_c10
+    retriever: Alibaba-NLP/gte-multilingual-base
+    reranker: dragonkue/bge-reranker-v2-m3-ko
+    candidates: 10
+    retriever_batch: 32
+    reranker_batch: 16
+
+  - case_id: E7d_drk_drk_c5
+    retriever: dragonkue/BGE-m3-ko
+    reranker: dragonkue/bge-reranker-v2-m3-ko
+    candidates: 5
+    retriever_batch: 16
+    reranker_batch: 16
+
+  - case_id: E7d_drk_drk_c10
+    retriever: dragonkue/BGE-m3-ko
+    reranker: dragonkue/bge-reranker-v2-m3-ko
+    candidates: 10
+    retriever_batch: 16
+    reranker_batch: 16

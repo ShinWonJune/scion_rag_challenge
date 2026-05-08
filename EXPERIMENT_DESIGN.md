@@ -383,6 +383,23 @@ Exp1 Phase A에서 (k, n) 격자가 이미 n sweep을 포함하므로 별도 실
 - reranker가 dense top-5 밖 (rank 5-10)에 들어온 gold를 top-3로 끌어올림
 - Hit@5 +5~15%pt, MRR +0.10 이상 기대
 
+### 7.5 실제 실행 (2026-05-06 ~ 05-08, 갱신)
+
+원래 plan은 6 cell sweep (top_n {20/50/100} × 3 model)이었지만 실제 진행 분기:
+
+| 분기 | 셀 | 결과 요약 |
+|---|---|---|
+| **Exp7** | bge-v2-m3 cand={20, 50} | Hit@5 0.902 ceiling, top20=top50 동일. cand sweep은 Exp8에서 더 정밀 |
+| **Exp8** | bge-v2-m3 cand={5, 7, 10, 20, 50} | **cand=5가 best** (Hit@3=0.902 ceiling, MRR 최대, cost 최저). wider pool은 노이즈 introduce |
+| **Exp7b** | 3 model × cand=5 fair sweep (bge-v2-m3, gte-rerank, dragonkue-ko) | **dragonkue-ko 채택**: Hit@1 0.780 (vs bge 0.732 +4.8pp), MRR 0.833. gte-rerank는 dense baseline보다도 Hit@1 ↓ → 기각 |
+| **Exp7c** | subprocess 격리 + warmup pass + N=2 측정 | dragonkue 0.177 s/q ≈ bge-v2-m3 0.174 s/q (1.7% noise) — **같은 architecture, 속도 동등 검증**. gte-rerank 0.074 s/q 빠르지만 품질 손실로 채택 X |
+
+**최종 채택**: `dragonkue/bge-reranker-v2-m3-ko`, candidates=5.
+- Hit@5 ceiling 0.902 유지하며 Hit@1 0.610 → 0.780 (+0.170), MRR 0.723 → 0.833 (+0.110)
+- top_n=100 cell은 미실행 (Exp8에서 cand=50조차 cand=5보다 못함이 도출되어 우선순위 ↓)
+
+상세: `experiments/outputs/FOLLOWUP_EXPERIMENT_SUMMARY.md` §4
+
 ---
 
 ## 8. 통제 변수 매트릭스

@@ -1,0 +1,24 @@
+# Exp8b: candidates sweep with dragonkue/bge-reranker-v2-m3-ko (Exp7b 채택 모델 기준).
+# Exp8 원래는 bge-v2-m3로 cand={5,7,10,20,50} sweep 했음. dragonkue로 재측정 우선 cand=5 vs cand=10.
+#
+# 가설: dragonkue도 cand=5에서 saturate? 아니면 cand=10에서 추가 이득?
+#  - bge-v2-m3 결과: cand=5가 best (cand≥10은 동등 또는 약간 ↓)
+#  - dragonkue도 같은 base architecture라 비슷한 패턴 예상, 단 KO fine-tune의 ranking 특성이 다를 수 있음
+#
+# Setup:
+#  - encoder = gte-multilingual-base 3T+A
+#  - rerank_output_top_k = 5 (final docs to LLM)
+cases:
+  - case_id: E8b_dragonkue_c5
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: dragonkue/bge-reranker-v2-m3-ko
+    top_k: 5
+    rerank_output_top_k: 5
+
+  - case_id: E8b_dragonkue_c10
+    encoder_config: configs/query_encoder/exp4/config_gte_3T_A.json
+    retriever: dense
+    rerank_model: dragonkue/bge-reranker-v2-m3-ko
+    top_k: 10
+    rerank_output_top_k: 5

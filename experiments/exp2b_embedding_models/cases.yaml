@@ -1,0 +1,73 @@
+# Exp2b: 9 embedding model 비교 (현재 best config: fp16, max_seq=512, sdpa).
+# Goal: gte/bge-m3 외 후보 모델 retrieval 품질 + 속도 평가.
+# Setup: 같은 corpus (3,557 docs), 동일 41Q queries/gold, 3T+A.
+cases:
+  # 1. dragonkue BGE-m3 KO fine-tune (encoder)
+  - case_id: E2b_dragonkue_bge_m3_ko
+    model_name: dragonkue/BGE-m3-ko
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 512
+
+  # 2. Snowflake arctic-embed-l v2 (multilingual)
+  - case_id: E2b_snowflake_arctic_l_v2
+    model_name: Snowflake/snowflake-arctic-embed-l-v2.0
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 512
+    prefix_query: "query: "
+
+  # 3. PwC-Embedding_expr (Korean)
+  - case_id: E2b_pwc_embedding_expr
+    model_name: SamilPwC-AXNode-GenAI/PwC-Embedding_expr
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 512
+
+  # 4. multilingual-e5-large-instruct
+  - case_id: E2b_e5_large_instruct
+    model_name: intfloat/multilingual-e5-large-instruct
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 512
+    prefix_passage: "passage: "
+    prefix_query: "query: "
+
+  # 5. Solon-embeddings-large
+  - case_id: E2b_solon_large
+    model_name: OrdalieTech/Solon-embeddings-large-0.1
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 512
+
+  # 6. multilingual-e5-base
+  - case_id: E2b_e5_base
+    model_name: intfloat/multilingual-e5-base
+    batch_size: 32
+    torch_dtype: float16
+    max_seq_length: 512
+    prefix_passage: "passage: "
+    prefix_query: "query: "
+
+  # 7. multilingual-e5-small
+  - case_id: E2b_e5_small
+    model_name: intfloat/multilingual-e5-small
+    batch_size: 96
+    torch_dtype: float16
+    max_seq_length: 512
+    prefix_passage: "passage: "
+    prefix_query: "query: "
+
+  # 8. F2LLM-v2-0.6B
+  - case_id: E2b_f2llm_v2_0_6b
+    model_name: codefuse-ai/F2LLM-v2-0.6B
+    batch_size: 8
+    torch_dtype: float16
+    max_seq_length: 512
+
+  # 9. F2LLM-v2-330M
+  - case_id: E2b_f2llm_v2_330m
+    model_name: codefuse-ai/F2LLM-v2-330M
+    batch_size: 16
+    torch_dtype: float16
+    max_seq_length: 512
