@@ -28,6 +28,10 @@ model_cache/
 #credentials
 configs/credentials/*.json
 
+#docs
+EXPERIMENT_DESIGN.md
+problem_solve.md
+EXPERIMENT_SUMMARY.md
 
 
 # test files
@@ -39,7 +43,7 @@ shrag.pdf
 
 .omc/
 .claude/
-
+docs/
 pytest*
 
 # local agent docs
@@ -52,9 +56,12 @@ ANALYSIS.md
 VERIFY_REPORT.md
 이력서 용 프로젝트 요약.md
 프로젝트 요약 첨삭본.md
+자기소개서.md
+자기소개서 문항.md
 EXPERIMENT_BLUEPRINT.md
 INTENT_VS_IMPEMENTATION.md
 PROJECT_IMPOROVEMENT_PLAN.md
 REPO_CLEANUP_PLAN.md
 image.png
 pyproject.toml
+WORK_SUMMARY.md

@@ -191,6 +191,23 @@ def call_judge(
     raise ValueError(f"Unsupported judge backend: {backend}")
 
 
+def _extract_embedded_json(text: str) -> dict[str, Any] | None:
+    """Recover the rubric JSON object even when the model emits reasoning text
+    around it (e.g. reasoning models that prepend a 'thinking process')."""
+    decoder = json.JSONDecoder()
+    found: dict[str, Any] | None = None
+    for idx, ch in enumerate(text):
+        if ch != "{":
+            continue
+        try:
+            obj, _ = decoder.raw_decode(text[idx:])
+        except Exception:
+            continue
+        if isinstance(obj, dict) and "overall" in obj:
+            found = obj  # keep the last valid rubric object
+    return found
+
+
 def parse_judge_json(raw: str) -> dict[str, Any]:
     text = raw.strip()
     if text.startswith("```"):
@@ -199,6 +216,10 @@ def parse_judge_json(raw: str) -> dict[str, Any]:
     try:
         parsed = json.loads(text)
     except Exception:
+        embedded = _extract_embedded_json(raw)
+        if embedded is not None:
+            embedded.setdefault("raw_response", raw)
+            return embedded
         return {
             "answer_relevance": 0,
             "evidence_coverage": 0,
