@@ -1,0 +1,11 @@
+# shrag_lc — LangChain reimplementation of SHRAG.
+# Install on top of the base requirements.txt (sentence-transformers, torch,
+# requests, pycryptodome, numpy, pandas are reused from there).
+langchain>=0.3
+langchain-core>=0.3
+langchain-community>=0.3
+langchain-openai>=0.2
+langchain-huggingface>=0.1
+langchain-google-genai>=2.0
+faiss-cpu>=1.8
+pydantic-settings>=2.0

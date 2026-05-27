@@ -17,6 +17,7 @@ __pycache__/
 # Data & Results
 data/
 outputs/
+outputs_lc/
 pipeline/outputs/
 results/
 src/data2/
