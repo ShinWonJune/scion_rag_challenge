@@ -116,3 +116,26 @@ def build_keyword_prompt(lang: str) -> ChatPromptTemplate:
     """Keyword prompt for ``lang`` ('korean' | 'english'). Variable: ``query``."""
     template = KOREAN_KEYWORD_TEMPLATE if lang == "korean" else ENGLISH_KEYWORD_TEMPLATE
     return ChatPromptTemplate.from_messages([("human", template)])
+
+
+def build_structured_keyword_prompt(lang: str) -> ChatPromptTemplate:
+    """Keyword prompt that requires JSON for schema-validated parsing."""
+    language_name = "Korean" if lang == "korean" else "English"
+    return ChatPromptTemplate.from_messages(
+        [
+            (
+                "human",
+                """You are an academic-search keyword extractor.
+
+Extract 2 to 5 important search keywords in {language_name}.
+Return JSON only. Do not include markdown fences, explanations, numbering, or extra keys.
+
+Required JSON schema:
+{{"keywords": ["keyword1", "keyword2"]}}
+
+Question:
+{query}
+""",
+            )
+        ]
+    ).partial(language_name=language_name)

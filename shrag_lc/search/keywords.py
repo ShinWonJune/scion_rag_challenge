@@ -14,10 +14,11 @@ import re
 from typing import Dict, List
 
 from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.output_parsers import StrOutputParser
+from langchain_core.output_parsers import PydanticOutputParser, StrOutputParser
 from langchain_core.runnables import Runnable, RunnableLambda
 
-from ..prompts import build_keyword_prompt
+from ..prompts import build_keyword_prompt, build_structured_keyword_prompt
+from ..schemas import KeywordList
 
 _KEYWORD_SPLIT_RE = re.compile(r"[\s\-]+")
 logger = logging.getLogger(__name__)
@@ -53,6 +54,14 @@ def _build_lang_chain(llm: BaseChatModel, lang: str, prefix: str) -> Runnable:
     )
 
 
+def _build_structured_lang_chain(llm: BaseChatModel, lang: str) -> Runnable:
+    prompt = build_structured_keyword_prompt(lang)
+    parser = PydanticOutputParser(pydantic_object=KeywordList)
+    return (prompt | llm | parser | RunnableLambda(lambda parsed: parsed.keywords)).with_retry(
+        stop_after_attempt=3
+    )
+
+
 class KeywordExtractor:
     """LLM keyword extractor returning ``{"korean": [...], "english": [...]}``."""
 
@@ -60,6 +69,8 @@ class KeywordExtractor:
         if language not in {"korean", "english", "all"}:
             raise ValueError(f"language must be korean/english/all, got {language!r}")
         self.language = language
+        self._structured_ko_chain = _build_structured_lang_chain(llm, "korean")
+        self._structured_en_chain = _build_structured_lang_chain(llm, "english")
         self._ko_chain = _build_lang_chain(llm, "korean", "키워드:")
         self._en_chain = _build_lang_chain(llm, "english", "Keywords:")
 
@@ -68,12 +79,20 @@ class KeywordExtractor:
         english: List[str] = []
         if self.language in {"korean", "all"}:
             try:
-                korean = self._ko_chain.invoke({"query": query})
+                korean = self._structured_ko_chain.invoke({"query": query})
             except Exception as e:  # noqa: BLE001
-                logger.error("Korean keyword extraction failed: %s", e)
+                logger.error("Structured Korean keyword extraction failed: %s", e)
+                try:
+                    korean = self._ko_chain.invoke({"query": query})
+                except Exception as fallback_e:  # noqa: BLE001
+                    logger.error("Legacy Korean keyword extraction failed: %s", fallback_e)
         if self.language in {"english", "all"}:
             try:
-                english = self._en_chain.invoke({"query": query})
+                english = self._structured_en_chain.invoke({"query": query})
             except Exception as e:  # noqa: BLE001
-                logger.error("English keyword extraction failed: %s", e)
+                logger.error("Structured English keyword extraction failed: %s", e)
+                try:
+                    english = self._en_chain.invoke({"query": query})
+                except Exception as fallback_e:  # noqa: BLE001
+                    logger.error("Legacy English keyword extraction failed: %s", fallback_e)
         return {"korean": korean, "english": english}

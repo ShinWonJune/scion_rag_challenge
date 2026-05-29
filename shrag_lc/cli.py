@@ -9,11 +9,11 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
 
 from .config import PipelineConfig, Settings
+from .reporting import build_manifest, write_json
 
 
 def load_questions(path: str | Path, limit: int | None = None) -> list[dict]:
@@ -76,25 +76,40 @@ def cmd_run(args: argparse.Namespace) -> None:
     print(f"Loaded {len(questions)} questions; source={cfg.source}, llm={cfg.llm_backend}")
 
     pipeline = SHRAGPipeline(cfg, settings)
-    results = pipeline.run(questions)
-
     out_dir = Path(args.output or f"outputs_lc/run_{datetime.now():%Y%m%d_%H%M%S}")
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "predictions.json").write_text(
-        json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8"
+    generated_at = datetime.now().isoformat(timespec="seconds")
+
+    if args.corpus_first:
+        results = pipeline.run_corpus_first(
+            questions,
+            artifact_dir=out_dir,
+            index_dir=args.index_dir or (out_dir / "faiss_index"),
+            reuse_index=args.reuse_index,
+        )
+        pipeline_mode = "corpus_first"
+    else:
+        results = pipeline.run(questions)
+        pipeline_mode = "per_query"
+
+    predictions_path = out_dir / "predictions.json"
+    write_json(predictions_path, results)
+    artifacts = {"predictions": predictions_path.name}
+    if args.corpus_first:
+        artifacts["corpus"] = "corpus.jsonl"
+        artifacts["index_dir"] = str(args.index_dir or (out_dir / "faiss_index"))
+
+    manifest = build_manifest(
+        config=cfg,
+        questions=questions,
+        results=results,
+        pipeline_mode=pipeline_mode,
+        generated_at=generated_at,
+        artifacts=artifacts,
+        corpus=pipeline.last_run_context.get("corpus"),
+        index=pipeline.last_run_context.get("index"),
     )
-    (out_dir / "manifest.json").write_text(
-        json.dumps(
-            {
-                "generated_at": datetime.now().isoformat(timespec="seconds"),
-                "config": asdict(cfg),
-                "n_questions": len(questions),
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
+    write_json(out_dir / "manifest.json", manifest)
     print(f"Pipeline completed: {out_dir}")
 
 
@@ -113,6 +128,9 @@ def main() -> None:
     run.add_argument("--top-k", type=int, default=5)
     run.add_argument("--max-rank", type=int, default=3)
     run.add_argument("--no-rerank", action="store_true")
+    run.add_argument("--corpus-first", action="store_true", help="Acquire all documents, then build one shared index")
+    run.add_argument("--index-dir", default=None, help="Directory for a reusable FAISS index")
+    run.add_argument("--reuse-index", action="store_true", help="Reuse --index-dir when metadata matches")
     run.add_argument("--limit", type=int, default=None, help="Only process the first N questions")
     run.add_argument("--output", default=None, help="Output directory")
     run.set_defaults(func=cmd_run)
