@@ -5,13 +5,40 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from enum import StrEnum
+import re
 from typing import Any
 
 from pydantic import BaseModel, Field, field_validator
 
+_KEYWORD_SPLIT_RE = re.compile(r"[\s\-]+")
+
 
 def utc_now_iso() -> str:
     return datetime.utcnow().isoformat(timespec="seconds") + "Z"
+
+
+def normalize_keyword_values(values: list[str]) -> list[str]:
+    """Normalize LLM keywords like the original SHRAG parser.
+
+    LLMs often return phrase-like keywords. The legacy pipeline splits those
+    phrases by whitespace or hyphen before deduplication, so the LC structured
+    path must apply the same rule.
+    """
+    out: list[str] = []
+    seen: set[str] = set()
+    for value in values or []:
+        if not isinstance(value, str):
+            continue
+        for keyword in _KEYWORD_SPLIT_RE.split(value.strip()):
+            keyword = keyword.strip()
+            if len(keyword) <= 1:
+                continue
+            key = keyword.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(keyword)
+    return out[:10]
 
 
 class PipelineStatus(StrEnum):
@@ -48,20 +75,7 @@ class KeywordList(BaseModel):
     @field_validator("keywords")
     @classmethod
     def normalize_keywords(cls, values: list[str]) -> list[str]:
-        out: list[str] = []
-        seen: set[str] = set()
-        for value in values or []:
-            if not isinstance(value, str):
-                continue
-            keyword = value.strip()
-            if len(keyword) <= 1:
-                continue
-            key = keyword.lower()
-            if key in seen:
-                continue
-            seen.add(key)
-            out.append(keyword)
-        return out[:10]
+        return normalize_keyword_values(values)
 
 
 @dataclass

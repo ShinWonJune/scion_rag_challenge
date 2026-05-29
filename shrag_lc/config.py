@@ -67,6 +67,15 @@ class PipelineConfig:
     target_documents: int = 50          # m: dedup cap per query
     keyword_lang: Literal["all", "korean", "english"] = "all"
     number_of_operators: int = 0        # 0 = OR-only (BEST_CONFIG conclusion)
+    scienceon_max_pages: int = 5
+    scienceon_max_concurrency: int = 2
+    scienceon_min_interval_sec: float = 0.5
+    scienceon_fixed_concurrency: bool = False
+    scienceon_max_retries: int = 5
+    scienceon_retry_base_sleep_sec: float = 2.0
+    scienceon_retry_max_sleep_sec: float = 60.0
+    cache_root: str = "outputs/_shared_cache"
+    disable_cache: bool = False
 
     # --- embedding ---
     embedding_model: str = "Alibaba-NLP/gte-multilingual-base"

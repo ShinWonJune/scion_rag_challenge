@@ -50,7 +50,7 @@ class SHRAGPipeline:
 
         extractor_llm = build_extractor_model(cfg, self.settings)
         keyword_extractor = KeywordExtractor(extractor_llm, language=cfg.keyword_lang)
-        client = create_search_client(cfg.source, self.settings, keyword_lang=cfg.keyword_lang)
+        client = create_search_client(cfg.source, self.settings, keyword_lang=cfg.keyword_lang, cfg=cfg)
         self.acquirer = Acquirer(keyword_extractor, client, cfg)
 
         self.embeddings = build_embeddings(cfg)

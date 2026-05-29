@@ -22,6 +22,11 @@ from typing import Any, Protocol
 
 import requests
 
+from shrag.search.cache import RequestCache
+from shrag.search.resilient_caller import ResilientCaller
+from shrag.search.throttle import AimdThrottle
+
+from ..config import PipelineConfig
 from ..config import Settings
 from .scienceon_client import ScienceONAPIClient  # ported low-level client
 
@@ -251,9 +256,60 @@ _SCIENCEON_ROW_COUNT = 10
 class ScienceONClient:
     source_name = "ScienceON"
 
-    def __init__(self, credentials_path: str | Path, max_pages: int = 5):
+    def __init__(
+        self,
+        credentials_path: str | Path,
+        max_pages: int = 5,
+        *,
+        max_concurrency: int = 2,
+        min_interval_sec: float = 0.5,
+        fixed_concurrency: bool = False,
+        max_retries: int = 5,
+        retry_base_sleep_sec: float = 2.0,
+        retry_max_sleep_sec: float = 60.0,
+        cache_root: str | Path = "outputs/_shared_cache",
+        disable_cache: bool = False,
+        caller: ResilientCaller | None = None,
+    ):
         self.client = ScienceONAPIClient(Path(credentials_path))
         self.max_pages = max_pages
+        if caller is None:
+            cache = RequestCache(root=Path(cache_root), enabled=not disable_cache)
+            throttle = AimdThrottle(
+                max_concurrency=max_concurrency,
+                min_interval_sec=min_interval_sec,
+                fixed_concurrency=fixed_concurrency,
+            )
+            caller = ResilientCaller(
+                cache=cache,
+                throttle=throttle,
+                max_retries=max_retries,
+                retry_base_sleep_sec=retry_base_sleep_sec,
+                retry_max_sleep_sec=retry_max_sleep_sec,
+            )
+        self.caller = caller
+        self._last_status_code: int | None = None
+        self._last_retry_after: float | None = None
+        self._wrap_session_get()
+
+    def get_request_stats(self) -> dict[str, Any]:
+        return self.caller.stats()
+
+    def _wrap_session_get(self) -> None:
+        session = getattr(self.client, "session", None)
+        if session is None or getattr(session, "_shrag_lc_wrapped", False):
+            return
+
+        original_get = session.get
+
+        def wrapped_get(*args: Any, **kwargs: Any):
+            response = original_get(*args, **kwargs)
+            self._last_status_code = getattr(response, "status_code", None)
+            self._last_retry_after = self._parse_retry_after(response.headers.get("Retry-After"))
+            return response
+
+        session.get = wrapped_get  # type: ignore[method-assign]
+        session._shrag_lc_wrapped = True  # type: ignore[attr-defined]
 
     def search(self, search_terms: list[str], max_results: int) -> list[dict]:
         if not search_terms:
@@ -271,18 +327,42 @@ class ScienceONClient:
     def _search_page(self, terms: list[str], page: int, remaining: int) -> list[dict]:
         page_docs: list[dict] = []
         for term in terms:
-            try:
-                rows = self.client.search_articles(
-                    query=term, cur_page=page, row_count=_SCIENCEON_ROW_COUNT, fields=_SCIENCEON_FIELDS
-                ) or []
-            except Exception as e:  # noqa: BLE001
-                logger.error("ScienceON fetch failed (term=%s): %s", term, e)
-                continue
+            rows = self._fetch_term_page(term, page)
             filtered = [self._to_common(r) for r in rows if self._is_quality(r)]
             page_docs.extend(filtered[: max(0, remaining - len(page_docs))])
             if len(page_docs) >= remaining:
                 break
         return page_docs
+
+    def _fetch_term_page(self, term: str, page: int) -> list[dict]:
+        def _do_fetch() -> list[dict]:
+            self._last_status_code = None
+            self._last_retry_after = None
+            return self.client.search_articles(
+                query=term,
+                cur_page=page,
+                row_count=_SCIENCEON_ROW_COUNT,
+                fields=_SCIENCEON_FIELDS,
+            ) or []
+
+        return self.caller.call(
+            source="scienceon",
+            term=term,
+            cur_page=page,
+            row_count=_SCIENCEON_ROW_COUNT,
+            fields=_SCIENCEON_FIELDS,
+            fetch=_do_fetch,
+            last_status=lambda: (self._last_status_code, self._last_retry_after),
+        )
+
+    @staticmethod
+    def _parse_retry_after(value: str | None) -> float | None:
+        if not value:
+            return None
+        try:
+            return float(value)
+        except ValueError:
+            return None
 
     @staticmethod
     def _is_quality(row: dict) -> bool:
@@ -309,7 +389,13 @@ class ScienceONClient:
 # --------------------------------------------------------------------------- #
 # Factory
 # --------------------------------------------------------------------------- #
-def create_search_client(source: str, settings: Settings, *, keyword_lang: str = "all") -> SearchClient:
+def create_search_client(
+    source: str,
+    settings: Settings,
+    *,
+    keyword_lang: str = "all",
+    cfg: PipelineConfig | None = None,
+) -> SearchClient:
     source = source.lower()
     if source == "wikipedia":
         return WikipediaClient(lang="ko" if keyword_lang == "korean" else "en")
@@ -323,5 +409,17 @@ def create_search_client(source: str, settings: Settings, *, keyword_lang: str =
             api_key, email = data.get("api_key", ""), data.get("email", "")
         return PubMedClient(api_key=api_key, email=email)
     if source == "scienceon":
-        return ScienceONClient(settings.scienceon_credentials_path)
+        cfg = cfg or PipelineConfig()
+        return ScienceONClient(
+            settings.scienceon_credentials_path,
+            max_pages=cfg.scienceon_max_pages,
+            max_concurrency=cfg.scienceon_max_concurrency,
+            min_interval_sec=cfg.scienceon_min_interval_sec,
+            fixed_concurrency=cfg.scienceon_fixed_concurrency,
+            max_retries=cfg.scienceon_max_retries,
+            retry_base_sleep_sec=cfg.scienceon_retry_base_sleep_sec,
+            retry_max_sleep_sec=cfg.scienceon_retry_max_sleep_sec,
+            cache_root=cfg.cache_root,
+            disable_cache=cfg.disable_cache,
+        )
     raise ValueError(f"Unknown search source: {source!r}")

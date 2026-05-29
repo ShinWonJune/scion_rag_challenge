@@ -4,6 +4,7 @@ from langchain_core.documents import Document
 from langchain_core.embeddings import DeterministicFakeEmbedding
 from langchain_core.language_models.fake_chat_models import FakeListChatModel
 from langchain_core.runnables import RunnableLambda
+from shrag.search.resilient_caller import ResilientCaller
 
 from shrag_lc.config import PipelineConfig
 from shrag_lc.corpus import build_corpus
@@ -12,6 +13,7 @@ from shrag_lc.pipeline import SHRAGPipeline
 from shrag_lc.reporting import build_manifest
 from shrag_lc.schemas import PipelineStatus, StageName, StageStatus, stage_report
 from shrag_lc.search.acquire import Acquirer
+from shrag_lc.search.clients import ScienceONClient
 from shrag_lc.search.keywords import KeywordExtractor
 from shrag_lc.vectorstore import build_faiss, load_faiss_artifact, save_faiss_artifact
 
@@ -21,7 +23,7 @@ def test_keyword_extractor_structured_json_and_retry():
         responses=[
             "not json",
             '{"keywords": ["검색", "임베딩", "검색"]}',
-            '{"keywords": ["search", "embedding"]}',
+            '{"keywords": ["free electronic textbook", "vector-space", "AI", "ai"]}',
         ]
     )
     extractor = KeywordExtractor(llm, language="all")
@@ -29,7 +31,7 @@ def test_keyword_extractor_structured_json_and_retry():
     result = extractor.extract("RAG embedding search")
 
     assert result["korean"] == ["검색", "임베딩"]
-    assert result["english"] == ["search", "embedding"]
+    assert result["english"] == ["free", "electronic", "textbook", "vector", "space", "AI"]
 
 
 def test_acquirer_records_partial_search_failure():
@@ -60,6 +62,62 @@ def test_acquirer_records_partial_search_failure():
     assert search_stage["status"] == StageStatus.PARTIAL_SUCCESS
     assert search_stage["counts"]["failed_terms"] == 1
     assert search_stage["errors"][0]["error_type"] == "TimeoutError"
+
+
+def test_scienceon_client_retries_429_with_resilient_caller():
+    class FakeScienceONApi:
+        def __init__(self, owner):
+            self.owner = owner
+            self.calls = 0
+
+        def search_articles(self, query, cur_page, row_count, fields):
+            self.calls += 1
+            if self.calls == 1:
+                self.owner._last_status_code = 429
+                self.owner._last_retry_after = 0.0
+                return []
+            self.owner._last_status_code = None
+            self.owner._last_retry_after = None
+            return [{"CN": "D1", "title": "Recovered title", "abstract": "Recovered abstract"}]
+
+    client = ScienceONClient.__new__(ScienceONClient)
+    client.client = FakeScienceONApi(client)
+    client.caller = ResilientCaller(max_retries=2, retry_base_sleep_sec=0.0, retry_max_sleep_sec=0.0)
+    client._last_status_code = None
+    client._last_retry_after = None
+
+    rows = client._fetch_term_page("term", 1)
+
+    assert rows[0]["CN"] == "D1"
+    assert client.client.calls == 2
+    assert client.get_request_stats()["rate_limit_count"] == 1
+
+
+def test_acquirer_records_rate_limit_stats_without_exception():
+    class Extractor:
+        def extract(self, query):
+            return {"korean": ["제한"], "english": []}
+
+    class Client:
+        source_name = "ScienceON"
+
+        def __init__(self):
+            self.stats = {"rate_limit_count": 0, "request_count": 0, "api_error_count": 0}
+
+        def get_request_stats(self):
+            return self.stats
+
+        def search(self, search_terms, max_results):
+            self.stats = {"rate_limit_count": 1, "request_count": 1, "api_error_count": 1}
+            return []
+
+    docs, meta = Acquirer(Extractor(), Client(), PipelineConfig()).acquire("query")
+
+    assert docs == []
+    search_stage = meta["stages"][StageName.SEARCH]
+    assert search_stage["status"] == StageStatus.FAILED
+    assert search_stage["warnings"] == ["Search client reported 1 rate-limit response(s)."]
+    assert search_stage["metadata"]["request_stats_delta"]["rate_limit_count"] == 1
 
 
 def test_pipeline_graph_returns_structured_status():

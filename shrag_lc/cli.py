@@ -61,6 +61,15 @@ def build_config(args: argparse.Namespace) -> PipelineConfig:
         llm_backend=args.llm,
         extractor_backend=args.extractor,
         keyword_lang=args.keyword_lang,
+        scienceon_max_pages=args.scienceon_max_pages,
+        scienceon_max_concurrency=args.scienceon_max_concurrency,
+        scienceon_min_interval_sec=args.scienceon_min_interval_sec,
+        scienceon_fixed_concurrency=args.scienceon_fixed_concurrency,
+        scienceon_max_retries=args.scienceon_max_retries,
+        scienceon_retry_base_sleep_sec=args.scienceon_retry_base_sleep_sec,
+        scienceon_retry_max_sleep_sec=args.scienceon_retry_max_sleep_sec,
+        cache_root=args.cache_root,
+        disable_cache=args.no_cache,
     )
     if args.encoder:
         return PipelineConfig.from_encoder_json(args.encoder, **overrides)
@@ -125,6 +134,15 @@ def main() -> None:
     run.add_argument("--extractor", default="vllm", choices=["vllm", "openai", "gemini"])
     run.add_argument("--keyword-lang", default="all", choices=["all", "korean", "english"])
     run.add_argument("--target-documents", type=int, default=50)
+    run.add_argument("--scienceon-max-pages", type=int, default=5)
+    run.add_argument("--scienceon-max-concurrency", type=int, default=2)
+    run.add_argument("--scienceon-min-interval-sec", type=float, default=0.5)
+    run.add_argument("--scienceon-fixed-concurrency", action="store_true")
+    run.add_argument("--scienceon-max-retries", type=int, default=5)
+    run.add_argument("--scienceon-retry-base-sleep-sec", type=float, default=2.0)
+    run.add_argument("--scienceon-retry-max-sleep-sec", type=float, default=60.0)
+    run.add_argument("--cache-root", default="outputs/_shared_cache")
+    run.add_argument("--no-cache", action="store_true")
     run.add_argument("--top-k", type=int, default=5)
     run.add_argument("--max-rank", type=int, default=3)
     run.add_argument("--no-rerank", action="store_true")

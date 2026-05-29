@@ -24,6 +24,30 @@ from .terms import build_search_terms_by_lang
 logger = logging.getLogger(__name__)
 
 
+def _request_stats(client: SearchClient) -> dict[str, Any]:
+    getter = getattr(client, "get_request_stats", None)
+    if not callable(getter):
+        return {}
+    try:
+        return dict(getter() or {})
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def _stats_delta(before: dict[str, Any], after: dict[str, Any]) -> dict[str, int | float]:
+    delta: dict[str, int | float] = {}
+    for key in ["request_count", "rate_limit_count", "api_error_count"]:
+        b = before.get(key, 0) or 0
+        a = after.get(key, 0) or 0
+        try:
+            diff = a - b
+        except TypeError:
+            continue
+        if diff:
+            delta[key] = diff
+    return delta
+
+
 @dataclass
 class SearchAttemptResult:
     documents: list[dict] = field(default_factory=list)
@@ -81,19 +105,28 @@ class Acquirer:
         en_terms = terms_by_lang.get("english") or []
 
         target = self.cfg.target_documents
+        stats_before = _request_stats(self.client)
         ko_result = _search_until_target(self.client, ko_terms, target, "korean")
         en_result = _search_until_target(self.client, en_terms, target, "english")
+        stats_after = _request_stats(self.client)
+        request_stats_delta = _stats_delta(stats_before, stats_after)
         ko_docs = ko_result.documents
         en_docs = en_result.documents
         merged = _dedup(ko_docs + en_docs, key="doc_id")
         attempted_terms = ko_result.attempted_terms + en_result.attempted_terms
         errors = ko_result.errors + en_result.errors
+        warnings: list[str] = []
+        rate_limit_delta = int(request_stats_delta.get("rate_limit_count", 0) or 0)
+        if rate_limit_delta:
+            warnings.append(f"Search client reported {rate_limit_delta} rate-limit response(s).")
 
         if merged and errors:
             search_status = StageStatus.PARTIAL_SUCCESS
         elif merged:
             search_status = StageStatus.SUCCESS
         elif attempted_terms and errors and len(errors) == len(attempted_terms):
+            search_status = StageStatus.FAILED
+        elif attempted_terms and rate_limit_delta:
             search_status = StageStatus.FAILED
         else:
             search_status = StageStatus.NO_DOCUMENTS
@@ -115,8 +148,13 @@ class Acquirer:
                         "failed_terms": len(errors),
                         "document_count": len(documents),
                     },
+                    warnings=warnings,
                     errors=errors,
-                    metadata={"source": self.client.source_name},
+                    metadata={
+                        "source": self.client.source_name,
+                        "request_stats": stats_after,
+                        "request_stats_delta": request_stats_delta,
+                    },
                 ).to_dict()
             },
         }

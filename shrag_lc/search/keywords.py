@@ -10,7 +10,6 @@ Chain shape per language:  prompt | chat_model | StrOutputParser | parse
 from __future__ import annotations
 
 import logging
-import re
 from typing import Dict, List
 
 from langchain_core.language_models.chat_models import BaseChatModel
@@ -18,9 +17,8 @@ from langchain_core.output_parsers import PydanticOutputParser, StrOutputParser
 from langchain_core.runnables import Runnable, RunnableLambda
 
 from ..prompts import build_keyword_prompt, build_structured_keyword_prompt
-from ..schemas import KeywordList
+from ..schemas import KeywordList, normalize_keyword_values
 
-_KEYWORD_SPLIT_RE = re.compile(r"[\s\-]+")
 logger = logging.getLogger(__name__)
 
 
@@ -31,20 +29,7 @@ def parse_keyword_list(text: str, prefix: str = "") -> List[str]:
         text = text.replace(prefix, "").strip()
     keywords = [kw.strip() for kw in text.split(",")]
     keywords = [kw for kw in keywords if kw and len(kw) > 1]
-
-    final: List[str] = []
-    seen: set[str] = set()
-    for kw in keywords:
-        for word in _KEYWORD_SPLIT_RE.split(kw):
-            word = word.strip()
-            if not word or len(word) <= 1:
-                continue
-            key = word.lower()
-            if key in seen:
-                continue
-            seen.add(key)
-            final.append(word)
-    return final[:10]
+    return normalize_keyword_values(keywords)
 
 
 def _build_lang_chain(llm: BaseChatModel, lang: str, prefix: str) -> Runnable:
