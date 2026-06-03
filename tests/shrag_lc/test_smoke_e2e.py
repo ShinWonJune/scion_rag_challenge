@@ -85,3 +85,13 @@ def test_parse_keyword_list_splits_and_dedups():
     assert "machine" in out and "learning" in out and "vector" in out and "space" in out
     # case-insensitive dedup of AI/ai
     assert sum(1 for w in out if w.lower() == "ai") == 1
+
+
+def test_parse_keyword_list_filters_colons_and_quotes():
+    out = parse_keyword_list('Keywords: "machine learning", vector:space, "AI"', prefix="Keywords:")
+    assert out == ["machine", "learning", "vector", "space", "AI"]
+
+
+def test_parse_keyword_list_filters_escaped_quotes():
+    out = parse_keyword_list(r'Keywords: \"논리와 구조\", normal', prefix="Keywords:")
+    assert out == ["논리와", "구조", "normal"]

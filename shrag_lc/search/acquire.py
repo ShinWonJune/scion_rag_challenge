@@ -9,6 +9,7 @@ embedding (page_content = 3T+A text).
 from __future__ import annotations
 
 import logging
+import time
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -94,6 +95,7 @@ class Acquirer:
         self.cfg = cfg
 
     def acquire(self, query: str) -> tuple[list[Document], dict[str, Any]]:
+        started = time.perf_counter()
         try:
             keywords = self.extractor.extract(query)
         except Exception as e:  # noqa: BLE001
@@ -132,6 +134,7 @@ class Acquirer:
             search_status = StageStatus.NO_DOCUMENTS
 
         documents = [doc_to_document(d, self.cfg.embedding_mode) for d in merged]
+        elapsed_sec = round(time.perf_counter() - started, 4)
         meta = {
             "query": query,
             "source": self.client.source_name,
@@ -154,6 +157,7 @@ class Acquirer:
                         "source": self.client.source_name,
                         "request_stats": stats_after,
                         "request_stats_delta": request_stats_delta,
+                        "elapsed_sec": elapsed_sec,
                     },
                 ).to_dict()
             },

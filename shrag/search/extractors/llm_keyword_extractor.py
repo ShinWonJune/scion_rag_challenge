@@ -24,8 +24,8 @@ from typing import Dict, List
 
 from .base_extractor import BaseKeywordExtractor
 
-# 공백(\s) 또는 하이픈(-)을 한꺼번에 분리. 다른 특수기호는 추가 요청 시 확장.
-_KEYWORD_SPLIT_RE = re.compile(r"[\s\-]+")
+# 공백(\s), 하이픈(-), 콜론(:), 큰따옴표, escape 역슬래시를 한꺼번에 분리.
+_KEYWORD_SPLIT_RE = re.compile(r"[\s\-:\"“”\\]+")
 
 KOREAN_PROMPT_TEMPLATE = """
 당신은 학술 플랫폼 검색 전문가 입니다.
@@ -112,8 +112,9 @@ class LLMKeywordExtractor(BaseKeywordExtractor):
 
         절차:
           1. prefix("키워드:" / "Keywords:") 제거 → 콤마로 1차 split.
-          2. 각 토큰을 공백 OR 하이픈(`-`) 으로 추가 분해 (예: "input-output" → ["input","output"],
-             "vector mapping" → ["vector","mapping"]).
+          2. 각 토큰을 공백, 하이픈(`-`), 콜론(`:`), 큰따옴표, escape 역슬래시로 추가 분해
+             (예: "input-output" → ["input","output"], "vector mapping" → ["vector","mapping"],
+             '"neural network"' → ["neural","network"], '\\"논리와 구조\\"' → ["논리와","구조"]).
           3. 길이 ≤ 1 토큰 제거, 대소문자 무시 dedup, 최대 10개.
         """
         text = (text or "").strip().replace(prefix, "").strip()

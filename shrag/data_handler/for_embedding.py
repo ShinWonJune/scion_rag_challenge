@@ -58,6 +58,7 @@ def save_results(
     document_class: Type,
     config_path: str,
     model_name: str,
+    output_dir_override: str | None = None,
 ):
     """
     Saves the prepared documents to a CSV file and updates the configuration.
@@ -69,11 +70,14 @@ def save_results(
         document_class (Type): The dynamic dataclass used.
         config_path (str): The path to the configuration file for updating.
         model_name (str): The name of the model used for embeddings.
+        output_dir_override (str | None): Optional base directory for this run's
+            VectorDB artifact. If omitted, config["output_dir"] is used.
     """
     # 1. Create save path and filename
     timestamp = datetime.now().strftime("%y%m%d_%H%M%S")
     safe_model_name = model_name.replace("/", "_")
-    output_dir = os.path.join(config.get("output_dir", "../output"), timestamp)
+    output_base_dir = output_dir_override or config.get("output_dir", "../output")
+    output_dir = os.path.join(output_base_dir, timestamp)
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(
         output_dir, f"vector_db_{config.get('nickname', 'docs')}_{safe_model_name}.csv"

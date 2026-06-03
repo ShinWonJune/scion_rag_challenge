@@ -131,6 +131,10 @@ def main() -> None:
         corpus_data = load_jsonl(args.corpus)
         doc_ids = [d["doc_id"] for d in corpus_data]
         doc_texts = [make_text(d, args.embedding_mode) for d in corpus_data]
+        doc_pair_texts = [
+            f"{d.get('title', '')}\n{d.get('abstract', '')}".strip()
+            for d in corpus_data
+        ]
         result["n_corpus_docs"] = len(corpus_data)
 
         queries_data = load_jsonl(args.queries)
@@ -192,7 +196,7 @@ def main() -> None:
             predictions: dict[str, list[str]] = {}
             for qi, qid in enumerate(qids):
                 cand_idx = topk_idx[qi][: args.rerank_candidates]
-                pairs = [(query_texts[qi], doc_texts[idx]) for idx in cand_idx]
+                pairs = [(query_texts[qi], doc_pair_texts[idx]) for idx in cand_idx]
                 if pairs:
                     scores = reranker.predict(pairs, batch_size=args.rerank_batch, show_progress_bar=False)
                     order = np.argsort(-np.asarray(scores))

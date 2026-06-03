@@ -24,6 +24,7 @@ def build_vectordb_search(
     docs_jsonl_path: Optional[str] = None,
     auto_data_load=False,
     gpu_id: Optional[int] = None,
+    output_dir: Optional[str] = None,
 ):
     # 1. Load configurations and create dynamic document class
     config = load_config(config_path)
@@ -97,6 +98,7 @@ def build_vectordb_search(
         document_class=DynamicDocument,
         config_path=config_path,
         model_name=model_name,
+        output_dir_override=output_dir,
     )
 
 
@@ -131,6 +133,11 @@ if __name__ == "__main__":
         default=None,
         help="사용할 GPU ID (예: 0, 1, 2, 3). 지정하지 않으면 자동 선택"
     )
+    parser.add_argument(
+        "--output_dir",
+        default=None,
+        help="벡터DB CSV를 저장할 기준 디렉토리. 지정하지 않으면 encoder config의 output_dir 사용",
+    )
     
     args = parser.parse_args()
     
@@ -139,5 +146,6 @@ if __name__ == "__main__":
         data_schema=args.data_schema,
         docs_jsonl_path=args.docs_jsonl_path,
         auto_data_load=args.auto_data_load,
-        gpu_id=args.gpu_id
+        gpu_id=args.gpu_id,
+        output_dir=args.output_dir,
     )

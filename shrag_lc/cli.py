@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -89,7 +90,11 @@ def cmd_run(args: argparse.Namespace) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     generated_at = datetime.now().isoformat(timespec="seconds")
 
-    if args.corpus_first:
+    run_started = time.perf_counter()
+    if args.per_query:
+        results = pipeline.run(questions)
+        pipeline_mode = "per_query"
+    else:
         results = pipeline.run_corpus_first(
             questions,
             artifact_dir=out_dir,
@@ -97,14 +102,12 @@ def cmd_run(args: argparse.Namespace) -> None:
             reuse_index=args.reuse_index,
         )
         pipeline_mode = "corpus_first"
-    else:
-        results = pipeline.run(questions)
-        pipeline_mode = "per_query"
+    runtime_sec = round(time.perf_counter() - run_started, 4)
 
     predictions_path = out_dir / "predictions.json"
     write_json(predictions_path, results)
     artifacts = {"predictions": predictions_path.name}
-    if args.corpus_first:
+    if not args.per_query:
         artifacts["corpus"] = "corpus.jsonl"
         artifacts["index_dir"] = str(args.index_dir or (out_dir / "faiss_index"))
 
@@ -118,6 +121,8 @@ def cmd_run(args: argparse.Namespace) -> None:
         corpus=pipeline.last_run_context.get("corpus"),
         index=pipeline.last_run_context.get("index"),
     )
+    manifest["runtime_sec"] = runtime_sec
+    manifest["timings"] = pipeline.last_run_context.get("timings", {})
     write_json(out_dir / "manifest.json", manifest)
     print(f"Pipeline completed: {out_dir}")
 
@@ -146,7 +151,11 @@ def main() -> None:
     run.add_argument("--top-k", type=int, default=5)
     run.add_argument("--max-rank", type=int, default=3)
     run.add_argument("--no-rerank", action="store_true")
-    run.add_argument("--corpus-first", action="store_true", help="Acquire all documents, then build one shared index")
+    run.add_argument(
+        "--per-query",
+        action="store_true",
+        help="Use the legacy LC mode that builds a separate FAISS index per question",
+    )
     run.add_argument("--index-dir", default=None, help="Directory for a reusable FAISS index")
     run.add_argument("--reuse-index", action="store_true", help="Reuse --index-dir when metadata matches")
     run.add_argument("--limit", type=int, default=None, help="Only process the first N questions")

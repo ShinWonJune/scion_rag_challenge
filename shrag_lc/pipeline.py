@@ -1,16 +1,14 @@
 """End-to-end SHRAG pipeline (LangChain).
 
-Per query: acquire corpus (search) -> embed + FAISS -> dense top-k ->
-cross-encoder rerank top-n -> grounded answer. Heavy models (embeddings,
-reranker, chat models) are built once and reused across queries; the FAISS
-store is rebuilt per query because acquisition is per-query (as in the
-original pipeline).
+Default corpus-first path: acquire all query corpora -> build one shared FAISS
+index -> dense top-k -> cross-encoder rerank top-n -> grounded answer.
 """
 
 from __future__ import annotations
 
 import logging
 import re
+import time
 from pathlib import Path
 
 from langchain_core.documents import Document
@@ -133,14 +131,16 @@ class SHRAGPipeline:
             return result
 
         try:
+            started = time.perf_counter()
             store = build_faiss(documents, self.embeddings)
             retriever = store.as_retriever(search_kwargs={"k": self.cfg.dense_top_k})
             retrieved = retriever.invoke(query)
+            retrieval_sec = round(time.perf_counter() - started, 4)
             stages[StageName.RETRIEVAL] = stage_report(
                 StageName.RETRIEVAL,
                 StageStatus.SUCCESS,
                 counts={"retrieved_count": len(retrieved), "dense_top_k": self.cfg.dense_top_k},
-                metadata={"index_mode": "per_query"},
+                metadata={"index_mode": "per_query", "elapsed_sec": retrieval_sec},
             ).to_dict()
         except Exception as e:  # noqa: BLE001
             error = PipelineError.from_exception(StageName.RETRIEVAL, e, question_id=qid, question=query)
@@ -151,11 +151,14 @@ class SHRAGPipeline:
             return self._failed_result(qid, query, meta, stages, errors, warnings)
 
         try:
+            started = time.perf_counter()
             reranked = self._rerank_or_rank(query, retrieved)
+            rerank_sec = round(time.perf_counter() - started, 4)
             stages[StageName.RERANK] = stage_report(
                 StageName.RERANK,
                 StageStatus.SUCCESS,
                 counts={"reranked_count": len(reranked), "rerank_top_n": self.cfg.rerank_top_n},
+                metadata={"elapsed_sec": rerank_sec},
             ).to_dict()
         except Exception as e:  # noqa: BLE001
             error = PipelineError.from_exception(StageName.RERANK, e, question_id=qid, question=query)
@@ -166,9 +169,13 @@ class SHRAGPipeline:
             return self._failed_result(qid, query, meta, stages, errors, warnings)
 
         try:
+            started = time.perf_counter()
             result = self.generator.generate(query, reranked)
+            generation_sec = round(time.perf_counter() - started, 4)
             stages[StageName.GENERATION] = stage_report(
-                StageName.GENERATION, StageStatus.SUCCESS
+                StageName.GENERATION,
+                StageStatus.SUCCESS,
+                metadata={"elapsed_sec": generation_sec},
             ).to_dict()
         except Exception as e:  # noqa: BLE001
             error = PipelineError.from_exception(StageName.GENERATION, e, question_id=qid, question=query)
@@ -267,6 +274,8 @@ class SHRAGPipeline:
         """Acquire all documents first, build one shared FAISS index, then answer."""
         acquired: list[tuple[dict, list[Document], dict]] = []
         document_groups: list[list[Document]] = []
+        timings: dict[str, float] = {}
+        acquire_started = time.perf_counter()
         for i, item in enumerate(questions, start=1):
             qid = str(item.get("id", i))
             query = item["question"]
@@ -290,16 +299,21 @@ class SHRAGPipeline:
                 docs = []
             acquired.append(({"id": qid, "question": query}, docs, meta))
             document_groups.append(docs)
+        timings["acquire_sec"] = round(time.perf_counter() - acquire_started, 4)
 
         artifact_path = Path(artifact_dir) if artifact_dir else None
         index_path = Path(index_dir) if index_dir else (artifact_path / "faiss_index" if artifact_path else None)
 
         index_metadata: dict = {}
         if reuse_index and index_path is not None and index_path.exists():
+            started = time.perf_counter()
             store, index_metadata = load_faiss_artifact(index_path, self.embeddings, self.cfg)
+            timings["index_load_sec"] = round(time.perf_counter() - started, 4)
             corpus_manifest = {"document_count": index_metadata.get("document_count", 0), "reused": True}
         else:
+            started = time.perf_counter()
             corpus = build_corpus(document_groups)
+            timings["corpus_build_sec"] = round(time.perf_counter() - started, 4)
             corpus_manifest = corpus.to_manifest()
             if artifact_path is not None:
                 save_corpus_jsonl(corpus, artifact_path / "corpus.jsonl")
@@ -308,28 +322,36 @@ class SHRAGPipeline:
                     "pipeline_mode": "corpus_first",
                     "corpus": corpus_manifest,
                     "index": index_metadata,
+                    "timings": timings,
                 }
                 return [
                     self._corpus_no_documents_result(item, meta)
                     for item, _docs, meta in acquired
                 ]
+            started = time.perf_counter()
             store = build_faiss(corpus.documents, self.embeddings)
+            timings["index_build_sec"] = round(time.perf_counter() - started, 4)
             if index_path is not None:
+                started = time.perf_counter()
                 index_metadata = save_faiss_artifact(
                     store, index_path, self.cfg, corpus.document_count
                 )
+                timings["index_save_sec"] = round(time.perf_counter() - started, 4)
             else:
                 index_metadata = {"document_count": corpus.document_count}
 
         retriever = store.as_retriever(search_kwargs={"k": self.cfg.dense_top_k})
         results: list[dict] = []
+        started = time.perf_counter()
         for item, _docs, meta in acquired:
             results.append(self._answer_with_retriever(item, meta, retriever))
+        timings["answer_all_sec"] = round(time.perf_counter() - started, 4)
 
         self.last_run_context = {
             "pipeline_mode": "corpus_first",
             "corpus": corpus_manifest,
             "index": index_metadata,
+            "timings": timings,
         }
         return results
 
@@ -362,22 +384,31 @@ class SHRAGPipeline:
         errors: list[PipelineError] = []
         warnings: list[str] = []
         try:
+            started = time.perf_counter()
             retrieved = retriever.invoke(query)
+            retrieval_sec = round(time.perf_counter() - started, 4)
             stages[StageName.RETRIEVAL] = stage_report(
                 StageName.RETRIEVAL,
                 StageStatus.SUCCESS,
                 counts={"retrieved_count": len(retrieved), "dense_top_k": self.cfg.dense_top_k},
-                metadata={"index_mode": "corpus_first"},
+                metadata={"index_mode": "corpus_first", "elapsed_sec": retrieval_sec},
             ).to_dict()
+            started = time.perf_counter()
             reranked = self._rerank_or_rank(query, retrieved)
+            rerank_sec = round(time.perf_counter() - started, 4)
             stages[StageName.RERANK] = stage_report(
                 StageName.RERANK,
                 StageStatus.SUCCESS,
                 counts={"reranked_count": len(reranked), "rerank_top_n": self.cfg.rerank_top_n},
+                metadata={"elapsed_sec": rerank_sec},
             ).to_dict()
+            started = time.perf_counter()
             result = self.generator.generate(query, reranked)
+            generation_sec = round(time.perf_counter() - started, 4)
             stages[StageName.GENERATION] = stage_report(
-                StageName.GENERATION, StageStatus.SUCCESS
+                StageName.GENERATION,
+                StageStatus.SUCCESS,
+                metadata={"elapsed_sec": generation_sec},
             ).to_dict()
         except Exception as e:  # noqa: BLE001
             error = PipelineError.from_exception(StageName.GENERATION, e, question_id=qid, question=query)

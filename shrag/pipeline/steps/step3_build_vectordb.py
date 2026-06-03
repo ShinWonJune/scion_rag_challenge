@@ -16,10 +16,21 @@ def parse_args() -> argparse.Namespace:
         help="CSV schema JSON path",
     )
     parser.add_argument("--gpu-id", type=int, default=None, help="GPU id for embedding model")
+    parser.add_argument(
+        "--output-dir",
+        default=None,
+        help="Base directory for the VectorDB CSV artifact",
+    )
     return parser.parse_args()
 
 
-def run_step3(encoder: str, docs: str, schema: str, gpu_id: int | None = None) -> None:
+def run_step3(
+    encoder: str,
+    docs: str,
+    schema: str,
+    gpu_id: int | None = None,
+    output_dir: str | None = None,
+) -> None:
     cmd = [
         sys.executable,
         "-m",
@@ -33,6 +44,8 @@ def run_step3(encoder: str, docs: str, schema: str, gpu_id: int | None = None) -
     ]
     if gpu_id is not None:
         cmd.extend(["--gpu_id", str(gpu_id)])
+    if output_dir is not None:
+        cmd.extend(["--output_dir", output_dir])
     env = os.environ.copy()
     env.setdefault("PYTHONIOENCODING", "utf-8")
     subprocess.run(cmd, check=True, env=env)
@@ -40,7 +53,7 @@ def run_step3(encoder: str, docs: str, schema: str, gpu_id: int | None = None) -
 
 def main() -> None:
     args = parse_args()
-    run_step3(args.encoder, args.docs, args.schema, args.gpu_id)
+    run_step3(args.encoder, args.docs, args.schema, args.gpu_id, args.output_dir)
 
 
 if __name__ == "__main__":

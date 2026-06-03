@@ -3,11 +3,10 @@
 Uses MAX_INNER_PRODUCT over L2-normalized embeddings, which equals cosine
 similarity — the LangChain equivalent of the original FAISS ``IndexFlatIP``.
 
-Note: the original ``shrag`` pipeline encoded documents with
-``normalize_embeddings=False`` (raw-magnitude inner product), whereas this build
-normalizes both documents and queries (cosine). gte-multilingual is trained for
-cosine, so this is intentional — but rankings will not be bit-identical to the
-original, which matters when comparing eval numbers head-to-head.
+Note: the original ``shrag`` code calls SentenceTransformers with
+``normalize_embeddings=False`` in some places, but normalizes vectors before
+FAISS search. This LC build normalizes inside the embedding wrapper, so the
+retrieval metric is intended to match: inner product over unit vectors.
 """
 
 from __future__ import annotations

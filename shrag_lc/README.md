@@ -51,12 +51,18 @@ keyless (lower rate limit); ScienceON needs `configs/credentials/...json`.
   --questions data/test.csv --source scienceon \
   --encoder configs/query_encoder/config_gte-multilingual-base.json
 
-# Corpus-first mode: acquire all documents, dedup, build one shared FAISS index,
-# then retrieve/rerank/generate for each question.
+# Default corpus-first mode: acquire all documents, dedup, build one shared
+# FAISS index, then retrieve/rerank/generate for each question.
 .venv/Scripts/python.exe -m shrag_lc.cli run \
   --questions data/test.csv --source scienceon \
   --encoder configs/query_encoder/config_gte-multilingual-base.json \
-  --corpus-first --index-dir outputs_lc/scienceon_faiss
+  --index-dir outputs_lc/scienceon_faiss
+
+# Legacy LC per-query mode: build a separate FAISS index per question.
+.venv/Scripts/python.exe -m shrag_lc.cli run \
+  --questions data/test.csv --source scienceon \
+  --encoder configs/query_encoder/config_gte-multilingual-base.json \
+  --per-query
 ```
 
 Outputs land in `outputs_lc/run_<timestamp>/` (`predictions.json`, `manifest.json`).

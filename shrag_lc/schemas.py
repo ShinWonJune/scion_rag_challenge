@@ -10,7 +10,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field, field_validator
 
-_KEYWORD_SPLIT_RE = re.compile(r"[\s\-]+")
+_KEYWORD_SPLIT_RE = re.compile(r"[\s\-:\"“”\\]+")
 
 
 def utc_now_iso() -> str:
@@ -21,8 +21,8 @@ def normalize_keyword_values(values: list[str]) -> list[str]:
     """Normalize LLM keywords like the original SHRAG parser.
 
     LLMs often return phrase-like keywords. The legacy pipeline splits those
-    phrases by whitespace or hyphen before deduplication, so the LC structured
-    path must apply the same rule.
+    phrases by whitespace, hyphen, colon, double quotes, or escape backslashes
+    before deduplication, so the LC structured path must apply the same rule.
     """
     out: list[str] = []
     seen: set[str] = set()

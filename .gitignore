@@ -22,6 +22,7 @@ pipeline/outputs/
 results/
 src/data2/
 data2/
+.understand-anything/
 
 #vllm models
 model_cache/

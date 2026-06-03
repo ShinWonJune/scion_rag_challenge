@@ -26,6 +26,7 @@ logger = logging.getLogger(__name__)
 BASE_URL = "https://apigateway.kisti.re.kr/openapicall.do"
 TOKEN_REQUEST_URL = "https://apigateway.kisti.re.kr/tokenrequest.do"
 TOKEN_EXPIRY_BUFFER = timedelta(minutes=1)
+REQUEST_TIMEOUT_SEC = 30
 
 
 class AESCipher:
@@ -93,7 +94,7 @@ class CredentialManager:
         now_str = "".join(re.findall(r"\d", datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
         payload = json.dumps({"datetime": now_str, "mac_address": self.mac_address}).replace(" ", "")
         params = {"client_id": self.client_id, "accounts": self.aes_cipher.encrypt(payload)}
-        with session.get(TOKEN_REQUEST_URL, params=params) as resp:
+        with session.get(TOKEN_REQUEST_URL, params=params, timeout=REQUEST_TIMEOUT_SEC) as resp:
             resp.raise_for_status()
             self._update_tokens(resp.json())
 
@@ -165,7 +166,7 @@ class ScienceONAPIClient:
             "grouping": "",
         }
         try:
-            with self.session.get(BASE_URL, params=params) as resp:
+            with self.session.get(BASE_URL, params=params, timeout=REQUEST_TIMEOUT_SEC) as resp:
                 resp.raise_for_status()
                 return self._parse_search_response(resp.text, fields)
         except requests.RequestException as e:

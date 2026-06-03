@@ -67,10 +67,10 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def read_vectordb_from_encoder(encoder_config: str) -> str:
-    with open(encoder_config, "r", encoding="utf-8") as f:
-        config = json.load(f)
-    output_file = config.get("output_file")
+def read_vectordb_from_encoder(encoder_config: str) -> str: 
+    with open(encoder_config, "r", encoding="utf-8") as f: # encoder_config 경로의 파일을 읽기 모드로 열고, f로 참조.
+        config = json.load(f) # f 파일 객체에서 JSON 데이터를 읽어서 Python 딕셔너리로 변환하여 config 변수에 저장.
+    output_file = config.get("output_file") # config 딕셔너리에서 "output_file" 키에 해당하는 값을 가져와서 output_file 변수에 저장. 이 값은 벡터 데이터베이스 CSV 파일의 경로를 나타냄.
     if not output_file:
         raise ValueError(f"output_file not found in config: {encoder_config}")
     return output_file
@@ -216,6 +216,7 @@ def main() -> None:
     output_root = Path(args.output or f"outputs/run_{timestamp}")
     search_dir = output_root / "search"
     decompose_dir = output_root / "decompose"
+    vectordb_dir = output_root / "vectordb"
     retrieval_dir = output_root / "retrieval"
     final_dir = output_root / "final"
     output_root.mkdir(parents=True, exist_ok=True)
@@ -246,6 +247,10 @@ def main() -> None:
             "hit_count": 0,
             "miss_count": 0,
             "write_count": 0,
+        },
+        "artifacts": {
+            "vectordb_output_dir": str(vectordb_dir),
+            "vectordb_csv": None,
         },
         "runtime": {},
         "steps_completed": [],
@@ -303,11 +308,17 @@ def main() -> None:
         _write_run_manifest(output_root / "run_manifest.json", manifest)
 
     step3_started = time.perf_counter()
-    run_step3(args.encoder, search_docs, args.schema)
+    run_step3(
+        args.encoder,
+        search_docs,
+        args.schema,
+        output_dir=str(vectordb_dir),
+    )
     manifest["runtime"]["step3_build_vectordb_sec"] = round(time.perf_counter() - step3_started, 4)
     manifest["steps_completed"].append("step3")
-    _write_run_manifest(output_root / "run_manifest.json", manifest)
     vectordb_csv = read_vectordb_from_encoder(args.encoder)
+    manifest["artifacts"]["vectordb_csv"] = vectordb_csv
+    _write_run_manifest(output_root / "run_manifest.json", manifest)
 
     step4_started = time.perf_counter()
     retrieval_output_dir = run_step4(
