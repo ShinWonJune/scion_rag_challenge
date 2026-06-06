@@ -25,7 +25,7 @@ from typing import Dict, List
 from .base_extractor import BaseKeywordExtractor
 
 # 공백(\s), 하이픈(-), 콜론(:), 큰따옴표, escape 역슬래시를 한꺼번에 분리.
-_KEYWORD_SPLIT_RE = re.compile(r"[\s\-:\"“”\\]+")
+_KEYWORD_SPLIT_RE = re.compile(r"[\s\-:\"“”\\]+") 
 
 KOREAN_PROMPT_TEMPLATE = """
 당신은 학술 플랫폼 검색 전문가 입니다.
@@ -75,7 +75,7 @@ Keywords:
 
 
 class LLMKeywordExtractor(BaseKeywordExtractor):
-    """Abstract LLM-driven extractor. Subclasses only implement ``_call_llm``."""
+    """Abstract LLM-driven extractor. Subclasses should implement ``_call_llm``."""
 
     KOREAN_PROMPT_TEMPLATE = KOREAN_PROMPT_TEMPLATE
     ENGLISH_PROMPT_TEMPLATE = ENGLISH_PROMPT_TEMPLATE
@@ -108,7 +108,7 @@ class LLMKeywordExtractor(BaseKeywordExtractor):
         return {"korean": korean_keywords, "english": english_keywords}
 
     def _parse_keyword_list(self, text: str, prefix: str) -> List[str]:
-        """Parse comma-list LLM 응답을 키워드 배열로 변환.
+        """LLM 응답을 키워드 배열로 변환.
 
         절차:
           1. prefix("키워드:" / "Keywords:") 제거 → 콤마로 1차 split.
