@@ -72,7 +72,7 @@ def process_file(
     filtered_data = copy.deepcopy(data)
     for query_item in filtered_data.get("retrieval_results", []):
         hits = query_item.get("hits", [])
-        # rank가 max_rank 이하인 것들만 남깁니다.
+        # filtered_data의 hits에 rank가 max_rank 이하인 것들만 남깁니다.
         query_item["hits"] = [
             hit for hit in hits if hit.get("rank", float("inf")) <= max_rank
         ]

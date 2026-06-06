@@ -45,6 +45,10 @@ shrag.pdf
 
 .omc/
 .claude/
+.antigravitycli/
+.codex/
+.agents/
+.omx/
 docs/
 pytest*
 

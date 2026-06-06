@@ -21,6 +21,14 @@
 ```json
 {
   "search":   {"k": 30, "n": 10, "m": 50},
+  "scienceon_throttle": {
+    "max_concurrency": 2,
+    "min_interval_sec": 0.5,
+    "fixed_concurrency": true,
+    "max_retries": 5,
+    "retry_base_sleep_sec": 2.0,
+    "retry_max_sleep_sec": 60.0
+  },
   "encoder":  "Alibaba-NLP/gte-multilingual-base",
   "encoder_runtime": {
     "torch_dtype":      "float16",
@@ -74,6 +82,13 @@
 ### 검색 변수 `(k, n, m) = (30, 10, 50)`
 - 검색어 1개당 ScienceON 수집 docs `k`, 질문당 검색어 수 `n`, dedup cap `m`
 - 출처: 초기 Exp1 + 후속 검증
+
+### ScienceON 429 대응
+- 운영용 고정 throttle: `max_concurrency=2`, `min_interval_sec=0.5`, `fixed_concurrency=true`
+- 의미: 동시에 날릴 수 있는 요청 수를 2개로 제한하고, 요청 사이 최소 간격을 0.5초로 둬서 429를 줄인다
+- `max_retries=5`는 일시적 429/네트워크 오류에 대한 복구용 안전장치
+- 더 빠른 후보 `(2, 0.1)`, `(2, 0.25)`, `(2, 0.30)`, `(2, 0.40)`는 같은 warm E2E 측정 질의 중 첫 질의(`qid=46`)에서 각각 5회, 3회, 3회, 1회 429가 발생해 조기 중단됨
+- 출처: warm E2E follow-up + 429 throttle sweep
 
 ### Encoder = GTE
 - Hit@5 동일 (0.902) — bge-m3와 무차별
